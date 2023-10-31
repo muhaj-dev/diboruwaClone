@@ -26,7 +26,6 @@ const useOrder = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const { data: session } = useSession();
 
-
   const [modalMessage, setModalMessage] = useState("");
   const [modalErrorType, setModalErrorType] = useState<
     "success" | "error" | "info"
@@ -136,10 +135,7 @@ const useOrder = () => {
           useCartStore.getState().getSubscriptions();
 
           setIsSuccess(true);
-          openModal(
-            "success",
-            "Subscription order submitted successfully!"
-          );
+          openModal("success", "Subscription order submitted successfully!");
           toast.success("Subscription order submitted successfully!");
         }, 500);
         // router.push(`/dashboard/${data.order?._id}`);
@@ -147,6 +143,36 @@ const useOrder = () => {
     } catch (error) {
       setIsError(true);
       toast.error("Error submitting subscription order."); // Show error toast
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  const handleRequestPayment = async (
+    referenceId: string,
+    requestId: any,
+
+  ) => {
+    setIsSubmitting(true);
+    setIsError(false);
+    setIsSuccess(false);
+
+    try {
+      const { data } = await axios.put(`/api/quotes/${requestId}`, {
+        referenceId,
+      });
+
+      toast.loading("Payment is being proccessed", {
+        duration: 2000,
+      });
+
+      setTimeout(() => {
+        useCartStore.getState().getSubscriptions();
+        setIsSuccess(true);
+        toast.success("Payment submitted successfully!");
+      }, 500);
+    } catch (error) {
+      setIsError(true);
+      toast.error("Error submitting Payment."); // Show error toast
     } finally {
       setIsSubmitting(false);
     }
@@ -180,6 +206,7 @@ const useOrder = () => {
     getOrderById,
     handleCartOrderSubmit,
     handleSubscriptionOrderSubmit,
+    handleRequestPayment
   };
 };
 

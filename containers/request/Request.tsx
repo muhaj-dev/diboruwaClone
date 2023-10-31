@@ -4,6 +4,9 @@ import styled from "styled-components";
 import useQuote from "@/hooks/useQuote";
 import moment from "moment";
 import Loader from "@/component/ui/loader/Loader";
+import PaymentButton from "@/component/paymentButton/PayButton";
+import { nanoid } from "nanoid";
+import useOrder from "@/hooks/useOrder";
 
 const QuoteContainer = styled.div`
   margin: 0 auto;
@@ -58,8 +61,12 @@ const ModalContent = styled.div`
 
 const QuotePage = ({ id }: { id: string }) => {
   const { quote, getQuoteById, payQuote, loading, error } = useQuote();
-
-  const [showModal, setShowModal] = useState(false);
+  const { showModal,
+    modalMessage,
+    modalErrorType,
+    openModal,
+    closeModal, handleRequestPayment } =
+  useOrder();
 
   useEffect(() => {
     if (id) {
@@ -67,12 +74,21 @@ const QuotePage = ({ id }: { id: string }) => {
     }
   }, [id]);
 
-  const handlePay = () => {
-    if (quote) {
-      //       payQuote(quote.paymentId, quote.total);
-      setShowModal(true);
-    }
+  const referenceId = nanoid(8);
+
+  const onSuccess = () => {
+    handleRequestPayment(referenceId, id);
+
+    setTimeout(() => {
+      getQuoteById(id);
+    }, 1500);
   };
+
+  const onClose = () => {
+    console.log("closed");
+  };
+
+
 
   return (
     <QuoteContainer>
@@ -107,7 +123,17 @@ const QuotePage = ({ id }: { id: string }) => {
                 <strong>Payment Reference: </strong> {quote.refId || "N/A"}
               </QuoteDetail>
             )}
-            {!quote.isPaid && <PayButton onClick={handlePay}>Pay</PayButton>}
+            {!quote.isPaid && quote.total && (
+              <PaymentButton
+                totalPrice={quote.total}
+                openModal={openModal}
+                buttonText="Pay Now"
+                color="color2"
+                onSuccess={onSuccess}
+                onClose={onClose}
+                referenceId={referenceId}
+              />
+            )}
           </div>
         )
       )}
@@ -115,7 +141,7 @@ const QuotePage = ({ id }: { id: string }) => {
       {/* <Modal show={showModal}>
         <ModalContent>
           <p>Payment Successful!</p>
-          <button onClick={() => setShowModal(false)}>Close</button>
+          <button onClick={closeModal}>Close</button>
         </ModalContent>
       </Modal> */}
     </QuoteContainer>

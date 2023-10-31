@@ -9,15 +9,18 @@ declare module "next-auth" {
       _id: string;
       firstName: string;
       lastName: string;
+      profilePic?: string;
       email: string;
       address?: string;
-      lga?: string;
       city?: string;
       state?: string;
       phone?: string;
       role: string;
       emailVerified: boolean;
       accessToken: string;
+      accountNo?: string;
+      accountName?: string;
+      bankName?: string;
     };
   }
 }

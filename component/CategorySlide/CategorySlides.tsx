@@ -10,9 +10,9 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 const CategorySliderContainer = styled.div`
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 20px;
   position: relative;
-  overflow: auto;
+  /* overflow: auto; */
   border-bottom: 1px solid var(--primary-20);
 
   .custom {
@@ -43,7 +43,7 @@ const CategoryItem = styled.div<{ active: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 10px;
+  padding: 13px 5px;
   border-radius: 5px;
   cursor: pointer;
   color: ${(props) => (props.active ? "var(--primary)" : "#ccc")};
@@ -98,6 +98,9 @@ export default function CategorySlide({
   return (
     <CategorySliderContainer>
       <Swiper
+        style={{
+          padding: "0 30px",
+        }}
         slidesPerView="auto"
         spaceBetween={10}
         navigation={{

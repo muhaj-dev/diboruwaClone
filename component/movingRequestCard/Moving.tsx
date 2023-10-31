@@ -438,7 +438,7 @@ const Moving: React.FC = () => {
         }}
         disabled={!session}
       >
-        Contact Us
+        Get a quote
       </Button>
       {showModal && (
         <NotificationModal

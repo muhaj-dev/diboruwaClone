@@ -57,15 +57,15 @@ export async function GET(
 
 export async function PUT(
   req: Request,
-  { params, body }: { params: { id: string }; body: { status: string } }
+  { params }: { params: { id: string } }
 ) {
   try {
     await connectDB();
 
     const requestId = params.id;
-    const newStatus = body.status;
+    const body = await req.json();
 
-    if (!requestId || !newStatus) {
+    if (!requestId) {
       return NextResponse.json(
         { error: "Request ID and new status are required" },
         { status: 400 }
@@ -78,13 +78,13 @@ export async function PUT(
       return NextResponse.json({ message: "Request does not exist" });
     }
 
-    if (newStatus === "paid") {
-      // Perform any payment-related logic here, and update isPaid, refId, etc.
-      request.isPaid = true;
-      request.refId = "your-payment-reference"; // Update with the actual payment reference
-    }
+    const { referenceId } = body;
 
-    request.status = newStatus;
+    if (referenceId) {
+      request.isPaid = true;
+      request.paymentId = referenceId;
+      request.status = "paid";
+    }
 
     await request.save();
 

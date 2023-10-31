@@ -72,7 +72,8 @@ export async function POST(req: Request, res: Response) {
       turnaroundTime: turnaroundTime,
       adminContact: "info@diboruwa.com",
     });
-    sendMail(user.email, "Order Confirmed", userEmailHTML)
+
+    sendMail(user.email, "Quote Submitted", userEmailHTML)
       .then((info) => {
         console.log("Email sent:", info);
       })
@@ -90,7 +91,13 @@ export async function POST(req: Request, res: Response) {
       items: newItems,
     });
 
-  
+    sendMail("ibrahim.saliman.zainab@gmail.com", "Quote Submitted", emailHTML)
+    .then((info) => {
+      console.log("Email sent:", info);
+    })
+    .catch((error) => {
+      console.error("Error sending email:", error);
+    });
 
     return NextResponse.json(
       { message: "emails sent successfully", quote: newRequest, success: true },

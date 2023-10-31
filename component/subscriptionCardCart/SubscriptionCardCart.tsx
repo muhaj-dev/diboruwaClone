@@ -55,7 +55,7 @@ const CartSubscription: React.FC<CartSubscriptionProps> = ({
       ) : (
         <>
           <p>
-            Bag Count: <span>{plan.bagCount}</span>{" "}
+            Bag Count: <span>{plan.bagCount}</span>
           </p>
           <p>
             Regularity: <span> {plan.regularity}</span>
