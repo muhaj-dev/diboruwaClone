@@ -9,6 +9,7 @@ import { sendMail } from "../sendMail";
 import { generateToken } from "@/templates/authTemplates";
 import ActivateAccount from "@/emails/ActivateAccount";
 import sendEmail from "../resend";
+import { activateAccnt } from "@/emails/mails";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -47,17 +48,20 @@ export const authOptions: NextAuthOptions = {
 
         if (!user.emailVerified) {
           const activationLink = generateToken(user._id);
-          const baseUrl = process.env.BASE_URL
+          const baseUrl = process.env.BASE_URL;
 
+          const emailHTML = activateAccnt({
+            customerName: user.firstName,
+            activationLink: `${baseUrl}/verifyMail/${activationLink}`,
+          });
 
-          await sendEmail(
-            user.email,
-            "Activate Account",
-            ActivateAccount({
-              customerName: user.firstName,
-              activationLink: `${baseUrl}/verifyMail/${activationLink}`,
+          sendMail(user.email, "Activate Account", emailHTML)
+            .then((info) => {
+              console.log("Email sent:", info);
             })
-          );
+            .catch((error) => {
+              console.error("Error sending email:", error);
+            });
           throw new Error("please check your mail for a verification link");
         }
 

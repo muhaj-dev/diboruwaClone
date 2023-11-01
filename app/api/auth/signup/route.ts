@@ -59,14 +59,7 @@ export async function POST(req: Request, res: Response) {
 
     const baseUrl = process.env.BASE_URL;
 
-    // await sendEmail(
-    //   user.email,
-    //   "Activate Account",
-    //   ActivateAccount({
-    //     customerName: user.firstName,
-    //     activationLink: `${baseUrl}/verifyMail/${activationLink}`,
-    //   })
-    // );
+    
 
     const emailHTML = activateAccnt({
       customerName: user.firstName,
