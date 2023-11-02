@@ -584,7 +584,7 @@ export const teamMembers = [
   {
     name: "Ricketts Rowland",
     role: "Lead Developer",
-    imageUrl: "/john-doe.jpg", // Provide the actual image URL
+    imageUrl: "/logo.png", // Provide the actual image URL
   },
   {
     name: "Ibrahim Saliman Zainab",
@@ -594,32 +594,32 @@ export const teamMembers = [
   {
     name: "Agula Adams",
     role: "Marketing and Customer Success",
-    imageUrl: "/ourteam.png", // Provide the actual image URL
+    imageUrl: "/logo.png", // Provide the actual image URL
   },
   {
     name: "Hassan Abbas",
     role: "Graphics Designer",
-    imageUrl: "/ourteam.png", // Provide the actual image URL
+    imageUrl: "/logo.png", // Provide the actual image URL
   },
   {
     name: "Adeyemo Akinola Ayomide",
     role: "Frontend Developer",
-    imageUrl: "/ourteam.png", // Provide the actual image URL
+    imageUrl: "/logo.png", // Provide the actual image URL
   },
   {
     name: "Mustapha Idris",
     role: "Head of Operations",
-    imageUrl: "/ourteam.png", // Provide the actual image URL
+    imageUrl: "/logo.png", // Provide the actual image URL
   },
   {
     name: "Yakubu Ibrahim Evuti",
     role: "Operation Manager",
-    imageUrl: "/ourteam.png", // Provide the actual image URL
+    imageUrl: "/yakubu.jpg", // Provide the actual image URL
   },
   {
     name: "Okorie Joshua",
     role: "Operation",
-    imageUrl: "/ourteam.png", // Provide the actual image URL
+    imageUrl: "/logo.png", // Provide the actual image URL
   },
   // Add more team members as needed
 ];

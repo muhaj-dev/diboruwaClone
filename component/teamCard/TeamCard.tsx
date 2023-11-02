@@ -31,6 +31,7 @@ const TeamImg = styled(Image)`
    width: 100%;
    height: 100%;
    object-fit: contain;
+   /* opacity: 0.3; */
 `;
 
 const TeamCard: React.FC<TeamCardProps> = ({ name, role, imageUrl }) => {

@@ -80,7 +80,7 @@ function subscriptionConfirmed(data: any) {
             </head>
             <body>
               <div class="image_logo">
-                <img src="./logo.png" alt="company_logo" />
+                    <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
               </div>
               <div class="email-container">
                 <div class="email-header">
@@ -254,7 +254,7 @@ export function activateAccnt(data: any) {
             <body>
               <div class="main_body">
                 <div class="image_logo">
-                  <img src="./logo.png" alt="company_logo" />
+                      <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
                 </div>
                 <div class="email-container">
                   <div class="email-header">
@@ -452,7 +452,7 @@ export function onBoarding(data: any) {
   <body>
     <div class="main_body">
       <div class="image_logo">
-        <img src="./logo.png" alt="company_logo" />
+            <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
       </div>
       <div class="email-container">
         <div class="email-header">
@@ -655,7 +655,7 @@ export function NewPartnerAdminNotification(data: any) {
   <body>
     <div class="main_body">
       <div class="image_logo">
-        <img src="./logo.png" alt="company_logo" />
+            <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
       </div>
       <div class="email-container">
         <div class="email-header">
@@ -875,7 +875,7 @@ export function NewPartnerNotification(data: any) {
   <body>
     <div class="main_body">
       <div class="image_logo">
-        <img src="./logo.png" alt="company_logo" />
+            <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
       </div>
       <div class="email-container">
         <div class="email-header">
@@ -1102,7 +1102,7 @@ export function PartnerVrification(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -1359,7 +1359,7 @@ export function OrderConfirmation(data: any) {
   <body>
     <div class="main_body">
       <div class="image_logo">
-        <img src="./logo.png" alt="company_logo" />
+            <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
       </div>
       <div class="email-container">
         <div class="email-header">
@@ -1625,7 +1625,7 @@ export function PartnerOrderNotification(data: any) {
   <body>
     <div class="main_body">
       <div class="image_logo">
-        <img src="./logo.png" alt="company_logo" />
+            <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
       </div>
       <div class="email-container">
         <div class="email-header">
@@ -1908,7 +1908,7 @@ export function AdminOrderNotification(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -2198,7 +2198,7 @@ export function AdminOrderCancelNotification(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -2488,7 +2488,7 @@ export function PartnerOrderAssignment(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -2773,7 +2773,7 @@ export function DispatchStatus(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -3057,7 +3057,7 @@ export function DeliveredStatus(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -3338,7 +3338,7 @@ export function UserQuoteRequestConfirmation(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -3608,7 +3608,7 @@ export function AdminQuoteResponse(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
         <div class="email-header">
@@ -3872,7 +3872,7 @@ export function AdminLaundryQuoteRequest(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -4127,7 +4127,7 @@ export function AdminHomeCleaningQuoteRequest(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -4386,7 +4386,7 @@ export function MovingRequestEmail(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -4666,7 +4666,7 @@ export function SubscriptionConfirmationEmail(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -4916,7 +4916,7 @@ export function AdminSubscriptionNotification(data: any) {
     <body>
       <div class="main_body">
         <div class="image_logo">
-          <img src="./logo.png" alt="company_logo" />
+              <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
         </div>
         <div class="email-container">
           <div class="email-header">
@@ -5161,7 +5161,7 @@ export function PasswordRecorvery(data: any) {
   <body>
     <div class="main_body">
       <div class="image_logo">
-        <img src="./logo.png" alt="company_logo" />
+            <img src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png" alt="company_logo" />
       </div>
       <div class="email-container">
         <div class="email-header">

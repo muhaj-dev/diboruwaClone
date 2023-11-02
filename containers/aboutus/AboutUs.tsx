@@ -269,7 +269,7 @@ const AboutUsPage: React.FC = () => {
         </div>
 
         <div className="image">
-          <Image src="/homepage_hero.png" fill={true} alt="...." />
+          <Image src="/ourteam.png" fill={true} alt="...." />
         </div>
       </FirstSection>
       <SecondSection>
