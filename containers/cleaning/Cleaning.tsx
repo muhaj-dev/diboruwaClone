@@ -129,7 +129,7 @@ const Cleaning = () => {
           </HeroList>
 
           <div className="ctaBtn">
-            <Button size="large" color="primary">
+            <Button size="large" color="primary"  onClick={() => router.push(session ? "/dashboard" : "/signin")}>
               Schedule a Clean
             </Button>
           </div>

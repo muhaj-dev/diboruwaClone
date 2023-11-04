@@ -7,6 +7,7 @@ import useAuth from "@/hooks/useAuth";
 import useOrder from "@/hooks/useOrder";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { nanoid } from "nanoid";
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { CheckmarkIcon } from "react-hot-toast";
 import { FaCheck } from "react-icons/fa";
@@ -184,8 +185,12 @@ const Pricing = () => {
     openModal,
     closeModal,
   } = useOrder();
+
+  const redirctedTab = useSearchParams();
+
+  const tabName = redirctedTab.get("tabName");
   const [activeSubscription, setActiveSubscription] = useState(
-    subscriptions[0]
+    tabName ? tabName : subscriptions[0]
   );
 
   const handleSubscriptionChange = (subscription: string) => {

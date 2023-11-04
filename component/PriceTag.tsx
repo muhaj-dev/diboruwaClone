@@ -90,7 +90,7 @@ const PriceCard = () => {
         <Description>
           Never be without a clean outfit again. Our specially designed Diboruwa Laundry Bag ensures your clothes remain organized and ready for pickup. Just fill, schedule, and relax
         </Description>
-        <CTAButton href="/pricing">
+        <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Laundry' } }}>
           Schedule a pick up
           <CTAButtonWrapper>
             <CTAIcon />

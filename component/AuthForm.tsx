@@ -49,6 +49,35 @@ const AuthFormSmall = styled.small`
   }
 `;
 
+// Function to check password strength and provide feedback
+function getPasswordStrengthError(password: string) {
+  // Define your custom criteria here
+  const minLength = 8;
+  const hasUppercase = /[A-Z]/.test(password);
+  const hasLowercase = /[a-z]/.test(password);
+  const hasDigits = /\d/.test(password);
+  const hasSpecialChars = /[!@#$%^&*]/.test(password);
+
+  // Calculate the strength score based on the criteria
+  let score = 0;
+  if (password.length >= minLength) score++;
+  if (hasUppercase) score++;
+  if (hasLowercase) score++;
+  if (hasDigits) score++;
+  if (hasSpecialChars) score++;
+
+  // Provide feedback based on the score
+  if (score < 2) {
+    return "Very Weak";
+  } else if (score === 2) {
+    return "Weak";
+  } else if (score === 3) {
+    return "Strong";
+  } else {
+    return "Excellent";
+  }
+}
+
 const AuthForm: React.FC<AuthFormProps> = ({
   title,
   fields,
@@ -69,7 +98,10 @@ const AuthForm: React.FC<AuthFormProps> = ({
 
   const { formData, handleChange, handleSubmit, resetForm, errors } = useForm(
     initialState,
-    onSubmit
+    () => {
+      onSubmit(formData);
+      resetForm();
+    }
   );
 
   return (
@@ -78,16 +110,28 @@ const AuthForm: React.FC<AuthFormProps> = ({
       <AuthFormWrapper onSubmit={handleSubmit}>
         {fields.map((field) => (
           <AuthFormFieldWrapper key={field.name}>
-            <Input
-              label={field.label}
-              name={field.name}
-              type={field.type}
-              id={field.name}
-              value={formData[field.name]}
-              onChange={(e) => handleChange(e, field.name)}
-              error={errors[field.name]}
-              showPasswordToggle={field.type === "password"}
-            />
+            {field.name === "password" ? ( // Check if the field is the "password" field
+              <Input
+                label={field.label}
+                name={field.name}
+                type={field.type}
+                id={field.name}
+                value={formData[field.name]}
+                onChange={(e) => handleChange(e, field.name)}
+                error={getPasswordStrengthError(formData[field.name])} // Get the password strength error
+                showPasswordToggle={true}
+              />
+            ) : (
+              <Input
+                label={field.label}
+                name={field.name}
+                type={field.type}
+                id={field.name}
+                value={formData[field.name]}
+                onChange={(e) => handleChange(e, field.name)}
+                error={errors[field.name]}
+              />
+            )}
           </AuthFormFieldWrapper>
         ))}
         <AuthFormAlternateRoute className="alternate__route mb-2 float-right">

@@ -2,10 +2,12 @@ import nodemailer from "nodemailer";
 
 // Create a transporter for sending emails
 const transporter = nodemailer.createTransport({
-  service: "Gmail",
+  host: "smtp.zoho.com",
+  port: 465,
+  secure: true, // use SSL
   auth: {
-    user: "z3phyronsnides@gmail.com",
-    pass: "mvgqscfzkddfyemi",
+    user: "info@gmail.com",
+    pass: "XAMR26spfSG2",
   },
 });
 

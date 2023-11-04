@@ -40,12 +40,20 @@ const Container = styled.div`
   .formControl {
     wdith: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
     }
+  }
+
+  .input_field {
+    margin-bottom: 10px;
+  }
+
+  .input_field small {
+    font-size: 10px;
   }
 `;
 const MultiSelectWrapper = styled.div`
@@ -204,7 +212,7 @@ const ItemName = styled.span`
   padding: 0 8px;
 `;
 
-const Notification = styled.div`
+const Notification = styled.small`
   color: #ff0000;
   margin-top: 10px;
 `;
@@ -215,7 +223,7 @@ export const LocationInput = styled.input`
   outline: none;
   border: none;
   border-radius: 8px;
-  margin-bottom: 10px;
+  
   width: 100%;
 `;
 
@@ -228,6 +236,22 @@ const QuoteButton = styled.div`
   margin-left: auto;
 `;
 
+const validateForm = (formData: any) => {
+  const errors: any = {};
+
+  if (!formData.from) {
+    errors.from = "Please enter a 'from' location.";
+  }
+  if (!formData.to) {
+    errors.to = "Please enter a 'to' location.";
+  }
+  if (!formData.date) {
+    errors.date = "Please select a date.";
+  }
+
+  return errors;
+};
+
 const Moving: React.FC = () => {
   const { data: session } = useSession();
   const router = useRouter();
@@ -237,6 +261,16 @@ const Moving: React.FC = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [quote, setQuote] = useState<string | null>(null);
   const [notification, setNotification] = useState<string | null>(null);
+  const [formData, setFormData] = useState({
+    from: "",
+    to: "",
+    date: "",
+  });
+  const [errors, setErrors] = useState({
+    from: "",
+    to: "",
+    date: "",
+  });
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
@@ -324,24 +358,26 @@ const Moving: React.FC = () => {
     }
   };
 
-  const { formData, handleChange, resetForm, errors } = useForm(
-    {
-      from: "",
-      to: "",
-      date: "",
-    },
-    () => {}
-  );
-
   const onSubmit = (type: any) => {
-    const data = {
-      properties: selectedItems,
-      type,
-      address: formData,
-    };
+    const errors = validateForm(formData);
 
-    console.log(data);
-    handleQuote(data);
+    if (session) {
+      if (Object.keys(errors).length === 0) {
+        const data = {
+          properties: selectedItems,
+          type,
+          address: formData,
+        };
+        console.log(data);
+
+        handleQuote(data);
+      } else {
+        setErrors(errors);
+      }
+    } else {
+      router.push("/signin");
+      toast("please sign in to make requests");
+    }
   };
 
   return (
@@ -401,45 +437,48 @@ const Moving: React.FC = () => {
       {notification && <Notification>{notification}</Notification>}
 
       <div className="formControl">
-        <LocationInput
-          type="text"
-          name="from"
-          placeholder="from"
-          value={formData.from}
-          onChange={(e: any) => handleChange(e, e.target.name)}
-        />
-        <LocationInput
-          type="text"
-          name="to"
-          placeholder="to"
-          value={formData.to}
-          onChange={(e: any) => handleChange(e, e.target.name)}
-        />
+        <div className="input_field">
+          <LocationInput
+            type="text"
+            name="from"
+            placeholder="from"
+            value={formData.from}
+            onChange={(e: any) =>
+              setFormData({ ...formData, from: e.target.value })
+            }
+          />
+          {errors.from && <Notification>{errors.from}</Notification>}
+        </div>
+
+        <div className="input_field">
+          <LocationInput
+            type="text"
+            name="to"
+            placeholder="to"
+            value={formData.to}
+            onChange={(e: any) =>
+              setFormData({ ...formData, to: e.target.value })
+            }
+          />
+          {errors.to && <Notification>{errors.to}</Notification>}
+        </div>
       </div>
 
-      <LocationInput
-        type="date"
-        name="date"
-        // placeholder="to"
-        value={formData.date}
-        onChange={(e: any) => handleChange(e, e.target.name)}
-      />
-
-      <Button
-        size="medium"
-        color="primary"
-        onClick={() => {
-          if (session) {
-            onSubmit("moving");
-          } else {
-            router.push("signin");
-            toast("please sign in to add item to cart");
+      <div className="input_field">
+        {" "}
+        <LocationInput
+          type="date"
+          name="date"
+          // placeholder="to"
+          value={formData.date}
+          onChange={(e: any) =>
+            setFormData({ ...formData, date: e.target.value })
           }
-        }}
-        disabled={!session}
-      >
-        Get a quote
-      </Button>
+        />
+        {errors.date && <Notification>{errors.date}</Notification>}
+      </div>
+
+      <QuoteButton onClick={() => onSubmit("moving")}>Get a Quote</QuoteButton>
       {showModal && (
         <NotificationModal
           message={modalMessage}

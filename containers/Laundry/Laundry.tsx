@@ -23,6 +23,8 @@ import MoreServices from "@/component/shared/MoreServices";
 import Success from "@/component/modals/Modal";
 import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
+import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 const howItWorksData = [
   {
@@ -64,6 +66,9 @@ const laundryItems = [
 
 const Laundry = () => {
   const { modal, closeModal } = useCartStore();
+  const { data: session } = useSession();
+  const router = useRouter();
+
 
   return (
     <Container>
@@ -105,7 +110,7 @@ const Laundry = () => {
           </HeroList>
 
           <div className="ctaBtn">
-            <Button size="large" color="primary">
+            <Button size="large" color="primary"  onClick={() => router.push(session ? "/dashboard" : "/signin")}>
               Order Now
             </Button>
           </div>

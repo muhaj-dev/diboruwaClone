@@ -76,15 +76,15 @@ const MultiSelectDropdown = styled.div`
 `;
 
 const MultiSelectOption = styled.div`
-  padding: 10px 20px;
-  font-size: 18px;
+  padding: 7px 20px;
+  font-size: 14px;
   background-color: var(--primary-20);
 `;
 
 const SelectedOptions = styled.div`
   display: grid;
   gap: 10px;
-  margin: 20px;
+  margin: 10px;
   max-height: 150px;
   overflow-y: auto;
   &::-webkit-scrollbar {
@@ -113,7 +113,7 @@ const MultiSelectButton = styled.button`
   display: flex;
   align-items: center;
 
-  padding: 2px  5px;
+  padding: 2px 5px;
   font-size: 18px;
   background-color: var(--primary-20);
   width: 100%;
@@ -123,7 +123,6 @@ const MultiSelectButton = styled.button`
   text-align: left;
   border-radius: 8px;
   transition: all 0.5s ease;
- 
 
   button {
     width: 40px;
@@ -133,7 +132,6 @@ const MultiSelectButton = styled.button`
     justify-content: center;
     font-size: 20px;
     background: #fff;
-
     border-radius: 8px;
     outline: none;
     border: none;
@@ -141,9 +139,9 @@ const MultiSelectButton = styled.button`
     color: var(--primary);
 
     &:hover {
-    background-color: var(--primary-20);
-    color: #fff;
-  }
+      background-color: var(--primary-20);
+      color: #fff;
+    }
   }
 `;
 
@@ -154,7 +152,6 @@ const CustomInput = styled.input`
   padding: 15px 20px;
   outline: none;
   border: none;
- 
 `;
 
 const Counter = styled.div`
@@ -368,7 +365,7 @@ const CustomClean: React.FC = () => {
           if (session) {
             handleGetQuote();
           } else {
-            router.push("signin");
+            router.push("/signin");
             toast("please sign in to add item to cart");
           }
         }}

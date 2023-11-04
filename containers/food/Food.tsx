@@ -20,9 +20,15 @@ import { HWW } from "@/constants";
 import ProductList from "@/component/ProductList/ProductList";
 import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const Food = () => {
   const { modal, closeModal } = useCartStore();
+
+  const { data: session } = useSession();
+  const router = useRouter();
+
   return (
     <Container>
       <HeroContainer bg="primary-20">
@@ -52,7 +58,7 @@ const Food = () => {
           </HeroList>
 
           <div className="ctaBtn">
-            <Button size="large" color="primary">
+            <Button size="large" color="primary"  onClick={() => router.push(session ? "/dashboard" : "/signin")}>
               Order Now
             </Button>
           </div>
