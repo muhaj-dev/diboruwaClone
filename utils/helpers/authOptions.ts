@@ -50,18 +50,14 @@ export const authOptions: NextAuthOptions = {
           const activationLink = generateToken(user._id);
           const baseUrl = process.env.BASE_URL;
 
-          const emailHTML = activateAccnt({
-            customerName: user.firstName,
-            activationLink: `${baseUrl}/verifyMail/${activationLink}`,
-          });
-
-          sendMail(user.email, "Activate Account", emailHTML)
-            .then((info) => {
-              console.log("Email sent:", info);
+          await sendEmail(
+            user.email,
+            "Activate Account",
+            ActivateAccount({
+              customerName: user.firstName,
+              activationLink: `${baseUrl}/verifyMail/${activationLink}`,
             })
-            .catch((error) => {
-              console.error("Error sending email:", error);
-            });
+          );
           throw new Error("please check your mail for a verification link");
         }
 

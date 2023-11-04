@@ -37,18 +37,14 @@ export async function POST(req: Request, res: Response) {
 
     const baseUrl = process.env.BASE_URL;
 
-    const emailHTML = PasswordRecorvery({
-      userName: userExists.firstName,
-      passwordResetLink: `${baseUrl}/reset-password?token=${resetToken}`,
-    });
-
-    sendMail(userExists.email, "Reset Password", emailHTML)
-      .then((info) => {
-        console.log("Email sent:", info);
+    await sendEmail(
+      userExists.email,
+      "Activate Account",
+      PasswordRecoveryEmail({
+        userName: userExists.firstName,
+        passwordResetLink: `${baseUrl}/reset-password?token=${resetToken}`,
       })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-      });
+    );
 
     return NextResponse.json(
       {

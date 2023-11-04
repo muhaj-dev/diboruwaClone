@@ -86,50 +86,47 @@ export async function POST(req: Request, res: Response) {
 
           assigned = true;
 
-          const userEmailHTML = OrderConfirmation({
-            customerName: user.firstName,
-            orderNumber: order.paymentId,
-            itemsOrdered: existingCart.cartItems,
-            total: existingCart.total, // Total order amount
-            estimatedDeliveryTime: "2-3 days",
-          });
-  
-          const partnerEmailHTML = PartnerOrderNotification({
-            partnerFirstName: 'John',
-            customerFullName: user.firstName,
-            orderNumber: order.paymentId,
-            itemsOrdered: existingCart.cartItems,
-            totalAmount: existingCart.total, // Total order amount
-            customerAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
-            orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
-            orderLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
-          });
-  
-          const adminEmailHTML = AdminOrderNotification({
-            customerFullName: `${user.firstName} ${user.lastName}`,
-            orderNumber: body.referenceId,
-            itemsOrdered: existingCart.cartItems,
-            totalAmount: existingCart.total,
-            customerAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
-            partnerFullName: `${partner.firstName} ${partner.lastName}`,
-            orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
-            adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
-          });
-  
-          sendMail(user.email, "Order Confirmed", userEmailHTML)
-            .then((info) => {
-              console.log("Email sent:", info);
+          await sendEmail(
+            user.email,
+            "Order Confirmed",
+            OrderConfirmation({
+              customerName: user.firstName,
+              orderItem: {
+                orderItems: existingCart.cartItems,
+                total: existingCart.total,
+                estimatedDeliveryTime: "3 working days",
+              },
             })
-            .catch((error) => {
-              console.error("Error sending email:", error);
-            });
-          sendMail("z3phyronsnides@gmail.com", "New Order Notification", adminEmailHTML)
-            .then((info) => {
-              console.log("Email sent:", info);
+          );
+
+          await sendEmail(
+            partner.email,
+            "New Order Notification",
+            PartnerOrderNotificationComponent({
+              partnerFirstName: partner.firstName,
+              customerFullName: `${user.firstName} ${user.lastName}`,
+              orderNumber: body.referenceId,
+              itemsOrdered: existingCart.cartItems,
+              totalAmount: existingCart.total,
+              customerAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+              orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
+              orderLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
             })
-            .catch((error) => {
-              console.error("Error sending email:", error);
-            });
+          );
+          await sendEmail(
+            "ibrahim.saliman.zainab@gmail.com",
+            "New Order Notification",
+            AdminOrderNotificationComponent({
+              customerFullName: `${user.firstName} ${user.lastName}`,
+              orderNumber: body.referenceId,
+              itemsOrdered: existingCart.cartItems,
+              totalAmount: existingCart.total,
+              customerAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+              partnerFullName: `${partner.firstName} ${partner.lastName}`,
+              orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
+              adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
+            })
+          );
         
 
           existingCart.cartItems = [];
@@ -153,40 +150,33 @@ export async function POST(req: Request, res: Response) {
 
         await order.save();
 
-        const userEmailHTML = OrderConfirmation({
-          customerName: user.firstName,
-          orderNumber: order.paymentId,
-          itemsOrdered: existingCart.cartItems,
-          total: existingCart.total, // Total order amount
-          estimatedDeliveryTime: "2-3 days",
-        });
-
-
-        const adminEmailHTML = AdminOrderNotification({
-          customerFullName: `${user.firstName} ${user.lastName}`,
-          orderNumber: body.referenceId,
-          itemsOrdered: existingCart.cartItems,
-          totalAmount: existingCart.total,
-          customerAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
-          partnerFullName: `un-assigned`,
-          orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
-          adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
-        });
-
-        sendMail(user.email, "Order Confirmed", userEmailHTML)
-          .then((info) => {
-            console.log("Email sent:", info);
+        await sendEmail(
+          user.email,
+          "Order Confirmed",
+          OrderConfirmation({
+            customerName: user.firstName,
+            orderItem: {
+              orderItems: existingCart.cartItems,
+              total: existingCart.total,
+              estimatedDeliveryTime: "3 working days",
+            },
           })
-          .catch((error) => {
-            console.error("Error sending email:", error);
-          });
-        sendMail("z3phyronsnides@gmail.com", "New Order Notification", adminEmailHTML)
-          .then((info) => {
-            console.log("Email sent:", info);
+        );
+
+        await sendEmail(
+          "ibrahim.saliman.zainab@gmail.com",
+          "New Order Notification",
+          AdminOrderNotificationComponent({
+            customerFullName: `${user.firstName} ${user.lastName}`,
+            orderNumber: body.referenceId,
+            itemsOrdered: existingCart.cartItems,
+            totalAmount: existingCart.total,
+            customerAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+            partnerFullName: `un-assigned`,
+            orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
+            adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
           })
-          .catch((error) => {
-            console.error("Error sending email:", error);
-          });
+        );
         
 
 

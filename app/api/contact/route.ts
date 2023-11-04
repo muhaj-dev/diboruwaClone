@@ -12,16 +12,14 @@ export async function POST(req: Request, res: Response) {
 
     const body = await req.json();
 
-    const { email, name,  message } = body;
+    const { email, name, message } = body;
 
-    // await sendMail("z3phyronsnides@gmail.com", subject, message);
-    sendMail("z3phyronsnides@gmail.com", `New message from diboruwa(${name})`, `message from ${email} - ${message}`)
-    .then((info) => {
-      console.log("Email sent:", info);
-    })
-    .catch((error) => {
-      console.error("Error sending email:", error);
-    });
+    await sendMail(
+      "ibrahim.saliman.zainab@gmail.com",
+      `New message from diboruwa(${name})`,
+      `message from ${email} - ${message}`
+    );
+
     return NextResponse.json(
       { message: "emails sent successfully", success: true },
       { status: 201 }

@@ -61,18 +61,24 @@ export async function POST(req: Request, res: Response) {
 
     
 
-    const emailHTML = activateAccnt({
-      customerName: user.firstName,
-      activationLink: `${baseUrl}/verifyMail/${activationLink}`,
-    });
+    
 
-    sendMail(user.email, "Activate Account", emailHTML)
-      .then((info) => {
-        console.log("Email sent:", info);
+    await sendEmail(
+      user.email,
+      "Activate Account",
+      ActivateAccount({
+        customerName: user.firstName,
+        activationLink: `${baseUrl}/verifyMail/${activationLink}`,
       })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-      });
+    );
+
+    // sendMail(user.email, "Activate Account", emailHTML)
+    //   .then((info) => {
+    //     console.log("Email sent:", info);
+    //   })
+    //   .catch((error) => {
+    //     console.error("Error sending email:", error);
+    //   });
 
     return NextResponse.json(
       {

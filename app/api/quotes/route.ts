@@ -95,63 +95,45 @@ export async function POST(req: Request, res: Response) {
 
     await newRequest.save();
 
-    const userEmailHTML = UserQuoteRequestConfirmation({
-      firstName: user.firstName,
-      serviceType: data.type,
-      items: newItems,
-      timestamp: timestamp,
-      turnaroundTime: turnaroundTime,
-      adminContact: "info@diboruwa.com",
-    });
-    sendMail(user.email, "Order Confirmed", userEmailHTML)
-      .then((info) => {
-        console.log("Email sent:", info);
+    await sendEmail(
+      user.email,
+      "new Quote",
+      UserQuoteRequestConfirmation({
+        firstName: user.firstName,
+        serviceType: data.type,
+        description: quoteText,
+        timestamp: timestamp,
+        turnaroundTime: turnaroundTime,
+        adminContact: "info@diboruwa.com",
       })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-      });
+    );
 
     if (data.type === "laundry") {
-      const laundryEmailHTML = AdminLaundryQuoteRequest({
-        adminName: "Ibrahim",
-        userName: `${user.firstName} ${user.lastName}`,
-        userEmail: user.email,
-        userContact: user.phone,
-        userAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
-        laundryItems: data.quote,
-      });
-      sendMail(
+      await sendEmail(
         "z3phyronsnides@gmail.com",
-        "New Quote Request",
-        laundryEmailHTML
-      )
-        .then((info) => {
-          console.log("Email sent:", info);
+        "new Quote",
+        AdminLaundryQuoteRequest({
+          adminName: "Ibrahim",
+          userName: `${user.firstName} ${user.lastName}`,
+          userEmail: user.email,
+          userContact: user.phone,
+          userAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+          laundryItems: data.quote,
         })
-        .catch((error) => {
-          console.error("Error sending email:", error);
-        });
+      );
     } else if (data.type === "cleaning") {
-      const cleaningEmailHTML = AdminHomeCleaningQuoteRequest({
-        adminName: "Ibrahim",
-        userName: `${user.firstName} ${user.lastName}`,
-        userEmail: user.email,
-        userContact: user.phone,
-        userAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
-        homeCleaningAreas: data.quote,
-      });
-
-      sendMail(
+      await sendEmail(
         "z3phyronsnides@gmail.com",
-        "New Quote Request",
-        cleaningEmailHTML
-      )
-        .then((info) => {
-          console.log("Email sent:", info);
+        "new Quote",
+        AdminHomeCleaningQuoteRequest({
+          adminName: "Ibrahim",
+          userName: `${user.firstName} ${user.lastName}`,
+          userEmail: user.email,
+          userContact: user.phone,
+          userAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+          homeCleaningAreas: data.quote,
         })
-        .catch((error) => {
-          console.error("Error sending email:", error);
-        });
+      );
     }
 
     return NextResponse.json(

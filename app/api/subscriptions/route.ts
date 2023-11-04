@@ -65,13 +65,25 @@ export async function POST(req: Request, res: Response) {
       // Save the new subscription to the database
       await newSubscription.save();
 
-      const emailHTML = SubscriptionConfirmationEmail({
-        customerName: `${user.firstName} ${user.lastName}`,
-        serviceName: subscription.type,
-        planName: subscription.plan,
-        startDate: moment(start).format("MMMM D, YYYY"),
-        endDate: moment(due).format("MMMM D, YYYY"),
-      });
+      // const emailHTML = SubscriptionConfirmationEmail({
+      //   customerName: `${user.firstName} ${user.lastName}`,
+      //   serviceName: subscription.type,
+      //   planName: subscription.plan,
+      //   startDate: moment(start).format("MMMM D, YYYY"),
+      //   endDate: moment(due).format("MMMM D, YYYY"),
+      // });
+
+      await sendEmail(
+        user.email,
+        "Subscription confirmed",
+        SubscriptionConfirmationEmail({
+          customerName: `${user.firstName} ${user.lastName}`,
+          serviceName: subscription.type,
+          planName: subscription.plan,
+          startDate: moment(start).format("MMMM D, YYYY"),
+          endDate: moment(due).format("MMMM D, YYYY"),
+        })
+      );
 
       const adminmailHtml = AdminSubscriptionNotification({
         customerName: `${user.firstName} ${user.lastName}`,
@@ -81,13 +93,13 @@ export async function POST(req: Request, res: Response) {
         endDate: moment(due).format("MMMM D, YYYY"),
       });
 
-      sendMail(user.email, "New Subscription", emailHTML)
-        .then((info) => {
-          console.log("Email sent:", info);
-        })
-        .catch((error) => {
-          console.error("Error sending email:", error);
-        });
+      // sendMail(user.email, "New Subscription", emailHTML)
+      //   .then((info) => {
+      //     console.log("Email sent:", info);
+      //   })
+      //   .catch((error) => {
+      //     console.error("Error sending email:", error);
+      //   });
       sendMail("z3phyronsnides@gmail.com", "New Subscription", adminmailHtml)
         .then((info) => {
           console.log("Email sent:", info);

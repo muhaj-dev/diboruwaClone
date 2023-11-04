@@ -5,7 +5,7 @@ import { Order } from "@/utils/models/Order";
 import User from "@/utils/models/Users";
 import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
-import { resend } from "@/utils/resend";
+import sendEmail, { resend } from "@/utils/resend";
 import SubscriptionConfirmation from "@/emails/SubscriptionOrder";
 import moment from "moment";
 import { SubscriptionConfirmationEmail } from "@/emails/mails";
@@ -57,21 +57,19 @@ export async function PUT(
         paymentId: body.referenceId,
       });
 
-      const emailHTML = SubscriptionConfirmationEmail({
-        customerName: `${user.firstName} ${user.lastName}`,
-        serviceName: subscription.type,
-        planName: subscription.plan,
-        startDate: moment(subscription.start).format("MMMM D, YYYY"),
-        endDate: moment(subscription.due).format("MMMM D, YYYY"),
-      });
+     
 
-      sendMail(user.email, "Reset Password", emailHTML)
-        .then((info) => {
-          console.log("Email sent:", info);
+      await sendEmail(
+        user.email,
+        "Subscription Confirmed",
+        SubscriptionConfirmation({
+          customerName: user.firstName,
+          service: subscription.type,
+          plan: subscription.plan,
+          startDate: moment(subscription.start).format("YYYY-MM-DD"),
+          endDate: moment(subscription.due).format("YYYY-MM-DD"),
         })
-        .catch((error) => {
-          console.error("Error sending email:", error);
-        });
+      );
 
       await order.save();
     }

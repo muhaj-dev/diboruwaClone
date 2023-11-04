@@ -2,8 +2,7 @@
 
 import React, { ReactNode } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import "./mail.module.css"
-
+import "./mail.module.css";
 
 const colors = {
   lightBlue: "#00afdb",
@@ -23,9 +22,8 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
     <div
       style={{
         backgroundColor: "rgba(14, 252, 213, 0.329)",
-        padding: "5% 10%",
-        minHeight: "100vh",
-       
+        padding: "5%",
+        minHeight: "max-content",
       }}
       className="main"
     >
@@ -38,7 +36,10 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
           margin: "auto",
         }}
       >
-       
+        <img
+          src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png"
+          alt="company_logo"
+        />
       </div>
 
       <div
@@ -473,7 +474,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
 
   const tableStyles = {
     border: `2px solid ${colors.darkBlue}`, // Green border: ;
-   
+
     width: "100%", // Make the table take up 100% width
   };
 
@@ -623,7 +624,7 @@ export const AdminOrderNotificationComponent: React.FC<{
 
   const tableStyles = {
     border: `2px solid ${colors.darkBlue}`, // Green border: ;
-   
+
     width: "100%", // Make the table take up 100% width
   };
 
@@ -772,7 +773,7 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
 
   const tableStyles = {
     border: `2px solid ${colors.darkBlue}`, // Green border: ;
-   
+
     width: "100%", // Make the table take up 100% width
   };
 
@@ -908,7 +909,7 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
 
   const tableStyles = {
     border: `2px solid ${colors.darkBlue}`, // Green border: ;
-   
+
     width: "100%", // Make the table take up 100% width
   };
   const headerCellStyle = {
@@ -1025,7 +1026,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
 
   const tableStyles = {
     border: `2px solid ${colors.darkBlue}`,
-   
+
     width: "100%",
   };
 
@@ -1141,7 +1142,7 @@ export const DeliveredStatusNotificationComponent: React.FC<{
 
   const tableStyles = {
     border: `2px solid ${colors.darkBlue}`, // Green border: ;
-  
+
     width: "100%",
   };
 
@@ -1328,7 +1329,6 @@ export const UserQuoteRequestConfirmation: React.FC<{
     <EmailTemplate subject="Request confirmation">
       <div style={userEmailStyle}>
         <p>
-         
           Hello{" "}
           <strong style={{ textTransform: "capitalize" }}>{firstName}</strong>,
         </p>

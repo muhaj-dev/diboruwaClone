@@ -63,41 +63,40 @@ export async function POST(req: Request, res: Response) {
     const timestamp = moment().format("YYYY-MM-DD HH:mm:ss");
     const turnaroundTime = moment().add(1, "day").format("YYYY-MM-DD HH:mm:ss");
 
+    const quoteText = data.quote
+    .filter((item: any) => item.amount > 0)
+    .map((item: any) => `${item.name} -- ${item.amount}`)
+    .join(", ");
 
-    const userEmailHTML = UserQuoteRequestConfirmation({
-      firstName: user.firstName,
-      serviceType: data.type,
-      items: newItems,
-      timestamp: timestamp,
-      turnaroundTime: turnaroundTime,
-      adminContact: "info@diboruwa.com",
-    });
-
-    sendMail(user.email, "Quote Submitted", userEmailHTML)
-      .then((info) => {
-        console.log("Email sent:", info);
+    await sendEmail(
+      user.email,
+      "new Quote",
+      UserQuoteRequestConfirmation({
+        firstName: user.firstName,
+        serviceType: data.type,
+        description: quoteText,
+        timestamp: timestamp,
+        turnaroundTime: turnaroundTime,
+        adminContact: "info@diboruwa.com",
       })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-      });
+    );
 
-    const emailHTML = MovingRequestEmail({
-      customerName: `${user.firstName} ${user.lastName}`,
-      customerEmail: user.email,
-      customerPhone: user.phone,
-      currentAddress: data.address.from,
-      destinationAddress: data.address.to,
-      preferredDate: moment(data.address.date).format("MMMM D, YYYY"),
-      items: newItems,
-    });
+     await sendEmail(
+      "ibrahim.saliman.zainab@gmail.com",
+      "new Quote",
+      MovingRequestEmail({
+        customerName: `${user.firstName} ${user.lastName}`,
+        customerEmail: user.email,
+        customerPhone: user.phone,
+        currentAddress: data.address.from,
+        destinationAddress: data.address.to,
+        preferredDate: moment(data.address.date).format("MMMM D, YYYY"),
 
-    sendMail("ibrahim.saliman.zainab@gmail.com", "Quote Submitted", emailHTML)
-    .then((info) => {
-      console.log("Email sent:", info);
-    })
-    .catch((error) => {
-      console.error("Error sending email:", error);
-    });
+        companyName: "Dibo Ruwa",
+      })
+    );
+
+    
 
     return NextResponse.json(
       { message: "emails sent successfully", quote: newRequest, success: true },
