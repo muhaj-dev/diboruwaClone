@@ -8,8 +8,7 @@ import { NextResponse } from "next/server";
 import sendEmail, { resend } from "@/utils/resend";
 import SubscriptionConfirmation from "@/emails/SubscriptionOrder";
 import moment from "moment";
-import { SubscriptionConfirmationEmail } from "@/emails/mails";
-import { sendMail } from "@/utils/sendMail";
+
 
 export async function PUT(
   req: Request,

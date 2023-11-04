@@ -3,6 +3,7 @@
 import React, { ReactNode } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./mail.module.css";
+import Image from "next/image";
 
 const colors = {
   lightBlue: "#00afdb",
@@ -37,6 +38,11 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
         }}
       >
         <img
+           style={{
+            width: "100%",
+            height: "100%",
+           objectFit: "contain"
+          }}
           src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png"
           alt="company_logo"
         />
@@ -1345,7 +1351,7 @@ export const UserQuoteRequestConfirmation: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Description/Notes:</strong> {description}
+            <strong>Items for cleanning:</strong> {description}
           </li>
           <li>
             {" "}
@@ -1515,7 +1521,7 @@ export const MovingRequestEmail: React.FC<{
   currentAddress: string;
   destinationAddress: string;
   preferredDate: string;
-  // itemsForMoving: string[];
+  itemsForMoving: string;
   // specialInstructions: string;
   companyName: string;
 }> = ({
@@ -1525,7 +1531,7 @@ export const MovingRequestEmail: React.FC<{
   currentAddress,
   destinationAddress,
   preferredDate,
-  // itemsForMoving,
+  itemsForMoving,
 
   companyName,
 }) => {
@@ -1593,6 +1599,52 @@ export const MovingRequestEmail: React.FC<{
 };
 
 export const SubscriptionConfirmationEmail: React.FC<{
+  customerName: string;
+  serviceName: string;
+  planName: string;
+  startDate: string;
+  endDate: string;
+}> = ({ customerName, serviceName, planName, startDate, endDate }) => {
+  const contentStyle: React.CSSProperties = {
+    lineHeight: "2",
+  };
+  return (
+    <EmailTemplate subject="  Your Subscription with Dibo Ruwa is Confirmed!">
+      <div style={contentStyle}>
+        <p>
+          Hello{" "}
+          <strong style={{ textTransform: "capitalize" }}>
+            {customerName}
+          </strong>
+          ,
+        </p>
+
+        <p>
+          Hello Admin,
+      </p>
+      <p>
+          You have a new subscription request for your service. Here are the details:
+      </p>
+      <h3>Subscription Details:</h3>
+      <ul>
+          <li><strong>Customer Name:</strong> {customerName}</li>
+          <li><strong>Service Name:</strong> {serviceName}</li>
+          <li><strong>Plan Name:</strong> {planName}</li>
+          <li><strong>Start Date:</strong> {startDate}</li>
+          <li><strong>End Date:</strong> {endDate}</li>
+      </ul>
+      <p>
+          Please review this subscription and take any necessary action.
+      </p>
+       
+        <p>Thank you for trusting Dibo Ruwa. We&#39;re excited to serve you!</p>
+        <p>Warmly,</p>
+        <p>The Dibo Ruwa Team</p>
+      </div>
+    </EmailTemplate>
+  );
+};
+export const AdminSubscriptionEmail: React.FC<{
   customerName: string;
   serviceName: string;
   planName: string;

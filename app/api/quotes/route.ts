@@ -9,14 +9,12 @@ import sendEmail from "@/utils/resend";
 import { sendMail } from "@/utils/sendMail";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/utils/helpers/authOptions";
-import {} from "@/emails";
+import { AdminHomeCleaningQuoteRequest,
+  AdminLaundryQuoteRequest,
+  UserQuoteRequestConfirmation,} from "@/emails";
 import moment from "moment";
 import { Request } from "@/utils/models/Requests";
-import {
-  AdminHomeCleaningQuoteRequest,
-  AdminLaundryQuoteRequest,
-  UserQuoteRequestConfirmation,
-} from "@/emails/mails";
+
 
 type Item = {
   name: string;
@@ -110,7 +108,7 @@ export async function POST(req: Request, res: Response) {
 
     if (data.type === "laundry") {
       await sendEmail(
-        "z3phyronsnides@gmail.com",
+        "ibrahim.saliman.zainab@gmail.com",
         "new Quote",
         AdminLaundryQuoteRequest({
           adminName: "Ibrahim",
@@ -123,7 +121,7 @@ export async function POST(req: Request, res: Response) {
       );
     } else if (data.type === "cleaning") {
       await sendEmail(
-        "z3phyronsnides@gmail.com",
+        "ibrahim.saliman.zainab@gmail.com",
         "new Quote",
         AdminHomeCleaningQuoteRequest({
           adminName: "Ibrahim",

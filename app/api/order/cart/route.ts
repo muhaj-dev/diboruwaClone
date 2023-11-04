@@ -2,7 +2,8 @@ import {
   AdminOrderNotificationComponent,
   PartnerOrderNotificationComponent,
 } from "@/emails";
-import { AdminOrderNotification, OrderConfirmation, PartnerOrderNotification } from "@/emails/mails";
+import OrderConfirmation from "@/emails/FoodOrder";
+
 
 import { closeDB, connectDB } from "@/utils/db";
 import { authOptions } from "@/utils/helpers/authOptions";

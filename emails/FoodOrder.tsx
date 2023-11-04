@@ -24,7 +24,7 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
   orderItem: { orderItems, total, estimatedDeliveryTime },
 }) => {
   const containerStyle: React.CSSProperties = {
-    lineHeight: "2"
+    lineHeight: "2",
   };
 
   const headingStyle: React.CSSProperties = {
@@ -57,24 +57,13 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
           Thank you for your order! We&#39;ve received your payment and your
           items are now being prepared.
         </p>
-        <table style={tableStyle}>
-          <thead>
-            <tr style={{background: colors.darkBlue}}>
-              <th style={tableCellStyle}>Item</th>
-              <th style={tableCellStyle}>Quantity</th>
-              <th style={tableCellStyle}>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            {orderItems.map((item, index) => (
-              <tr key={index}>
-                <td style={tableCellStyle}>{item.title}</td>
-                <td style={tableCellStyle}>{item.quantity}</td>
-                <td style={tableCellStyle}>{item.total}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div>
+          {orderItems.map((item, index) => (
+            <li key={index}>
+              {item.title} - {item.quantity} - {item.total}
+            </li>
+          ))}
+        </div>
         <p>
           {" "}
           <strong>Total Amount:</strong> {total}

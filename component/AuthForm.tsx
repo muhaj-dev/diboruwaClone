@@ -51,6 +51,11 @@ const AuthFormSmall = styled.small`
 
 // Function to check password strength and provide feedback
 function getPasswordStrengthError(password: string) {
+  // Check if the input is empty
+  if (password.length === 0) {
+    return ""; // No errors for empty input
+  }
+
   // Define your custom criteria here
   const minLength = 8;
   const hasUppercase = /[A-Z]/.test(password);
@@ -66,15 +71,20 @@ function getPasswordStrengthError(password: string) {
   if (hasDigits) score++;
   if (hasSpecialChars) score++;
 
-  // Provide feedback based on the score
-  if (score < 2) {
-    return "Very Weak";
-  } else if (score === 2) {
-    return "Weak";
-  } else if (score === 3) {
-    return "Strong";
-  } else {
-    return "Excellent";
+  // Use a switch case to provide feedback based on the score
+  switch (score) {
+    case 0:
+      return "Very Weak";
+    case 1:
+      return "Weak";
+    case 2:
+      return "Moderate";
+    case 3:
+      return "Strong";
+    case 4:
+      return "Excellent";
+    default:
+      return "Invalid"; // Handle unexpected cases
   }
 }
 

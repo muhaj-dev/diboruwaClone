@@ -10,12 +10,8 @@ import sendEmail from "@/utils/resend";
 import { subscriptionPlans } from "@/constants";
 import moment from "moment";
 import { sendMail } from "@/utils/sendMail";
-import {
-  AdminSubscriptionNotification,
-  SubscriptionConfirmationEmail,
-} from "@/emails/mails";
-// import Paystack from '@paystack/paystack-sdk'
-// const paystack = new Paystack("sk_test_xxxxxx")
+import { SubscriptionConfirmationEmail } from "@/emails";
+
 
 export async function POST(req: Request, res: Response) {
   try {
@@ -85,13 +81,13 @@ export async function POST(req: Request, res: Response) {
         })
       );
 
-      const adminmailHtml = AdminSubscriptionNotification({
-        customerName: `${user.firstName} ${user.lastName}`,
-        serviceName: subscription.type,
-        planName: subscription.plan,
-        startDate: moment(start).format("MMMM D, YYYY"),
-        endDate: moment(due).format("MMMM D, YYYY"),
-      });
+      // const adminmailHtml = AdminSubscriptionNotification({
+      //   customerName: `${user.firstName} ${user.lastName}`,
+      //   serviceName: subscription.type,
+      //   planName: subscription.plan,
+      //   startDate: moment(start).format("MMMM D, YYYY"),
+      //   endDate: moment(due).format("MMMM D, YYYY"),
+      // });
 
       // sendMail(user.email, "New Subscription", emailHTML)
       //   .then((info) => {
@@ -100,13 +96,13 @@ export async function POST(req: Request, res: Response) {
       //   .catch((error) => {
       //     console.error("Error sending email:", error);
       //   });
-      sendMail("z3phyronsnides@gmail.com", "New Subscription", adminmailHtml)
-        .then((info) => {
-          console.log("Email sent:", info);
-        })
-        .catch((error) => {
-          console.error("Error sending email:", error);
-        });
+      // sendMail("z3phyronsnides@gmail.com", "New Subscription", adminmailHtml)
+      //   .then((info) => {
+      //     console.log("Email sent:", info);
+      //   })
+      //   .catch((error) => {
+      //     console.error("Error sending email:", error);
+      //   });
     } else {
       // Check if the existing subscription is less than a month old
       const oneMonthAgo = new Date();

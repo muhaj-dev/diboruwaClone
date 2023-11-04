@@ -9,11 +9,9 @@ import sendEmail from "@/utils/resend";
 import { sendMail } from "@/utils/sendMail";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/utils/helpers/authOptions";
-import {
-} from "@/emails";
+import { MovingRequestEmail, UserQuoteRequestConfirmation } from "@/emails";
 import moment from "moment";
 import { Request } from "@/utils/models/Requests";
-import { MovingRequestEmail, UserQuoteRequestConfirmation } from "@/emails/mails";
 
 type Item = {
   name: string;
@@ -27,7 +25,7 @@ export async function POST(req: Request, res: Response) {
 
     const body = await req.json();
 
-    console.log("ooooo");
+    
 
     if (!req.body)
       return NextResponse.json({ error: "Data is missing" }, { status: 400 });
@@ -63,7 +61,7 @@ export async function POST(req: Request, res: Response) {
     const timestamp = moment().format("YYYY-MM-DD HH:mm:ss");
     const turnaroundTime = moment().add(1, "day").format("YYYY-MM-DD HH:mm:ss");
 
-    const quoteText = data.quote
+    const quoteText = data.properties
     .filter((item: any) => item.amount > 0)
     .map((item: any) => `${item.name} -- ${item.amount}`)
     .join(", ");
@@ -88,10 +86,10 @@ export async function POST(req: Request, res: Response) {
         customerName: `${user.firstName} ${user.lastName}`,
         customerEmail: user.email,
         customerPhone: user.phone,
+        itemsForMoving: quoteText,
         currentAddress: data.address.from,
         destinationAddress: data.address.to,
         preferredDate: moment(data.address.date).format("MMMM D, YYYY"),
-
         companyName: "Dibo Ruwa",
       })
     );
