@@ -3429,6 +3429,8 @@ export function UserQuoteRequestConfirmation(data: any) {
   
   `;
 }
+
+
 export function AdminQuoteResponse(data: any) {
   return `
   <!DOCTYPE html>
