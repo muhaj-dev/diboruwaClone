@@ -619,7 +619,7 @@ export const teamMembers = [
   {
     name: "Okorie Joshua",
     role: "Operation",
-    imageUrl: "/logo.png", // Provide the actual image URL
+    imageUrl: "/joshua.jpeg", // Provide the actual image URL
   },
   // Add more team members as needed
 ];
