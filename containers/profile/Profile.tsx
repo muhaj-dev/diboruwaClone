@@ -96,6 +96,7 @@ const Profile = () => {
             readOnly={!isEditable}
             value={formData.firstName}
             onChange={(e) => handleChange(e, e.target.name)}
+            error={errors.firstName}
           />
           <Input
             label="Last Name"
@@ -105,6 +106,7 @@ const Profile = () => {
             readOnly={!isEditable}
             value={formData.lastName}
             onChange={(e) => handleChange(e, e.target.name)}
+            error={errors.lastName}
           />
         </FormControl>
         <FormControl>
@@ -115,7 +117,9 @@ const Profile = () => {
             id="id"
             readOnly={!isEditable}
             value={formData.email}
+           
             onChange={(e) => handleChange(e, e.target.name)}
+            error={errors.email}
           />
           <Input
             label="Phone"
@@ -125,6 +129,7 @@ const Profile = () => {
             readOnly={!isEditable}
             value={formData.phone}
             onChange={(e) => handleChange(e, e.target.name)}
+            error={errors.phone}
           />
         </FormControl>
         <FormControl>
@@ -136,6 +141,7 @@ const Profile = () => {
             id="id"
             value={formData.address}
             onChange={(e) => handleChange(e, e.target.name)}
+            error={errors.address}
           />
           <Input
             label="Local Gov Area"
@@ -145,6 +151,7 @@ const Profile = () => {
             id="id"
             value={formData.lga}
             onChange={(e) => handleChange(e, e.target.name)}
+            error={errors.lga}
           />
         </FormControl>
         <FormControl>
@@ -155,6 +162,7 @@ const Profile = () => {
             value={formData.state}
             name="state"
             onChange={(e) => handleChange(e, e.target.name)}
+            error={errors.state}
           />
           <CustomSelect
             label="city"
@@ -163,6 +171,7 @@ const Profile = () => {
             value={formData.city}
             name="city"
             onChange={(e) => handleChange(e, e.target.name)}
+            error={errors.city}
           />
         </FormControl>
 

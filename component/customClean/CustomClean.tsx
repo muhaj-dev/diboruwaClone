@@ -245,6 +245,7 @@ const CustomClean: React.FC = () => {
       // If the item is not in the selectedItems array, add it with amount 1
       setSelectedItems([...selectedItems, { ...item, amount: 1 }]);
     }
+    setNotification(null);
   };
 
   const handleDecrease = (item: Cleanproperties) => {
@@ -279,11 +280,13 @@ const CustomClean: React.FC = () => {
         { id: Date.now(), name: customItem, amount: 1 }, // Assign a unique id
       ]);
       setCustomItem(""); // Clear the input field after adding the item
+      setNotification(null);
     }
   };
 
+  
   const handleGetQuote = async () => {
-    if (selectedItems.some((item) => item.amount <= 0)) {
+    if (selectedItems.length <= 0) {
       setNotification("Please add item amounts before getting a quote.");
     } else {
       const quoteText = selectedItems

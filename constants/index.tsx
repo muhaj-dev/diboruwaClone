@@ -581,36 +581,36 @@ export const planDetails: PlanDetails = {
 };
 
 export const teamMembers = [
-  {
-    name: "Ricketts Rowland",
-    role: "Lead Developer",
-    imageUrl: "/logo.png", // Provide the actual image URL
-  },
+  // {
+  //   name: "Ricketts Rowland",
+  //   role: "Lead Developer",
+  //   imageUrl: "/logo.png", // Provide the actual image URL
+  // },
   {
     name: "Ibrahim Saliman Zainab",
     role: "C.E.O",
     imageUrl: "/isz.jpeg", // Provide the actual image URL
   },
-  {
-    name: "Agula Adams",
-    role: "Marketing and Customer Success",
-    imageUrl: "/logo.png", // Provide the actual image URL
-  },
-  {
-    name: "Hassan Abbas",
-    role: "Graphics Designer",
-    imageUrl: "/logo.png", // Provide the actual image URL
-  },
-  {
-    name: "Adeyemo Akinola Ayomide",
-    role: "Frontend Developer",
-    imageUrl: "/logo.png", // Provide the actual image URL
-  },
-  {
-    name: "Mustapha Idris",
-    role: "Head of Operations",
-    imageUrl: "/logo.png", // Provide the actual image URL
-  },
+  // {
+  //   name: "Agula Adams",
+  //   role: "Marketing and Customer Success",
+  //   imageUrl: "/logo.png", // Provide the actual image URL
+  // },
+  // {
+  //   name: "Hassan Abbas",
+  //   role: "Graphics Designer",
+  //   imageUrl: "/logo.png", // Provide the actual image URL
+  // },
+  // {
+  //   name: "Adeyemo Akinola Ayomide",
+  //   role: "Frontend Developer",
+  //   imageUrl: "/logo.png", // Provide the actual image URL
+  // },
+  // {
+  //   name: "Mustapha Idris",
+  //   role: "Head of Operations",
+  //   imageUrl: "/logo.png", // Provide the actual image URL
+  // },
   {
     name: "Yakubu Ibrahim Evuti",
     role: "Operation Manager",

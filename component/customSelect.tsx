@@ -23,7 +23,7 @@ const CustomSelectButton = styled.button`
   border-radius: 0.45rem;
   padding: 0.6rem;
   min-height: 35px;
- 
+
   transition: all 0.3s ease;
   background: transparent;
   width: 100%;
@@ -60,6 +60,7 @@ interface CustomSelectProps {
   options: string[] | undefined;
   value: string;
   name: string;
+  error: string;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
@@ -70,6 +71,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
   value,
   name,
   onChange,
+  error,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -90,6 +92,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
       >
         {value}
       </CustomSelectButton>
+      {error && <small>{error}</small>}
       {isOpen && (
         <CustomOptionsList>
           {options &&

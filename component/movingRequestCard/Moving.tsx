@@ -335,7 +335,7 @@ const Moving: React.FC = () => {
   };
 
   const handleGetQuote = async () => {
-    if (selectedItems.some((item) => item.amount <= 0)) {
+    if (selectedItems.length <= 0) {
       setNotification("Please add item amounts before getting a quote.");
     } else {
       const quoteText = selectedItems
@@ -362,7 +362,7 @@ const Moving: React.FC = () => {
     const errors = validateForm(formData);
 
     if (session) {
-      if (Object.keys(errors).length === 0) {
+      if (Object.keys(errors).length === 0 || selectedItems.length <= 0) {
         const data = {
           properties: selectedItems,
           type,
@@ -372,6 +372,7 @@ const Moving: React.FC = () => {
 
         handleQuote(data);
       } else {
+        setNotification("Please add item amounts before getting a quote.");
         setErrors(errors);
       }
     } else {
