@@ -2,6 +2,7 @@
 import TeamCard from "@/component/teamCard/TeamCard";
 import { teamMembers } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaHammer, FaHandshake, FaHeart } from "react-icons/fa";
 import styled from "styled-components";
@@ -347,7 +348,8 @@ const AboutUsPage: React.FC = () => {
           </ParagraphText>
           <Background></Background>
 
-          <button>Apply Now</button>
+          <Link href="mailto:info@diboruwa.com">  <button>Apply Now</button></Link>
+        
         </LeftColumn>
         <RightColumn>
           <Image src="/join hands.png" fill={true} alt="joining hands " />

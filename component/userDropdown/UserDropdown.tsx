@@ -21,7 +21,7 @@ const UserDropdown = () => {
             name: "Dashboard",
             path: session?.user?.role === "admin" ? "/admin" : "/dashboard",
           },
-          { name: "signOut", path: "/" },
+          { name: "Sign Out", path: "/" },
         ]}
       />
     </Container>

@@ -14,6 +14,7 @@ import { CaretDownIcon } from "@radix-ui/react-icons";
 
 import ServiceMenu from "@/component/serviceMenu";
 import {
+  Cta,
   LogoImage,
   MenuList,
   MobileMenu,
@@ -195,7 +196,8 @@ const Navbar = () => {
             </MobileMenu>
           </>
         )}
-      </AnimatePresence>
+      </AnimatePresence>      <Cta href="/admin/signup">Become a Partner</Cta>
+
       {session && <UserDropdown />}
     </NavbarContainer>
   );

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
@@ -166,3 +167,16 @@ export const MobileMenu = styled(motion.ul)`
     letter-spacing: 1px;
   }
 `;
+
+export const Cta = styled(Link)`
+  
+  text-decoration: none;
+  color: white;
+  background: var(--primary);
+  padding: 8px 20px;
+  border-radius: 15px;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+`
