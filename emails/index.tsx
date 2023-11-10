@@ -1351,10 +1351,10 @@ export const UserQuoteRequestConfirmation: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Items for cleanning:</strong> {description}
+            <strong>Items:</strong> {description}
           </li>
           <li>
-            {" "}
+           
             <strong>Request Date & Time:</strong> {timestamp}
           </li>
         </ul>

@@ -64,4 +64,7 @@ export const SaveButton = styled.button`
   color: white;
   border: none;
   cursor: pointer;
+  &:disabled {
+    background: var(--primary-20);
+  }
 `;

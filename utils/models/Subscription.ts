@@ -2,6 +2,7 @@ import mongoose, { Schema, model, models } from "mongoose";
 
 const subscriptionSchema = new Schema(
   {
+    paymentId: { type: String },
     type: {
       type: String,
       required: true,

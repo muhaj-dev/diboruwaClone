@@ -54,13 +54,30 @@ const useForm = (
     return isValid;
   };
 
+  const isValid = (): boolean => {
+    return Object.values(formData).every((value) => typeof value === 'string' && value.trim() !== "");
+  };
+  
+  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // alert(validateForm());
-    if (validateForm()) {
-      onSubmit(formData);
+    if (isValid()) {
+      if (validateForm()) {
+        onSubmit(formData);
+      }
+    } else {
+      // Handle the case where not all fields are filled
+      const formErrors: FormErrors = {};
+      Object.entries(formData).forEach(([field, value]) => {
+        if (value.trim() === "") {
+          formErrors[field] = "This field is required";
+        }
+      });
+      setErrors(formErrors);
     }
   };
+  
   const resetForm = () => {
     setFormData(initialState);
     setErrors({});
@@ -70,6 +87,7 @@ const useForm = (
     handleChange,
     handleSubmit,
     resetForm,
+    isValid,
     errors,
   };
 };

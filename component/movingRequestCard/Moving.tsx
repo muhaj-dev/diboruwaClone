@@ -223,7 +223,7 @@ export const LocationInput = styled.input`
   outline: none;
   border: none;
   border-radius: 8px;
-  
+
   width: 100%;
 `;
 
@@ -362,18 +362,22 @@ const Moving: React.FC = () => {
     const errors = validateForm(formData);
 
     if (session) {
-      if (Object.keys(errors).length === 0 || selectedItems.length <= 0) {
-        const data = {
-          properties: selectedItems,
-          type,
-          address: formData,
-        };
-        console.log(data);
+      if (selectedItems.length > 0) {
+        setNotification(null);
+        if (Object.keys(errors).length === 0) {
+          const data = {
+            properties: selectedItems,
+            type,
+            address: formData,
+          };
+          console.log(data);
 
-        handleQuote(data);
+          handleQuote(data);
+        } else {
+          setErrors(errors);
+        }
       } else {
         setNotification("Please add item amounts before getting a quote.");
-        setErrors(errors);
       }
     } else {
       router.push("/signin");

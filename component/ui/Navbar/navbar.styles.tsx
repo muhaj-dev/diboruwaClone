@@ -174,7 +174,7 @@ export const Cta = styled(Link)`
   color: white;
   background: var(--primary);
   padding: 8px 20px;
-  border-radius: 15px;
+  border-radius: 20px;
 
   @media screen and (max-width: 900px) {
     display: none;

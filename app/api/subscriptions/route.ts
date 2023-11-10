@@ -10,8 +10,10 @@ import sendEmail from "@/utils/resend";
 import { subscriptionPlans } from "@/constants";
 import moment from "moment";
 import { sendMail } from "@/utils/sendMail";
-import { AdminSubscriptionEmail, SubscriptionConfirmationEmail } from "@/emails";
-
+import {
+  AdminSubscriptionEmail,
+  SubscriptionConfirmationEmail,
+} from "@/emails";
 
 export async function POST(req: Request, res: Response) {
   try {
@@ -41,6 +43,8 @@ export async function POST(req: Request, res: Response) {
 
     due.setMonth(due.getMonth() + 1);
 
+    let sub;
+
     // Check if a subscription already exists for the user
     const existingSubscription = await Subscription.findOne({
       user,
@@ -55,7 +59,8 @@ export async function POST(req: Request, res: Response) {
         user,
         start,
         due,
-        isPaid: true,
+        isPaid: body.referenceId ? true : false,
+        paymentId: body.referenceId && body.referenceId,
       });
 
       // Save the new subscription to the database
@@ -93,7 +98,9 @@ export async function POST(req: Request, res: Response) {
         })
       );
 
-     
+      if (newSubscription.isPaid === true) {
+        sub = newSubscription;
+      }
     } else {
       // Check if the existing subscription is less than a month old
       const oneMonthAgo = new Date();
@@ -101,8 +108,9 @@ export async function POST(req: Request, res: Response) {
       const subscriptionDate = existingSubscription.createdAt;
       // Check if the existing subscription type matches the new subscription type
       if (
-        existingSubscription.type === body.type &&
-        subscriptionDate >= oneMonthAgo
+        existingSubscription.type === body.subscription.type &&
+        subscriptionDate >= oneMonthAgo &&
+        existingSubscription.isPaid === true
       ) {
         // If the subscription is less than a month old and has the same type, return an error
         return NextResponse.json(
@@ -112,6 +120,12 @@ export async function POST(req: Request, res: Response) {
           },
           { status: 400 }
         );
+      } else {
+        existingSubscription.isPaid = true;
+        existingSubscription.paymentId = body.referenceId;
+        await existingSubscription.save();
+
+        sub = existingSubscription;
       }
     }
 
@@ -119,7 +133,7 @@ export async function POST(req: Request, res: Response) {
     const allSubscriptions = await Subscription.find({ user });
 
     return NextResponse.json(
-      { subscriptions: allSubscriptions, success: true },
+      { subscriptions: allSubscriptions, subscription: sub, success: true },
       { status: 201 }
     );
   } catch (err) {

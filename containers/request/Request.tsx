@@ -61,12 +61,14 @@ const ModalContent = styled.div`
 
 const QuotePage = ({ id }: { id: string }) => {
   const { quote, getQuoteById, payQuote, loading, error } = useQuote();
-  const { showModal,
+  const {
+    showModal,
     modalMessage,
     modalErrorType,
     openModal,
-    closeModal, handleRequestPayment } =
-  useOrder();
+    closeModal,
+    handleRequestPayment,
+  } = useOrder();
 
   useEffect(() => {
     if (id) {
@@ -88,8 +90,6 @@ const QuotePage = ({ id }: { id: string }) => {
     console.log("closed");
   };
 
-
-
   return (
     <QuoteContainer>
       {loading ? (
@@ -102,6 +102,16 @@ const QuotePage = ({ id }: { id: string }) => {
               <strong>Type: </strong> {quote.type}
             </QuoteDetail>
             <QuoteDetail>
+              <strong>Items: </strong>
+              <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
+                {quote.items.map((item: any, index: any) => (
+                  <li key={index}>
+                    {item.name} - {item.amount}
+                  </li>
+                ))}
+              </ul>
+            </QuoteDetail>
+            <QuoteDetail>
               <strong>From: </strong> {quote.from}
             </QuoteDetail>
             <QuoteDetail>
@@ -111,7 +121,7 @@ const QuotePage = ({ id }: { id: string }) => {
               <strong>Total: </strong> {quote.total || "N/A"}
             </QuoteDetail>
             <QuoteDetail>
-              <strong>Date: </strong>{" "}
+              <strong>Date: </strong>
               {moment(quote.date).format("YYYY DD MMMM")}
             </QuoteDetail>
 

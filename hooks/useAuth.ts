@@ -164,8 +164,8 @@ const useAuth = (): AuthHook => {
   };
 
   const userUpdate = async (formData: { [key: string]: string }) => {
-    setLoading(true);
     try {
+      setLoading(true);
       // Perform signin logic using axios
       const up = await update({
         ...session,
@@ -174,8 +174,6 @@ const useAuth = (): AuthHook => {
           ...formData,
         },
       });
-
-      console.log(up);
 
       setLoading(false);
       setError(null);

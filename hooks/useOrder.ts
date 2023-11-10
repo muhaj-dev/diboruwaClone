@@ -118,7 +118,7 @@ const useOrder = () => {
           setIsSuccess(true);
           toast.success("Subscription order submitted successfully!");
         }, 500);
-        router.push(`/dashboard/${data.order?._id}`);
+        router.push(`/dashboard/subscriptions/${data.subscription?._id}`);
       } else {
         const { subscription } = subscriptionOrderData;
 
@@ -138,7 +138,7 @@ const useOrder = () => {
           openModal("success", "Subscription order submitted successfully!");
           toast.success("Subscription order submitted successfully!");
         }, 500);
-        // router.push(`/dashboard/${data.order?._id}`);
+        router.push(`/dashboard/subscriptions/${data.subscription?._id}`);
       }
     } catch (error) {
       setIsError(true);

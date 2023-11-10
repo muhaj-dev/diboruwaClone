@@ -120,7 +120,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
       <AuthFormWrapper onSubmit={handleSubmit}>
         {fields.map((field) => (
           <AuthFormFieldWrapper key={field.name}>
-            {field.name === "password" ? ( // Check if the field is the "password" field
+            {field.name === "password" && path === "/signup" ? ( // Check if the field is the "password" field
               <Input
                 label={field.label}
                 name={field.name}

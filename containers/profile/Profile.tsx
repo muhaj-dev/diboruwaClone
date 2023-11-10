@@ -60,7 +60,7 @@ const Profile = () => {
     }
   };
 
-  const { formData, handleChange, handleSubmit, resetForm, errors } = useForm(
+  const { formData, handleChange, handleSubmit, resetForm, errors, isValid } = useForm(
     {
       firstName: session ? session?.user.firstName : "",
       lastName: session ? session?.user.lastName : "",
@@ -176,7 +176,7 @@ const Profile = () => {
         </FormControl>
 
         {isEditable && (
-          <SaveButton type="submit" disabled={loading}>
+          <SaveButton type="submit" disabled={!isValid() || loading}>
             {loading ? "loading..." : "Save"}
           </SaveButton>
         )}
