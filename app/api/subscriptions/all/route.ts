@@ -40,7 +40,7 @@ export async function GET(req: Request, res: Response) {
     return NextResponse.json({ subscriptions, success: true });
   } catch (err) {
     console.error(err);
-    NextResponse.json({ error: "An error occurred" }, { status: 500 });
+   return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   } finally {
     await closeDB();
   }
