@@ -1,4 +1,6 @@
 import { assets } from "@/public/assets";
+import josh from "@/public/Joshua.jpeg"
+import j from "@/public/Yakubu.jpg"
 
 // Base URL
 const baseURL: string = "https://diboruwa.com";
@@ -614,12 +616,12 @@ export const teamMembers = [
   {
     name: "Yakubu Ibrahim Evuti",
     role: "Operation Manager",
-    imageUrl: "/yakubu.jpg", // Provide the actual image URL
+    imageUrl: "Yakubu.jpg", // Provide the actual image URL
   },
   {
     name: "Okorie Joshua",
     role: "Operation",
-    imageUrl: "/joshua.jpeg", // Provide the actual image URL
+    imageUrl: "/Joshua.jpeg", // Provide the actual image URL
   },
   // Add more team members as needed
 ];

@@ -33,12 +33,8 @@ const Navbar = () => {
     required: false,
   });
 
- 
-
   //get partName to render route types
   const pathname = usePathname();
-
- 
 
   const [toggle, setToggle] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -85,11 +81,9 @@ const Navbar = () => {
           <LogoImage src="/logo.png" fill={true} alt="logo" />
         </Link>
       </span>
-
       <Toggle onClick={() => setToggle((prev) => !prev)}>
         {toggle ? <VscClose /> : <HiBars3 />}
       </Toggle>
-
       <MenuList className="menu">
         {routes.map((link, index) => {
           return (
@@ -121,7 +115,6 @@ const Navbar = () => {
           </li>
         )}
       </MenuList>
-
       {session && (
         <div className="cart">
           {totalQuantities >= 1 ? (
@@ -196,8 +189,8 @@ const Navbar = () => {
             </MobileMenu>
           </>
         )}
-      </AnimatePresence>      <Cta href="/admin/signup">Become a Partner</Cta>
-
+      </AnimatePresence>{" "}
+      <Cta href={`/admin/signup`} target="_blank">Become a Partner</Cta>
       {session && <UserDropdown />}
     </NavbarContainer>
   );
