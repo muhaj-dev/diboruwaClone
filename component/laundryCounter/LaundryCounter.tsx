@@ -273,7 +273,7 @@ const LaundryCounter: React.FC = () => {
   };
 
   const handleGetQuote = async () => {
-    if (selectedItems.some((item) => item.amount <= 0)) {
+    if (selectedItems.length <= 0) {
       setNotification("Please add item amounts before getting a quote.");
     } else {
       const quoteText = selectedItems
@@ -350,7 +350,10 @@ const LaundryCounter: React.FC = () => {
       <QuoteButton
         onClick={() => {
           if (session) {
-            handleGetQuote();
+            
+               handleGetQuote();
+          
+           
           } else {
             router.push("signin");
             toast("please sign in");
