@@ -43,6 +43,9 @@ export async function POST(req: Request, res: Response) {
 
     due.setMonth(due.getMonth() + 1);
 
+    const oneMonthAgo = new Date();
+    oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+
     let sub;
 
     // Check if a subscription already exists for the user
@@ -52,6 +55,7 @@ export async function POST(req: Request, res: Response) {
       plan: body.subscription.plan,
     });
 
+    
     if (!existingSubscription) {
       // Create a new subscription object
       const newSubscription = new Subscription({
@@ -65,8 +69,6 @@ export async function POST(req: Request, res: Response) {
 
       // Save the new subscription to the database
       await newSubscription.save();
-
-     
 
       await sendEmail(
         user.email,
@@ -95,32 +97,25 @@ export async function POST(req: Request, res: Response) {
       if (newSubscription.isPaid === true) {
         sub = newSubscription;
       }
+    } else if (
+      existingSubscription &&
+      existingSubscription.createdAt >= oneMonthAgo &&
+      existingSubscription.isPaid === true
+    ) {
+      // If the subscription is less than a month old and has the same type, return an error
+      return NextResponse.json(
+        {
+          message:
+            "You already have an active subscription of the same type that is less than a month old",
+        },
+        { status: 400 }
+      );
     } else {
-      // Check if the existing subscription is less than a month old
-      const oneMonthAgo = new Date();
-      oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
-      const subscriptionDate = existingSubscription.createdAt;
-      // Check if the existing subscription type matches the new subscription type
-      if (
-        existingSubscription.type === body.subscription.type && body.subscription.plan !== "One-Off Cleaning Plan" &&
-        subscriptionDate >= oneMonthAgo &&
-        existingSubscription.isPaid === true
-      ) {
-        // If the subscription is less than a month old and has the same type, return an error
-        return NextResponse.json(
-          {
-            message:
-              "You already have an active subscription of the same type that is less than a month old",
-          },
-          { status: 400 }
-        );
-      } else {
-        existingSubscription.isPaid = true;
-        existingSubscription.paymentId = body.referenceId;
-        await existingSubscription.save();
+      existingSubscription.isPaid = true;
+      existingSubscription.paymentId = body.referenceId;
+      await existingSubscription.save();
 
-        sub = existingSubscription;
-      }
+      sub = existingSubscription;
     }
 
     // Get all subscriptions for the user after adding the new subscription

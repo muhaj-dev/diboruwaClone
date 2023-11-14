@@ -44,8 +44,7 @@ const Cleaning = () => {
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
-
-  const properties  = [
+  const properties = [
     { id: 1, name: "T-Shirt", amount: 0 },
     { id: 2, name: "Jeans", amount: 0 },
     { id: 3, name: "duve", amount: 0 },
@@ -53,7 +52,6 @@ const Cleaning = () => {
     { id: 5, name: "others", amount: 0 },
     // Add more laundry items as needed
   ];
-
 
   const ChoosePlan = (plan: string) => {
     const data = {
@@ -84,9 +82,6 @@ const Cleaning = () => {
     };
     handleQuote(data);
   };
-
-
-  
 
   return (
     <Container>
@@ -129,7 +124,11 @@ const Cleaning = () => {
           </HeroList>
 
           <div className="ctaBtn">
-            <Button size="large" color="primary"  onClick={() => router.push(session ? "/dashboard" : "/signin")}>
+            <Button
+              size="large"
+              color="primary"
+              onClick={() => router.push(session ? "/dashboard" : "/signin")}
+            >
               Schedule a Clean
             </Button>
           </div>
@@ -163,9 +162,7 @@ const Cleaning = () => {
         </BenefitList>
       </WYGSection>
 
-     
-
-     <SubscriptionSection>
+      <SubscriptionSection>
         <h2>Have you been wondering how to get your apartment cleaned?</h2>
         <SubscriptionList>
           {subscriptionPlans.map((plan, index) => (
@@ -202,60 +199,9 @@ const Cleaning = () => {
 
           <CustomClean />
 
-          <Moving/>
+          <Moving />
 
-          {/* <SubscriptionCard>
-            <h3 className="title">
-              Simplifying Your Move from Start to Finish
-            </h3>
-            <p>
-              Diboruwa isn&apos;t just about cleaning; we assist you in every
-              step of your relocation. From ensuring your space is spotless to
-              safely transporting your belongings, we&apos;re here to make the
-              transition as smooth as possible.
-            </p>
-            <p>Contact us today to make it the easiest move of your life.</p>
-
-            <ContactForm>
-              <LocationInput
-                type="text"
-                name="from"
-                placeholder="from"
-                value={formData.from}
-                onChange={(e: any) => handleChange(e, e.target.name)}
-              />
-              <LocationInput
-                type="text"
-                name="to"
-                placeholder="to"
-                value={formData.to}
-                onChange={(e: any) => handleChange(e, e.target.name)}
-              />
-
-              <LocationInput
-                type="date"
-                name="date"
-                // placeholder="to"
-                value={formData.date}
-                onChange={(e: any) => handleChange(e, e.target.name)}
-              />
-            </ContactForm>
-
-            <Button
-              size="medium"
-              color="primary"
-              onClick={() => {
-                if (session) {
-                  onSubmit("moving");
-                } else {
-                  router.push("signin");
-                  toast("please sign in to add item to cart");
-                }
-              }}
-            >
-              Contact Us
-            </Button>
-          </SubscriptionCard> */}
+        
         </SubscriptionList>
       </SubscriptionSection>
 
@@ -268,6 +214,10 @@ const Cleaning = () => {
           onClose={closeModal}
         />
       )}
+
+
+
+     
     </Container>
   );
 };

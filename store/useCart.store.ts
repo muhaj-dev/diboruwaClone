@@ -63,19 +63,23 @@ const useCartStore = create<CartState>()((set) => ({
         subscriptions: [...response.data.subscriptions],
       }));
       if (response) {
-        set({ modal: { isOpen: true, message: response.data.message, type: "success" } });
-       
+        set({
+          modal: {
+            isOpen: true,
+            message: response.data.message,
+            type: "success",
+          },
+        });
       }
-
-     
     } catch (error: any) {
-     
+      toast.error(error.response.data.message);
 
+      console.log(error)
       // Show error modal with the extracted error message
       set({
         modal: {
           isOpen: true,
-          message: error.response.data.error,
+          message: error.response.data.message,
           type: "error",
         },
       });
@@ -117,12 +121,14 @@ const useCartStore = create<CartState>()((set) => ({
         cartItems: [...response.data.cart.cartItems],
       }));
       if (response) {
-        set({ modal: { isOpen: true, message: "Item added successfully!!!", type: "success" } });
-       
+        set({
+          modal: {
+            isOpen: true,
+            message: "Item added successfully!!!",
+            type: "success",
+          },
+        });
       }
-
-      
-     
     } catch (error: any) {
       set({
         modal: {
