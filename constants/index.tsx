@@ -30,8 +30,12 @@ export const routes: Route[] = [
   },
 
   {
-    name: "pricing",
+    name: "Pricing",
     path: "/pricing",
+  },
+  {
+    name: "About Us",
+    path: "/aboutus",
   },
 ];
 
@@ -248,11 +252,11 @@ export const DashboradServices = [
     image: assets.soap,
     url: "/laundry",
   },
-  {
-    title: "Requests",
-    image: assets.food,
-    url: "/dashboard/requests",
-  },
+  // {
+  //   title: "Requests",
+  //   image: assets.food,
+  //   url: "/dashboard/requests",
+  // },
 ];
 
 export const AboutUsContent = {

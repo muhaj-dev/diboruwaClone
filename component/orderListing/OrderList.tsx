@@ -21,7 +21,7 @@ const OrderListing = styled.div`
   border: 1px solid var(--primary-20);
   border-radius: 20px;
   overflow: hidden;
-  width: max-content;
+  width: 100%;
 `;
 
 const OrderRow = styled.div`
@@ -54,6 +54,7 @@ const ColumnData = styled.div`
     background: none;
     font-size: 20px;
     color: var(--primary);
+    cursor: pointer;
   }
 `;
 

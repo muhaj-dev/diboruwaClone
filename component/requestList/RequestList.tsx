@@ -4,10 +4,11 @@ import styled from "styled-components";
 import useQuote, { Quote } from "@/hooks/useQuote";
 import { EyeOpenIcon } from "@radix-ui/react-icons";
 import { useRouter } from "next/navigation";
+import { EmptyServices } from "@/containers/dasboard(client)/client.tyles";
 
 // Styled Components
 const RequestHistoryContainer = styled.div`
-  padding: 0 8%;
+ 
   h1 {
     margin: 30px 0;
   }
@@ -52,6 +53,8 @@ const ColumnData = styled.div`
     background: none;
     font-size: 20px;
     color: var(--primary);
+    cursor: pointer;
+
   }
 `;
 
@@ -74,7 +77,7 @@ const RequestList: React.FC = () => {
       <h1>Request History</h1>
 
       <RequestListingContainer>
-        {quotes.length >= 1 && (
+        {quotes.length >= 1 ? (
           <RequestListing>
             <RequestRow className="header">
               <ColumnHeader>Type</ColumnHeader>
@@ -101,6 +104,12 @@ const RequestList: React.FC = () => {
               </RequestRow>
             ))}
           </RequestListing>
+        ) : (
+          <EmptyServices>
+            <div className="image"></div>
+            <h3>Oh No!!</h3>
+            <p>You have no services yet.</p>
+          </EmptyServices>
         )}
       </RequestListingContainer>
     </RequestHistoryContainer>

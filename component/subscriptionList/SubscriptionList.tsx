@@ -6,10 +6,11 @@ import { useRouter } from "next/navigation";
 import useCartStore from "@/store/useCart.store";
 import axios from "axios";
 import { interceptor } from "@/axios.config";
+import { EmptyServices } from "@/containers/dasboard(client)/client.tyles";
 
 // Styled Components
 const SubscriptionHistoryContainer = styled.div`
-  padding: 0 8%;
+
   h1 {
     margin: 30px 0;
   }
@@ -54,6 +55,8 @@ const ColumnData = styled.div`
     background: none;
     font-size: 20px;
     color: var(--primary);
+    cursor: pointer;
+
   }
 `;
 
@@ -73,7 +76,7 @@ const SubscriptionList: React.FC = () => {
     getSubscriptions();
   }, []);
 
-  console.log(subscriptions);
+ 
 
   const handleSubscriptionClick = (subscriptionId: string) => {
     router.push(`/dashboard/subscriptions/${subscriptionId}`);
@@ -84,7 +87,7 @@ const SubscriptionList: React.FC = () => {
       <h1>Subscription History</h1>
 
       <SubscriptionListingContainer>
-        {subscriptions.length >= 1 && (
+        {subscriptions.length >= 1 ? (
           <SubscriptionListing>
             <SubscriptionRow className="header">
               <ColumnHeader>Type</ColumnHeader>
@@ -114,7 +117,11 @@ const SubscriptionList: React.FC = () => {
               </SubscriptionRow>
             ))}
           </SubscriptionListing>
-        )}
+        ) :        <EmptyServices>
+        <div className="image"></div>
+        <h3>Oh No!!</h3>
+        <p>You have no services yet.</p>
+      </EmptyServices>}
       </SubscriptionListingContainer>
     </SubscriptionHistoryContainer>
   );

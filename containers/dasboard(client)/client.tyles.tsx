@@ -47,3 +47,21 @@ export const EmptyServices = styled.div`
     font-size: 20px;
   }
 `;
+
+
+export const TabContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #f2f2f2; */
+  
+`;
+
+export const TabItem = styled.div<{ active: boolean }>`
+  cursor: pointer;
+  padding: 10px;
+  
+
+  border-bottom: ${(props) => (props.active ? '2px solid var(--primary-20)' : '2px solid transparent')};
+`;
+
+

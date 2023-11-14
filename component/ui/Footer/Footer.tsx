@@ -144,7 +144,7 @@ const Footer = () => {
         {/* Copyright */}
         <div style={{ marginTop: "24px", textAlign: "center" }}>
           <p style={{ color: "#ccc", fontSize: "14px" }}>
-            &copy; {new Date().getFullYear()} Company Name. All rights reserved.
+            &copy; {new Date().getFullYear()} Dibo Ruwa. All rights reserved.
           </p>
         </div>
       </FooterContent>
