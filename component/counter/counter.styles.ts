@@ -22,6 +22,7 @@ export const CounterBtn = styled.button`
   color: #fff;
   border: 1px solid var(--primary);
   transition: all 0.5s ease;
+  cursor: pointer;
 
   &:hover {
     background: var(--primary);

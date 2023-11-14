@@ -57,7 +57,7 @@ const PasswordToggleButton = styled.button`
   color: #718096;
   background: none;
   border: none;
-  outline: none;
+  outline: none;cursor: pointer;
 `;
 
 const ErrorMessage = styled.small`

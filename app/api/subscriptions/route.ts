@@ -66,13 +66,7 @@ export async function POST(req: Request, res: Response) {
       // Save the new subscription to the database
       await newSubscription.save();
 
-      // const emailHTML = SubscriptionConfirmationEmail({
-      //   customerName: `${user.firstName} ${user.lastName}`,
-      //   serviceName: subscription.type,
-      //   planName: subscription.plan,
-      //   startDate: moment(start).format("MMMM D, YYYY"),
-      //   endDate: moment(due).format("MMMM D, YYYY"),
-      // });
+     
 
       await sendEmail(
         user.email,
@@ -108,14 +102,14 @@ export async function POST(req: Request, res: Response) {
       const subscriptionDate = existingSubscription.createdAt;
       // Check if the existing subscription type matches the new subscription type
       if (
-        existingSubscription.type === body.subscription.type &&
+        existingSubscription.type === body.subscription.type && body.subscription.plan !== "One-Off Cleaning Plan" &&
         subscriptionDate >= oneMonthAgo &&
         existingSubscription.isPaid === true
       ) {
         // If the subscription is less than a month old and has the same type, return an error
         return NextResponse.json(
           {
-            error:
+            message:
               "You already have an active subscription of the same type that is less than a month old",
           },
           { status: 400 }
@@ -133,7 +127,12 @@ export async function POST(req: Request, res: Response) {
     const allSubscriptions = await Subscription.find({ user });
 
     return NextResponse.json(
-      { subscriptions: allSubscriptions, subscription: sub, success: true },
+      {
+        subscriptions: allSubscriptions,
+        message: "Subscription added successfully!!!",
+        subscription: sub,
+        success: true,
+      },
       { status: 201 }
     );
   } catch (err) {
@@ -170,7 +169,7 @@ export async function GET(req: Request, res: Response) {
     return NextResponse.json({ subscriptions, success: true });
   } catch (err) {
     console.error(err);
-   return NextResponse.json({ error: "An error occurred" }, { status: 500 });
+    return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   } finally {
     await closeDB();
   }

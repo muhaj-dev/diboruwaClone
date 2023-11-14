@@ -16,8 +16,6 @@ interface Routes {
 }
 
 const ServiceMenu: FC<Routes> = ({ trigger, routes, toggle }) => {
-
- 
   return (
     <NavigationMenu.Root>
       <NavigationMenu.List
@@ -64,7 +62,11 @@ const ServiceMenu: FC<Routes> = ({ trigger, routes, toggle }) => {
                 <li key={index} onClick={toggle}>
                   <Link
                     className="link dropdown"
-                    href={link?.path}
+                    href={
+                      link.name === "Sign Out"
+                        ? `/`
+                        : link?.path
+                    }
                     style={
                       link.name === "Sign Out"
                         ? {

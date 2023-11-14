@@ -63,7 +63,7 @@ const useCartStore = create<CartState>()((set) => ({
         subscriptions: [...response.data.subscriptions],
       }));
       if (response) {
-        set({ modal: { isOpen: true, message: "Subscription added successfully!!!", type: "success" } });
+        set({ modal: { isOpen: true, message: response.data.message, type: "success" } });
        
       }
 

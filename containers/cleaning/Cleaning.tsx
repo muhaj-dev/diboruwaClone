@@ -194,7 +194,7 @@ const Cleaning = () => {
                     }
                   }}
                 >
-                  <span> Pick up now</span>
+                  <span> BOOK A SESSION</span>
                 </Button>
               </SubscriptionCard>
             </div>
@@ -261,13 +261,13 @@ const Cleaning = () => {
 
       <MoreServices />
 
-      {/* {showModal && (
+      {showModal && (
         <NotificationModal
           message={modalMessage}
           errorType={modalErrorType}
           onClose={closeModal}
         />
-      )} */}
+      )}
     </Container>
   );
 };

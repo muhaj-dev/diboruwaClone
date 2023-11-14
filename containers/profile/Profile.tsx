@@ -9,9 +9,9 @@ import {
   SaveButton,
 } from "./profile.styles";
 import Input from "@/component/ui/input/Input";
-import useForm from "@/hooks/useForm";
+
 import Button from "@/component/ui/button/Button";
-import { useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { Pencil1Icon } from "@radix-ui/react-icons";
 import useAuth from "@/hooks/useAuth";
@@ -21,33 +21,58 @@ import Loader from "@/component/ui/loader/Loader";
 import NotificationModal from "@/component/NotificationModal";
 import CustomSelect from "@/component/customSelect";
 import * as Nglca from "nigerian-states-and-lgas";
+import useForm from "@/hooks/useForm.hooks";
+import { profileValidations } from "@/utils/validations";
 
 const Profile = () => {
   const [isEditable, setIsEditable] = useState(false);
+  const [loading, setLoading] = useState(false);
   const {
     session,
     status,
     userUpdate,
-    loading,
+   
     showModal,
     modalMessage,
     modalErrorType,
     closeModal,
   } = useAuth();
+  let initialValues = {
+    firstName: session ? session?.user.firstName : "",
+    lastName: session ? session?.user.lastName : "",
+    email: session ? session?.user.email : "",
+    phone: session ? session?.user.phone : "",
+    address: session ? session?.user.address : "",
+    lga: session ? session?.user.lga : "",
+    city: session ? session?.user?.city : "",
+    state: session ? session.user?.state : "",
+  };
 
-  const onSubmit = async (formData: { [key: string]: string }) => {
+ 
+  const { values, errors, handleChange, handleSubmit } = useForm(
+    initialValues,
+    () => {
+      console.log("submit");
+      // onSubmit(values);
+    },
+    profileValidations
+  
+  );
+
+
+  const onSubmit = async (e: FormEvent) => {
+    e.preventDefault()
+ setLoading(true)
     try {
       // Call the updateProfile function from the service to update the profile
-      const response = await updateProfile(
-        session?.user._id as string,
-        formData
-      );
-    
+      const response = await updateProfile(session?.user._id as string, values);
+
       if (response.success) {
         // Show success toast message
-        userUpdate(formData);
+        userUpdate(values);
         // toast.success("Profile updated successfully!");
         setIsEditable(false);
+        setLoading(false)
         // Redirect to a success page or do something else after successful update
       } else {
         // Show error toast message
@@ -60,19 +85,19 @@ const Profile = () => {
     }
   };
 
-  const { formData, handleChange, handleSubmit, resetForm, errors, isValid } = useForm(
-    {
-      firstName: session ? session?.user.firstName : "",
-      lastName: session ? session?.user.lastName : "",
-      email: session ? session?.user.email : "",
-      phone: session ? session?.user.phone : "",
-      address: session ? session?.user.address : "",
-      lga: session ? session?.user.lga : "",
-      city: session ? session?.user?.city : "",
-      state: session ? session.user?.state : "",
-    },
-    onSubmit
-  );
+  // const { formData, handleChange, handleSubmit, resetForm, errors, isValid } = useForm(
+  //   {
+  //     firstName: session ? session?.user.firstName : "",
+  //     lastName: session ? session?.user.lastName : "",
+  //     email: session ? session?.user.email : "",
+  //     phone: session ? session?.user.phone : "",
+  //     address: session ? session?.user.address : "",
+  //     lga: session ? session?.user.lga : "",
+  //     city: session ? session?.user?.city : "",
+  //     state: session ? session.user?.state : "",
+  //   },
+  //   onSubmit
+  // );
 
   // if (status === "loading") return <Loader />;
 
@@ -82,7 +107,7 @@ const Profile = () => {
         <BackButton />
       </BackBtn>
 
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={onSubmit}>
         <h2>Profile</h2>
         <EditBtn type="button" onClick={() => setIsEditable((prev) => !prev)}>
           <Pencil1Icon />
@@ -94,8 +119,8 @@ const Profile = () => {
             type="text"
             id="id"
             readOnly={!isEditable}
-            value={formData.firstName}
-            onChange={(e) => handleChange(e, e.target.name)}
+            value={values.firstName}
+            onChange={(e) => handleChange("firstName", e.target.value)}
             error={errors.firstName}
           />
           <Input
@@ -104,8 +129,8 @@ const Profile = () => {
             type="text"
             id="id"
             readOnly={!isEditable}
-            value={formData.lastName}
-            onChange={(e) => handleChange(e, e.target.name)}
+            value={values.lastName}
+            onChange={(e) => handleChange("lastName", e.target.value)}
             error={errors.lastName}
           />
         </FormControl>
@@ -116,9 +141,8 @@ const Profile = () => {
             type="email"
             id="id"
             readOnly={!isEditable}
-            value={formData.email}
-           
-            onChange={(e) => handleChange(e, e.target.name)}
+            value={values.email}
+            onChange={(e) => handleChange("email", e.target.value)}
             error={errors.email}
           />
           <Input
@@ -127,8 +151,8 @@ const Profile = () => {
             type="text"
             id="id"
             readOnly={!isEditable}
-            value={formData.phone}
-            onChange={(e) => handleChange(e, e.target.name)}
+            value={values.phone}
+            onChange={(e) => handleChange("phone", e.target.value)}
             error={errors.phone}
           />
         </FormControl>
@@ -139,8 +163,8 @@ const Profile = () => {
             type="text"
             readOnly={!isEditable}
             id="id"
-            value={formData.address}
-            onChange={(e) => handleChange(e, e.target.name)}
+            value={values.address}
+            onChange={(e) => handleChange("address", e.target.value)}
             error={errors.address}
           />
           <Input
@@ -149,8 +173,8 @@ const Profile = () => {
             type="text"
             readOnly={!isEditable}
             id="id"
-            value={formData.lga}
-            onChange={(e) => handleChange(e, e.target.name)}
+            value={values.lga}
+            onChange={(e) => handleChange("lga", e.target.value)}
             error={errors.lga}
           />
         </FormControl>
@@ -159,24 +183,24 @@ const Profile = () => {
             label="State"
             disabled={!isEditable}
             options={Nglca.states()}
-            value={formData.state}
+            value={values.state}
             name="state"
-            onChange={(e) => handleChange(e, e.target.name)}
+            onChange={(e) => handleChange("state", e.target.value)}
             error={errors.state}
           />
           <CustomSelect
             label="city"
             disabled={!isEditable}
-            options={Nglca.lgas(formData.state)}
-            value={formData.city}
+            options={Nglca.lgas(values.state)}
+            value={values.city}
             name="city"
-            onChange={(e) => handleChange(e, e.target.name)}
+            onChange={(e) => handleChange("city", e.target.value)}
             error={errors.city}
           />
         </FormControl>
 
         {isEditable && (
-          <SaveButton type="submit" disabled={!isValid() || loading}>
+          <SaveButton type="submit" disabled={loading}>
             {loading ? "loading..." : "Save"}
           </SaveButton>
         )}

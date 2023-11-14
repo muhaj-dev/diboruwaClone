@@ -2,8 +2,20 @@
 import { DashboradServices } from "@/constants";
 import Card from "@/component/dahboardCard/Card";
 import { Services } from "@/containers/dasboard(client)/client.tyles";
+import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 const DashboardRoutes = () => {
+
+  const router = useRouter();
+  const { data: session, status } = useSession();
+
+
+  if (status !== "loading") {
+    if (!session || !session.user) {
+      router.push("/signin");
+    }
+  }
 
   return (
           <Services>

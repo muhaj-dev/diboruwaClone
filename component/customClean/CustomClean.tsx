@@ -204,6 +204,7 @@ const QuoteButton = styled.button`
   margin-left: auto;
   outline: none;
   border: none;
+  cursor: pointer;
 
   &:disabled {
     background: var(--primary-20);

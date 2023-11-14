@@ -112,11 +112,16 @@ const QuotePage = ({ id }: { id: string }) => {
               </ul>
             </QuoteDetail>
             <QuoteDetail>
-              <strong>From: </strong> {quote.from}
+              <strong>{quote.type !== "moving" ? "Address:" : "From:"} </strong>{" "}
+              {quote.from}
             </QuoteDetail>
-            <QuoteDetail>
-              <strong>To: </strong> {quote.to || "N/A"}
-            </QuoteDetail>
+
+            {quote.to && (
+              <QuoteDetail>
+                <strong>To: </strong> {quote.to || "N/A"}
+              </QuoteDetail>
+            )}
+
             <QuoteDetail>
               <strong>Total: </strong> {quote.total || "N/A"}
             </QuoteDetail>

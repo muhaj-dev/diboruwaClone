@@ -4,6 +4,7 @@ import React, { ReactNode } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./mail.module.css";
 import Image from "next/image";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const colors = {
   lightBlue: "#00afdb",
@@ -124,7 +125,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
                 color: colors.lightBlue,
               }}
             >
-              <FaTwitter />
+              <RiTwitterXLine />
             </a>
             <a
               href="https://instagram.com"
@@ -155,7 +156,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
             color: "#949494",
           }}
         >
-          &copy; 2023 Your Company Name. All Rights Reserved.
+          &copy; 2023 Your Dibo Ruwa. All Rights Reserved.
         </div>
       </div>
     </div>
@@ -182,7 +183,7 @@ export const PasswordRecoveryEmail: React.FC<{
     margin: "15px 0",
   };
   return (
-    <EmailTemplate subject="Password Recovery">
+    <EmailTemplate subject="Reset Password">
       <div style={contentStyle}>
         <p>Hello {userName},</p>
         <p>

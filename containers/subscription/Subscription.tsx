@@ -9,6 +9,7 @@ import useCartStore from "@/store/useCart.store";
 import axios from "axios";
 import { Subscription } from "@/utils/types/types";
 import { interceptor } from "@/axios.config";
+import moment from "moment";
 
 // Styled Components
 const SubscriptionContainer = styled.div`
@@ -66,11 +67,11 @@ const SingleSubscriptionPage = ({ id }: { id: any }) => {
           </SubscriptionData>
 
           <SubscriptionData>
-            <strong>Start:</strong> {subscription?.start}
+            <strong>Start:</strong> {moment(subscription?.start).format("MMMM D, YYYY")} 
           </SubscriptionData>
 
           <SubscriptionData>
-            <strong>Due:</strong> {subscription?.due}
+            <strong>Due:</strong> {moment(subscription?.due).format("MMMM D, YYYY")}
           </SubscriptionData>
         </SubscriptionDetails>
       )}

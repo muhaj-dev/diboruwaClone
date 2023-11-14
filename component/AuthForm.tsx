@@ -154,7 +154,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
                 </Link>
               </AuthFormSmall>
               <AuthFormSmall className="text-[10px]">
-                <Link href={"/signup"} className=" text-gray-800">
+                <Link href={"/forgot-password"} className=" text-gray-800">
                   Forgot Password?
                 </Link>
               </AuthFormSmall>

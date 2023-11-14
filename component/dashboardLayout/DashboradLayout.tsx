@@ -8,7 +8,9 @@ import AdminRoutes from "../adminRoutes/AdminRoutes";
 
 const Dashboard = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
+
+
 
   return (
     <div>

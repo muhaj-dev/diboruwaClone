@@ -23,7 +23,7 @@ const CustomSelectButton = styled.button`
   border-radius: 0.45rem;
   padding: 0.6rem;
   min-height: 35px;
-
+cursor: pointer;
   transition: all 0.3s ease;
   background: transparent;
   width: 100%;
@@ -60,7 +60,7 @@ interface CustomSelectProps {
   options: string[] | undefined;
   value: string;
   name: string;
-  error: string;
+  error?: string | undefined;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 

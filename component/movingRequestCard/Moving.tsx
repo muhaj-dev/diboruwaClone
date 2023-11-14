@@ -234,6 +234,7 @@ const QuoteButton = styled.div`
   color: #fff;
   margin-top: auto;
   margin-left: auto;
+  cursor: pointer;
 `;
 
 const validateForm = (formData: any) => {

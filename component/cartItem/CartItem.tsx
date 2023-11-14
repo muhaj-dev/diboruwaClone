@@ -74,6 +74,7 @@ const DelButton = styled.button`
   color: #fff;
   opacity: 0.6;
   transition: all 0.5s ease;
+  cursor: pointer;
 
   &:hover {
     background: rgb(255, 94, 94);

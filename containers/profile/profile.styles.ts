@@ -50,6 +50,7 @@ export const EditBtn = styled.button`
   top: -10px;
   right: -10px;
   transition: all 0.5s ease;
+  cursor: pointer;
 
   &:hover {
     background: var(--primary);

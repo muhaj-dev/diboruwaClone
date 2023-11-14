@@ -39,7 +39,7 @@ export async function POST(req: Request, res: Response) {
 
     await sendEmail(
       userExists.email,
-      "Activate Account",
+      "Reset Password!!!",
       PasswordRecoveryEmail({
         userName: userExists.firstName,
         passwordResetLink: `${baseUrl}/reset-password?token=${resetToken}`,

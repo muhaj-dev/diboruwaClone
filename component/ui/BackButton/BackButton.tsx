@@ -14,6 +14,7 @@ const Container = styled.button`
   display: flex;
   align-items: center;
   gap: 7px;
+  cursor: pointer;
 
   &:hover {
     border: 1px solid var(--primary);
