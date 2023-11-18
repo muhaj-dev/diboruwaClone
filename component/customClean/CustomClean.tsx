@@ -9,6 +9,7 @@ import toast from "react-hot-toast";
 import styled from "styled-components";
 import NotificationModal from "../NotificationModal";
 import { BsPlus } from "react-icons/bs";
+import Loader from "../Loader";
 
 // Define the Cleanproperties interface
 interface Cleanproperties {
@@ -223,7 +224,7 @@ const CustomClean: React.FC = () => {
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
-  const { handleQuote, showModal, modalErrorType, modalMessage, closeModal } =
+  const { handleQuote, showModal, modalErrorType, modalMessage, closeModal, loading } =
     useQuote();
 
   const cleanproperties: Cleanproperties[] = [
@@ -294,7 +295,7 @@ const CustomClean: React.FC = () => {
         .filter((item) => item.amount > 0)
         .map((item) => `${item.name} -- ${item.amount}`)
         .join(", ");
-      console.log(selectedItems)
+     
 
       setQuote(`Quote: ${quoteText}`);
       setNotification(null);
@@ -375,7 +376,8 @@ const CustomClean: React.FC = () => {
         }}
        
       >
-        Get a Quote
+        {loading ? <Loader /> : " Get a Quote"}
+       
       </QuoteButton>
       {showModal && (
         <NotificationModal

@@ -35,7 +35,7 @@ const CartSubscription: React.FC<CartSubscriptionProps> = ({
   const referenceId = nanoid(8);
 
   const onSuccess = () => {
-    handleSubscriptionOrderSubmit(referenceId, { subscription });
+    handleSubscriptionOrderSubmit(referenceId, { subscription }, "one_off");
   };
 
   const onClose = () => {

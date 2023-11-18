@@ -120,28 +120,20 @@ const AuthForm: React.FC<AuthFormProps> = ({
       <AuthFormWrapper onSubmit={handleSubmit}>
         {fields.map((field) => (
           <AuthFormFieldWrapper key={field.name}>
-            {field.name === "password" && path === "/signup" ? ( // Check if the field is the "password" field
-              <Input
-                label={field.label}
-                name={field.name}
-                type={field.type}
-                id={field.name}
-                value={formData[field.name]}
-                onChange={(e) => handleChange(e, field.name)}
-                error={getPasswordStrengthError(formData[field.name])} // Get the password strength error
-                showPasswordToggle={true}
-              />
-            ) : (
-              <Input
-                label={field.label}
-                name={field.name}
-                type={field.type}
-                id={field.name}
-                value={formData[field.name]}
-                onChange={(e) => handleChange(e, field.name)}
-                error={errors[field.name]}
-              />
-            )}
+            <Input
+              label={field.label}
+              name={field.name}
+              type={field.type}
+              id={field.name}
+              value={formData[field.name]}
+              onChange={(e) => handleChange(e, field.name)}
+              error={
+                path === "/signup"
+                  ? getPasswordStrengthError(formData[field.name])
+                  : errors[field.name]
+              }
+              showPasswordToggle={true}
+            />
           </AuthFormFieldWrapper>
         ))}
         <AuthFormAlternateRoute className="alternate__route mb-2 float-right">

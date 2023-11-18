@@ -118,7 +118,7 @@ const useOrder = () => {
           setIsSuccess(true);
           toast.success("Subscription order submitted successfully!");
         }, 500);
-        router.push(`/dashboard/subscriptions/${data.subscription?._id}`);
+        router.push(`/dashboard/orders/${data.order?._id}`);
       } else {
         const { subscription } = subscriptionOrderData;
 

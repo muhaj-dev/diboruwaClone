@@ -55,6 +55,7 @@ const PasswordToggleButton = styled.button`
   top: 35%;
   right: 0.5rem;
   color: #718096;
+  
   background: none;
   border: none;
   outline: none;cursor: pointer;

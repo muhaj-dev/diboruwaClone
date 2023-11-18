@@ -11,6 +11,7 @@ import styled from "styled-components";
 import Button from "../ui/button/Button";
 import NotificationModal from "../NotificationModal";
 import { BsPlus } from "react-icons/bs";
+import Loader from "../Loader";
 
 // Define the Properties interface
 interface Properties {
@@ -275,7 +276,7 @@ const Moving: React.FC = () => {
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
-  const { handleQuote, showModal, modalErrorType, modalMessage, closeModal } =
+  const { handleQuote, showModal, modalErrorType, modalMessage, closeModal, loading } =
     useQuote();
 
   const Props: Properties[] = [
@@ -484,7 +485,10 @@ const Moving: React.FC = () => {
         {errors.date && <Notification>{errors.date}</Notification>}
       </div>
 
-      <QuoteButton onClick={() => onSubmit("moving")}>Get a Quote</QuoteButton>
+      <QuoteButton onClick={() => onSubmit("moving")}>
+       
+        {loading ? <Loader /> : " Get a Quote"}
+      </QuoteButton>
       {showModal && (
         <NotificationModal
           message={modalMessage}

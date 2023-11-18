@@ -5,6 +5,8 @@ import Input from "@/component/ui/input/Input";
 import useAuth from "@/hooks/useAuth";
 import useForm from "@/hooks/useForm";
 import axios from "axios";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/router";
 import { FormEvent, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import styled from "styled-components";
@@ -77,6 +79,10 @@ const ResetPassword = ({ token }: { token: string | string[] | undefined }) => {
     useAuth();
   const [email, setEmail] = useState("");
 
+  const router = useRouter()
+
+  const {data: session} = useSession()
+
   const { formData, handleChange, handleSubmit, resetForm, errors } = useForm(
     {
       email: email ? email : "",
@@ -96,6 +102,13 @@ const ResetPassword = ({ token }: { token: string | string[] | undefined }) => {
     resetPassword(data);
   };
   useEffect(() => {
+
+  
+      if (session && session.user) {
+      
+        router.push("/dashboard");
+      }
+   
     async function fetchData() {
       // You can await here
       try {
@@ -111,7 +124,7 @@ const ResetPassword = ({ token }: { token: string | string[] | undefined }) => {
       // ...
     }
     fetchData();
-  }, [token, setEmail, email]);
+  }, [token, setEmail, email, session, router]);
 
   return (
     <Container>
