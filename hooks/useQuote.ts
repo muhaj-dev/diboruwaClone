@@ -128,7 +128,7 @@ const useQuote = (): QuoteHook => {
         session?.user.phone &&
         session?.user.address &&
         session?.user.state &&
-        session?.user.city
+        session?.user.lga
       ) {
         if (data.type === "moving") {
           const res = await interceptor.post(`/quotes/moving`, { data });

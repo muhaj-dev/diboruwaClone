@@ -63,7 +63,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({
       session?.user.phone &&
       session?.user.address &&
       session?.user.state &&
-      session?.user.city
+      session?.user.lga
     ) {
       paymentFn(onSuccess, onClose);
     } else {

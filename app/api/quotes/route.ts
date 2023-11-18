@@ -87,7 +87,7 @@ export async function POST(req: Request, res: Response) {
       user,
       type: data.type,
       items: newItems,
-      from: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+      from: `${user.address}, ${user.lga},  ${user.state}`,
       date: timestamp,
     });
 
@@ -115,7 +115,7 @@ export async function POST(req: Request, res: Response) {
           userName: `${user.firstName} ${user.lastName}`,
           userEmail: user.email,
           userContact: user.phone,
-          userAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+          userAddress: `${user.address}, ${user.lga},  ${user.state}`,
           laundryItems: data.quote,
         })
       );
@@ -128,7 +128,7 @@ export async function POST(req: Request, res: Response) {
           userName: `${user.firstName} ${user.lastName}`,
           userEmail: user.email,
           userContact: user.phone,
-          userAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+          userAddress: `${user.address}, ${user.lga},  ${user.state}`,
           homeCleaningAreas: data.quote,
         })
       );

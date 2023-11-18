@@ -46,7 +46,7 @@ export async function POST(req: Request, res: Response) {
       const partners = await User.find({
         role: "partner",
         state: user.state,
-        city: user.city,
+        lga: user.lga,
       });
 
       let assigned = false;
@@ -109,7 +109,7 @@ export async function POST(req: Request, res: Response) {
               orderNumber: body.referenceId,
               itemsOrdered: existingCart.cartItems,
               totalAmount: existingCart.total,
-              customerAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+              customerAddress: `${user.address}, ${user.lga}, ${user.state}`,
               orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
               orderLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
             })
@@ -122,7 +122,7 @@ export async function POST(req: Request, res: Response) {
               orderNumber: body.referenceId,
               itemsOrdered: existingCart.cartItems,
               totalAmount: existingCart.total,
-              customerAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+              customerAddress: `${user.address}, ${user.lga},  ${user.state}`,
               partnerFullName: `${partner.firstName} ${partner.lastName}`,
               orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
               adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
@@ -172,7 +172,7 @@ export async function POST(req: Request, res: Response) {
             orderNumber: body.referenceId,
             itemsOrdered: existingCart.cartItems,
             totalAmount: existingCart.total,
-            customerAddress: `${user.address}, ${user.lga}, ${user.city}, ${user.state}`,
+            customerAddress: `${user.address}, ${user.lga}, ${user.state}`,
             partnerFullName: `un-assigned`,
             orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
             adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,

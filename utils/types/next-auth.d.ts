@@ -12,7 +12,7 @@ declare module "next-auth" {
       profilePic?: string;
       email: string;
       address?: string;
-      // city?: string;
+      lga?: string;
       state?: string;
       phone?: string;
       role: string;
