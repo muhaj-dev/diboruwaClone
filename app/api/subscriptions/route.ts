@@ -70,32 +70,38 @@ export async function POST(req: Request, res: Response) {
       // Save the new subscription to the database
       await newSubscription.save();
 
-      await sendEmail(
-        user.email,
-        "Subscription confirmed",
-        SubscriptionConfirmationEmail({
-          customerName: `${user.firstName} ${user.lastName}`,
-          serviceName: subscription.type,
-          planName: subscription.plan,
-          startDate: moment(start).format("MMMM D, YYYY"),
-          endDate: moment(due).format("MMMM D, YYYY"),
-        })
-      );
 
-      await sendEmail(
-        user.email,
-        "Subscription confirmed",
-        AdminSubscriptionEmail({
-          customerName: `${user.firstName} ${user.lastName}`,
-          serviceName: subscription.type,
-          planName: subscription.plan,
-          startDate: moment(start).format("MMMM D, YYYY"),
-          endDate: moment(due).format("MMMM D, YYYY"),
-        })
-      );
+
+    
 
       if (newSubscription.isPaid === true) {
+
+        await sendEmail(
+          user.email,
+          "Subscription confirmed",
+          SubscriptionConfirmationEmail({
+            customerName: `${user.firstName} ${user.lastName}`,
+            serviceName: subscription.type,
+            planName: subscription.plan,
+            startDate: moment(start).format("MMMM D, YYYY"),
+            endDate: moment(due).format("MMMM D, YYYY"),
+          })
+        );
+  
+        await sendEmail(
+          user.email,
+          "New Subscription",
+          AdminSubscriptionEmail({
+            customerName: `${user.firstName} ${user.lastName}`,
+            serviceName: subscription.type,
+            planName: subscription.plan,
+            startDate: moment(start).format("MMMM D, YYYY"),
+            endDate: moment(due).format("MMMM D, YYYY"),
+          })
+        );
         sub = newSubscription;
+
+
       }
     } else if (
       existingSubscription &&
