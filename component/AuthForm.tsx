@@ -128,7 +128,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
               value={formData[field.name]}
               onChange={(e) => handleChange(e, field.name)}
               error={
-                path === "/signup"
+                path === "/signup" && field.name === "password"
                   ? getPasswordStrengthError(formData[field.name])
                   : errors[field.name]
               }

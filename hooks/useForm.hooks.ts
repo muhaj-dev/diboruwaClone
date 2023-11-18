@@ -53,7 +53,9 @@ const useForm = (
       }
     });
 
-    if (Object.keys(newErrors).length === 0) {
+    console.log(newErrors)
+
+    if (Object.keys(newErrors).length <= 0) {
       onSubmit();
     } else {
       setErrors(newErrors);

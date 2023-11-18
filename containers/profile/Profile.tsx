@@ -17,12 +17,12 @@ import { Pencil1Icon } from "@radix-ui/react-icons";
 import useAuth from "@/hooks/useAuth";
 import { updateProfile } from "@/utils/helpers/updateUser";
 import { toast } from "react-hot-toast";
-import Loader from "@/component/ui/loader/Loader";
 import NotificationModal from "@/component/NotificationModal";
 import CustomSelect from "@/component/customSelect";
 import * as Nglca from "nigerian-states-and-lgas";
 import useForm from "@/hooks/useForm.hooks";
 import { profileValidations } from "@/utils/validations";
+import Loader from "@/component/Loader";
 
 const Profile = () => {
   const [isEditable, setIsEditable] = useState(false);
@@ -31,7 +31,7 @@ const Profile = () => {
     session,
     status,
     userUpdate,
-   
+
     showModal,
     modalMessage,
     modalErrorType,
@@ -44,25 +44,15 @@ const Profile = () => {
     phone: session ? session?.user.phone : "",
     address: session ? session?.user.address : "",
     lga: session ? session?.user.lga : "",
-    city: session ? session?.user?.city : "",
+    // city: session ? session?.user?.city : "",
     state: session ? session.user?.state : "",
   };
 
- 
-  const { values, errors, handleChange, handleSubmit } = useForm(
-    initialValues,
-    () => {
-      console.log("submit");
-      // onSubmit(values);
-    },
-    profileValidations
-  
-  );
+  const onSubmit = async (values: any) => {
+   
 
-
-  const onSubmit = async (e: FormEvent) => {
-    e.preventDefault()
- setLoading(true)
+   
+    setLoading(true);
     try {
       // Call the updateProfile function from the service to update the profile
       const response = await updateProfile(session?.user._id as string, values);
@@ -72,7 +62,7 @@ const Profile = () => {
         userUpdate(values);
         // toast.success("Profile updated successfully!");
         setIsEditable(false);
-        setLoading(false)
+        setLoading(false);
         // Redirect to a success page or do something else after successful update
       } else {
         // Show error toast message
@@ -84,6 +74,17 @@ const Profile = () => {
       // Handle the error or display an error message
     }
   };
+
+  const { values, errors, handleChange, handleSubmit } = useForm(
+    initialValues,
+    () => {
+      console.log("submit");
+      onSubmit(values);
+    },
+    profileValidations
+  );
+
+ 
 
   // const { formData, handleChange, handleSubmit, resetForm, errors, isValid } = useForm(
   //   {
@@ -107,7 +108,7 @@ const Profile = () => {
         <BackButton />
       </BackBtn>
 
-      <Form onSubmit={onSubmit}>
+      <Form onSubmit={handleSubmit}>
         <h2>Profile</h2>
         <EditBtn type="button" onClick={() => setIsEditable((prev) => !prev)}>
           <Pencil1Icon />
@@ -167,7 +168,7 @@ const Profile = () => {
             onChange={(e) => handleChange("address", e.target.value)}
             error={errors.address}
           />
-          <Input
+          {/* <Input
             label="Local Gov Area"
             name="lga"
             type="text"
@@ -176,7 +177,7 @@ const Profile = () => {
             value={values.lga}
             onChange={(e) => handleChange("lga", e.target.value)}
             error={errors.lga}
-          />
+          /> */}
         </FormControl>
         <FormControl>
           <CustomSelect
@@ -189,19 +190,19 @@ const Profile = () => {
             error={errors.state}
           />
           <CustomSelect
-            label="city"
+            label="Lga"
             disabled={!isEditable}
             options={Nglca.lgas(values.state)}
-            value={values.city}
-            name="city"
-            onChange={(e) => handleChange("city", e.target.value)}
-            error={errors.city}
+            value={values.lga}
+            name="lga"
+            onChange={(e) => handleChange("lga", e.target.value)}
+            error={errors.lga}
           />
         </FormControl>
 
         {isEditable && (
           <SaveButton type="submit" disabled={loading}>
-            {loading ? "loading..." : "Save"}
+            {loading ? <Loader/> : "Save"}
           </SaveButton>
         )}
       </Form>

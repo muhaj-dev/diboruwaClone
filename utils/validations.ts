@@ -17,15 +17,7 @@ export const profileValidations = {
             }
             return undefined;
           },
-          businessName: (value: string) => {
-            if (!value) {
-              return "business name is required!!!";
-            }
-            if (value.length < 4) {
-              return "lastname must be at least 4 characters long!!!";
-            }
-            return undefined;
-          },
+         
           email: (value: string) => {
             if (!value) {
               return "email required!!!";
@@ -71,41 +63,6 @@ export const profileValidations = {
             }
             return undefined;
           },
-          city: (value: string) => {
-            if (!value) {
-              return "city is required!!!";
-            }
-            if (value.length < 4) {
-              return "city must be at least 4 characters long!!!";
-            }
-            return undefined;
-          },
-          accountNo: (value: string) => {
-            if (!value) {
-              return "Account number is required!!!";
-            }
-            if (!/^\d{11}$/.test(value)) {
-              return "phone number must be 10 digits!!!";
-            }
-            return undefined;
-          },
-          accountName: (value: string) => {
-            if (!value) {
-              return "Accoun name is required!!!";
-            }
-            if (value.length < 4) {
-              return "Accoun name must be at least 4 characters long!!!";
-            }
-            return undefined;
-          },
-          bankName: (value: string) => {
-            if (!value) {
-              return "Bank name is required!!!";
-            }
-            if (value.length < 4) {
-              return "Bank name must be at least 4 characters long!!!";
-            }
-            return undefined;
-          },
+         
          
         };
