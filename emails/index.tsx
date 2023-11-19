@@ -39,10 +39,10 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
         }}
       >
         <img
-           style={{
+          style={{
             width: "100%",
             height: "100%",
-           objectFit: "contain"
+            objectFit: "contain",
           }}
           src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png"
           alt="company_logo"
@@ -432,6 +432,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
   partnerFirstName: string;
   customerFullName: string;
   orderNumber: string;
+  type: string;
   itemsOrdered: any;
   totalAmount: string;
   customerAddress: string;
@@ -442,6 +443,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
   customerFullName,
   orderNumber,
   itemsOrdered,
+  type,
   totalAmount,
   customerAddress,
   orderTimestamp,
@@ -521,33 +523,24 @@ export const PartnerOrderNotificationComponent: React.FC<{
             <li>
               <strong>Order ID: </strong>#{orderNumber}{" "}
             </li>
-            <li>
-              <table style={tableStyles}>
-                <thead
-                  style={{
-                    background: colors.darkBlue, // Header cell background color: ;
-                    color: "#fff", // Header cell text color
-                  }}
-                >
-                  <tr>
-                    <th style={headerCellStyle}>Item</th>
-                    <th style={headerCellStyle}>Price</th>
-                    <th style={headerCellStyle}>Quantity</th>
-                    <th style={headerCellStyle}>Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {itemsOrdered.map((item: any) => (
-                    <tr key={item._id}>
-                      <td style={cellStyle}>{item.title}</td>
-                      <td style={cellStyle}>${item.price}</td>
-                      <td style={cellStyle}>{item.quantity}</td>
-                      <td style={cellStyle}>${item.total}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </li>
+            {type === "session" && (
+          <li>
+           
+            <strong>type:</strong> {itemsOrdered.type}
+            <br />
+            <strong>Plan:</strong> {itemsOrdered.plan}
+          </li>
+        ) }
+
+        {type === "cart" &&  (
+          <div>
+            {itemsOrdered.map((item: any, index: any) => (
+              <li key={index}>
+                {item.title} - {item.quantity} - {item.total}
+              </li>
+            ))}
+          </div>
+        )}
             <li>
               <strong> Total Amount:</strong>
               {totalAmount}{" "}
@@ -583,6 +576,7 @@ export const AdminOrderNotificationComponent: React.FC<{
   customerFullName: string;
   orderNumber: string;
   itemsOrdered: any;
+  type: string;
   totalAmount: string;
   customerAddress: string;
   partnerFullName: string;
@@ -591,7 +585,7 @@ export const AdminOrderNotificationComponent: React.FC<{
 }> = ({
   customerFullName,
   orderNumber,
-  itemsOrdered,
+  itemsOrdered,type,
   totalAmount,
   customerAddress,
   partnerFullName,
@@ -662,33 +656,24 @@ export const AdminOrderNotificationComponent: React.FC<{
             <li>
               <strong> Order ID:</strong>#{orderNumber}{" "}
             </li>
-            <li>
-              <table style={tableStyles}>
-                <thead
-                  style={{
-                    background: colors.darkBlue, // Header cell background color: ;
-                    color: "#fff", // Header cell text color
-                  }}
-                >
-                  <tr>
-                    <th style={headerCellStyle}>Item</th>
-                    <th style={headerCellStyle}>Price</th>
-                    <th style={headerCellStyle}>Quantity</th>
-                    <th style={headerCellStyle}>Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {itemsOrdered.map((item: any) => (
-                    <tr key={item._id}>
-                      <td style={cellStyle}>{item.title}</td>
-                      <td style={cellStyle}>${item.price}</td>
-                      <td style={cellStyle}>{item.quantity}</td>
-                      <td style={cellStyle}>${item.total}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </li>
+            {type === "session" && (
+          <li>
+           
+            <strong>type:</strong> {itemsOrdered.type}
+            <br />
+            <strong>Plan:</strong> {itemsOrdered.plan}
+          </li>
+        ) }
+
+        {type === "cart" &&  (
+          <div>
+            {itemsOrdered.map((item: any, index: any) => (
+              <li key={index}>
+                {item.title} - {item.quantity} - {item.total}
+              </li>
+            ))}
+          </div>
+        )}
             <li>
               <strong> Total Amount:</strong>
               {totalAmount}
@@ -731,6 +716,7 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
   orderNumber: string;
   customerFullName: string;
   itemsOrdered: any;
+  type: string;
   totalAmount: string;
   customerAddress: string;
   partnerFullName: string;
@@ -741,6 +727,7 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
   orderNumber,
   customerFullName,
   itemsOrdered,
+  type,
   totalAmount,
   customerAddress,
   partnerFullName,
@@ -1355,7 +1342,6 @@ export const UserQuoteRequestConfirmation: React.FC<{
             <strong>Items:</strong> {description}
           </li>
           <li>
-           
             <strong>Request Date & Time:</strong> {timestamp}
           </li>
         </ul>
@@ -1620,24 +1606,31 @@ export const SubscriptionConfirmationEmail: React.FC<{
           ,
         </p>
 
+        <p>Hello Admin,</p>
         <p>
-          Hello Admin,
-      </p>
-      <p>
-          You have a new subscription request for your service. Here are the details:
-      </p>
-      <h3>Subscription Details:</h3>
-      <ul>
-          <li><strong>Customer Name:</strong> {customerName}</li>
-          <li><strong>Service Name:</strong> {serviceName}</li>
-          <li><strong>Plan Name:</strong> {planName}</li>
-          <li><strong>Start Date:</strong> {startDate}</li>
-          <li><strong>End Date:</strong> {endDate}</li>
-      </ul>
-      <p>
-          Please review this subscription and take any necessary action.
-      </p>
-       
+          You have a new subscription request for your service. Here are the
+          details:
+        </p>
+        <h3>Subscription Details:</h3>
+        <ul>
+          <li>
+            <strong>Customer Name:</strong> {customerName}
+          </li>
+          <li>
+            <strong>Service Name:</strong> {serviceName}
+          </li>
+          <li>
+            <strong>Plan Name:</strong> {planName}
+          </li>
+          <li>
+            <strong>Start Date:</strong> {startDate}
+          </li>
+          <li>
+            <strong>End Date:</strong> {endDate}
+          </li>
+        </ul>
+        <p>Please review this subscription and take any necessary action.</p>
+
         <p>Thank you for trusting Dibo Ruwa. We&#39;re excited to serve you!</p>
         <p>Warmly,</p>
         <p>The Dibo Ruwa Team</p>

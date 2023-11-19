@@ -92,6 +92,7 @@ export async function POST(req: Request, res: Response) {
             "Order Confirmed",
             OrderConfirmation({
               customerName: user.firstName,
+              type: order.type,
               orderItem: {
                 orderItems: existingCart.cartItems,
                 total: existingCart.total,
@@ -107,6 +108,7 @@ export async function POST(req: Request, res: Response) {
               partnerFirstName: partner.firstName,
               customerFullName: `${user.firstName} ${user.lastName}`,
               orderNumber: body.referenceId,
+              type: order.type,
               itemsOrdered: existingCart.cartItems,
               totalAmount: existingCart.total,
               customerAddress: `${user.address}, ${user.lga}, ${user.state}`,
@@ -121,6 +123,7 @@ export async function POST(req: Request, res: Response) {
               customerFullName: `${user.firstName} ${user.lastName}`,
               orderNumber: body.referenceId,
               itemsOrdered: existingCart.cartItems,
+              type: order.type,
               totalAmount: existingCart.total,
               customerAddress: `${user.address}, ${user.lga},  ${user.state}`,
               partnerFullName: `${partner.firstName} ${partner.lastName}`,
@@ -156,6 +159,7 @@ export async function POST(req: Request, res: Response) {
           "Order Confirmed",
           OrderConfirmation({
             customerName: user.firstName,
+            type: order.type,
             orderItem: {
               orderItems: existingCart.cartItems,
               total: existingCart.total,
@@ -171,6 +175,7 @@ export async function POST(req: Request, res: Response) {
             customerFullName: `${user.firstName} ${user.lastName}`,
             orderNumber: body.referenceId,
             itemsOrdered: existingCart.cartItems,
+            type: order.type,
             totalAmount: existingCart.total,
             customerAddress: `${user.address}, ${user.lga}, ${user.state}`,
             partnerFullName: `un-assigned`,

@@ -84,7 +84,7 @@ const SingleOrderPage = ({ id }: { id: any }) => {
                 ))}
             </>
           )}
-          {order?.type === "subscription" && (
+          {order?.type === "session" && (
             <>
               <OrderData>
                 <strong>Payment ID:</strong> {order?.paymentId}

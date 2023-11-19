@@ -9,6 +9,9 @@ import sendEmail, { resend } from "@/utils/resend";
 import SubscriptionConfirmation from "@/emails/SubscriptionOrder";
 import moment from "moment";
 
+import { AdminOrderNotificationComponent } from "@/emails";
+import OrderConfirmation from "@/emails/FoodOrder";
+
 
 export async function PUT(
   req: Request,
@@ -47,7 +50,7 @@ export async function PUT(
       // If an existing Subscription is found, check if the item exists
       order = new Order({
         orderItems: subscription,
-        type: "subscription",
+        type: "session",
         email: user.email,
         phone: user.phone,
         total: subscription.total,
@@ -56,25 +59,46 @@ export async function PUT(
         paymentId: body.referenceId,
       });
 
-     
+      await order.save();
+
+     console.log(order.orderItems)
 
       await sendEmail(
         user.email,
-        "Subscription Confirmed",
-        SubscriptionConfirmation({
+        "Order Confirmed",
+        OrderConfirmation({
           customerName: user.firstName,
-          service: subscription.type,
-          plan: subscription.plan,
-          startDate: moment(subscription.start).format("YYYY-MM-DD"),
-          endDate: moment(subscription.due).format("YYYY-MM-DD"),
+          type: order.type,
+          orderItem: {
+            orderItems: order.orderItems,
+            total: order.total,
+            estimatedDeliveryTime: "3 working days",
+          },
         })
       );
 
-      await order.save();
+      await sendEmail(
+        "ibrahim.saliman.zainab@gmail.com",
+        "New Order Notification",
+        AdminOrderNotificationComponent({
+          customerFullName: `${user.firstName} ${user.lastName}`,
+          orderNumber: order.paymentId,
+          itemsOrdered: order.orderItems,
+          type: order.type,
+          totalAmount: order.total,
+          customerAddress: `${user.address}, ${user.lga}, ${user.state}`,
+          partnerFullName: `un-assigned`,
+          orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
+          adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
+        })
+      );
+
+     
     }
 
     return NextResponse.json({ order, success: true }, { status: 201 });
   } catch (err) {
+    console.log(err)
     return NextResponse.json(
       { error: "An error occurred", err },
       { status: 500 }
