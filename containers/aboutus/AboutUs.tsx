@@ -246,18 +246,21 @@ const RightColumn = styled.div`
 
 const TeamMemberList = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   gap: 20px;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  justify-content: center; /* Center the grid items within the container */
   margin-top: 20px;
-  grid-auto-rows: minmax(100px, auto); 
+  grid-auto-rows: minmax(100px, auto);
+  
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
 
-  @media (min-width: 768px) { 
-    grid-template-columns: repeat(4, 1fr);
+  @media (min-width: 767px) { 
+    grid-template-columns: repeat(4, 1fr); 
   }
 `;
+
+
 
 const AboutUsPage: React.FC = () => {
   return (
