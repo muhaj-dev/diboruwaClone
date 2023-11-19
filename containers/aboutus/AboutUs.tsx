@@ -58,6 +58,7 @@ const FirstSection = styled.div`
       height: 100%;
       margin: auto;
       object-fit: contain;
+      /* border-radius: 15px; */
     }
   }
 
@@ -171,6 +172,7 @@ const SectionSubTitle = styled.p`
 const ThirdSection = styled.div`
   text-align: center;
   padding: 5% 8%;
+  /* background-color: var(--color2-20); */
 
   .header {
     width: 80%;
@@ -243,14 +245,18 @@ const RightColumn = styled.div`
 `;
 
 const TeamMemberList = styled.div`
-  /* Add your styling for the list of team members here */
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   gap: 20px;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 20px;
+  grid-auto-rows: minmax(100px, auto); 
+
+  @media (min-width: 768px) { 
+    grid-template-columns: repeat(4, 1fr);
+  }
 `;
 
 const AboutUsPage: React.FC = () => {

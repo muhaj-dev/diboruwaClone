@@ -453,7 +453,7 @@ export const planDetails: PlanDetails = {
         "Standard plate",
         "Ideal for occasional treats",
       ],
-      total: 7700,
+      total: 4900,
       planCode: "PLN_sqxrib4c4knnh0i",
     },
     {
@@ -465,7 +465,7 @@ export const planDetails: PlanDetails = {
         "Delivered once a week",
         "Ideal for weekend treats",
       ],
-      total: 14980,
+      total: 9600,
       planCode: "PLN_w988l6ia7g7dfq6",
     },
     {
@@ -477,7 +477,7 @@ export const planDetails: PlanDetails = {
         "Delivered 5 times a week",
         "Perfect for workweek meals",
       ],
-      total: 34970,
+      total: 23900,
       planCode: "PLN_pz6i6zhbcwvfdk7",
     },
     {
@@ -490,7 +490,7 @@ export const planDetails: PlanDetails = {
         "Perfect for everyday meals",
         "A meal every day",
       ],
-      total: 47960,
+      total: 36400,
       planCode: "PLN_f5nb851w9xpbtto",
     },
   ],
@@ -505,28 +505,28 @@ export const planDetails: PlanDetails = {
         "Picked up once a month",
         "Ideal for individual",
       ],
-      total: 11960,
+      total: 4990,
       planCode: "PLN_jjx1iqwxol2hch4",
     },
     {
       title: "Regular Laundry",
       features: [
         "Dibo Ruwa Laundry Bag",
-        "30 clothing materials",
+        "50 clothing materials",
         "Gentle washing for delicate fabrics",
         "Stain treatment",
         "Quick-dry service",
         "Picked up twice a month",
         "Ideal for family of two",
       ],
-      total: 22100,
+      total: 9900,
       planCode: "PLN_jd0nwcnhvifs0no",
     },
     {
       title: "Family",
       features: [
         "Dibo Ruwa Laundry Bag",
-        "50 clothing materials",
+        "120 clothing materials",
         "Gentle washing for delicate fabrics",
         "Stain treatment",
         "Quick-dry service",
@@ -534,7 +534,7 @@ export const planDetails: PlanDetails = {
         "Picked up four times a month",
         "Ideal for family of four",
       ],
-      total: 36700,
+      total: 19400,
       planCode: "PLN_d3km1qswvj8nbot",
     },
   ],
@@ -550,7 +550,7 @@ export const planDetails: PlanDetails = {
         "Dusting of all surfaces",
         "Once a week",
       ],
-      total: 12900,
+      total: 8900,
       planCode: "PLN_fw9vc36viohwk6l",
     },
     {
@@ -565,7 +565,7 @@ export const planDetails: PlanDetails = {
         "Once a week",
       ],
 
-      total: 22750,
+      total: 16950,
       planCode: "PLN_b361yykypop2gfz",
     },
     {
@@ -580,7 +580,7 @@ export const planDetails: PlanDetails = {
         "Once a week",
       ],
 
-      total: 31900,
+      total: 25900,
       planCode: "PLN_jsbrun8t72zsbiu",
     },
   ],
@@ -593,39 +593,40 @@ export const teamMembers = [
   //   imageUrl: "/logo.png", // Provide the actual image URL
   // },
   {
+    name: "Mustapha Idris",
+    role: "Marketing and Customer Success",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700398549/Updated%20Team/Mustapha_Idris_-_Co-founder_Operations_u8b0lm.png", // Provide the actual image URL
+  },
+  {
     name: "Ibrahim Saliman Zainab",
-    role: "C.E.O",
+    role: "Engineering",
     imageUrl: "/isz.jpeg", // Provide the actual image URL
   },
-  // {
-  //   name: "Agula Adams",
-  //   role: "Marketing and Customer Success",
-  //   imageUrl: "/logo.png", // Provide the actual image URL
-  // },
-  // {
-  //   name: "Hassan Abbas",
-  //   role: "Graphics Designer",
-  //   imageUrl: "/logo.png", // Provide the actual image URL
-  // },
-  // {
-  //   name: "Adeyemo Akinola Ayomide",
-  //   role: "Frontend Developer",
-  //   imageUrl: "/logo.png", // Provide the actual image URL
-  // },
-  // {
-  //   name: "Mustapha Idris",
-  //   role: "Head of Operations",
-  //   imageUrl: "/logo.png", // Provide the actual image URL
-  // },
+  {
+    name: "Agula Adams",
+    role: "Marketing and Customer Success",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700400468/Adams_Agula_-_Marketing_and_Customer_Success_tkwye8.jpg", // Provide the actual image URL
+  },
+  {
+    name: "Hassan Abbas",
+    role: "Marketing",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700398534/Updated%20Team/Hassan_Abbas_-_Marketing_vqecob.jpg", // Provide the actual image URL
+  },
+  {
+    name: "Adeyemo Akinola Ayomide",
+    role: "Engineering",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700400509/Adeyemo_Akinola_-_Engineering_u2o8hc.jpg",
+  },
+ 
   {
     name: "Yakubu Ibrahim Evuti",
-    role: "Operation Manager",
-    imageUrl: "Yakubu.jpg", // Provide the actual image URL
+    role: "Operations",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700400486/Yakubu_Ibrahim_Evuti_-_Operations_mlyvmq.jpg",
   },
   {
     name: "Okorie Joshua",
-    role: "Operation",
-    imageUrl: "/Joshua.jpeg", // Provide the actual image URL
+    role: "Operations",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700398550/Updated%20Team/Operations_owbek1.png",
   },
   // Add more team members as needed
 ];
