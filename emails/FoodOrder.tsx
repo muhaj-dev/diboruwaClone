@@ -8,12 +8,9 @@ const colors = {
 
 interface OrderConfirmationProps {
   customerName: string;
+  type: string;
   orderItem: {
-    orderItems: {
-      title: string;
-      quantity: number;
-      total: number;
-    }[];
+    orderItems: any;
     total: number;
     estimatedDeliveryTime: string;
   };
@@ -21,6 +18,7 @@ interface OrderConfirmationProps {
 
 const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
   customerName,
+  type,
   orderItem: { orderItems, total, estimatedDeliveryTime },
 }) => {
   const containerStyle: React.CSSProperties = {
@@ -57,13 +55,26 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
           Thank you for your order! We&#39;ve received your payment and your
           items are now being prepared.
         </p>
-        <div>
-          {orderItems.map((item, index) => (
-            <li key={index}>
-              {item.title} - {item.quantity} - {item.total}
-            </li>
-          ))}
-        </div>
+
+        {type === "session" && (
+          <li>
+           
+            <strong>type:</strong> {orderItems.type}
+            <br />
+            <strong>Plan:</strong> {orderItems.plan}
+          </li>
+        ) }
+
+        {type === "cart" &&  (
+          <div>
+            {orderItems.map((item: any, index: any) => (
+              <li key={index}>
+                {item.title} - {item.quantity} - {item.total}
+              </li>
+            ))}
+          </div>
+        )}
+
         <p>
           {" "}
           <strong>Total Amount:</strong> {total}

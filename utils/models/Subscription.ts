@@ -22,11 +22,11 @@ const subscriptionSchema = new Schema(
     },
     start: {
       type: Date,
-      required: true,
+      
     },
     due: {
       type: Date,
-      required: true,
+     
     },
 
     user: {
