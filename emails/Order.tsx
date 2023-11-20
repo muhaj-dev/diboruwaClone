@@ -35,7 +35,7 @@ const EmailTemplate = ({ orderDetails } : any) => {
         <p>Email: {orderDetails.email}</p>
         <p>Address: {orderDetails.address}</p>
         <p>Phone: {orderDetails.phone}</p>
-        <p>Total: ${orderDetails.total}</p>
+        <p>Total: ₦{orderDetails.total}</p>
         <p>Status: {orderDetails.status}</p>
         <p>Partner ID: {orderDetails.partner}</p>
         <p>Payment ID: {orderDetails.paymentId}</p>

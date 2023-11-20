@@ -84,7 +84,7 @@ const OrderList: React.FC = () => {
               <ColumnData>{order.type}</ColumnData>
               <ColumnData>{order.email}</ColumnData>
               <ColumnData>{order.paymentId}</ColumnData>
-              <ColumnData>{order.total}</ColumnData>
+              <ColumnData>₦{order.total}</ColumnData>
               <ColumnData>
                 <button onClick={() => handleOrderClick(order._id)}>
                   <EyeOpenIcon />

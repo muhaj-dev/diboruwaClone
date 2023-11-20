@@ -2,6 +2,7 @@ import { closeDB, connectDB } from "@/utils/db";
 import { authOptions } from "@/utils/helpers/authOptions";
 import { Order } from "@/utils/models/Order";
 import User from "@/utils/models/Users";
+import sendEmail from "@/utils/resend";
 import { sendMail } from "@/utils/sendMail";
 import { getServerSession } from "next-auth";
 import { NextResponse } from "next/server";
@@ -14,10 +15,12 @@ export async function POST(req: Request, res: Response) {
 
     const { email, name, message } = body;
 
-    await sendMail(
+    
+
+    await sendEmail(
       "ibrahim.saliman.zainab@gmail.com",
       `New message from diboruwa(${name})`,
-      `message from ${email} - ${message}`
+      `New message from ${email} - ${message}`
     );
 
     return NextResponse.json(

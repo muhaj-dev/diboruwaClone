@@ -95,7 +95,7 @@ const RequestList: React.FC = () => {
                   {quote.paymentId ? quote.paymentId : "--"}
                 </ColumnData>
                 <ColumnData>{quote.status}</ColumnData>
-                <ColumnData>{quote.total ? quote.total : "--"}</ColumnData>
+                <ColumnData>{quote.total ? `₦${quote.total}` : "--"}</ColumnData>
                 <ColumnData>
                   <button onClick={() => handleRequestClick(quote._id)}>
                     <EyeOpenIcon />

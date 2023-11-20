@@ -105,7 +105,7 @@ const SubscriptionList: React.FC = () => {
                 </ColumnData>
 
                 <ColumnData>
-                  {subscription.total ? subscription.total : "--"}
+                  {subscription.total ? `₦${subscription.total}` : "--"}
                 </ColumnData>
                 <ColumnData>
                   <button
