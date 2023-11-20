@@ -69,7 +69,7 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
           <div>
             {orderItems.map((item: any, index: any) => (
               <li key={index}>
-                {item.title} - {item.quantity} - {item.total}
+                {item.title} - {item.quantity} - ₦{item.total}
               </li>
             ))}
           </div>
@@ -77,7 +77,7 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
 
         <p>
           {" "}
-          <strong>Total Amount:</strong> {total}
+          <strong>Total Amount:</strong> ₦{total}
         </p>
         <p>
           {" "}

@@ -106,7 +106,7 @@ const Cleaning = () => {
               <div className="text">
                 <strong>Expert Clean </strong>
                 <small>
-                  {" "}
+                 
                   Our team brings the shine, making sure every corner sparkles.
                 </small>
               </div>
@@ -191,7 +191,7 @@ const Cleaning = () => {
                     }
                   }}
                 >
-                  <span> BOOK A SESSION</span>
+                  <span> Book A Session</span>
                 </Button>
               </SubscriptionCard>
             </div>

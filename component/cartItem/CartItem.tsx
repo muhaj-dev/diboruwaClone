@@ -113,11 +113,11 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
         </div>
         <div className="text">
           <ItemName>{title}</ItemName>
-          <ItemPrice> ${price}</ItemPrice>
+          <ItemPrice> ₦{price}</ItemPrice>
         </div>
       </ItemInfo>
       <Counter id={item?.id} value={item.quantity} />
-      <TotalPrice>Total: ${totalPrice}</TotalPrice>
+      <TotalPrice>Total: ₦{totalPrice}</TotalPrice>
       <DelButton
         title="Remove"
         type="button"

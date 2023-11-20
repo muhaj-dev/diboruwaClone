@@ -77,6 +77,7 @@ const SubmitButton = styled.button`
 
 const ContactForm: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
   const { formData, handleChange, resetForm, errors } = useForm(
     {
@@ -88,18 +89,20 @@ const ContactForm: React.FC = () => {
   );
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    setLoading(true)
     try {
       const res = await axios.post("/api/contact", formData);
       const { message } = res.data; // Assuming the API returns a 'message' field
-
       // Update the modal message with the API response
       setModalMessage(message);
+      setLoading(false)
       resetForm();
 
       // Open the modal
       setShowModal(true);
     } catch (error) {
-      const errorMessage = "An error occurred while updating the profile";
+      setLoading(false)
+      const errorMessage = "An error occurred ";
 
       // Update the modal message with the error message
       setModalMessage(errorMessage);

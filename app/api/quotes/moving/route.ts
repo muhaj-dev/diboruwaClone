@@ -68,7 +68,7 @@ export async function POST(req: Request, res: Response) {
 
     await sendEmail(
       user.email,
-      "new Quote",
+      "Request Confirmation",
       UserQuoteRequestConfirmation({
         firstName: user.firstName,
         serviceType: data.type,

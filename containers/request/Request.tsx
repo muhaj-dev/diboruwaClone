@@ -123,11 +123,11 @@ const QuotePage = ({ id }: { id: string }) => {
             )}
 
             <QuoteDetail>
-              <strong>Total: </strong> {quote.total || "N/A"}
+              <strong>Total: </strong> ₦ {quote.total || "N/A"}
             </QuoteDetail>
             <QuoteDetail>
               <strong>Date: </strong>
-              {moment(quote.date).format("YYYY DD MMMM")}
+              {moment(quote.date).format("MMMM DD, YYYY")}
             </QuoteDetail>
 
             <QuoteDetail>

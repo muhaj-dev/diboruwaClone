@@ -536,14 +536,14 @@ export const PartnerOrderNotificationComponent: React.FC<{
           <div>
             {itemsOrdered.map((item: any, index: any) => (
               <li key={index}>
-                {item.title} - {item.quantity} - {item.total}
+                {item.title} - {item.quantity} - ₦{item.total}
               </li>
             ))}
           </div>
         )}
             <li>
               <strong> Total Amount:</strong>
-              {totalAmount}{" "}
+              ₦{totalAmount}{" "}
             </li>
             <li>
               <strong> Delivery Address:</strong>
@@ -669,14 +669,14 @@ export const AdminOrderNotificationComponent: React.FC<{
           <div>
             {itemsOrdered.map((item: any, index: any) => (
               <li key={index}>
-                {item.title} - {item.quantity} - {item.total}
+                {item.title} - {item.quantity} - ₦{item.total}
               </li>
             ))}
           </div>
         )}
             <li>
               <strong> Total Amount:</strong>
-              {totalAmount}
+              ₦{totalAmount}
             </li>
             <li>
               <strong>Delivery Address: </strong>
@@ -819,16 +819,16 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
                   {itemsOrdered.map((item: any) => (
                     <tr key={item._id}>
                       <td style={cellStyle}>{item.title}</td>
-                      <td style={cellStyle}>${item.price}</td>
+                      <td style={cellStyle}>₦{item.price}</td>
                       <td style={cellStyle}>{item.quantity}</td>
-                      <td style={cellStyle}>${item.total}</td>
+                      <td style={cellStyle}>₦{item.total}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </li>
             <li>
-              Total Amount: <strong>{totalAmount}</strong>
+              Total Amount: <strong>₦{totalAmount}</strong>
             </li>
             <li>
               <strong>Delivery Address: </strong>
@@ -956,9 +956,9 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
                 {itemsOrdered.map((item: any) => (
                   <tr key={item._id}>
                     <td style={cellStyle}>{item.title}</td>
-                    <td style={cellStyle}>${item.price}</td>
+                    <td style={cellStyle}>₦{item.price}</td>
                     <td style={cellStyle}>{item.quantity}</td>
-                    <td style={cellStyle}>${item.total}</td>
+                    <td style={cellStyle}>₦{item.total}</td>
                   </tr>
                 ))}
               </tbody>
@@ -966,7 +966,7 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Total Amount:</strong> {totalAmount}
+            <strong>Total Amount:</strong> ₦{totalAmount}
           </li>
           <li>
             {" "}
@@ -1074,9 +1074,9 @@ export const DispatchStatusNotificationComponent: React.FC<{
                 {itemsOrdered.map((item: any) => (
                   <tr key={item._id}>
                     <td style={cellStyle}>{item.title}</td>
-                    <td style={cellStyle}>${item.price}</td>
+                    <td style={cellStyle}>₦{item.price}</td>
                     <td style={cellStyle}>{item.quantity}</td>
-                    <td style={cellStyle}>${item.total}</td>
+                    <td style={cellStyle}>₦{item.total}</td>
                   </tr>
                 ))}
               </tbody>
@@ -1084,7 +1084,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Total Amount:</strong> {totalAmount}
+            <strong>Total Amount:</strong> ₦{totalAmount}
           </li>
           <li>
             {" "}
@@ -1194,9 +1194,9 @@ export const DeliveredStatusNotificationComponent: React.FC<{
                 {itemsDelivered.map((item: any) => (
                   <tr key={item._id}>
                     <td style={cellStyle}>{item.title}</td>
-                    <td style={cellStyle}>${item.price}</td>
+                    <td style={cellStyle}>₦{item.price}</td>
                     <td style={cellStyle}>{item.quantity}</td>
-                    <td style={cellStyle}>${item.total}</td>
+                    <td style={cellStyle}>₦{item.total}</td>
                   </tr>
                 ))}
               </tbody>
@@ -1204,7 +1204,7 @@ export const DeliveredStatusNotificationComponent: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Total Amount:</strong> {totalAmount}
+            <strong>Total Amount:</strong> ₦{totalAmount}
           </li>
           <li>
             {" "}

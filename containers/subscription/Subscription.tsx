@@ -63,7 +63,7 @@ const SingleSubscriptionPage = ({ id }: { id: any }) => {
             <strong>Plan:</strong> {subscription?.plan}
           </SubscriptionData>
           <SubscriptionData>
-            <strong>Total:</strong> {subscription?.total}
+            <strong>Total:</strong> ₦{subscription?.total}
           </SubscriptionData>
 
           <SubscriptionData>
