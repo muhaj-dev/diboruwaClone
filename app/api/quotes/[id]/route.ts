@@ -11,6 +11,8 @@ import { authOptions } from "@/utils/helpers/authOptions";
 import {
   AdminHomeCleaningQuoteRequest,
   AdminLaundryQuoteRequest,
+  AdminQuotePaymentConfirmation,
+  UserQuotePaymentConfirmation,
   UserQuoteRequestConfirmation,
 } from "@/emails";
 import moment from "moment";
@@ -72,7 +74,7 @@ export async function PUT(
       );
     }
 
-    const request = await Request.findById(requestId);
+    const request = await Request.findById(requestId).populate("user");
 
     if (!request) {
       return NextResponse.json({ message: "Request does not exist" });
@@ -87,6 +89,31 @@ export async function PUT(
     }
 
     await request.save();
+
+    await sendEmail(
+      request.user.email,
+      " Payment Confirmation",
+      UserQuotePaymentConfirmation({
+       
+        firstName: request.user.firstName,
+        serviceName: request.type,
+        paymentAmount: request.total,
+        paymentDate: moment().format("MMMM DD, YYYY"),
+        adminEmail: 'info@diboruwa.com',
+      })
+    );
+    await sendEmail(
+      "ibrahim.saliman.zainab@gmail.com",
+      "Payment Confirmation",
+      AdminQuotePaymentConfirmation({
+       
+        firstName: request.user.firstName,
+        serviceName: request.type,
+        paymentAmount: request.total,
+        paymentDate: moment().format("MMMM DD, YYYY"),
+        userEmail: 'info@diboruwa.com',
+      })
+    );
 
     return NextResponse.json(
       { message: "Request status updated successfully", success: true },

@@ -135,7 +135,7 @@ const QuotePage = ({ id }: { id: string }) => {
             </QuoteDetail>
             {quote.isPaid && (
               <QuoteDetail>
-                <strong>Payment Reference: </strong> {quote.refId || "N/A"}
+                <strong>Payment Reference: </strong> {quote.paymentId || "N/A"}
               </QuoteDetail>
             )}
             {!quote.isPaid && quote.total && (
