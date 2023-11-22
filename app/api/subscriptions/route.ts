@@ -131,7 +131,7 @@ export async function POST(req: Request, res: Response) {
     }
 
     // Get all subscriptions for the user after adding the new subscription
-    const allSubscriptions = await Subscription.find({ user });
+    const allSubscriptions = await Subscription.find({ user, isPaid: false });
 
     return NextResponse.json(
       {

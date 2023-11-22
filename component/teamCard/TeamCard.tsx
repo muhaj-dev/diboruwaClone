@@ -20,9 +20,13 @@ const CardContainer = styled.div`
   /* border-radius: 7%; */
 
   .imageContainer {
-    width: 230px;
+    width: 200px;
     height: 200px;
     position: relative;
+    /* border-radius: 200px;
+    overflow: hidden; */
+
+  
     /* border-radius: 20px; */
     
   }

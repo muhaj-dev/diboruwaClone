@@ -6,6 +6,7 @@ import useOrder from "@/hooks/useOrder";
 import Loader from "@/component/ui/loader/Loader";
 import { BackBtn } from "../profile/profile.styles";
 import BackButton from "@/component/ui/BackButton/BackButton";
+import moment from "moment";
 
 // Styled Components
 const OrderContainer = styled.div`
@@ -81,6 +82,9 @@ const SingleOrderPage = ({ id }: { id: any }) => {
                     </span>
                   </div>
                 ))}
+               <OrderData>
+                <strong>Date:</strong> {moment(order?.createdAt).format("MMMM DD, YYYY")}
+              </OrderData>
             </>
           )}
           {order?.type === "session" && (
@@ -94,6 +98,9 @@ const SingleOrderPage = ({ id }: { id: any }) => {
 
               <OrderData>
                 <strong>Plan:</strong> {order?.orderItems?.plan}
+              </OrderData>
+              <OrderData>
+                <strong>Date:</strong> {moment(order?.createdAt).format("MMMM DD, YYYY")}
               </OrderData>
             </>
           )}
