@@ -13,9 +13,11 @@ const CardContainer = styled.div`
   padding: 16px;
   margin: auto;
   text-align: center;
-  background-color: #fff;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  /* border-radius: 7%; */
 
   .imageContainer {
     width: 200px;
@@ -25,6 +27,12 @@ const CardContainer = styled.div`
     overflow: hidden; */
 
   
+    /* border-radius: 20px; */
+    
+  }
+
+  p{
+    font-size: 14px;
   }
 
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
@@ -34,6 +42,7 @@ const TeamImg = styled(Image)<{ thumb: boolean }>`
   width: 100%;
   height: 100%;
   object-fit: contain;
+  
 
   opacity: ${({ thumb }) => (thumb ? 0.1 : 1)};
  
