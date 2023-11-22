@@ -18,9 +18,13 @@ const CardContainer = styled.div`
   flex-direction: column;
 
   .imageContainer {
-    width: 230px;
+    width: 200px;
     height: 200px;
     position: relative;
+    /* border-radius: 200px;
+    overflow: hidden; */
+
+  
   }
 
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
