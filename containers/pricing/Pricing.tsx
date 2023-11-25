@@ -246,7 +246,7 @@ const Pricing = () => {
           <PlanCard key={plan.title}>
             <h3>{plan.title}</h3>
 
-            <p>{plan.total}</p>
+            <p>₦{plan.total}</p>
             <hr />
             <ul>
               {plan.features.map((feature: string[], index: string) => (

@@ -34,7 +34,7 @@ import NotificationModal from "@/component/NotificationModal";
 import Moving from "@/component/movingRequestCard/Moving";
 
 const Cleaning = () => {
-  const { addSubscription, subscriptions, modal } = useCartStore();
+  const { addSubscription, subscriptions, modal, closeModal } = useCartStore();
   const { data: session } = useSession();
   const router = useRouter();
   const [selectedItems, setSelectedItems] = useState([]);
@@ -63,7 +63,7 @@ const Cleaning = () => {
     addSubscription(data);
   };
 
-  const { handleQuote, showModal, modalErrorType, modalMessage, closeModal } =
+  const { handleQuote, showModal, modalErrorType, modalMessage,  } =
     useQuote();
 
   const { formData, handleChange, resetForm, errors } = useForm(
@@ -106,7 +106,7 @@ const Cleaning = () => {
               <div className="text">
                 <strong>Expert Clean </strong>
                 <small>
-                  {" "}
+                 
                   Our team brings the shine, making sure every corner sparkles.
                 </small>
               </div>
@@ -191,7 +191,7 @@ const Cleaning = () => {
                     }
                   }}
                 >
-                  <span> BOOK A SESSION</span>
+                  <span> Book a Session</span>
                 </Button>
               </SubscriptionCard>
             </div>
@@ -207,14 +207,12 @@ const Cleaning = () => {
 
       <MoreServices />
 
-      {showModal && (
-        <NotificationModal
-          message={modalMessage}
-          errorType={modalErrorType}
-          onClose={closeModal}
-        />
-      )}
-
+      <Modal
+        isOpen={modal.isOpen}
+        type={modal.type}
+        message={modal.message}
+        onClose={closeModal}
+      />
 
 
      

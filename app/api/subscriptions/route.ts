@@ -55,14 +55,13 @@ export async function POST(req: Request, res: Response) {
       plan: body.subscription.plan,
     });
 
-    
     if (!existingSubscription) {
       // Create a new subscription object
       const newSubscription = new Subscription({
         ...body.subscription,
         user,
-        start,
-        due,
+        start: body.referenceId && start,
+        due: body.referenceId && due,
         isPaid: body.referenceId ? true : false,
         paymentId: body.referenceId && body.referenceId,
       });
@@ -70,12 +69,7 @@ export async function POST(req: Request, res: Response) {
       // Save the new subscription to the database
       await newSubscription.save();
 
-
-
-    
-
       if (newSubscription.isPaid === true) {
-
         await sendEmail(
           user.email,
           "Subscription confirmed",
@@ -87,9 +81,9 @@ export async function POST(req: Request, res: Response) {
             endDate: moment(due).format("MMMM D, YYYY"),
           })
         );
-  
+
         await sendEmail(
-          user.email,
+          "ibrahim.zainab.saliman@gmail.com",
           "New Subscription",
           AdminSubscriptionEmail({
             customerName: `${user.firstName} ${user.lastName}`,
@@ -99,12 +93,12 @@ export async function POST(req: Request, res: Response) {
             endDate: moment(due).format("MMMM D, YYYY"),
           })
         );
+
         sub = newSubscription;
-
-
       }
     } else if (
       existingSubscription &&
+      existingSubscription.plan !== "One-Off Cleaning Plan" &&
       existingSubscription.createdAt >= oneMonthAgo &&
       existingSubscription.isPaid === true
     ) {
@@ -116,6 +110,18 @@ export async function POST(req: Request, res: Response) {
         },
         { status: 400 }
       );
+    } else if (
+      existingSubscription &&
+      existingSubscription.plan === "One-Off Cleaning Plan"
+    ) {
+      const newSubscription = new Subscription({
+        ...body.subscription,
+        user,
+       
+      });
+
+      // Save the new subscription to the database
+      await newSubscription.save();
     } else {
       existingSubscription.isPaid = true;
       existingSubscription.paymentId = body.referenceId;
@@ -125,7 +131,7 @@ export async function POST(req: Request, res: Response) {
     }
 
     // Get all subscriptions for the user after adding the new subscription
-    const allSubscriptions = await Subscription.find({ user });
+    const allSubscriptions = await Subscription.find({ user, isPaid: false });
 
     return NextResponse.json(
       {

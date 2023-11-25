@@ -123,11 +123,11 @@ const QuotePage = ({ id }: { id: string }) => {
             )}
 
             <QuoteDetail>
-              <strong>Total: </strong> {quote.total || "N/A"}
+              <strong>Total: </strong> ₦ {quote.total || "N/A"}
             </QuoteDetail>
             <QuoteDetail>
               <strong>Date: </strong>
-              {moment(quote.date).format("YYYY DD MMMM")}
+              {moment(quote.date).format("MMMM DD, YYYY")}
             </QuoteDetail>
 
             <QuoteDetail>
@@ -135,7 +135,7 @@ const QuotePage = ({ id }: { id: string }) => {
             </QuoteDetail>
             {quote.isPaid && (
               <QuoteDetail>
-                <strong>Payment Reference: </strong> {quote.refId || "N/A"}
+                <strong>Payment Reference: </strong> {quote.paymentId || "N/A"}
               </QuoteDetail>
             )}
             {!quote.isPaid && quote.total && (

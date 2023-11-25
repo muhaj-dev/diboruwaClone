@@ -31,6 +31,7 @@ export async function GET(req: Request, res: Response) {
 
     const subscriptions = await Subscription.find({
       user: user._id,
+      plan: { $ne: 'One-Off Cleaning Plan' } 
     });
 
     if (!subscriptions) {

@@ -109,7 +109,7 @@ export async function POST(req: Request, res: Response) {
     if (data.type === "laundry") {
       await sendEmail(
         "ibrahim.saliman.zainab@gmail.com",
-        "new Quote",
+        "Request Confirmation",
         AdminLaundryQuoteRequest({
           adminName: "Ibrahim",
           userName: `${user.firstName} ${user.lastName}`,

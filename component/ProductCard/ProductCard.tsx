@@ -48,7 +48,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
       </ImageContainer>
       <ProductInfo>
         <ProductName>{product?.title}</ProductName>
-        <ProductPrice>NGN-{product.price}</ProductPrice>
+        <ProductPrice>₦{product.price}</ProductPrice>
       </ProductInfo>
     </Container>
   );

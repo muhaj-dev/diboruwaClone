@@ -1656,8 +1656,8 @@ export function PartnerOrderNotification(data: any) {
                   return `
                   <li>
                   <div key="${item._id}">
-                    ${item.title} - $${item.price} - ${item.quantity} -
-                    $${item.total}
+                    ${item.title} - ₦${item.price} - ${item.quantity} -
+                    ₦${item.total}
                   </div>
                 </li>`;
                 })}
@@ -1665,7 +1665,7 @@ export function PartnerOrderNotification(data: any) {
             </li>
             <li>
               <strong> Total Amount:</strong>
-              ${data.totalAmount}
+              ₦${data.totalAmount}
             </li>
             <li>
               <strong> Delivery Address:</strong>
@@ -1939,8 +1939,8 @@ export function AdminOrderNotification(data: any) {
                     return `
                   <li>
                     <div key="${item._id}">
-                      ${item.title} - $${item.price} - ${item.quantity} -
-                      $${item.total}
+                      ${item.title} - ₦${item.price} - ${item.quantity} -
+                      ₦${item.total}
                     </div>
                   </li>
                   `;
@@ -1949,7 +1949,7 @@ export function AdminOrderNotification(data: any) {
               </li>
               <li>
                 <strong> Total Amount:</strong>
-                ${data.totalAmount}
+                ₦${data.totalAmount}
               </li>
               <li>
                 <strong>Delivery Address: </strong>
@@ -2229,8 +2229,8 @@ export function AdminOrderCancelNotification(data: any) {
                     return `
                   <li>
                     <div key="${item._id}">
-                      ${item.title} - $${item.price} - ${item.quantity} -
-                      $${item.total}
+                      ${item.title} - ₦${item.price} - ${item.quantity} -
+                      ₦${item.total}
                     </div>
                   </li>
                   `;
@@ -2239,7 +2239,7 @@ export function AdminOrderCancelNotification(data: any) {
               </li>
               <li>
                 <strong> Total Amount:</strong>
-                ${data.totalAmount}
+                ₦${data.totalAmount}
               </li>
               <li>
                 <strong>Delivery Address: </strong>
@@ -2520,15 +2520,15 @@ export function PartnerOrderAssignment(data: any) {
                     return `
                   <li>
                     <div key="${item._id}">
-                      ${item.title} - $${item.price} - ${item.quantity} -
-                      $${item.total}
+                      ${item.title} - ₦${item.price} - ${item.quantity} -
+                      ₦${item.total}
                     </div>
                   </li>
                   `;
                   })}
                 </ul>
               </li>
-              <li><strong>Total Amount:</strong> ${data.totalAmount}</li>
+              <li><strong>Total Amount:</strong> ₦${data.totalAmount}</li>
               <li><strong>Delivery Address:</strong> ${
                 data.customerAddress
               }</li>
@@ -2807,15 +2807,15 @@ export function DispatchStatus(data: any) {
                     return `
                   <li>
                     <div key="${item._id}">
-                      ${item.title} - $${item.price} - ${item.quantity} -
-                      $${item.total}
+                      ${item.title} - ₦${item.price} - ${item.quantity} -
+                      ₦${item.total}
                     </div>
                   </li>
                   `;
                   })}
                 </ul>
               </li>
-              <li><strong>Total Amount:</strong> ${data.totalAmount}</li>
+              <li><strong>Total Amount:</strong> ₦${data.totalAmount}</li>
               <li> <strong>Estimated Delivery Date:</strong> ${
                 data.estimatedDeliveryDate
               }</li>
@@ -3090,15 +3090,15 @@ export function DeliveredStatus(data: any) {
                     return `
                   <li>
                     <div key="${item._id}">
-                      ${item.title} - $${item.price} - ${item.quantity} -
-                      $${item.total}
+                      ${item.title} - ₦${item.price} - ${item.quantity} -
+                      ₦${item.total}
                     </div>
                   </li>
                   `;
                   })}
                 </ul>
               </li>
-              <li><strong>Total Amount:</strong> ${data.totalAmount}</li>
+              <li><strong>Total Amount:</strong> ₦${data.totalAmount}</li>
               <li><strong>Delivery Date:</strong> ${data.deliveryDate}</li>
             </ul>
             <p>
@@ -3643,7 +3643,7 @@ export function AdminQuoteResponse(data: any) {
         </ul>
     
         <p>
-          <strong>Total:</strong> ${data.total} 
+          <strong>Total:</strong> ₦${data.total} 
         </p>
         
         <p>

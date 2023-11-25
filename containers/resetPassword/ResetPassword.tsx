@@ -6,7 +6,7 @@ import useAuth from "@/hooks/useAuth";
 import useForm from "@/hooks/useForm";
 import axios from "axios";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import styled from "styled-components";

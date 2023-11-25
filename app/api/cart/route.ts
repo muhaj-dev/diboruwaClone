@@ -5,6 +5,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/utils/helpers/authOptions";
 import User from "@/utils/models/Users";
 import { CartItem } from "@/utils/types/types";
+import { Subscription } from "@/utils/models/Subscription";
 
 export async function POST(req: Request, res: Response) {
   try {
@@ -81,8 +82,7 @@ export async function POST(req: Request, res: Response) {
       { status: 201 }
     );
   } catch (err) {
-   
-   return NextResponse.json({ error: "An error occurred" }, { status: 500 });
+    return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   } finally {
     await closeDB();
   }
@@ -110,7 +110,7 @@ export async function GET(req: Request, res: Response) {
 
     return NextResponse.json({ cart, success: true });
   } catch (err) {
-   return NextResponse.json({ error: "An error occurred" }, { status: 500 });
+    return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   } finally {
     await closeDB();
   }
@@ -132,18 +132,20 @@ export async function DELETE(req: Request, res: Response) {
 
     const cart = await Cart.findOne({ user: user._id });
 
+    const subs = await Subscription.deleteMany({ user, isPaid: false });
+   
+
     if (!cart) {
       return NextResponse.json({ message: "Cart is empty" });
     }
     cart.cartItems = [];
-    cart.total = 0
+    cart.total = 0;
 
     await cart.save();
 
-    return NextResponse.json({ cart, success: true });
+    return NextResponse.json({ cart, subscriptions: [], success: true });
   } catch (err) {
-   
-   return NextResponse.json({ error: "An error occurred" }, { status: 500 });
+    return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   } finally {
     await closeDB();
   }

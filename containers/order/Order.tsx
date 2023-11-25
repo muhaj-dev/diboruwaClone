@@ -6,6 +6,7 @@ import useOrder from "@/hooks/useOrder";
 import Loader from "@/component/ui/loader/Loader";
 import { BackBtn } from "../profile/profile.styles";
 import BackButton from "@/component/ui/BackButton/BackButton";
+import moment from "moment";
 
 // Styled Components
 const OrderContainer = styled.div`
@@ -38,7 +39,6 @@ const OrderItemImage = styled.img`
 const SingleOrderPage = ({ id }: { id: any }) => {
   const { order, getOrderById, isSubmitting } = useOrder();
   useEffect(() => {
-   
     getOrderById(id);
   }, []);
 
@@ -71,51 +71,36 @@ const SingleOrderPage = ({ id }: { id: any }) => {
                 <strong>Payment ID:</strong> {order?.paymentId}
               </OrderData>
               <OrderData>
-                <strong>Total:</strong> ${order?.total.toFixed(2)}
+                <strong>Total:</strong> ₦{order?.total.toFixed(2)}
               </OrderData>
               {order?.orderItems &&
                 order?.orderItems.map((item: any) => (
                   <div key={item?._id} className="item">
                     <span>
-                      {item?.title} - ${item?.total.toFixed(2)} (Quantity:
+                      {item?.title} - ₦{item?.total.toFixed(2)} (Quantity:
                       {item?.quantity})
                     </span>
                   </div>
                 ))}
+               <OrderData>
+                <strong>Date:</strong> {moment(order?.createdAt).format("MMMM DD, YYYY")}
+              </OrderData>
             </>
           )}
-          {order?.type === "subscription" && (
+          {order?.type === "session" && (
             <>
               <OrderData>
                 <strong>Payment ID:</strong> {order?.paymentId}
               </OrderData>
               <OrderData>
-                <strong>Total:</strong> ${order?.total.toFixed(2)}
+                <strong>Total:</strong> ₦{order?.total.toFixed(2)}
               </OrderData>
-              {/* Render subscription-specific details */}
-              {typeof order?.orderItems?.plan === "string" ? (
-                <OrderData>
-                  <strong>Plan:</strong> {order?.orderItems?.plan}
-                </OrderData>
-              ) : (
-                <>
-                  <OrderData>
-                    <strong>Bag Count:</strong>{" "}
-                    {order?.orderItems?.plan?.bagCount}
-                  </OrderData>
-                  <OrderData>
-                    <strong>Regularity:</strong>{" "}
-                    {order?.orderItems?.plan?.regularity}
-                  </OrderData>
-                </>
-              )}
+
               <OrderData>
-                <strong>Start Date:</strong>{" "}
-                {new Date(order?.orderItems?.start).toLocaleDateString()}
+                <strong>Plan:</strong> {order?.orderItems?.plan}
               </OrderData>
               <OrderData>
-                <strong>Due Date:</strong>{" "}
-                {new Date(order?.orderItems?.due).toLocaleDateString()}
+                <strong>Date:</strong> {moment(order?.createdAt).format("MMMM DD, YYYY")}
               </OrderData>
             </>
           )}

@@ -39,10 +39,10 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
         }}
       >
         <img
-           style={{
+          style={{
             width: "100%",
             height: "100%",
-           objectFit: "contain"
+            objectFit: "contain",
           }}
           src="https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1698603012/Deck%20assets/comp_logo_l2_1_fky59a.png"
           alt="company_logo"
@@ -432,6 +432,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
   partnerFirstName: string;
   customerFullName: string;
   orderNumber: string;
+  type: string;
   itemsOrdered: any;
   totalAmount: string;
   customerAddress: string;
@@ -442,6 +443,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
   customerFullName,
   orderNumber,
   itemsOrdered,
+  type,
   totalAmount,
   customerAddress,
   orderTimestamp,
@@ -521,36 +523,25 @@ export const PartnerOrderNotificationComponent: React.FC<{
             <li>
               <strong>Order ID: </strong>#{orderNumber}{" "}
             </li>
+            {type === "session" && (
+              <li>
+                <strong>type:</strong> {itemsOrdered.type}
+                <br />
+                <strong>Plan:</strong> {itemsOrdered.plan}
+              </li>
+            )}
+
+            {type === "cart" && (
+              <div>
+                {itemsOrdered.map((item: any, index: any) => (
+                  <li key={index}>
+                    {item.title} - {item.quantity} - ₦{item.total}
+                  </li>
+                ))}
+              </div>
+            )}
             <li>
-              <table style={tableStyles}>
-                <thead
-                  style={{
-                    background: colors.darkBlue, // Header cell background color: ;
-                    color: "#fff", // Header cell text color
-                  }}
-                >
-                  <tr>
-                    <th style={headerCellStyle}>Item</th>
-                    <th style={headerCellStyle}>Price</th>
-                    <th style={headerCellStyle}>Quantity</th>
-                    <th style={headerCellStyle}>Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {itemsOrdered.map((item: any) => (
-                    <tr key={item._id}>
-                      <td style={cellStyle}>{item.title}</td>
-                      <td style={cellStyle}>${item.price}</td>
-                      <td style={cellStyle}>{item.quantity}</td>
-                      <td style={cellStyle}>${item.total}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </li>
-            <li>
-              <strong> Total Amount:</strong>
-              {totalAmount}{" "}
+              <strong> Total Amount:</strong>₦{totalAmount}{" "}
             </li>
             <li>
               <strong> Delivery Address:</strong>
@@ -583,6 +574,7 @@ export const AdminOrderNotificationComponent: React.FC<{
   customerFullName: string;
   orderNumber: string;
   itemsOrdered: any;
+  type: string;
   totalAmount: string;
   customerAddress: string;
   partnerFullName: string;
@@ -592,6 +584,7 @@ export const AdminOrderNotificationComponent: React.FC<{
   customerFullName,
   orderNumber,
   itemsOrdered,
+  type,
   totalAmount,
   customerAddress,
   partnerFullName,
@@ -662,36 +655,25 @@ export const AdminOrderNotificationComponent: React.FC<{
             <li>
               <strong> Order ID:</strong>#{orderNumber}{" "}
             </li>
+            {type === "session" && (
+              <li>
+                <strong>type:</strong> {itemsOrdered.type}
+                <br />
+                <strong>Plan:</strong> {itemsOrdered.plan}
+              </li>
+            )}
+
+            {type === "cart" && (
+              <div>
+                {itemsOrdered.map((item: any, index: any) => (
+                  <li key={index}>
+                    {item.title} - {item.quantity} - ₦{item.total}
+                  </li>
+                ))}
+              </div>
+            )}
             <li>
-              <table style={tableStyles}>
-                <thead
-                  style={{
-                    background: colors.darkBlue, // Header cell background color: ;
-                    color: "#fff", // Header cell text color
-                  }}
-                >
-                  <tr>
-                    <th style={headerCellStyle}>Item</th>
-                    <th style={headerCellStyle}>Price</th>
-                    <th style={headerCellStyle}>Quantity</th>
-                    <th style={headerCellStyle}>Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {itemsOrdered.map((item: any) => (
-                    <tr key={item._id}>
-                      <td style={cellStyle}>{item.title}</td>
-                      <td style={cellStyle}>${item.price}</td>
-                      <td style={cellStyle}>{item.quantity}</td>
-                      <td style={cellStyle}>${item.total}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </li>
-            <li>
-              <strong> Total Amount:</strong>
-              {totalAmount}
+              <strong> Total Amount:</strong>₦{totalAmount}
             </li>
             <li>
               <strong>Delivery Address: </strong>
@@ -731,6 +713,7 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
   orderNumber: string;
   customerFullName: string;
   itemsOrdered: any;
+  type: string;
   totalAmount: string;
   customerAddress: string;
   partnerFullName: string;
@@ -741,6 +724,7 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
   orderNumber,
   customerFullName,
   itemsOrdered,
+  type,
   totalAmount,
   customerAddress,
   partnerFullName,
@@ -832,16 +816,16 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
                   {itemsOrdered.map((item: any) => (
                     <tr key={item._id}>
                       <td style={cellStyle}>{item.title}</td>
-                      <td style={cellStyle}>${item.price}</td>
+                      <td style={cellStyle}>₦{item.price}</td>
                       <td style={cellStyle}>{item.quantity}</td>
-                      <td style={cellStyle}>${item.total}</td>
+                      <td style={cellStyle}>₦{item.total}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </li>
             <li>
-              Total Amount: <strong>{totalAmount}</strong>
+              Total Amount: <strong>₦{totalAmount}</strong>
             </li>
             <li>
               <strong>Delivery Address: </strong>
@@ -969,9 +953,9 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
                 {itemsOrdered.map((item: any) => (
                   <tr key={item._id}>
                     <td style={cellStyle}>{item.title}</td>
-                    <td style={cellStyle}>${item.price}</td>
+                    <td style={cellStyle}>₦{item.price}</td>
                     <td style={cellStyle}>{item.quantity}</td>
-                    <td style={cellStyle}>${item.total}</td>
+                    <td style={cellStyle}>₦{item.total}</td>
                   </tr>
                 ))}
               </tbody>
@@ -979,7 +963,7 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Total Amount:</strong> {totalAmount}
+            <strong>Total Amount:</strong> ₦{totalAmount}
           </li>
           <li>
             {" "}
@@ -1087,9 +1071,9 @@ export const DispatchStatusNotificationComponent: React.FC<{
                 {itemsOrdered.map((item: any) => (
                   <tr key={item._id}>
                     <td style={cellStyle}>{item.title}</td>
-                    <td style={cellStyle}>${item.price}</td>
+                    <td style={cellStyle}>₦{item.price}</td>
                     <td style={cellStyle}>{item.quantity}</td>
-                    <td style={cellStyle}>${item.total}</td>
+                    <td style={cellStyle}>₦{item.total}</td>
                   </tr>
                 ))}
               </tbody>
@@ -1097,7 +1081,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Total Amount:</strong> {totalAmount}
+            <strong>Total Amount:</strong> ₦{totalAmount}
           </li>
           <li>
             {" "}
@@ -1207,9 +1191,9 @@ export const DeliveredStatusNotificationComponent: React.FC<{
                 {itemsDelivered.map((item: any) => (
                   <tr key={item._id}>
                     <td style={cellStyle}>{item.title}</td>
-                    <td style={cellStyle}>${item.price}</td>
+                    <td style={cellStyle}>₦{item.price}</td>
                     <td style={cellStyle}>{item.quantity}</td>
-                    <td style={cellStyle}>${item.total}</td>
+                    <td style={cellStyle}>₦{item.total}</td>
                   </tr>
                 ))}
               </tbody>
@@ -1217,7 +1201,7 @@ export const DeliveredStatusNotificationComponent: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Total Amount:</strong> {totalAmount}
+            <strong>Total Amount:</strong> ₦{totalAmount}
           </li>
           <li>
             {" "}
@@ -1355,7 +1339,6 @@ export const UserQuoteRequestConfirmation: React.FC<{
             <strong>Items:</strong> {description}
           </li>
           <li>
-           
             <strong>Request Date & Time:</strong> {timestamp}
           </li>
         </ul>
@@ -1620,24 +1603,31 @@ export const SubscriptionConfirmationEmail: React.FC<{
           ,
         </p>
 
+        <p>Hello Admin,</p>
         <p>
-          Hello Admin,
-      </p>
-      <p>
-          You have a new subscription request for your service. Here are the details:
-      </p>
-      <h3>Subscription Details:</h3>
-      <ul>
-          <li><strong>Customer Name:</strong> {customerName}</li>
-          <li><strong>Service Name:</strong> {serviceName}</li>
-          <li><strong>Plan Name:</strong> {planName}</li>
-          <li><strong>Start Date:</strong> {startDate}</li>
-          <li><strong>End Date:</strong> {endDate}</li>
-      </ul>
-      <p>
-          Please review this subscription and take any necessary action.
-      </p>
-       
+          You have a new subscription request for your service. Here are the
+          details:
+        </p>
+        <h3>Subscription Details:</h3>
+        <ul>
+          <li>
+            <strong>Customer Name:</strong> {customerName}
+          </li>
+          <li>
+            <strong>Service Name:</strong> {serviceName}
+          </li>
+          <li>
+            <strong>Plan Name:</strong> {planName}
+          </li>
+          <li>
+            <strong>Start Date:</strong> {startDate}
+          </li>
+          <li>
+            <strong>End Date:</strong> {endDate}
+          </li>
+        </ul>
+        <p>Please review this subscription and take any necessary action.</p>
+
         <p>Thank you for trusting Dibo Ruwa. We&#39;re excited to serve you!</p>
         <p>Warmly,</p>
         <p>The Dibo Ruwa Team</p>
@@ -1738,5 +1728,105 @@ const DaysToSubscriptionExpiryEmail: React.FC<{
         <p>The Dibo Ruwa Team</p>
       </div>
     </div>
+  );
+};
+
+export const UserQuotePaymentConfirmation: React.FC<{
+  firstName: string;
+  serviceName: string;
+  paymentAmount: string;
+  paymentDate: string;
+  adminEmail: string;
+}> = ({ firstName, serviceName, paymentAmount, paymentDate, adminEmail }) => {
+  const userEmailStyle: React.CSSProperties = {
+    lineHeight: "2",
+  };
+  return (
+    <EmailTemplate subject="Request confirmation">
+      <div style={userEmailStyle}>
+        <p>
+          Hello{" "}
+          <strong style={{ textTransform: "capitalize" }}>{firstName}</strong>,
+        </p>
+        <p>
+          Thank you for making a payment for the {serviceName} service. Your
+          payment details are as follows:
+        </p>
+        <h3>Payment Details:</h3>
+        <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
+          <li>
+            <strong>Service Name:</strong> {serviceName}
+          </li>
+          <li>
+            <strong>Payment Amount:</strong> {paymentAmount}
+          </li>
+          <li>
+            <strong>Payment Date:</strong> {paymentDate}
+          </li>
+        </ul>
+        <p>
+          Your payment has been successfully processed. If you have any
+          questions or concerns regarding your payment, please contact us at{" "}
+          <strong>{adminEmail}</strong>.
+        </p>
+        <p>Thank you for choosing our services. We appreciate your business!</p>
+        {/* Additional content for admin notification */}
+        <p style={{ marginTop: "20px" }}>
+          Admin, the user {firstName} has made a payment of {paymentAmount} for
+          the {serviceName} service on {paymentDate}.
+        </p>
+        <p>Warm Regards, The Dibo Ruwa Team</p>
+      </div>
+    </EmailTemplate>
+  );
+};
+
+export const AdminQuotePaymentConfirmation: React.FC<{
+  firstName: string;
+  serviceName: string;
+  paymentAmount: string;
+  paymentDate: string;
+  userEmail: string;
+}> = ({ firstName, serviceName, paymentAmount, paymentDate, userEmail }) => {
+  const userEmailStyle: React.CSSProperties = {
+    lineHeight: "2",
+  };
+  return (
+    <EmailTemplate subject="Request confirmation">
+      <div style={userEmailStyle}>
+        <p>Hello Admin,</p>
+        <p>
+          A payment has been received from the user {firstName} for the{" "}
+          {serviceName} service. The details are as follows:
+        </p>
+        <h3>User Details:</h3>
+        <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
+          <li>
+            <strong>User Name:</strong> {firstName}
+          </li>
+          <li>
+            <strong>User Email:</strong> {userEmail}
+          </li>
+        </ul>
+        <h3>Payment Details:</h3>
+        <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
+          <li>
+            <strong>Service Name:</strong> {serviceName}
+          </li>
+          <li>
+            <strong>Payment Amount:</strong> {paymentAmount}
+          </li>
+          <li>
+            <strong>Payment Date:</strong> {paymentDate}
+          </li>
+        </ul>
+        <p>
+          Please take any necessary actions and follow up with the user if
+          needed.
+        </p>
+        <p>Thank you!</p>
+        <p>Warm Regards, The Dibo Ruwa Team</p>
+      </div>
+    </EmailTemplate>
   );
 };

@@ -363,7 +363,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
             Items Ordered: <strong>{itemsOrdered}</strong>{" "}
           </li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>{" "}
+            Total Amount: <strong> ₦{totalAmount}</strong>{" "}
           </li>
           <li>
             Delivery Address: <strong>{customerAddress}</strong>{" "}
@@ -480,7 +480,7 @@ export const AdminOrderNotificationComponent: React.FC<{
             Items Ordered: <strong>{itemsOrdered}</strong>{" "}
           </li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>
+            Total Amount: <strong>₦{totalAmount}</strong>
           </li>
           <li>
             Delivery Address: <strong>{customerAddress}</strong>
@@ -606,7 +606,7 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
           </li>
           <li>Items Ordered: {itemsOrdered}</li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>{" "}
+            Total Amount: <strong>₦{totalAmount}</strong>{" "}
           </li>
           <li>
             Delivery Address: <strong> {customerAddress}</strong>
@@ -724,7 +724,7 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
           </li>
           <li>Items Ordered: {itemsOrdered}</li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>
+            Total Amount: <strong>₦{totalAmount}</strong>
           </li>
           <li>
             Delivery Address: <strong>{customerAddress}</strong>{" "}
@@ -825,7 +825,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
           </li>
           <li>Items Ordered: {itemsOrdered}</li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>
+            Total Amount: <strong>₦{totalAmount}</strong>
           </li>
           <li>
             Estimated Delivery Date: <strong>{estimatedDeliveryDate}</strong>{" "}
@@ -925,7 +925,7 @@ export const DeliveredStatusNotificationComponent: React.FC<{
           </li>
           <li>Items Delivered: {itemsDelivered}</li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>{" "}
+            Total Amount: <strong>₦{totalAmount}</strong>{" "}
           </li>
           <li>
             Delivery Date: <strong>{deliveryDate}</strong>{" "}
