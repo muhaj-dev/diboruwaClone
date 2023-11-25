@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { sublinks } from "@/constants";
@@ -95,30 +96,30 @@ const Footer = () => {
               <Logo src="/logo.png" fill={true} alt="Logo" />
             </div>
             <p style={{ color: "#ccc", marginBottom: "16px" }}>
-              Make life easier, one service at a time.
+              Making life easier, one service at a time.
             </p>
             <div style={{ display: "flex", gap: "20px", marginTop: " 20px" }}>
               <Link
-                href="/"
-                style={{ color: "var(--content)", fontSize: "28px" }}
+                href="https://web.facebook.com/people/Dibo-Ruwa/100091340989617/"
+                style={{ color: "var(--content)", fontSize: "24px" }}
               >
                 <FiFacebook />
               </Link>
               <Link
-                href="/"
-                style={{ color: "var(--content)", fontSize: "28px" }}
+                href="https://twitter.com/DiboRuwa"
+                style={{ color: "var(--content)", fontSize: "24px" }}
               >
-                <FaTwitter />
+                <FaXTwitter />
               </Link>
               <Link
-                href="/"
-                style={{ color: "var(--content)", fontSize: "28px" }}
+                href="https://www.instagram.com/diboruwa/"
+                style={{ color: "var(--content)", fontSize: "24px" }}
               >
                 <FaInstagram />
               </Link>
               <Link
-                href="/"
-                style={{ color: "var(--content)", fontSize: "28px" }}
+                href="https://www.linkedin.com/company/dibo-ruwa"
+                style={{ color: "var(--content)", fontSize: "24px" }}
               >
                 <FaLinkedin />
               </Link>
@@ -144,7 +145,7 @@ const Footer = () => {
         {/* Copyright */}
         <div style={{ marginTop: "24px", textAlign: "center" }}>
           <p style={{ color: "#ccc", fontSize: "14px" }}>
-            &copy; {new Date().getFullYear()} Dibo Ruwa. All rights reserved.
+            &copy; {new Date().getFullYear()} DiboRuwa. All rights reserved.
           </p>
         </div>
       </FooterContent>

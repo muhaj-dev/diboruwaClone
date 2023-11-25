@@ -108,7 +108,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
             }}
           >
             <a
-              href="https://facebook.com"
+              href="https://web.facebook.com/people/Dibo-Ruwa/100091340989617/"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -118,7 +118,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
               <FaFacebook />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://twitter.com/DiboRuwa"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -128,7 +128,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
               <RiTwitterXLine />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/diboruwa/"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -138,7 +138,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
               <FaInstagram />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/dibo-ruwa"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -310,7 +310,7 @@ export const PartnerWelcomeEmailComponent: React.FC<{
   };
 
   return (
-    <EmailTemplate subject=" Welcome">
+    <EmailTemplate subject=" Welcome to DiboRuwa Family">
       <div style={emailStyles}>
         <div style={contentStyles}>
           <p>
@@ -541,14 +541,14 @@ export const PartnerOrderNotificationComponent: React.FC<{
               </div>
             )}
             <li>
-              <strong> Total Amount:</strong>₦{totalAmount}{" "}
+              <strong> Total Amount: </strong>₦{totalAmount}{" "}
             </li>
             <li>
-              <strong> Delivery Address:</strong>
+              <strong> Delivery Address: </strong>
               {customerAddress}{" "}
             </li>
             <li>
-              <strong>Order Date & Time:</strong>
+              <strong>Order Date & Time: </strong>
               {orderTimestamp}{" "}
             </li>
           </ul>
@@ -556,7 +556,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
             <button style={buttonStyles}>View & Manage Order</button>
           </a>
           <p>
-            <strong>Note:</strong>{" "}
+            <strong>Note: </strong>{" "}
             <em>The button links directly to the order in your dashboard.</em>{" "}
           </p>
           <p>
@@ -649,17 +649,17 @@ export const AdminOrderNotificationComponent: React.FC<{
             <strong>{partnerFullName}</strong> for fulfillment.
           </p>
 
-          <h3>Order Summary:</h3>
+          <h3>Order Summary: </h3>
 
           <ul style={listStyles}>
             <li>
-              <strong> Order ID:</strong>#{orderNumber}{" "}
+              <strong> Order ID: </strong>#{orderNumber}{" "}
             </li>
             {type === "session" && (
               <li>
-                <strong>type:</strong> {itemsOrdered.type}
+                <strong>type: </strong> {itemsOrdered.type}
                 <br />
-                <strong>Plan:</strong> {itemsOrdered.plan}
+                <strong>Plan: </strong> {itemsOrdered.plan}
               </li>
             )}
 
@@ -673,7 +673,7 @@ export const AdminOrderNotificationComponent: React.FC<{
               </div>
             )}
             <li>
-              <strong> Total Amount:</strong>₦{totalAmount}
+              <strong> Total Amount: </strong>₦{totalAmount}
             </li>
             <li>
               <strong>Delivery Address: </strong>
@@ -795,7 +795,7 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
 
           <ul style={listStyles}>
             <li>
-              <strong> Customer Name:</strong> {customerFullName}
+              <strong> Customer Name: </strong> {customerFullName}
             </li>
             <li>
               <table style={tableStyles}>
@@ -832,12 +832,12 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
               {customerAddress}
             </li>
             <li>
-              <strong> Original Partner:</strong>
+              <strong> Original Partner: </strong>
               {partnerFullName}
             </li>
             {/* <li>Cancellation Reason: {cancellationReason}</li> */}
             <li>
-              <strong>Order Date & Time:</strong>
+              <strong>Order Date & Time: </strong>
               {orderTimestamp}
             </li>
           </ul>
@@ -933,11 +933,11 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
         <ul>
           <li>
             {" "}
-            <strong>Order ID:</strong> #{orderNumber}
+            <strong>Order ID: </strong> #{orderNumber}
           </li>
           <li>
             {" "}
-            <strong>Customer Name:</strong> {customerFullName}
+            <strong>Customer Name: </strong> {customerFullName}
           </li>
           <li>
             <table style={tableStyles}>
@@ -963,15 +963,15 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Total Amount:</strong> ₦{totalAmount}
+            <strong>Total Amount: </strong> ₦{totalAmount}
           </li>
           <li>
             {" "}
-            <strong>Delivery Address:</strong> {customerAddress}
+            <strong>Delivery Address: </strong> {customerAddress}
           </li>
           <li>
             {" "}
-            <strong>Order Date & Time:</strong> {orderTimestamp}
+            <strong>Order Date & Time: </strong> {orderTimestamp}
           </li>
         </ul>
         <a href={partnerDashboardLink}>
@@ -1050,7 +1050,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
         <ul>
           <li>
             {" "}
-            <strong>Order ID:</strong> #{orderNumber}
+            <strong>Order ID: </strong> #{orderNumber}
           </li>
           <li>
             <table style={tableStyles}>
@@ -1081,11 +1081,11 @@ export const DispatchStatusNotificationComponent: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Total Amount:</strong> ₦{totalAmount}
+            <strong>Total Amount: </strong> ₦{totalAmount}
           </li>
           <li>
             {" "}
-            <strong>Estimated Delivery Date:</strong> {estimatedDeliveryDate}
+            <strong>Estimated Delivery Date: </strong> {estimatedDeliveryDate}
           </li>
         </ul>
         <p>
@@ -1165,12 +1165,12 @@ export const DeliveredStatusNotificationComponent: React.FC<{
           your expectations!
         </p>
 
-        <h3>Order Details:</h3>
+        <h3>Order Details: </h3>
 
         <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
           <li>
             {" "}
-            <strong>Order ID:</strong> #{orderNumber}
+            <strong>Order ID: </strong> #{orderNumber}
           </li>
           <li>
             <table style={tableStyles}>
@@ -1201,11 +1201,11 @@ export const DeliveredStatusNotificationComponent: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Total Amount:</strong> ₦{totalAmount}
+            <strong>Total Amount: </strong> ₦{totalAmount}
           </li>
           <li>
             {" "}
-            <strong>Delivery Date:</strong> {deliveryDate}
+            <strong>Delivery Date: </strong> {deliveryDate}
           </li>
         </ul>
         <p>
@@ -1267,7 +1267,7 @@ export const AdminQuoteRequestNotification: React.FC<{
         <ul>
           <li>
             {" "}
-            <strong>User Name:</strong> {fullName}
+            <strong>User Name: </strong> {fullName}
           </li>
           <li>
             <strong>User Email: </strong> {userEmail}
@@ -1277,15 +1277,15 @@ export const AdminQuoteRequestNotification: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Service Type:</strong> {serviceType}
+            <strong>Service Type: </strong> {serviceType}
           </li>
           <li>
             {" "}
-            <strong>Description/Notes:</strong> {description}
+            <strong>Description/Notes: </strong> {description}
           </li>
           <li>
             {" "}
-            <strong>Request Date & Time:</strong> {timestamp}
+            <strong>Request Date & Time: </strong> {timestamp}
           </li>
         </ul>
         <p>
@@ -1395,21 +1395,21 @@ export const AdminLaundryQuoteRequest: React.FC<{
         <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
           <li>
             {" "}
-            <strong>Name:</strong> {userName}
+            <strong>Name: </strong> {userName}
           </li>
           <li>
             {" "}
-            <strong>Email:</strong> {userEmail}
+            <strong>Email: </strong> {userEmail}
           </li>
           <li>
             <strong>Contact Number: </strong> {userContact}
           </li>
           <li>
             {" "}
-            <strong>Address:</strong> {userAddress}
+            <strong>Address: </strong> {userAddress}
           </li>
         </ul>
-        <h4>Laundry Items for Quotation:</h4>
+        <h4>Laundry Items for Quotation: </h4>
         <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
           {laundryItems.map((item: any, index: any) => (
             <li key={index}>
@@ -1462,19 +1462,19 @@ export const AdminHomeCleaningQuoteRequest: React.FC<{
         <ul style={{ listStyle: "none", margin: "0 20px 20px" }}>
           <li>
             {" "}
-            <strong>Name:</strong> {userName}
+            <strong>Name: </strong> {userName}
           </li>
           <li>
             {" "}
-            <strong>Email:</strong> {userEmail}
+            <strong>Email: </strong> {userEmail}
           </li>
           <li>
             {" "}
-            <strong>Contact Number:</strong> {userContact}
+            <strong>Contact Number: </strong> {userContact}
           </li>
           <li>
             {" "}
-            <strong>Address:</strong> {userAddress}
+            <strong>Address: </strong> {userAddress}
           </li>
           <li>
             <strong>Areas/Items for Home Cleaning Quotation:</strong>
@@ -1536,7 +1536,7 @@ export const MovingRequestEmail: React.FC<{
         <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
           <li>
             {" "}
-            <strong>Name:</strong> {customerName}
+            <strong>Name: </strong> {customerName}
           </li>
           <li>
             <strong>Email Address: </strong> {customerEmail}
@@ -1549,11 +1549,11 @@ export const MovingRequestEmail: React.FC<{
           </li>
           <li>
             {" "}
-            <strong>Destination Address:</strong> {destinationAddress}
+            <strong>Destination Address: </strong> {destinationAddress}
           </li>
           <li>
             {" "}
-            <strong>Preferred Moving Date:</strong> {preferredDate}
+            <strong>Preferred Moving Date: </strong> {preferredDate}
           </li>
         </ul>
         {/* {itemsForMoving.length > 0 && (
@@ -1611,19 +1611,19 @@ export const SubscriptionConfirmationEmail: React.FC<{
         <h3>Subscription Details:</h3>
         <ul>
           <li>
-            <strong>Customer Name:</strong> {customerName}
+            <strong>Customer Name: </strong> {customerName}
           </li>
           <li>
-            <strong>Service Name:</strong> {serviceName}
+            <strong>Service Name: </strong> {serviceName}
           </li>
           <li>
-            <strong>Plan Name:</strong> {planName}
+            <strong>Plan Name: </strong> {planName}
           </li>
           <li>
-            <strong>Start Date:</strong> {startDate}
+            <strong>Start Date: </strong> {startDate}
           </li>
           <li>
-            <strong>End Date:</strong> {endDate}
+            <strong>End Date: </strong> {endDate}
           </li>
         </ul>
         <p>Please review this subscription and take any necessary action.</p>
@@ -1664,14 +1664,14 @@ export const AdminSubscriptionEmail: React.FC<{
         <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
           <li>
             {" "}
-            <strong>Service:</strong> {serviceName}
+            <strong>Service: </strong> {serviceName}
           </li>
           <li>
             {" "}
-            <strong>Plan:</strong> {planName}
+            <strong>Plan: </strong> {planName}
           </li>
           <li>
-            <strong> Subscription Period:</strong> {startDate} - {endDate}
+            <strong> Subscription Period: </strong> {startDate} - {endDate}
           </li>
         </ul>
         <p>Thank you for trusting Dibo Ruwa. We&#39;re excited to serve you!</p>
@@ -1755,13 +1755,13 @@ export const UserQuotePaymentConfirmation: React.FC<{
         <h3>Payment Details:</h3>
         <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
           <li>
-            <strong>Service Name:</strong> {serviceName}
+            <strong>Service Name: </strong> {serviceName}
           </li>
           <li>
-            <strong>Payment Amount:</strong> {paymentAmount}
+            <strong>Payment Amount: </strong> {paymentAmount}
           </li>
           <li>
-            <strong>Payment Date:</strong> {paymentDate}
+            <strong>Payment Date: </strong> {paymentDate}
           </li>
         </ul>
         <p>
@@ -1802,22 +1802,22 @@ export const AdminQuotePaymentConfirmation: React.FC<{
         <h3>User Details:</h3>
         <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
           <li>
-            <strong>User Name:</strong> {firstName}
+            <strong>User Name: </strong> {firstName}
           </li>
           <li>
-            <strong>User Email:</strong> {userEmail}
+            <strong>User Email: </strong> {userEmail}
           </li>
         </ul>
-        <h3>Payment Details:</h3>
+        <h3>Payment Details: </h3>
         <ul style={{ listStyle: "none", margin: "5px 20px 20px" }}>
           <li>
-            <strong>Service Name:</strong> {serviceName}
+            <strong>Service Name: </strong> {serviceName}
           </li>
           <li>
-            <strong>Payment Amount:</strong> {paymentAmount}
+            <strong>Payment Amount: </strong> {paymentAmount}
           </li>
           <li>
-            <strong>Payment Date:</strong> {paymentDate}
+            <strong>Payment Date: </strong> {paymentDate}
           </li>
         </ul>
         <p>
