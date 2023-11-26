@@ -168,7 +168,7 @@ export const MobileMenu = styled(motion.ul)`
   }
 `;
 
-export const Cta = styled(Link)`
+export const Cta = styled.a`
   
   text-decoration: none;
   color: white;
