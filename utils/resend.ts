@@ -13,7 +13,7 @@ const sendEmail = async (
 ) => {
   try {
     const data = await resend.emails.send({
-      from: "info@diboruwa.com",
+      from: "email@diboruwa.com",
       to,
       text: "email from DiboRowa",
       subject,
