@@ -621,7 +621,7 @@ export const teamMembers = [
   {
     name: "Yakubu Ibrahim Evuti",
     role: "Operations",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700400486/Yakubu_Ibrahim_Evuti_-_Operations_mlyvmq.jpg",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700990270/dbr66_jjk3dx.png",
   },
   {
     name: "Okorie Joshua",

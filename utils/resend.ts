@@ -1,7 +1,7 @@
 import React from "react";
 import { Resend } from "resend";
 
-export const resend = new Resend("re_AErzxZ8q_BotHJgBjXCGaEYFZUL53662i");
+export const resend = new Resend("re_Ee9D3su5_4uYDSSe5moEw3E9952YXV9Wq");
 
 // const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -13,7 +13,7 @@ const sendEmail = async (
 ) => {
   try {
     const data = await resend.emails.send({
-      from: "email@diboruwa.com",
+      from: "info@diboruwa.com",
       to,
       text: "email from DiboRowa",
       subject,
