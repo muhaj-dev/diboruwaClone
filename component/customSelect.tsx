@@ -44,6 +44,8 @@ const CustomOptionsList = styled.ul`
   border: 1px solid var(--primary-20);
   background: #fff;
   border-radius: 0.45rem;
+  background: #fff;
+  z-index: 999;
 `;
 
 const CustomOption = styled.li`
