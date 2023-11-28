@@ -72,7 +72,7 @@ export async function PUT(
           orderItem: {
             orderItems: order.orderItems,
             total: order.total,
-            estimatedDeliveryTime: "3 working days",
+            estimatedDeliveryTime: "30 - 45 minutes",
           },
         })
       );

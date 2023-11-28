@@ -163,7 +163,7 @@ export async function POST(req: Request, res: Response) {
             orderItem: {
               orderItems: existingCart.cartItems,
               total: existingCart.total,
-              estimatedDeliveryTime: "3 working days",
+              estimatedDeliveryTime: "30 - 45 minutes",
             },
           })
         );
