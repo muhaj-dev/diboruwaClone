@@ -22,7 +22,7 @@ interface PaymentButtonProps {
 }
 
 const publicKey =
-  (process.env.PAYSTACK_KEY as string) ||
+  process.env.PAYSTACK_KEY as string ||
   "pk_test_38e802d410e0b30d-d47d751cd7bcebf9981b9a34";
 
 const PaymentButton: React.FC<PaymentButtonProps> = ({
