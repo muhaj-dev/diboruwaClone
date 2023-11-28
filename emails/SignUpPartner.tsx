@@ -833,7 +833,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
         </ul>
         <p>
           Should you have any inquiries or wish to know more about your
-          delivery&#39;s progress, please feel free to contact us directly at
+          delivery&#39;s progress, please feel free to contact us directly at {" "}
           {contactNumber}. Our team is always here to assist you.
         </p>
         <p>
@@ -1206,7 +1206,7 @@ export const QuoteRequestConfirmationUser: React.FC<{
       </p>
       <p>
         If you have any immediate questions or require further information,
-        please don&#39;t hesitate to contact us at {adminContactInfo}.
+        please don&#39;t hesitate to contact us at  {" "}{adminContactInfo}.
       </p>
       <p>
         Thank you for considering Dibo Ruwa for your {serviceType} needs.
