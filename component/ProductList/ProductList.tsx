@@ -51,8 +51,8 @@ const products: Product[] = [
   // },
   {
     id: "6",
-    title: "Chocolate Bar",
-    price: 300,
+    title: "Meat pie",
+    price: 500,
     imgUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691938468/diboruwa/Screenshot_from_2023-08-13_15-52-34_fofcpm.png",
     category: "Snacks",
   },
@@ -70,13 +70,13 @@ const products: Product[] = [
   //   imgUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691930939/diboruwa/Screenshot_from_2023-07-23_12-41-36_gqry1k.png",
   //   category: "Dairy",
   // },
-  {
-    id: "9",
-    title: "Rice and Seafood",
-    price: 1300,
-    imgUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691931367/diboruwa/thai-food-shrimp-squid-fried-cooked-with-long-beans-rice_acmjpp.jpg",
-    category: "Rice and Grains",
-  },
+  // {
+  //   id: "9",
+  //   title: "Rice and Seafood",
+  //   price: 1300,
+  //   imgUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691931367/diboruwa/thai-food-shrimp-squid-fried-cooked-with-long-beans-rice_acmjpp.jpg",
+  //   category: "Rice and Grains",
+  // },
   // {
   //   id: "10",
   //   title: "Toaster",

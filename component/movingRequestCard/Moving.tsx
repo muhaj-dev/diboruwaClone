@@ -285,13 +285,13 @@ const Moving: React.FC = () => {
     { id: 3, name: "Wardrope", amount: 0 },
     { id: 4, name: "Sofa", amount: 0 },
     { id: 4, name: "Mattress", amount: 0 },
-    { id: 4, name: "Food Stuff", amount: 0 },
+    { id: 4, name: "Food stuff", amount: 0 },
     { id: 4, name: "Fridge", amount: 0 },
     { id: 4, name: "TV sets", amount: 0 },
     { id: 4, name: "Fan", amount: 0 },
-    { id: 4, name: "Air Condition", amount: 0 },
+    { id: 4, name: "Air condition", amount: 0 },
     { id: 4, name: "Other electronics", amount: 0 },
-    { id: 5, name: "Others Properties", amount: 0 },
+    { id: 5, name: "Others properties", amount: 0 },
     // Add more laundry items as needed
   ];
 
