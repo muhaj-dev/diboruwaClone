@@ -15,6 +15,16 @@ interface OrderConfirmationProps {
     estimatedDeliveryTime: string;
   };
 }
+interface SessionConfirmationProps {
+  customerName: string;
+  orderId: string;
+  orderItem: {
+    orderItems: any;
+  
+    estimatedDeliveryTime: string;
+  };
+  contactNumber: string
+}
 
 const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
   customerName,
@@ -58,14 +68,13 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
 
         {type === "session" && (
           <li>
-           
             <strong>type:</strong> {orderItems.type}
             <br />
             <strong>Plan:</strong> {orderItems.plan}
           </li>
-        ) }
+        )}
 
-        {type === "cart" &&  (
+        {type === "cart" && (
           <div>
             {orderItems.map((item: any, index: any) => (
               <li key={index}>
@@ -86,6 +95,74 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
         <p>Sit back and relax, your items are on their way!</p>
         <p>
           Cheers,
+          <br />
+          The Dibo Ruwa Team
+        </p>
+      </div>
+    </EmailTemplate>
+  );
+};
+export const SessionConfirmation: React.FC<SessionConfirmationProps> = ({
+  customerName,
+  orderId,
+  orderItem: { orderItems, estimatedDeliveryTime },
+  contactNumber
+}) => {
+  const containerStyle: React.CSSProperties = {
+    lineHeight: "2",
+  };
+
+  const headingStyle: React.CSSProperties = {
+    fontSize: "24px",
+    marginBottom: "15px",
+  };
+
+  const tableStyle: React.CSSProperties = {
+    width: "100%",
+    borderCollapse: "collapse",
+    marginBottom: "10px",
+  };
+
+  const tableCellStyle: React.CSSProperties = {
+    border: `1px solid ${colors.darkBlue}`,
+    padding: "8px",
+  };
+
+  return (
+    <EmailTemplate subject="Your Dibo Ruwa Cleaning Service Booking is Confirmed!">
+      <div style={containerStyle}>
+        <p>
+          Dear{" "}
+          <strong style={{ textTransform: "capitalize" }}>
+            {customerName}
+          </strong>
+          ,{" "}
+        </p>
+        <p>
+          Thank you for your payment and for choosing DiboRuwa for your home
+          cleaning needs. your one-off cleaning service is confirmed, and we are
+          getting everyting ready to make your space shine!
+        </p>
+
+        <div>
+          <p>
+            <strong>Service:</strong> {orderItems.plan}
+          </p>
+         
+          <p>
+            <strong>Date:</strong> {estimatedDeliveryTime}
+          </p>
+        </div>
+
+        <p><strong><em>Next Steps:</em></strong></p>
+
+        <p>Our team will reach out to you soon to finalize any specific instructions and confirm the timing</p>
+
+        <p>Our proffessional cleaners will be dispatched to your location as scheduled</p>
+
+        <p>We are excited to bring the sparkle back to your home!, if you have any questions or need to adjust details, just reply to this email or give us a call at {contactNumber} </p>
+        <p>
+          warm regards
           <br />
           The Dibo Ruwa Team
         </p>
