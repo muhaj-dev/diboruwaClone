@@ -280,11 +280,18 @@ const Moving: React.FC = () => {
     useQuote();
 
   const Props: Properties[] = [
-    { id: 1, name: "T-Shirt", amount: 0 },
-    { id: 2, name: "Jeans", amount: 0 },
-    { id: 3, name: "duve", amount: 0 },
-    { id: 4, name: "curtains", amount: 0 },
-    { id: 5, name: "others", amount: 0 },
+    { id: 1, name: "Bed", amount: 0 },
+    { id: 2, name: "Chair", amount: 0 },
+    { id: 3, name: "Wardrope", amount: 0 },
+    { id: 4, name: "Sofa", amount: 0 },
+    { id: 4, name: "Mattress", amount: 0 },
+    { id: 4, name: "Food Stuff", amount: 0 },
+    { id: 4, name: "Fridge", amount: 0 },
+    { id: 4, name: "TV sets", amount: 0 },
+    { id: 4, name: "Fan", amount: 0 },
+    { id: 4, name: "Air Condition", amount: 0 },
+    { id: 4, name: "Other electronics", amount: 0 },
+    { id: 5, name: "Others Properties", amount: 0 },
     // Add more laundry items as needed
   ];
 
