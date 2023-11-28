@@ -180,7 +180,7 @@ export async function POST(req: Request, res: Response) {
             customerAddress: `${user.address}, ${user.lga}, ${user.state}`,
             partnerFullName: `un-assigned`,
             orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
-            adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
+            adminDashboardLink: `${process.env.ADMIN_URL}/dashboard/${order._id}`,
           })
         );
         
