@@ -21,7 +21,9 @@ interface PaymentButtonProps {
   onClose: () => void;
 }
 
-const publicKey = 'pk_test_14121288702e553e78036414c7df4b89ad7a720f';
+const publicKey =
+  process.env.PAYSTACK_KEY as string ||
+  "pk_test_38e802d410e0b30d-d47d751cd7bcebf9981b9a34";
 
 const PaymentButton: React.FC<PaymentButtonProps> = ({
   totalPrice,
@@ -57,7 +59,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({
   };
 
   const config = getPaystackConfig(referenceId, totalPrice, planCode);
-  const paymentFn =  usePaystackPayment(config);
+  const paymentFn = usePaystackPayment(config);
   const handlePayment = () => {
     if (
       session?.user.phone &&
