@@ -103,49 +103,54 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
             style={{
               display: "flex",
               justifyContent: "center",
+              alignItems: "center",
               gap: "20px",
+              margin: "auto",
               fontSize: "20px",
             }}
           >
             <a
               href="https://web.facebook.com/people/Dibo-Ruwa/100091340989617/"
               target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
             >
-              <FaFacebook />
+              <img
+                style={{
+                  width: "30px",
+                  height: "30px",
+                }}
+                src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"
+                alt="facebook_logo"
+              />
             </a>
-            <a
-              href="https://twitter.com/DiboRuwa"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
-            >
-              <RiTwitterXLine />
+            <a href="https://twitter.com/DiboRuwa" target="_blank">
+              <img
+                style={{
+                  width: "30px",
+                  height: "30px",
+                }}
+                src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png"
+                alt="twitter_logo"
+              />
             </a>
-            <a
-              href="https://www.instagram.com/diboruwa/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
-            >
-              <FaInstagram />
+            <a href="https://www.instagram.com/diboruwa/" target="_blank">
+              <img
+                style={{
+                  width: "30px",
+                  height: "30px",
+                }}
+                src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png"
+                alt="instagram_logo"
+              />
             </a>
-            <a
-              href="https://www.linkedin.com/company/dibo-ruwa"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
-            >
-              <FaLinkedin />
+            <a href="https://www.linkedin.com/company/dibo-ruwa" target="_blank">
+              <img
+                style={{
+                  width: "30px",
+                  height: "30px",
+                }}
+                src="https://cdn-icons-png.flaticon.com/128/145/145807.png"
+                alt="instagram_logo"
+              />
             </a>
           </div>
         </div>
@@ -1090,7 +1095,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
         </ul>
         <p>
           Should you have any inquiries or wish to know more about your
-          delivery&#39;s progress, please feel free to contact us directly at {" "}
+          delivery&#39;s progress, please feel free to contact us directly at{" "}
           <strong>{contactNumber}</strong> . Our team is always here to assist
           you.
         </p>
@@ -1349,7 +1354,7 @@ export const UserQuoteRequestConfirmation: React.FC<{
         </p>
         <p>
           If you have any immediate questions or require further information,
-          please don&#39;t hesitate to contact us at {" "}
+          please don&#39;t hesitate to contact us at{" "}
           <strong>{adminContact}</strong>.
         </p>
         <p>

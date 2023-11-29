@@ -76,11 +76,12 @@ const Navbar = () => {
           : {}
       }
     >
-      <span className="logo">
+      <div className="logo">
+        
         <Link href="/" passHref>
           <LogoImage src="/logo.png" fill={true} alt="logo" />
         </Link>
-      </span>
+      </div>
       <Toggle onClick={() => setToggle((prev) => !prev)}>
         {toggle ? <VscClose /> : <HiBars3 />}
       </Toggle>
