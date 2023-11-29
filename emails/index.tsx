@@ -107,45 +107,23 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
               fontSize: "20px",
             }}
           >
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
-            >
-              <FaFacebook />
+            <a href="https://example.com/facebook" target="_blank">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"
+                alt="facebook_logo"
+              />
             </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
-            >
-              <RiTwitterXLine />
+            <a href="https://example.com/twitter" target="_blank">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png"
+                alt="twitter_logo"
+              />
             </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
-            >
-              <FaLinkedin />
+            <a href="https://example.com/instagram" target="_blank">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png"
+                alt="instagram_logo"
+              />
             </a>
           </div>
         </div>
@@ -1090,7 +1068,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
         </ul>
         <p>
           Should you have any inquiries or wish to know more about your
-          delivery&#39;s progress, please feel free to contact us directly at {" "}
+          delivery&#39;s progress, please feel free to contact us directly at{" "}
           <strong>{contactNumber}</strong> . Our team is always here to assist
           you.
         </p>
@@ -1349,7 +1327,7 @@ export const UserQuoteRequestConfirmation: React.FC<{
         </p>
         <p>
           If you have any immediate questions or require further information,
-          please don&#39;t hesitate to contact us at {" "}
+          please don&#39;t hesitate to contact us at{" "}
           <strong>{adminContact}</strong>.
         </p>
         <p>
