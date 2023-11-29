@@ -7,6 +7,10 @@ export const Container = styled.div`
   grid-gap: 15px;
   width: 100%;
   max-width: 150px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 export const CartOverlay = styled.div`
@@ -46,6 +50,7 @@ export const ImageContainer = styled.div`
 
   @media screen and (max-width: 768px) {
           width: 100%;
+          height: 150px;
   }
 
   &:hover {
