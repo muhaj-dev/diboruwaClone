@@ -175,7 +175,7 @@ export const sublinks = [
       // { name: "Blog", path: "/comingsoon" },
       // { name: "Contact Us", path: "/comingsoon" },
       { name: "Privacy Policy", path: "/privacy-policy" },
-      { name: "Terma & Condition", path: "/terms" },
+      { name: "Terms & Conditions", path: "/terms" },
     ],
   },
 ];
@@ -340,7 +340,7 @@ export const PrivacyContent = [
   },
   {
     header: "Contact Us",
-    text: "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at [email address].",
+    text: "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at info@diboruwa.com.",
   },
 ];
 export const TermsContent = [
@@ -427,7 +427,7 @@ export const TermsContent = [
   },
   {
     header: "Contact Us",
-    text: "If you have any questions or concerns about these Terms and Conditions or our website, please contact us at [email address].",
+    text: "If you have any questions or concerns about these Terms and Conditions or our website, please contact us at info@diboruwa.com.",
   },
 ];
 
@@ -594,8 +594,8 @@ export const teamMembers = [
   // },
   {
     name: "Mustapha Idris",
-    role: "Marketing and Customer Success",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700398549/Updated%20Team/Mustapha_Idris_-_Co-founder_Operations_u8b0lm.png", // Provide the actual image URL
+    role: "Marketing & Customer Success",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948243/dbr11_i4inmr.png",
   },
   {
     name: "Ibrahim Saliman Zainab",
@@ -604,29 +604,29 @@ export const teamMembers = [
   },
   {
     name: "Agula Adams",
-    role: "Marketing and Customer Success",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700400468/Adams_Agula_-_Marketing_and_Customer_Success_tkwye8.jpg", // Provide the actual image URL
+    role: "Marketing & Customer Success",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948256/dbr44_tbhzdn.png",
   },
   {
     name: "Hassan Abbas",
-    role: "Marketing",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700398534/Updated%20Team/Hassan_Abbas_-_Marketing_vqecob.jpg", // Provide the actual image URL
+    role: "Branding & Marketing",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948251/dbr55_fdyoem.png",
   },
   {
     name: "Adeyemo Akinola Ayomide",
     role: "Engineering",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700400509/Adeyemo_Akinola_-_Engineering_u2o8hc.jpg",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948250/dbr22_vpgpn8.png",
   },
  
   {
     name: "Yakubu Ibrahim Evuti",
     role: "Operations",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700400486/Yakubu_Ibrahim_Evuti_-_Operations_mlyvmq.jpg",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700990270/dbr66_jjk3dx.png",
   },
   {
     name: "Okorie Joshua",
     role: "Operations",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700398550/Updated%20Team/Operations_owbek1.png",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948246/dbr33_rbtgb5.png",
   },
   // Add more team members as needed
 ];

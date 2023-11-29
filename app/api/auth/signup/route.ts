@@ -83,7 +83,7 @@ export async function POST(req: Request, res: Response) {
     return NextResponse.json(
       {
         message:
-          "User signed up successfuly!!!\n a verification email hs been sent to you\n please verify your account.",
+          "You have signed up successfuly!!!\n a verification email hs been sent to you\n please verify your account.",
         user,
         success: true,
       },

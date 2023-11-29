@@ -16,7 +16,7 @@ import { CheckCircledIcon } from "@radix-ui/react-icons";
 const PrivacyPolicy = () => {
   return (
     <Container>
-      <SectionHeader className="main">Effective Date: [Date]</SectionHeader>
+      <SectionHeader className="main">Effective Date: November 27th, 2023</SectionHeader>
       <SectionText>
         Thank you for visiting Dibo Ruwa&rsquo;s website. This Privacy Policy
         outlines how we collect, use, disclose, and safeguard your personal

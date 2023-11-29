@@ -261,7 +261,6 @@ const TeamMemberList = styled.div`
 `;
 
 
-
 const AboutUsPage: React.FC = () => {
   return (
     <Container>

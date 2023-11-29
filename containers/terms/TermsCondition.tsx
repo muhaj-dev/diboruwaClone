@@ -16,7 +16,7 @@ import { CheckCircledIcon } from "@radix-ui/react-icons";
 const TermsCondition = () => {
   return (
     <Container>
-      <SectionHeader className="main">Effective Date: [Date]</SectionHeader>
+      <SectionHeader className="main">Effective Date: November 27th, 2023</SectionHeader>
       <SectionText>
         Welcome to Dibo Ruwa&rsquo;s website. These Terms and Conditions govern
         your use of our website and the services provided by Dibo Ruwa. By
