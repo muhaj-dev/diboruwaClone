@@ -23,6 +23,21 @@ export const NavbarContainer = styled.div`
     position: relative;
     width: 100px;
     height: 40px;
+
+   
+a {
+  &::after {
+      content: "beta";
+      position: absolute;
+      top:-10px;
+      left: 70%;
+      padding: 3px 8px;
+      color: #fff;
+      border-radius: 20px;
+      font-size: 12px;
+      background: var(--primary);
+    }
+}
   }
   
 
@@ -59,6 +74,7 @@ export const LogoImage = styled(Image)`
   height: 100%;
 
   object-fit: contain;
+
 `;
 
 export const Toggle = styled.div`
