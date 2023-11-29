@@ -141,6 +141,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
   );
 };
 
+
 export const PasswordRecoveryEmail: React.FC<{
   userName: string;
   passwordResetLink: string;
