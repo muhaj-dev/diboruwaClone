@@ -21,7 +21,7 @@ interface PaymentButtonProps {
   onClose: () => void;
 }
 
-const publicKey = process.env.PAYSTACK_KEY as string;
+const publicKey = "pk_test_38e802d410e0b30dd47d751cd7bcebf9981b9a34";
 
 const PaymentButton: React.FC<PaymentButtonProps> = ({
   totalPrice,
