@@ -107,37 +107,48 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
               fontSize: "20px",
             }}
           >
-            <a href="https://example.com/facebook" target="_blank">
+            <a
+              href="https://web.facebook.com/people/Dibo-Ruwa/100091340989617/"
+              target="_blank"
+            >
               <img
+                style={{
+                  width: "30px",
+                  height: "30px",
+                }}
                 src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png"
                 alt="facebook_logo"
               />
             </a>
-            <a href="https://example.com/twitter" target="_blank">
+            <a href="https://twitter.com/DiboRuwa" target="_blank">
               <img
+                style={{
+                  width: "30px",
+                  height: "30px",
+                }}
                 src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png"
                 alt="twitter_logo"
               />
             </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
-            >
-              <FaInstagram />
+            <a href="https://www.instagram.com/diboruwa/" target="_blank">
+              <img
+                style={{
+                  width: "30px",
+                  height: "30px",
+                }}
+                src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png"
+                alt="instagram_logo"
+              />
             </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: colors.lightBlue,
-              }}
-            >
-              <FaLinkedin />
+            <a href="https://www.linkedin.com/company/dibo-ruwa" target="_blank">
+              <img
+                style={{
+                  width: "30px",
+                  height: "30px",
+                }}
+                src="https://cdn-icons-png.flaticon.com/128/145/145807.png"
+                alt="instagram_logo"
+              />
             </a>
           </div>
         </div>
@@ -154,7 +165,6 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
     </div>
   );
 };
-
 
 export const PasswordRecoveryEmail: React.FC<{
   userName: string;
