@@ -207,7 +207,6 @@ const Cleaning = () => {
           <CustomClean />
 
           <Moving />
-
         
         </SubscriptionList>
       </SubscriptionSection>
@@ -220,8 +219,6 @@ const Cleaning = () => {
         message={modal.message}
         onClose={closeModal}
       />
-
-
      
     </Container>
   );
