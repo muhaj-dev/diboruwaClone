@@ -21,7 +21,7 @@ interface PaymentButtonProps {
   onClose: () => void;
 }
 
-const publicKey = "pk_live_394d59fdfd7c1997cbed48d87f22f7b89355bac8";
+// const publicKey = 'pk_test_14121288702e553e78036414c7df4b89ad7a720f';
 
 const PaymentButton: React.FC<PaymentButtonProps> = ({
   totalPrice,
@@ -51,7 +51,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({
           ? `${session.user.firstName} ${session.user.lastName}`
           : "",
       },
-      publicKey: process.env.PAYSTACK_KEY as string,
+      publicKey: process.env.NEXT_PUBLIC_PAYSTACK_KEY as string,
       plan: planCode ? planCode : undefined,
     };
   };
