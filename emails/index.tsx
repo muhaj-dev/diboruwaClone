@@ -107,6 +107,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
               gap: "20px",
               margin: "auto",
               fontSize: "20px",
+              textAlign: "center",
             }}
           >
             <a
