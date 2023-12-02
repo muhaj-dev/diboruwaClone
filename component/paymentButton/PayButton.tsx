@@ -51,6 +51,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({
           ? `${session.user.firstName} ${session.user.lastName}`
           : "",
       },
+
       publicKey: process.env.NEXT_PUBLIC_PAYSTACK_KEY as string,
       plan: planCode ? planCode : undefined,
     };
