@@ -128,6 +128,26 @@ export const HWWCard = styled.div`
 export const MenuSection = styled.div`
   padding: 5% 8%;
   height: auto;
+
+  .tag {
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 10px;
+      background: var(--primary);
+    }
+
+    width: max-content;
+    display: flex;
+    gap: 5px;
+    margin: 20px auto;
+    font-size: 16px;
+    align-items: center;
+    padding: 7px 12px;
+    background: var(--primary-20);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+  }
 `;
 
 export const MenuTitle = styled.h3`

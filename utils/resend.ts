@@ -1,7 +1,7 @@
 import React from "react";
 import { Resend } from "resend";
 
-export const resend = new Resend(process.env.RESEND_SECRET as string);
+export const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_SECRET as string);
 
 // Define a reusable email sending function
 const sendEmail = async (

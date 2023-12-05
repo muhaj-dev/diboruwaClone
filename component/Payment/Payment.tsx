@@ -29,6 +29,27 @@ const Payment: FC<Props> = ({ modal }) => {
 
   const referenceId = nanoid(8);
 
+  const getDeliveryFee = (address: string | undefined) => {
+    switch (address) {
+      case "Danbare":
+        return 300;
+      case "Rimin gata":
+        return 300;
+      case "Rijiazaki":
+        return 400;
+      case "Jambulo":
+        return 500;
+      case "Buk old site":
+        return 500;
+      default:
+        // Default delivery fee if the address doesn't match any known locations
+        return 0;
+    }
+  };
+
+  // const deliveryFee = getDeliveryFee(session.user.lga);
+  // const totalPriceWithDelivery = totalPrice + deliveryFee;
+
   const onSuccess = () => {
     handleCartOrderSubmit(referenceId, totalPrice);
   };
