@@ -231,6 +231,12 @@ const categories: string[] = Array.from(
   new Set(products.map((product) => product.category))
 );
 
+const isBetween10amAnd6pm = () => {
+  const now = new Date();
+  const hours = now.getHours();
+  return hours >= 10 && hours < 18;
+};
+
 const ProductList = () => {
   const initialProductsToShow = 4; // Adjust the initial number of products to display
   const [selectedCategory, setSelectedCategory] = useState<string>(
@@ -239,6 +245,8 @@ const ProductList = () => {
   const [productsToShow, setProductsToShow] = useState<number>(
     initialProductsToShow
   );
+  const isTimeActive = isBetween10amAnd6pm();
+
 
   const handleCategorySelection = useCallback(
     (category: string) => {
@@ -264,11 +272,16 @@ const ProductList = () => {
         categories={categories}
         onCategorySelect={handleCategorySelection}
       />
+       {!isTimeActive && (
+          <div className="tag">
+            <span className="dot"></span>sorry we are closed at the moment
+          </div>
+        )}
       <ProductListing>
         {filteredProducts.slice(0, productsToShow).map((product) => (
           <div key={product.id}>
             {" "}
-            <ProductCard product={product} />
+            <ProductCard product={product} active={isTimeActive} />
           </div>
         ))}
       </ProductListing>

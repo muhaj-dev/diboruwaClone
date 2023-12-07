@@ -22,13 +22,16 @@ export const CartOverlay = styled.div`
   background: var(--primary-20);
   backdrop-filter: blur(8px);
   transition: all 0.3s ease;
-  display: flex;
+  display: flex ;
   align-items: center;
   justify-content: center;
   display: none;
   opacity: 0;
 `;
-export const CartBtn = styled.div`
+export const CartBtn = styled.button`
+  outline: none;
+  cursor: pointer;
+
   width: 30px;
   height: 30px;
   border-radius: 8px;
@@ -39,7 +42,7 @@ export const CartBtn = styled.div`
   justify-content: center;
 `;
 
-export const ImageContainer = styled.div`
+export const ImageContainer = styled.div<{disabled: boolean}>`
   width: 250px;
   height: 250px;
   border-radius: 15px;
@@ -49,13 +52,13 @@ export const ImageContainer = styled.div`
   transition: all 0.3s ease;
 
   @media screen and (max-width: 768px) {
-          width: 100%;
-          height: 150px;
+    width: 100%;
+    height: 150px;
   }
 
   &:hover {
     ${CartOverlay} {
-      display: flex;
+      display:${({disabled}) => disabled ? "none" : "flex"};
       opacity: 1;
     }
   }

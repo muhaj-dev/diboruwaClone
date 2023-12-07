@@ -11,7 +11,8 @@ import { nanoid } from "nanoid";
 import useAuth from "@/hooks/useAuth";
 
 import PaymentButton from "../paymentButton/PayButton";
-import { FC } from "react";
+import { FC, useState } from "react";
+import CustomSelect from "../customSelect";
 interface Props {
   modal: (
     errorType: "success" | "error" | "info",
@@ -21,6 +22,7 @@ interface Props {
 
 const Payment: FC<Props> = ({ modal }) => {
   const { data: session } = useSession();
+  const [location, setLocation] = useState("")
 
   const { cartItems, subscriptions } = useCartStore();
   const { totalPrice } = useCart();
@@ -28,6 +30,29 @@ const Payment: FC<Props> = ({ modal }) => {
     useOrder();
 
   const referenceId = nanoid(8);
+
+  const locations =["Danbare", "Rimin gata", "Rijiazaki", "Jambulo", "Buk old site"]
+
+  const getDeliveryFee = (address: string | undefined) => {
+    switch (address) {
+      case "Danbare":
+        return 300;
+      case "Rimin gata":
+        return 300;
+      case "Rijiazaki":
+        return 400;
+      case "Jambulo":
+        return 500;
+      case "Buk old site":
+        return 500;
+      default:
+        // Default delivery fee if the address doesn't match any known locations
+        return 0;
+    }
+  };
+
+  const deliveryFee = getDeliveryFee(location);
+  const totalPriceWithDelivery = totalPrice + deliveryFee;
 
   const onSuccess = () => {
     handleCartOrderSubmit(referenceId, totalPrice);
@@ -41,12 +66,27 @@ const Payment: FC<Props> = ({ modal }) => {
   return (
     <Container>
       <Column>
+        <strong>Location:</strong>{" "}
+        <CustomSelect
+          // label="State"
+          
+          options={locations}
+          value={location}
+          name="location"
+          onChange={(e) => setLocation(e.target.value)}
+          
+        />
+      </Column>
+      <Column>
         <strong>Items</strong> <span>{totalQuantities}</span>
       </Column>
       <Column>
-        <strong>Total</strong> <span>₦{totalPrice.toFixed(2)}</span>
+        <strong>Delivery fee</strong> <span>{deliveryFee}</span>
       </Column>
-      <PaymentButton
+      <Column>
+        <strong>Total</strong> <span>₦{totalPriceWithDelivery.toFixed(2)}</span>
+      </Column>
+     {location && <PaymentButton
         totalPrice={totalPrice}
         openModal={modal}
         buttonText="Pay Now"
@@ -54,7 +94,7 @@ const Payment: FC<Props> = ({ modal }) => {
         onSuccess={onSuccess}
         onClose={onClose}
         referenceId={referenceId}
-      />
+      />}
     </Container>
   );
 };
