@@ -66,8 +66,11 @@ const Payment: FC<Props> = ({ modal }) => {
   return (
     <Container>
       <Column>
-        <strong>Location:</strong>{" "}
-        <CustomSelect
+        <strong>Location:</strong>
+
+        <div className="select">
+
+            <CustomSelect
           // label="State"
           
           options={locations}
@@ -76,6 +79,8 @@ const Payment: FC<Props> = ({ modal }) => {
           onChange={(e) => setLocation(e.target.value)}
           
         />
+        </div>
+      
       </Column>
       <Column>
         <strong>Items</strong> <span>{totalQuantities}</span>
