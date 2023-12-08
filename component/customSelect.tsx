@@ -93,7 +93,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
     <CustomSelectContainer cart={pathname === "/cart"}>
       <label>{label}</label>
       <CustomSelectButton
-        cart={pathname === "/cart"}
+       
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         disabled={disabled}
