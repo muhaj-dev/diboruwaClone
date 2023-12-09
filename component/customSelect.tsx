@@ -9,6 +9,7 @@ const CustomSelectContainer = styled.div<{ cart: boolean }>`
   width: 100%;
 
   background: ${({ cart }) => cart && "#fff"};
+  border-radius: 0.45rem;
   
   label {
     display: block;
