@@ -10,7 +10,7 @@ import SubscriptionConfirmation from "@/emails/SubscriptionOrder";
 import moment from "moment";
 
 import { AdminOrderNotificationComponent } from "@/emails";
-import OrderConfirmation from "@/emails/FoodOrder";
+import OrderConfirmation, { SessionConfirmation } from "@/emails/FoodOrder";
 
 
 export async function PUT(
@@ -65,15 +65,15 @@ export async function PUT(
 
       await sendEmail(
         user.email,
-        "Order Confirmed",
-        OrderConfirmation({
+        "Booking Confirmed",
+        SessionConfirmation({
           customerName: user.firstName,
-          type: order.type,
+          orderId: order.paymentId,
           orderItem: {
             orderItems: order.orderItems,
-            total: order.total,
-            estimatedDeliveryTime: "3 working days",
+            estimatedDeliveryTime: "witin the next two days(we'll call to confirm your exact time)",
           },
+          contactNumber: "+2348059303261"
         })
       );
 
@@ -89,7 +89,7 @@ export async function PUT(
           customerAddress: `${user.address}, ${user.lga}, ${user.state}`,
           partnerFullName: `un-assigned`,
           orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
-          adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
+          adminDashboardLink: `${process.env.ADMIN_URL}/dashboard/${order._id}`,
         })
       );
 

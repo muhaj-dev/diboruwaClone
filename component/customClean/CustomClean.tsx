@@ -228,11 +228,14 @@ const CustomClean: React.FC = () => {
     useQuote();
 
   const cleanproperties: Cleanproperties[] = [
-    { id: 1, name: "T-Shirt", amount: 0 },
-    { id: 2, name: "Jeans", amount: 0 },
-    { id: 3, name: "duve", amount: 0 },
-    { id: 4, name: "curtains", amount: 0 },
-    { id: 5, name: "others", amount: 0 },
+    { id: 1, name: "Bedroom", amount: 0 },
+    { id: 2, name: "Living Room", amount: 0 },
+    { id: 3, name: "Bathroom", amount: 0 },
+    { id: 4, name: "Kitchen", amount: 0 },
+    { id: 5, name: "Office", amount: 0 },   
+    { id: 6, name: "Hall", amount: 0 },
+    { id: 7, name: "Recreation room", amount: 0 },
+    { id: 12, name: "Others", amount: 0 }
     // Add more laundry items as needed
   ];
 

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import HeroContainer from "@/component/shared/HeroContainer";
 import {
   Container,
@@ -22,6 +22,12 @@ import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+
+const isBetween10amAnd6pm = () => {
+  const now = new Date();
+  const hours = now.getHours();
+  return hours >= 10 && hours < 18;
+};
 
 const Food = () => {
   const { modal, closeModal } = useCartStore();
@@ -58,7 +64,11 @@ const Food = () => {
           </HeroList>
 
           <div className="ctaBtn">
-            <Button size="large" color="primary"  onClick={() => router.push(session ? "/dashboard" : "/signin")}>
+            <Button
+              size="large"
+              color="primary"
+              onClick={() => router.push(session ? "/dashboard" : "/signin")}
+            >
               Order Now
             </Button>
           </div>
@@ -66,11 +76,7 @@ const Food = () => {
 
         <HeroImageContainer>
           <div className="image food">
-            <HeroImage
-              src='/cheff.png'
-              fill={true}
-              alt=".."
-            />
+            <HeroImage src="/cheff.png" fill={true} alt=".." />
           </div>
         </HeroImageContainer>
       </HeroContainer>
@@ -92,6 +98,7 @@ const Food = () => {
       </HWWSecetion>
 
       <MenuSection>
+       
         <ProductList />
       </MenuSection>
 

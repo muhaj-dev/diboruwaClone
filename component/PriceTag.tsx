@@ -86,7 +86,7 @@ const PriceCard = () => {
     <PriceCardContainer>
       <PrimaryBackground />
       <ContentContainer>
-        <PriceTag>₦11,960/bag</PriceTag>
+        <PriceTag>₦4,990/month</PriceTag>
         <Description>
           Never be without a clean outfit again. Our specially designed Diboruwa Laundry Bag ensures your clothes remain organized and ready for pickup. Just fill, schedule, and relax
         </Description>

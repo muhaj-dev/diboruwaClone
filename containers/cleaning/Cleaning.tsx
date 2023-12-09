@@ -34,7 +34,7 @@ import NotificationModal from "@/component/NotificationModal";
 import Moving from "@/component/movingRequestCard/Moving";
 
 const Cleaning = () => {
-  const { addSubscription, subscriptions, modal } = useCartStore();
+  const { addSubscription, subscriptions, modal, closeModal } = useCartStore();
   const { data: session } = useSession();
   const router = useRouter();
   const [selectedItems, setSelectedItems] = useState([]);
@@ -45,11 +45,18 @@ const Cleaning = () => {
   const dropdownRef = useRef<HTMLDivElement | null>(null);
 
   const properties = [
-    { id: 1, name: "T-Shirt", amount: 0 },
-    { id: 2, name: "Jeans", amount: 0 },
-    { id: 3, name: "duve", amount: 0 },
-    { id: 4, name: "curtains", amount: 0 },
-    { id: 5, name: "others", amount: 0 },
+    { id: 1, name: "Shirt", amount: 0 },
+    { id: 2, name: "T-Shirt", amount: 0 },
+    { id: 3, name: "Jeans", amount: 0 },
+    { id: 4, name: "Trouser", amount: 0 },
+    { id: 5, name: "Gown", amount: 0 },   
+    { id: 6, name: "Abaya", amount: 0 },
+    { id: 7, name: "Duvet", amount: 0 },
+    { id: 8, name: "Hijab", amount: 0 },
+    { id: 9, name: "Skirt", amount: 0 },
+    { id: 10, name: "Jalamiya", amount: 0 },
+    { id: 11, name: "Curtains", amount: 0 },
+    { id: 12, name: "Others", amount: 0 },
     // Add more laundry items as needed
   ];
 
@@ -63,7 +70,7 @@ const Cleaning = () => {
     addSubscription(data);
   };
 
-  const { handleQuote, showModal, modalErrorType, modalMessage, closeModal } =
+  const { handleQuote, showModal, modalErrorType, modalMessage,  } =
     useQuote();
 
   const { formData, handleChange, resetForm, errors } = useForm(
@@ -106,7 +113,7 @@ const Cleaning = () => {
               <div className="text">
                 <strong>Expert Clean </strong>
                 <small>
-                  {" "}
+                 
                   Our team brings the shine, making sure every corner sparkles.
                 </small>
               </div>
@@ -191,7 +198,7 @@ const Cleaning = () => {
                     }
                   }}
                 >
-                  <span> BOOK A SESSION</span>
+                  <span> Book a Session</span>
                 </Button>
               </SubscriptionCard>
             </div>
@@ -200,23 +207,18 @@ const Cleaning = () => {
           <CustomClean />
 
           <Moving />
-
         
         </SubscriptionList>
       </SubscriptionSection>
 
       <MoreServices />
 
-      {showModal && (
-        <NotificationModal
-          message={modalMessage}
-          errorType={modalErrorType}
-          onClose={closeModal}
-        />
-      )}
-
-
-
+      <Modal
+        isOpen={modal.isOpen}
+        type={modal.type}
+        message={modal.message}
+        onClose={closeModal}
+      />
      
     </Container>
   );

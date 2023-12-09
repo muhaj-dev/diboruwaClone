@@ -31,7 +31,6 @@ const Profile = () => {
     session,
     status,
     userUpdate,
-
     showModal,
     modalMessage,
     modalErrorType,

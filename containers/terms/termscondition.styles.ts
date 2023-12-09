@@ -13,11 +13,11 @@ export const Section = styled.div`
 `;
 export const SectionHeader = styled.h2`
   color: var(--primary);
-  font-size: 24px;
+  font-size: 16px;
   margin-bottom: 20px;
 
   &.main {
-    font-size: 38px;
+    font-size: 18px;
   }
 `;
 export const SectionText = styled.p`

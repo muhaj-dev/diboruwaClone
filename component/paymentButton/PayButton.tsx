@@ -23,8 +23,6 @@ interface PaymentButtonProps {
 
 // const publicKey = 'pk_test_14121288702e553e78036414c7df4b89ad7a720f';
 
-
-
 const PaymentButton: React.FC<PaymentButtonProps> = ({
   totalPrice,
   planCode,
@@ -53,13 +51,14 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({
           ? `${session.user.firstName} ${session.user.lastName}`
           : "",
       },
+
       publicKey: process.env.NEXT_PUBLIC_PAYSTACK_KEY as string,
       plan: planCode ? planCode : undefined,
     };
   };
 
   const config = getPaystackConfig(referenceId, totalPrice, planCode);
-  const paymentFn =  usePaystackPayment(config);
+  const paymentFn = usePaystackPayment(config);
   const handlePayment = () => {
     if (
       session?.user.phone &&

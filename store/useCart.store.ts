@@ -53,16 +53,41 @@ const useCartStore = create<CartState>()((set) => ({
     }
   },
   addSubscription: async (subscription) => {
+    console.log(subscription);
     try {
-      toast.loading("adding subcription to cart", {
-        position: "top-center",
-        duration: 1000,
-      });
-      const response = await addSubscriptionAPI(subscription);
-      set((state) => ({
-        subscriptions: [...response.data.subscriptions],
-      }));
-      if (response) {
+      if (subscription.plan === "One-Off Cleaning Plan") {
+        toast.loading("adding session to cart", {
+          position: "top-center",
+          duration: 1000,
+        });
+        const response = await addSubscriptionAPI(subscription);
+        set((state) => ({
+          subscriptions: [...response.data.subscriptions],
+          modal: {
+            isOpen: true,
+            message: "session added successfully",
+            type: "success",
+          },
+        }));
+        // if (response) {
+        //   set({
+        //     modal: {
+        //       isOpen: true,
+        //       message: "session added successfully",
+        //       type: "success",
+        //     },
+        //   });
+        // }
+      } else {
+        toast.loading("adding subcription to cart", {
+          position: "top-center",
+          duration: 1000,
+        });
+        const response = await addSubscriptionAPI(subscription);
+        set((state) => ({
+          subscriptions: [...response.data.subscriptions],
+        }));
+         if (response) {
         set({
           modal: {
             isOpen: true,
@@ -71,10 +96,13 @@ const useCartStore = create<CartState>()((set) => ({
           },
         });
       }
+      }
+
+     
     } catch (error: any) {
       toast.error(error.response.data.message);
 
-      console.log(error)
+      console.log(error);
       // Show error modal with the extracted error message
       set({
         modal: {
@@ -203,7 +231,13 @@ const useCartStore = create<CartState>()((set) => ({
         position: "top-center",
       });
       const response = await clearCartAPI();
-      set({ cartItems: response.data.cart.cartItems });
+
+      set({ cartItems: response.data.cart.cartItems, subscriptions: response.data.subscriptions });
+
+      toast.success("Cart cleared successfully!!!", {
+        duration: 1000,
+        position: "top-center",
+      });
     } catch (error) {
       console.log(error);
     }

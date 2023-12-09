@@ -9,7 +9,7 @@ import {
   ProductInfo,
   ProductName,
   ProductPrice,
-  ProductImage
+  ProductImage,
 } from "./productCard.styles";
 import useCartStore from "@/store/useCart.store";
 import { Product } from "@/utils/types/types";
@@ -20,15 +20,16 @@ import Image from "next/image";
 
 interface ProductCardProps {
   product: Product;
+  active: boolean;
 }
 
-const ProductCard: FC<ProductCardProps> = ({ product }) => {
+const ProductCard: FC<ProductCardProps> = ({ product, active }) => {
   const { data: session } = useSession();
   const router = useRouter();
   const { addToCart } = useCartStore();
   return (
     <Container>
-      <ImageContainer>
+      <ImageContainer disabled={!active}>
         {/* <ProductImage src={product.imgUrl} alt="...." style={{ width: "100%" }} /> */}
         <Image src={product?.imgUrl} alt=".." fill={true} />
         <CartOverlay>
@@ -48,7 +49,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
       </ImageContainer>
       <ProductInfo>
         <ProductName>{product?.title}</ProductName>
-        <ProductPrice>NGN-{product.price}</ProductPrice>
+        <ProductPrice>₦{product.price}</ProductPrice>
       </ProductInfo>
     </Container>
   );

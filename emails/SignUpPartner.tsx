@@ -363,7 +363,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
             Items Ordered: <strong>{itemsOrdered}</strong>{" "}
           </li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>{" "}
+            Total Amount: <strong> ₦{totalAmount}</strong>{" "}
           </li>
           <li>
             Delivery Address: <strong>{customerAddress}</strong>{" "}
@@ -480,7 +480,7 @@ export const AdminOrderNotificationComponent: React.FC<{
             Items Ordered: <strong>{itemsOrdered}</strong>{" "}
           </li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>
+            Total Amount: <strong>₦{totalAmount}</strong>
           </li>
           <li>
             Delivery Address: <strong>{customerAddress}</strong>
@@ -606,7 +606,7 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
           </li>
           <li>Items Ordered: {itemsOrdered}</li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>{" "}
+            Total Amount: <strong>₦{totalAmount}</strong>{" "}
           </li>
           <li>
             Delivery Address: <strong> {customerAddress}</strong>
@@ -724,7 +724,7 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
           </li>
           <li>Items Ordered: {itemsOrdered}</li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>
+            Total Amount: <strong>₦{totalAmount}</strong>
           </li>
           <li>
             Delivery Address: <strong>{customerAddress}</strong>{" "}
@@ -825,7 +825,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
           </li>
           <li>Items Ordered: {itemsOrdered}</li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>
+            Total Amount: <strong>₦{totalAmount}</strong>
           </li>
           <li>
             Estimated Delivery Date: <strong>{estimatedDeliveryDate}</strong>{" "}
@@ -833,7 +833,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
         </ul>
         <p>
           Should you have any inquiries or wish to know more about your
-          delivery&#39;s progress, please feel free to contact us directly at
+          delivery&#39;s progress, please feel free to contact us directly at {" "}
           {contactNumber}. Our team is always here to assist you.
         </p>
         <p>
@@ -925,7 +925,7 @@ export const DeliveredStatusNotificationComponent: React.FC<{
           </li>
           <li>Items Delivered: {itemsDelivered}</li>
           <li>
-            Total Amount: <strong>{totalAmount}</strong>{" "}
+            Total Amount: <strong>₦{totalAmount}</strong>{" "}
           </li>
           <li>
             Delivery Date: <strong>{deliveryDate}</strong>{" "}
@@ -1206,7 +1206,7 @@ export const QuoteRequestConfirmationUser: React.FC<{
       </p>
       <p>
         If you have any immediate questions or require further information,
-        please don&#39;t hesitate to contact us at {adminContactInfo}.
+        please don&#39;t hesitate to contact us at  {" "}{adminContactInfo}.
       </p>
       <p>
         Thank you for considering Dibo Ruwa for your {serviceType} needs.

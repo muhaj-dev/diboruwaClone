@@ -175,7 +175,7 @@ export const sublinks = [
       // { name: "Blog", path: "/comingsoon" },
       // { name: "Contact Us", path: "/comingsoon" },
       { name: "Privacy Policy", path: "/privacy-policy" },
-      { name: "Terma & Condition", path: "/terms" },
+      { name: "Terms & Conditions", path: "/terms" },
     ],
   },
 ];
@@ -340,7 +340,7 @@ export const PrivacyContent = [
   },
   {
     header: "Contact Us",
-    text: "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at [email address].",
+    text: "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at info@diboruwa.com.",
   },
 ];
 export const TermsContent = [
@@ -427,7 +427,7 @@ export const TermsContent = [
   },
   {
     header: "Contact Us",
-    text: "If you have any questions or concerns about these Terms and Conditions or our website, please contact us at [email address].",
+    text: "If you have any questions or concerns about these Terms and Conditions or our website, please contact us at info@diboruwa.com.",
   },
 ];
 
@@ -453,8 +453,8 @@ export const planDetails: PlanDetails = {
         "Standard plate",
         "Ideal for occasional treats",
       ],
-      total: 7700,
-      planCode: "PLN_sqxrib4c4knnh0i",
+      total: 4900,
+      planCode: "PLN_bpcvugxghceljku",
     },
     {
       title: "Regular",
@@ -465,8 +465,8 @@ export const planDetails: PlanDetails = {
         "Delivered once a week",
         "Ideal for weekend treats",
       ],
-      total: 14980,
-      planCode: "PLN_w988l6ia7g7dfq6",
+      total: 9600,
+      planCode: "PLN_29sakqhcewo8py9",
     },
     {
       title: "Enterprise",
@@ -477,8 +477,8 @@ export const planDetails: PlanDetails = {
         "Delivered 5 times a week",
         "Perfect for workweek meals",
       ],
-      total: 34970,
-      planCode: "PLN_pz6i6zhbcwvfdk7",
+      total: 23900,
+      planCode: "PLN_6wywo1toqyx50vm",
     },
     {
       title: "Gold",
@@ -490,8 +490,8 @@ export const planDetails: PlanDetails = {
         "Perfect for everyday meals",
         "A meal every day",
       ],
-      total: 47960,
-      planCode: "PLN_f5nb851w9xpbtto",
+      total: 36400,
+      planCode: "PLN_nsqxc72dkwy28rz",
     },
   ],
   Laundry: [
@@ -505,28 +505,28 @@ export const planDetails: PlanDetails = {
         "Picked up once a month",
         "Ideal for individual",
       ],
-      total: 11960,
-      planCode: "PLN_jjx1iqwxol2hch4",
+      total: 4990,
+      planCode: "PLN_6r67obru4i4sx4l",
     },
     {
       title: "Regular Laundry",
       features: [
         "Dibo Ruwa Laundry Bag",
-        "30 clothing materials",
+        "50 clothing materials",
         "Gentle washing for delicate fabrics",
         "Stain treatment",
         "Quick-dry service",
         "Picked up twice a month",
         "Ideal for family of two",
       ],
-      total: 22100,
-      planCode: "PLN_jd0nwcnhvifs0no",
+      total: 9900,
+      planCode: "PLN_le8ilcvpk27uozk",
     },
     {
       title: "Family",
       features: [
         "Dibo Ruwa Laundry Bag",
-        "50 clothing materials",
+        "120 clothing materials",
         "Gentle washing for delicate fabrics",
         "Stain treatment",
         "Quick-dry service",
@@ -534,8 +534,8 @@ export const planDetails: PlanDetails = {
         "Picked up four times a month",
         "Ideal for family of four",
       ],
-      total: 36700,
-      planCode: "PLN_d3km1qswvj8nbot",
+      total: 19400,
+      planCode: "PLN_210c1g8zmuinfp0",
     },
   ],
   Cleaning: [
@@ -550,8 +550,8 @@ export const planDetails: PlanDetails = {
         "Dusting of all surfaces",
         "Once a week",
       ],
-      total: 12900,
-      planCode: "PLN_fw9vc36viohwk6l",
+      total: 8900,
+      planCode: "PLN_qwvdsz4zhgcv7ez",
     },
     {
       title: "Premium",
@@ -565,8 +565,8 @@ export const planDetails: PlanDetails = {
         "Once a week",
       ],
 
-      total: 22750,
-      planCode: "PLN_b361yykypop2gfz",
+      total: 16950,
+      planCode: "PPLN_jodwc0axavbuyyx",
     },
     {
       title: "Deep",
@@ -580,8 +580,8 @@ export const planDetails: PlanDetails = {
         "Once a week",
       ],
 
-      total: 31900,
-      planCode: "PLN_jsbrun8t72zsbiu",
+      total: 25900,
+      planCode: "PLN_wa8s05fq9cxnyx5",
     },
   ],
 };
@@ -593,39 +593,40 @@ export const teamMembers = [
   //   imageUrl: "/logo.png", // Provide the actual image URL
   // },
   {
+    name: "Mustapha Idris",
+    role: "Marketing & Customer Success",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948243/dbr11_i4inmr.png",
+  },
+  {
     name: "Ibrahim Saliman Zainab",
-    role: "C.E.O",
+    role: "Engineering",
     imageUrl: "/isz.jpeg", // Provide the actual image URL
   },
-  // {
-  //   name: "Agula Adams",
-  //   role: "Marketing and Customer Success",
-  //   imageUrl: "/logo.png", // Provide the actual image URL
-  // },
-  // {
-  //   name: "Hassan Abbas",
-  //   role: "Graphics Designer",
-  //   imageUrl: "/logo.png", // Provide the actual image URL
-  // },
-  // {
-  //   name: "Adeyemo Akinola Ayomide",
-  //   role: "Frontend Developer",
-  //   imageUrl: "/logo.png", // Provide the actual image URL
-  // },
-  // {
-  //   name: "Mustapha Idris",
-  //   role: "Head of Operations",
-  //   imageUrl: "/logo.png", // Provide the actual image URL
-  // },
+  {
+    name: "Agula Adams",
+    role: "Marketing & Customer Success",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948256/dbr44_tbhzdn.png",
+  },
+  {
+    name: "Hassan Abbas",
+    role: "Branding & Marketing",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948251/dbr55_fdyoem.png",
+  },
+  {
+    name: "Adeyemo Akinola Ayomide",
+    role: "Engineering",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948250/dbr22_vpgpn8.png",
+  },
+ 
   {
     name: "Yakubu Ibrahim Evuti",
-    role: "Operation Manager",
-    imageUrl: "Yakubu.jpg", // Provide the actual image URL
+    role: "Operations",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700990270/dbr66_jjk3dx.png",
   },
   {
     name: "Okorie Joshua",
-    role: "Operation",
-    imageUrl: "/Joshua.jpeg", // Provide the actual image URL
+    role: "Operations",
+    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948246/dbr33_rbtgb5.png",
   },
   // Add more team members as needed
 ];

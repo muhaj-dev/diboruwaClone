@@ -1,12 +1,16 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const CustomSelectContainer = styled.div`
+const CustomSelectContainer = styled.div<{ cart: boolean }>`
   position: relative;
   width: 100%;
 
+  background: ${({ cart }) => cart && "#fff"};
+  border-radius: 0.45rem;
+  
   label {
     display: block;
     color: #4b5563;
@@ -23,7 +27,7 @@ const CustomSelectButton = styled.button`
   border-radius: 0.45rem;
   padding: 0.6rem;
   min-height: 35px;
-cursor: pointer;
+  cursor: pointer;
   transition: all 0.3s ease;
   background: transparent;
   width: 100%;
@@ -44,6 +48,8 @@ const CustomOptionsList = styled.ul`
   border: 1px solid var(--primary-20);
   background: #fff;
   border-radius: 0.45rem;
+  background: #fff;
+  z-index: 999;
 `;
 
 const CustomOption = styled.li`
@@ -75,6 +81,8 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const pathname = usePathname();
+
   const handleOptionClick = (option: string) => {
     onChange({
       target: { value: option, name },
@@ -83,9 +91,10 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
   };
 
   return (
-    <CustomSelectContainer>
+    <CustomSelectContainer cart={pathname === "/cart"}>
       <label>{label}</label>
       <CustomSelectButton
+       
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         disabled={disabled}

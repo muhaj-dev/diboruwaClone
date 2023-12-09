@@ -18,7 +18,7 @@ export interface Quote {
   createdAt: Date;
   updatedAt: Date;
   status: string; // Add the 'status' field
-  refId: string | undefined; // Add the 'refId' field
+  paymentId: string | undefined; // Add the 'refId' field
   isPaid: boolean; // Add the 'isPaid' field
 }
 
