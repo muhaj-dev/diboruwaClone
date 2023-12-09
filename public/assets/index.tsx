@@ -21,6 +21,26 @@ import peopleIcon from './message-notif.svg'
 import food_hero from './food_hero.png'
 import bag from "./bag.png"
 
+// Pecan
+
+import pecanRice from "../pecan/pecan_rice.jpg";
+import plainRiceBeef from "../pecan/plain_rice_beef.jpg";
+import plainRiceChicken from "../pecan/plain_rice_chicken.jpg"
+import plantain from "../pecan/Plantain.jpg"
+import doughnut from "../pecan/Doughnut.jpg"
+import jollofRice from "../pecan/jolof-rice-beef.jpg"
+import jollofRiceChicken from "../pecan/jolof-rice-chicken.jpg"
+import FriedRice from "../pecan/fried_rice_beef.jpg"
+import FriedRiceChicken from "../pecan/fried_rice_chicken.jpg"
+import PorrageBeans from "../pecan/Porridge_Beans.jpg" 
+import Shawwarma from "../pecan/Shawarma_normal.jpg"
+import ShawarmaMedium from "../pecan/Shawarma_medium.jpg"
+import shawarmaLarge from "../pecan/Shawarma_large.jpg"
+import noodles from "../pecan/noodleEgg.jpg"
+import sandwich from "../pecan/sandwich.jpg"
+import meatpie from "../pecan/Meatpie .jpg"
+import burger from "../pecan/Burger_beef_or_chicken.jpg"
+
 export const assets = {
   favicon,
   logo,
@@ -42,5 +62,24 @@ export const assets = {
   shieldIcon,
   peopleIcon,
   food_hero,
-  bag
+  bag,
+  plantain,
+  plainRiceBeef,
+  plainRiceChicken,
+  FriedRice,
+  FriedRiceChicken,
+  doughnut,
+  pecanRice,
+  jollofRice,
+  jollofRiceChicken,
+  Shawwarma,
+  shawarmaLarge,
+  ShawarmaMedium,
+  PorrageBeans,
+  noodles,
+  meatpie,
+  sandwich,
+  burger
+
+
 };
