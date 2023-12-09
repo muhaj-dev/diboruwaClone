@@ -13,6 +13,10 @@ export const Column = styled.div`
   display: flex;
   justify-content: space-between;
 
+  .select {
+    width: 140px;
+  }
+
   strong {
     font-size: 20px;
     font-weight: bold;
