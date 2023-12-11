@@ -43,13 +43,19 @@ export const CartBtn = styled.button`
 `;
 
 export const ImageContainer = styled.div<{disabled: boolean}>`
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 15px;
   background: var(--primary-20);
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
