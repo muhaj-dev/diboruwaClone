@@ -280,7 +280,7 @@ const ProductList = () => {
       <ProductListing>
         {filteredProducts.slice(0, productsToShow).map((product) => (
           <div key={product.id}>
-            {" "}
+        
             <ProductCard product={product} active={isTimeActive} />
           </div>
         ))}

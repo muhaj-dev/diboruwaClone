@@ -86,6 +86,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
           style={{
             textAlign: "center",
             margin: "auto",
+            width: "100%",
             marginBottom: "20px",
           }}
         >
@@ -104,6 +105,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              width: "90%",
               gap: "20px",
               margin: "auto",
               fontSize: "20px",
