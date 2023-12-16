@@ -71,7 +71,7 @@ const Food = () => {
               // onClick={() => router.push(!session && "/signin")}
             >
               <Link
-                style={{ textDecoration: "none"}}
+                style={{ textDecoration: "none", color: "white"}}
                 href={{
                   pathname: session ? "/pricing" : "/signin",
                   query: { tabName: "Laundry" },
