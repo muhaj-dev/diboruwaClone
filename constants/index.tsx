@@ -454,7 +454,7 @@ export const planDetails: PlanDetails = {
         "Ideal for occasional treats",
       ],
       total: 4900,
-      planCode: "PLN_bpcvugxghceljku",
+      planCode: "PLN_atra96ny3ftwdpn",
     },
     {
       title: "Regular",
@@ -466,7 +466,7 @@ export const planDetails: PlanDetails = {
         "Ideal for weekend treats",
       ],
       total: 9600,
-      planCode: "PLN_29sakqhcewo8py9",
+      planCode: "PLN_m04fkdsulh9m98p",
     },
     {
       title: "Enterprise",
@@ -478,7 +478,7 @@ export const planDetails: PlanDetails = {
         "Perfect for workweek meals",
       ],
       total: 23900,
-      planCode: "PLN_6wywo1toqyx50vm",
+      planCode: "PLN_xxcu87dxaxhmuii",
     },
     {
       title: "Gold",
@@ -491,7 +491,7 @@ export const planDetails: PlanDetails = {
         "A meal every day",
       ],
       total: 36400,
-      planCode: "PLN_nsqxc72dkwy28rz",
+      planCode: "PLN_wgi2tzagnxmwdex",
     },
   ],
   Laundry: [
@@ -506,7 +506,7 @@ export const planDetails: PlanDetails = {
         "Ideal for individual",
       ],
       total: 4990,
-      planCode: "PLN_6r67obru4i4sx4l",
+      planCode: "PLN_1tjtak4lpxerj9s",
     },
     {
       title: "Regular Laundry",
@@ -520,7 +520,7 @@ export const planDetails: PlanDetails = {
         "Ideal for family of two",
       ],
       total: 9900,
-      planCode: "PLN_le8ilcvpk27uozk",
+      planCode: "PLN_jxsf2x0hib76n0h",
     },
     {
       title: "Family",
@@ -535,7 +535,7 @@ export const planDetails: PlanDetails = {
         "Ideal for family of four",
       ],
       total: 19400,
-      planCode: "PLN_210c1g8zmuinfp0",
+      planCode: "PLN_bs7pwn74ts3jyw7",
     },
   ],
   Cleaning: [
@@ -551,7 +551,7 @@ export const planDetails: PlanDetails = {
         "Once a week",
       ],
       total: 8900,
-      planCode: "PLN_qwvdsz4zhgcv7ez",
+      planCode: "PLN_qsaj4llu3hfx9g9",
     },
     {
       title: "Premium",
@@ -566,7 +566,7 @@ export const planDetails: PlanDetails = {
       ],
 
       total: 16950,
-      planCode: "PPLN_jodwc0axavbuyyx",
+      planCode: "PLN_ainph5gw4x9lbyg",
     },
     {
       title: "Deep",
@@ -581,7 +581,7 @@ export const planDetails: PlanDetails = {
       ],
 
       total: 25900,
-      planCode: "PLN_wa8s05fq9cxnyx5",
+      planCode: "PLN_qww4p0570axlg3p",
     },
   ],
 };

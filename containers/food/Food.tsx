@@ -22,6 +22,7 @@ import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const isBetween10amAnd6pm = () => {
   const now = new Date();
@@ -67,9 +68,15 @@ const Food = () => {
             <Button
               size="large"
               color="primary"
-              onClick={() => router.push(session ? "/dashboard" : "/signin")}
+              // onClick={() => router.push(!session && "/signin")}
             >
-              Order Now
+              <Link
+                href={{
+                  pathname: session ? "/pricing" : "/signin",
+                  query: { tabName: "Laundry" },
+                }}
+              > Order Now</Link>
+             
             </Button>
           </div>
         </div>
@@ -98,7 +105,6 @@ const Food = () => {
       </HWWSecetion>
 
       <MenuSection>
-       
         <ProductList />
       </MenuSection>
 

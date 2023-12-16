@@ -71,7 +71,7 @@ export async function POST(req: Request, res: Response) {
 
     const { data } = body;
    
-    const timestamp = moment().format("YYYY-MM-DD HH:mm:ss");
+    const timestamp = moment().format("MMMM DD, YYYY");
     const turnaroundTime = moment().add(1, "day").format("YYYY-MM-DD HH:mm:ss");
 
     const quoteText = data.quote
