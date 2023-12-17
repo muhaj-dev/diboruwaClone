@@ -68,15 +68,9 @@ const Food = () => {
             <Button
               size="large"
               color="primary"
-              // onClick={() => router.push(!session && "/signin")}
+              onClick={() => router.push(session ? "/food/#food" : "/signin")}
             >
-              <Link
-                style={{ textDecoration: "none", color: "white"}}
-                href={{
-                  pathname: session ? "/pricing" : "/signin",
-                  query: { tabName: "Laundry" },
-                }}
-              > Order Now</Link>
+             Order Now
              
             </Button>
           </div>
@@ -105,7 +99,7 @@ const Food = () => {
         </HWWList>
       </HWWSecetion>
 
-      <MenuSection>
+      <MenuSection id="food">
         <ProductList />
       </MenuSection>
 
