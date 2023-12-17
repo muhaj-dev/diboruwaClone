@@ -107,7 +107,7 @@ export const BenefitList = styled.div`
   }
 `;
 
-export const SubscriptionSection = styled.div`
+export const SubscriptionSection = styled.section`
   padding: 5% 8%;
   display: flex;
   flex-direction: column;
