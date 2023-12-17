@@ -110,7 +110,7 @@ const Laundry = () => {
           </HeroList>
 
           <div className="ctaBtn">
-            <Button size="large" color="primary"  onClick={() => router.push(session ? "/dashboard" : "/signin")}>
+            <Button size="large" color="primary"  onClick={() => router.push(session ? "/laundry/#laundry" : "/signin")}>
               Order Now
             </Button>
           </div>
@@ -155,7 +155,7 @@ const Laundry = () => {
         </div>
       </PriceTagSection>
 
-      <PlansSection>
+      <PlansSection id="laundry">
         <div className="text__container">
           <div className="heading">
             <h3 className="title">Check out our Laundry plans</h3>
