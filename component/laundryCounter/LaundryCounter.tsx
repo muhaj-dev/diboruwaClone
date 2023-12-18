@@ -314,7 +314,7 @@ const LaundryCounter: React.FC = () => {
         <MultiSelectButton onClick={() => setDropdownOpen(!isDropdownOpen)}>
           <CustomInput
             type="text"
-            placeholder="Type a custom item..."
+            placeholder="Select or type your laundry item..."
             value={customItem}
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
               setCustomItem(e.target.value)
