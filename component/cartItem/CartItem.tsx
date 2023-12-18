@@ -29,6 +29,13 @@ const ItemInfo = styled.div`
     height: 50px;
     border-radius: 8px;
     background: var(--primary-20);
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .text {
@@ -109,7 +116,7 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
     <CartItemContainer>
       <ItemInfo>
         <div className="image">
-          {/* <Image src={imgUrl} width={100} height={70} alt="..." /> */}
+          <Image src={imgUrl} fill={true} alt="..." />
         </div>
         <div className="text">
           <ItemName>{title}</ItemName>
