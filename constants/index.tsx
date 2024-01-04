@@ -632,7 +632,7 @@ export const teamMembers = [
 ];
 
 export interface Product {
-  id: number;
+  id: number | string;
   title: string;
   prep_time: string;
   opening_time: string;
@@ -646,7 +646,7 @@ export interface Product {
 }
 
 export interface Extra {
-  id: number;
+  id: number | string;
   title: string;
   prep_time: string;
   opening_time: string;
