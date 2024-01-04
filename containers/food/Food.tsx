@@ -17,7 +17,7 @@ import Button from "@/component/ui/button/Button";
 import MoreServices from "@/component/shared/MoreServices";
 import { assets } from "@/public/assets";
 import { HWW, restaurants } from "@/constants";
-import ProductList from "@/component/ProductList/ProductList";
+// import ProductList from "@/component/ProductList/ProductList";
 import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
 import { useSession } from "next-auth/react";
@@ -101,7 +101,7 @@ const Food = () => {
       </HWWSecetion>
 
       <MenuSection id="food">
-        {/* <ProductList /> */}
+      
         <RestaurantList restaurants={restaurants}/>
       </MenuSection>
 
