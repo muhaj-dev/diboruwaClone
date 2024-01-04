@@ -16,12 +16,14 @@ import {
 import Button from "@/component/ui/button/Button";
 import MoreServices from "@/component/shared/MoreServices";
 import { assets } from "@/public/assets";
-import { HWW } from "@/constants";
+import { HWW, restaurants } from "@/constants";
 import ProductList from "@/component/ProductList/ProductList";
 import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import RestaurantList from "@/component/restaurants/Restaurants";
 
 const isBetween10amAnd6pm = () => {
   const now = new Date();
@@ -67,9 +69,10 @@ const Food = () => {
             <Button
               size="large"
               color="primary"
-              onClick={() => router.push(session ? "/dashboard" : "/signin")}
+              onClick={() => router.push(session ? "/food/#food" : "/signin")}
             >
-              Order Now
+             Order Now
+             
             </Button>
           </div>
         </div>
@@ -97,9 +100,9 @@ const Food = () => {
         </HWWList>
       </HWWSecetion>
 
-      <MenuSection>
-       
-        <ProductList />
+      <MenuSection id="food">
+        {/* <ProductList /> */}
+        <RestaurantList restaurants={restaurants}/>
       </MenuSection>
 
       <MoreServices />

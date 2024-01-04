@@ -22,7 +22,7 @@ export const Title = styled.h3`
 
 export const ProductListing = styled.div`
   margin-top: 30px;
- width: inherit;
+ /* width: inherit; */
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

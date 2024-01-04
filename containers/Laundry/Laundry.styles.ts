@@ -179,7 +179,7 @@ export const PriceTagSection = styled.div`
   }
 `;
 
-export const PlansSection = styled.div`
+export const PlansSection = styled.section`
   padding: 8%;
   display: flex;
   justify-content: space-between;

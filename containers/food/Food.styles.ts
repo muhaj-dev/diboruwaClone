@@ -125,7 +125,7 @@ export const HWWCard = styled.div`
   }
 `;
 
-export const MenuSection = styled.div`
+export const MenuSection = styled.section`
   padding: 5% 8%;
   height: auto;
 

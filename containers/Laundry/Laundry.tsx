@@ -110,7 +110,7 @@ const Laundry = () => {
           </HeroList>
 
           <div className="ctaBtn">
-            <Button size="large" color="primary"  onClick={() => router.push(session ? "/dashboard" : "/signin")}>
+            <Button size="large" color="primary"  onClick={() => router.push(session ? "/laundry/#laundry" : "/signin")}>
               Order Now
             </Button>
           </div>
@@ -155,11 +155,13 @@ const Laundry = () => {
         </div>
       </PriceTagSection>
 
-      <PlansSection>
+      <PlansSection id="laundry">
         <div className="text__container">
           <div className="heading">
-            <h3 className="title">Check out our Laundry plans</h3>
-            <p>Each laundry bag accommodates a maximum of 30 clothing items,</p>
+            <h3 className="title">Effortless One-Off Laundry Services</h3>
+            <p>For a stress-free laundry experience, simply select your items like duvets, t-shirts, and more, 
+               then hit Get a Quote. And if you&apos;re interested in regular service, 
+               check out our subscription plans under our pricing section.</p>
           </div>
 
           <div className="benefits">
@@ -181,8 +183,7 @@ const Laundry = () => {
               <span className="icon">
                 <CheckCircledIcon />
               </span>
-              You have the flexibility to pause your laundry plan at any time.
-              Trust us, it&apos;s guaranteed!
+               Need a quick laundry solution without the commitment to a plan? We've got you covered.
             </div>
           </div>
         </div>

@@ -134,7 +134,7 @@ const Cleaning = () => {
             <Button
               size="large"
               color="primary"
-              onClick={() => router.push(session ? "/dashboard" : "/signin")}
+              onClick={() => router.push(session ? "/cleaning/#cleaning" : "/signin")}
             >
               Schedule a Clean
             </Button>
@@ -169,7 +169,7 @@ const Cleaning = () => {
         </BenefitList>
       </WYGSection>
 
-      <SubscriptionSection>
+      <SubscriptionSection id="cleaning">
         <h2>Have you been wondering how to get your apartment cleaned?</h2>
         <SubscriptionList>
           {subscriptionPlans.map((plan, index) => (
