@@ -24,6 +24,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import RestaurantList from "@/component/restaurants/Restaurants";
+import FoodList from "../foodList/FoodList";
 
 const isBetween10amAnd6pm = () => {
   const now = new Date();
@@ -102,7 +103,10 @@ const Food = () => {
 
       <MenuSection id="food">
       
-        <RestaurantList restaurants={restaurants}/>
+        {/* <RestaurantList restaurants={restaurants}/> */}
+
+        <FoodList/>
+
       </MenuSection>
 
       <MoreServices />

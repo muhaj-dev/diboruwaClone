@@ -3,28 +3,81 @@
 import ProductCard from "@/component/ProductCard/ProductCard";
 import Modal from "@/component/modals/Modal";
 import BackButton from "@/component/ui/BackButton/BackButton";
-import { Restaurant, restaurants } from "@/constants";
+import Dropdown from "@/component/ui/Dropdown";
+import { Restaurant, products, restaurants } from "@/constants";
 import useCartStore from "@/store/useCart.store";
-import React, { useEffect, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
+import { CiSearch } from "react-icons/ci";
 import styled from "styled-components";
 
-export type IFoodListProps = {
-  id: string | number;
-};
+export type IFoodListProps = {};
 
 export const Container = styled.div`
   padding: 10%;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 `;
+
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+    @media screen  and (max-width: 768px) {
+    flex-direction: column; 
+    gap: 20px;
+  }
+`;
+
+const SearchContainer = styled.div`
+  width: 50%;
+  /* margin: auto; */
+ 
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+  width: 100%;
+  }
+`;
+
+const SearchButton = styled.button`
+  position: absolute;
+  top: 0;
+  right: 1px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+`;
+
+const SearchInput = styled.input`
+  outline: none;
+  border: 1px solid var(--primary-20);
+  padding: 10px 15px;
+  border-radius: 40px;
+  width: 100%;
+  height: 40px;
+
+  transition: all 0.5s ease-in-out;
+
+  &:focus {
+    border: 1px solid var(--primary);
+  }
 `;
 
 export const ProductListing = styled.div`
   margin-top: 30px;
   /* width: inherit; */
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: space-between;
@@ -35,53 +88,61 @@ export const ProductListing = styled.div`
   }
 `;
 
-const FoodList: React.FC<IFoodListProps> = ({ id }) => {
-  const [restaurant, setRestaurant] = useState<Restaurant | null | undefined>(null);
+const FoodList: React.FC<IFoodListProps> = ({}) => {
+  const { modal, closeModal } = useCartStore();
 
-   const { modal, closeModal } = useCartStore();
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [filter, setFilter] = useState<string>("vendor"); 
+  const options = ['Name', 'Vendor', 'Category'];
 
-  const getRestaurantById = (id: number | string): Restaurant | undefined => {
-    return restaurants.find((restaurant) => restaurant.id === id);
+  const handleSelect = (selectedOption: string) => {
+    console.log(`Selected option: ${selectedOption}`);
+    setFilter(selectedOption.toLowerCase())
   };
 
-  useEffect(() => {
-    const fetchRestaurantData = async () => {
-      try {
-        const restaurantData = await getRestaurantById(id);
-        setRestaurant(restaurantData);
-      } catch (error) {
-        console.error("Error fetching restaurant data:", error);
-      }
-    };
+  const filteredProducts = products.filter((product) => {
+    if (filter === "name") {
+      return product.title.toLowerCase().includes(searchTerm.toLowerCase());
+    } else if (filter === "vendor") {
+      return product.vendor.toLowerCase().includes(searchTerm.toLowerCase());
+    } else if (filter === "category") {
+      return product.categories.some((category: string) =>
+        category.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+    return true; // Return true if no filter matches
+  });
 
-    fetchRestaurantData();
-  }, [id]);
 
-  if (!restaurant) {
-    // You can add a loading state or handle not found scenario here
-    return <div>Loading...</div>;
-  }
 
   const renderMenuItems = () => {
-    if (restaurant) {
-      return restaurant.menu.map((menuItem) => (
-        <div key={menuItem.id}>
-          <ProductCard product={menuItem} active={true} restaurant={restaurant.id} />
-          {/* <h3>{menuItem.title}</h3>
-                <p>Price: ${menuItem.price}</p>
-                Render other details as needed */}
-        </div>
-      ));
-    } else {
-      return <p>No restaurant selected</p>;
-    }
+    return filteredProducts.map((menuItem) => (
+      <div key={menuItem.id}>
+        <ProductCard product={menuItem} active={true} />
+      </div>
+    ));
   };
   return (
     <Container>
+      <h2>Menu</h2>
       <Header>
-        <BackButton />
+        <SearchContainer>
+          <SearchInput
+            type="text"
+            placeholder={`Search by ${filter}`}
+            value={searchTerm}
+            onChange={(e: ChangeEvent<HTMLInputElement>) =>
+              setSearchTerm(e.target.value)
+            }
+          />
+          <SearchButton>
+            <CiSearch />
+          </SearchButton>
+        </SearchContainer>
+
+        <Dropdown options={options} onSelect={handleSelect} />
       </Header>
-      <h2>Restaurant Menu</h2>
+     
 
       <ProductListing>{renderMenuItems()}</ProductListing>
 
