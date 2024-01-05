@@ -37,7 +37,7 @@ export type LoginUserParams = {
 };
 
 export interface Product {
-  id: string;
+  id: string | number;
   title: string;
   prep_time: string;
   opening_time: string;
