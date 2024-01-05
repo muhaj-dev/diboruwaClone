@@ -12,43 +12,57 @@ import {
   ProductImage,
 } from "./productCard.styles";
 import useCartStore from "@/store/useCart.store";
-import { Product } from "@/utils/types/types";
+
 import { toast } from "react-hot-toast";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { Product } from "@/constants";
 
 interface ProductCardProps {
   product: Product;
   active: boolean;
+  restaurant?: string;
 }
 
-const ProductCard: FC<ProductCardProps> = ({ product, active }) => {
+const calculateDiscountedPrice = (price: any, discount: any) => {
+  return price - price * discount;
+};
+
+const ProductCard: FC<ProductCardProps> = ({ product, active, restaurant }) => {
   const { data: session } = useSession();
   const router = useRouter();
   const { addToCart } = useCartStore();
+  const putToCart = () => {
+    if (session) {
+      const discountedPrice = product.discount
+        ? calculateDiscountedPrice(product.price, product.discount)
+        : product.price;
+
+      const productWithDiscountedPrice = { ...product, price: discountedPrice };
+      addToCart(productWithDiscountedPrice);
+    } else {
+      router.push("signin");
+      toast("Please sign in to add item to cart");
+    }
+  };
+
   return (
     <Container>
       <ImageContainer disabled={!active}>
-        {/* <ProductImage src={product.imgUrl} alt="...." style={{ width: "100%" }} /> */}
-        <Image src={product?.imgUrl} alt=".." fill={true} />
+        <div className="discount_card">{product.discount}</div>
+        <Image src={product?.imageURL} alt=".." fill={true} />
         <CartOverlay>
-          <CartBtn
-            onClick={() => {
-              if (session) {
-                addToCart(product);
-              } else {
-                router.push("signin");
-                toast("please sign in to add item to cart");
-              }
-            }}
-          >
+          <CartBtn onClick={putToCart}>
             <HiShoppingBag />
           </CartBtn>
         </CartOverlay>
       </ImageContainer>
       <ProductInfo>
-        <ProductName>{product?.title}</ProductName>
+        <ProductName href={`/food/${product?.slug}`}>
+          {product?.title}
+        </ProductName>
+
         <ProductPrice>₦{product.price}</ProductPrice>
       </ProductInfo>
     </Container>

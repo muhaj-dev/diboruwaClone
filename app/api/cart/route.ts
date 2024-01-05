@@ -15,6 +15,7 @@ export async function POST(req: Request, res: Response) {
       return NextResponse.json({ error: "Data is missing" }, { status: 400 });
 
     const body = await req.json();
+    console.log(body);
     const session = await getServerSession(authOptions);
     if (!session) {
       return NextResponse.json({ message: "you are not loggedIn" });
@@ -35,14 +36,18 @@ export async function POST(req: Request, res: Response) {
           {
             title: body.title,
             price: body.price,
-            imgUrl: body.imgUrl,
-            category: body.category,
+            imageUrl: body.imageURL,
+            discount: body.discount,
+            vendor: body.vendor,
+            categories: body.categories,
             quantity: 1,
             total: body.price, // Initial total for a single item
           },
         ],
         total: body.price, // Initial total for the cart with a single item
       });
+
+      console.log(cart);
 
       await cart.save();
     } else {
@@ -61,10 +66,14 @@ export async function POST(req: Request, res: Response) {
         existingCart.cartItems.push({
           title: body.title,
           price: body.price,
-          imgUrl: body.imgUrl,
-          category: body.category,
+          imageUrl: body.imageURL,
+          discount: body.discount,
+          vendor: body.vendor,
+          categories: body.categories,
           quantity: 1,
-          total: body.price, // Initial total for a single item
+          total: body.price,
+
+          // Initial total for a single item
         });
       }
 
@@ -82,6 +91,7 @@ export async function POST(req: Request, res: Response) {
       { status: 201 }
     );
   } catch (err) {
+    // console.log(err)
     return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   } finally {
     await closeDB();
@@ -133,7 +143,6 @@ export async function DELETE(req: Request, res: Response) {
     const cart = await Cart.findOne({ user: user._id });
 
     const subs = await Subscription.deleteMany({ user, isPaid: false });
-   
 
     if (!cart) {
       return NextResponse.json({ message: "Cart is empty" });

@@ -22,7 +22,7 @@ interface Props {
 
 const Payment: FC<Props> = ({ modal }) => {
   const { data: session } = useSession();
-  const [location, setLocation] = useState("")
+  const [location, setLocation] = useState("");
 
   const { cartItems, subscriptions } = useCartStore();
   const { totalPrice } = useCart();
@@ -31,7 +31,21 @@ const Payment: FC<Props> = ({ modal }) => {
 
   const referenceId = nanoid(8);
 
-  const locations =["Danbare", "Rimin gata", "Rijiazaki", "Jambulo", "Buk old site"]
+  const locations = [
+    "Danbare",
+    "Rimin gata",
+    "Rijia zaki",
+    "Jambulo",
+    "Buk old site",
+    "Buk new site",
+    "Kabuga",
+    "Naibawa",
+    "Gwale",
+    "Tarauni",
+    "Kano municipal",
+    "Dala",
+    "zoo"
+  ];
 
   const getDeliveryFee = (address: string | undefined) => {
     switch (address) {
@@ -39,12 +53,30 @@ const Payment: FC<Props> = ({ modal }) => {
         return 300;
       case "Rimin gata":
         return 300;
-      case "Rijiazaki":
+      case "Rijia zaki":
         return 400;
       case "Jambulo":
         return 500;
       case "Buk old site":
         return 500;
+      case "Buk new site":
+        return 300;
+      case "Kabuga":
+        return 500;
+      case "Kano municipal":
+        return 1000;
+      case "Dala":
+        return 800;
+      case "Fagge":
+        return 1000;
+      case "Tarauni":
+        return 1000;
+      case "Gwale":
+        return 1000;
+      case "Naibawa":
+        return 1000;
+      case "Zoo":
+        return 1000;
       default:
         // Default delivery fee if the address doesn't match any known locations
         return 0;
@@ -69,18 +101,15 @@ const Payment: FC<Props> = ({ modal }) => {
         <strong>Location:</strong>
 
         <div className="select">
+          <CustomSelect
+            // label="State"
 
-            <CustomSelect
-          // label="State"
-          
-          options={locations}
-          value={location}
-          name="location"
-          onChange={(e) => setLocation(e.target.value)}
-          
-        />
+            options={locations}
+            value={location}
+            name="location"
+            onChange={(e) => setLocation(e.target.value)}
+          />
         </div>
-      
       </Column>
       <Column>
         <strong>Items</strong> <span>{totalQuantities}</span>
@@ -91,15 +120,17 @@ const Payment: FC<Props> = ({ modal }) => {
       <Column>
         <strong>Total</strong> <span>₦{totalPriceWithDelivery.toFixed(2)}</span>
       </Column>
-     {location && <PaymentButton
-        totalPrice={totalPrice}
-        openModal={modal}
-        buttonText="Pay Now"
-        color="primary"
-        onSuccess={onSuccess}
-        onClose={onClose}
-        referenceId={referenceId}
-      />}
+      {location && (
+        <PaymentButton
+          totalPrice={totalPrice}
+          openModal={modal}
+          buttonText="Pay Now"
+          color="primary"
+          onSuccess={onSuccess}
+          onClose={onClose}
+          referenceId={referenceId}
+        />
+      )}
     </Container>
   );
 };

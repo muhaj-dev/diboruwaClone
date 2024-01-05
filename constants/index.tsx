@@ -1,6 +1,6 @@
 import { assets } from "@/public/assets";
-import josh from "@/public/Joshua.jpeg"
-import j from "@/public/Yakubu.jpg"
+import josh from "@/public/Joshua.jpeg";
+import j from "@/public/Yakubu.jpg";
 
 // Base URL
 const baseURL: string = "https://diboruwa.com";
@@ -102,7 +102,7 @@ export const services = [
     color: "primary",
     bg: "primary-20",
     content:
-      "We make home cleaning easy. \n\ Book a cleaning session today and enjoy a spotless space. \n Scheduling is quick and hassle-free.",
+      "We make home cleaning easy. \n Book a cleaning session today and enjoy a spotless space. \n Scheduling is quick and hassle-free.",
     cta: {
       label: "Book Now",
       path: "/cleaning",
@@ -595,7 +595,8 @@ export const teamMembers = [
   {
     name: "Mustapha Idris",
     role: "Marketing & Customer Success",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948243/dbr11_i4inmr.png",
+    imageUrl:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948243/dbr11_i4inmr.png",
   },
   {
     name: "Ibrahim Saliman Zainab",
@@ -605,28 +606,332 @@ export const teamMembers = [
   {
     name: "Agula Adams",
     role: "Marketing & Customer Success",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948256/dbr44_tbhzdn.png",
+    imageUrl:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948256/dbr44_tbhzdn.png",
   },
   {
     name: "Hassan Abbas",
     role: "Branding & Marketing",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948251/dbr55_fdyoem.png",
+    imageUrl:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948251/dbr55_fdyoem.png",
   },
   {
     name: "Adeyemo Akinola Ayomide",
     role: "Engineering",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948250/dbr22_vpgpn8.png",
+    imageUrl:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948250/dbr22_vpgpn8.png",
   },
- 
+
   {
     name: "Yakubu Ibrahim Evuti",
     role: "Operations",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700990270/dbr66_jjk3dx.png",
+    imageUrl:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700990270/dbr66_jjk3dx.png",
   },
   {
     name: "Okorie Joshua",
     role: "Operations",
-    imageUrl: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948246/dbr33_rbtgb5.png",
+    imageUrl:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948246/dbr33_rbtgb5.png",
   },
   // Add more team members as needed
+];
+
+export interface Product {
+  id: number | string;
+  title: string;
+  prep_time: string;
+  opening_time: string;
+  categories: string[];
+  price: number;
+  slug: string;
+  imageURL: string;
+  vendor: string;
+  discount?: number;
+  extras?: Extra[]; // Nested extras property within Product
+}
+
+export interface Extra {
+  id: number | string;
+  title: string;
+  prep_time: string;
+  opening_time: string;
+  categories: string[];
+  slug: string;
+  price: number;
+  imageURL: string;
+  vendor: string;
+  discount?: number;
+}
+
+export interface Restaurant {
+  id: string;
+  name: string;
+  location: string;
+  chef: string;
+  openingTime: string;
+  menu: Product[];
+  bannerURL: string;
+}
+
+export const restaurants: Restaurant[] = [
+  {
+    id: "Res123",
+    name: "Restaurant A",
+    location: "City A",
+    chef: "Chef A",
+    openingTime: "09:00 AM",
+    bannerURL: "/restaurant_a_banner.jpg",
+    menu: [
+      {
+        id: 1,
+        title: "Spaghetti Bolognese",
+        prep_time: "30 minutes",
+        opening_time: "10:00 AM",
+        slug: "sp1",
+        categories: ["Main Course"],
+        price: 20,
+        imageURL: "/spaghetti_bolognese.jpg",
+        vendor: "Vendor A",
+        discount: 0.1,
+        extras: [
+          {
+            id: 1,
+            title: "Garlic Bread",
+            prep_time: "10 minutes",
+            opening_time: "10:15 AM",
+            slug: "sp11",
+            categories: ["Addon"],
+            price: 5,
+            imageURL: "/garlic_bread.jpg",
+            vendor: "Vendor A",
+          },
+          {
+            id: 2,
+            title: "Tiramisu",
+            prep_time: "15 minutes",
+            opening_time: "10:30 AM",
+            slug: "sp12",
+            categories: ["Dessert"],
+            price: 8,
+            imageURL: "/tiramisu.jpg",
+            vendor: "Vendor A",
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "Margherita Pizza",
+        prep_time: "25 minutes",
+        opening_time: "11:00 AM",
+        slug: "sp5",
+        categories: ["Main Course"],
+        price: 15,
+        imageURL: "/margherita_pizza.jpg",
+        vendor: "Vendor A",
+      },
+      {
+        id: 3,
+        title: "Caesar Salad",
+        prep_time: "15 minutes",
+        opening_time: "11:30 AM",
+        categories: ["Appetizer", "Salad"],
+        price: 12,
+        slug: "sp6",
+        imageURL: "/caesar_salad.jpg",
+        vendor: "Vendor A",
+      },
+    ],
+  },
+  {
+    id: "Res124",
+    name: "Restaurant B",
+    location: "City B",
+    chef: "Chef B",
+    openingTime: "10:00 AM",
+    bannerURL: "/restaurant_b_banner.jpg",
+    menu: [
+      {
+        id: 1,
+        title: "Sushi Combo",
+        prep_time: "40 minutes",
+        opening_time: "11:00 AM",
+        categories: ["Sushi"],
+        slug: "sp8",
+        price: 25,
+        imageURL: "/sushi_combo.jpg",
+        vendor: "Vendor B",
+        discount: 0.15,
+        extras: [
+          {
+            id: 1,
+            title: "Miso Soup",
+            prep_time: "10 minutes",
+            opening_time: "11:15 AM",
+            categories: ["Soup"],
+            slug: "sp13",
+            price: 4,
+            imageURL: "/miso_soup.jpg",
+            vendor: "Vendor B",
+          },
+          {
+            id: 2,
+            title: "Edamame",
+            prep_time: "8 minutes",
+            opening_time: "11:30 AM",
+            categories: ["Appetizer"],
+            slug: "sp24",
+            price: 6,
+            imageURL: "/edamame.jpg",
+            vendor: "Vendor B",
+          },
+        ],
+      },
+      // Similar structure for two more products in Restaurant B
+    ],
+  },
+  {
+    id: "Res125",
+    name: "Restaurant C",
+    location: "City C",
+    chef: "Chef C",
+    openingTime: "11:30 AM",
+    bannerURL: "/restaurant_c_banner.jpg",
+    menu: [
+      {
+        id: 1,
+        title: "Chicken Alfredo Pasta",
+        prep_time: "35 minutes",
+        opening_time: "12:00 PM",
+        categories: ["Main Course", "Pasta"],
+        price: 18,
+        slug: "sp9",
+        imageURL: "/chicken_alfredo_pasta.jpg",
+        vendor: "Vendor C",
+        discount: 0.2,
+        extras: [
+          {
+            id: 1,
+            title: "Caesar Salad",
+            prep_time: "10 minutes",
+            opening_time: "12:15 PM",
+            slug: "sp15",
+            categories: ["Salad"],
+            price: 6,
+            imageURL: "/caesar_salad.jpg",
+            vendor: "Vendor C",
+          },
+          {
+            id: 2,
+            title: "Garlic Breadsticks",
+            prep_time: "12 minutes",
+            opening_time: "12:30 PM",
+            categories: ["Addon"],
+            slug: "sp10",
+            price: 5,
+            imageURL: "/garlic_breadsticks.jpg",
+            vendor: "Vendor C",
+          },
+        ],
+      },
+      // Similar structure for two more products in Restaurant C
+    ],
+  },
+];
+
+export const products: Product[] = [
+  {
+    id: "pro12",
+    title: "Spaghetti Bolognese",
+    prep_time: "30 minutes",
+    opening_time: "10:00 AM",
+    slug: "sp1",
+    categories: ["Main Course"],
+    price: 20,
+    imageURL: "/spaghetti_bolognese.jpg",
+    vendor: "Vendor A",
+    discount: 0.1,
+    extras: [
+      {
+        id: "pro18",
+        title: "Garlic Bread",
+        prep_time: "10 minutes",
+        opening_time: "10:15 AM",
+        slug: "sp11",
+        categories: ["Addon"],
+        price: 5,
+        imageURL: "/garlic_bread.jpg",
+        vendor: "Vendor A",
+      },
+      {
+        id: "pro19",
+        title: "Tiramisu",
+        prep_time: "15 minutes",
+        opening_time: "10:30 AM",
+        slug: "sp12",
+        categories: ["Dessert"],
+        price: 8,
+        imageURL: "/tiramisu.jpg",
+        vendor: "Vendor A",
+      },
+    ],
+  },
+  {
+    id: "pro13",
+    title: "Margherita Pizza",
+    prep_time: "25 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp5",
+    categories: ["Main Course"],
+    price: 15,
+    imageURL: "/margherita_pizza.jpg",
+    vendor: "Vendor A",
+  },
+  {
+    id: "pro14",
+    title: "Caesar Salad",
+    prep_time: "15 minutes",
+    opening_time: "11:30 AM",
+    categories: ["Appetizer", "Salad"],
+    price: 12,
+    slug: "sp6",
+    imageURL: "/caesar_salad.jpg",
+    vendor: "Vendor A",
+  },
+  {
+    id: "pro15",
+    title: "Chicken Alfredo Pasta",
+    prep_time: "35 minutes",
+    opening_time: "12:00 PM",
+    categories: ["Main Course", "Pasta"],
+    price: 18,
+    slug: "sp9",
+    imageURL: "/chicken_alfredo_pasta.jpg",
+    vendor: "Vendor C",
+    discount: 0.2,
+    extras: [
+      {
+        id: "pro16",
+        title: "Caesar Salad",
+        prep_time: "10 minutes",
+        opening_time: "12:15 PM",
+        slug: "sp15",
+        categories: ["Salad"],
+        price: 6,
+        imageURL: "/caesar_salad.jpg",
+        vendor: "Vendor C",
+      },
+      {
+        id: "pro17",
+        title: "Garlic Breadsticks",
+        prep_time: "12 minutes",
+        opening_time: "12:30 PM",
+        categories: ["Addon"],
+        slug: "sp10",
+        price: 5,
+        imageURL: "/garlic_breadsticks.jpg",
+        vendor: "Vendor C",
+      },
+    ],
+  },
 ];
