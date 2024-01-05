@@ -841,16 +841,16 @@ export const restaurants: Restaurant[] = [
 
 export const products: Product[] = [
   {
-    id: "pro12",
-    title: "Spaghetti Bolognese",
+    id: "1",
+    title: "Jolof rice",
     prep_time: "30 minutes",
     opening_time: "10:00 AM",
     slug: "sp1",
-    categories: ["Main Course"],
-    price: 20,
-    imageURL: "/spaghetti_bolognese.jpg",
-    vendor: "Vendor A",
-    discount: 0.1,
+    categories: ["Rice and Grains"],
+    price: 1390,
+    imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691930939/diboruwa/Screenshot_from_2023-07-23_12-41-36_gqry1k.png",
+    vendor: "Pecan City",
+    // discount: 0,
     extras: [
       {
         id: "pro18",
