@@ -59,7 +59,10 @@ const ProductCard: FC<ProductCardProps> = ({ product, active, restaurant }) => {
         </CartOverlay>
       </ImageContainer>
       <ProductInfo>
-        <ProductName href={`/food/${product?.slug}`}>
+        {/* <ProductName>
+          {product?.title}
+        </ProductName> */}
+        <ProductName href={`/food/${product?.slug}`} style={{ textDecoration: "none" }} >
           {product?.title}
         </ProductName>
 
