@@ -28,6 +28,10 @@ export const PrimaryTimeSlot = styled.div`
   position: absolute;
   bottom: 20px;
   left: 20px;
+  padding: 5px 7px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid var(--primary);
 `;
 export const Title = styled.div`
   font-size: 24px;
@@ -129,11 +133,12 @@ const FoodDetail: React.FC<IFoodDetailProps> = ({ id, restaurant }) => {
     <Container>
       <BackBtn />
       <Banner>
-        <Image
+        {product?.imageURL &&  <Image
           src={product?.imageURL}
           alt={`product ${product?.title}`}
           fill={true}
-        />
+        />}
+       
         <PrimaryTimeSlot>{product?.prep_time}</PrimaryTimeSlot>
       </Banner>
 
