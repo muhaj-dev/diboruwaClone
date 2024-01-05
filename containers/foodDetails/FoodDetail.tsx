@@ -2,15 +2,15 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { BackBtn } from "../profile/profile.styles";
-import { Product, restaurants } from "@/constants";
+import { Product, products, restaurants } from "@/constants";
 import Image from "next/image";
 import ProductCard from "@/component/ProductCard/ProductCard";
 import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
+import BackButton from "@/component/ui/BackButton/BackButton";
 
 export type IFoodDetailProps = {
   id: string | number;
-  restaurant: string;
 };
 
 export const Container = styled.div`
@@ -58,7 +58,7 @@ export const Divider = styled.div`
 `;
 export const Extras = styled.div`
   margin-top: 30px;
-  /* width: inherit; */
+ 
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -90,55 +90,33 @@ export const SecondaryTimeSlot = styled.div`
   }
 `;
 
-const FoodDetail: React.FC<IFoodDetailProps> = ({ id, restaurant }) => {
+const FoodDetail: React.FC<IFoodDetailProps> = ({ id }) => {
   const [product, setProduct] = useState<Product | null | undefined>(null);
 
   const { modal, closeModal } = useCartStore();
 
+  // Find the product based on the provided id
   useEffect(() => {
-    const fetchRestaurantData = () => {
-      console.log(
-        "Fetching restaurant data for ID:",
-        id,
-        "Restaurant:",
-        restaurant
-      );
+    const selectedProduct = products.find((p) => p.slug === id);
+    setProduct(selectedProduct);
+  }, [id]);
 
-      const restaurantData = restaurants.find((res) => res.id === restaurant);
-
-      if (restaurantData) {
-        console.log(restaurantData.menu);
-        const foodItem = restaurantData.menu.find((item) => item.slug === id);
-
-        console.log(foodItem);
-
-        if (foodItem) {
-          console.log("Found food item:", foodItem);
-          setProduct(foodItem);
-        } else {
-          console.error("Food item not found for ID:", id);
-        }
-      } else {
-        console.error("Restaurant not found for ID:", restaurant);
-      }
-    };
-
-    fetchRestaurantData();
-  }, [id, restaurant]);
-
-  console.log("Final product:", product);
-
-  console.log(product);
+  // If the product is not found, display an error message
+  if (!product) {
+    return <div>Product not found</div>;
+  }
   return (
     <Container>
-      <BackBtn />
+      <BackButton />
       <Banner>
-        {product?.imageURL &&  <Image
-          src={product?.imageURL}
-          alt={`product ${product?.title}`}
-          fill={true}
-        />}
-       
+        {product?.imageURL && (
+          <Image
+            src={product?.imageURL}
+            alt={`product ${product?.title}`}
+            fill={true}
+          />
+        )}
+
         <PrimaryTimeSlot>{product?.prep_time}</PrimaryTimeSlot>
       </Banner>
 

@@ -59,13 +59,9 @@ const ProductCard: FC<ProductCardProps> = ({ product, active, restaurant }) => {
         </CartOverlay>
       </ImageContainer>
       <ProductInfo>
-        {restaurant ? (
-          <ProductName href={`/food/${restaurant}/${product?.slug}`}>
-            {product?.title}
-          </ProductName>
-        ) : (
-          <h3>{product?.title}</h3>
-        )}
+        <ProductName href={`/food/${product?.slug}`}>
+          {product?.title}
+        </ProductName>
 
         <ProductPrice>₦{product.price}</ProductPrice>
       </ProductInfo>
