@@ -630,3 +630,206 @@ export const teamMembers = [
   },
   // Add more team members as needed
 ];
+
+export interface Product {
+  id: number;
+  title: string;
+  prep_time: string;
+  opening_time: string;
+  categories: string[];
+  price: number;
+  slug: string;
+  imageURL: string;
+  vendor: string;
+  discount?: number;
+  extras?: Extra[]; // Nested extras property within Product
+}
+
+export interface Extra {
+  id: number;
+  title: string;
+  prep_time: string;
+  opening_time: string;
+  categories: string[];
+  slug: string,
+  price: number;
+  imageURL: string;
+  vendor: string;
+  discount?: number;
+}
+
+export interface Restaurant {
+  id: string;
+  name: string;
+  location: string;
+  chef: string;
+  openingTime: string;
+  menu: Product[];
+  bannerURL: string;
+}
+
+export const restaurants: Restaurant[] = [
+  {
+    id: "Res123",
+    name: 'Restaurant A',
+    location: 'City A',
+    chef: 'Chef A',
+    openingTime: '09:00 AM',
+    bannerURL: '/restaurant_a_banner.jpg',
+    menu: [
+      {
+        id: 1,
+        title: 'Spaghetti Bolognese',
+        prep_time: '30 minutes',
+        opening_time: '10:00 AM',
+        slug: "sp1",
+        categories: ['Main Course'],
+        price: 20,
+        imageURL: '/spaghetti_bolognese.jpg',
+        vendor: 'Vendor A',
+        discount: 0.1,
+        extras: [
+          {
+            id: 1,
+            title: 'Garlic Bread',
+            prep_time: '10 minutes',
+            opening_time: '10:15 AM',
+            slug: "sp11",
+            categories: ['Addon'],
+            price: 5,
+            imageURL: '/garlic_bread.jpg',
+            vendor: 'Vendor A',
+          },
+          {
+            id: 2,
+            title: 'Tiramisu',
+            prep_time: '15 minutes',
+            opening_time: '10:30 AM',
+            slug: "sp12",
+            categories: ['Dessert'],
+            price: 8,
+            imageURL: '/tiramisu.jpg',
+            vendor: 'Vendor A',
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: 'Margherita Pizza',
+        prep_time: '25 minutes',
+        opening_time: '11:00 AM',
+        slug: "sp5",
+        categories: ['Main Course'],
+        price: 15,
+        imageURL: '/margherita_pizza.jpg',
+        vendor: 'Vendor A',
+      },
+      {
+        id: 3,
+        title: 'Caesar Salad',
+        prep_time: '15 minutes',
+        opening_time: '11:30 AM',
+        categories: ['Appetizer', 'Salad'],
+        price: 12,
+        slug: "sp6",
+        imageURL: '/caesar_salad.jpg',
+        vendor: 'Vendor A',
+      },
+    ],
+  },
+  {
+    id: "Res124",
+    name: 'Restaurant B',
+    location: 'City B',
+    chef: 'Chef B',
+    openingTime: '10:00 AM',
+    bannerURL: '/restaurant_b_banner.jpg',
+    menu: [
+      {
+        id: 1,
+        title: 'Sushi Combo',
+        prep_time: '40 minutes',
+        opening_time: '11:00 AM',
+        categories: ['Sushi'],
+        slug: "sp8",
+        price: 25,
+        imageURL: '/sushi_combo.jpg',
+        vendor: 'Vendor B',
+        discount: 0.15,
+        extras: [
+          {
+            id: 1,
+            title: 'Miso Soup',
+            prep_time: '10 minutes',
+            opening_time: '11:15 AM',
+            categories: ['Soup'],
+            slug: "sp13",
+            price: 4,
+            imageURL: '/miso_soup.jpg',
+            vendor: 'Vendor B',
+          },
+          {
+            id: 2,
+            title: 'Edamame',
+            prep_time: '8 minutes',
+            opening_time: '11:30 AM',
+            categories: ['Appetizer'],
+            slug: "sp24",
+            price: 6,
+            imageURL: '/edamame.jpg',
+            vendor: 'Vendor B',
+          },
+        ],
+      },
+      // Similar structure for two more products in Restaurant B
+    ],
+  },
+  {
+    id: "Res125",
+    name: 'Restaurant C',
+    location: 'City C',
+    chef: 'Chef C',
+    openingTime: '11:30 AM',
+    bannerURL: '/restaurant_c_banner.jpg',
+    menu: [
+      {
+        id: 1,
+        title: 'Chicken Alfredo Pasta',
+        prep_time: '35 minutes',
+        opening_time: '12:00 PM',
+        categories: ['Main Course', 'Pasta'],
+        price: 18,
+        slug: "sp9",
+        imageURL: '/chicken_alfredo_pasta.jpg',
+        vendor: 'Vendor C',
+        discount: 0.2,
+        extras: [
+          {
+            id: 1,
+            title: 'Caesar Salad',
+            prep_time: '10 minutes',
+            opening_time: '12:15 PM',
+            slug: "sp15",
+            categories: ['Salad'],
+            price: 6,
+            imageURL: '/caesar_salad.jpg',
+            vendor: 'Vendor C',
+          },
+          {
+            id: 2,
+            title: 'Garlic Breadsticks',
+            prep_time: '12 minutes',
+            opening_time: '12:30 PM',
+            categories: ['Addon'],
+            slug: "sp10",
+            price: 5,
+            imageURL: '/garlic_breadsticks.jpg',
+            vendor: 'Vendor C',
+          },
+        ],
+      },
+      // Similar structure for two more products in Restaurant C
+    ],
+  },
+];
+
