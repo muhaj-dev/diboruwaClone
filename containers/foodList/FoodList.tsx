@@ -124,7 +124,7 @@ const FoodList: React.FC<IFoodListProps> = ({}) => {
   };
   return (
     <Container>
-      <h2>Menu</h2>
+      <h2>Food Menu</h2>
       <Header>
         <SearchContainer>
           <SearchInput
