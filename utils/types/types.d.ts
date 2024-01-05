@@ -42,6 +42,7 @@ export interface Product {
   prep_time: string;
   opening_time: string;
   categories: string[];
+  slug: string;
   price: number;
   imageURL: string;
   vendor: string;
