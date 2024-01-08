@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 interface DropdownProps {
+  placeholder?: string;
   options: string[];
   onSelect: (selectedOption: string) => void;
 }
@@ -59,7 +60,11 @@ const DropdownItem = styled.li`
   cursor: pointer;
 `;
 
-const Dropdown: React.FC<DropdownProps> = ({ options, onSelect }) => {
+const Dropdown: React.FC<DropdownProps> = ({
+  options,
+  onSelect,
+  placeholder,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
@@ -76,7 +81,11 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onSelect }) => {
   return (
     <DropdownContainer>
       <DropdownButton onClick={toggleDropdown}>
-        {selectedOption || "Select an option"}
+        {selectedOption
+          ? selectedOption
+          : placeholder
+          ? placeholder
+          : "Select an option"}
       </DropdownButton>
       {isOpen && (
         <DropdownList>
