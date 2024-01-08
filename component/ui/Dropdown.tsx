@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 interface DropdownProps {
-  placeholder: string;
+  placeholder?: string;
   options: string[];
   onSelect: (selectedOption: string) => void;
 }
