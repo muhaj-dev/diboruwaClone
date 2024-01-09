@@ -79,7 +79,7 @@ export const ProductListing = styled.div`
   margin-top: 30px;
   /* width: inherit; */
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   /* grid-template-columns: repeat(4, 1fr); */
   justify-content: space-between;
   gap: 30px;

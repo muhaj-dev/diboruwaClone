@@ -134,7 +134,7 @@ const FoodDetail: React.FC<IFoodDetailProps> = ({ id }) => {
             <div className="time">{product?.opening_time}</div>
           </div>
 
-          <div className="min_order">Min Order: ₦2000.00</div>
+          {/* <div className="min_order">Min Order: ₦2000.00</div> */}
         </SecondaryTimeSlot>
 
         {product?.extras && (
