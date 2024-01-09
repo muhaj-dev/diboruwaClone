@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
 import Dropdown from "./ui/Dropdown";
@@ -63,14 +63,49 @@ const LocationModal: React.FC = () => {
   const statesAndRegions: StateAndRegions = useMemo(() => {
     return {
       kano: {
-        locations: ["opt a", "opt b", "opt c", "opt d"],
+        locations: [
+          "Danbare",
+          "Rimin gata",
+          "Rijia zaki",
+          "Jambulo",
+          "Buk old site",
+          "Buk new site",
+          "Kabuga",
+          "Naibawa",
+          "Gwale",
+          "Tarauni",
+          "Kano municipal",
+          "Dala",
+          "zoo",
+        ],
       },
       ilorin: {
-        locations: ["opt a", "opt b", "opt c", "opt d"],
+        locations: [
+          "Taiwo road",
+          "Tanke",
+          "Oja oba",
+          "Challenge",
+          "Sawmill",
+          "Unilorin",
+          "Kwarapoly",
+          "Unity road",
+          "Post office",
+          "Adeta",
+          "Agbooba",
+          "Adewole",
+          "Gaa-Akanbi",
+          "Fate",
+          "Basin",
+          "Sawmill",
+          "Kulende",
+          "Pakata",
+          "Oloje",
+          "Oko olowo",
+        ],
       },
-      nasarawa: {
-        locations: ["opt a", "opt b", "opt c", "opt d"],
-      },
+      // nasarawa: {
+      //   locations: ["opt a", "opt b", "opt c", "opt d"],
+      // },
     };
   }, []);
 
@@ -81,7 +116,7 @@ const LocationModal: React.FC = () => {
       setAvailableRegions(statesAndRegions[selectedOption]?.locations);
     }
 
-//     console.log(selectedOption);
+    //     console.log(selectedOption);
 
     setSelectedRegion("");
   };
@@ -98,7 +133,6 @@ const LocationModal: React.FC = () => {
   const handleRegionSelect = (selectedOption: string) => {
     console.log(`Selected option: ${selectedOption}`);
     setSelectedRegion(selectedOption.toLowerCase());
-   
   };
 
   useEffect(() => {

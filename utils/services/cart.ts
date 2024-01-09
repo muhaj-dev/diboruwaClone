@@ -3,6 +3,7 @@ import { CartItem,  } from "../types/types";
 import { v4 as uuidv4 } from "uuid";
 import { Product } from "@/constants";
 
+
 const BASE_URL = `${process.env.BASE_URL}/api/cart`; // Replace with your backend API base URL
 
 // Add a cart item
