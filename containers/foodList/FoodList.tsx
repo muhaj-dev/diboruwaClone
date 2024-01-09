@@ -79,9 +79,14 @@ export const ProductListing = styled.div`
   margin-top: 30px;
   /* width: inherit; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
+
+  .card {
+    width: 100%;
+  }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -117,7 +122,7 @@ const FoodList: React.FC<IFoodListProps> = ({}) => {
 
   const renderMenuItems = () => {
     return filteredProducts.map((menuItem) => (
-      <div key={menuItem.id}>
+      <div key={menuItem.id} className="card">
         <ProductCard product={menuItem} active={true} />
       </div>
     ));

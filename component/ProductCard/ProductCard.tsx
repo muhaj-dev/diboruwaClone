@@ -52,6 +52,7 @@ const ProductCard: FC<ProductCardProps> = ({ product, active, restaurant }) => {
       <ImageContainer disabled={!active}>
         <div className="discount_card">{product.discount}</div>
         <Image src={product?.imageURL} alt=".." fill={true} />
+        <div className="vendor">{product?.vendor }</div>
         <CartOverlay>
           <CartBtn onClick={putToCart}>
             <HiShoppingBag />
