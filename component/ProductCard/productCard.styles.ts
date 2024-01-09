@@ -44,8 +44,8 @@ export const CartBtn = styled.button`
 `;
 
 export const ImageContainer = styled.div<{ disabled: boolean }>`
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 15px;
   background: var(--primary-20);
   position: relative;
@@ -66,6 +66,17 @@ export const ImageContainer = styled.div<{ disabled: boolean }>`
   align-items: center;
 
   /* Additional styles for the discount element */
+}
+
+.vendor {
+  position: absolute;
+  font-size: 12px;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  color: var(--primary);
+  border-top-left-radius: 8px;
+  padding: 7px 10px;
 }
   
 
