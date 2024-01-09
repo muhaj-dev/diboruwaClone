@@ -29,7 +29,7 @@ export async function POST(req: Request, res: Response) {
     const existingCart = await Cart.findOne({ user: user._id });
 
 
-    console.log(body)
+    // console.log(body)
     if (!existingCart) {
       // If no existing cart, create a new one and add the item to it
       const cart = new Cart({
@@ -49,7 +49,7 @@ export async function POST(req: Request, res: Response) {
         total: body.price, // Initial total for the cart with a single item
       });
 
-      console.log(cart);
+      // console.log(cart);
 
       await cart.save();
     } else {
@@ -84,6 +84,7 @@ export async function POST(req: Request, res: Response) {
       existingCart.cartItems.forEach((item: CartItem) => {
         cartTotal += item.total;
       });
+      
       existingCart.total = cartTotal;
       await existingCart.save();
     }
@@ -93,7 +94,7 @@ export async function POST(req: Request, res: Response) {
       { status: 201 }
     );
   } catch (err) {
-    // console.log(err)
+    console.log(err)
     return NextResponse.json({ error: "An error occurred" }, { status: 500 });
   } finally {
     await closeDB();

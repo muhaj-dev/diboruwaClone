@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: grid;
   grid-gap: 15px;
   width: 100%;
-  max-width: 150px;
+  max-width: 220px;
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
@@ -44,8 +44,8 @@ export const CartBtn = styled.button`
 `;
 
 export const ImageContainer = styled.div<{ disabled: boolean }>`
-  width: 150px;
-  height: 150px;
+  width: 220px;
+  height: 220px;
   border-radius: 15px;
   background: var(--primary-20);
   position: relative;
