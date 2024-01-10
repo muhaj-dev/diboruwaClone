@@ -42,13 +42,13 @@ export const useCart = () => {
   const cartData: any =
     cartItems.length > 0 &&
     cartItems.map((item: any) => {
-      const { title, total, price, imgUrl, quantity } = item;
+      const { title, total, price, imageUrl, quantity } = item;
 
       return {
         id: item?._id,
         title,
         price,
-        imgUrl,
+        imageUrl,
         quantity,
         total: total,
       };
