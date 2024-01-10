@@ -8,6 +8,9 @@ import ProductCard from "@/component/ProductCard/ProductCard";
 import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
 import BackButton from "@/component/ui/BackButton/BackButton";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 
 export type IFoodDetailProps = {
   id: string | number;
@@ -19,10 +22,22 @@ export const Container = styled.div`
   padding: 10%;
 `;
 export const Banner = styled.div`
-  width: 100%;
-  height: 100%;
-  border-radius: 22px;
+  width: 500px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
   position: relative;
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 export const PrimaryTimeSlot = styled.div`
   position: absolute;
@@ -58,7 +73,6 @@ export const Divider = styled.div`
 `;
 export const Extras = styled.div`
   margin-top: 30px;
- 
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -84,16 +98,55 @@ export const SecondaryTimeSlot = styled.div`
     }
   }
 
+  .add {
+    padding: 8px 15px;
+    background: var(--primary);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
   .min_order {
     font-size: 15px;
     color: var(--primary-2);
   }
 `;
 
+const calculateDiscountedPrice = (price: any, discount: any) => {
+  return price - price * discount;
+};
+
 const FoodDetail: React.FC<IFoodDetailProps> = ({ id }) => {
   const [product, setProduct] = useState<Product | null | undefined>(null);
 
-  const { modal, closeModal } = useCartStore();
+  const { modal, closeModal, addToCart } = useCartStore();
+
+  const { data: session } = useSession();
+  const router = useRouter();
+
+  const putToCart = () => {
+    if (session) {
+      if (product) {
+        const discountedPrice =
+          product && product.discount
+            ? calculateDiscountedPrice(product.price, product.discount)
+            : product && product.price;
+
+        const productWithDiscountedPrice: Product = {
+          ...product,
+          price: discountedPrice,
+          id,
+        };
+        addToCart(productWithDiscountedPrice);
+      }
+    } else {
+      router.push("signin");
+      toast("Please sign in to add item to cart");
+    }
+  };
+  console.log(product);
 
   // Find the product based on the provided id
   useEffect(() => {
@@ -107,15 +160,17 @@ const FoodDetail: React.FC<IFoodDetailProps> = ({ id }) => {
   }
   return (
     <Container>
-      <BackButton />
+      <div className="btn">
+        <BackButton />
+      </div>
+
       <Banner>
-        {product?.imageURL && (
-          <Image
-            src={product?.imageURL}
-            alt={`product ${product?.title}`}
-            fill={true}
-          />
-        )}
+        {/* {product?.imageURL && ( */}
+        <Image
+          src={product?.imageURL}
+          alt={`product ${product?.title}`}
+          fill={true}
+        />
 
         <PrimaryTimeSlot>{product?.prep_time}</PrimaryTimeSlot>
       </Banner>
@@ -135,6 +190,10 @@ const FoodDetail: React.FC<IFoodDetailProps> = ({ id }) => {
           </div>
 
           {/* <div className="min_order">Min Order: ₦2000.00</div> */}
+
+          <button className="add" onClick={putToCart}>
+            add to cart
+          </button>
         </SecondaryTimeSlot>
 
         {product?.extras && (

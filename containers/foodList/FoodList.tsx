@@ -78,19 +78,24 @@ const SearchInput = styled.input`
 export const ProductListing = styled.div`
   margin-top: 30px;
   /* width: inherit; */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  display: flex;
+  /* grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
   /* grid-template-columns: repeat(4, 1fr); */
   justify-content: space-between;
-  gap: 30px;
-
-  .card {
-    width: 100%;
-  }
+  flex-wrap: wrap;
+  gap: 20px;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
   }
+
+  /* .card {
+    width: max-content;
+  } */
+
+  /* @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  } */
 `;
 
 const FoodList: React.FC<IFoodListProps> = ({}) => {
