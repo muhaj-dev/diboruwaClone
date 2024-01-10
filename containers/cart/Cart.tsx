@@ -55,6 +55,7 @@ const Cart: React.FC = () => {
   const { showModal, modalMessage, modalErrorType, openModal, closeModal } =
     useAuth();
 
+    console.log(cartItems)
   const mounted = useMounted();
 
 
