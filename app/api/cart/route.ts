@@ -29,7 +29,7 @@ export async function POST(req: Request, res: Response) {
     const existingCart = await Cart.findOne({ user: user._id });
 
 
-    console.log(body)
+    // console.log(body)
     if (!existingCart) {
       // If no existing cart, create a new one and add the item to it
       const cart = new Cart({
