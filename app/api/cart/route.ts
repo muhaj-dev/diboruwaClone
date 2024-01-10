@@ -95,7 +95,7 @@ export async function POST(req: Request, res: Response) {
     );
   } catch (err) {
     console.log(err)
-    return NextResponse.json({ error: "An error occurred" }, { status: 500 });
+    return NextResponse.json({ error: "An error occurred", err }, { status: 500 });
   } finally {
     await closeDB();
   }
