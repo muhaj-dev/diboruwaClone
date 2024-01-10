@@ -83,6 +83,8 @@ const Payment: FC<Props> = ({ modal }) => {
     }
   };
 
+  const loc = localStorage.getItem(`diboruwa__selectedState`);
+
   const deliveryFee = getDeliveryFee(location);
   const totalPriceWithDelivery = totalPrice + deliveryFee;
 

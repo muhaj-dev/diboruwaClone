@@ -6,11 +6,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: grid;
   grid-gap: 15px;
-  width: 100%;
-  max-width: 220px;
+  /* width: 100%; */
+  width: 200px;
 
   @media screen and (max-width: 768px) {
-    max-width: 100%;
+    width: 100%;
   }
 `;
 
@@ -44,8 +44,8 @@ export const CartBtn = styled.button`
 `;
 
 export const ImageContainer = styled.div<{ disabled: boolean }>`
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border-radius: 15px;
   background: var(--primary-20);
   position: relative;
