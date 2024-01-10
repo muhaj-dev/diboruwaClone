@@ -93,7 +93,7 @@ type Item = {
   id: string;
   title: string;
   price: number;
-  imgUrl: string;
+  imageUrl: string;
   category: string;
   quantity: number;
   total: number;
