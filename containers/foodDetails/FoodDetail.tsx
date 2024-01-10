@@ -142,7 +142,7 @@ const FoodDetail: React.FC<IFoodDetailProps> = ({ id }) => {
         addToCart(productWithDiscountedPrice);
       }
     } else {
-      router.push("signin");
+      router.push("/signin");
       toast("Please sign in to add item to cart");
     }
   };

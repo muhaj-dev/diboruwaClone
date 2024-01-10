@@ -116,7 +116,7 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
     <CartItemContainer>
       <ItemInfo>
         <div className="image">
-          <Image src={imgUrl} fill={true} alt="..." />
+          <Image src={imageUrl} fill={true} alt="..." />
         </div>
         <div className="text">
           <ItemName>{title}</ItemName>
