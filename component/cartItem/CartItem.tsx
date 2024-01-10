@@ -105,7 +105,7 @@ type CartItemProps = {
 
 const CartItem: React.FC<CartItemProps> = ({ item }) => {
   const { removeFromCart, updateQuantity } = useCartStore();
-  const { title, price, quantity, total, imgUrl } = item;
+  const { title, price, quantity, total, imageUrl } = item;
 
   // console.log(item);
   const handleQuantityChange = (value: number) => {};
