@@ -112,6 +112,8 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
 
   const totalPrice = price * quantity;
 
+  console.log(item)
+
   return (
     <CartItemContainer>
       <ItemInfo>
