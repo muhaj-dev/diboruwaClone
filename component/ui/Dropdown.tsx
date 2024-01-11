@@ -37,11 +37,13 @@ const DropdownList = styled.ul`
   list-style: none;
   border-radius: 10px;
   width: 100%;
+  max-height: 150px;
+  overflow: scroll;
   padding: 0;
   margin: 4px 0 0;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 const DropdownItem = styled.li`
@@ -52,6 +54,7 @@ const DropdownItem = styled.li`
   padding: 10px 15px;
   transition: all 0.5s ease-in-out;
   color: var(--primary);
+  font-size: 14px;
   border: none;
   &:hover {
     background: var(--primary);
