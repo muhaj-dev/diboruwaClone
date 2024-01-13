@@ -145,7 +145,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
                 alt="instagram_logo"
               />
             </a>
-            <a href="https://www.linkedin.com/company/dibo-ruwa" target="_blank">
+            <a href="https://www.linkedin.com/in/rowland-ricketts" target="_blank">
               <img
                 style={{
                   width: "30px",
