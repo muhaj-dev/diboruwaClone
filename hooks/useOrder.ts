@@ -58,7 +58,7 @@ const useOrder = () => {
     });
   };
 
-  const handleCartOrderSubmit = async (referenceId: string, amount: number) => {
+  const handleCartOrderSubmit = async (referenceId: string, amount: number, deliveryFee: number) => {
     setIsSubmitting(true);
     setIsError(false);
     setIsSuccess(false);
@@ -66,6 +66,8 @@ const useOrder = () => {
     try {
       const { data } = await axios.post("/api/order/cart", {
         referenceId,
+        deliveryFee,
+        amount
       });
       toast.loading("Cart order is being proccessed", {
         duration: 2000,
