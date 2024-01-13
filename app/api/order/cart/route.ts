@@ -147,8 +147,9 @@ export async function POST(req: Request, res: Response) {
           email: user.email,
           phone: user.phone,
           address: user.address,
-          total: existingCart.total,
+          total: body.amount,
           user,
+          deliveryFee: body.deliveryFee,
           paymentId: body.referenceId,
         });
 
@@ -184,6 +185,7 @@ export async function POST(req: Request, res: Response) {
           })
         );
         
+        console.log(body)
 
 
         existingCart.cartItems = [];

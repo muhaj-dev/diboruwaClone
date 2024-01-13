@@ -89,7 +89,7 @@ const Payment: FC<Props> = ({ modal }) => {
   const totalPriceWithDelivery = totalPrice + deliveryFee;
 
   const onSuccess = () => {
-    handleCartOrderSubmit(referenceId, totalPrice);
+    handleCartOrderSubmit(referenceId, totalPrice, deliveryFee);
   };
 
   const onClose = () => {
@@ -122,6 +122,7 @@ const Payment: FC<Props> = ({ modal }) => {
       <Column>
         <strong>Total</strong> <span>₦{totalPriceWithDelivery.toFixed(2)}</span>
       </Column>
+      {/* {location && <button onClick={onSuccess}>submit</button>} */}
       {location && (
         <PaymentButton
           totalPrice={totalPrice}

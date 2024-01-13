@@ -60,10 +60,7 @@ export async function POST(req: Request, res: Response) {
     const baseUrl = process.env.BASE_URL;
 
     
-
-    
-
-    await sendEmail(
+ await sendEmail(
       user.email,
       "Activate Account",
       ActivateAccount({
@@ -71,6 +68,9 @@ export async function POST(req: Request, res: Response) {
         activationLink: `${baseUrl}/verifyMail/${activationLink}`,
       })
     );
+    
+
+   
 
     // sendMail(user.email, "Activate Account", emailHTML)
     //   .then((info) => {
