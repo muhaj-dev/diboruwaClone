@@ -7419,7 +7419,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp81",
       vendor: "Sharon's Cook House",
     },
     {
@@ -7430,7 +7430,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp82",
       vendor: "Sharon's Cook House",
     },
     {
@@ -7441,7 +7441,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp83",
       vendor: "Sharon's Cook House",
     },
     {
@@ -7452,7 +7452,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp84",
       vendor: "Sharon's Cook House",
     },
     {
@@ -7463,7 +7463,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp85",
       vendor: "Sharon's Cook House",
     },
     {
@@ -7474,7 +7474,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp86",
       vendor: "Sharon's Cook House",
     },
     {
@@ -7485,7 +7485,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp87",
       vendor: "Sharon's Cook House",
     },
     {
@@ -7496,7 +7496,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp88",
       vendor: "Sharon's Cook House",
     },
     {
@@ -7507,7 +7507,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp89",
       vendor: "Sharon's Cook House",
     },
     {
@@ -7518,7 +7518,7 @@ export const products: Product[] = [
       categories: ["Drinks"],
       prep_time: "24 hours",
       opening_time: "11:00 AM",
-      slug: "sp73",
+      slug: "sp90",
       vendor: "Sharon's Cook House",
     },
 
