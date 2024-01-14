@@ -22,8 +22,8 @@ export const Container = styled.div`
   padding: 10%;
 `;
 export const Banner = styled.div`
-  width: 500px;
-  max-height: 500px;
+  width: 600px;
+  height: 500px;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
