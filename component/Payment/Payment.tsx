@@ -39,12 +39,14 @@ const Payment: FC<Props> = ({ modal }) => {
     "Buk old site",
     "Buk new site",
     "Kabuga",
+    "Sabon Gari",
+    "Hotoro",
     "Naibawa",
     "Gwale",
     "Tarauni",
-    "Kano municipal",
+    "Kano Municipal",
     "Dala",
-    "zoo"
+    "Zoo Road",
   ];
 
   const getDeliveryFee = (address: string | undefined) => {
@@ -63,19 +65,23 @@ const Payment: FC<Props> = ({ modal }) => {
         return 300;
       case "Kabuga":
         return 500;
+      case "Sabon Gari":
+          return 1300;
       case "Kano municipal":
-        return 1000;
+        return 1200;
       case "Dala":
         return 800;
       case "Fagge":
-        return 1000;
+        return 1300;
       case "Tarauni":
-        return 1000;
+        return 1500;
+      case "Hotoro":
+          return 1500;
       case "Gwale":
-        return 1000;
+        return 1200;
       case "Naibawa":
-        return 1000;
-      case "Zoo":
+        return 1200;
+      case "Zoo Road":
         return 1000;
       default:
         // Default delivery fee if the address doesn't match any known locations
@@ -125,7 +131,7 @@ const Payment: FC<Props> = ({ modal }) => {
       {/* {location && <button onClick={onSuccess}>submit</button>} */}
       {location && (
         <PaymentButton
-          totalPrice={totalPrice}
+          totalPrice={totalPriceWithDelivery}
           openModal={modal}
           buttonText="Pay Now"
           color="primary"
