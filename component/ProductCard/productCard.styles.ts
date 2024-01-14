@@ -1,15 +1,16 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
   grid-gap: 15px;
-  width: 100%;
-  max-width: 150px;
+  /* width: 100%; */
+  width: 200px;
 
   @media screen and (max-width: 768px) {
-    max-width: 100%;
+    width: 100%;
   }
 `;
 
@@ -22,7 +23,7 @@ export const CartOverlay = styled.div`
   background: var(--primary-20);
   backdrop-filter: blur(8px);
   transition: all 0.3s ease;
-  display: flex ;
+  display: flex;
   align-items: center;
   justify-content: center;
   display: none;
@@ -42,7 +43,7 @@ export const CartBtn = styled.button`
   justify-content: center;
 `;
 
-export const ImageContainer = styled.div<{disabled: boolean}>`
+export const ImageContainer = styled.div<{ disabled: boolean }>`
   width: 200px;
   height: 200px;
   border-radius: 15px;
@@ -50,6 +51,34 @@ export const ImageContainer = styled.div<{disabled: boolean}>`
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+
+  .discount_card {
+  
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  transform:  rotate(45deg);
+  background: red;
+  color: #fff;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Additional styles for the discount element */
+}
+
+.vendor {
+  position: absolute;
+  font-size: 12px;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  color: var(--primary);
+  border-top-left-radius: 8px;
+  padding: 7px 10px;
+}
+  
 
   img {
     width: 100%;
@@ -64,7 +93,7 @@ export const ImageContainer = styled.div<{disabled: boolean}>`
 
   &:hover {
     ${CartOverlay} {
-      display:${({disabled}) => disabled ? "none" : "flex"};
+      display: ${({ disabled }) => (disabled ? "none" : "flex")};
       opacity: 1;
     }
   }
@@ -76,11 +105,27 @@ export const ProductImage = styled(Image)`
 
 export const ProductInfo = styled.div`
   text-align: center;
+
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ccc;
+    transition: all 0.33s ease-in-out;
+    &:hover {
+      color: var(--primary);
+    }
+  }
 `;
-export const ProductName = styled.h3`
+export const ProductName = styled(Link)`
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
+  color: #ccc;
+  transition: all 0.33s ease-in-out;
+  &:hover {
+    color: var(--primary);
+  }
 `;
 export const ProductPrice = styled.div`
   font-weight: light;

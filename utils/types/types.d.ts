@@ -36,13 +36,19 @@ export type LoginUserParams = {
   password: string;
 };
 
-export type Product = {
-  id: string;
+export interface Product {
+  id: string | number ;
   title: string;
+  prep_time: string;
+  opening_time: string;
+  categories: string[];
+  slug: string;
   price: number;
-  imgUrl: string;
-  category: string;
-};
+  imageURL: string;
+  vendor: string;
+  discount?: number;
+  extras?: Extra[]; // Nested extras property within Product
+}
 
 export interface Subscription {
   _id?: string;

@@ -22,7 +22,7 @@ interface Props {
 
 const Payment: FC<Props> = ({ modal }) => {
   const { data: session } = useSession();
-  const [location, setLocation] = useState("")
+  const [location, setLocation] = useState("");
 
   const { cartItems, subscriptions } = useCartStore();
   const { totalPrice } = useCart();
@@ -31,31 +31,72 @@ const Payment: FC<Props> = ({ modal }) => {
 
   const referenceId = nanoid(8);
 
-  const locations =["Danbare", "Rimin gata", "Rijiazaki", "Jambulo", "Buk old site"]
+  const locations = [
+    "Danbare",
+    "Rimin Gata",
+    "Rijia Zaki",
+    "Jambulo",
+    "Buk Old Site",
+    "Buk New Site",
+    "Kabuga",
+    "Sabon Gari",
+    "Hotoro",
+    "Fagge",
+    "Naibawa",
+    "Gwale",
+    "Tarauni",
+    "Kano Municipal",
+    "Dala",
+    "Zoo Road",
+  ];
 
   const getDeliveryFee = (address: string | undefined) => {
     switch (address) {
       case "Danbare":
         return 300;
-      case "Rimin gata":
+      case "Rimin Gata":
         return 300;
-      case "Rijiazaki":
+      case "Rijia Zaki":
         return 400;
       case "Jambulo":
         return 500;
-      case "Buk old site":
+      case "Buk Old Site":
         return 500;
+      case "Buk New Site":
+        return 300;
+      case "Kabuga":
+        return 500;
+      case "Sabon Gari":
+          return 1300;
+      case "Kano Municipal":
+        return 1200;
+      case "Dala":
+        return 800;
+      case "Fagge":
+        return 1300;
+      case "Tarauni":
+        return 1500;
+      case "Hotoro":
+          return 1500;
+      case "Gwale":
+        return 1200;
+      case "Naibawa":
+        return 1200;
+      case "Zoo Road":
+        return 1000;
       default:
         // Default delivery fee if the address doesn't match any known locations
         return 0;
     }
   };
 
+  const loc = localStorage.getItem(`diboruwa__selectedState`);
+
   const deliveryFee = getDeliveryFee(location);
   const totalPriceWithDelivery = totalPrice + deliveryFee;
 
   const onSuccess = () => {
-    handleCartOrderSubmit(referenceId, totalPrice);
+    handleCartOrderSubmit(referenceId, totalPrice, deliveryFee);
   };
 
   const onClose = () => {
@@ -69,18 +110,15 @@ const Payment: FC<Props> = ({ modal }) => {
         <strong>Location:</strong>
 
         <div className="select">
+          <CustomSelect
+            // label="State"
 
-            <CustomSelect
-          // label="State"
-          
-          options={locations}
-          value={location}
-          name="location"
-          onChange={(e) => setLocation(e.target.value)}
-          
-        />
+            options={locations}
+            value={location}
+            name="location"
+            onChange={(e) => setLocation(e.target.value)}
+          />
         </div>
-      
       </Column>
       <Column>
         <strong>Items</strong> <span>{totalQuantities}</span>
@@ -91,15 +129,18 @@ const Payment: FC<Props> = ({ modal }) => {
       <Column>
         <strong>Total</strong> <span>₦{totalPriceWithDelivery.toFixed(2)}</span>
       </Column>
-     {location && <PaymentButton
-        totalPrice={totalPrice}
-        openModal={modal}
-        buttonText="Pay Now"
-        color="primary"
-        onSuccess={onSuccess}
-        onClose={onClose}
-        referenceId={referenceId}
-      />}
+      {/* {location && <button onClick={onSuccess}>submit</button>} */}
+      {location && (
+        <PaymentButton
+          totalPrice={totalPriceWithDelivery}
+          openModal={modal}
+          buttonText="Pay Now"
+          color="primary"
+          onSuccess={onSuccess}
+          onClose={onClose}
+          referenceId={referenceId}
+        />
+      )}
     </Container>
   );
 };

@@ -87,18 +87,16 @@ const useCartStore = create<CartState>()((set) => ({
         set((state) => ({
           subscriptions: [...response.data.subscriptions],
         }));
-         if (response) {
-        set({
-          modal: {
-            isOpen: true,
-            message: response.data.message,
-            type: "success",
-          },
-        });
+        if (response) {
+          set({
+            modal: {
+              isOpen: true,
+              message: response.data.message,
+              type: "success",
+            },
+          });
+        }
       }
-      }
-
-     
     } catch (error: any) {
       toast.error(error.response.data.message);
 
@@ -143,8 +141,9 @@ const useCartStore = create<CartState>()((set) => ({
         duration: 1000,
         position: "top-center",
       });
-      const response = await addCartItemAPI(productObj);
 
+      const response = await addCartItemAPI(productObj);
+      console.log(response);
       set((state) => ({
         cartItems: [...response.data.cart.cartItems],
       }));
@@ -232,7 +231,10 @@ const useCartStore = create<CartState>()((set) => ({
       });
       const response = await clearCartAPI();
 
-      set({ cartItems: response.data.cart.cartItems, subscriptions: response.data.subscriptions });
+      set({
+        cartItems: response.data.cart.cartItems,
+        subscriptions: response.data.subscriptions,
+      });
 
       toast.success("Cart cleared successfully!!!", {
         duration: 1000,

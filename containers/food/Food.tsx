@@ -16,13 +16,15 @@ import {
 import Button from "@/component/ui/button/Button";
 import MoreServices from "@/component/shared/MoreServices";
 import { assets } from "@/public/assets";
-import { HWW } from "@/constants";
-import ProductList from "@/component/ProductList/ProductList";
+import { HWW, restaurants } from "@/constants";
+// import ProductList from "@/component/ProductList/ProductList";
 import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import RestaurantList from "@/component/restaurants/Restaurants";
+import FoodList from "../foodList/FoodList";
 
 const isBetween10amAnd6pm = () => {
   const now = new Date();
@@ -100,7 +102,11 @@ const Food = () => {
       </HWWSecetion>
 
       <MenuSection id="food">
-        <ProductList />
+      
+        {/* <RestaurantList restaurants={restaurants}/> */}
+
+        <FoodList/>
+
       </MenuSection>
 
       <MoreServices />

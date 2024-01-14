@@ -32,7 +32,6 @@ const SignIn: React.FC<SignInPageProps> = ({ isModal = false }) => {
     modalErrorType,
     closeModal, } = useAuth();
   const handleSignIn = async (formData: { [key: string]: string }) => {
-    console.log("Sign In", formData);
     await signin(formData);
     // router.back();
   };
@@ -44,7 +43,6 @@ const SignIn: React.FC<SignInPageProps> = ({ isModal = false }) => {
     }
   }, [session, router, isModal]);
 
- 
 
   return (
     <div className="">

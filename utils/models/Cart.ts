@@ -1,15 +1,16 @@
 import mongoose, { Document, Model, Schema, model, models } from "mongoose";
 
-
-
 const cartSchema = new Schema(
   {
     cartItems: [
       {
         title: { type: String, required: true },
         price: { type: Number, required: true },
-        imgUrl: { type: String, required: true },
-        category: { type: String, required: true },
+        prepTime: { type: Number },
+        imageUrl: { type: String,  },
+        // categories: { type: [String], required: true },
+        vendor: { type: String,  },
+        discount: { type: String},
         quantity: { type: Number, required: true },
         total: { type: Number, required: true },
       },

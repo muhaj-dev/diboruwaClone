@@ -93,7 +93,7 @@ type Item = {
   id: string;
   title: string;
   price: number;
-  imgUrl: string;
+  imageUrl: string;
   category: string;
   quantity: number;
   total: number;
@@ -105,18 +105,20 @@ type CartItemProps = {
 
 const CartItem: React.FC<CartItemProps> = ({ item }) => {
   const { removeFromCart, updateQuantity } = useCartStore();
-  const { title, price, quantity, total, imgUrl } = item;
+  const { title, price, quantity, total, imageUrl } = item;
 
   // console.log(item);
   const handleQuantityChange = (value: number) => {};
 
   const totalPrice = price * quantity;
 
+  console.log(item)
+
   return (
     <CartItemContainer>
       <ItemInfo>
         <div className="image">
-          <Image src={imgUrl} fill={true} alt="..." />
+          <Image src={imageUrl} fill={true} alt="..." />
         </div>
         <div className="text">
           <ItemName>{title}</ItemName>

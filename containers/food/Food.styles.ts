@@ -126,7 +126,7 @@ export const HWWCard = styled.div`
 `;
 
 export const MenuSection = styled.section`
-  padding: 5% 8%;
+  /* padding: 5% 8%; */
   height: auto;
 
   .tag {

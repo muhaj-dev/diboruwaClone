@@ -22,6 +22,10 @@ const orderSchema = new Schema(
       type: String,
       required: true,
     },
+    deliveryFee: {
+      type: Number,
+      required: true
+    },
     total: {
       type: Number,
       required: true
@@ -33,6 +37,10 @@ const orderSchema = new Schema(
       enum: ["processing", "dispatched", "delivered"],
     },
     partner: {
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+    },
+    courier: {
       type: mongoose.Types.ObjectId,
       ref: "User",
     },
