@@ -22,8 +22,8 @@ export const Container = styled.div`
   padding: 10%;
 `;
 export const Banner = styled.div`
-  width: 600px;
-  height: 500px;
+  width: 500px;
+  height: 300px;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
@@ -199,7 +199,7 @@ const FoodDetail: React.FC<IFoodDetailProps> = ({ id }) => {
         {product?.extras && (
           <>
             {" "}
-            <h4>Extras</h4>
+            <h4>Extras and Drinks</h4>
             <Divider />
             <Extras>
               {product?.extras?.map((prod, index) => (
