@@ -23,7 +23,7 @@ export const Container = styled.div`
 `;
 export const Banner = styled.div`
   width: 500px;
-  height: 300px;
+  max-height: 500px;
   border-radius: 12px;
   overflow: hidden;
   position: relative;
