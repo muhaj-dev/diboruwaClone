@@ -860,7 +860,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -871,7 +871,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -882,7 +882,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -893,7 +893,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -904,7 +904,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -915,7 +915,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -926,7 +926,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -937,7 +937,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -948,7 +948,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -959,7 +959,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -970,7 +970,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -981,7 +981,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -992,7 +992,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp1",
         vendor: "Pecan City",
       },
       {
@@ -1003,7 +1003,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp1",
         vendor: "Pecan City",
       },
     ],
@@ -1028,7 +1028,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1039,7 +1039,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1050,7 +1050,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1061,7 +1061,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1072,7 +1072,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1083,7 +1083,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1094,7 +1094,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1105,7 +1105,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1116,7 +1116,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1127,7 +1127,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1138,7 +1138,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1149,7 +1149,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1160,7 +1160,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp2",
         vendor: "Pecan City",
       },
       {
@@ -1171,7 +1171,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp2",
         vendor: "Pecan City",
       },
     ],
@@ -1195,7 +1195,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1206,7 +1206,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1217,7 +1217,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1228,7 +1228,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1239,7 +1239,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1250,7 +1250,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1261,7 +1261,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1272,7 +1272,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1283,7 +1283,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1294,7 +1294,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp10",
+        slug: "sp3",
         vendor: "Pecan City",
       },
       {
@@ -1305,7 +1305,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp3",
         vendor: "Pecan City",
       },
     ],
@@ -1329,7 +1329,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1340,7 +1340,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1362,7 +1362,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1373,7 +1373,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1384,7 +1384,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1395,7 +1395,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1406,7 +1406,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1417,7 +1417,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1428,7 +1428,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1439,7 +1439,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1450,7 +1450,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1461,7 +1461,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp4",
         vendor: "Pecan City",
       },
       {
@@ -1472,7 +1472,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp4",
         vendor: "Pecan City",
       },
     ],
@@ -1498,7 +1498,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1509,7 +1509,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1520,7 +1520,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1531,7 +1531,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1542,7 +1542,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1553,7 +1553,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1564,7 +1564,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1575,7 +1575,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1586,7 +1586,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1597,7 +1597,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1608,7 +1608,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1619,7 +1619,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp5",
         vendor: "Pecan City",
       },
       {
@@ -1641,7 +1641,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp5",
         vendor: "Pecan City",
       },
     ],
@@ -1665,7 +1665,7 @@ export const products: Product[] = [
         categories: ["Rice and Grains"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp6",
         vendor: "Sharon's Cook House",
       },
     ]
@@ -1689,7 +1689,7 @@ export const products: Product[] = [
         categories: ["Rice and Grains"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp7",
         vendor: "Sharon's Cook House",
       },
     ]
@@ -1713,7 +1713,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp001",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1724,7 +1724,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp002",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1735,7 +1735,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp003",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1746,7 +1746,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp004",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1757,7 +1757,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp005",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1768,7 +1768,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp006",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1779,7 +1779,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp007",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1790,7 +1790,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp008",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1801,7 +1801,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp009",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1812,7 +1812,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp8",
         vendor: "Sharon's Cook House",
       },
     ],
@@ -1836,7 +1836,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp001",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1847,7 +1847,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp002",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1858,7 +1858,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp003",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1869,7 +1869,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp004",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1880,7 +1880,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp005",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1891,7 +1891,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp006",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1902,7 +1902,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp007",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1913,7 +1913,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp008",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1924,7 +1924,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp009",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
       {
@@ -1935,7 +1935,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp9",
         vendor: "Sharon's Cook House",
       },
     ],
@@ -2097,7 +2097,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp2",
+        slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2108,7 +2108,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp3",
+        slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2119,7 +2119,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2130,7 +2130,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2141,7 +2141,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2152,7 +2152,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2163,7 +2163,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2174,7 +2174,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2185,7 +2185,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2196,7 +2196,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp22",
         vendor: "Pecan City",
       },
       {
@@ -2207,7 +2207,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp22",
         vendor: "Pecan City",
       },
     ],
@@ -2231,7 +2231,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp2",
+        slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2242,7 +2242,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp3",
+        slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2253,7 +2253,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2264,7 +2264,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2275,7 +2275,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2286,7 +2286,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2297,7 +2297,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2308,7 +2308,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2319,7 +2319,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2330,7 +2330,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp23",
         vendor: "Pecan City",
       },
       {
@@ -2341,7 +2341,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+         slug: "sp23",
         vendor: "Pecan City",
       },
     ],
@@ -2365,7 +2365,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2376,7 +2376,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2387,7 +2387,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2398,7 +2398,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2409,7 +2409,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2420,7 +2420,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2431,7 +2431,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2442,7 +2442,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2453,7 +2453,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2464,7 +2464,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp10",
+        slug: "sp24",
         vendor: "Pecan City",
       },
       {
@@ -2475,7 +2475,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp24",
         vendor: "Pecan City",
       },
     ],
@@ -2499,7 +2499,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp2",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2510,7 +2510,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp3",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2521,7 +2521,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2532,7 +2532,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2543,7 +2543,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2554,7 +2554,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2565,7 +2565,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2576,7 +2576,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2587,7 +2587,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2598,7 +2598,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp25",
         vendor: "Pecan City",
       },
       {
@@ -2609,7 +2609,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp25",
         vendor: "Pecan City",
       },
     ],
@@ -2633,7 +2633,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp2",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2644,7 +2644,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp3",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2655,7 +2655,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2666,7 +2666,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2677,7 +2677,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2688,7 +2688,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2699,7 +2699,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2710,7 +2710,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2721,7 +2721,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2732,7 +2732,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp26",
         vendor: "Pecan City",
       },
       {
@@ -2743,7 +2743,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp26",
         vendor: "Pecan City",
       },
     ],
@@ -2767,7 +2767,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2778,7 +2778,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2789,7 +2789,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2800,7 +2800,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2811,7 +2811,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2822,7 +2822,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2833,7 +2833,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2844,7 +2844,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2855,7 +2855,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2866,7 +2866,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp10",
+        slug: "sp27",
         vendor: "Pecan City",
       },
       {
@@ -2877,7 +2877,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp27",
         vendor: "Pecan City",
       },
     ],
@@ -2901,7 +2901,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp2",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -2912,7 +2912,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp3",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -2923,7 +2923,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -2934,7 +2934,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -2945,7 +2945,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -2956,7 +2956,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -2967,7 +2967,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -2978,7 +2978,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -2989,7 +2989,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -3000,7 +3000,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp28",
         vendor: "Pecan City",
       },
       {
@@ -3011,7 +3011,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp28",
         vendor: "Pecan City",
       },
     ],
@@ -3169,7 +3169,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp2",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3180,7 +3180,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp3",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3191,7 +3191,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3202,7 +3202,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3213,7 +3213,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3224,7 +3224,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3235,7 +3235,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3246,7 +3246,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3257,7 +3257,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3268,7 +3268,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp29",
         vendor: "Pecan City",
       },
       {
@@ -3279,7 +3279,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp4",
+        slug: "sp29",
         vendor: "Pecan City",
       },
     ],
@@ -3314,7 +3314,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3325,7 +3325,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3336,7 +3336,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3347,7 +3347,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3358,7 +3358,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3369,7 +3369,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3380,7 +3380,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3391,7 +3391,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3402,7 +3402,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3413,7 +3413,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3424,7 +3424,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3435,7 +3435,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3446,7 +3446,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp32",
         vendor: "Pecan City",
       },
       {
@@ -3457,7 +3457,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp32",
         vendor: "Pecan City",
       },
     ],
@@ -3465,13 +3465,125 @@ export const products: Product[] = [
   {
     id: "33",
     title: "Masa",
-    price: 700,
+    price: 735,
     imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691930984/diboruwa/Screenshot_from_2023-07-23_12-25-21_hc8kbh.png",
     categories: ["Swallow"],
     prep_time: "24 hours",
     opening_time: "11:00 AM",
     slug: "sp33",
     vendor: "Sharon's Cook House",
+    extras: [
+      {
+        id: "1",
+        title: "Tigernut Drink - Kunu Aya",
+        price: 315,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/tigernut_drink_-_kunu_haya_vxa6jh.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "2",
+        title: "Tigernut Drink - Kunu Aya",
+        price: 525,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/tigernut_drink_-_kunu_haya_vxa6jh.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "3",
+        title: "Millet Drink - Kunu Gero",
+        price: 525,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229488/kunu_gero_vkm5jp.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "4",
+        title: "Zobo Drink",
+        price: 525,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/Screenshot_from_2024-01-14_11-35-19_u1y16t.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "5",
+        title: "Zobo Drink",
+        price: 315,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/Screenshot_from_2024-01-14_11-35-19_u1y16t.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "6",
+        title: "Heart Juice",
+        price: 1050,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229490/Screenshot_from_2024-01-14_11-37-44_jt3pim.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "6",
+        title: "Yoghurt",
+        price: 525,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229484/Screenshot_from_2024-01-14_11-39-20_xlalkd.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "7",
+        title: "Yoghurt",
+        price: 840,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229484/Screenshot_from_2024-01-14_11-39-20_xlalkd.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "8",
+        title: "Fruit Juice",
+        price: 525,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "9",
+        title: "Fruit Juice",
+        price: 315,
+        imageURL: "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+    ],
   },
   {
     id: "34",
@@ -3504,7 +3616,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3515,7 +3627,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3526,7 +3638,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3537,7 +3649,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3548,7 +3660,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3559,7 +3671,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3570,7 +3682,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3581,7 +3693,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3592,7 +3704,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3603,7 +3715,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3614,7 +3726,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3625,7 +3737,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3636,7 +3748,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp35",
         vendor: "Pecan City",
       },
       {
@@ -3647,7 +3759,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp35",
         vendor: "Pecan City",
       },
     ],
@@ -3682,7 +3794,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3693,7 +3805,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3704,7 +3816,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3715,7 +3827,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3726,7 +3838,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3737,7 +3849,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3748,7 +3860,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3759,7 +3871,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3770,7 +3882,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3781,7 +3893,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3792,7 +3904,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3803,7 +3915,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3814,7 +3926,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp37",
         vendor: "Pecan City",
       },
       {
@@ -3825,7 +3937,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp37",
         vendor: "Pecan City",
       },
     ],
@@ -3849,7 +3961,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3860,7 +3972,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3871,7 +3983,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3882,7 +3994,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3893,7 +4005,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3904,7 +4016,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3915,7 +4027,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3926,7 +4038,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3937,7 +4049,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3948,7 +4060,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3959,7 +4071,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3970,7 +4082,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3981,7 +4093,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp38",
         vendor: "Pecan City",
       },
       {
@@ -3992,7 +4104,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp38",
         vendor: "Pecan City",
       },
     ],
@@ -4016,7 +4128,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4027,7 +4139,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4038,7 +4150,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4049,7 +4161,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4060,7 +4172,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4071,7 +4183,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4082,7 +4194,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4093,7 +4205,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4104,7 +4216,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4115,7 +4227,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4126,7 +4238,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4137,7 +4249,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4148,7 +4260,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp39",
         vendor: "Pecan City",
       },
       {
@@ -4159,7 +4271,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp39",
         vendor: "Pecan City",
       },
     ],
@@ -4183,7 +4295,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4194,7 +4306,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4205,7 +4317,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4216,7 +4328,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4227,7 +4339,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4238,7 +4350,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4249,7 +4361,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4260,7 +4372,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4271,7 +4383,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4282,7 +4394,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4293,7 +4405,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4304,7 +4416,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4315,7 +4427,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp40",
         vendor: "Pecan City",
       },
       {
@@ -4326,7 +4438,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp40",
         vendor: "Pecan City",
       },
     ],
@@ -4350,7 +4462,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp01",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4361,7 +4473,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp02",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4372,7 +4484,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp03",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4383,7 +4495,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp04",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4394,7 +4506,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp05",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4405,7 +4517,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp06",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4416,7 +4528,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp07",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4427,7 +4539,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp08",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4438,7 +4550,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp09",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4449,7 +4561,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp010",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4460,7 +4572,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp011",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4471,7 +4583,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp012",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4482,7 +4594,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp013",
+        slug: "sp41",
         vendor: "Pecan City",
       },
       {
@@ -4493,7 +4605,7 @@ export const products: Product[] = [
         categories: ["Extras"],
         prep_time: "25 minutes",
         opening_time: "11:00 AM",
-        slug: "sp014",
+        slug: "sp41",
         vendor: "Pecan City",
       },
     ],
@@ -4639,7 +4751,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4650,7 +4762,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4661,7 +4773,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4672,7 +4784,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4683,7 +4795,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4694,7 +4806,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4705,7 +4817,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4716,7 +4828,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4727,7 +4839,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4738,7 +4850,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp53",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -4762,7 +4874,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4773,7 +4885,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4784,7 +4896,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4795,7 +4907,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4806,7 +4918,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4817,7 +4929,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4828,7 +4940,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4839,7 +4951,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4850,7 +4962,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4861,7 +4973,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp054",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -4885,7 +4997,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4896,7 +5008,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4907,7 +5019,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4918,7 +5030,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4929,7 +5041,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4940,7 +5052,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4951,7 +5063,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4962,7 +5074,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4973,7 +5085,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
         {
@@ -4984,7 +5096,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp55",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -5008,7 +5120,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp56",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5030,7 +5142,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp56",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5041,7 +5153,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp56",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5052,7 +5164,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp56",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5063,7 +5175,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp56",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5074,7 +5186,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp56",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5085,7 +5197,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp56",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5096,7 +5208,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp56",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5107,7 +5219,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp56",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -5131,7 +5243,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5142,7 +5254,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5153,7 +5265,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5164,7 +5276,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5175,7 +5287,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5186,7 +5298,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5197,7 +5309,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5208,7 +5320,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5219,7 +5331,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5230,7 +5342,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp57",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -5254,7 +5366,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5265,7 +5377,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5276,7 +5388,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5287,7 +5399,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5298,7 +5410,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5309,7 +5421,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5320,7 +5432,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5331,7 +5443,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5342,7 +5454,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5353,7 +5465,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp58",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -5378,7 +5490,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp001",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5389,7 +5501,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp002",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5400,7 +5512,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp003",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5411,7 +5523,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp004",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5422,7 +5534,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp005",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5433,7 +5545,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp006",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5444,7 +5556,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp007",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5455,7 +5567,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp008",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5466,7 +5578,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp009",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5477,7 +5589,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp010",
+          slug: "sp59",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -5502,7 +5614,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5513,7 +5625,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5524,7 +5636,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5535,7 +5647,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5546,7 +5658,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5557,7 +5669,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5568,7 +5680,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5579,7 +5691,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5590,7 +5702,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5601,7 +5713,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp60",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -5625,7 +5737,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5636,7 +5748,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5647,7 +5759,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5658,7 +5770,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5669,7 +5781,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5680,7 +5792,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5691,7 +5803,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5702,7 +5814,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5713,7 +5825,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5724,7 +5836,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp61",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -5749,7 +5861,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5760,7 +5872,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5771,7 +5883,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5782,7 +5894,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5793,7 +5905,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5804,7 +5916,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5815,7 +5927,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5826,7 +5938,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5837,7 +5949,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5848,7 +5960,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp62",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -5873,7 +5985,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5884,7 +5996,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5895,7 +6007,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5906,7 +6018,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5917,7 +6029,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5928,7 +6040,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5939,7 +6051,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5950,7 +6062,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5961,7 +6073,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
         {
@@ -5972,7 +6084,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp63",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -5997,7 +6109,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6008,7 +6120,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6019,7 +6131,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6030,7 +6142,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6041,7 +6153,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6052,7 +6164,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6063,7 +6175,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6074,7 +6186,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6085,7 +6197,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6096,7 +6208,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp64",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -6121,7 +6233,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6132,7 +6244,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6143,7 +6255,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6154,7 +6266,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6165,7 +6277,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6176,7 +6288,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6187,7 +6299,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6198,7 +6310,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6209,7 +6321,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6220,7 +6332,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp65",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -6245,7 +6357,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6256,7 +6368,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6267,7 +6379,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6278,7 +6390,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6289,7 +6401,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6300,7 +6412,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6311,7 +6423,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6322,7 +6434,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6333,7 +6445,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6344,7 +6456,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp66",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -6369,7 +6481,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6380,7 +6492,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6391,7 +6503,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6402,7 +6514,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6413,7 +6525,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6424,7 +6536,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6435,7 +6547,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6446,7 +6558,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6457,7 +6569,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6468,7 +6580,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp67",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -6493,7 +6605,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6504,7 +6616,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6515,7 +6627,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6526,7 +6638,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6537,7 +6649,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6548,7 +6660,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6559,7 +6671,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6570,7 +6682,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6581,7 +6693,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6592,7 +6704,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp68",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -6616,7 +6728,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6627,7 +6739,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6638,7 +6750,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6649,7 +6761,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6660,7 +6772,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6671,7 +6783,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6682,7 +6794,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6693,7 +6805,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6704,7 +6816,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6715,7 +6827,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp69",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -6739,7 +6851,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6750,7 +6862,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6761,7 +6873,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6772,7 +6884,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6783,7 +6895,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6794,7 +6906,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6805,7 +6917,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6816,7 +6928,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6827,7 +6939,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6838,7 +6950,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp70",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -6863,7 +6975,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6874,7 +6986,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6885,7 +6997,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6896,7 +7008,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6907,7 +7019,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6918,7 +7030,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6929,7 +7041,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6940,7 +7052,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6951,7 +7063,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6962,7 +7074,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp71",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -6987,7 +7099,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
         {
@@ -6998,7 +7110,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7009,7 +7121,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7020,7 +7132,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7031,7 +7143,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7042,7 +7154,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7053,7 +7165,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7064,7 +7176,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7075,7 +7187,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7086,7 +7198,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp72",
           vendor: "Sharon's Cook House",
         },
       ],
@@ -7111,7 +7223,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0111",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7122,7 +7234,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0112",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7133,7 +7245,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0113",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7144,7 +7256,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0114",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7155,7 +7267,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0115",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7166,7 +7278,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0116",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7177,7 +7289,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0117",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7188,7 +7300,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0118",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7199,7 +7311,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp0119",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
         {
@@ -7210,7 +7322,7 @@ export const products: Product[] = [
           categories: ["Drinks"],
           prep_time: "24 hours",
           opening_time: "11:00 AM",
-          slug: "sp01110",
+          slug: "sp73",
           vendor: "Sharon's Cook House",
         },
       ],
