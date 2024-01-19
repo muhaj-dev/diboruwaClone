@@ -47,12 +47,24 @@ const ProductCard: FC<ProductCardProps> = ({ product, active, restaurant }) => {
     }
   };
 
+  const isProductOpen = () => {
+    if (product.openingDays) {
+      const currentDay = new Date()
+        .toLocaleString("en-us", { weekday: "short" })
+        .toLowerCase();
+
+      return product.openingDays.includes(currentDay);
+    }
+
+    return true;
+  };
+
   return (
-    <Container>
+    <Container isOpen={isProductOpen()}>
       <ImageContainer disabled={!active}>
         <div className="discount_card">{product.discount}</div>
         <Image src={product?.imageURL} alt=".." fill={true} />
-        <div className="vendor">{product?.vendor }</div>
+        <div className="vendor">{product?.vendor}</div>
         <CartOverlay>
           <CartBtn onClick={putToCart}>
             <HiShoppingBag />
@@ -60,10 +72,11 @@ const ProductCard: FC<ProductCardProps> = ({ product, active, restaurant }) => {
         </CartOverlay>
       </ImageContainer>
       <ProductInfo>
-        {/* <ProductName>
-          {product?.title}
-        </ProductName> */}
-        <ProductName href={`/food/${product?.slug}`} style={{ textDecoration: "none" }} >
+       
+        <ProductName
+          href={`/food/${product?.slug}`}
+          style={{ textDecoration: "none" }}
+        >
           {product?.title}
         </ProductName>
 

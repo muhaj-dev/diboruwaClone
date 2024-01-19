@@ -646,6 +646,7 @@ export interface Product {
   price: number;
   slug: string;
   imageURL: string;
+  openingDays?: string[]
   vendor: string;
   discount?: number;
   extras?: Extra[]; // Nested extras property within Product
