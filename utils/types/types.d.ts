@@ -99,6 +99,7 @@ export interface Order {
   email: string;
   address: string;
   phone: string;
+  deliveryFee: number;
   paymentId: string;
   user: UserType;
   createdAt: Date;
