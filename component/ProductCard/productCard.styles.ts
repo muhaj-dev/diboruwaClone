@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: grid;
+export const Container = styled.div<{ isOpen?: boolean }>`
+  display: ${({ isOpen }) => (isOpen ? "grid" : "none")};
   grid-gap: 15px;
   /* width: 100%; */
   width: 200px;
@@ -53,32 +53,30 @@ export const ImageContainer = styled.div<{ disabled: boolean }>`
   transition: all 0.3s ease;
 
   .discount_card {
-  
-  position: absolute;
-  top: 10px;
-  right: -20px;
-  transform:  rotate(45deg);
-  background: red;
-  color: #fff;
-  width: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    transform: rotate(45deg);
+    background: red;
+    color: #fff;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  /* Additional styles for the discount element */
-}
+    /* Additional styles for the discount element */
+  }
 
-.vendor {
-  position: absolute;
-  font-size: 12px;
-  bottom: 0;
-  right: 0;
-  background: #fff;
-  color: var(--primary);
-  border-top-left-radius: 8px;
-  padding: 7px 10px;
-}
-  
+  .vendor {
+    position: absolute;
+    font-size: 12px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    color: var(--primary);
+    border-top-left-radius: 8px;
+    padding: 7px 10px;
+  }
 
   img {
     width: 100%;

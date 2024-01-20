@@ -33,6 +33,17 @@ const requestSchema = new Schema(
       type: Date,
       required: true,
     },
+    partner: {
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+    },
+    courier: {
+      type: mongoose.Types.ObjectId,
+      ref: "User",
+    },
+    deliveryFee: {
+      type: Number, 
+    },
     user: {
       type: mongoose.Types.ObjectId,
       ref: "User",
