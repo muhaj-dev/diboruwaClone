@@ -1008,7 +1008,9 @@ export const products: Product[] = [
         vendor: "Pecan City",
       },
     ],
-
+    openingDays: [
+      "mon", "tue", "wed", "thu", "fri", "sat", "sun"
+    ]
   },
   {
     id: "2",
@@ -1020,6 +1022,9 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp2",
     vendor: "Pecan City",
+    openingDays: [
+      "mon", "tue", "wed", "thur", "fri", "at", "sun"
+    ],
     extras: [
       {
         id: "1",
@@ -1187,6 +1192,9 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp3",
     vendor: "Pecan City",
+    openingDays: [
+      "mon", "tue", "wed", "thur", "fri", "sat, sun"
+    ],
     extras: [
       {
         id: "1",
