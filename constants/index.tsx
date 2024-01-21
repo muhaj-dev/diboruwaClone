@@ -499,7 +499,7 @@ export const planDetails: PlanDetails = {
       title: "Lite Laundry",
       features: [
         "Dibo Ruwa Laundry Bag",
-        "30 clothing materials",
+        "20 clothing materials",
         "Gentle washing for delicate fabrics",
         "Stain treatment",
         "Picked up once a month",
@@ -512,7 +512,7 @@ export const planDetails: PlanDetails = {
       title: "Regular Laundry",
       features: [
         "Dibo Ruwa Laundry Bag",
-        "50 clothing materials",
+        "45 clothing materials",
         "Gentle washing for delicate fabrics",
         "Stain treatment",
         "Quick-dry service",
@@ -526,7 +526,7 @@ export const planDetails: PlanDetails = {
       title: "Family",
       features: [
         "Dibo Ruwa Laundry Bag",
-        "120 clothing materials",
+        "100 clothing materials",
         "Gentle washing for delicate fabrics",
         "Stain treatment",
         "Quick-dry service",
@@ -8239,6 +8239,126 @@ export const products: Product[] = [
     vendor: "Sharon's Cook House",
     openingDays: ["wed", "thu", "fri"],
   },
+  {
+    id: "91",
+    title: "Full Pot of Jollof Rice - 2L",
+    price: 13650,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704968509/Screenshot_from_2024-01-11_11-21-16_a3x037.png",
+    categories: ["Rice and Grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Chef Jo",
+    openingDays: ["tue", "thu", "fri"],
+  },
+  {
+    id: "92",
+    title: "Half Pot of Jollof Rice - 1L",
+    price: 7350,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704968509/Screenshot_from_2024-01-11_11-21-16_a3x037.png",
+    categories: ["Rice and Grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Chef Jo",
+    openingDays: ["tue", "thu", "fri"],
+  },
+  {
+    id: "93",
+    title: "Full Pot of Fried Rice - 2L",
+    price: 15750,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534306_x_a9evz3.jpg",
+    categories: ["Rice and Grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Chef Jo",
+    openingDays: ["tue", "thu", "fri"],
+  },
+  {
+    id: "94",
+    title: "Half Pot of Fried Rice - 1L",
+    price: 8400,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534306_x_a9evz3.jpg",
+    categories: ["Rice and Grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Chef Jo",
+    openingDays: ["tue", "thu", "fri"],
+  },
+  {
+    id: "95",
+    title: "1L of Stew",
+    price: 7875,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534307_x_yzuhsd.jpg",
+    categories: ["Rice and Grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Chef Jo",
+    openingDays: ["tue", "thu", "fri"],
+  },
+  {
+    id: "96",
+    title: "1.4L of Egusi soup",
+    price: 9450,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534308_x_zl9tux.jpg",
+    categories: ["Rice and Grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Chef Jo",
+    openingDays: ["tue", "thu", "fri"],
+  },
+  
+  {
+    id: "97",
+    title: "1.4L of Okra soup",
+    price: 9450,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534309_x_b9e3b8.jpg",
+    categories: ["Rice and Grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Chef Jo",
+    openingDays: ["tue", "thu", "fri"],
+  },
+  {
+    id: "98",
+    title: "1.4L of Egusi soup with 4 wraps of swalloww (Eba/Semo)",
+    price: 10550,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534308_x_zl9tux.jpg",
+    categories: ["Rice and Grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Chef Jo",
+    openingDays: ["tue", "thu", "fri"],
+  },
+  
+  {
+    id: "99",
+    title: "1.4L of Okra soup with 4 wraps of swallow (Eba/Semo)",
+    price: 10550,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534309_x_b9e3b8.jpg",
+    categories: ["Rice and Grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Chef Jo",
+    openingDays: ["tue", "thu", "fri"],
+  },
+  
 
   // previous
   // {
