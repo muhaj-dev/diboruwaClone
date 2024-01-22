@@ -40,7 +40,7 @@ const SearchButton = styled.button`
   align-items: center;
   justify-content: center;
   background: var(--primary);
-      color: #fff;
+  color: #fff;
   transition: all .3s ease-in-out;
 `;
 
@@ -61,9 +61,12 @@ const SearchInput = styled.input`
 `;
 
 const RestaurantsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 20px;
+
 `;
 
 const RestaurantList: React.FC<Props> = ({ restaurants }) => {
