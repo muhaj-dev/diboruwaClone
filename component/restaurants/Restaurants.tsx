@@ -40,7 +40,7 @@ const SearchButton = styled.button`
   align-items: center;
   justify-content: center;
   background: var(--primary);
-      color: #fff;
+  color: #fff;
   transition: all .3s ease-in-out;
 `;
 
