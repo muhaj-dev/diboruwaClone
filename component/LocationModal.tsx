@@ -5,9 +5,17 @@ import Dropdown from "./ui/Dropdown";
 
 const ModalWrapper = styled.div`
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+`;
+const ModalContent = styled.div`
   background: white;
   padding: 30px;
   border-radius: 12px;
@@ -20,13 +28,18 @@ const Header = styled.header`
   margin-bottom: 20px;
 
   h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 5px;
+  }
+
+  .small{
+    font-size: 14px;
+    margin-bottom: 30px;
   }
 `;
 const FormControl = styled.div`
@@ -45,6 +58,7 @@ const SubmitButton = styled.div`
   margin-left: auto;
   background: var(--primary);
   color: #fff;
+  cursor: pointer;
 `;
 
 interface StateAndRegions {
@@ -62,7 +76,7 @@ const LocationModal: React.FC = () => {
 
   const statesAndRegions: StateAndRegions = useMemo(() => {
     return {
-      kano: {
+      Kano: {
         locations: [
           "Danbare",
           "Rimin gata",
@@ -71,38 +85,40 @@ const LocationModal: React.FC = () => {
           "Buk old site",
           "Buk new site",
           "Kabuga",
+          "Sabon Gari",
+          "Hotoro",
           "Naibawa",
           "Gwale",
           "Tarauni",
-          "Kano municipal",
+          "Kano Municipal",
           "Dala",
-          "zoo",
+          "Zoo Road",
         ],
       },
-      ilorin: {
-        locations: [
-          "Taiwo road",
-          "Tanke",
-          "Oja oba",
-          "Challenge",
-          "Sawmill",
-          "Unilorin",
-          "Kwarapoly",
-          "Unity road",
-          "Post office",
-          "Adeta",
-          "Agbooba",
-          "Adewole",
-          "Gaa-Akanbi",
-          "Fate",
-          "Basin",
-          "Sawmill",
-          "Kulende",
-          "Pakata",
-          "Oloje",
-          "Oko olowo",
-        ],
-      },
+      // Ilorin: {
+      //   locations: [
+      //     "Taiwo road",
+      //     "Tanke",
+      //     "Oja oba",
+      //     "Challenge",
+      //     "Sawmill",
+      //     "Unilorin",
+      //     "Kwarapoly",
+      //     "Unity road",
+      //     "Post office",
+      //     "Adeta",
+      //     "Agbooba",
+      //     "Adewole",
+      //     "Gaa-Akanbi",
+      //     "Fate",
+      //     "Basin",
+      //     "Sawmill",
+      //     "Kulende",
+      //     "Pakata",
+      //     "Oloje",
+      //     "Oko olowo",
+      //   ],
+      // },
       // nasarawa: {
       //   locations: ["opt a", "opt b", "opt c", "opt d"],
       // },
@@ -150,32 +166,34 @@ const LocationModal: React.FC = () => {
     <>
       {showModal && (
         <ModalWrapper>
-          <Header>
-            {" "}
-            <h2>Set your Delivery location</h2>
-            <p>
-              Hello! DiboRuwa currently provides delivery services in key cities
-              across Nigeria.
-            </p>
-            <small>
-              Delivery options and fees may vary based on your location
-            </small>
-          </Header>
+           <ModalContent>
+            <Header>
+              {" "}
+              <h2>Set your Delivery location</h2>
+              <p>
+                Hello! DiboRuwa currently provides services in key cities
+                across Nigeria
+              </p>
+              <small className="small">
+                Delivery options and fees may vary based on your location
+              </small>
+            </Header>
 
-          <FormControl>
-            <Dropdown
-              placeholder="select city"
-              options={Object.keys(statesAndRegions)}
-              onSelect={handleStateSelect}
-            />
-            <Dropdown
-              placeholder="select region"
-              options={availableRegions}
-              onSelect={handleRegionSelect}
-            />
-          </FormControl>
+            <FormControl>
+              <Dropdown
+                placeholder="select city"
+                options={Object.keys(statesAndRegions)}
+                onSelect={handleStateSelect}
+              />
+              <Dropdown
+                placeholder="select region"
+                options={availableRegions}
+                onSelect={handleRegionSelect}
+              />
+            </FormControl>
 
-          <SubmitButton onClick={handleModalClose}>Submit</SubmitButton>
+            <SubmitButton onClick={handleModalClose}>Submit</SubmitButton>
+            </ModalContent>
         </ModalWrapper>
       )}
     </>

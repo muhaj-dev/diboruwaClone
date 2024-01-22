@@ -33,49 +33,56 @@ const Payment: FC<Props> = ({ modal }) => {
 
   const locations = [
     "Danbare",
-    "Rimin gata",
-    "Rijia zaki",
+    "Rimin Gata",
+    "Rijia Zaki",
     "Jambulo",
-    "Buk old site",
-    "Buk new site",
+    "Buk Old Site",
+    "Buk New Site",
     "Kabuga",
+    "Sabon Gari",
+    "Hotoro",
+    "Fagge",
     "Naibawa",
     "Gwale",
     "Tarauni",
-    "Kano municipal",
+    "Kano Municipal",
     "Dala",
-    "zoo"
+    "Zoo Road",
   ];
 
   const getDeliveryFee = (address: string | undefined) => {
     switch (address) {
       case "Danbare":
         return 300;
-      case "Rimin gata":
+      case "Rimin Gata":
         return 300;
-      case "Rijia zaki":
+      case "Rijia Zaki":
         return 400;
       case "Jambulo":
         return 500;
-      case "Buk old site":
+      case "Buk Old Site":
         return 500;
-      case "Buk new site":
+      case "Buk New Site":
         return 300;
       case "Kabuga":
         return 500;
-      case "Kano municipal":
-        return 1000;
+      case "Sabon Gari":
+          return 1300;
+      case "Kano Municipal":
+        return 1200;
       case "Dala":
         return 800;
       case "Fagge":
-        return 1000;
+        return 1300;
       case "Tarauni":
-        return 1000;
+        return 1500;
+      case "Hotoro":
+          return 1500;
       case "Gwale":
-        return 1000;
+        return 1200;
       case "Naibawa":
-        return 1000;
-      case "Zoo":
+        return 1200;
+      case "Zoo Road":
         return 1000;
       default:
         // Default delivery fee if the address doesn't match any known locations
@@ -125,7 +132,7 @@ const Payment: FC<Props> = ({ modal }) => {
       {/* {location && <button onClick={onSuccess}>submit</button>} */}
       {location && (
         <PaymentButton
-          totalPrice={totalPrice}
+          totalPrice={totalPriceWithDelivery}
           openModal={modal}
           buttonText="Pay Now"
           color="primary"

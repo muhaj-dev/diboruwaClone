@@ -199,7 +199,7 @@ const FoodDetail: React.FC<IFoodDetailProps> = ({ id }) => {
         {product?.extras && (
           <>
             {" "}
-            <h4>Extras</h4>
+            <h4>Extras and Drinks</h4>
             <Divider />
             <Extras>
               {product?.extras?.map((prod, index) => (
