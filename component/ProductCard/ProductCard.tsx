@@ -10,6 +10,7 @@ import {
   ProductName,
   ProductPrice,
   ProductImage,
+  PrepTime,
 } from "./productCard.styles";
 import useCartStore from "@/store/useCart.store";
 
@@ -69,10 +70,10 @@ const ProductCard: FC<ProductCardProps> = ({ product, active, restaurant }) => {
           <CartBtn onClick={putToCart}>
             <HiShoppingBag />
           </CartBtn>
+          <PrepTime><p>ready in:</p> <span>{product.prep_time}</span></PrepTime>
         </CartOverlay>
       </ImageContainer>
       <ProductInfo>
-       
         <ProductName
           href={`/food/${product?.slug}`}
           style={{ textDecoration: "none" }}

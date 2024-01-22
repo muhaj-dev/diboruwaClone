@@ -24,10 +24,22 @@ export const CartOverlay = styled.div`
   backdrop-filter: blur(8px);
   transition: all 0.3s ease;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   align-items: center;
   justify-content: center;
   display: none;
   opacity: 0;
+`;
+export const PrepTime = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  span {
+    font-weight: bold;
+    color: var(--color3);
+  }
 `;
 export const CartBtn = styled.button`
   outline: none;
