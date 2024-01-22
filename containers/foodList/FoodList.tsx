@@ -77,10 +77,7 @@ const SearchInput = styled.input`
 
 export const ProductListing = styled.div`
   margin-top: 30px;
-  /* width: inherit; */
   display: flex;
-  /* grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
-  /* grid-template-columns: repeat(4, 1fr); */
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
@@ -108,9 +105,18 @@ const FoodList: React.FC<IFoodListProps> = ({}) => {
   const handleSelect = (selectedOption: string) => {
     console.log(`Selected option: ${selectedOption}`);
     setFilter(selectedOption.toLowerCase())
+
+    
   };
 
-  const filteredProducts = products.filter((product) => {
+  const getOpenedProducts = () => {
+    const currentDay = new Date().toLocaleString('en-us', { weekday: 'short' }).toLowerCase();
+    return products.filter((product) => product.openingDays?.includes(currentDay));
+  };
+
+  const openedProducts = getOpenedProducts();
+
+  const filteredProducts = openedProducts.filter((product) => {
     if (filter === "name") {
       return product.title.toLowerCase().includes(searchTerm.toLowerCase());
     } else if (filter === "vendor") {
