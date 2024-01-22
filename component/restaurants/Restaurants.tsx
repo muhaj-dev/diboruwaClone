@@ -73,13 +73,6 @@ const RestaurantList: React.FC<Props> = ({ restaurants }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [locationFilter, setLocationFilter] = useState("");
 
-  const getOpenedProducts = () => {
-    const currentDay = new Date().toLocaleString('en-us', { weekday: 'short' }).toLowerCase();
-    return restaurants.filter((product) => product.opening_days?.includes(currentDay));
-  };
-
-  const openedProducts = getOpenedProducts();
-
 
   const filteredRestaurants =
     restaurants &&
