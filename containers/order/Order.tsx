@@ -71,7 +71,7 @@ const SingleOrderPage = ({ id }: { id: any }) => {
                 <strong>Payment ID:</strong> {order?.paymentId}
               </OrderData>
               <OrderData>
-                <strong>Total:</strong> ₦{order?.total.toFixed(2)}
+                <strong>Total:</strong> ₦{order?.total + order?.deliveryFee}
               </OrderData>
               {order?.orderItems &&
                 order?.orderItems.map((item: any) => (

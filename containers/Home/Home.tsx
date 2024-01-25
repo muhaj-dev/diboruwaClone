@@ -1,5 +1,6 @@
 "use client";
 import HeroContainer from "@/component/shared/HeroContainer";
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   Container,
   FaqAccordionList,
@@ -29,20 +30,50 @@ import NewsletterForm from "@/component/NewsletterForm";
 import { motion } from "framer-motion";
 import FeedbackCarousel from "@/component/feedBacksCarousel/FeedBacks";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { useSession } from "next-auth/react";
+import { useRouter, } from "next/navigation";
+import { useSession, } from "next-auth/react";
 import AccordionList from "@/component/AccordionList/AccordionList";
+
+type ServiceName = 'Laundry chores.' | 'Cleaning duties' | 'Cooking responsibilities' | 'Moving/Packing stress';
+
+const serviceTextColorMapping: Record<ServiceName, string> = {
+  'Laundry chores.': '#3277a8', 
+  'Cleaning duties': '#e67300',
+  'Cooking responsibilities': '#a67c00', 
+  'Moving/Packing stress': '#800080',
+};
 
 export default function Home() {
   const { data: session } = useSession();
   const router = useRouter();
+   
+  const serviceOptions: string[] = useMemo(() => ['Laundry chores.', 'Cleaning duties', 'Cooking responsibilities', 'Moving/Packing stress'], []);
+
+  const [currentService, setCurrentService] = useState<ServiceName>(serviceOptions[0] as ServiceName);
+  const [serviceIndex, setServiceIndex] = useState(0);
+
+  const currentServiceTextColor = serviceTextColorMapping[currentService] || 'defaultTextColor';
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextIndex = (serviceIndex + 1) % serviceOptions.length;
+      setServiceIndex(nextIndex);
+      setCurrentService(serviceOptions[nextIndex] as ServiceName);
+    }, 3000);
+  
+    return () => clearInterval(interval);
+  }, [serviceIndex, serviceOptions]);
+  
 
   return (
     <Container>
       <HeroContainer bg="primary-20">
         <motion.div className="hero__text">
-          <div className="title">
-            Live easy. Free yourself from laundry, cleaning and cooking
+          <div className="title"  >
+            Live easy. Free yourself from 
+              <span style={{ color: currentServiceTextColor, marginRight: "3px"  }}>
+                {" "} {currentService}
+              </span> 
           </div>
 
           <HeroList>

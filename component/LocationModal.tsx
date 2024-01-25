@@ -160,6 +160,18 @@ const LocationModal: React.FC = () => {
     if (!hasVisited) {
       setShowModal(true);
     }
+
+    const resetLocalStorage = () => {
+      localStorage.removeItem(`${companyName}_hasVisited`);
+      localStorage.removeItem(`${companyName}_selectedState`);
+      localStorage.removeItem(`${companyName}_selectedRegion`);
+    };
+  
+    // Set interval to reset localStorage every 24 hours
+    const intervalId = setInterval(resetLocalStorage, 24 * 60 * 60 * 1000);
+  
+    // Clean up interval on component unmount
+    return () => clearInterval(intervalId);
   }, [companyName, setAvailableRegions, selectedState, statesAndRegions]);
 
   return (

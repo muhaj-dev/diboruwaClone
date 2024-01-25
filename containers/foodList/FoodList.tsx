@@ -4,6 +4,7 @@ import ProductCard from "@/component/ProductCard/ProductCard";
 import Modal from "@/component/modals/Modal";
 import BackButton from "@/component/ui/BackButton/BackButton";
 import Dropdown from "@/component/ui/Dropdown";
+import Button from "@/component/ui/button/Button";
 import { Restaurant, products, restaurants } from "@/constants";
 import useCartStore from "@/store/useCart.store";
 import React, { ChangeEvent, useEffect, useState } from "react";
@@ -19,6 +20,18 @@ export const Container = styled.div`
     text-align: center;
     margin-bottom: 30px;
   }
+
+  .btn {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+         margin: auto;
+    }
+ 
+  }
 `;
 
 export const Header = styled.div`
@@ -26,8 +39,8 @@ export const Header = styled.div`
   justify-content: space-between;
   align-items: center;
 
-    @media screen  and (max-width: 768px) {
-    flex-direction: column; 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
     gap: 20px;
   }
 `;
@@ -35,11 +48,11 @@ export const Header = styled.div`
 const SearchContainer = styled.div`
   width: 50%;
   /* margin: auto; */
- 
+
   position: relative;
 
   @media screen and (max-width: 768px) {
-  width: 100%;
+    width: 100%;
   }
 `;
 
@@ -77,10 +90,7 @@ const SearchInput = styled.input`
 
 export const ProductListing = styled.div`
   margin-top: 30px;
-  /* width: inherit; */
   display: flex;
-  /* grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
-  /* grid-template-columns: repeat(4, 1fr); */
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
@@ -102,15 +112,27 @@ const FoodList: React.FC<IFoodListProps> = ({}) => {
   const { modal, closeModal } = useCartStore();
 
   const [searchTerm, setSearchTerm] = useState<string>("");
-  const [filter, setFilter] = useState<string>("vendor"); 
-  const options = ['Name', 'Vendor', 'Category'];
+  const [seeMore, setSeeMore] = useState<boolean>(false);
+  const [filter, setFilter] = useState<string>("vendor");
+  const options = ["Name", "Vendor", "Category"];
 
   const handleSelect = (selectedOption: string) => {
     console.log(`Selected option: ${selectedOption}`);
-    setFilter(selectedOption.toLowerCase())
+    setFilter(selectedOption.toLowerCase());
   };
 
-  const filteredProducts = products.filter((product) => {
+  const getOpenedProducts = () => {
+    const currentDay = new Date()
+      .toLocaleString("en-us", { weekday: "short" })
+      .toLowerCase();
+    return products.filter((product) =>
+      product.openingDays?.includes(currentDay)
+    );
+  };
+
+  const openedProducts = getOpenedProducts();
+
+  const filteredProducts = openedProducts.filter((product) => {
     if (filter === "name") {
       return product.title.toLowerCase().includes(searchTerm.toLowerCase());
     } else if (filter === "vendor") {
@@ -123,14 +145,18 @@ const FoodList: React.FC<IFoodListProps> = ({}) => {
     return true; // Return true if no filter matches
   });
 
-
-
   const renderMenuItems = () => {
-    return filteredProducts.map((menuItem) => (
-      <div key={menuItem.id} className="card">
-        <ProductCard product={menuItem} active={true} />
-      </div>
-    ));
+    return seeMore
+      ? filteredProducts.map((menuItem) => (
+          <div key={menuItem.id} className="card">
+            <ProductCard product={menuItem} active={true} />
+          </div>
+        ))
+      : filteredProducts.slice(0, 12).map((menuItem) => (
+          <div key={menuItem.id} className="card">
+            <ProductCard product={menuItem} active={true} />
+          </div>
+        ));
   };
   return (
     <Container>
@@ -152,10 +178,15 @@ const FoodList: React.FC<IFoodListProps> = ({}) => {
 
         <Dropdown options={options} onSelect={handleSelect} />
       </Header>
-     
 
       <ProductListing>{renderMenuItems()}</ProductListing>
 
+      <div className="btn">
+         <Button size="large" color="primary" onClick={() => setSeeMore(true)}>
+        See more
+      </Button>
+      </div>
+     
       <Modal
         isOpen={modal.isOpen}
         type={modal.type}
