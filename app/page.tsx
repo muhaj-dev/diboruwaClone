@@ -6,9 +6,10 @@ const page = () => {
   return (
     <>
       <Home />
-      <LocationModal />
+      {/* <LocationModal /> */}
     </>
   );
 };
+
 
 export default page;
