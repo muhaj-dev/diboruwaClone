@@ -9,6 +9,7 @@ import Providers from "@/utils/Providers";
 import { assets } from "@/public/assets";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import LocationModal from "@/component/LocationModal";
 
 export const metadata: Metadata = {
   title: {
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html>
       <body>
         <Providers>
+          <LocationModal />
           <Navbar />
           {authModal}
 

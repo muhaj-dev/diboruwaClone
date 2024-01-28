@@ -2,6 +2,8 @@
 import React, { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
 import Dropdown from "./ui/Dropdown";
+import { FaMapMarkerAlt } from 'react-icons/fa';
+
 
 const ModalWrapper = styled.div`
   position: fixed;
@@ -151,35 +153,78 @@ const LocationModal: React.FC = () => {
     setSelectedRegion(selectedOption.toLowerCase());
   };
 
+  // useEffect(() => {
+  //   const hasVisited = localStorage.getItem(`${companyName}_hasVisited`);
+
+  //   if (selectedState) {
+  //     setAvailableRegions(statesAndRegions[selectedState]?.locations);
+  //   }
+  //   if (!hasVisited) {
+  //     setShowModal(true);
+  //   }
+
+  //   const resetLocalStorage = () => {
+  //     localStorage.removeItem(`${companyName}_hasVisited`);
+  //     localStorage.removeItem(`${companyName}_selectedState`);
+  //     localStorage.removeItem(`${companyName}_selectedRegion`);
+  //   };
+  
+  //   // Set interval to reset localStorage every 24 hours
+  //   const intervalId = setInterval(resetLocalStorage, 24 * 60 * 60 * 1000);
+  
+  //   // Clean up interval on component unmount
+  //   return () => clearInterval(intervalId);
+  // }, [companyName, setAvailableRegions, selectedState, statesAndRegions]);
+
   useEffect(() => {
     const hasVisited = localStorage.getItem(`${companyName}_hasVisited`);
-
+  
     if (selectedState) {
       setAvailableRegions(statesAndRegions[selectedState]?.locations);
     }
     if (!hasVisited) {
       setShowModal(true);
     }
-
+  
+    // Function to reset localStorage
     const resetLocalStorage = () => {
+      console.log('Resetting local storage'); // Optional: for debugging
       localStorage.removeItem(`${companyName}_hasVisited`);
       localStorage.removeItem(`${companyName}_selectedState`);
       localStorage.removeItem(`${companyName}_selectedRegion`);
     };
   
-    // Set interval to reset localStorage every 24 hours
+    // Calculate the milliseconds until the next 24 hour mark
+    const currentTime = new Date();
+    const resetTime = new Date(
+      currentTime.getFullYear(),
+      currentTime.getMonth(),
+      currentTime.getDate() + 1, // next day
+      0, 0, 0, // at 00:00:00
+    );
+    const msUntilReset = resetTime.getTime() - currentTime.getTime();
+  
+    // Set a timeout to clear localStorage after the calculated time until reset
+    const timeoutId = setTimeout(resetLocalStorage, msUntilReset);
+  
+    // Set interval to reset localStorage every 24 hours after the initial timeout
     const intervalId = setInterval(resetLocalStorage, 24 * 60 * 60 * 1000);
   
-    // Clean up interval on component unmount
-    return () => clearInterval(intervalId);
-  }, [companyName, setAvailableRegions, selectedState, statesAndRegions]);
-
+    // Clean up timeout and interval on component unmount
+    return () => {
+      clearTimeout(timeoutId);
+      clearInterval(intervalId);
+    };
+  }, [companyName, selectedState, statesAndRegions]);
+  
+  
   return (
     <>
       {showModal && (
         <ModalWrapper>
            <ModalContent>
             <Header>
+              <FaMapMarkerAlt size={70} style={{ marginBottom: '20px' }} color="green" />
               {" "}
               <h2>Set your Delivery location</h2>
               <p>
