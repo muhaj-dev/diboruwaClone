@@ -5112,7 +5112,7 @@ export const products: Product[] = [
     id: "49",
     title: "1L Hollandia Yoghurt",
     price: 1200,
-    imageURL2:
+    imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
     categories: ["Drinks"],
     prep_time: "25 minutes",
