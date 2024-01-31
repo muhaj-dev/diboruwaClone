@@ -844,7 +844,7 @@ export const products: Product[] = [
   {
     id: "1",
     title: "Plain rice with beef",
-    price: 1050,
+    price: 1550,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701672664/plain_rice_beef_ll54l8.jpg",
     prep_time: "30 minutes",
@@ -882,7 +882,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -906,7 +906,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -918,7 +918,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -930,7 +930,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -942,7 +942,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -954,7 +954,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -966,7 +966,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -1002,7 +1002,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -1014,7 +1014,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -1028,7 +1028,7 @@ export const products: Product[] = [
   {
     id: "2",
     title: "Plain rice with chicken",
-    price: 1950,
+    price: 2800,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701672664/plain_rice_beef_ll54l8.jpg",
     categories: ["Rice and Grains"],
@@ -1066,7 +1066,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -1090,7 +1090,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -1102,7 +1102,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -1114,7 +1114,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -1126,7 +1126,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -1138,7 +1138,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -1150,7 +1150,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -1186,7 +1186,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -1198,7 +1198,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -1212,7 +1212,7 @@ export const products: Product[] = [
   {
     id: "3",
     title: "Fried rice with chicken",
-    price: 2050,
+    price: 2850,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642840/fried_rice_beef_vt3j0y.jpg",
     categories: ["Rice and Grains"],
@@ -1250,7 +1250,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -1274,7 +1274,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -1286,7 +1286,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -1298,7 +1298,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -1310,7 +1310,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -1322,7 +1322,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -1334,7 +1334,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -1360,7 +1360,7 @@ export const products: Product[] = [
   {
     id: "4",
     title: "Fried rice with beef",
-    price: 1150,
+    price: 1650,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642840/fried_rice_beef_vt3j0y.jpg",
     categories: ["Rice and Grains"],
@@ -1398,7 +1398,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -1422,7 +1422,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -1434,7 +1434,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -1446,7 +1446,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -1458,7 +1458,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -1470,7 +1470,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -1482,7 +1482,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -1518,7 +1518,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -1530,7 +1530,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -1545,7 +1545,7 @@ export const products: Product[] = [
   {
     id: "5",
     title: "Meat pie",
-    price: 500,
+    price: 650,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691938468/diboruwa/Screenshot_from_2023-08-13_15-52-34_fofcpm.png",
     categories: ["Snacks"],
@@ -1583,7 +1583,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -1607,7 +1607,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -1619,7 +1619,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -1631,7 +1631,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -1643,7 +1643,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -1655,7 +1655,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -1667,7 +1667,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -1703,7 +1703,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -1715,7 +1715,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -2223,7 +2223,7 @@ export const products: Product[] = [
   {
     id: "22",
     title: "Pecan rice with beaf",
-    price: 1250,
+    price: 1950,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642839/pecan_rice_cj3hmz.jpg",
     categories: ["Rice and Grains"],
@@ -2261,7 +2261,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -2285,7 +2285,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -2297,7 +2297,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -2309,7 +2309,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -2321,7 +2321,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -2333,7 +2333,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -2345,7 +2345,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -2371,7 +2371,7 @@ export const products: Product[] = [
   {
     id: "23",
     title: "Meat pie",
-    price: 500,
+    price: 650,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642847/Meatpie_kkswmo.jpg",
     categories: ["Snacks"],
@@ -2409,7 +2409,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -2433,7 +2433,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -2445,7 +2445,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -2457,7 +2457,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -2469,7 +2469,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -2481,7 +2481,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -2493,7 +2493,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -2519,7 +2519,7 @@ export const products: Product[] = [
   {
     id: "24",
     title: "Burger beef or chicken",
-    price: 2500,
+    price: 2650,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642847/Burger_beef_or_chicken_t99bj5.jpg",
     categories: ["Snacks"],
@@ -2557,7 +2557,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -2581,7 +2581,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -2593,7 +2593,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -2605,7 +2605,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -2617,7 +2617,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -2629,7 +2629,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -2641,7 +2641,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -2667,7 +2667,7 @@ export const products: Product[] = [
   {
     id: "25",
     title: "Sandwich",
-    price: 1000,
+    price: 1150,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642850/sandwich_nhnrkn.jpg",
     categories: ["Snacks"],
@@ -2705,7 +2705,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -2729,7 +2729,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -2741,7 +2741,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -2753,7 +2753,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -2765,7 +2765,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -2777,7 +2777,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -2789,7 +2789,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -2815,7 +2815,7 @@ export const products: Product[] = [
   {
     id: "26",
     title: "Doughnut",
-    price: 500,
+    price: 550,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642846/Doughnut_vmnkac.jpg",
     categories: ["Snacks"],
@@ -2853,7 +2853,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -2877,7 +2877,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -2889,7 +2889,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -2901,7 +2901,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -2913,7 +2913,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -2925,7 +2925,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -2937,7 +2937,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -2963,7 +2963,7 @@ export const products: Product[] = [
   {
     id: "27",
     title: "Shawarma",
-    price: 1480,
+    price: 1650,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642847/Shawarma_large_q50eqv.jpg",
     categories: ["Snacks"],
@@ -3001,7 +3001,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -3025,7 +3025,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -3037,7 +3037,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -3049,7 +3049,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -3061,7 +3061,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -3073,7 +3073,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -3085,7 +3085,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -3111,7 +3111,7 @@ export const products: Product[] = [
   {
     id: "28",
     title: "Shawarma medium",
-    price: 1690,
+    price: 1850,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642847/Shawarma_large_q50eqv.jpg",
     categories: ["Snacks"],
@@ -3149,7 +3149,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -3173,7 +3173,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -3185,7 +3185,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -3197,7 +3197,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -3209,7 +3209,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -3221,7 +3221,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -3233,7 +3233,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -3259,7 +3259,7 @@ export const products: Product[] = [
   {
     id: "29",
     title: "Shawarma large",
-    price: 1980,
+    price: 2150,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642847/Shawarma_large_q50eqv.jpg",
     categories: ["Snacks"],
@@ -3297,7 +3297,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -3321,7 +3321,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -3333,7 +3333,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -3345,7 +3345,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -3357,7 +3357,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -3369,7 +3369,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -3381,7 +3381,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -3407,7 +3407,7 @@ export const products: Product[] = [
   {
     id: "30",
     title: "Jollof rice and chicken",
-    price: 2050,
+    price: 2850,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691930939/diboruwa/Screenshot_from_2023-07-23_12-41-36_gqry1k.png",
     categories: ["Rice and Grains"],
@@ -3445,7 +3445,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -3469,7 +3469,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -3481,7 +3481,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -3493,7 +3493,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -3505,7 +3505,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -3517,7 +3517,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -3529,7 +3529,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -3555,7 +3555,7 @@ export const products: Product[] = [
   {
     id: "31",
     title: "Jollof rice and chicken with coslow",
-    price: 2250,
+    price: 2550,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700398660/jollof_rice_and_chicken_with_coslow_wb3hdb.jpg",
     categories: ["Rice and Grains"],
@@ -3565,190 +3565,190 @@ export const products: Product[] = [
     vendor: "Home made - Adejoke",
     openingDays: ["fri", "sat"],
   },
-  {
-    id: "32",
-    title: "Ofada rice",
-    price: 1200,
-    imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691931036/diboruwa/Screenshot_from_2023-07-23_12-43-31_fachft.png",
-    categories: ["Rice and Grains"],
-    prep_time: "25 minutes",
-    opening_time: "11:00 AM",
-    slug: "sp32",
-    vendor: "Pecan City",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun", "sun"],
+  // {
+  //   id: "32",
+  //   title: "Ofada rice",
+  //   price: 1200,
+  //   imageURL:
+  //     "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691931036/diboruwa/Screenshot_from_2023-07-23_12-43-31_fachft.png",
+  //   categories: ["Rice and Grains"],
+  //   prep_time: "25 minutes",
+  //   opening_time: "11:00 AM",
+  //   slug: "sp32",
+  //   vendor: "Pecan City",
+  //   openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun", "sun"],
 
-    extras: [
-      {
-        id: "1",
-        title: "Sprite",
-        price: 300,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-00-32_bjqqtu.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "2",
-        title: "Water",
-        price: 200,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_11-57-15_z4qjke.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "3",
-        title: "Can malt",
-        price: 300,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "4",
-        title: "Fanta",
-        price: 300,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_11-59-25_ncn2rn.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "5",
-        title: "Monster",
-        price: 700,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "6",
-        title: "Predator",
-        price: 300,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "7",
-        title: "5alive Pulpy Orange",
-        price: 700,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "8",
-        title: "1L Hollandia Yoghurt",
-        price: 1000,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "9",
-        title: "Chi Exotic - 1L",
-        price: 1000,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "10",
-        title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "11",
-        title: "Coke",
-        price: 300,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232362/Screenshot_from_2024-01-14_12-36-40_vyx9ek.png",
-        categories: ["Drinks"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "12",
-        title: "Plantain",
-        price: 100,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234815/Screenshot_from_2024-01-14_13-19-46_xhm0nq.png",
-        categories: ["Extras"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "13",
-        title: "Fries",
-        price: 500,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
-        categories: ["Extras"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-      {
-        id: "14",
-        title: "Yamarita",
-        price: 300,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
-        categories: ["Extras"],
-        prep_time: "25 minutes",
-        opening_time: "11:00 AM",
-        slug: "sp32",
-        vendor: "Pecan City",
-      },
-    ],
-  },
+  //   extras: [
+  //     {
+  //       id: "1",
+  //       title: "Sprite",
+  //       price: 300,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-00-32_bjqqtu.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "2",
+  //       title: "Water",
+  //       price: 200,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_11-57-15_z4qjke.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "3",
+  //       title: "Can malt",
+  //       price: 300,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "4",
+  //       title: "Fanta",
+  //       price: 300,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_11-59-25_ncn2rn.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "5",
+  //       title: "Monster",
+  //       price: 700,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "6",
+  //       title: "Predator",
+  //       price: 300,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "7",
+  //       title: "5alive Pulpy Orange",
+  //       price: 700,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "8",
+  //       title: "1L Hollandia Yoghurt",
+  //       price: 1000,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "9",
+  //       title: "Chi Exotic - 1L",
+  //       price: 1000,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "10",
+  //       title: "CWAY Nutri-Milk Peach 50 cl",
+  //       price: 300,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "11",
+  //       title: "Coke",
+  //       price: 300,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232362/Screenshot_from_2024-01-14_12-36-40_vyx9ek.png",
+  //       categories: ["Drinks"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "12",
+  //       title: "Plantain",
+  //       price: 100,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234815/Screenshot_from_2024-01-14_13-19-46_xhm0nq.png",
+  //       categories: ["Extras"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "13",
+  //       title: "Fries",
+  //       price: 500,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
+  //       categories: ["Extras"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //     {
+  //       id: "14",
+  //       title: "Yamarita",
+  //       price: 300,
+  //       imageURL:
+  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
+  //       categories: ["Extras"],
+  //       prep_time: "25 minutes",
+  //       opening_time: "11:00 AM",
+  //       slug: "sp32",
+  //       vendor: "Pecan City",
+  //     },
+  //   ],
+  // },
   {
     id: "33",
     title: "Masa",
@@ -3941,7 +3941,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -3965,7 +3965,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -3977,7 +3977,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -3989,7 +3989,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -4001,7 +4001,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -4013,7 +4013,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -4025,7 +4025,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -4061,7 +4061,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -4073,7 +4073,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -4087,7 +4087,7 @@ export const products: Product[] = [
   {
     id: "36",
     title: "Yamarita",
-    price: 300,
+    price: 400,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
     categories: ["Snacks"],
@@ -4100,7 +4100,7 @@ export const products: Product[] = [
   {
     id: "37",
     title: "Porridge Beans",
-    price: 750,
+    price: 1200,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Porridge_Beans_kd8z2i.jpg",
     categories: ["Beans"],
@@ -4138,7 +4138,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -4162,7 +4162,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -4174,7 +4174,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -4186,7 +4186,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -4198,7 +4198,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -4210,7 +4210,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -4222,7 +4222,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -4258,7 +4258,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -4270,7 +4270,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -4284,7 +4284,7 @@ export const products: Product[] = [
   {
     id: "38",
     title: "Pecan pasta with beef",
-    price: 1050,
+    price: 1500,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642847/Pecan_Pasta_with_chicken_en5zn2.jpg",
     categories: ["Rice and Grains"],
@@ -4322,7 +4322,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -4346,7 +4346,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -4358,7 +4358,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -4370,7 +4370,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -4382,7 +4382,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -4394,7 +4394,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -4406,7 +4406,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -4442,7 +4442,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -4454,7 +4454,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -4468,7 +4468,7 @@ export const products: Product[] = [
   {
     id: "39",
     title: "Pecan pasta with chicken",
-    price: 1950,
+    price: 2700,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642847/Pecan_Pasta_with_chicken_en5zn2.jpg",
     categories: ["Rice and Grains"],
@@ -4506,7 +4506,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -4530,7 +4530,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -4542,7 +4542,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -4554,7 +4554,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -4566,7 +4566,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -4578,7 +4578,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -4590,7 +4590,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -4626,7 +4626,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -4638,7 +4638,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -4652,7 +4652,7 @@ export const products: Product[] = [
   {
     id: "40",
     title: "Noodles",
-    price: 1650,
+    price: 1150,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642840/noodleEgg_u8hxg6.jpg",
     categories: ["Rice and Grains"],
@@ -4690,7 +4690,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -4714,7 +4714,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -4726,7 +4726,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -4738,7 +4738,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -4750,7 +4750,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -4762,7 +4762,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -4774,7 +4774,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -4810,7 +4810,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -4822,7 +4822,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -4836,7 +4836,7 @@ export const products: Product[] = [
   {
     id: "41",
     title: "Pecan rice with chicken",
-    price: 2150,
+    price: 3150,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642839/pecan_rice_cj3hmz.jpg",
     categories: ["Rice and Grains"],
@@ -4874,7 +4874,7 @@ export const products: Product[] = [
       {
         id: "3",
         title: "Can malt",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
         categories: ["Drinks"],
@@ -4898,7 +4898,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Monster",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
         categories: ["Drinks"],
@@ -4910,7 +4910,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Predator",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
         categories: ["Drinks"],
@@ -4922,7 +4922,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "5alive Pulpy Orange",
-        price: 700,
+        price: 800,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
         categories: ["Drinks"],
@@ -4934,7 +4934,7 @@ export const products: Product[] = [
       {
         id: "8",
         title: "1L Hollandia Yoghurt",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
         categories: ["Drinks"],
@@ -4946,7 +4946,7 @@ export const products: Product[] = [
       {
         id: "9",
         title: "Chi Exotic - 1L",
-        price: 1000,
+        price: 1200,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
         categories: ["Drinks"],
@@ -4958,7 +4958,7 @@ export const products: Product[] = [
       {
         id: "10",
         title: "CWAY Nutri-Milk Peach 50 cl",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
         categories: ["Drinks"],
@@ -4994,7 +4994,7 @@ export const products: Product[] = [
       {
         id: "13",
         title: "Fries",
-        price: 500,
+        price: 1000,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
         categories: ["Extras"],
@@ -5006,7 +5006,7 @@ export const products: Product[] = [
       {
         id: "14",
         title: "Yamarita",
-        price: 300,
+        price: 400,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
         categories: ["Extras"],
@@ -5046,7 +5046,7 @@ export const products: Product[] = [
   {
     id: "44",
     title: "Can malt",
-    price: 300,
+    price: 400,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
     categories: ["Drinks"],
@@ -5072,7 +5072,7 @@ export const products: Product[] = [
   {
     id: "46",
     title: "Monster",
-    price: 700,
+    price: 800,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
     categories: ["Drinks"],
@@ -5085,7 +5085,7 @@ export const products: Product[] = [
   {
     id: "47",
     title: "Predator",
-    price: 300,
+    price: 400,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
     categories: ["Drinks"],
@@ -5098,7 +5098,7 @@ export const products: Product[] = [
   {
     id: "48",
     title: "5alive Pulpy Orange",
-    price: 700,
+    price: 800,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
     categories: ["Drinks"],
@@ -5111,8 +5111,8 @@ export const products: Product[] = [
   {
     id: "49",
     title: "1L Hollandia Yoghurt",
-    price: 1000,
-    imageURL:
+    price: 1200,
+    imageURL2:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
     categories: ["Drinks"],
     prep_time: "25 minutes",
@@ -5124,7 +5124,7 @@ export const products: Product[] = [
   {
     id: "50",
     title: "Chi Exotic - 1L",
-    price: 1000,
+    price: 1200,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
     categories: ["Drinks"],
@@ -5137,7 +5137,7 @@ export const products: Product[] = [
   {
     id: "51",
     title: "CWAY Nutri-Milk Peach 50 cl",
-    price: 300,
+    price: 400,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
     categories: ["Drinks"],
