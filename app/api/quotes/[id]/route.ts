@@ -127,7 +127,7 @@ export async function PUT(
        courier: request.courier.businessName,
         fullName: request.user.firstName,
         total: request.total,
-        userEmail: 'info@diboruwa.com',
+       
         userEmail: request.user.email,
         userContact: request.user.phone,
         serviceType: request.type,
