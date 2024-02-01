@@ -1729,7 +1729,7 @@ export const products: Product[] = [
   {
     id: "6",
     title: "Custard and Akara",
-    price: 460,
+    price: 520,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691931043/diboruwa/Screenshot_from_2023-07-23_12-51-05_kt11tb.png",
     categories: ["Breakfast"],
@@ -1757,7 +1757,7 @@ export const products: Product[] = [
   {
     id: "7",
     title: "Pap and Beans Cake (Kunu and Kose)",
-    price: 360,
+    price: 520,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691931001/diboruwa/Screenshot_from_2023-07-23_12-48-37_aeja1o.png",
     categories: ["Breakfast"],
@@ -1784,8 +1784,8 @@ export const products: Product[] = [
   },
   {
     id: "8",
-    title: "Tuwo and Egusi",
-    price: 1100,
+    title: "Tuwo and Egusi with Beef",
+    price: 1550,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691936446/diboruwa/Screenshot_from_2023-07-23_12-24-59_w5xtrh.png",
     categories: ["Swallow"],
@@ -1799,7 +1799,7 @@ export const products: Product[] = [
       {
         id: "1",
         title: "Tigernut Drink - Kunu Aya",
-        price: 315,
+        price: 325,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/tigernut_drink_-_kunu_haya_vxa6jh.png",
         categories: ["Drinks"],
@@ -1847,7 +1847,7 @@ export const products: Product[] = [
       {
         id: "5",
         title: "Zobo Drink",
-        price: 315,
+        price: 320,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/Screenshot_from_2024-01-14_11-35-19_u1y16t.png",
         categories: ["Drinks"],
@@ -1871,7 +1871,7 @@ export const products: Product[] = [
       {
         id: "6",
         title: "Yoghurt",
-        price: 525,
+        price: 550,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229484/Screenshot_from_2024-01-14_11-39-20_xlalkd.png",
         categories: ["Drinks"],
@@ -1883,7 +1883,7 @@ export const products: Product[] = [
       {
         id: "7",
         title: "Yoghurt",
-        price: 840,
+        price: 850,
         imageURL:
           "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229484/Screenshot_from_2024-01-14_11-39-20_xlalkd.png",
         categories: ["Drinks"],
@@ -1895,36 +1895,25 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp8",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp8",
-        vendor: "Sharon's Cook House",
-      },
+    
     ],
   },
   {
     id: "9",
-    title: "Tuwo da Miya",
-    price: 800,
+    title: "Snacks - Doughnuts, Meat Pies, Fish rolls, Puff-puff ",
+    price: 8200,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691936460/diboruwa/Screenshot_from_2023-07-23_12-11-27_bvdnwl.png",
-    categories: ["Swallow"],
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780021/Sharoon%20Cook/Doughnut_pie_etc_8000_udvwuj.jpg",
+    categories: ["Snacks"],
     prep_time: "25 minutes",
     opening_time: "11:00 AM",
     slug: "sp9",
@@ -2031,21 +2020,9 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp9",
-        vendor: "Sharon's Cook House",
-      },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
@@ -3565,196 +3542,12 @@ export const products: Product[] = [
     vendor: "Home made - Adejoke",
     openingDays: ["fri", "sat"],
   },
-  // {
-  //   id: "32",
-  //   title: "Ofada rice",
-  //   price: 1200,
-  //   imageURL:
-  //     "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691931036/diboruwa/Screenshot_from_2023-07-23_12-43-31_fachft.png",
-  //   categories: ["Rice and Grains"],
-  //   prep_time: "25 minutes",
-  //   opening_time: "11:00 AM",
-  //   slug: "sp32",
-  //   vendor: "Pecan City",
-  //   openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun", "sun"],
-
-  //   extras: [
-  //     {
-  //       id: "1",
-  //       title: "Sprite",
-  //       price: 300,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-00-32_bjqqtu.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "2",
-  //       title: "Water",
-  //       price: 200,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_11-57-15_z4qjke.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "3",
-  //       title: "Can malt",
-  //       price: 300,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_12-03-27_tdmsvc.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "4",
-  //       title: "Fanta",
-  //       price: 300,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230975/Screenshot_from_2024-01-14_11-59-25_ncn2rn.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "5",
-  //       title: "Monster",
-  //       price: 700,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230974/Screenshot_from_2024-01-14_12-02-34_tqudb6.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "6",
-  //       title: "Predator",
-  //       price: 300,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231610/Screenshot_from_2024-01-14_12-26-26_x6cmkz.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "7",
-  //       title: "5alive Pulpy Orange",
-  //       price: 700,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705230976/Screenshot_from_2024-01-14_12-05-21_uywk1y.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "8",
-  //       title: "1L Hollandia Yoghurt",
-  //       price: 1000,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705231763/Screenshot_from_2024-01-14_12-29-09_c6vyzd.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "9",
-  //       title: "Chi Exotic - 1L",
-  //       price: 1000,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232100/Screenshot_from_2024-01-14_12-33-52_jofkzf.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "10",
-  //       title: "CWAY Nutri-Milk Peach 50 cl",
-  //       price: 300,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232290/Screenshot_from_2024-01-14_12-37-54_macvts.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "11",
-  //       title: "Coke",
-  //       price: 300,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705232362/Screenshot_from_2024-01-14_12-36-40_vyx9ek.png",
-  //       categories: ["Drinks"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "12",
-  //       title: "Plantain",
-  //       price: 100,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234815/Screenshot_from_2024-01-14_13-19-46_xhm0nq.png",
-  //       categories: ["Extras"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "13",
-  //       title: "Fries",
-  //       price: 500,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705234979/Screenshot_from_2024-01-14_13-22-06_zl0ndp.png",
-  //       categories: ["Extras"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //     {
-  //       id: "14",
-  //       title: "Yamarita",
-  //       price: 300,
-  //       imageURL:
-  //         "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701642843/Yamarita_evhgh6.jpg",
-  //       categories: ["Extras"],
-  //       prep_time: "25 minutes",
-  //       opening_time: "11:00 AM",
-  //       slug: "sp32",
-  //       vendor: "Pecan City",
-  //     },
-  //   ],
-  // },
   {
-    id: "33",
-    title: "Masa",
-    price: 735,
+    id: "32",
+    title: "Masa with Yaji",
+    price: 550,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691930984/diboruwa/Screenshot_from_2023-07-23_12-25-21_hc8kbh.png",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780007/Sharoon%20Cook/Masa_and_soup_700_plate_of_4masa_0AMasa_and_yaji_500_plate_of_4_dpmmxq.jpg",
     categories: ["Swallow"],
     prep_time: "24 hours",
     opening_time: "11:00 AM",
@@ -3864,7 +3657,36 @@ export const products: Product[] = [
         title: "Fruit Juice",
         price: 525,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+     
+    ],
+  },
+  {
+    id: "33",
+    title: "Masa and Soup",
+    price: 750,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780007/Sharoon%20Cook/Masa_and_soup_700_plate_of_4masa_0AMasa_and_yaji_500_plate_of_4_dpmmxq.jpg",
+    categories: ["Swallow"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp33",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+
+    extras: [
+      {
+        id: "1",
+        title: "Tigernut Drink - Kunu Aya",
+        price: 315,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/tigernut_drink_-_kunu_haya_vxa6jh.png",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
@@ -3872,17 +3694,102 @@ export const products: Product[] = [
         vendor: "Sharon's Cook House",
       },
       {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
+        id: "2",
+        title: "Tigernut Drink - Kunu Aya",
+        price: 525,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/tigernut_drink_-_kunu_haya_vxa6jh.png",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp33",
         vendor: "Sharon's Cook House",
       },
+      {
+        id: "3",
+        title: "Millet Drink - Kunu Gero",
+        price: 525,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229488/kunu_gero_vkm5jp.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "4",
+        title: "Zobo Drink",
+        price: 525,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/Screenshot_from_2024-01-14_11-35-19_u1y16t.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "5",
+        title: "Zobo Drink",
+        price: 315,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/Screenshot_from_2024-01-14_11-35-19_u1y16t.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "6",
+        title: "Heart Juice",
+        price: 1050,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229490/Screenshot_from_2024-01-14_11-37-44_jt3pim.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "6",
+        title: "Yoghurt",
+        price: 525,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229484/Screenshot_from_2024-01-14_11-39-20_xlalkd.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "7",
+        title: "Yoghurt",
+        price: 840,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229484/Screenshot_from_2024-01-14_11-39-20_xlalkd.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "8",
+        title: "Fruit Juice",
+        price: 525,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp33",
+        vendor: "Sharon's Cook House",
+      },
+     
     ],
   },
   {
@@ -5164,7 +5071,7 @@ export const products: Product[] = [
   {
     id: "53",
     title: "Egg Sauce and Plantain",
-    price: 840,
+    price: 850,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229520/Screenshot_from_2024-01-14_10-35-41_ulrjgh.png",
     categories: ["Rice and Grains"],
@@ -5274,21 +5181,9 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp53",
-        vendor: "Sharon's Cook House",
-      },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
@@ -5410,21 +5305,9 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp054",
-        vendor: "Sharon's Cook House",
-      },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
@@ -5435,10 +5318,10 @@ export const products: Product[] = [
   },
   {
     id: "55",
-    title: "Jollof rice",
-    price: 1050,
+    title: "Jollof rice, Chicken and Salad",
+    price: 2420,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229328/Screenshot_from_2024-01-14_11-07-05_ldoy84.png",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780000/Sharoon%20Cook/Jollof_rice_chicken_and_salad_2300_rl0doj.jpg",
     categories: ["Rice and Grains"],
     prep_time: "24 hours",
     opening_time: "11:00 AM",
@@ -5546,27 +5429,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp55",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp55",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -5682,27 +5554,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp56",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp56",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -5818,27 +5679,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp57",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp57",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -5954,27 +5804,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp58",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp58",
-        vendor: "Sharon's Cook House",
-      },
+  
     ],
   },
   {
@@ -6090,27 +5929,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp59",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp59",
-        vendor: "Sharon's Cook House",
-      },
+      
     ],
   },
   {
@@ -6226,27 +6054,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp60",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp60",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -6362,35 +6179,24 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp61",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp61",
-        vendor: "Sharon's Cook House",
-      },
+      
     ],
   },
   {
     id: "62",
-    title: "Noodles and Egg",
-    price: 630,
+    title: "Garnished Noodles",
+    price: 730,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229423/Screenshot_from_2024-01-14_10-56-31_bykxao.png",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780013/Sharoon%20Cook/Garnished_noodles_700_xyacjc.jpg",
     categories: ["Extras"],
     prep_time: "24 hours",
     opening_time: "11:00 AM",
@@ -6498,27 +6304,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp62",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp62",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -6634,27 +6429,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp63",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp63",
-        vendor: "Sharon's Cook House",
-      },
+      
     ],
   },
   {
@@ -6770,27 +6554,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp64",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp64",
-        vendor: "Sharon's Cook House",
-      },
+      
     ],
   },
   {
@@ -6906,27 +6679,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp65",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp65",
-        vendor: "Sharon's Cook House",
-      },
+    
     ],
   },
   {
@@ -7042,27 +6804,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp66",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp66",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -7178,27 +6929,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp67",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp67",
-        vendor: "Sharon's Cook House",
-      },
+      
     ],
   },
   {
@@ -7314,27 +7054,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp68",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp68",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -7450,27 +7179,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp69",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp69",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -7586,27 +7304,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp70",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp70",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -7722,27 +7429,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp71",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp71",
-        vendor: "Sharon's Cook House",
-      },
+      
     ],
   },
   {
@@ -7858,27 +7554,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp72",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp72",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -7994,27 +7679,16 @@ export const products: Product[] = [
       {
         id: "8",
         title: "Fruit Juice",
-        price: 525,
+        price: 1050,
         imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
         categories: ["Drinks"],
         prep_time: "24 hours",
         opening_time: "11:00 AM",
         slug: "sp73",
         vendor: "Sharon's Cook House",
       },
-      {
-        id: "9",
-        title: "Fruit Juice",
-        price: 315,
-        imageURL:
-          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-        categories: ["Drinks"],
-        prep_time: "24 hours",
-        opening_time: "11:00 AM",
-        slug: "sp73",
-        vendor: "Sharon's Cook House",
-      },
+     
     ],
   },
   {
@@ -8045,8 +7719,8 @@ export const products: Product[] = [
   },
   {
     id: "76",
-    title: "Egusi soup with stock fish - 1L",
-    price: 1050,
+    title: "Egusi Soup with stock fish - 1L",
+    price: 2550,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229317/Screenshot_from_2024-01-14_11-41-51_vdwzde.png",
     categories: ["Soup"],
@@ -8059,7 +7733,7 @@ export const products: Product[] = [
   {
     id: "77",
     title: "Groundnut soup with stock fish - 1L",
-    price: 2625,
+    price: 2550,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229322/Screenshot_from_2024-01-14_11-43-02_idskxn.png",
     categories: ["Soup"],
@@ -8072,7 +7746,7 @@ export const products: Product[] = [
   {
     id: "78",
     title: "Draw soup with stock fish - 1L",
-    price: 1575,
+    price: 1550,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229325/Screenshot_from_2024-01-14_11-42-25_uwtxzx.png",
     categories: ["Soup"],
@@ -8216,9 +7890,9 @@ export const products: Product[] = [
   {
     id: "89",
     title: "Fruit Juice",
-    price: 525,
+    price: 1050,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
     categories: ["Drinks"],
     prep_time: "24 hours",
     opening_time: "11:00 AM",
@@ -8228,17 +7902,18 @@ export const products: Product[] = [
   },
   {
     id: "90",
-    title: "Fruit Juice",
-    price: 315,
+    title: "Spaghetti with Fish sauce and Chicken and Plantain",
+    price: 2350,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229480/Screenshot_from_2024-01-14_11-40-15_p2lrrt.png",
-    categories: ["Drinks"],
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780017/Sharoon%20Cook/Spaghetti_fish_sauce_chicken_and_plantain_2300_ytgu2z.jpg",
+    categories: ["Rice and grains"],
     prep_time: "24 hours",
     opening_time: "11:00 AM",
     slug: "sp90",
     vendor: "Sharon's Cook House",
     openingDays: ["wed", "thu", "fri"],
   },
+  
   {
     id: "91",
     title: "Full Pot of Jollof Rice - 2L",
@@ -8358,7 +8033,286 @@ export const products: Product[] = [
     vendor: "Chef Jo",
     openingDays: ["tue", "thu", "fri"],
   },
-  
+  {
+    id: "100",
+    title: "Yam and Egg sauce",
+    price: 1050,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780024/Sharoon%20Cook/Yam_and_egg_sauce_1000_ultstf.jpg",
+    categories: ["Rice and grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "101",
+    title: "Chicken and filled Doughnut",
+    price: 2550,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780002/Sharoon%20Cook/Chicken_and_filled_doughnut_2500_wb1jo8.jpg",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "102",
+    title: "Boli Peppered Sauce and Chicken",
+    price: 2050,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780004/Sharoon%20Cook/Bole_Peppered_sauce_and_chicken_2000_zxlxkg.jpg",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "103",
+    title: "White Rice and Stew with Plantain and Salad",
+    price: 1550,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706779989/Sharoon%20Cook/White_rice_and_stew_with_plantain_and_salad_1500_ult298.jpg",
+    categories: ["Rice and grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "104",
+    title: "Spaghetti and Chicken",
+    price: 2050,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780010/Sharoon%20Cook/Spaghetti_and_chicken_2000_edvgya.jpg",
+    categories: ["Rice and grains"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "105",
+    title: "Plate of garnished Awara",
+    price: 1050,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706779989/Sharoon%20Cook/Plate_of_awara_1000_10pieces_tnhook.jpg",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "106",
+    title: "Plane Awara",
+    price: 100,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706779994/Sharoon%20Cook/Plane_awara_fried_100_each_ocjvop.jpg",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "107",
+    title: "Peppered Chicken and Plantain",
+    price: 1550,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706779993/Sharoon%20Cook/Peppered_Chicken_and_plantain_1500_tvw5t5.png",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "108",
+    title: "Regular Filled Doughnut",
+    price: 550,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706782653/Screenshot_from_2024-02-01_11-16-24_f0u3l0.png",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "109",
+    title: "Milk filled Doughnut",
+    price: 700,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706782670/Screenshot_from_2024-02-01_11-16-36_rgvtai.png",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "110",
+    title: "6 Fish Rolls, 1 Chicken, Boli and Groundnut",
+    price: 3550,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780031/Sharoon%20Cook/6_fish_roll_1_chicken_Bole_and_groundnut_3500_jekvek.jpg",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "111",
+    title: "Puff puff Coated with Milk",
+    price: 850,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780023/Sharoon%20Cook/Puff_puff_coated_with_milk_800_nmgwao.jpg",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+  },
+  {
+    id: "112",
+    title: "Meat pie",
+    price: 550,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780013/Sharoon%20Cook/500_each_xtncxn.jpg",
+    categories: ["Snacks"],
+    prep_time: "24 hours",
+    opening_time: "11:00 AM",
+    slug: "sp90",
+    vendor: "Sharon's Cook House",
+    openingDays: ["wed", "thu", "fri"],
+    extras: [
+      {
+        id: "1",
+        title: "Tigernut Drink - Kunu Aya",
+        price: 325,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/tigernut_drink_-_kunu_haya_vxa6jh.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp90",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "2",
+        title: "Tigernut Drink - Kunu Aya",
+        price: 525,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/tigernut_drink_-_kunu_haya_vxa6jh.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp90",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "3",
+        title: "Millet Drink - Kunu Gero",
+        price: 525,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229488/kunu_gero_vkm5jp.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp90",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "4",
+        title: "Zobo Drink",
+        price: 525,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/Screenshot_from_2024-01-14_11-35-19_u1y16t.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp90",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "5",
+        title: "Zobo Drink",
+        price: 320,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229493/Screenshot_from_2024-01-14_11-35-19_u1y16t.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp90",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "6",
+        title: "Heart Juice",
+        price: 1050,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229490/Screenshot_from_2024-01-14_11-37-44_jt3pim.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp90",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "6",
+        title: "Yoghurt",
+        price: 550,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229484/Screenshot_from_2024-01-14_11-39-20_xlalkd.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp90",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "7",
+        title: "Yoghurt",
+        price: 850,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1705229484/Screenshot_from_2024-01-14_11-39-20_xlalkd.png",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp90",
+        vendor: "Sharon's Cook House",
+      },
+      {
+        id: "8",
+        title: "Fruit Juice",
+        price: 1050,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706780018/Sharoon%20Cook/Fruit_juice_1000_each_vnwors.jpg",
+        categories: ["Drinks"],
+        prep_time: "24 hours",
+        opening_time: "11:00 AM",
+        slug: "sp90",
+        vendor: "Sharon's Cook House",
+      },
+    
+    ],
+  },
 
   // previous
   // {
