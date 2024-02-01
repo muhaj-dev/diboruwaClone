@@ -7916,8 +7916,8 @@ export const products: Product[] = [
   
   {
     id: "91",
-    title: "Full Pot of Jollof Rice - 2L",
-    price: 13650,
+    title: "Full Pot of Jollof Rice - 5L",
+    price: 15500,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704968509/Screenshot_from_2024-01-11_11-21-16_a3x037.png",
     categories: ["Rice and Grains"],
@@ -7929,8 +7929,8 @@ export const products: Product[] = [
   },
   {
     id: "92",
-    title: "Half Pot of Jollof Rice - 1L",
-    price: 7350,
+    title: "1L - Pot of Jollof Rice",
+    price: 3150,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704968509/Screenshot_from_2024-01-11_11-21-16_a3x037.png",
     categories: ["Rice and Grains"],
@@ -7942,8 +7942,8 @@ export const products: Product[] = [
   },
   {
     id: "93",
-    title: "Full Pot of Fried Rice - 2L",
-    price: 15750,
+    title: "Full Pot of Fried Rice - 5L",
+    price: 15500,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534306_x_a9evz3.jpg",
     categories: ["Rice and Grains"],
@@ -7955,8 +7955,8 @@ export const products: Product[] = [
   },
   {
     id: "94",
-    title: "Half Pot of Fried Rice - 1L",
-    price: 8400,
+    title: "1L - Pot of Fried Rice ",
+    price: 3150,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534306_x_a9evz3.jpg",
     categories: ["Rice and Grains"],
@@ -7968,8 +7968,8 @@ export const products: Product[] = [
   },
   {
     id: "95",
-    title: "1L of Stew",
-    price: 7875,
+    title: "2L of Stew",
+    price: 7350,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534307_x_yzuhsd.jpg",
     categories: ["Rice and Grains"],
@@ -7981,8 +7981,8 @@ export const products: Product[] = [
   },
   {
     id: "96",
-    title: "1.4L of Egusi soup",
-    price: 9450,
+    title: "2L Pot of Egusi Soup with 4 Wrapps of Swallow",
+    price: 10900,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534308_x_zl9tux.jpg",
     categories: ["Rice and Grains"],
@@ -7995,8 +7995,8 @@ export const products: Product[] = [
   
   {
     id: "97",
-    title: "1.4L of Okra soup",
-    price: 9450,
+    title: "2L Pot of Okra Soup with 4 Wrapps of Swallow",
+    price: 10900,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534309_x_b9e3b8.jpg",
     categories: ["Rice and Grains"],
@@ -8008,10 +8008,10 @@ export const products: Product[] = [
   },
   {
     id: "98",
-    title: "1.4L of Egusi soup with 4 wraps of swalloww (Eba/Semo)",
-    price: 10550,
+    title: "1L of Rice with 2 Pieces of Chicken",
+    price: 5150,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534308_x_zl9tux.jpg",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706784976/Screenshot_from_2024-02-01_11-53-56_yomrhy.png",
     categories: ["Rice and Grains"],
     prep_time: "24 hours",
     opening_time: "11:00 AM",
@@ -8022,10 +8022,10 @@ export const products: Product[] = [
   
   {
     id: "99",
-    title: "1.4L of Okra soup with 4 wraps of swallow (Eba/Semo)",
-    price: 10550,
+    title: "5L of Rice with 10 Pieces of Chicken ",
+    price: 25500,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1704967343/photo_5821092167408534309_x_b9e3b8.jpg",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706784976/Screenshot_from_2024-02-01_11-53-56_yomrhy.png",
     categories: ["Rice and Grains"],
     prep_time: "24 hours",
     opening_time: "11:00 AM",
