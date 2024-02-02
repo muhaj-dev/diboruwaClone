@@ -12,6 +12,7 @@ import {
   AdminHomeCleaningQuoteRequest,
   AdminLaundryQuoteRequest,
   AdminQuotePaymentConfirmation,
+  CourierQuoteRequestNotification,
   UserQuotePaymentConfirmation,
   UserQuoteRequestConfirmation,
 } from "@/emails";
@@ -74,12 +75,16 @@ export async function PUT(
       );
     }
 
-    const request = await Request.findById(requestId).populate("user");
+    const request = await Request.findById(requestId).populate("user courier");
 
     if (!request) {
       return NextResponse.json({ message: "Request does not exist" });
     }
 
+    const quoteText = request.items
+      .filter((item: any) => item.amount > 0)
+      .map((item: any) => `${item.name} -- ${item.amount}`)
+      .join(", ");
     const { referenceId } = body;
 
     if (referenceId) {
@@ -94,24 +99,37 @@ export async function PUT(
       request.user.email,
       " Payment Confirmation",
       UserQuotePaymentConfirmation({
-       
         firstName: request.user.firstName,
         serviceName: request.type,
         paymentAmount: request.total,
         paymentDate: moment().format("MMMM DD, YYYY"),
-        adminEmail: 'info@diboruwa.com',
+        adminEmail: "info@diboruwa.com",
       })
     );
     await sendEmail(
       "ibrahim.saliman.zainab@gmail.com",
       "Payment Confirmation",
       AdminQuotePaymentConfirmation({
-       
         firstName: request.user.firstName,
         serviceName: request.type,
         paymentAmount: request.total,
         paymentDate: moment().format("MMMM DD, YYYY"),
-        userEmail: 'info@diboruwa.com',
+        userEmail: "info@diboruwa.com",
+      })
+    );
+    await sendEmail(
+      request.courier.email,
+      "Payment Confirmation",
+      CourierQuoteRequestNotification({
+        courier: request.courier.businessName,
+        fullName: request.user.firstName,
+        total: request.total,
+        userEmail: request.user.email,
+        userContact: request.user.phone,
+        serviceType: request.type,
+        description: quoteText,
+        timestamp: moment().format("MMMM DD, YYYY"),
+
       })
     );
 

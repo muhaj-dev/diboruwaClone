@@ -5,6 +5,9 @@ import useQuote, { Quote } from "@/hooks/useQuote";
 import { EyeOpenIcon } from "@radix-ui/react-icons";
 import { useRouter } from "next/navigation";
 import { EmptyServices } from "@/containers/dasboard(client)/client.tyles";
+import { nanoid } from "nanoid";
+import useOrder from "@/hooks/useOrder";
+import PaymentButton from "../paymentButton/PayButton";
 
 // Styled Components
 const RequestHistoryContainer = styled.div`
@@ -61,6 +64,10 @@ const ColumnData = styled.div`
 // Request History Component
 const RequestList: React.FC = () => {
   const { quotes, getQuotes, getQuoteById } = useQuote(); // Use the useQuote hook
+  const {
+    openModal,
+    handleRequestPayment,
+  } = useOrder();
 
   const router = useRouter();
 
@@ -72,12 +79,26 @@ const RequestList: React.FC = () => {
     router.push(`/dashboard/requests/${quoteId}`);
   };
 
+  const referenceId = nanoid(8);
+
+  const onSuccess = (id: string) => {
+    handleRequestPayment(referenceId, id);
+
+    setTimeout(() => {
+      getQuotes();
+    }, 1500);
+  };
+
+  const onClose = () => {
+    console.log("closed");
+  };
+
   return (
     <RequestHistoryContainer>
       <h1>Request History</h1>
 
       <RequestListingContainer>
-        {quotes.length >= 1 ? (
+        {quotes && quotes.length >= 1 ? (
           <RequestListing>
             <RequestRow className="header">
               <ColumnHeader>Type</ColumnHeader>
@@ -100,6 +121,19 @@ const RequestList: React.FC = () => {
                   <button onClick={() => handleRequestClick(quote._id)}>
                     <EyeOpenIcon />
                   </button>
+                </ColumnData>
+                <ColumnData>
+                {!quote.isPaid && quote.total && (
+              <PaymentButton
+                totalPrice={quote.total}
+                openModal={openModal}
+                buttonText="Pay Now"
+                color="color2"
+                onSuccess={() => onSuccess(quote._id)}
+                onClose={onClose}
+                referenceId={referenceId}
+              />
+            )}
                 </ColumnData>
               </RequestRow>
             ))}
