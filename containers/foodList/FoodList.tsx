@@ -28,9 +28,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     button {
-         margin: auto;
+      margin: auto;
     }
- 
   }
 `;
 
@@ -181,12 +180,15 @@ const FoodList: React.FC<IFoodListProps> = ({}) => {
 
       <ProductListing>{renderMenuItems()}</ProductListing>
 
+
+
       <div className="btn">
-         <Button size="large" color="primary" onClick={() => setSeeMore(true)}>
-        See more
-      </Button>
+        {!seeMore && <Button size="large" color="primary" onClick={() => setSeeMore(true)}>
+          See more
+        </Button>}
+        
       </div>
-     
+
       <Modal
         isOpen={modal.isOpen}
         type={modal.type}
