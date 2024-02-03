@@ -77,6 +77,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
         style={{
           textAlign: "center",
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
 
