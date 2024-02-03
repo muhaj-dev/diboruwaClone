@@ -87,6 +87,10 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
         <div
           className="contact"
           style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
             textAlign: "center",
             margin: "auto",
             width: "100%",
@@ -1837,6 +1841,75 @@ export const AdminQuotePaymentConfirmation: React.FC<{
         </p>
         <p>Thank you!</p>
         <p>Warm Regards, The Dibo Ruwa Team</p>
+      </div>
+    </EmailTemplate>
+  );
+};
+
+export const CourierQuoteRequestNotification: React.FC<{
+  courier: string;
+  fullName: string;
+  userEmail: string;
+  userContact: string;
+  serviceType: string;
+  total: any;
+  description: string;
+  timestamp: string;
+}> = ({
+  courier,
+  fullName,
+  userEmail,
+  userContact,
+  serviceType,
+  total,
+  description,
+  timestamp,
+}) => {
+  const adminEmailStyle: React.CSSProperties = {
+    lineHeight: "2",
+  };
+  return (
+    <EmailTemplate subject="New Quote request">
+      <div style={adminEmailStyle}>
+        <strong>Hello, {courier }</strong>
+        <p>
+          We have received a new quote request for our
+          <strong>{serviceType}</strong> services from
+          <strong>{fullName}</strong>
+        </p>
+        <h3>Request Details:</h3>
+        <ul>
+          <li>
+            
+            <strong>User Name:</strong> {fullName}
+          </li>
+          <li>
+            <strong>User Email: </strong> {userEmail}
+          </li>
+          <li>
+            <strong>User Contact: </strong> {userContact}
+          </li>
+          <li>
+            <strong>Total: </strong> {total}
+          </li>
+          <li>
+          
+            <strong>Service Type:</strong> {serviceType}
+          </li>
+          <li>
+           
+            <strong>Description/Notes:</strong> {description}
+          </li>
+          <li>
+            
+            <strong>Request Date & Time:</strong> {timestamp}
+          </li>
+        </ul>
+        <p>
+          Please ensure the request is addressed promptly, and a comprehensive
+          quote is provided to the user. Your prompt action is appreciated.
+        </p>
+        <p>Best Regards, Dibo Ruwa Operations Team</p>
       </div>
     </EmailTemplate>
   );
