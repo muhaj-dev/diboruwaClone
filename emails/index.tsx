@@ -76,6 +76,9 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
       <div
         style={{
           textAlign: "center",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
 
           padding: "10px",
         }}
@@ -149,7 +152,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
                 alt="instagram_logo"
               />
             </a>
-            <a href="https://www.linkedin.com/in/rowland-ricketts" target="_blank">
+            <a href="https://www.linkedin.com/company/dibo-ruwa" target="_blank">
               <img
                 style={{
                   width: "30px",
@@ -168,7 +171,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
             color: "#949494",
           }}
         >
-          &copy; 2023 Your Dibo Ruwa. All Rights Reserved.
+          &copy; 2024 Dibo Ruwa. All Rights Reserved.
         </div>
       </div>
     </div>
@@ -1808,7 +1811,7 @@ export const AdminQuotePaymentConfirmation: React.FC<{
       <div style={userEmailStyle}>
         <p>Hello Admin,</p>
         <p>
-          A payment has been received from the user {firstName} for the{" "}
+          A payment has been received from {firstName} for the{" "}
           {serviceName} service. The details are as follows:
         </p>
         <h3>User Details:</h3>
