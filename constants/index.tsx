@@ -2042,27 +2042,27 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp10",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   {
     id: "11",
-    title: "Efo riro 1L",
-    price: 7000,
+    title: "White rice with vegetable soup",
+    price: 1350,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691938474/diboruwa/Screenshot_from_2023-08-13_15-51-40_qaokht.png",
-    categories: ["Soup"],
-    prep_time: "20 minutes",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701210490/White%20rice%20with%20vegetable%20soup%20and%20plantain%201500.jpg",
+    categories: ["Rice and Grains"],
+    prep_time: "30 minutes",
     opening_time: "11:00 AM",
     slug: "sp11",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
 
-    // discount: 50,
+    // discount: 0.5,
   },
   {
     id: "12",
     title: "Jolof Rice with Plantain and Goat meat",
-    price: 1500,
+    price: 1100,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706804954/Screenshot_from_2024-02-01_17-23-44_comph2.png",
     categories: ["Rice and grains"],
@@ -2070,7 +2070,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp12",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   {
     id: "13",
@@ -2100,8 +2100,8 @@ export const products: Product[] = [
   },
   {
     id: "15",
-    title: "Vegetable Soup with Amala",
-    price: 1300,
+    title: "Amala with vegetable Soup and Beef",
+    price: 1100,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701210418/-5967755370602545238_121_ruwgxn.jpg",
     categories: ["Swallow"],
@@ -2109,7 +2109,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp15",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
     extras: [
       {
         id: "1",
@@ -2120,7 +2120,7 @@ export const products: Product[] = [
         categories: ["Drinks"],
         prep_time: "20 minutes",
         opening_time: "11:00 AM",
-        slug: "sp119",
+        slug: "sp15",
         vendor: "EatWithEesha",
       },
     
@@ -2129,35 +2129,35 @@ export const products: Product[] = [
   {
     id: "16",
     title: "White rice with vegetable soup and plantain",
-    price: 1500,
+    price: 1550,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701210490/White%20rice%20with%20vegetable%20soup%20and%20plantain%201500.jpg",
     categories: ["Rice and Grains"],
-    prep_time: "20 minutes",
+    prep_time: "30 minutes",
     opening_time: "11:00 AM",
     slug: "sp16",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
 
     // discount: 0.5,
   },
   {
     id: "17",
-    title: "Ewa agoyin (beans) with ponmo, plantain and bread",
-    price: 1600,
+    title: "Ewa agoyin (beans) with ponmo and plantain ",
+    price: 1100,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701211063/photo_5967755370602545226_y_gxixvt.jpg",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706867920/Screenshot_from_2024-02-02_10-57-18_vk4hgo.png",
     categories: ["Beans"],
     prep_time: "30 minutes",
     opening_time: "11:00 AM",
     slug: "sp17",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   {
     id: "18",
     title: "Goat pepper soup",
-    price: 990,
+    price: 1050,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701211347/Screenshot_from_2023-11-28_23-40-21_iixjzs.png",
     categories: ["Soup"],
@@ -2165,7 +2165,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp18",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
 
     // discount: 0.5,
   },
@@ -2180,7 +2180,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp19",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   {
     id: "20",
@@ -2193,14 +2193,14 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp20",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
 
     // discount: 0.5,
   },
   {
     id: "21",
     title: "Pounded yam with egusi soup and goat meat",
-    price: 1680,
+    price: 900,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701212668/photo_5967755370602545231_y_ard2qd.jpg",
     categories: ["Swallow"],
@@ -2208,7 +2208,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp21",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
 
     // discount: 0.5,
   },
@@ -3809,16 +3809,16 @@ export const products: Product[] = [
   },
   {
     id: "34",
-    title: "Beans, Bread and Plantain",
-    price: 1100,
+    title: "Ewa agoyin with plantain and bread",
+    price: 1200,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1691938465/diboruwa/Screenshot_from_2023-08-13_15-51-22_vzskcj.png",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701211063/photo_5967755370602545226_y_gxixvt.jpg",
     categories: ["Reans"],
     prep_time: "30 minutes",
     opening_time: "11:00 AM",
     slug: "sp34",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
 
     // discount: 0.5,
   },
@@ -8339,7 +8339,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp113",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   {
     id: "114",
@@ -8352,38 +8352,38 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp114",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   {
     id: "115",
-    title: "Rice and Beans With Chicken and Plantain",
+    title: "Rice and Beans with Chicken",
     price: 1750,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706807187/Rice_and_beans_with_plantain_and_chicken_1700_without_plantain_1500_tvrkhh.jpg",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1707067092/Rice_with_beans_and_chicken_1700_x1w6pl.jpg",
     categories: ["Rice and grains"],
-    prep_time: "24 hours",
+    prep_time: "30 minutes",
     opening_time: "11:00 AM",
     slug: "sp115",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   {
     id: "116",
-    title: "Rice and Beans With Chicken",
-    price: 1550,
+    title: "Amala with Egusi Soup and Ponmo",
+    price: 1100,
     imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706807187/Rice_and_beans_with_plantain_and_chicken_1700_without_plantain_1500_tvrkhh.jpg",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1707067205/Amala_with_Egusi_soup_abula_vegetable_soup_ogbono_soup_with_beef_assorted_ponmo_1100_okryee.jpg",
     categories: ["Rice and grains"],
-    prep_time: "24 hours",
+    prep_time: "30 minutes",
     opening_time: "11:00 AM",
     slug: "sp116",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   {
     id: "117",
     title: "Boiled Yam With Egg Sauce",
-    price: 1350,
+    price: 1100,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706807186/Boiled_yam_with_egg_sauce_1300_xjoszw.jpg",
     categories: ["Swallow"],
@@ -8391,7 +8391,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp117",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   {
     id: "118",
@@ -8404,7 +8404,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp118",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
     extras: [
       {
         id: "1",
@@ -8432,7 +8432,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp119",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
     extras: [
       {
         id: "1",
@@ -8451,8 +8451,8 @@ export const products: Product[] = [
   },
   {
     id: "120",
-    title: "Amala with Gbegeri and Ewedu and Protein",
-    price: 1350,
+    title: "Amala with Gbegeri and Ewedu and Beef",
+    price: 1100,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706808551/Amala_with_gbegeri_ewedu_and_proteins_1300_with_extra_protein_1500_sukafy.jpg",
     categories: ["Swallow"],
@@ -8460,7 +8460,7 @@ export const products: Product[] = [
     opening_time: "11:00 AM",
     slug: "sp119",
     vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat"],
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
     extras: [
       {
         id: "1",
@@ -8476,6 +8476,155 @@ export const products: Product[] = [
       },
     
     ],
+  },
+  {
+    id: "121",
+    title: "Ewa agoyin (beans) with plantain and beef ",
+    price: 1100,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706867920/Screenshot_from_2024-02-02_10-57-18_vk4hgo.png",
+    categories: ["Beans"],
+    prep_time: "30 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp121",
+    vendor: "EatWithEesha",
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+  },
+  {
+    id: "122",
+    title: "Ewa agoyin (beans) with plantain and assorted ",
+    price: 1100,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706867920/Screenshot_from_2024-02-02_10-57-18_vk4hgo.png",
+    categories: ["Beans"],
+    prep_time: "30 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp122",
+    vendor: "EatWithEesha",
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+  },
+  {
+    id: "123",
+    title: "Pounded Yam with egusi soup and beef",
+    price: 800,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701212668/photo_5967755370602545231_y_ard2qd.jpg",
+    categories: ["Swallow"],
+    prep_time: "30 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp123",
+    vendor: "EatWithEesha",
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+  },
+  {
+    id: "124",
+    title: "Pounded Yam with egusi soup and ponmo",
+    price: 800,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701212668/photo_5967755370602545231_y_ard2qd.jpg",
+    categories: ["Swallow"],
+    prep_time: "30 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp124",
+    vendor: "EatWithEesha",
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+  },
+  {
+    id: "125",
+    title: "Pounded Yam with egusi soup and assorted",
+    price: 800,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701212668/photo_5967755370602545231_y_ard2qd.jpg",
+    categories: ["Swallow"],
+    prep_time: "30 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp125",
+    vendor: "EatWithEesha",
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+  },
+  {
+    id: "126",
+    title: "Amala with Egusi Soup and beef",
+    price: 1100,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701210418/-5967755370602545238_121_ruwgxn.jpg",
+    categories: ["Swallow"],
+    prep_time: "30 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp126",
+    vendor: "EatWithEesha",
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+    extras: [
+      {
+        id: "1",
+        title: "Extra Protein",
+        price: 200,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706808167/Screenshot_from_2024-02-01_18-22-05_pga5sz.png",
+        categories: ["Drinks"],
+        prep_time: "20 minutes",
+        opening_time: "11:00 AM",
+        slug: "sp126",
+        vendor: "EatWithEesha",
+      },
+    
+    ],
+  },
+  {
+    id: "127",
+    title: "Amala with Ogbono Soup and Assorted",
+    price: 1100,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1707066542/Amala_with_ogbono_soup_with_assorted_1100_ocif4w.jpg",
+    categories: ["Swallow"],
+    prep_time: "30 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp127",
+    vendor: "EatWithEesha",
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+    extras: [
+      {
+        id: "1",
+        title: "Extra Protein",
+        price: 200,
+        imageURL:
+          "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1706808167/Screenshot_from_2024-02-01_18-22-05_pga5sz.png",
+        categories: ["Drinks"],
+        prep_time: "20 minutes",
+        opening_time: "11:00 AM",
+        slug: "sp127",
+        vendor: "EatWithEesha",
+      },
+    
+    ],
+  },
+  {
+    id: "128",
+    title: "Pounded yam with egusi soup and Chicken",
+    price: 1650,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701212668/photo_5967755370602545231_y_ard2qd.jpg",
+    categories: ["Swallow"],
+    prep_time: "30 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp128",
+    vendor: "EatWithEesha",
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+
+    // discount: 0.5,
+  },
+  {
+    id: "129",
+    title: "Amala with Ewedu and Gbegiri and Chicken",
+    price: 1550,
+    imageURL:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701210418/-5967755370602545238_121_ruwgxn.jpg",
+    categories: ["Swallow"],
+    prep_time: "30 minutes",
+    opening_time: "11:00 AM",
+    slug: "sp129",
+    vendor: "EatWithEesha",
+    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
   // previous
   // {

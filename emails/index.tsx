@@ -76,6 +76,10 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
       <div
         style={{
           textAlign: "center",
+          // display: "flex",
+          // flexDirection: "column",
+          // justifyContent: "center",
+          // alignItems: "center",
 
           padding: "10px",
         }}
@@ -84,6 +88,10 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
         <div
           className="contact"
           style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
             textAlign: "center",
             margin: "auto",
             width: "100%",
@@ -145,7 +153,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
                 alt="instagram_logo"
               />
             </a>
-            <a href="https://www.linkedin.com/in/rowland-ricketts" target="_blank">
+            <a href="https://www.linkedin.com/company/dibo-ruwa" target="_blank">
               <img
                 style={{
                   width: "30px",
@@ -164,7 +172,7 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
             color: "#949494",
           }}
         >
-          &copy; 2023 Your Dibo Ruwa. All Rights Reserved.
+          &copy; 2024 Dibo Ruwa. All Rights Reserved.
         </div>
       </div>
     </div>
@@ -1804,7 +1812,7 @@ export const AdminQuotePaymentConfirmation: React.FC<{
       <div style={userEmailStyle}>
         <p>Hello Admin,</p>
         <p>
-          A payment has been received from the user {firstName} for the{" "}
+          A payment has been received from {firstName} for the{" "}
           {serviceName} service. The details are as follows:
         </p>
         <h3>User Details:</h3>
@@ -1834,6 +1842,75 @@ export const AdminQuotePaymentConfirmation: React.FC<{
         </p>
         <p>Thank you!</p>
         <p>Warm Regards, The Dibo Ruwa Team</p>
+      </div>
+    </EmailTemplate>
+  );
+};
+
+export const CourierQuoteRequestNotification: React.FC<{
+  courier: string;
+  fullName: string;
+  userEmail: string;
+  userContact: string;
+  serviceType: string;
+  total: any;
+  description: string;
+  timestamp: string;
+}> = ({
+  courier,
+  fullName,
+  userEmail,
+  userContact,
+  serviceType,
+  total,
+  description,
+  timestamp,
+}) => {
+  const adminEmailStyle: React.CSSProperties = {
+    lineHeight: "2",
+  };
+  return (
+    <EmailTemplate subject="New Quote request">
+      <div style={adminEmailStyle}>
+        <strong>Hello, {courier }</strong>
+        <p>
+          We have received a new quote request for our
+          <strong>{serviceType}</strong> services from
+          <strong>{fullName}</strong>
+        </p>
+        <h3>Request Details:</h3>
+        <ul>
+          <li>
+            
+            <strong>User Name:</strong> {fullName}
+          </li>
+          <li>
+            <strong>User Email: </strong> {userEmail}
+          </li>
+          <li>
+            <strong>User Contact: </strong> {userContact}
+          </li>
+          <li>
+            <strong>Total: </strong> {total}
+          </li>
+          <li>
+          
+            <strong>Service Type:</strong> {serviceType}
+          </li>
+          <li>
+           
+            <strong>Description/Notes:</strong> {description}
+          </li>
+          <li>
+            
+            <strong>Request Date & Time:</strong> {timestamp}
+          </li>
+        </ul>
+        <p>
+          Please ensure the request is addressed promptly, and a comprehensive
+          quote is provided to the user. Your prompt action is appreciated.
+        </p>
+        <p>Best Regards, Dibo Ruwa Operations Team</p>
       </div>
     </EmailTemplate>
   );
