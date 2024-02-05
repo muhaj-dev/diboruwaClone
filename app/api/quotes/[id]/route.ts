@@ -75,7 +75,7 @@ export async function PUT(
       );
     }
 
-    const request = await Request.findById(requestId).populate("user courier");
+    const request = await Request.findById(requestId).populate("user courier partner");
 
     if (!request) {
       return NextResponse.json({ message: "Request does not exist" });
@@ -123,7 +123,7 @@ export async function PUT(
       CourierQuoteRequestNotification({
         courier: request.courier.businessName,
         fullName: request.user.firstName,
-        total: request.total,
+        total: request.deliveryFee,
         userEmail: request.user.email,
         userContact: request.user.phone,
         serviceType: request.type,

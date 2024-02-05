@@ -8,10 +8,10 @@ import { EmptyServices } from "@/containers/dasboard(client)/client.tyles";
 import { nanoid } from "nanoid";
 import useOrder from "@/hooks/useOrder";
 import PaymentButton from "../paymentButton/PayButton";
+import BackButton from "../ui/BackButton/BackButton";
 
 // Styled Components
 const RequestHistoryContainer = styled.div`
- 
   h1 {
     margin: 30px 0;
   }
@@ -57,17 +57,13 @@ const ColumnData = styled.div`
     font-size: 20px;
     color: var(--primary);
     cursor: pointer;
-
   }
 `;
 
 // Request History Component
 const RequestList: React.FC = () => {
   const { quotes, getQuotes, getQuoteById } = useQuote(); // Use the useQuote hook
-  const {
-    openModal,
-    handleRequestPayment,
-  } = useOrder();
+  const { openModal, handleRequestPayment } = useOrder();
 
   const router = useRouter();
 
@@ -95,6 +91,8 @@ const RequestList: React.FC = () => {
 
   return (
     <RequestHistoryContainer>
+     
+
       <h1>Request History</h1>
 
       <RequestListingContainer>
@@ -116,24 +114,26 @@ const RequestList: React.FC = () => {
                   {quote.paymentId ? quote.paymentId : "--"}
                 </ColumnData>
                 <ColumnData>{quote.status}</ColumnData>
-                <ColumnData>{quote.total ? `₦${quote.total}` : "--"}</ColumnData>
+                <ColumnData>
+                  {quote.total ? `₦${quote.total}` : "--"}
+                </ColumnData>
                 <ColumnData>
                   <button onClick={() => handleRequestClick(quote._id)}>
                     <EyeOpenIcon />
                   </button>
                 </ColumnData>
                 <ColumnData>
-                {!quote.isPaid && quote.total && (
-              <PaymentButton
-                totalPrice={quote.total}
-                openModal={openModal}
-                buttonText="Pay Now"
-                color="color2"
-                onSuccess={() => onSuccess(quote._id)}
-                onClose={onClose}
-                referenceId={referenceId}
-              />
-            )}
+                  {!quote.isPaid && quote.total && (
+                    <PaymentButton
+                      totalPrice={quote.total}
+                      openModal={openModal}
+                      buttonText="Pay Now"
+                      color="color2"
+                      onSuccess={() => onSuccess(quote._id)}
+                      onClose={onClose}
+                      referenceId={referenceId}
+                    />
+                  )}
                 </ColumnData>
               </RequestRow>
             ))}
