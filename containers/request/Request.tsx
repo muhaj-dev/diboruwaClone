@@ -7,6 +7,7 @@ import Loader from "@/component/ui/loader/Loader";
 import PaymentButton from "@/component/paymentButton/PayButton";
 import { nanoid } from "nanoid";
 import useOrder from "@/hooks/useOrder";
+import BackButton from "@/component/ui/BackButton/BackButton";
 
 const QuoteContainer = styled.div`
   margin: 0 auto;
@@ -97,6 +98,7 @@ const QuotePage = ({ id }: { id: string }) => {
       ) : (
         quote !== null && (
           <div>
+            <BackButton />
             <QuoteHeader>Quote Details</QuoteHeader>
             <QuoteDetail>
               <strong>Type: </strong> {quote.type}
