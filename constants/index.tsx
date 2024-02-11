@@ -2044,21 +2044,20 @@ export const products: Product[] = [
     vendor: "EatWithEesha",
     openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
   },
-  {
-    id: "11",
-    title: "White rice with vegetable soup",
-    price: 1350,
-    imageURL:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701210490/White%20rice%20with%20vegetable%20soup%20and%20plantain%201500.jpg",
-    categories: ["Rice and Grains"],
-    prep_time: "30 minutes",
-    opening_time: "11:00 AM",
-    slug: "sp11",
-    vendor: "EatWithEesha",
-    openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
-
-    // discount: 0.5,
-  },
+  // {
+  //   id: "11",
+  //   title: "White rice with vegetable soup",
+  //   price: 1350,
+  //   imageURL:
+  //     "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701210490/White%20rice%20with%20vegetable%20soup%20and%20plantain%201500.jpg",
+  //   categories: ["Rice and Grains"],
+  //   prep_time: "30 minutes",
+  //   opening_time: "11:00 AM",
+  //   slug: "sp11",
+  //   vendor: "EatWithEesha",
+  //   openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+  //   // discount: 0.5,
+  // },
   {
     id: "12",
     title: "Jolof Rice with Plantain and Goat meat",
@@ -2128,8 +2127,8 @@ export const products: Product[] = [
   },
   {
     id: "16",
-    title: "White rice with vegetable soup and plantain",
-    price: 1550,
+    title: "White rice with vegetable soup, and beef",
+    price: 800,
     imageURL:
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1701210490/White%20rice%20with%20vegetable%20soup%20and%20plantain%201500.jpg",
     categories: ["Rice and Grains"],
@@ -2138,7 +2137,6 @@ export const products: Product[] = [
     slug: "sp16",
     vendor: "EatWithEesha",
     openingDays: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
-
     // discount: 0.5,
   },
   {
