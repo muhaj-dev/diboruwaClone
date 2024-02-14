@@ -105,6 +105,7 @@ const RequestList: React.FC = () => {
               <ColumnHeader>Status</ColumnHeader>
               <ColumnHeader>Total</ColumnHeader>
               <ColumnHeader></ColumnHeader>
+              <ColumnHeader></ColumnHeader>
             </RequestRow>
             {quotes.map((quote: any) => (
               <RequestRow key={quote._id}>
