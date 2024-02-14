@@ -28,7 +28,7 @@ const RequestListing = styled.div`
 
 const RequestRow = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 10px 25px;
 
   transition: all 0.3s ease;
