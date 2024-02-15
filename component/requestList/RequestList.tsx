@@ -129,7 +129,7 @@ const RequestList: React.FC = () => {
                       totalPrice={quote.total}
                       openModal={openModal}
                       buttonText="Pay Now"
-                      color="color2"
+                      color="primary"
                       onSuccess={() => onSuccess(quote._id)}
                       onClose={onClose}
                       referenceId={referenceId}
