@@ -28,7 +28,7 @@ const RequestListing = styled.div`
 
 const RequestRow = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 10px 25px;
 
   transition: all 0.3s ease;
@@ -53,11 +53,19 @@ const ColumnData = styled.div`
   button {
     outline: none;
     border: none;
-    background: none;
+    background:none;
     font-size: 20px;
-    color: var(--primary);
+    color: var(#fff);
     cursor: pointer;
   }
+
+  .btn {
+    button {
+      background:var(--primary);
+    }
+  }
+
+ 
 `;
 
 // Request History Component
@@ -105,6 +113,7 @@ const RequestList: React.FC = () => {
               <ColumnHeader>Status</ColumnHeader>
               <ColumnHeader>Total</ColumnHeader>
               <ColumnHeader></ColumnHeader>
+              <ColumnHeader></ColumnHeader>
             </RequestRow>
             {quotes.map((quote: any) => (
               <RequestRow key={quote._id}>
@@ -124,15 +133,18 @@ const RequestList: React.FC = () => {
                 </ColumnData>
                 <ColumnData>
                   {!quote.isPaid && quote.total && (
-                    <PaymentButton
+                    <div className="btn">
+                       <PaymentButton
                       totalPrice={quote.total}
                       openModal={openModal}
                       buttonText="Pay Now"
-                      color="color2"
+                      color="primary"
                       onSuccess={() => onSuccess(quote._id)}
                       onClose={onClose}
                       referenceId={referenceId}
                     />
+                    </div>
+                   
                   )}
                 </ColumnData>
               </RequestRow>

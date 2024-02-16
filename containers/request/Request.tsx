@@ -98,7 +98,8 @@ const QuotePage = ({ id }: { id: string }) => {
       ) : (
         quote !== null && (
           <div>
-            <BackButton />
+              <BackButton />
+              <br />
             <QuoteHeader>Quote Details</QuoteHeader>
             <QuoteDetail>
               <strong>Type: </strong> {quote.type}
