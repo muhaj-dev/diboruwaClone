@@ -53,11 +53,19 @@ const ColumnData = styled.div`
   button {
     outline: none;
     border: none;
-    background: none;
+    background:none;
     font-size: 20px;
-    color: var(--primary);
+    color: var(#fff);
     cursor: pointer;
   }
+
+  .btn {
+    button {
+      background:var(--primary);
+    }
+  }
+
+ 
 `;
 
 // Request History Component
@@ -125,7 +133,8 @@ const RequestList: React.FC = () => {
                 </ColumnData>
                 <ColumnData>
                   {!quote.isPaid && quote.total && (
-                    <PaymentButton
+                    <div className="btn">
+                       <PaymentButton
                       totalPrice={quote.total}
                       openModal={openModal}
                       buttonText="Pay Now"
@@ -134,6 +143,8 @@ const RequestList: React.FC = () => {
                       onClose={onClose}
                       referenceId={referenceId}
                     />
+                    </div>
+                   
                   )}
                 </ColumnData>
               </RequestRow>

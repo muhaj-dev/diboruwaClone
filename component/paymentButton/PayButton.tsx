@@ -1,7 +1,7 @@
 import { usePaystackPayment } from "react-paystack";
 import { toast } from "react-hot-toast";
 import { useSession } from "next-auth/react";
-import { nanoid } from "nanoid";
+
 import React from "react";
 import useAuth from "@/hooks/useAuth";
 import Button from "../ui/button/Button";
@@ -78,7 +78,7 @@ const PaymentButton: React.FC<PaymentButtonProps> = ({
   };
 
   return (
-    <Button size="small" color={color} onClick={handlePayment}>
+    <Button size="small"  color={color} onClick={handlePayment}>
       {buttonText}
     </Button>
   );
