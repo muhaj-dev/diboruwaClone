@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 import Image from "next/image";
 import styled from "styled-components";
@@ -157,3 +159,32 @@ export const MenuTitle = styled.h3`
   margin-bottom: 10vh;
 `;
 export const MenuContainer = styled.div``;
+
+const CTAIcon = styled(RiArrowRightSLine)`
+  margin-left: 0.5rem;
+  font-size: 15px;
+  display: none;
+  transition: display 0.3s;
+`;
+
+export const CTAButton = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+
+  /* background-color: var(--primary-20); */
+  color: var(--color4);
+  /* padding: 5px 10px; */
+  text-decoration: none;
+  border-radius: 20px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  transition: background-color 0.3s;
+
+  &:hover {
+    /* background-color: #2563eb; */
+
+    ${CTAIcon} {
+      display: block;
+    }
+  }
+`;

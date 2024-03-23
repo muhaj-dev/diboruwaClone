@@ -4,7 +4,7 @@ import { teamMembers } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaHammer, FaHandshake, FaHeart, FaTimes } from "react-icons/fa";
+import { FaClock, FaHammer, FaHandshake, FaHeart, FaTimes } from "react-icons/fa";
 import styled from "styled-components";
 
 // Define your styled components below
@@ -84,12 +84,16 @@ const SecondSection = styled.div`
   }
 `;
 const ThreeColumnSection = styled.div`
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
-  gap: 20px; /* Adjust the gap as needed */
-  margin: 30px;
+  gap: 10px; /* Adjust the gap as needed */
+  /* margin: 30px; */
   display: flex;
   flex-direction: column;
+  margin-top: 70px;
+
+  .section{
+    display: flex;
+    justify-content: center;
+  }
 
   @media screen and (max-width: 698px) {
     grid-template-columns: 1fr;
@@ -104,6 +108,7 @@ const Column = styled.div`
   display: grid;
   gap: 10px;
   transition: all 0.3s ease-in-out;
+  max-width: 450px;
 
   .icon {
     width: 50px;
@@ -178,7 +183,10 @@ const SectionSubTitle = styled.p`
 
 const ThirdSection = styled.div`
   text-align: center;
-  padding: 5% 8%;
+  padding-top: 20px;
+  padding-bottom: 3%;
+  padding-left: 8%;
+  padding-right: 8%;
   /* background-color: var(--color2-20); */
 
   .header {
@@ -197,14 +205,22 @@ const ThirdSection = styled.div`
 const ParagraphText = styled.p`
   font-size: 18px;
   line-height: 130%;
+
+  &.card_text{
+    font-size: 16px;
+  }
 `;
 
 const FourthSection = styled.div`
-  padding: 5% 8%;
+  padding: 3% 8%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 30px;
+
+  &.partner_section{
+    padding: 20px 8%;
+  }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -224,6 +240,13 @@ const LeftColumn = styled.div`
     margin-top: 20px;
   }
 
+  ul{
+    margin-top: 10px;
+    li{
+      margin-left: 15px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     width: 100%;
   }
@@ -235,7 +258,7 @@ const Background = styled.div`
 
 const RightColumn = styled.div`
   width: 500px;
-  height: 600px;
+  height: 450px;
   position: relative;
 
   @media screen and (max-width: 768px) {
@@ -244,8 +267,8 @@ const RightColumn = styled.div`
   }
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 130%;
+    height: 130%;
     margin: auto;
     object-fit: contain;
   }
@@ -257,7 +280,7 @@ const TeamMemberList = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center; /* Center the grid items within the container */
-  margin-top: 20px;
+  margin-top: 40px;
   grid-auto-rows: minmax(100px, auto);
   
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
@@ -266,6 +289,20 @@ const TeamMemberList = styled.div`
     grid-template-columns: repeat(4, 1fr); 
   }
 `;
+
+export const Cta = styled.a`
+  
+  text-decoration: none;
+  color: white;
+  background: var(--primary);
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+`
 
 
 const AboutUsPage: React.FC = () => {
@@ -284,7 +321,7 @@ const AboutUsPage: React.FC = () => {
         </div>
 
         <div className="image">
-          <Image src="/ourteam.png" fill={true} alt="...." />
+          <Image src="/team.png" fill={true} alt="...." />
         </div>
       </FirstSection>
       <SecondSection>
@@ -306,12 +343,13 @@ const AboutUsPage: React.FC = () => {
 
         <ThreeColumnSection>
         <SectionTitle>How Diboruwa fits into your schedule</SectionTitle>
+        <div className="section">
           <Column>
             <div className="icon">
-              <FaTimes />
+              <FaClock />
             </div>
-            <ColumnTitle>Step One: Your Time, Your Way</ColumnTitle>
-            <ParagraphText>
+            <ColumnTitle>Your Time, Your Way</ColumnTitle>
+            <ParagraphText className="card_text">
               Pick when our services fit into your schedule. It&#39;s all about giving you control over your time.
             </ParagraphText>
           </Column>
@@ -320,8 +358,8 @@ const AboutUsPage: React.FC = () => {
             <div className="icon">
               <FaHandshake />
             </div>
-            <ColumnTitle> Step Two: Personalized service</ColumnTitle>
-            <ParagraphText>
+            <ColumnTitle>Personalized service</ColumnTitle>
+            <ParagraphText className="card_text" >
               Choose from a range of services and subscription plans designed just for you. It&#39;s all about putting the power of choice right at your fingertips
             </ParagraphText>
           </Column>
@@ -330,12 +368,13 @@ const AboutUsPage: React.FC = () => {
             <div className="icon">
               <FaHeart />
             </div>
-            <ColumnTitle>Step three: Hands free maintenance</ColumnTitle>
-            <ParagraphText>
+            <ColumnTitle>Hands free maintenance</ColumnTitle>
+            <ParagraphText className="card_text">
               Whether you&#39;re coding, closing deals, attending meetings, or acing exams, once scheduled, 
               our team takes care of the rest. It&#39;s about letting you focus on what matters most.
             </ParagraphText>
           </Column>
+          </div>
         </ThreeColumnSection>
 
         {/* <ParagraphText style={{ fontStyle: "italic", fontSize: "14px" }}>
@@ -349,13 +388,13 @@ const AboutUsPage: React.FC = () => {
       <ThirdSection>
         <div className="header">
           <SectionTitle>Our Team</SectionTitle>
-          <SectionSubTitle>The Pillars of Excellence.</SectionSubTitle>
-          <ParagraphText>
+          <SectionSubTitle>Bringing home services, technology and convenience together.</SectionSubTitle>
+          {/* <ParagraphText>
             Behind every wrinkle-free shirt, every gleaming floor, and every
             satisfied bite, is a team that&#39;s passionate about delivering the
             best. Meet the stalwarts who&#39;ve made Dibo Ruwa synonymous with
             trust and quality.
-          </ParagraphText>
+          </ParagraphText> */}
         </div>
 
         <TeamMemberList>
@@ -371,10 +410,30 @@ const AboutUsPage: React.FC = () => {
       </ThirdSection>
       <FourthSection>
         <LeftColumn>
-          <SectionTitle>Join Us</SectionTitle>
-          <ParagraphText>
+          <SectionTitle>Join Our Team</SectionTitle>
+          {/* <ParagraphText>
           Are you passionate about making a difference? We&#39;re looking for people who share our values of compassion, responsibility, and growth. At Dibo Ruwa, we strive to make a positive impact on the world through our commitment to sustainability and our dedication to our employees&#39; development. If you&#39;re ready to join a team that&#39;s passionate about making life easier, simpler, and more fulfilling, we&#39;d love to hear from you
+          </ParagraphText> */}
+          <ParagraphText>
+            Embark on this journey of innovation with us. As a startup redefining home services, we offer:
           </ParagraphText>
+          <ul>
+            <li>
+            Career acceleration in a dynamic environment
+            </li>
+            <li>
+              Meaningful contributions to our mission to digitize home services
+            </li>
+            <li>
+              Diverse perspectives and a collaborative culture
+            </li>
+            <li>
+              Entrepreneurial spirit and impactful decision-making
+            </li>
+            <li>
+                Flexibility and fun in our vibrant work atmosphere.
+            </li>
+          </ul>
           <Background></Background>
 
           <Link href="mailto:info@diboruwa.com">  <button>Apply Now</button></Link>
@@ -383,6 +442,32 @@ const AboutUsPage: React.FC = () => {
         <RightColumn>
           <Image src="/join hands.png" fill={true} alt="joining hands " />
         </RightColumn>
+      </FourthSection>
+
+      <FourthSection className="partner_section">
+       <RightColumn>
+          <Image src="/partner.png" fill={true} alt="joining hands " />
+        </RightColumn>
+
+        <LeftColumn>
+          <SectionTitle>Let&apos;s Collaborate as Partners </SectionTitle>
+          {/* <ParagraphText>
+          Are you passionate about making a difference? We&#39;re looking for people who share our values of compassion, responsibility, and growth. At Dibo Ruwa, we strive to make a positive impact on the world through our commitment to sustainability and our dedication to our employees&#39; development. If you&#39;re ready to join a team that&#39;s passionate about making life easier, simpler, and more fulfilling, we&#39;d love to hear from you
+          </ParagraphText> */}
+          <ParagraphText>
+          Do you have a laundry service, are you a chef or do you own a restaurant, 
+          do you have a cleaning company or are you in the logistics/ delivery business? Let&apos;s work together to disrupt the home services industry.
+          </ParagraphText>
+          <Background></Background>
+
+          {/* <Link href="mailto:info@diboruwa.com">  <button>Become a partner</button></Link> */}
+          <div style={{marginTop: "20px"}}>
+            <Cta href={`https://admin.diboruwa.com/sign-in`} target="_blank">Become a Partner</Cta>
+          </div>
+          
+        
+        </LeftColumn>
+       
       </FourthSection>
     </Container>
   );

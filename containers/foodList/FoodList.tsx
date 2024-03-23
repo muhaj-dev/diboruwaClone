@@ -159,7 +159,8 @@ const FoodList: React.FC<IFoodListProps> = ({}) => {
   };
   return (
     <Container>
-      <h2>Food Menu</h2>
+      <h2>Don&apos;t want to subscribe yet? We&apos;ve  got you covered </h2>
+      <p>Try our food before you subscribe. Check the menu below.</p>
       <Header>
         <SearchContainer>
           <SearchInput
