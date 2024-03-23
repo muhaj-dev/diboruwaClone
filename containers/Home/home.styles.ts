@@ -212,6 +212,8 @@ export const WhyChooseUsContent = styled.ul`
 
   li {
     display: flex;
+    align-items: center;
+    /* justify-content: center; */
     /* align-items: flex-start; */
     gap: 10px;
     font-size: 18px;
@@ -222,6 +224,9 @@ export const WhyChooseUsContent = styled.ul`
       background: var(--primary);
       
     }
+  &.ready{
+    // margin-top: 20px;
+  }
   }
 
   @media screen and (max-width: 768px) {

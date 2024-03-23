@@ -4,7 +4,7 @@ import { teamMembers } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaHammer, FaHandshake, FaHeart } from "react-icons/fa";
+import { FaHammer, FaHandshake, FaHeart, FaTimes } from "react-icons/fa";
 import styled from "styled-components";
 
 // Define your styled components below
@@ -84,15 +84,18 @@ const SecondSection = styled.div`
   }
 `;
 const ThreeColumnSection = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
   gap: 20px; /* Adjust the gap as needed */
   margin: 30px;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (max-width: 698px) {
     grid-template-columns: 1fr;
   }
 `;
+
 const Column = styled.div`
   margin-bottom: 20px;
   padding: 20px;
@@ -132,6 +135,10 @@ const SectionTitle = styled.h2`
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
+
+  &.diff{
+    margin-top: 70px;
+  }
 
   .colored {
     .primary {
@@ -266,14 +273,13 @@ const AboutUsPage: React.FC = () => {
     <Container>
       <FirstSection>
         <div className="text">
-          <h3 className="title">About Us</h3>
+          <h3 className="title">About Diboruwa Home Services</h3>
           <p>
-            In a world that’s constantly moving, everyone seeks a touch of
-            convenience. At Dibo Ruwa, we believe in making lives easier by
-            providing services that let you focus on what truly matters. From
-            pristine laundry to spotless homes and delectable meals delivered
-            right to your door, we&#39;re not just another service provider —
-            we&#39;re your everyday companion.
+          Diboruwa makes life easier by offering personalized home service 
+          subscriptions - including laundry, cleaning, food delivery, 
+          and moving services. Our mission is to digitize 
+          the home services industry in northern Nigeria, 
+          bringing innovation and convenience to every home.
           </p>
         </div>
 
@@ -284,17 +290,29 @@ const AboutUsPage: React.FC = () => {
       <SecondSection>
         <SectionTitle>Who We Are</SectionTitle>
         <ParagraphText className="desc">
-        We believe in making life easier, one service at a time. At Dibo Ruwa, we offer a range of convenient services that take care of the small details so you can focus on what truly matters. From dry cleaning and laundry to home delivery, we&#39;re here to make your life simpler and more enjoyable. Let us help you reclaim your time and energy. Discover how we can make your life easier today.
+          We are a team of techies, entrepreneurs, professionals, and students. Unable to find a 
+          suitable home services solution, we decided to build one. By working with local service providers, 
+          we&#39;re on a mission to digitize home services one service at a time—laundry, 
+          food delivery, cleaning, and logistics/moving services.
+        </ParagraphText>
+
+        <SectionTitle className="diff">Why We Are Different - Because we get the hustle.</SectionTitle>
+        <ParagraphText className="desc">        
+          We&#39;re like your tech-savvy friend who understands your busy life. 
+          Our services are made for people like us – techies, entrepreneurs, professionals, 
+          and students. We&#39;re here to make your life a bit easier with services that fit right into your hectic schedule.
+
         </ParagraphText>
 
         <ThreeColumnSection>
+        <SectionTitle>How Diboruwa fits into your schedule</SectionTitle>
           <Column>
             <div className="icon">
-              <FaHammer />
+              <FaTimes />
             </div>
-            <ColumnTitle>Excellence</ColumnTitle>
+            <ColumnTitle>Step One: Your Time, Your Way</ColumnTitle>
             <ParagraphText>
-            We take pride in providing services of the highest quality.
+              Pick when our services fit into your schedule. It&#39;s all about giving you control over your time.
             </ParagraphText>
           </Column>
 
@@ -302,9 +320,9 @@ const AboutUsPage: React.FC = () => {
             <div className="icon">
               <FaHandshake />
             </div>
-            <ColumnTitle> Punctuality</ColumnTitle>
+            <ColumnTitle> Step Two: Personalized service</ColumnTitle>
             <ParagraphText>
-            We respect your time and deliver on our promises without delay.
+              Choose from a range of services and subscription plans designed just for you. It&#39;s all about putting the power of choice right at your fingertips
             </ParagraphText>
           </Column>
 
@@ -312,19 +330,22 @@ const AboutUsPage: React.FC = () => {
             <div className="icon">
               <FaHeart />
             </div>
-            <ColumnTitle>Sustainability</ColumnTitle>
+            <ColumnTitle>Step three: Hands free maintenance</ColumnTitle>
             <ParagraphText>
-            We are committed to reducing our environmental impact and creating a more sustainable future.
+              Whether you&#39;re coding, closing deals, attending meetings, or acing exams, once scheduled, 
+              our team takes care of the rest. It&#39;s about letting you focus on what matters most.
             </ParagraphText>
           </Column>
         </ThreeColumnSection>
 
-        <ParagraphText style={{ fontStyle: "italic", fontSize: "14px" }}>
+        {/* <ParagraphText style={{ fontStyle: "italic", fontSize: "14px" }}>
           In entrusting us with your laundry, cleaning, and food delivery needs,
           you&#39;re choosing a partner that values excellence, efficiency, and
           environmental responsibility.
-        </ParagraphText>
+        </ParagraphText> */}
       </SecondSection>
+
+      
       <ThirdSection>
         <div className="header">
           <SectionTitle>Our Team</SectionTitle>

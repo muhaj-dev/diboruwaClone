@@ -70,13 +70,16 @@ export default function Home() {
       <HeroContainer bg="primary-20">
         <motion.div className="hero__text">
           <div className="title"  >
-            Live easy. Free yourself from 
+            {/* Live easy. Free yourself from 
               <span style={{ color: currentServiceTextColor, marginRight: "3px"  }}>
                 {" "} {currentService}
-              </span> 
+              </span>  */}
+              Home service subscriptions for techies, entrepreneurs, professionals and students.
           </div>
 
-          <HeroList>
+          <h2 className="sub_title">We take away the drama of house chores with services designed just for you.</h2>
+
+          {/* <HeroList>
             <HeroListItem>
               <span className="dot" />
               <div className="text">
@@ -104,7 +107,7 @@ export default function Home() {
                 </small>
               </div>
             </HeroListItem>
-          </HeroList>
+          </HeroList> */}
 
           <div className="btn_grp">
             <Button
@@ -112,7 +115,7 @@ export default function Home() {
               color="primary"
               onClick={() => router.push(session ? "/dashboard" : "/signin")}
             >
-              Discover Easy Living
+              Get Started
             </Button>
             <div className="contact">
               <button className="withIcon">
@@ -136,9 +139,9 @@ export default function Home() {
       <ServicesSection>
         <header>
           <h3 className="title">Our Services</h3>
-          <p className="subtitle">
+          {/* <p className="subtitle">
             Reliable convenience, always at your service.
-          </p>
+          </p> */}
         </header>
         <ServiceList>
           {services.map((service) => (
@@ -180,26 +183,22 @@ export default function Home() {
         <WhyChooseUsText>
           <WhyChooseUsColored>Why choose DiboRuwa?</WhyChooseUsColored>
           <WhyChooseUsTitle>
-            Because we&#39;re here to do the hard work for you.
+            Because we are a team of techies, entrepreneurs, professionals and students like you who understand the drama of house chores
           </WhyChooseUsTitle>
           <WhyChooseUsContent>
             <li>
               <span className="dot"></span>
-              <p>Your time is precious. You deserve to focus on what truly matters</p>
+              <p>No ready-made home service solution, so we decided to build one ourselves</p>
            </li>
            
             <li>
               <span className="dot"></span>
-              <p>We make it simple to transform your daily routine.</p>
+              <p>We work with certified professionals to deliver top-quality home services.</p>
            </li>
-            <li>
+            {/* <li>
               <span className="dot"></span>
-              <p>Sit back, relax, and let us take care of the rest.</p>
-            </li>
-            <li>
-              <span className="dot"></span>
-              <p>With our services, you can have a clean, organized home without the hassle.</p>
-           </li>
+              <p>Are you convinced yet?</p>
+           </li> */}
           </WhyChooseUsContent>
           <Button
             size="large"
