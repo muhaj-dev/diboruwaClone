@@ -291,7 +291,8 @@ const TeamMemberList = styled.div`
 `;
 
 export const Cta = styled.a`
-  
+  font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
   color: white;
   background: var(--primary);
@@ -321,7 +322,7 @@ const AboutUsPage: React.FC = () => {
         </div>
 
         <div className="image">
-          <Image src="/team.png" fill={true} alt="...." />
+          <Image src="/team_img.png" fill={true} alt="...." />
         </div>
       </FirstSection>
       <SecondSection>

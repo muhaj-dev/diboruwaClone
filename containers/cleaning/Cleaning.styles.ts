@@ -65,23 +65,15 @@ export const HeroImage = styled(Image)`
 `;
 
 export const WYGSection = styled.div`
-  padding: 8%;
+  
+ .heading {
   display: flex;
-  gap: 30px;
-
-  .text_container {
-    flex: 1;
-  }
-
-  .save_time{
-    margin-top: 25px;
-  }
-
-  .heading {
+  justify-content: center;
+  margin-top: 30px;
     .title {
-      font-size: 38px;
+      font-size: 28px;
       font-weight: bold;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
     @media screen and (max-width: 768px) {
       .title {
@@ -92,6 +84,29 @@ export const WYGSection = styled.div`
     }
   }
 
+  .content{
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 20px;
+    padding-bottom: 4%;
+  display: flex;
+  gap: 30px;
+
+  .text_container {
+    flex: 1;
+  }
+
+  .save_time{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h3{
+      font-size: 24px;
+    }
+  }
+
+
   p {
     font-size: 18px;
   }
@@ -100,8 +115,9 @@ export const WYGSection = styled.div`
     flex-direction: column;
     width: 100%;
   }
+}
 `;
-const CTAIcon = styled(RiArrowRightSLine)`
+export const CTAIcon = styled(RiArrowRightSLine)`
   margin-left: 0.5rem;
   font-size: 15px;
   display: none;
@@ -109,16 +125,17 @@ const CTAIcon = styled(RiArrowRightSLine)`
 `;
 
 export const CTAButton = styled(Link)`
-  /* display: inline-flex;
-  align-items: center; */
+  display: inline-flex;
+  align-items: center;
   font-size: 18px;
-  text-align: center;
-  background-color: var(--primary-20);
-  color: #fff;
-  padding: 5px 10px;
+
+  /* background-color: var(--primary-20); */
+  color: var(--color4);
+  /* padding: 10px 10px; */
+  width: 160px;
   text-decoration: none;
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   transition: background-color 0.3s;
 
   &:hover {
@@ -126,9 +143,13 @@ export const CTAButton = styled(Link)`
 
     ${CTAIcon} {
       display: block;
+      margin-top: 3px;
     }
   }
 `;
+
+export const CTAButtonWrapper = styled.div``;
+
 
 export const BenefitList = styled.div`
   flex: 1;
