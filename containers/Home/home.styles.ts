@@ -196,7 +196,7 @@ export const WhyChooseUsColored = styled.h3`
   }
 `;
 export const WhyChooseUsTitle = styled.h2`
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
   @media screen and (max-width: 900px) {
