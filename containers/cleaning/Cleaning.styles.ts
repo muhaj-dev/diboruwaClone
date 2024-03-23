@@ -109,9 +109,10 @@ const CTAIcon = styled(RiArrowRightSLine)`
 `;
 
 export const CTAButton = styled(Link)`
-  display: inline-flex;
-  align-items: center;
+  /* display: inline-flex;
+  align-items: center; */
   font-size: 18px;
+  text-align: center;
   background-color: var(--primary-20);
   color: #fff;
   padding: 5px 10px;
@@ -152,6 +153,9 @@ export const SubscriptionSection = styled.section`
     width: 40%;
     font-size: 26px;
     font-weight: 600;
+  }
+  p{
+    margin-top: 10px;
   }
 
   @media screen and (max-width: 768px) {
