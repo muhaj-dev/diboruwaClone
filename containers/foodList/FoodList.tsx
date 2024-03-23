@@ -14,9 +14,18 @@ import styled from "styled-components";
 export type IFoodListProps = {};
 
 export const Container = styled.div`
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 4%;
+
 
   h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  p{
     text-align: center;
     margin-bottom: 30px;
   }
