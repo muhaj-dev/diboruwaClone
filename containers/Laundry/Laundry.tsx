@@ -142,6 +142,9 @@ const Laundry = () => {
         <div className="box bottom"></div>
 
         <div className="price__text">
+        <div className="imageContainer">
+             <HeroImage src='/the bag.png' fill={true} alt="" />
+          </div>
           <div className="save_money">
             <h3 className="title">
               {/* Wash & <br /> Fold <span>Pricing</span> */}
@@ -152,10 +155,7 @@ const Laundry = () => {
             </p>
           </div>
          
-          <div className="imageContainer">
-             <HeroImage src='/the bag.png' fill={true} alt="" />
-          </div>
-         
+        
         </div>
         <div className="pricecard__container">
           <PriceCard />

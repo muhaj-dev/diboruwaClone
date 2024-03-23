@@ -111,16 +111,18 @@ export const PriceTagSection = styled.div`
   .price__text {
     /* width: 30%; */
     display: flex;
+    flex-direction: column;
 
     .save_money{
       display: flex;
       flex-direction: column;
-      
+      width: 70%;
+
       .title {
-      font-size: 38px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      width: 50%;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        width: 50%;
 
       span {
         color: var(--color4);

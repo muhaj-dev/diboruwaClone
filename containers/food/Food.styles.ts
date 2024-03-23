@@ -83,28 +83,57 @@ export const HeroImage = styled(Image)`
 `;
 
 export const HWWSecetion = styled.div`
-  padding: 5% 8%;
-
+  padding: 5% 4%;
+  
   .title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
+    
+  }
+  .title_header{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
   }
 
-  .save_time{
+  .content{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
     width: 100%;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+
+     .save_time{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      margin-top: 20px;
+      /* width: 100%; */
+      gap: 10px;
+      width: 30%;
+
+      h3{
+        font-size: 28px;
+      }
+    }
+
   }
+
+ 
 `;
 export const HWWList = styled.div`
-  display: grid;
+  display: flex;
+/*   
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  grid-gap: 50px;
   justify-content: space-between;
+  width: 60%;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -119,8 +148,8 @@ export const HWWCard = styled.div`
   background: var(--primary-20);
 
   .image {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 10px;
     background: var(--primary-20);
     display: flex;
@@ -130,13 +159,13 @@ export const HWWCard = styled.div`
   }
 
   .title {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 12px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 130%;
     color: #333;
   }
@@ -193,7 +222,9 @@ export const MenuTitle = styled.h3`
 `;
 export const MenuContainer = styled.div``;
 
-const CTAIcon = styled(RiArrowRightSLine)`
+export const CTAButtonWrapper = styled.div``;
+
+export const CTAIcon = styled(RiArrowRightSLine)`
   margin-left: 0.5rem;
   font-size: 15px;
   display: none;
@@ -201,16 +232,16 @@ const CTAIcon = styled(RiArrowRightSLine)`
 `;
 
 export const CTAButton = styled(Link)`
-  /* display: inline-flex;
-  align-items: center; */
-  font-size: 18px;
-  text-align: center;
-  background-color: var(--primary-20);
-  color: #fff;
-  padding: 5px 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+
+  /* background-color: var(--primary-20); */
+  color: var(--color4);
+  /* padding: 5px 10px; */
   text-decoration: none;
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   transition: background-color 0.3s;
 
   &:hover {
@@ -218,6 +249,8 @@ export const CTAButton = styled(Link)`
 
     ${CTAIcon} {
       display: block;
+      margin-top: 4px;
+      
     }
   }
 `;

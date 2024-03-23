@@ -12,7 +12,9 @@ import {
   MenuContainer,
   MenuSection,
   MenuTitle,
-  CTAButton
+  CTAButton,
+  CTAButtonWrapper,
+  CTAIcon,
 } from "./Food.styles";
 import Button from "@/component/ui/button/Button";
 import MoreServices from "@/component/shared/MoreServices";
@@ -26,6 +28,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import RestaurantList from "@/component/restaurants/Restaurants";
 import FoodList from "../foodList/FoodList";
+import { FaBowlFood } from "react-icons/fa6";
 
 const isBetween10amAnd6pm = () => {
   const now = new Date();
@@ -97,26 +100,30 @@ const Food = () => {
       </HeroContainer>
 
       <HWWSecetion>
-        <h3 className="title">How we work</h3>
-
-        <HWWList>
-          {HWW.map((step, index) => (
-            <div className="card" key={index}>
-              <HWWCard>
-                <div className="image"></div>
-                <h3 className="title">{step.title}</h3>
-                <p>{step.content}</p>
-              </HWWCard>
-            </div>
-          ))}
-        </HWWList>
-        <div className="save_time">
-            <h3>Quick Time Saving Hack 🕒</h3>
-             <p>Subscribe to our monthly food plan and save up to 56 hours a month on food preparation time.</p>
-             <div className="button">
-               <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Food' } }}></CTAButton>
-             </div>
-            
+        <h3 className="title_header">How we work</h3>
+        <div className="content">
+          <div className="save_time">
+              <h3>Quick Time Saving Hack 🕒</h3>
+              <p>Subscribe to our monthly food plan and save up to 56 hours a month on food preparation time.</p>
+              <CTAButton href={{ pathname: '/subscriptions', query: { tabName: 'Food' } }}>
+                  Subscribe now
+                  <CTAButtonWrapper>
+                    <CTAIcon />
+                  </CTAButtonWrapper>
+                </CTAButton>
+              
+           </div>
+          <HWWList>
+            {HWW.map((step, index) => (
+              <div className="card" key={index}>
+                <HWWCard>
+                  <div className="image"> <FaBowlFood  color="green" /> </div>
+                  <h3 className="title">{step.title}</h3>
+                  <p>{step.content}</p>
+                </HWWCard>
+              </div>
+            ))}
+          </HWWList>
           </div>
       </HWWSecetion>
 

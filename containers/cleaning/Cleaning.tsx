@@ -13,7 +13,9 @@ import {
   SubscriptionList,
   SubscriptionSection,
   WYGSection,
-  CTAButton
+  CTAButton,
+  CTAButtonWrapper,
+  CTAIcon,
 } from "./Cleaning.styles";
 import Button from "@/component/ui/button/Button";
 import Image from "next/image";
@@ -146,36 +148,40 @@ const Cleaning = () => {
           <HeroImage src="/cleaner.png" fill={true} alt="..." />
         </HeroImageContainer>
       </HeroContainer>
-
+     
       <WYGSection>
-        <div className="text_container">
-          <div className="heading">
+      <div className="heading">
             <h3 className="title">What you get</h3>
           </div>
-          <p>
-            We provide online booking, lightening fast customer service,
-            fantastic organic cleaning using only eco sustainable quality
-            cleaning product, pricing that beat competitors and a 100% guarantee
-            every time
-          </p>
-
-          <div className="save_time">
-            <h3>Quick Time Saving Hack 🕒</h3>
-             <p>Subscribe for a cleaning plan  and save up to 12 hours a month </p>
-             <div className="button">
-               <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Cleaning' } }}></CTAButton>
-             </div>
-             
-          </div>
-        </div>
-
-        <BenefitList>
-          {Wyg.map((item, index) => (
-            <div className="card" key={index}>
-              <WhatYouGetCard icon={item.icon} description={item.description} />
+        <div className="content">       
+          <div className="text_container">
+            {/* <p>
+              We provide online booking, lightening fast customer service,
+              fantastic organic cleaning using only eco sustainable quality
+              cleaning product, pricing that beat competitors and a 100% guarantee
+              every time
+            </p> */}
+            <div className="save_time">
+              <h3>Quick Time Saving Hack 🕒</h3>
+              <p>Subscribe for a cleaning plan  and save up to 12 hours a month </p>
+              <CTAButton href={{ pathname: '/subscriptions', query: { tabName: 'Cleaning' } }}>
+                  Subscribe now
+                  <CTAButtonWrapper>
+                    <CTAIcon />
+                  </CTAButtonWrapper>
+                </CTAButton>
+              
             </div>
-          ))}
-        </BenefitList>
+          </div>
+
+          <BenefitList>
+            {Wyg.map((item, index) => (
+              <div className="card" key={index}>
+                <WhatYouGetCard icon={item.icon} description={item.description} />
+              </div>
+            ))}
+          </BenefitList>
+        </div>
       </WYGSection>
 
       <SubscriptionSection id="cleaning">

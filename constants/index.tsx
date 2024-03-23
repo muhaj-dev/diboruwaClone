@@ -31,7 +31,7 @@ export const routes: Route[] = [
 
   {
     name: "Subscriptions",
-    path: "/pricing",
+    path: "/subscriptions",
   },
   {
     name: "About Us",
@@ -158,7 +158,7 @@ export const sublinks = [
     title: "Company",
     links: [
       { name: "About Us", path: "/aboutus" },
-      { name: "Pricing", path: "/pricing" },
+      { name: "Subscriptions", path: "/subscriptions" },
     ],
   },
   {
