@@ -51,7 +51,7 @@ const requestSchema = new Schema(
     },
     status: {
       type: String,
-      enum: ["pending", "paid", "processed"],
+      enum: ["pending", "paid", "processing"],
       default: "pending",
       required: true,
     },
