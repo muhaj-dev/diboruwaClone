@@ -95,6 +95,7 @@ const ThreeColumnSection = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
 const Column = styled.div`
   margin-bottom: 20px;
   padding: 20px;
