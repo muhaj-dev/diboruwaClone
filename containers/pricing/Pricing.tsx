@@ -217,10 +217,10 @@ const Pricing = () => {
   return (
     <Container>
       <Heading>
-        <Title>Convenience and Quality on your Budget</Title>
+        <Title>Personalized Home service for Techies, Entrepreneurs, Professionals and Students.</Title>
         <Subtitle>
-          Whatever plan you choose, our expert team is ready to lighten your
-          load.
+        Food delivery, Cleaning and Laundry subscriptions designed to fit 
+        into your schedule and make your life easier.
         </Subtitle>
         <Subtitle>What service(s) are you interested in?</Subtitle>
       </Heading>

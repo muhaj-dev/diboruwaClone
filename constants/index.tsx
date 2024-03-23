@@ -30,7 +30,7 @@ export const routes: Route[] = [
   },
 
   {
-    name: "Pricing",
+    name: "Subscription",
     path: "/pricing",
   },
   {
@@ -75,7 +75,7 @@ export const services = [
     color: "color3",
     bg: "color3-20",
     content:
-      "Convenient, ready-to-eat meals delivered to your door. \nStress-free eating.",
+      "Fresh, ready-to-eat food prepared to your taste",
     cta: {
       label: "Order Now",
       path: "/food",
@@ -89,7 +89,7 @@ export const services = [
     color: "color2",
     bg: "color2-20",
     content:
-      "Let us do the laundry so you can reclaim your time.\n 24/7 laundry service for a stress-free life.",
+      "Clean and careful laundry delivered on time",
     cta: {
       label: "Schedule Pickup",
       path: "/laundry",
@@ -102,7 +102,7 @@ export const services = [
     color: "primary",
     bg: "primary-20",
     content:
-      "We make home cleaning easy. \n Book a cleaning session today and enjoy a spotless space. \n Scheduling is quick and hassle-free.",
+      "Clean, organised and spotless space",
     cta: {
       label: "Book Now",
       path: "/cleaning",
@@ -127,28 +127,28 @@ export const services = [
 export const accordionData = [
   {
     id: 1,
-    title: "How can I easily place an order?",
+    title: "Is it possible to try the service with a single purchase instead of committing to a monthly subscription?",
     content:
-      "Placing an order is a breeze! Just navigate to the desired service on our website, select your preferences, and follow the simple checkout process. For regular users, our dashboard provides even quicker access to frequent orders.",
+      "Absolutely! You can try our service with a one-time purchase; it's not limited to monthly subscriptions.",
   },
   {
     id: 2,
-    title: "Are there subscription plans available for regular services",
+    title: "Can I schedule laundry and cleaning services to match my irregular working hours?",
     content:
-      "Yes, we offer subscription plans that provide additional benefits and savings for our regular customers.",
+      "Certainly! Our scheduling is flexible, letting you choose service times that match your dynamic schedule.",
   },
   {
     id: 3,
-    title: "How do you ensure the quality of food delivered?",
+    title: "How can I report a late delivery or an issue with the service?",
     content:
-      "We partner with reputable restaurants and enforce strict quality checks to ensure your food is fresh, hygienic, and delicious.",
+      "Thank you for your feedback. If you're having issues, please reach out to our customer service via email, WhatsApp, or the website's Q&A form.",
   },
   {
     id: 4,
     title:
-      "What measures are taken to care for delicate garments during laundry?",
+      "Is there compensation or a refund policy in place for late deliveries or unfulfilled orders?",
     content:
-      "Our laundry professionals are trained in fabric care, ensuring that delicate garments are handled with utmost care and precision.",
+      "In the rare event that your order is ever late or unfulfilled, we offer compensation like discounts, partial or full refunds, based on the situation. Your satisfaction is our priority.",
   },
 ]
 
