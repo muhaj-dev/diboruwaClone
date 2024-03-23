@@ -44,23 +44,36 @@ const Food = () => {
       <HeroContainer bg="primary-20">
         <div className="hero__text">
           <h3 className="title">
-            Don&apos;t want to cook? Don&apos;t know what to eat?
-            <br />
-            We got you.
+            Don&apos;t want to cook? Don&apos;t know what to eat? We got you.
           </h3>
-
           <HeroList>
             <HeroListItem>
-              {/* <span className="dot" /> */}
-              Experience new cultures with homemade meals from top chefs and restaurants near you
+              <span className="dot" />
+              <div className="text">
+                {/* <strong>Book Online</strong> */}
+                <small>
+                Experience new cultures with homemade meals from top chefs and restaurants near you
+                </small>
+              </div>
             </HeroListItem>
             <HeroListItem>
-              {/* <span className="dot" /> */}
-              Select your dish and enjoy hassle-free delivery.
+              <span className="dot" />
+              <div className="text">
+                {/* <strong>Expert Clean </strong> */}
+                <small>
+                Select your dish and enjoy hassle-free delivery.
+                </small>
+              </div>
             </HeroListItem>
             <HeroListItem>
-              {/* <span className="dot" /> */}
-              Save up to 14 hours a week in food prep time.
+              <span className="dot" />
+              <div className="text">
+                {/* <strong>Enjoy Your Space</strong> */}
+                <small>
+                  {" "}
+                  Save up to 14 hours a week in food prep time.
+                </small>
+              </div>
             </HeroListItem>
           </HeroList>
 
@@ -97,7 +110,7 @@ const Food = () => {
             </div>
           ))}
         </HWWList>
-        <div>
+        <div className="save_time">
             <h3>Quick Time Saving Hack 🕒</h3>
              <p>Subscribe to our monthly food plan and save up to 56 hours a month on food preparation time.</p>
              <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Food' } }}></CTAButton>
@@ -105,13 +118,11 @@ const Food = () => {
       </HWWSecetion>
 
       <MenuSection id="food">
-      
         {/* <RestaurantList restaurants={restaurants}/> */}
 
         <FoodList/>
 
       </MenuSection>
-
       <MoreServices />
 
       <Modal

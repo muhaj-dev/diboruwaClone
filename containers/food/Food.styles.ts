@@ -17,10 +17,11 @@ export const Container = styled.div`
     }
   }
 `;
+
 export const HeroList = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   margin: 20px 0;
 `;
 export const HeroListItem = styled.div`
@@ -28,6 +29,7 @@ export const HeroListItem = styled.div`
   align-items: flex-start;
   gap: 10px;
   font-size: 18px;
+
   .dot {
     width: 20px;
     min-width: 20px;
@@ -35,7 +37,30 @@ export const HeroListItem = styled.div`
     border-radius: 50%;
     background: var(--primary);
   }
+
+  .text {
+    display: grid;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    align-items: baseline;
+  }
 `;
+
+// export const HeroListItem = styled.div`
+//   display: flex;
+//   align-items: flex-start;
+//   gap: 10px;
+//   font-size: 18px;
+//   .dot {
+//     width: 20px;
+//     min-width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//     background: var(--primary);
+//   }
+// `;
 export const HeroImageContainer = styled.div`
   width: 500px;
   height: 600px;
@@ -64,6 +89,13 @@ export const HWWSecetion = styled.div`
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
+  }
+
+  .save_time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
   }
 `;
 export const HWWList = styled.div`
@@ -171,13 +203,12 @@ export const CTAButton = styled(Link)`
   display: inline-flex;
   align-items: center;
   font-size: 18px;
-
-  /* background-color: var(--primary-20); */
-  color: var(--color4);
-  /* padding: 5px 10px; */
+  background-color: var(--primary-20);
+  color: #fff;
+  padding: 5px 10px;
   text-decoration: none;
   border-radius: 20px;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s;
 
   &:hover {
