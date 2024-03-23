@@ -111,7 +111,12 @@ export const PriceTagSection = styled.div`
   .price__text {
     /* width: 30%; */
     display: flex;
-    .title {
+
+    .save_money{
+      display: flex;
+      flex-direction: column;
+      
+      .title {
       font-size: 38px;
       font-weight: bold;
       margin-bottom: 10px;
@@ -121,6 +126,9 @@ export const PriceTagSection = styled.div`
         color: var(--color4);
       }
     }
+
+    }
+    
   }
 
   .box {
