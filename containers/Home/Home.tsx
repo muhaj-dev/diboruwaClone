@@ -183,12 +183,12 @@ export default function Home() {
         <WhyChooseUsText>
           <WhyChooseUsColored>Why choose DiboRuwa?</WhyChooseUsColored>
           <WhyChooseUsTitle>
-            Because we are a team of techies, entrepreneurs, professionals and students like you who understand the drama of house chores
+            Because we are a team of techies, entrepreneurs, professionals and students like you who understand the drama of house chores.
           </WhyChooseUsTitle>
           <WhyChooseUsContent>
             <li>
               <span className="dot"></span>
-              <p>No ready-made home service solution, so we decided to build one ourselves</p>
+              <p>No ready-made home service solution, so we decided to build one ourselves.</p>
            </li>
            
             <li>
