@@ -30,7 +30,7 @@ export const routes: Route[] = [
   },
 
   {
-    name: "Subscription",
+    name: "Subscriptions",
     path: "/pricing",
   },
   {

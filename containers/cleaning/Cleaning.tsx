@@ -13,6 +13,7 @@ import {
   SubscriptionList,
   SubscriptionSection,
   WYGSection,
+  CTAButton
 } from "./Cleaning.styles";
 import Button from "@/component/ui/button/Button";
 import Image from "next/image";
@@ -32,6 +33,7 @@ import axios from "axios";
 import useQuote from "@/hooks/useQuote";
 import NotificationModal from "@/component/NotificationModal";
 import Moving from "@/component/movingRequestCard/Moving";
+import Link from "next/link";
 
 const Cleaning = () => {
   const { addSubscription, subscriptions, modal, closeModal } = useCartStore();
@@ -95,36 +97,35 @@ const Cleaning = () => {
       <HeroContainer bg="primary-20">
         <div className="hero__text">
           <h3 className="title">
-            Home Cleaning, Tailored to Perfection with Diboruwa
+            Clean, organized and relaxing space. 
           </h3>
 
           <HeroList>
             <HeroListItem>
               <span className="dot" />
               <div className="text">
-                <strong>Book Online</strong>
+                {/* <strong>Book Online</strong> */}
                 <small>
-                  Choose your service and preferred time slot with a few clicks.
+                 Get back 2 - 3 hours of your day 
                 </small>
               </div>
             </HeroListItem>
             <HeroListItem>
               <span className="dot" />
               <div className="text">
-                <strong>Expert Clean </strong>
+                {/* <strong>Expert Clean </strong> */}
                 <small>
-                 
-                  Our team brings the shine, making sure every corner sparkles.
+                 Hire cleaning professionals with over 2,500 hours of work done
                 </small>
               </div>
             </HeroListItem>
             <HeroListItem>
               <span className="dot" />
               <div className="text">
-                <strong>Enjoy Your Space</strong>
+                {/* <strong>Enjoy Your Space</strong> */}
                 <small>
                   {" "}
-                  Step into a home that feels fresh, without any of the work.
+                  Enjoy a spotless home without lifting a finger.
                 </small>
               </div>
             </HeroListItem>
@@ -151,13 +152,18 @@ const Cleaning = () => {
           <div className="heading">
             <h3 className="title">What you get</h3>
           </div>
-
           <p>
             We provide online booking, lightening fast customer service,
             fantastic organic cleaning using only eco sustainable quality
-            cleaning product, pricing that beat competitors and a 200% guarantee
+            cleaning product, pricing that beat competitors and a 100% guarantee
             every time
           </p>
+
+          <div>
+            <h3>Quick Time Saving Hack 🕒</h3>
+             <p>Subscribe for a cleaning plan  and save up to 12 hours a month </p>
+             <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Cleaning' } }}></CTAButton>
+          </div>
         </div>
 
         <BenefitList>
@@ -170,7 +176,8 @@ const Cleaning = () => {
       </WYGSection>
 
       <SubscriptionSection id="cleaning">
-        <h2>Have you been wondering how to get your apartment cleaned?</h2>
+        <h2>Don&apos;t want to subscribe yet? We&apos;ve  got you covered </h2>
+        <p>Try out our cleaning service before you subscribe. Get a cleaning quote?</p>
         <SubscriptionList>
           {subscriptionPlans.map((plan, index) => (
             <div className="card" key={index}>
@@ -198,7 +205,7 @@ const Cleaning = () => {
                     }
                   }}
                 >
-                  <span> Book a Session</span>
+                  <span>Get a quote</span>
                 </Button>
               </SubscriptionCard>
             </div>

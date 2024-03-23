@@ -12,6 +12,7 @@ import {
   MenuContainer,
   MenuSection,
   MenuTitle,
+  CTAButton
 } from "./Food.styles";
 import Button from "@/component/ui/button/Button";
 import MoreServices from "@/component/shared/MoreServices";
@@ -43,26 +44,23 @@ const Food = () => {
       <HeroContainer bg="primary-20">
         <div className="hero__text">
           <h3 className="title">
-            Delicious Meals,
+            Don&apos;t want to cook? Don&apos;t know what to eat?
             <br />
-            Delivered Effortlessly by Diboruwa
+            We got you.
           </h3>
 
           <HeroList>
             <HeroListItem>
-              <span className="dot" />
-              Browse & Choose - Explore our menu filled with delectable choices
-              from top eateries.
+              {/* <span className="dot" /> */}
+              Experience new cultures with homemade meals from top chefs and restaurants near you
             </HeroListItem>
             <HeroListItem>
-              <span className="dot" />
-              Place Your Order - Pick your favorites, add to cart, and check out
-              with ease.
+              {/* <span className="dot" /> */}
+              Select your dish and enjoy hassle-free delivery.
             </HeroListItem>
             <HeroListItem>
-              <span className="dot" />
-              Savor the Taste - Sit back and relax as fresh, delicious meals are
-              delivered to your door.
+              {/* <span className="dot" /> */}
+              Save up to 14 hours a week in food prep time.
             </HeroListItem>
           </HeroList>
 
@@ -99,6 +97,11 @@ const Food = () => {
             </div>
           ))}
         </HWWList>
+        <div>
+            <h3>Quick Time Saving Hack 🕒</h3>
+             <p>Subscribe to our monthly food plan and save up to 56 hours a month on food preparation time.</p>
+             <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Food' } }}></CTAButton>
+          </div>
       </HWWSecetion>
 
       <MenuSection id="food">
