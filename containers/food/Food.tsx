@@ -113,7 +113,10 @@ const Food = () => {
         <div className="save_time">
             <h3>Quick Time Saving Hack 🕒</h3>
              <p>Subscribe to our monthly food plan and save up to 56 hours a month on food preparation time.</p>
-             <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Food' } }}></CTAButton>
+             <div className="button">
+               <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Food' } }}></CTAButton>
+             </div>
+            
           </div>
       </HWWSecetion>
 

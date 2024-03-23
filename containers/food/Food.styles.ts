@@ -96,6 +96,7 @@ export const HWWSecetion = styled.div`
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
+    width: 100%;
   }
 `;
 export const HWWList = styled.div`
@@ -200,9 +201,10 @@ const CTAIcon = styled(RiArrowRightSLine)`
 `;
 
 export const CTAButton = styled(Link)`
-  display: inline-flex;
-  align-items: center;
+  /* display: inline-flex;
+  align-items: center; */
   font-size: 18px;
+  text-align: center;
   background-color: var(--primary-20);
   color: #fff;
   padding: 5px 10px;

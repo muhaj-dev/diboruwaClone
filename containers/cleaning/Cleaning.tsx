@@ -162,7 +162,10 @@ const Cleaning = () => {
           <div className="save_time">
             <h3>Quick Time Saving Hack 🕒</h3>
              <p>Subscribe for a cleaning plan  and save up to 12 hours a month </p>
-             <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Cleaning' } }}></CTAButton>
+             <div className="button">
+               <CTAButton href={{ pathname: '/pricing', query: { tabName: 'Cleaning' } }}></CTAButton>
+             </div>
+             
           </div>
         </div>
 

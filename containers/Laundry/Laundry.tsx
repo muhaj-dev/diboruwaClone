@@ -82,28 +82,28 @@ const Laundry = () => {
             <HeroListItem>
               <span className="dot" />
               <div className="text">
-                <strong> Schedule a Pickup</strong>
+                {/* <strong> Schedule a Pickup</strong> */}
                 <small> Choose a time, and we&apos;ll be there.</small>
               </div>
             </HeroListItem>
             <HeroListItem>
               <span className="dot" />
               <div className="text">
-                <strong>Expert Cleaning </strong>
+                {/* <strong>Expert Cleaning </strong> */}
                 <small>
                   {" "}
                   Your clothes are treated with care, ensuring a fresh and clean
-                  feel
+                  feel.
                 </small>
               </div>
             </HeroListItem>
             <HeroListItem>
               <span className="dot" />
               <div className="text">
-                <strong>Swift Delivery</strong>
+                {/* <strong>Swift Delivery</strong> */}
                 <small>
                   Freshly laundered clothes returned to your doorstep, ready to
-                  wear
+                  wear.
                 </small>
               </div>
             </HeroListItem>
@@ -142,12 +142,16 @@ const Laundry = () => {
         <div className="box bottom"></div>
 
         <div className="price__text">
-          <h3 className="title">
-            {/* Wash & <br /> Fold <span>Pricing</span> */}
-            Quick Money Saving Hack 💰
-          </h3>
-          <p>Subscribe for a laundry plan and save up to 15% each month on laundry +  
-            Get a complimentary branded Diboruwa laundry bag to keep your clothes organized.</p>
+          <div className="save_money">
+            <h3 className="title">
+              {/* Wash & <br /> Fold <span>Pricing</span> */}
+              Quick Money Saving Hack 💰
+            </h3>
+            <p>Subscribe for a laundry plan and save up to 15% each month on laundry +  
+              Get a complimentary branded Diboruwa laundry bag to keep your clothes organized.
+            </p>
+          </div>
+         
           <div className="imageContainer">
              <HeroImage src='/the bag.png' fill={true} alt="" />
           </div>
