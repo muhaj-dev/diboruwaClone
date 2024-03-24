@@ -93,6 +93,11 @@ const ThreeColumnSection = styled.div`
   .section{
     display: flex;
     justify-content: center;
+
+     @media screen and (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
   @media screen and (max-width: 698px) {
@@ -140,6 +145,11 @@ const SectionTitle = styled.h2`
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
+
+   @media screen and (max-width: 768px) {
+      text-align: center;
+      margin-top: 30px;
+    }
 
   &.diff{
     margin-top: 70px;
@@ -220,6 +230,11 @@ const FourthSection = styled.div`
 
   &.partner_section{
     padding: 20px 8%;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    
   }
 
   @media screen and (max-width: 768px) {
@@ -230,13 +245,32 @@ const FourthSection = styled.div`
 const LeftColumn = styled.div`
   /* Style for the left column */
   width: 40%;
-  button {
-    padding: 10px 25px;
-    background: var(--primary);
-    color: #fff;
-    outline: none;
-    border: none;
-    border-radius: 50px;
+
+  .button_cont{
+     button {
+      padding: 10px 25px;
+      background: var(--primary);
+      color: #fff;
+      outline: none;
+      border: none;
+      border-radius: 50px;
+      margin-top: 20px;
+
+    }
+     @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      /* margin-top: 30px; */
+    }
+  }
+ 
+  .button_partner{
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      margin-bottom: -20px;
+    }
     margin-top: 20px;
   }
 
@@ -300,9 +334,6 @@ export const Cta = styled.a`
   border-radius: 20px;
   margin-top: 20px;
 
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
 `
 
 
@@ -321,8 +352,11 @@ const AboutUsPage: React.FC = () => {
           </p>
         </div>
 
-        <div className="image">
+        {/* <div className="image">
           <Image src="/team_img.png" fill={true} alt="...." />
+        </div> */}
+        <div className="image">
+          <Image src="/team_img.png" width={300} height={400} alt="...." />
         </div>
       </FirstSection>
       <SecondSection>
@@ -437,7 +471,9 @@ const AboutUsPage: React.FC = () => {
           </ul>
           <Background></Background>
 
-          <Link href="mailto:info@diboruwa.com">  <button>Apply Now</button></Link>
+          <div className="button_cont">
+             <Link href="mailto:info@diboruwa.com">  <button>Apply Now</button></Link>
+          </div>
         
         </LeftColumn>
         <RightColumn>
@@ -462,11 +498,10 @@ const AboutUsPage: React.FC = () => {
           <Background></Background>
 
           {/* <Link href="mailto:info@diboruwa.com">  <button>Become a partner</button></Link> */}
-          <div style={{marginTop: "20px"}}>
+          <div className="button_partner">
             <Cta href={`https://admin.diboruwa.com/sign-in`} target="_blank">Become a Partner</Cta>
           </div>
           
-        
         </LeftColumn>
        
       </FourthSection>

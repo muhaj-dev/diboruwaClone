@@ -61,8 +61,8 @@ const SubTitle = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 38px;
-  margin-bottom: 20px;
+  font-size: 34px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
@@ -173,7 +173,7 @@ const PlanCard = styled.div`
 
 const subscriptions = ["Food", "Cleaning", "Laundry"];
 
-const Pricing = () => {
+const Subscriptions = () => {
   const {
     isSubmitting,
     isError,
@@ -284,4 +284,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Subscriptions;

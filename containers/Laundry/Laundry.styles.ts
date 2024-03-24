@@ -31,10 +31,19 @@ export const HeroListItem = styled.div`
     height: 20px;
     border-radius: 50%;
     background: var(--primary);
+     @media screen and (max-width: 768px) {
+       width: 10px;
+      min-width: 10px;
+      height: 10px;
+    }
   }
 
   .text {
     display: grid;
+    /* @media screen and (max-width: 768px) {
+    font-size: 16px;
+  } */
+
   }
 
   @media screen and (max-width: 768px) {
@@ -88,6 +97,7 @@ export const HIWTitle = styled.div`
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
+  text-align: center;
 `;
 export const HIWList = styled.div`
   display: grid;
@@ -108,10 +118,11 @@ export const PriceTagSection = styled.div`
   align-items: center;
   overflow: hidden;
 
-  .price__text {
+  .price_sub_section {
     /* width: 30%; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     .save_money{
       display: flex;
@@ -130,6 +141,23 @@ export const PriceTagSection = styled.div`
     }
 
     }
+
+    @media screen and (max-width: 768px) {
+    align-items: center;
+    width: 100%;
+
+    .save_money{
+      width: 100%;
+      align-items: center;
+      text-align: justify;
+
+      .title{
+        width: 100%;
+        text-align: center;
+        
+      }
+    }
+  }
     
   }
 

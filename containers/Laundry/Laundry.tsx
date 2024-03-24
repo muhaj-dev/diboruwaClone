@@ -141,8 +141,8 @@ const Laundry = () => {
         <div className="box top"></div>
         <div className="box bottom"></div>
 
-        <div className="price__text">
-        <div className="imageContainer">
+        <div className="price_sub_section">
+           <div className="imageContainer">
              <HeroImage src='/the bag.png' fill={true} alt="" />
           </div>
           <div className="save_money">
@@ -155,8 +155,8 @@ const Laundry = () => {
             </p>
           </div>
          
-        
         </div>
+
         <div className="pricecard__container">
           <PriceCard />
         </div>

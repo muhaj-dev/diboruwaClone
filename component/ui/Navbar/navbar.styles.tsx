@@ -81,6 +81,7 @@ export const Toggle = styled.div`
   display: none;
   font-size: 24px;
   color: #48db45;
+  cursor: pointer;
 
   z-index: 10;
 

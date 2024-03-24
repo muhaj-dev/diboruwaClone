@@ -153,7 +153,14 @@ const Cleaning = () => {
       <div className="heading">
             <h3 className="title">What you get</h3>
           </div>
-        <div className="content">       
+        <div className="content">    
+        <BenefitList>
+            {Wyg.map((item, index) => (
+              <div className="card" key={index}>
+                <WhatYouGetCard icon={item.icon} description={item.description} />
+              </div>
+            ))}
+          </BenefitList>   
           <div className="text_container">
             {/* <p>
               We provide online booking, lightening fast customer service,
@@ -164,23 +171,18 @@ const Cleaning = () => {
             <div className="save_time">
               <h3>Quick Time Saving Hack 🕒</h3>
               <p>Subscribe for a cleaning plan  and save up to 12 hours a month </p>
+              <div className="sub_button">
               <CTAButton href={{ pathname: '/subscriptions', query: { tabName: 'Cleaning' } }}>
                   Subscribe now
                   <CTAButtonWrapper>
                     <CTAIcon />
                   </CTAButtonWrapper>
                 </CTAButton>
-              
+                </div>
             </div>
           </div>
 
-          <BenefitList>
-            {Wyg.map((item, index) => (
-              <div className="card" key={index}>
-                <WhatYouGetCard icon={item.icon} description={item.description} />
-              </div>
-            ))}
-          </BenefitList>
+         
         </div>
       </WYGSection>
 

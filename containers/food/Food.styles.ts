@@ -36,6 +36,12 @@ export const HeroListItem = styled.div`
     height: 20px;
     border-radius: 50%;
     background: var(--primary);
+
+    @media screen and (max-width: 768px) {
+      width: 10px;
+      height: 10px;
+      min-width: 10px;
+    }
   }
 
   .text {
@@ -84,6 +90,10 @@ export const HeroImage = styled(Image)`
 
 export const HWWSecetion = styled.div`
   padding: 5% 4%;
+
+   @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
   
   .title {
     font-size: 28px;
@@ -106,6 +116,11 @@ export const HWWSecetion = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
 
      .save_time{
       display: flex;
@@ -120,10 +135,21 @@ export const HWWSecetion = styled.div`
       h3{
         font-size: 28px;
       }
+
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h3{
+          text-align: center;
+          font-size: 24px;
+        }
+      }
     }
 
   }
-
+ 
  
 `;
 export const HWWList = styled.div`
@@ -136,7 +162,10 @@ export const HWWList = styled.div`
   width: 60%;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); */
+    flex-direction: column;
+    width: 90%;
+    gap: 30px;
   }
 `;
 export const HWWCard = styled.div`
