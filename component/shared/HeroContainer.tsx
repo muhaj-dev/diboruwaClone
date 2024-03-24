@@ -42,6 +42,13 @@ const Container = styled.div<{ background: string }>`
       }
     }
 
+    .sub_title{
+     
+      @media screen and (max-width: 900px) {
+        font-size: 22px;
+      }
+    }
+
     .subtitle{
       font-size: 22px;
       span{

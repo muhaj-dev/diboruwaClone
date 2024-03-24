@@ -102,6 +102,17 @@ const Food = () => {
       <HWWSecetion>
         <h3 className="title_header">How we work</h3>
         <div className="content">
+        <HWWList>
+            {HWW.map((step, index) => (
+              <div className="card" key={index}>
+                <HWWCard>
+                  <div className="image"> <FaBowlFood  color="green" /> </div>
+                  <h3 className="title">{step.title}</h3>
+                  <p>{step.content}</p>
+                </HWWCard>
+              </div>
+            ))}
+          </HWWList>
           <div className="save_time">
               <h3>Quick Time Saving Hack 🕒</h3>
               <p>Subscribe to our monthly food plan and save up to 56 hours a month on food preparation time.</p>
@@ -113,17 +124,7 @@ const Food = () => {
                 </CTAButton>
               
            </div>
-          <HWWList>
-            {HWW.map((step, index) => (
-              <div className="card" key={index}>
-                <HWWCard>
-                  <div className="image"> <FaBowlFood  color="green" /> </div>
-                  <h3 className="title">{step.title}</h3>
-                  <p>{step.content}</p>
-                </HWWCard>
-              </div>
-            ))}
-          </HWWList>
+         
           </div>
       </HWWSecetion>
 

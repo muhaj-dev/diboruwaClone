@@ -69,7 +69,7 @@ export default function Home() {
     <Container>
       <HeroContainer bg="primary-20">
         <motion.div className="hero__text">
-          <div className="title"  >
+          <div className="title" >
             {/* Live easy. Free yourself from 
               <span style={{ color: currentServiceTextColor, marginRight: "3px"  }}>
                 {" "} {currentService}

@@ -1,3 +1,4 @@
+import { HiBars3 } from 'react-icons/hi2';
 "use client";
 import Link from "next/link";
 import { RiArrowRightSLine } from "react-icons/ri";
@@ -35,6 +36,12 @@ export const HeroListItem = styled.div`
     height: 20px;
     border-radius: 50%;
     background: var(--primary);
+
+     @media screen and (max-width: 768px) {
+      width: 10px;
+      height: 10px;
+      min-width: 10px;
+    }
   }
 
   .text {
@@ -79,7 +86,7 @@ export const WYGSection = styled.div`
       .title {
         font-size: 28px;
         font-weight: bold;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -89,21 +96,40 @@ export const WYGSection = styled.div`
     padding-right: 6%;
     padding-top: 20px;
     padding-bottom: 4%;
-  display: flex;
-  gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
 
   .text_container {
-    flex: 1;
+    /* flex: 1; */
+    display: flex;
+    justify-content: center;
+    
+    @media screen and (max-width: 768px) {
+      /* align-items: center; */
+      text-align: center;
+  }
   }
 
   .save_time{
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     h3{
       font-size: 24px;
     }
+    @media screen and (max-width: 768px) {
+      .sub_button{
+        display: flex;
+        justify-content: center;
+
+    }
+  }
+   
+    
   }
 
 
@@ -139,12 +165,14 @@ export const CTAButton = styled(Link)`
   transition: background-color 0.3s;
 
   &:hover {
-    /* background-color: #2563eb; */
-
     ${CTAIcon} {
       display: block;
       margin-top: 3px;
     }
+  }
+
+   @media screen and (max-width: 768px) {
+      justify-content: center;
   }
 `;
 

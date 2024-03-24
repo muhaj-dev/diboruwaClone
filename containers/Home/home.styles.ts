@@ -200,7 +200,7 @@ export const WhyChooseUsTitle = styled.h2`
   font-weight: bold;
   margin-bottom: 20px;
   @media screen and (max-width: 900px) {
-    font-size: 30px;
+    font-size: 24px;
   }
 `;
 export const WhyChooseUsContent = styled.ul`
@@ -222,6 +222,11 @@ export const WhyChooseUsContent = styled.ul`
       height: 15px;
       border-radius: 50%;
       background: var(--primary);
+
+        @media screen and (max-width: 768px) {
+          width: 22px;
+          height: 12px;
+        }
       
     }
   &.ready{
