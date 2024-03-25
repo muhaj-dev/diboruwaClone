@@ -14,9 +14,18 @@ import styled from "styled-components";
 export type IFoodListProps = {};
 
 export const Container = styled.div`
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 4%;
+
 
   h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  p{
     text-align: center;
     margin-bottom: 30px;
   }
@@ -159,7 +168,8 @@ const FoodList: React.FC<IFoodListProps> = ({}) => {
   };
   return (
     <Container>
-      <h2>Food Menu</h2>
+      <h2>Don&apos;t want to subscribe yet? We&apos;ve  got you covered </h2>
+      <p>Try our food before you subscribe. Check the menu below.</p>
       <Header>
         <SearchContainer>
           <SearchInput

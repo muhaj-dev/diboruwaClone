@@ -196,11 +196,11 @@ export const WhyChooseUsColored = styled.h3`
   }
 `;
 export const WhyChooseUsTitle = styled.h2`
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
   @media screen and (max-width: 900px) {
-    font-size: 30px;
+    font-size: 24px;
   }
 `;
 export const WhyChooseUsContent = styled.ul`
@@ -212,6 +212,8 @@ export const WhyChooseUsContent = styled.ul`
 
   li {
     display: flex;
+    align-items: center;
+    /* justify-content: center; */
     /* align-items: flex-start; */
     gap: 10px;
     font-size: 18px;
@@ -220,8 +222,16 @@ export const WhyChooseUsContent = styled.ul`
       height: 15px;
       border-radius: 50%;
       background: var(--primary);
+
+        @media screen and (max-width: 768px) {
+          width: 22px;
+          height: 12px;
+        }
       
     }
+  &.ready{
+    // margin-top: 20px;
+  }
   }
 
   @media screen and (max-width: 768px) {

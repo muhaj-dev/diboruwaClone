@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 import Image from "next/image";
 import styled from "styled-components";
@@ -15,10 +17,11 @@ export const Container = styled.div`
     }
   }
 `;
+
 export const HeroList = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   margin: 20px 0;
 `;
 export const HeroListItem = styled.div`
@@ -26,14 +29,44 @@ export const HeroListItem = styled.div`
   align-items: flex-start;
   gap: 10px;
   font-size: 18px;
+
   .dot {
     width: 20px;
     min-width: 20px;
     height: 20px;
     border-radius: 50%;
     background: var(--primary);
+
+    @media screen and (max-width: 768px) {
+      width: 10px;
+      height: 10px;
+      min-width: 10px;
+    }
+  }
+
+  .text {
+    display: grid;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    align-items: baseline;
   }
 `;
+
+// export const HeroListItem = styled.div`
+//   display: flex;
+//   align-items: flex-start;
+//   gap: 10px;
+//   font-size: 18px;
+//   .dot {
+//     width: 20px;
+//     min-width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//     background: var(--primary);
+//   }
+// `;
 export const HeroImageContainer = styled.div`
   width: 500px;
   height: 600px;
@@ -56,23 +89,83 @@ export const HeroImage = styled(Image)`
 `;
 
 export const HWWSecetion = styled.div`
-  padding: 5% 8%;
+  padding: 5% 4%;
 
+   @media screen and (max-width: 768px) {
+    margin-top: 30px;
+  }
+  
   .title {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
+    
   }
+  .title_header{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+  }
+
+  .content{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+     .save_time{
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      margin-top: 20px;
+      /* width: 100%; */
+      gap: 10px;
+      width: 30%;
+
+      h3{
+        font-size: 28px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h3{
+          text-align: center;
+          font-size: 24px;
+        }
+      }
+    }
+
+  }
+ 
+ 
 `;
 export const HWWList = styled.div`
-  display: grid;
+  display: flex;
+/*   
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+  grid-gap: 50px;
   justify-content: space-between;
+  width: 60%;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); */
+    flex-direction: column;
+    width: 90%;
+    gap: 30px;
   }
 `;
 export const HWWCard = styled.div`
@@ -84,8 +177,8 @@ export const HWWCard = styled.div`
   background: var(--primary-20);
 
   .image {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 10px;
     background: var(--primary-20);
     display: flex;
@@ -95,13 +188,13 @@ export const HWWCard = styled.div`
   }
 
   .title {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 12px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 130%;
     color: #333;
   }
@@ -157,3 +250,36 @@ export const MenuTitle = styled.h3`
   margin-bottom: 10vh;
 `;
 export const MenuContainer = styled.div``;
+
+export const CTAButtonWrapper = styled.div``;
+
+export const CTAIcon = styled(RiArrowRightSLine)`
+  margin-left: 0.5rem;
+  font-size: 15px;
+  display: none;
+  transition: display 0.3s;
+`;
+
+export const CTAButton = styled(Link)`
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+
+  /* background-color: var(--primary-20); */
+  color: var(--color4);
+  /* padding: 5px 10px; */
+  text-decoration: none;
+  border-radius: 20px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  transition: background-color 0.3s;
+
+  &:hover {
+    /* background-color: #2563eb; */
+
+    ${CTAIcon} {
+      display: block;
+      margin-top: 4px;
+      
+    }
+  }
+`;

@@ -96,23 +96,24 @@ const feedbackData: Feedback[] = [
   {
     id: 1,
     message:
-      "Every day with Diboruwa is like a breath of fresh air. From the food delivery to their laundry service, there's a genuine sense of ease. Evening meals feel like occasions, and I can't remember the last time my laundry felt like a chore. Their commitment to simplifying daily tasks shines through in every service.",
+      "Their cleaning experts have an eye for detail that I haven’t seen elsewhere. Every nook and cranny sparkles, and the sense of ease this brings to my daily routine? Absolutely priceless.",
   },
   {
     id: 2,
     message:
-      "Turning to Diboruwa for my everyday needs was one of my best decisions. My weekends used to be a blur of chores, but now? I’ve reclaimed them. Laundry feels like a luxury, not a task. And the best part? My everyday wear, especially the delicate ones, come back looking brand new, every single time.",
+      "The first time I used Diboruwa, they were 2 days late in delivering my clothes. They informed me in advance that there would be a delay. Customer service like this is hard to find in Kano. Since then, I have been doing my laundry with them. And they always deliver on time.",
   },
   {
     id: 3,
     message:
-      "Diboruwa adds simplicity to our routine. Their food delivery just makes evenings so much easier!",
+      "Turning to Diboruwa for my everyday needs was one of my best decisions. My weekends used to be a blur of chores, but now? I’ve reclaimed them. Laundry feels like a luxury, not a task. And the best part? My everyday wear, especially the delicate ones, come back looking brand new, every single time.",
   },
   {
     id: 4,
     message:
-      "Their cleaning experts have an eye for detail that I haven’t seen elsewhere. Every nook and cranny sparkles, and the sense of ease this brings to my daily routine? Absolutely priceless.",
+      "Diboruwa adds simplicity to our routine. Their food delivery just makes evenings so much easier!",
   },
+  
 ];
 
 const FeedbackCarousel: React.FC = () => {

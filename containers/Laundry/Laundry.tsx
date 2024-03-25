@@ -82,28 +82,28 @@ const Laundry = () => {
             <HeroListItem>
               <span className="dot" />
               <div className="text">
-                <strong> Schedule a Pickup</strong>
+                {/* <strong> Schedule a Pickup</strong> */}
                 <small> Choose a time, and we&apos;ll be there.</small>
               </div>
             </HeroListItem>
             <HeroListItem>
               <span className="dot" />
               <div className="text">
-                <strong>Expert Cleaning </strong>
+                {/* <strong>Expert Cleaning </strong> */}
                 <small>
                   {" "}
                   Your clothes are treated with care, ensuring a fresh and clean
-                  feel
+                  feel.
                 </small>
               </div>
             </HeroListItem>
             <HeroListItem>
               <span className="dot" />
               <div className="text">
-                <strong>Swift Delivery</strong>
+                {/* <strong>Swift Delivery</strong> */}
                 <small>
                   Freshly laundered clothes returned to your doorstep, ready to
-                  wear
+                  wear.
                 </small>
               </div>
             </HeroListItem>
@@ -141,15 +141,22 @@ const Laundry = () => {
         <div className="box top"></div>
         <div className="box bottom"></div>
 
-        <div className="price__text">
-          <h3 className="title">
-            Wash & <br /> Fold <span>Pricing</span>
-          </h3>
-          <div className="imageContainer">
+        <div className="price_sub_section">
+           <div className="imageContainer">
              <HeroImage src='/the bag.png' fill={true} alt="" />
+          </div>
+          <div className="save_money">
+            <h3 className="title">
+              {/* Wash & <br /> Fold <span>Pricing</span> */}
+              Quick Money Saving Hack 💰
+            </h3>
+            <p>Subscribe for a laundry plan and save up to 15% each month on laundry +  
+              Get a complimentary branded Diboruwa laundry bag to keep your clothes organized.
+            </p>
           </div>
          
         </div>
+
         <div className="pricecard__container">
           <PriceCard />
         </div>
@@ -158,10 +165,8 @@ const Laundry = () => {
       <PlansSection id="laundry">
         <div className="text__container">
           <div className="heading">
-            <h3 className="title">Effortless One-Off Laundry Services</h3>
-            <p>For a stress-free laundry experience, simply select your items like duvets, t-shirts, and more, 
-               then hit Get a Quote. And if you&apos;re interested in regular service, 
-               check out our subscription plans under our pricing section.</p>
+            <h3 className="title">Don&apos;t want to subscribe yet? We&apos;ve got you covered </h3>
+            <p>Try out our laundry service before you subscribe. Get a quote now.</p>
           </div>
 
           <div className="benefits">
@@ -179,12 +184,12 @@ const Laundry = () => {
               We offer a hassle-free replacement policy for any damaged items.
               No inquiries needed.
             </div>
-            <div className="benefit">
+            {/* <div className="benefit">
               <span className="icon">
                 <CheckCircledIcon />
               </span>
-               Need a quick laundry solution without the commitment to a plan? We've got you covered.
-            </div>
+               Need a quick laundry solution without the commitment to a plan? We&apos;ve got you covered.
+            </div> */}
           </div>
         </div>
 

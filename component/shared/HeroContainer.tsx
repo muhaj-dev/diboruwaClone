@@ -25,7 +25,7 @@ const Container = styled.div<{ background: string }>`
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 
     @media screen and (max-width: 900px) {
       width: 100%;
@@ -39,6 +39,13 @@ const Container = styled.div<{ background: string }>`
       font-weight: bold;
       @media screen and (max-width: 900px) {
         font-size: 28px;
+      }
+    }
+
+    .sub_title{
+     
+      @media screen and (max-width: 900px) {
+        font-size: 22px;
       }
     }
 

@@ -61,8 +61,8 @@ const SubTitle = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 38px;
-  margin-bottom: 20px;
+  font-size: 34px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 768px) {
     font-size: 18px;
@@ -173,7 +173,7 @@ const PlanCard = styled.div`
 
 const subscriptions = ["Food", "Cleaning", "Laundry"];
 
-const Pricing = () => {
+const Subscriptions = () => {
   const {
     isSubmitting,
     isError,
@@ -217,10 +217,10 @@ const Pricing = () => {
   return (
     <Container>
       <Heading>
-        <Title>Convenience and Quality on your Budget</Title>
+        <Title>Personalized Home service for Techies, Entrepreneurs, Professionals and Students.</Title>
         <Subtitle>
-          Whatever plan you choose, our expert team is ready to lighten your
-          load.
+        Food delivery, Cleaning and Laundry subscriptions designed to fit 
+        into your schedule and make your life easier.
         </Subtitle>
         <Subtitle>What service(s) are you interested in?</Subtitle>
       </Heading>
@@ -284,4 +284,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Subscriptions;
