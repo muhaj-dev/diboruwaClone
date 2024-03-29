@@ -55,7 +55,7 @@ const Food = () => {
               <div className="text">
                 {/* <strong>Book Online</strong> */}
                 <small>
-                Experience new cultures with homemade meals from top chefs and restaurants near you
+                Experience new cultures with homemade meals from top chefs and restaurants near you.
                 </small>
               </div>
             </HeroListItem>
