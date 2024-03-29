@@ -131,6 +131,7 @@ export const HWWSecetion = styled.div`
       /* width: 100%; */
       gap: 10px;
       width: 30%;
+      
 
       h3{
         font-size: 28px;
