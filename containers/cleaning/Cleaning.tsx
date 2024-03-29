@@ -108,7 +108,7 @@ const Cleaning = () => {
               <div className="text">
                 {/* <strong>Book Online</strong> */}
                 <small>
-                 Get back 2 - 3 hours of your day 
+                 Get back 2 - 3 hours of your day. 
                 </small>
               </div>
             </HeroListItem>
@@ -117,7 +117,7 @@ const Cleaning = () => {
               <div className="text">
                 {/* <strong>Expert Clean </strong> */}
                 <small>
-                 Hire cleaning professionals with over 2,500 hours of work done
+                 Hire cleaning professionals with over 2,500 hours of work done.
                 </small>
               </div>
             </HeroListItem>
@@ -170,7 +170,7 @@ const Cleaning = () => {
             </p> */}
             <div className="save_time">
               <h3>Quick Time Saving Hack 🕒</h3>
-              <p>Subscribe for a cleaning plan  and save up to 12 hours a month </p>
+              <p>Subscribe for a cleaning plan  and save up to 12 hours a month. </p>
               <div className="sub_button">
               <CTAButton href={{ pathname: '/subscriptions', query: { tabName: 'Cleaning' } }}>
                   Subscribe now
