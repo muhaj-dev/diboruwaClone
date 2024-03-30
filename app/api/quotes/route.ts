@@ -95,7 +95,7 @@ export async function POST(req: Request, res: Response) {
 
     await sendEmail(
       user.email,
-      "new Quote",
+      "New Quote",
       UserQuoteRequestConfirmation({
         firstName: user.firstName,
         serviceType: data.type,
@@ -122,7 +122,7 @@ export async function POST(req: Request, res: Response) {
     } else if (data.type === "cleaning") {
       await sendEmail(
         "ibrahim.saliman.zainab@gmail.com",
-        "new Quote",
+        "New Quote",
         AdminHomeCleaningQuoteRequest({
           adminName: "Ibrahim",
           userName: `${user.firstName} ${user.lastName}`,
