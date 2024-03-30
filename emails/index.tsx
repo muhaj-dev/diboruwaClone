@@ -1271,7 +1271,7 @@ export const AdminQuoteRequestNotification: React.FC<{
     lineHeight: "2",
   };
   return (
-    <EmailTemplate subject="New Quote request">
+    <EmailTemplate subject="New Quote Request">
       <div style={adminEmailStyle}>
         <strong>Admin Team,</strong>
         <p>
@@ -1870,7 +1870,7 @@ export const CourierQuoteRequestNotification: React.FC<{
     lineHeight: "2",
   };
   return (
-    <EmailTemplate subject="New Quote request">
+    <EmailTemplate subject="New Quote Request">
       <div style={adminEmailStyle}>
         <strong>Hello, {courier }</strong>
         <p>
