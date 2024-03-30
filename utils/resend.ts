@@ -11,9 +11,9 @@ const sendEmail = async (
 ) => {
   try {
     const data = await resend.emails.send({
-      from: "info@teams.diboruwa.com",
+      from: "donotreply@teams.diboruwa.com",
       to,
-      text: "email from DiboRowa",
+      text: "DiboRuwa Team",
       subject,
       react,
     });
