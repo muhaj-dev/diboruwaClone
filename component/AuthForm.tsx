@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import useForm from "@/hooks/useForm";
 import Button from "./ui/button/Button";
@@ -12,9 +12,10 @@ export interface AuthFormProps {
   title: string;
   fields: AuthField[];
   onSubmit: (formData: { [key: string]: string }) => void;
-  onCancel?: () => void;
+  onInputChange?: (name: string, value: string) => void;
   submitButtonText?: string;
   loading: boolean;
+  isFormValid?: boolean;
 }
 
 export interface AuthField {
@@ -92,9 +93,10 @@ const AuthForm: React.FC<AuthFormProps> = ({
   title,
   fields,
   onSubmit,
-  onCancel,
+  onInputChange,
   submitButtonText = "Submit",
   loading = false,
+  isFormValid,
 }) => {
   const initialState = fields.reduce<{ [key: string]: string }>(
     (acc, field) => ({
@@ -106,6 +108,9 @@ const AuthForm: React.FC<AuthFormProps> = ({
 
   const path = usePathname();
 
+  const [passwordMatchError, setPasswordMatchError] = useState<string>("");
+  const [isFormFilled, setIsFormFilled] = useState<boolean>(false);
+
   const { formData, handleChange, handleSubmit, resetForm, errors } = useForm(
     initialState,
     () => {
@@ -113,6 +118,21 @@ const AuthForm: React.FC<AuthFormProps> = ({
       resetForm();
     }
   );
+
+ // Function to check if password and confirm password match
+ useEffect(() => {
+  if (path === "/signup" && formData.password !== formData.confirmPassword) {
+    setPasswordMatchError("Passwords do not match");
+  } else if (path === "/signup") {
+    setPasswordMatchError("");
+  }
+}, [formData.password, formData.confirmPassword, path]);
+
+  // Function to check if all fields are filled
+  useEffect(() => {
+    const isFilled = Object.values(formData).every((value) => value.trim() !== "");
+    setIsFormFilled(isFilled);
+  }, [formData]);
 
   return (
     <AuthFormContainer>
@@ -126,7 +146,13 @@ const AuthForm: React.FC<AuthFormProps> = ({
               type={field.type}
               id={field.name}
               value={formData[field.name]}
-              onChange={(e) => handleChange(e, field.name)}
+              // onChange={(e) => handleChange(e, field.name)}
+              onChange={(e) => {
+                handleChange(e, field.name);
+                if (onInputChange) {
+                  onInputChange(field.name, e.target.value);
+                }
+              }}
               error={
                 path === "/signup" && field.name === "password"
                   ? getPasswordStrengthError(formData[field.name])
@@ -136,6 +162,8 @@ const AuthForm: React.FC<AuthFormProps> = ({
             />
           </AuthFormFieldWrapper>
         ))}
+          {passwordMatchError && <p style={{ color: "red" }}>{passwordMatchError}</p>}
+
         <AuthFormAlternateRoute className="alternate__route mb-2 float-right">
           {path === "/signin" ? (
             <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -161,7 +189,12 @@ const AuthForm: React.FC<AuthFormProps> = ({
             </AuthFormSmall>
           )}
         </AuthFormAlternateRoute>
-        <Button size="medium" color="primary" disabled={loading}>
+        <Button 
+          size="medium" 
+          color="primary" 
+          disabled={loading || !isFormFilled || !!passwordMatchError}
+        
+        >
           {loading ? <Loader /> : submitButtonText}
         </Button>
       </AuthFormWrapper>

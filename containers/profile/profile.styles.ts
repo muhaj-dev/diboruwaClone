@@ -8,7 +8,7 @@ export const Container = styled.div`
 `;
 
 export const BackBtn = styled.div`
-margin-bottom: 30px;
+  margin-bottom: 30px;
 `;
 
 export const Form = styled.form`
@@ -55,6 +55,35 @@ export const EditBtn = styled.button`
   &:hover {
     background: var(--primary);
   }
+`;
+
+export const EditBtn2 = styled.button`
+  outline: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+
+  transition: all 0.5s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--primary);
+  }
+`;
+
+export const Editcont = styled.button`
+outline: none;
+  border: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  background: transparent;
+  transition: all 0.5s ease;
+  cursor: pointer;
 `;
 
 export const SaveButton = styled.button`
