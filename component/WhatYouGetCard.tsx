@@ -9,7 +9,7 @@ interface WhatYouGetCardProps {
 }
 
 const CardWrapper = styled.div`
-  width: 250px;
+  max-width: 320px;
   border-radius: 0.75rem;
  
   padding: 10px;

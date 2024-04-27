@@ -16,7 +16,7 @@ export const ServiceCardContainer = styled.div<{ bg: string }>`
   border-radius: 8px;
   background-color: ${(props) => `var(--${props.bg})`};
   width: 100%;
-  height: 350px;
+  height: 300px;
 
   max-width: 350px;
   z-index: 5;
