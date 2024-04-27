@@ -24,8 +24,9 @@ export const routes: Route[] = [
     icon: "🛠️",
     subroutes: [
       { name: "Laundry", path: "/laundry", icon: assets.soap },
-      { name: "Cleaning", path: "cleaning", icon: assets.cleaningImg },
       { name: "Food", path: "/food", icon: assets.food },
+      { name: "Cleaning", path: "cleaning", icon: assets.cleaningImg },
+      { name: "Moving", path: "/moving", icon: assets.scooter },
     ],
   },
 
@@ -106,6 +107,19 @@ export const services = [
     cta: {
       label: "Book Now",
       path: "/cleaning",
+    },
+  },
+  {
+    title: "Moving and Delivery",
+    category: "moving",
+    image: assets.scooter,
+    color: "primary",
+    bg: "color4-20",
+    content:
+      "Move or Deliver Items Without Hassles",
+    cta: {
+      label: "Schedule a Move",
+      path: "/moving",
     },
   },
 
@@ -198,6 +212,25 @@ export const Wyg = [
     description: "Unlimited, responsive customer service",
   },
 ]
+export const WygMoving = [
+  {
+    icon: "/people.png",
+    description: "Fast and reliable moving services",
+  },
+  {
+    icon: "/Group.png",
+    description: "Professional packing and unpacking",
+  },
+  {
+    icon: "/shield-tick.png",
+    description: "Fully insured transport for peace of mind",
+  },
+  {
+    icon: "/message-notif.png",
+    description: "24/7 customer support for any inquiries",
+  },
+];
+
 
 export const subscriptionPlans = [
   {
@@ -243,14 +276,19 @@ export const DashboradServices = [
     url: "/food",
   },
   {
+    title: "Laundry Pickup",
+    image: assets.soap,
+    url: "/laundry",
+  },
+  {
     title: "Schedule Cleaning",
     image: assets.broom,
     url: "/cleaning",
   },
   {
-    title: "Laundry Pickup",
-    image: assets.soap,
-    url: "/laundry",
+    title: "Moving and Delivery",
+    image: assets.scooter,
+    url: "/moving",
   },
   // {
   //   title: "Requests",

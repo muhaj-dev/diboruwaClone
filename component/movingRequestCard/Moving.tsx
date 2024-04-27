@@ -22,15 +22,35 @@ interface Properties {
 
 const Container = styled.div`
   background: #fff;
-  padding: 20px;
+  padding: 2%;
   border-radius: 20px;
   height: auto;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+
+  @media screen and (max-width: 768px) {
+      flex-direction: column;
+  padding: 3%;
+
+    }
 
   h2 {
-    margin-bottom: 20px;
     font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    p{
+        font-size: 16px;
+        margin-bottom: 30px;
+        width: 70%;
+        text-align: center;
+    }
   }
 
   p {
@@ -283,15 +303,18 @@ const Moving: React.FC = () => {
     { id: 1, name: "Bed", amount: 0 },
     { id: 2, name: "Chair", amount: 0 },
     { id: 3, name: "Wardrope", amount: 0 },
-    { id: 4, name: "Sofa", amount: 0 },
-    { id: 4, name: "Mattress", amount: 0 },
-    { id: 4, name: "Food stuff", amount: 0 },
-    { id: 4, name: "Fridge", amount: 0 },
-    { id: 4, name: "TV sets", amount: 0 },
-    { id: 4, name: "Fan", amount: 0 },
-    { id: 4, name: "Air condition", amount: 0 },
-    { id: 4, name: "Other electronics", amount: 0 },
-    { id: 5, name: "Others properties", amount: 0 },
+    { id: 5, name: "Sofa", amount: 0 },
+    { id: 6, name: "Mattress", amount: 0 },
+    { id: 7, name: "Food stuff", amount: 0 },
+    { id: 8, name: "Fridge", amount: 0 },
+    { id: 9, name: "TV sets", amount: 0 },
+    { id: 10, name: "Fan", amount: 0 },
+    { id: 11, name: "Air condition", amount: 0 },
+    { id: 12, name: "Other electronics", amount: 0 },
+    { id: 13, name: "Clothing materials", amount: 0 },
+    { id: 14, name: "Solar battery", amount: 0 },
+    { id: 15, name: "Other items", amount: 0 },
+
     // Add more laundry items as needed
   ];
 
@@ -396,16 +419,17 @@ const Moving: React.FC = () => {
 
   return (
     <Container>
-      <h3 className="title">Simplifying Your Move from Start to Finish</h3>
-
-      <p>Contact us today to make it the easiest move of your life.</p>
-
+      <div className="title"> 
+        <p> 
+          Fill the form below to simplify your move and delivery
+        </p>
+      </div>
       <MultiSelectWrapper ref={dropdownRef}>
         {/* Add an input field for custom items */}
         <MultiSelectButton onClick={() => setDropdownOpen(!isDropdownOpen)}>
           <CustomInput
             type="text"
-            placeholder="Type a custom item..."
+            placeholder="Select or type the item to move or deliver"
             value={customItem}
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
               setCustomItem(e.target.value)

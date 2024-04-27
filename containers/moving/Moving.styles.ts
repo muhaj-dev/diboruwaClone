@@ -80,7 +80,7 @@ export const WYGSection = styled.div`
     .title {
       font-size: 28px;
       font-weight: bold;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
     }
     @media screen and (max-width: 768px) {
       .title {
@@ -180,10 +180,10 @@ export const CTAButtonWrapper = styled.div``;
 
 
 export const BenefitList = styled.div`
-  flex: 1;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+  padding: 4%;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -195,18 +195,25 @@ export const SubscriptionSection = styled.section`
   padding: 5% 8%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 30px;
   background: var(--primary-20);
 
-  h2 {
-    width: 40%;
+  .mover_top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
     font-size: 26px;
     font-weight: 600;
   }
   p{
     margin-top: 10px;
   }
+  }
+
+  
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -215,6 +222,19 @@ export const SubscriptionSection = styled.section`
       width: 100%;
       font-size: 18px;
     }
+
+     .mover_top{
+       text-align: center;
+
+    h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  p{
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  }
   }
 `;
 
@@ -235,9 +255,10 @@ export const LocationInput = styled.input`
 `;
 
 export const SubscriptionList = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     width: 100%;

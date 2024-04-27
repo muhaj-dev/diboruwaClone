@@ -21,15 +21,13 @@ export const Container = styled.div`
     color: var(--color4);
   }
 
-  
-
   @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
 export const Title = styled.h3`
   font-size: 20px;
-  width: 100px;
+  width: 120px;
 `;
 export const ImgContainer = styled.div`
   width: 80px;

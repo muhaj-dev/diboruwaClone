@@ -1,5 +1,7 @@
 import logo from "./logo.png";
 import broom from "./mop (1) 1.svg";
+import spary from "./spary.svg"
+import scooter from "./truck-delivered-icon.svg"
 import chefHat from "./chef-hat 2.svg";
 import soap from "./laundry-detergent 2.svg";
 import food from "./fried-rice 6.svg";
@@ -45,6 +47,8 @@ export const assets = {
   favicon,
   logo,
   broom,
+  spary,
+  scooter,
   chefHat,
   soap,
   food,
