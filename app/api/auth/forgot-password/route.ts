@@ -26,7 +26,7 @@ export async function POST(req: Request, res: Response) {
 
     if (!userExists) {
       return new Response(
-        "no User found, Try entering the correct email address",
+        "No user found, Try entering the correct email address",
         { status: 400 }
       );
     }

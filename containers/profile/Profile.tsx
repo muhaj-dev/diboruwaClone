@@ -4,6 +4,8 @@ import {
   BackBtn,
   Container,
   EditBtn,
+  Editcont,
+  EditBtn2,
   Form,
   FormControl,
   SaveButton,
@@ -48,9 +50,6 @@ const Profile = () => {
   };
 
   const onSubmit = async (values: any) => {
-   
-
-   
     setLoading(true);
     try {
       // Call the updateProfile function from the service to update the profile
@@ -83,8 +82,6 @@ const Profile = () => {
     profileValidations
   );
 
- 
-
   // const { formData, handleChange, handleSubmit, resetForm, errors, isValid } = useForm(
   //   {
   //     firstName: session ? session?.user.firstName : "",
@@ -108,10 +105,17 @@ const Profile = () => {
       </BackBtn>
 
       <Form onSubmit={handleSubmit}>
-        <h2>Profile</h2>
-        <EditBtn type="button" onClick={() => setIsEditable((prev) => !prev)}>
+        <Editcont>
+          <h2>Edit Profile</h2>
+         
+           
+          <EditBtn2 type="button" onClick={() => setIsEditable((prev) => !prev)}>
+            <Pencil1Icon />
+          </EditBtn2>
+        </Editcont>
+        {/* <EditBtn type="button" onClick={() => setIsEditable((prev) => !prev)}>
           <Pencil1Icon />
-        </EditBtn>
+        </EditBtn> */}
         <FormControl>
           <Input
             label="First Name"
@@ -201,7 +205,7 @@ const Profile = () => {
 
         {isEditable && (
           <SaveButton type="submit" disabled={loading}>
-            {loading ? <Loader/> : "Save"}
+            {loading ? <Loader /> : "Save"}
           </SaveButton>
         )}
       </Form>

@@ -3,7 +3,7 @@ import useAuth from "@/hooks/useAuth";
 import AuthForm, { AuthField } from "./AuthForm";
 import Modal from "./Modal";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import NotificationModal from "./NotificationModal";
 
@@ -50,12 +50,8 @@ const SignUp: React.FC<SignUpPageProps> = ({ isModal = false }) => {
     modalErrorType,
     closeModal,
   } = useAuth();
-
-  const handleSignIn = async (formData: { [key: string]: string }) => {
-    console.log("Sign Up", formData);
-    await signup(formData);
-    // router.back();
-  };
+  
+  const [formData, setFormData] = useState<{ [key: string]: string }>({});
 
   useEffect(() => {
     if (session && session.user) {
@@ -64,15 +60,40 @@ const SignUp: React.FC<SignUpPageProps> = ({ isModal = false }) => {
     }
   }, [session, router, isModal]);
 
+  // const handleSignIn = async (formData: { [key: string]: string }) => {
+  //   console.log("Sign Up", formData);
+  //   await signup(formData);
+  //   // router.back();
+  // };
+  const handleSignUp = async (formData: { [key: string]: string }) => {
+    console.log("Sign Up", formData);
+    await signup(formData);
+    // router.back();
+  };
+  const handleInputChange = (name: string, value: string) => {
+    setFormData((prevFormData: any) => ({ ...prevFormData, [name]: value }));
+  };
+
+  const isFormValid = () => {
+    const values = Object.values(formData);
+    const hasEmptyFields = values.some((value) => value.trim() === "");
+    const passwordsMatch = formData.password === formData.confirmPassword;
+    return !hasEmptyFields && passwordsMatch;
+  };
+
+
+
   return (
     <div className="">
       <Modal open={isModal} onClose={() => router.back()}>
         <AuthForm
           title="Sign Up"
           fields={signUpFields}
-          onSubmit={handleSignIn}
+          onSubmit={handleSignUp}
+          onInputChange={handleInputChange}
           submitButtonText="Sign Up"
           loading={loading}
+          isFormValid={isFormValid()}
         />
       </Modal>
       {showModal && (
