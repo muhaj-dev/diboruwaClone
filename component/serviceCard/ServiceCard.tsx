@@ -34,7 +34,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <ServiceCardContainer bg={bg}>
       <ServiceCardImage bg={bg}>
-        <Image src={imageSrc} width={50} height={50} alt={title} />
+        <Image src={imageSrc} width={40} height={40} alt={title} />
       </ServiceCardImage>
       <ServiceCardTitle>{title}</ServiceCardTitle>
       <ServiceCardContent>{content}</ServiceCardContent>

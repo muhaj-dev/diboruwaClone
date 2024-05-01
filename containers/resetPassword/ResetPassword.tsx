@@ -78,6 +78,9 @@ const ResetPassword = ({ token }: { token: string | string[] | undefined }) => {
   const { resetPassword, showModal, modalErrorType, modalMessage, closeModal } =
     useAuth();
   const [email, setEmail] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [confirmPasswordError, setConfirmPasswordError] = useState("");
+
 
   const router = useRouter()
 
@@ -93,14 +96,37 @@ const ResetPassword = ({ token }: { token: string | string[] | undefined }) => {
   );
 
   console.log(errors);
+
+  const handleConfirmPasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setConfirmPassword(e.target.value);
+    if (formData.password !== e.target.value) {
+      setConfirmPasswordError("Passwords do not match");
+    } else {
+      setConfirmPasswordError("");
+    }
+  };
+
+  // const validatePassword = () => {
+  //   if (formData.password !== confirmPassword) {
+  //     setConfirmPasswordError("Passwords do not match");
+  //     return false;
+  //   }
+  //   return true;
+  // };
+
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    // if (!validatePassword()) {
+    //   return;
+    // }
     const data = {
       email,
       password: formData.password,
     };
     resetPassword(data);
   };
+
+
   useEffect(() => {
 
   
@@ -146,18 +172,23 @@ const ResetPassword = ({ token }: { token: string | string[] | undefined }) => {
           />
         </InputField>
         <InputField>
-          <Input
+        
+            <Input
             label="Confirm Password"
             name="confirmPassword"
             type="password"
             id="id2"
-            value={formData.confirmPassword}
-            onChange={(e) => handleChange(e, e.target.name)}
+            value={confirmPassword}
+            onChange={handleConfirmPasswordChange}
             showPasswordToggle
+            error={confirmPasswordError}
           />
         </InputField>
+        {confirmPasswordError &&
+         <p style={{ color: "red" }}>{confirmPasswordError}...</p>
+         }
 
-        {/* <Button onClick={handleSubmit}>Submit</Button> */}
+
         <Button
           type="submit"
           value="Submit"

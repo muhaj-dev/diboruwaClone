@@ -81,7 +81,7 @@ export async function POST(req: Request, res: Response) {
 
      await sendEmail(
       "ibrahim.saliman.zainab@gmail.com",
-      "new Quote",
+      "New Quote",
       MovingRequestEmail({
         customerName: `${user.firstName} ${user.lastName}`,
         customerEmail: user.email,

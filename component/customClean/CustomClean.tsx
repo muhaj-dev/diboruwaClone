@@ -317,14 +317,14 @@ const CustomClean: React.FC = () => {
   return (
     <Container>
       <h2>Custom</h2>
-      <p>have a different cleaning need?</p>
+      <p>Have a different cleaning need?</p>
 
       <MultiSelectWrapper ref={dropdownRef}>
         {/* Add an input field for custom items */}
         <MultiSelectButton onClick={() => setDropdownOpen(!isDropdownOpen)}>
           <CustomInput
             type="text"
-            placeholder="Type a custom item..."
+            placeholder="Select or type ..."
             value={customItem}
             onChange={(e: ChangeEvent<HTMLInputElement>) =>
               setCustomItem(e.target.value)

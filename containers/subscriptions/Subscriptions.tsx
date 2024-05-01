@@ -91,19 +91,22 @@ const PlanContainer = styled.div`
   }
 `;
 const PlanCard = styled.div`
-  border: 3px solid var(--color2-20);
+ border: 3px solid var(--color2-20);
   background: var(--color2-20);
   padding: 20px;
   border-radius: 12px;
-
-  /* text-align: center; */
   width: 100%;
-  //  height: 500px;
   max-width: 300px;
   position: relative;
-
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+.plan{
+ 
 
   &::before {
     content: "save 10% and 2hrs";
@@ -154,6 +157,7 @@ const PlanCard = styled.div`
       }
     }
   }
+}
 
   button {
     padding: 10px 25px;
@@ -169,6 +173,25 @@ const PlanCard = styled.div`
     width: 100%;
     max-width: 100%;
   }
+`;
+
+const Custom = styled.div`
+    border: 3px solid var(--primary-20);
+    background: var(--primary-20);
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+
+    .content{
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
 `;
 
 const subscriptions = ["Food", "Cleaning", "Laundry"];
@@ -244,20 +267,23 @@ const Subscriptions = () => {
       <PlanContainer>
         {planDetails[activeSubscription].map((plan: any) => (
           <PlanCard key={plan.title}>
-            <h3>{plan.title}</h3>
+            <div className="plan">
+              <h3>{plan.title}</h3>
+              <p>₦{plan.total}</p>
+              <hr />
+              <ul>
+                {plan.features.map((feature: string[], index: string) => (
+                  <li key={index}>
+                    <div className="icon">
+                      <FaCheck />
+                    </div>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
 
-            <p>₦{plan.total}</p>
-            <hr />
-            <ul>
-              {plan.features.map((feature: string[], index: string) => (
-                <li key={index}>
-                  <div className="icon">
-                    <FaCheck />
-                  </div>
-                  {feature}
-                </li>
-              ))}
-            </ul>
+            </div>
+           
 
             <PaymentButton
               totalPrice={plan.total}
@@ -272,6 +298,14 @@ const Subscriptions = () => {
           </PlanCard>
         ))}
       </PlanContainer>
+
+      <Custom>
+        <h2>Can&apos;t decide which plan is right for you?</h2>
+        <div className="content">
+          <p>Contact our team at</p>
+          <p>info@diboruwa.com</p> <span>OR</span> <p>+2348059303261</p>
+        </div>
+      </Custom>
 
       {showModal && (
         <NotificationModal

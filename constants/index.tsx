@@ -24,8 +24,9 @@ export const routes: Route[] = [
     icon: "🛠️",
     subroutes: [
       { name: "Laundry", path: "/laundry", icon: assets.soap },
-      { name: "Cleaning", path: "cleaning", icon: assets.cleaningImg },
       { name: "Food", path: "/food", icon: assets.food },
+      { name: "Cleaning", path: "cleaning", icon: assets.cleaningImg },
+      { name: "Moving", path: "/moving", icon: assets.scooter },
     ],
   },
 
@@ -106,6 +107,19 @@ export const services = [
     cta: {
       label: "Book Now",
       path: "/cleaning",
+    },
+  },
+  {
+    title: "Moving and Delivery",
+    category: "moving",
+    image: assets.scooter,
+    color: "primary",
+    bg: "color4-20",
+    content:
+      "Move or Deliver Items Without Hassles",
+    cta: {
+      label: "Schedule a Move",
+      path: "/moving",
     },
   },
 
@@ -198,6 +212,25 @@ export const Wyg = [
     description: "Unlimited, responsive customer service",
   },
 ]
+export const WygMoving = [
+  {
+    icon: "/people.png",
+    description: "Fast and reliable moving services",
+  },
+  {
+    icon: "/Group.png",
+    description: "Professional packing and unpacking",
+  },
+  {
+    icon: "/shield-tick.png",
+    description: "Fully insured transport for peace of mind",
+  },
+  {
+    icon: "/message-notif.png",
+    description: "24/7 customer support for any inquiries",
+  },
+];
+
 
 export const subscriptionPlans = [
   {
@@ -243,14 +276,19 @@ export const DashboradServices = [
     url: "/food",
   },
   {
+    title: "Laundry Pickup",
+    image: assets.soap,
+    url: "/laundry",
+  },
+  {
     title: "Schedule Cleaning",
     image: assets.broom,
     url: "/cleaning",
   },
   {
-    title: "Laundry Pickup",
-    image: assets.soap,
-    url: "/laundry",
+    title: "Moving and Delivery",
+    image: assets.scooter,
+    url: "/moving",
   },
   // {
   //   title: "Requests",
@@ -444,24 +482,23 @@ export interface PlanDetails {
 
 export const planDetails: PlanDetails = {
   Food: [
-    {
-      title: "Starter",
-      features: [
-        "1 meal per week",
-        "Weekly delivery",
-        "Delivered once a week",
-        "Standard plate",
-        "Ideal for occasional treats",
-      ],
-      total: 4900,
-      planCode: "PLN_atra96ny3ftwdpn",
-    },
+    // {
+    //   title: "Starter",
+    //   features: [
+    //     "1 meal per week",
+    //     "Weekly delivery",
+    //     "Delivered once a week",
+    //     "Standard plate",
+    //     "Ideal for occasional treats",
+    //   ],
+    //   total: 4900,
+    //   planCode: "PLN_atra96ny3ftwdpn",
+    // },
     {
       title: "Regular",
       features: [
         "2 meal per week",
         "Standard plate",
-        "Weekly delivery",
         "Delivered once a week",
         "Ideal for weekend treats",
       ],
@@ -488,7 +525,6 @@ export const planDetails: PlanDetails = {
         "Daily Delivery",
         "Delivered 7 times a week",
         "Perfect for everyday meals",
-        "A meal every day",
       ],
       total: 36400,
       planCode: "PLN_wgi2tzagnxmwdex",
@@ -498,7 +534,7 @@ export const planDetails: PlanDetails = {
     {
       title: "Lite Laundry",
       features: [
-        "Dibo Ruwa Laundry Bag",
+        // "Dibo Ruwa Laundry Bag",
         "20 clothing materials",
         "Gentle washing for delicate fabrics",
         "Stain treatment",
@@ -515,8 +551,7 @@ export const planDetails: PlanDetails = {
         "45 clothing materials",
         "Gentle washing for delicate fabrics",
         "Stain treatment",
-        "Quick-dry service",
-        "Picked up twice a month",
+        "Picked up and delivery twice a month",
         "Ideal for family of two",
       ],
       total: 9900,
@@ -531,7 +566,7 @@ export const planDetails: PlanDetails = {
         "Stain treatment",
         "Quick-dry service",
         "Emergencies",
-        "Picked up four times a month",
+        "Picked up and delivery 4 times a month",
         "Ideal for family of four",
       ],
       total: 19400,
@@ -542,7 +577,7 @@ export const planDetails: PlanDetails = {
     {
       title: "Standard",
       features: [
-        "1 Bedrooms",
+        "1 Bedroom",
         "1 Living Rooms/ Dining Areas",
         "Bathroom sanitization",
         "Kitchen cleanup",
@@ -550,7 +585,7 @@ export const planDetails: PlanDetails = {
         "Dusting of all surfaces",
         "Once a week",
       ],
-      total: 8900,
+      total: 24900,
       planCode: "PLN_qsaj4llu3hfx9g9",
     },
     {
@@ -565,7 +600,7 @@ export const planDetails: PlanDetails = {
         "Once a week",
       ],
 
-      total: 16950,
+      total: 36950,
       planCode: "PLN_ainph5gw4x9lbyg",
     },
     {
@@ -580,7 +615,7 @@ export const planDetails: PlanDetails = {
         "Once a week",
       ],
 
-      total: 25900,
+      total: 45900,
       planCode: "PLN_qww4p0570axlg3p",
     },
   ],
