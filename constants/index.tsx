@@ -645,10 +645,10 @@ export const teamMembers = [
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948256/dbr44_tbhzdn.png",
   },
   {
-    name: "Hassan Abbas",
-    role: "Branding & Marketing",
+    name: "Harafah Mukaddam",
+    role: "Marketing and Customer Success",
     imageUrl:
-      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948251/dbr55_fdyoem.png",
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1714850902/DSC_4612ershriu-removebg-preview_tmz2fa.png",
   },
   {
     name: "Adeyemo Akinola Ayomide",
