@@ -1,4 +1,4 @@
-import LocationModal from "@/component/LocationModal";
+import LocationModal from "@/component/LocationModalOld";
 import FeedbackCarousel from "@/component/feedBacksCarousel/FeedBacks";
 import Home from "@/containers/Home/Home";
 
@@ -13,3 +13,5 @@ const page = () => {
 
 
 export default page;
+
+

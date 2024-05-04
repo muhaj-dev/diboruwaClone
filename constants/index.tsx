@@ -685,6 +685,7 @@ export interface Product {
   vendor: string
   discount?: number
   extras?: Extra[] // Nested extras property within Product
+  // locations: string[]
 }
 
 export interface Extra {
