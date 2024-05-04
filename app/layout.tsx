@@ -9,7 +9,7 @@ import Providers from "@/utils/Providers";
 import { assets } from "@/public/assets";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import LocationModal from "@/component/LocationModal";
+import LocationModal from "@/component/locationModal";
 
 export const metadata: Metadata = {
   title: {
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     // site_name: "D",
   },
 };
+
 
 export default function RootLayout({
   children,
