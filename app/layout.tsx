@@ -42,8 +42,8 @@ export default function RootLayout({
           {authModal}
 
           <main>{children}</main>
-          {/* <Analytics /> */}
-          {/* <SpeedInsights /> */}
+          <Analytics />
+          <SpeedInsights />
           <Footer />
           <GlobalStyles />
         </Providers>
