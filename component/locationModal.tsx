@@ -64,8 +64,6 @@ const LocationModal: React.FC = () => {
   const [selectedRegion, setSelectedRegion] = useState<string>("");
   const [availableRegions, setAvailableRegions] = useState<{ name: string; fee: number }[]>([]);
 
-
-
   const statesAndRegions: StateAndRegions = {
     Kano: {
         locations: [
@@ -86,7 +84,7 @@ const LocationModal: React.FC = () => {
             { name: "Zoo Road", fee: 1000 },
         ],
     },
-    Kwara: {
+    Ilorin: {
         locations: [
             { name: "Taiwo road", fee: 500 },
             { name: "Tanke", fee: 400 },
@@ -124,13 +122,13 @@ const LocationModal: React.FC = () => {
     setAvailableRegions(regions);
     setSelectedRegion(""); // Reset region selection on state change
 
-    // Serialize and save the regions data to cookies
-    if (regions.length > 0) {
-        const serializedData = JSON.stringify(regions);
-        Cookies.set('selectedLocations', serializedData, { expires: 3 / 1440 }); // Expires in 7 minutes
-    } else {
-        Cookies.remove('selectedLocations'); // Remove cookie if no regions are available
-    }
+    // // Serialize and save the regions data to cookies
+    // if (regions.length > 0) {
+    //     const serializedData = JSON.stringify(regions);
+    //     Cookies.set('selectedLocations', serializedData, { expires: 3 / 1440 }); // Expires in 7 minutes
+    // } else {
+    //     Cookies.remove('selectedLocations'); // Remove cookie if no regions are available
+    // }
 };
 
 
@@ -138,10 +136,12 @@ const handleRegionSelect = (selectedOption: string) => {
   setSelectedRegion(selectedOption);
   if (selectedState) {
       const selectedFee = statesAndRegions[selectedState]?.locations.find(loc => loc.name === selectedOption)?.fee || 0;
-      Cookies.set("selectedRegion", selectedOption, { expires: 1 }); // Expires in 24 hours
-      Cookies.set("selectedFee", String(selectedFee), { expires: 1 }); // Expires in 24 hours
+      Cookies.set("selectedState", selectedState, { expires: 1 }); // Save the selected state in cookies
+      Cookies.set("selectedRegion", selectedOption, { expires: 1 }); // Save the selected region in cookies
+      Cookies.set("selectedFee", String(selectedFee), { expires: 1 }); // Save the delivery fee
   }
 };
+
 
 const handleModalClose = () => {
   if (selectedState && selectedRegion) {
