@@ -651,6 +651,12 @@ export const teamMembers = [
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1714850902/DSC_4612ershriu-removebg-preview_tmz2fa.png",
   },
   {
+    name: "Babajide Idris ",
+    role: "Branding and Content Strategy",
+    imageUrl:
+      "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1714853371/idris-removebg_fk9itz.png",
+  },
+  {
     name: "Adeyemo Akinola Ayomide",
     role: "Engineering",
     imageUrl:
