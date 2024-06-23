@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export const AdminEmailComponent: React.FC<{
@@ -688,6 +689,7 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
     textDecoration: "none",
     width: "max-content",
   };
+  console.log(partnerDashboardLink)
 
   return (
     <div style={emailStyles}>
@@ -733,9 +735,13 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
             Order Date & Time: <strong>{orderTimestamp}</strong>{" "}
           </li>
         </ul>
-        <a href={partnerDashboardLink} style={buttonStyles}>
+        {/* <a href={partnerDashboardLink} style={buttonStyles}>
           View & Manage Order
-        </a>
+        </a> */}
+        <Link href={partnerDashboardLink} style={buttonStyles}>
+        View & Manage Order
+
+        </Link>
         <p>
           <strong> Note:</strong>
           The button will direct you to the specific order in your dashboard.

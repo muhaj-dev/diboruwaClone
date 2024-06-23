@@ -161,6 +161,7 @@ export async function POST(req: Request, res: Response) {
           OrderConfirmation({
             customerName: user.firstName,
             type: order.type,
+            deliveryFee: body.deliveryFee,
             orderItem: {
               orderItems: existingCart.cartItems,
               total: existingCart.total,

@@ -52,6 +52,8 @@ export default function Home() {
   const [currentService, setCurrentService] = useState<ServiceName>(serviceOptions[0] as ServiceName);
   const [serviceIndex, setServiceIndex] = useState(0);
 
+
+
   const currentServiceTextColor = serviceTextColorMapping[currentService] || 'defaultTextColor';
 
   useEffect(() => {
@@ -68,6 +70,7 @@ export default function Home() {
   return (
     <Container>
       <HeroContainer bg="primary-20">
+   
         <motion.div className="hero__text">
           <div className="title" >
             {/* Live easy. Free yourself from 
@@ -239,3 +242,4 @@ export default function Home() {
     </Container>
   );
 }
+
