@@ -688,8 +688,14 @@ export const AdminOrderNotificationComponent: React.FC<{
                 ))}
               </div>
             )}
+             
+                     
+
+             <li>
+              <strong> Delivery Fee: </strong>₦{itemsOrdered.deliveryFee}
+            </li>
             <li>
-              <strong> Total Amount: </strong>₦{totalAmount}
+              <strong> Total Amount: </strong>₦{totalAmount}  ₦{totalAmount + itemsOrdered?.deliveryFee}
             </li>
             <li>
               <strong>Delivery Address: </strong>
