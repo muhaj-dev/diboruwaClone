@@ -29,6 +29,7 @@ import Loader from "@/component/Loader";
 const Profile = () => {
   const [isEditable, setIsEditable] = useState(false);
   const [loading, setLoading] = useState(false);
+  
   const {
     session,
     status,

@@ -430,7 +430,7 @@ export const PartnerVerificationEmailComponent: React.FC<{
           </p>
           <p>
             If you encounter any challenges or have questions about using the
-            dashboard, our support team is here to assist you. Contact us at
+            dashboard, our support team is here to assist you. Contact us at 
             {supportEmail} or {supportPhoneNumber}.
           </p>
           <p>
@@ -1360,13 +1360,13 @@ export const UserQuoteRequestConfirmation: React.FC<{
         </ul>
         <p>
           Our team is committed to providing you with a comprehensive and
-          competitive quote. You can expect to hear back from us within{" "}
-          <strong>{turnaroundTime}</strong>.
+          competitive quote. You can expect to hear back from us.
         </p>
         <p>
           If you have any immediate questions or require further information,
           please don&#39;t hesitate to contact us at{" "}
-          <strong>{adminContact}</strong>.
+          <strong>{adminContact}</strong> or <strong>08059303261</strong> 
+          .
         </p>
         <p>
           Thank you for considering Dibo Ruwa for your{" "}
@@ -1609,7 +1609,7 @@ export const SubscriptionConfirmationEmail: React.FC<{
     lineHeight: "2",
   };
   return (
-    <EmailTemplate subject="  Your Subscription with Dibo Ruwa is Confirmed!">
+    <EmailTemplate subject="Your Subscription with Dibo Ruwa is Confirmed!">
       <div style={contentStyle}>
         <p>
           Hello{" "}
@@ -1642,7 +1642,6 @@ export const SubscriptionConfirmationEmail: React.FC<{
             <strong>End Date: </strong> {endDate}
           </li>
         </ul>
-        <p>Please review this subscription and take any necessary action.</p>
 
         <p>Thank you for trusting Dibo Ruwa. We&#39;re excited to serve you!</p>
         <p>Warmly,</p>

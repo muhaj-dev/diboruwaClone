@@ -88,6 +88,7 @@ const Navbar = () => {
       <MenuList className="menu">
         {routes.map((link, index) => {
           return (
+            
             <li key={index}>
               {link.subroutes ? (
                 <>
@@ -106,6 +107,7 @@ const Navbar = () => {
             <Link className="link" href="/signin">
               Sign In
             </Link>
+            
           </li>
         )}
         {!session && (
