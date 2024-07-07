@@ -735,13 +735,13 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
             Order Date & Time: <strong>{orderTimestamp}</strong>{" "}
           </li>
         </ul>
-        {/* <a href={partnerDashboardLink} style={buttonStyles}>
+        <a href={partnerDashboardLink} style={buttonStyles}>
           View & Manage Order
-        </a> */}
-        <Link href={partnerDashboardLink} style={buttonStyles}>
+        </a>
+        {/* <Link href={partnerDashboardLink} style={buttonStyles}>
         View & Manage Order
 
-        </Link>
+        </Link> */}
         <p>
           <strong> Note:</strong>
           The button will direct you to the specific order in your dashboard.
