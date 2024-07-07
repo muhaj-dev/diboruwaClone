@@ -97,7 +97,7 @@ if (typeof deliveryFee === 'number' && !isNaN(deliveryFee)) {
           </div>
         )}
 
-        <p>Delivery Fee - {deliveryFee}</p>
+        <p> <strong> Delivery Fee: </strong> ₦{deliveryFee}</p>
 
         <p>
           {" "}
