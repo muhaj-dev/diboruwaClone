@@ -88,12 +88,9 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
         <div
           className="contact"
           style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
+           
             textAlign: "center",
-            margin: "auto",
+           
             width: "100%",
             marginBottom: "20px",
           }}
@@ -108,13 +105,13 @@ export const EmailTemplate: React.FC<EmailTemplateProps> = ({
           </p>
 
           <div
-            className="socials"
+            // className="socials"
             style={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              width: "90%",
-              gap: "20px",
+              width: 'fit-content',
+              gap: "40px",
               margin: "auto",
               fontSize: "20px",
               textAlign: "center",
@@ -591,6 +588,7 @@ export const AdminOrderNotificationComponent: React.FC<{
   orderNumber: string;
   itemsOrdered: any;
   type: string;
+  deliveryFee: any;
   totalAmount: string;
   customerAddress: string;
   partnerFullName: string;
@@ -601,6 +599,7 @@ export const AdminOrderNotificationComponent: React.FC<{
   orderNumber,
   itemsOrdered,
   type,
+  deliveryFee,
   totalAmount,
   customerAddress,
   partnerFullName,
@@ -688,8 +687,14 @@ export const AdminOrderNotificationComponent: React.FC<{
                 ))}
               </div>
             )}
+             
+                     
+
+             <li>
+              <strong> Delivery Fee: </strong>₦{deliveryFee}
+            </li>
             <li>
-              <strong> Total Amount: </strong>₦{totalAmount}
+              <strong> Total Amount: </strong> ₦{totalAmount + deliveryFee}
             </li>
             <li>
               <strong>Delivery Address: </strong>

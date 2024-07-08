@@ -72,9 +72,7 @@ const SingleOrderPage = ({ id }: { id: any }) => {
               <OrderData>
                 <strong>Payment ID:</strong> {order?.paymentId}
               </OrderData>
-          <OrderData>
-            <strong>Delivery Fee:</strong> ₦{order?.deliveryFee}
-          </OrderData>
+         
               
               {order?.orderItems &&
                 order?.orderItems.map((item: any) => (
@@ -85,6 +83,9 @@ const SingleOrderPage = ({ id }: { id: any }) => {
                     </span>
                   </div>
                 ))}
+              <OrderData>
+                <strong>Delivery Fee:</strong> ₦{order?.deliveryFee}
+              </OrderData>
               <OrderData>
                 <strong>Total:</strong> ₦{order?.total + order?.deliveryFee}
               </OrderData>
