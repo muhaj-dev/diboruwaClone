@@ -30,15 +30,42 @@ const ContentContainer = styled.div`
   padding: 8%;
 `;
 
+// const PriceTag = styled.h3`
+//   font-size: 2rem;
+//   font-weight: bold;
+//   margin-bottom: 1rem;
+//   color: var(--color4);
+
+//   @media screen and (max-width: 768px) {
+//     font-size: 1.6rem;
+//   }
+// `;
+
 const PriceTag = styled.h3`
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--color4);
 
   @media screen and (max-width: 768px) {
     font-size: 1.6rem;
   }
+`;
+
+const OriginalPrice = styled.span`
+  font-size: 1.5rem;
+  color: var(--color2);
+  text-decoration: line-through;
+  margin-right: 1rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+`;
+
+const PriceContainer = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 const Description = styled.p`
@@ -86,11 +113,18 @@ const PriceCard = () => {
     <PriceCardContainer>
       <PrimaryBackground />
       <ContentContainer>
-        <PriceTag>₦4,990/month</PriceTag>
+        <PriceContainer>
+          <OriginalPrice>₦8,990</OriginalPrice>
+          <PriceTag>₦6,990/month</PriceTag>
+        </PriceContainer>
         <Description>
-          Never be without a clean outfit again. Our specially designed Diboruwa Laundry Bag ensures your clothes remain organized and ready for pickup. Just fill, schedule, and relax.
+          Never be without a clean outfit again. Our specially designed Diboruwa
+          Laundry Bag ensures your clothes remain organized and ready for
+          pickup. Just fill, schedule, and relax.
         </Description>
-        <CTAButton href={{ pathname: '/subscriptions', query: { tabName: 'Laundry' } }}>
+        <CTAButton
+          href={{ pathname: "/subscriptions", query: { tabName: "Laundry" } }}
+        >
           Subscribe now
           <CTAButtonWrapper>
             <CTAIcon />
