@@ -10,7 +10,7 @@ export const NavbarContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 15vh;
-  padding: 0 8%;
+  padding: 0 5%;
   position: fixed;
   gap: 20px;
   left: 0;
@@ -93,20 +93,22 @@ export const Toggle = styled.div`
 
 export const MenuList = styled(motion.ul)`
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
+  
+
 
   list-style: none;
-  margin-left: auto;
-
+  
+  
   .menu {
     display: flex;
     align-items: center;
-  }
-
-  .link {
+    }
+    
+    .link {
+      color: #2A2A2A;
     text-decoration: none;
-    color: #5b5959;
     font-size: 16px;
     letter-spacing: 1px;
 
@@ -191,7 +193,7 @@ export const Cta = styled.a`
   color: white;
   background: var(--primary);
   padding: 8px 20px;
-  border-radius: 20px;
+  border-radius: 6px;
 
   @media screen and (max-width: 900px) {
     display: none;
