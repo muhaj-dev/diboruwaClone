@@ -48,7 +48,7 @@ export async function POST(req: Request, res: Response) {
 
     return NextResponse.json(
       {
-        message: "An email has been sent to verify your account successfuly!!!",
+        message: "An email has been sent to reset your password",
         resetToken,
         success: true,
       },

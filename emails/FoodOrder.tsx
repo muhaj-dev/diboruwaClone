@@ -9,6 +9,7 @@ const colors = {
 interface OrderConfirmationProps {
   customerName: string;
   type: string;
+  deliveryFee: string;
   orderItem: {
     orderItems: any;
     total: number;
@@ -29,8 +30,20 @@ interface SessionConfirmationProps {
 const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
   customerName,
   type,
+  deliveryFee,
   orderItem: { orderItems, total, estimatedDeliveryTime },
 }) => {
+
+
+  let amountPaid;
+
+if (typeof deliveryFee === 'number' && !isNaN(deliveryFee)) {
+  amountPaid = deliveryFee + total;
+} else {
+  amountPaid = total;
+}
+
+
   const containerStyle: React.CSSProperties = {
     lineHeight: "2",
   };
@@ -84,9 +97,11 @@ const OrderConfirmation: React.FC<OrderConfirmationProps> = ({
           </div>
         )}
 
+        <p> <strong> Delivery Fee: </strong> ₦{deliveryFee}</p>
+
         <p>
           {" "}
-          <strong>Total Amount:</strong> ₦{total}
+          <strong>Total Amount:</strong> ₦{amountPaid}
         </p>
         <p>
           {" "}

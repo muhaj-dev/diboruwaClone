@@ -82,14 +82,15 @@ const Navbar = () => {
           <LogoImage src="/logo.png" fill={true} alt="logo" />
         </Link>
       </div>
-      <Toggle onClick={() => setToggle((prev) => !prev)}>
+      {/* <Toggle onClick={() => setToggle((prev) => !prev)}>
         {toggle ? <VscClose /> : <HiBars3 />}
-      </Toggle>
+      </Toggle> */}
       <MenuList className="menu">
         {routes.map((link, index) => {
           return (
+            
             <li key={index}>
-              {link.subroutes ? (
+              {link?.subroutes ? (
                 <>
                   <ServiceMenu trigger={link.name} routes={link?.subroutes} />
                 </>
@@ -101,20 +102,7 @@ const Navbar = () => {
             </li>
           );
         })}
-        {!session && (
-          <li>
-            <Link className="link" href="/signin">
-              Sign In
-            </Link>
-          </li>
-        )}
-        {!session && (
-          <li>
-            <Link className="link" href="/signup">
-              Sign Up
-            </Link>
-          </li>
-        )}
+       
       </MenuList>
       {session && (
         <div className="cart">
@@ -131,7 +119,7 @@ const Navbar = () => {
             <FiShoppingCart />
           </Link>
         </div>
-      )}
+      )} 
       <AnimatePresence>
         {toggle && (
           <>
@@ -191,8 +179,35 @@ const Navbar = () => {
           </>
         )}
       </AnimatePresence>
-      <Cta href={`https://admin.diboruwa.com/sign-in`} target="_blank">Become a Partner</Cta>
+      <MenuList>
+        {!session && (
+          <li 
+            
+          >
+            <Link
+            style={{
+              color: '#27A124',
+            }}
+            className="link" href="/signup">
+              Register
+            </Link>
+          </li>
+        )}
+      {!session && (
+          <li>
+            <Link
+             style={{
+              color: '#27A124',
+            }}
+            className="link" href="/signin">
+              Login
+            </Link>
+            
+          </li>
+        )}
+      <Cta href={`https://admin.diboruwa.com/sign-in`} target="_blank">Partner with us</Cta>
       {session && <UserDropdown />}
+      </MenuList>
     </NavbarContainer>
   );
 };

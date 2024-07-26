@@ -46,12 +46,12 @@ const ActivateAccount: React.FC<Props> = ({ customerName, activationLink }) => {
         <p>
           We&#39;re excited to have you on board. To activate your account and start enjoying our services, simply click the button below:
         </p>
-        <a href={activationLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-          <button style={buttonStyle}>Activate Account</button>
-        </a>
         <p style={messageStyle}>
           If the button doesn&#39;t work, you can also copy and paste the following link into your browser&#39;s address bar:
           <br />
+        <a href={activationLink} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+          <button style={buttonStyle}>Activate Account</button>
+        </a>
         </p>
         <p style={messageStyle}>Welcome to the Dibo Ruwa family!</p>
         <p style={messageStyle}>

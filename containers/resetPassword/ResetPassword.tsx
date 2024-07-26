@@ -71,6 +71,8 @@ export const Button = styled.input`
 
   &:disabled {
     background: var(--primary-20);
+  cursor: none;
+
   }
 `;
 
@@ -157,7 +159,7 @@ const ResetPassword = ({ token }: { token: string | string[] | undefined }) => {
       <Form onSubmit={onSubmit}>
         <Header>
           <h3> Password reset</h3>
-          <p>please enter your registered email to reset yor password.</p>
+          <p>Please enter new password.</p>
         </Header>
 
         <InputField>
@@ -189,11 +191,12 @@ const ResetPassword = ({ token }: { token: string | string[] | undefined }) => {
          }
 
 
-        <Button
-          type="submit"
-          value="Submit"
-          disabled={formData.password !== formData.confirmPassword}
-        />
+<Button
+  type="submit"
+  value="Submit"
+  disabled={confirmPassword !== formData.password}
+/>
+
       </Form>
 
       {showModal && (

@@ -85,11 +85,12 @@ export async function PUT(
           orderNumber: order.paymentId,
           itemsOrdered: order.orderItems,
           type: order.type,
+          deliveryFee: order?.deliveryFee,
           totalAmount: order.total,
           customerAddress: `${user.address}, ${user.lga}, ${user.state}`,
           partnerFullName: `un-assigned`,
           orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
-          adminDashboardLink: `${process.env.ADMIN_URL}/dashboard/${order._id}`,
+          adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
         })
       );
 

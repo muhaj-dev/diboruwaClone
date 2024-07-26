@@ -4,7 +4,6 @@ import {
 } from "@/emails";
 import OrderConfirmation from "@/emails/FoodOrder";
 
-
 import { closeDB, connectDB } from "@/utils/db";
 import { authOptions } from "@/utils/helpers/authOptions";
 import { Cart } from "@/utils/models/Cart";
@@ -131,7 +130,6 @@ export async function POST(req: Request, res: Response) {
       //         adminDashboardLink: `${process.env.BASE_URL}/dashboard/${order._id}`,
       //       })
       //     );
-        
 
       //     existingCart.cartItems = [];
       //     existingCart.total = 0;
@@ -161,6 +159,7 @@ export async function POST(req: Request, res: Response) {
           OrderConfirmation({
             customerName: user.firstName,
             type: order.type,
+            deliveryFee: body.deliveryFee,
             orderItem: {
               orderItems: existingCart.cartItems,
               total: existingCart.total,
@@ -176,16 +175,15 @@ export async function POST(req: Request, res: Response) {
             customerFullName: `${user.firstName} ${user.lastName}`,
             orderNumber: body.referenceId,
             itemsOrdered: existingCart.cartItems,
+            deliveryFee: body.deliveryFee,
             type: order.type,
             totalAmount: existingCart.total,
             customerAddress: `${user.address}, ${user.lga}, ${user.state}`,
             partnerFullName: `un-assigned`,
             orderTimestamp: moment(order.createdAt).format("MMMM D, YYYY"),
-            adminDashboardLink: `${process.env.ADMIN_URL}/dashboard/${order._id}`,
+            adminDashboardLink: `${process.env.ADMIN_URL}/orders/${order._id}`,
           })
         );
-        
-        console.log(body)
 
 
         existingCart.cartItems = [];

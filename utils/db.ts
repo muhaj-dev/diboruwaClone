@@ -1,39 +1,54 @@
-import mongoose from "mongoose";
+// lib/mongoose.ts
 
-if (!process.env.MONGO_URI) {
-  throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
+import mongoose from "mongoose"
+
+const MONGODB_URI =
+  process.env.MONGO_URI
+
+if (!MONGODB_URI) {
+  throw new Error(
+    "Please define the MONGODB_URI environment variable inside .env.local"
+  )
 }
 
-const uri = process.env.MONGO_URI;
+interface MongooseCache {
+  conn: mongoose.Connection | null
+  promise: Promise<mongoose.Connection> | null
+}
 
-let db = null;
+const globalWithMongoose = global as typeof global & {
+  mongoose: MongooseCache
+}
 
-// Connect to the MongoDB database using Mongoose
-async function connectDB() {
-  try {
-    await mongoose.connect(uri);
-    console.log("Successfully connected to MongoDB");
-  } catch (err: any) {
-    console.error(`Error: ${err.message}`);
-    process.exit(1);
+let cached = globalWithMongoose.mongoose
+
+if (!cached) {
+  cached = globalWithMongoose.mongoose = { conn: null, promise: null }
+}
+
+async function dbConnect() {
+  if (cached.conn) {
+    return cached.conn
   }
-}
 
-async function closeDB() {
-  await mongoose.connection.close();
-  console.log("Disconnected to db.");
-}
+  if (!cached.promise) {
+    const opts = {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      bufferCommands: false,
+    }
 
-process.on("SIGINT", async () => {
-  try {
-    console.log("Closing database connection...");
-    await closeDB();
-    console.log("Database connection closed.");
-    process.exit(0);
-  } catch (err) {
-    console.error(err);
-    process.exit(1);
+    cached.promise = mongoose.connect(MONGODB_URI as string, opts).then(mongoose => {
+      console.log("Db connected")
+      return mongoose.connection
+    })
   }
-});
+  cached.conn = await cached.promise
+  return cached.conn
+}
 
-export { connectDB, closeDB };
+const connectDB = async () => {}
+const closeDB = async () => {}
+
+export default dbConnect
+export { closeDB, connectDB }

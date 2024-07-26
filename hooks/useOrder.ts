@@ -69,6 +69,7 @@ const useOrder = () => {
         deliveryFee,
         amount
       });
+      console.log(data)
       toast.loading("Cart order is being proccessed", {
         duration: 2000,
       });
