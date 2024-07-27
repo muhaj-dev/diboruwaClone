@@ -1,0 +1,82 @@
+.resturant-container {
+  background: #f8f8f8;
+}
+
+.resturant-content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+.resturant-image {
+  position: relative;
+}
+.desktop-image {
+  display: none;
+}
+.mobile-image {
+  position: relative;
+  margin: 0 auto;
+  background: #27a124;
+}
+.mobile-img {
+  position: absolute;
+  top: 13rem;
+  right: 0rem;
+}
+.img-main{
+    width: 100%;
+}
+
+
+.resturant-text_container {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+.resturant-btn_text {
+  font-size: 14px;
+  background: #565656;
+  color: #fefefe;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.rest-subtitle {
+  color: #2a2a2a;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.rest-des {
+  color: #565656;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.Check-Out_Vendors {
+  color: #27a124;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  display: none;
+}

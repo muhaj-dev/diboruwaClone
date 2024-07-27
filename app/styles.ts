@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 :root {
-  --primary: #48DB45;
+  --primary: #27A124;
   --color2: #FFD335;
   --color3: #925DEA;
   --color4: #53CEF4;
@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 body {
-          max-width: 100vw;
+  max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
 }

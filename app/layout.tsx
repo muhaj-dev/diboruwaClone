@@ -11,6 +11,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import LocationModal from "@/component/locationModal";
 
+
 export const metadata: Metadata = {
   title: {
     default: "Dibo Ruwa",
@@ -38,12 +39,13 @@ export default function RootLayout({
       <body>
         <Providers>
           <LocationModal />
+          {/* <Navbar2 / */}
           <Navbar />
           {authModal}
 
           <main>{children}</main>
-          <Analytics />
-          <SpeedInsights />
+          {/* <Analytics /> */}
+          {/* <SpeedInsights /> */}
           <Footer />
           <GlobalStyles />
         </Providers>

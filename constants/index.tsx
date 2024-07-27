@@ -19,6 +19,11 @@ export interface Route {
 
 export const routes: Route[] = [
   {
+    name: "Home",
+    path: "/",
+    
+  },
+  {
     name: "Services",
     path: "/services",
     icon: "🛠️",
@@ -31,12 +36,15 @@ export const routes: Route[] = [
   },
 
   {
-    name: "Subscriptions",
-    path: "/subscriptions",
-  },
-  {
-    name: "About Us",
-    path: "/aboutus",
+    name: "Vendor",
+    path: "/",
+    icon: "🛠️",
+    subroutes: [
+      { name: "Laundry", path: "/laundry", icon: assets.soap },
+      { name: "Food", path: "/food", icon: assets.food },
+      { name: "Cleaning", path: "cleaning", icon: assets.cleaningImg },
+      { name: "Moving", path: "/moving", icon: assets.scooter },
+    ],
   },
 ]
 

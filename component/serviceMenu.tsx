@@ -36,7 +36,7 @@ const ServiceMenu: FC<Routes> = ({ trigger, routes, toggle }) => {
               gap: "8px",
               fontSize: "15px",
               letterSpacing: "1px",
-              color: "#5b5959",
+              color: "#2A2A2A",
             }}
           >
             {trigger}

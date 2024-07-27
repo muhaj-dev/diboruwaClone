@@ -10,7 +10,7 @@ interface DropdownProps {
 
 const DropdownContainer = styled.div`
   position: relative;
-  z-index: 999;
+  /* z-index: 999; */
 `;
 
 const DropdownButton = styled.button`
@@ -84,11 +84,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   return (
     <DropdownContainer>
       <DropdownButton onClick={toggleDropdown}>
-        {selectedOption
-          ? selectedOption
-          : placeholder
-          ? placeholder
-          : "Select an option"}
+        {selectedOption || placeholder || "Select an option"}
       </DropdownButton>
       {isOpen && (
         <DropdownList>

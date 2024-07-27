@@ -8,10 +8,13 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  background-color: var(--light2);
 }
 
 :root {
-  --primary: #71f76f;
+  --primary: #27A124;
+  --light: #FCFCFC;
+  --light2: rgba(233, 233, 233, 0.25);
   --color2: #f7d86a;
   --color3: #b388f9;
   --color4: #82daf5;
