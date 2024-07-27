@@ -35,7 +35,9 @@ import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import AccordionList from "@/component/AccordionList/AccordionList";
 import ProductServices from "./components/ProductServices";
-import Resturant from "./components/RestContent";
+import RestAdvert from "./components/restAdvert/RestAdvert";
+import Meal from "./components/Meal/Meal";
+import Resturant from "./components/restCont/RestContent";
 
 type ServiceName =
   | "Laundry chores."
@@ -84,17 +86,15 @@ export default function Home() {
 
   return (
     <div className="home-container">
-      <div className="frame">
+      <div className="hero_frame">
         <ProductServices />
       </div>
 
-      <div className="rest_advert">hero</div>
-
-      <div className="resturant-container">
-        <div className="frame">
+     
+        <RestAdvert />
         <Resturant />
-        </div>
-      </div>
+
+        <Meal />
     </div>
     // <Container>
 

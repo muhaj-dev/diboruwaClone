@@ -3,9 +3,14 @@
   margin: 0 auto;
 }
 
+.hero_frame  {
+  width: min(93%, 1440px);
+  margin: 0 auto;
+}
+
 .home-container{
   margin: 70px 0;
-  background-color: #FCFCFC;
+  background-color: #FFF;
 }
 
 .hero_cont {
@@ -48,6 +53,12 @@
   background: #565656;
   color: #fefefe;
   border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-radius: 59.74px;
+  word-wrap: break-word;
+  font-size: 14px;
+  padding: 4px 14px;
 }
 .tag-text {
   font-size: 14px;
@@ -151,8 +162,17 @@
 .s{
   width: 12px;
 }
+.b-l {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  padding: 14px;
+  border-radius: 40px;
+}
 .bike{
-  width: 100%;
+  /* resize: 1rem; */
+  width: 40px;
+  height: 30px;
 }
 .mobile-display{
   display: none;
@@ -185,6 +205,10 @@
 
 
 @media (max-width: 650px) {
+  .hero_frame  {
+    width: min(100%, 1440px);
+    margin: 0 auto;
+  }
   .hero_cont{
     margin-top: -72px;
   padding: 0px;
@@ -202,9 +226,8 @@
   .mob{
     position: relative;
     overflow-x: hidden;
-    height: 80dvh;
+    height: 70dvh;
     display: block;
-    background-color: #27a124;
   }
   
   .mob-image{
@@ -213,15 +236,18 @@
     height: 100%;
   }
   .mob_overlay{
-    width: 90%;
-    height: 90%;
+    width: 93%;
+    margin: 0 auto;
+    padding: 16px;
+    
     left: 0;
-    top: 0;
-    position: "absolute";
-    background: "rgba(255, 255, 255, 0.16)";
-    border-radius: 14;
-    border: "1px rgba(255, 255, 255, 0.10) solid";
-    backdrop-filter: "blur(13.80px)";
+    right: 0;
+    bottom: 0.5rem;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 14px;
+    border: 1px rgba(255, 255, 255, 0.10) solid;
+    backdrop-filter: blur(13.80px);
   }
   .mob_cont{
     position: relative;
@@ -234,15 +260,15 @@
     color: #2a2a2a;
     border: none;
     border: 0.6px #565656 solid;
-    font-size: 12px;
-    padding: 6px 14px;
+    font-size: 10px;
+    padding: 4px 10px;
     color: #fefefe;
-    border-radius: 59.74px;
+    border-radius: 54px;
   }
   .tag-text {
-    font-size: 12px;
-    padding: 6px 14px;
-    border-radius: 59.74px;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 54px;
     color: #fefefe;
     border: 0.6px  solid;
     font-family: "Poppins", sans-serif;
@@ -256,7 +282,7 @@
   
   .highlight {
     color: #FCFCFC;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     width: 100%;
     line-height: 30px;
@@ -265,7 +291,7 @@
   
   .description {
     color: #FCFCFC;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     width: 85%;
   }
@@ -278,5 +304,8 @@
 
   }
 
+  .get-started-btn {
+    font-size: .8rem;
+  }
   
 }

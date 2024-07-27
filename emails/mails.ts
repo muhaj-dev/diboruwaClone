@@ -397,11 +397,11 @@ export function onBoarding(data: any) {
       }
 
       .email-footer {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        // display: grid;
+        // grid-template-columns: repeat(1, 1fr);
         justify-content: center;
-        align-items: center;
-        text-align: center;
+        // align-items: center;
+        // text-align: center;
         gap: 20px;
         margin: 20px auto;
         width: 100%;
