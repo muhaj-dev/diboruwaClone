@@ -24,16 +24,14 @@ const rest = [
 
 export default function RestAdvert() {
   return (
-    <div className=" rest">
+    <div className=" rest-ad">
       <div className="hero_frame">
         <p className="title">Top Restaurants Near You</p>
-        <div className="rest_card">
+        <div className="rest-ad-card">
         {rest.map((item, index) =>(
           <div key={index} className="card">
             <img
               className=""
-              // width={300}
-              // height={100}
               src={item.img}
               alt="Chef preparing food"
             />

@@ -1,13 +1,17 @@
 .meal {
     background-color: #f6f6f6;
     width: 100%;
-    padding: 40px 0;
+    padding: 0px 0;
     color: #565656;
+    display: flex;
+    flex-direction: column;
   }
   .duration {
-      display: flex;
-      justify-content: space-between;
-      margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    /* background-color: red; */
+    width: 92%;
   }
   .title {
     text-align: center;
@@ -140,6 +144,10 @@
       font-size: 1rem;
       color: #f6f6f6;
     }
+    .duration {
+        flex-direction: column;
+        margin: 40px auto;
+      }
     .meal_card {
       display: flex;
       justify-content: start;
@@ -152,7 +160,7 @@
     }
   
     .meal_card .card {
-      width: 100px;
+      width: 250px;
       scroll-snap-align: center;
       flex-shrink: 0;
       box-sizing: border-box;
@@ -163,19 +171,60 @@
   
     .meal_card .card img {
       border-radius: 0px;
-      width: 100px;
-      height: 50px;
+      width: 250px;
+      height: 150px;
     }
   
     .meal_card .card a {
-      display: none;
-      justify-content: space-between;
-      padding: 8px 10px;
-      margin: 8px 10px;
-      color: #565656;
-      background-color: #f6f6f6;
-      border-radius: 20px;
-      text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        margin: 12px auto;
+        color: #565656;
+        text-decoration: none;
+        width: 92%;
+      }
+  }
+  
+  @media (max-width: 450px) {
+      
+   
+  
+    .meal_card .card {
+      width: 200px;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      background-color: #fff;
+      overflow-x: hidden;
+      border-radius: 6px;
     }
+  
+    .meal_card .card img {
+      border-radius: 0px;
+      width: 200px;
+      height: 130px;
+    }
+
+    .meal_card .card a {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        color: #565656;
+        text-decoration: none;
+        width: 92%;
+      }
+
+      .prep-container {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+        height: fit-content;
+      }
+      
+      
+ 
+  
+
   }
   
