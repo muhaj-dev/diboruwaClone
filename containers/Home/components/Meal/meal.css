@@ -16,6 +16,43 @@
   margin-top: -20px;
   font-size: 1rem;
 }
+
+.prep-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  height: fit-content;
+  /* flex-wrap: wrap; */
+}
+
+
+.prep-menu{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prep-text-active {
+  background: #4BB149;
+  color: #fefefe;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  border-radius: 59.74px;
+  word-wrap: break-word;
+  font-size: 14px;
+  padding: 6px 14px;
+}
+.prep-text {
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 59.74px;
+  border: 0.6px #2a2a2a solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
 .meal_card {
   display: flex;
   justify-content: flex-start;
@@ -33,25 +70,66 @@
   box-sizing: border-box;
   background-color: #fff;
   overflow-x: hidden;
-  border-radius: 6px;
+  border-radius: 16px;
 }
 
-.meal_card .card img {
-  border-radius: 16px;
-
+.card-img{
   width: 250px;
-  height: 100px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+}
+.meal_card .card img {
+  width: 250px;
+  height: 150px;
+}
+
+.wish{
+  z-index: 1;
 }
 
 .meal_card .card a {
   display: flex;
+  flex-direction: column;
+  margin: 12px auto;
+  color: #565656;
+  /* background-color: #f6f6f6; */
+  /* background-color: red; */
+  text-decoration: none;
+  width: 92%;
+}
+.meal-dis{
+  display: flex;
   justify-content: space-between;
+  padding: 10px 0;
+}
+
+.meal-dis div > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+span{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #4BB149;
+  margin: auto;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 8px 12px;
-  margin: 16px 14px;
+  margin: 6px auto;
   color: #565656;
   background-color: #f6f6f6;
   border-radius: 20px;
   text-decoration: none;
+  width: 100%;
 }
 
 @media (max-width: 650px) {

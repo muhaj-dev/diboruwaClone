@@ -114,9 +114,14 @@ export default function ProductServices() {
               <div className="tag-text">Groceries</div>
             </div>
             <div className="text-container">
-              <div className="highlight">
-                Your Ultimate Solution for Modern Lifestyle Needs
-              </div>
+            <p className="highlight">
+                Your Ultimate Solution for 
+               
+              </p>
+              <p className="highlight2">
+                
+                Modern Lifestyle Needs
+              </p>
               <div className="description">
                 One platform, endless convenience. Simplify your life with our
                 intuitive solution for all your needs.
