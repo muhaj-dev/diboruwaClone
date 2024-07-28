@@ -38,6 +38,8 @@ import ProductServices from "./components/ProductServices";
 import RestAdvert from "./components/restAdvert/RestAdvert";
 import Meal from "./components/Meal/Meal";
 import Resturant from "./components/restCont/RestContent";
+import FoodImage from "./components/foodImage/FoodImage";
+import Groceries from "./components/Groceries/Groceries";
 
 type ServiceName =
   | "Laundry chores."
@@ -89,12 +91,13 @@ export default function Home() {
       <div className="hero_frame">
         <ProductServices />
       </div>
-
-     
-        <RestAdvert />
-        <Resturant />
-
-        <Meal />
+      <RestAdvert />
+      <Resturant />
+      <Meal />
+      {/* food delivery & moving  */}
+      <FoodImage />
+      {/* groceries  */}
+      <Groceries />
     </div>
     // <Container>
 
