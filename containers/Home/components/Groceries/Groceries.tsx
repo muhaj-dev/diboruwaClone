@@ -23,6 +23,10 @@ const food = [
     link: "/",
     img: "/images/dish.png",
   },
+  {
+    link: "/",
+    img: "/images/dish.png",
+  },
 ];
 export default function Groceries() {
   return (
@@ -38,15 +42,7 @@ export default function Groceries() {
             >
               Groceries
             </p>
-            {/* <div className="prep-container">
-              <p>Prep time:</p>
-              <div className="prep-menu">
-                <div className="prep-text-active ">30mins</div>
-                <div className="prep-text">45mins</div>
-                <div className="prep-text">1hr</div>
-                <div className="prep-text">2hrs</div>
-              </div>
-            </div> */}
+       
           </div>
           <div className="meal_card">
             {food.map((item, index) => (

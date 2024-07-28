@@ -23,6 +23,10 @@ const food = [
     link: "/",
     img: "/images/dish.png",
   },
+  {
+    link: "/",
+    img: "/images/dish.png",
+  },
 ];
 export default function Meal() {
   return (

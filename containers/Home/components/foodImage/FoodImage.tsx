@@ -19,6 +19,10 @@ const food = [
     link: "/",
     img: "/images/fd4.png",
   },
+  {
+    link: "/",
+    img: "/images/fd4.png",
+  },
 ];
 export default function FoodImage() {
   return (
