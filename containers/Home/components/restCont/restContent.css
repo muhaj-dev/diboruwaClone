@@ -140,5 +140,13 @@
   .resturant-content {
     flex-direction: row;
 }
-
+.rest-title, .sub_food{
+  display: none;
+}
+.desktop-image {
+  display: block;
+}
+.mobile-image {
+display: none;
+}
 }
