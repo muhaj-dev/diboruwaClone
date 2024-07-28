@@ -40,6 +40,7 @@ import Meal from "./components/Meal/Meal";
 import Resturant from "./components/restCont/RestContent";
 import FoodImage from "./components/foodImage/FoodImage";
 import Groceries from "./components/Groceries/Groceries";
+import Delivery from "./components/foodDelivery/Delivery";
 
 type ServiceName =
   | "Laundry chores."
@@ -94,7 +95,7 @@ export default function Home() {
       <RestAdvert />
       <Resturant />
       <Meal />
-      {/* food delivery & moving  */}
+     <Delivery />
       <FoodImage />
       {/* groceries  */}
       <Groceries />

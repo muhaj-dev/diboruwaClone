@@ -129,19 +129,18 @@
 /* Medium devices */
 @media (min-width: 768px) {
   .mobile-img {
-    top: 23.6rem;
+    top: 22.6rem;
     right: -0.2rem;
     width: 12rem;
   }
 }
-
 @media (min-width: 900px) {
   .resturant-content {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-.desktop-image {
+  .desktop-image {
     display: block;
     width: 25rem;
   }
@@ -149,8 +148,6 @@
   .sub_food {
     display: none;
   }
-
-  
 
   .mobile-image {
     display: none;
@@ -180,12 +177,11 @@
 }
 
 @media (min-width: 1200px) {
-.desktop-image {
+  .desktop-image {
     width: 35rem;
   }
 
-    .resturant-text_container {
+  .resturant-text_container {
     margin-bottom: 12rem;
   }
-
 }
