@@ -1,4 +1,3 @@
-
 .resturant_container {
   background: #f8f8f8;
 }
@@ -122,31 +121,71 @@
 }
 
 @media (min-width: 576px) {
-.resturant-content {
-  width: 90%;
-}
+  .resturant-content {
+    width: 90%;
+  }
 }
 
 /* Medium devices */
-@media (min-width: 768px){
-.mobile-img {
+@media (min-width: 768px) {
+  .mobile-img {
     top: 23.6rem;
     right: -0.2rem;
     width: 12rem;
-}
+  }
 }
 
 @media (min-width: 900px) {
   .resturant-content {
     flex-direction: row;
-}
-.rest-title, .sub_food{
-  display: none;
-}
+    align-items: center;
+    justify-content: space-between;
+  }
 .desktop-image {
-  display: block;
+    display: block;
+    width: 25rem;
+  }
+  .rest-title,
+  .sub_food {
+    display: none;
+  }
+
+  
+
+  .mobile-image {
+    display: none;
+  }
+
+  .resturant-text_container {
+    margin-bottom: 7rem;
+    padding-bottom: 0rem;
+  }
+
+  .resturant-btn_text {
+    padding: 8px 25px;
+  }
+
+  .rest-subtitle {
+    font-size: 20px;
+  }
+
+  .rest-des {
+    font-size: 14px;
+  }
+
+  .Check-Out_Vendors {
+    font-size: 12px;
+    display: inline-block;
+  }
 }
-.mobile-image {
-display: none;
-}
+
+@media (min-width: 1200px) {
+.desktop-image {
+    width: 35rem;
+  }
+
+    .resturant-text_container {
+    margin-bottom: 10rem;
+  }
+
 }
