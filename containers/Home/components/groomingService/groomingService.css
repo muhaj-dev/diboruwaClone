@@ -1,0 +1,187 @@
+.resturant_container {
+  background: #f8f8f8;
+}
+
+.resturant-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  margin: 0 auto;
+  width: 30rem;
+  gap: 20px;
+}
+
+.resturant-image {
+  position: relative;
+}
+
+.desktop-image {
+  display: none;
+}
+
+.mobile-image {
+  position: relative;
+  margin: 0 auto;
+}
+
+.mobile-img {
+  position: absolute;
+  top: 15.6rem;
+  right: -0.2rem;
+  width: 8rem;
+}
+
+.img-main {
+  width: 100%;
+}
+
+.resturant-text_container {
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+.resturant-btn_text {
+  font-size: 14px;
+  background: #565656;
+  color: #fefefe;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: flex;
+  padding: 12px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.rest-subtitle {
+  color: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.rest-des {
+  color: #565656;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.Check-Out_Vendors {
+  color: #27a124;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  text-decoration-line: underline;
+  display: none;
+}
+.rest-title-h1 {
+  color: #7e7e7e;
+  font-size: 2rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+.lines {
+  width: 44%;
+  /* height: 26px; */
+  margin-bottom: 0.4rem;
+  border: #7e7e7e solid 1px;
+}
+.line-one {
+  width: 44%;
+}
+.line-two {
+  width: 34%;
+}
+.line-three {
+  width: 24%;
+}
+
+.sub_food {
+  color: #2a2a2a;
+  font-family: Poly;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 1rem 0 0.8rem;
+}
+
+@media (min-width: 576px) {
+  .resturant-content {
+    width: 90%;
+  }
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+  .mobile-img {
+    top: 22.6rem;
+    right: -0.2rem;
+    width: 12rem;
+  }
+}
+@media (min-width: 900px) {
+  .resturant-content {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .desktop-image {
+    display: block;
+    width: 25rem;
+  }
+  .rest-title,
+  .sub_food {
+    display: none;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .resturant-text_container {
+    margin-bottom: 7rem;
+    padding-bottom: 0rem;
+  }
+
+  .resturant-btn_text {
+    padding: 8px 25px;
+  }
+
+  .rest-subtitle {
+    font-size: 20px;
+  }
+
+  .rest-des {
+    font-size: 14px;
+  }
+
+  .Check-Out_Vendors {
+    font-size: 15px;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .desktop-image {
+    width: 35rem;
+  }
+
+  .resturant-text_container {
+    margin-bottom: 12rem;
+  }
+}
