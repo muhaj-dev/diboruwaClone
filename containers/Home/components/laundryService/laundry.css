@@ -86,9 +86,7 @@
   display: none;
 }
 img.service_img {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
+  width: 100%;
 }
 .laundry_rest-title-h1 {
   color: #7e7e7e;
@@ -106,6 +104,17 @@ img.service_img {
   font-weight: 400;
   line-height: normal;
   margin: 1rem 0 0.8rem;
+}
+
+.laundry-service_img {
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  margin: 0 auto;
+  gap: 20px;
 }
 
 @media (min-width: 400px) {
@@ -137,9 +146,13 @@ img.service_img {
   }
   .laundry_desktop-image {
     display: block;
-    width: 25rem;
-    height: 30rem;
+    width: 27rem;
+    height: 32rem;
   }
+  .text-content {
+    margin-bottom: 5rem;
+    margin-top: -2rem;
+}
   .laundry_rest-title,
   .laundry_sub_food {
     display: none;
@@ -170,6 +183,13 @@ img.service_img {
     font-size: 15px;
     display: inline-block;
   }
+  .laundry-service_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin: 2rem 0 0;
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -179,7 +199,6 @@ img.service_img {
   }
 
   .laundry-service_img {
-    margin: 5rem 0 0rem;
   }
   .laundry_resturant-text_container {
     margin-bottom: 12rem;
