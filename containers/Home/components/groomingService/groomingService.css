@@ -1,8 +1,11 @@
 .resturant_container {
   background: #f8f8f8;
+
 }
 
+
 .resturant-content {
+
   display: flex;
   flex-direction: column;
   padding-top: 3rem;

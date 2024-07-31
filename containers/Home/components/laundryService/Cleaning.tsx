@@ -1,12 +1,12 @@
 import "./laundry.css";
 
-export default function LaundryService() {
+export default function Cleaning() {
   return (
     <section className="laundry_resturant_container">
       <div className="container">
 
       <div className="hero_frame laundry_resturant-content">
-        {/* <p className="laundry_sub_food">Courier</p> */}
+        <p className="laundry_sub_food">Courier</p>
         <div className="laundry_resturant-image">
           <img
             src="/images/image 159 (1).png"
@@ -27,8 +27,8 @@ export default function LaundryService() {
           </div>
         </div>
         <div className="laundry_resturant-text_container">
-          <button className="laundry_resturant-btn_text">Laundry</button>
-          <h4 className="laundry_rest-subtitle">Laundry Service</h4>
+          <button className="laundry_resturant-btn_text">Cleaning</button>
+          <h4 className="laundry_rest-subtitle">Cleaning Service</h4>
           <p className="laundry_rest-des">
             Our hassle-free laundry service ensures that your clothes are
             cleaned, folded, and delivered with care, so you can spend less time

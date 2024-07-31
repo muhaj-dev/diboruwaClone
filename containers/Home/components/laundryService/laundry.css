@@ -1,6 +1,10 @@
 .laundry_resturant_container {
   background: #f8f8f8;
 }
+.container{
+  width: min(100%, 1440px);
+  margin: 0 auto;
+}
 
 .laundry_resturant-content {
   display: flex;
