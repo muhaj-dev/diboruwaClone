@@ -16,7 +16,7 @@ export default function Header() {
             <button className="partner_header-btn">Get Started</button>
           </div>
           <div className="partner_header-top">
-            <span className="">Top Partners</span>
+            <span className="partner_header-top_text">Top Partners</span>
             <img
               src="/images/Frame 2611554.png"
               className="partner_header-top_img"
@@ -25,7 +25,11 @@ export default function Header() {
           </div>
         </div>
         <div className="partner_header-img_container">
-          <img src="/images/Frame 2611551.png" className="partner_header-img" alt="dashboard" />
+          <img
+            src="/images/Frame 2611551.png"
+            className="partner_header-img"
+            alt="dashboard"
+          />
         </div>
       </section>
     </>
