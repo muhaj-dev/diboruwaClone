@@ -1,3 +1,3 @@
 export default function WhyUs() {
-  return <h1>Header</h1>;
+  return <h1>why us</h1>;
 }

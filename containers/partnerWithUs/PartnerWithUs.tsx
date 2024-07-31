@@ -1,5 +1,6 @@
 "use client";
 
+import "../Home/components/home.css";
 import Header from "./component/header/Header";
 import WhyUs from "./component/whyUs/WhyUs";
 
