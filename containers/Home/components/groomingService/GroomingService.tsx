@@ -2,33 +2,33 @@ import "./groomingService.css";
 
 export default function GroomingService() {
   return (
-    <section className="resturant_container">
-      <div className="hero_frame resturant-content">
+    <section className="grooming_container">
+      <div className="hero_frame grooming-content">
         <p className="sub_food">Groceries</p>
-        <div className="resturant-image">
+        <div className="grooming-image">
           <img
             src="/images/Frame 2610228 (2).png"
-            className="desktop-image"
+            className="grooming_desktop-image"
             alt="resturant guys"
           />
-          <div className="mobile-image">
+          <div className="grooming_mobile-image">
             <img
               src="/images/image 160 (1).png"
-              className="img-main"
+              className="grooming_img-main"
               alt="resturant guys"
             />
             <img
               src="/images/image 158.png"
-              className="mobile-img"
+              className="grooming_mobile-img"
               alt="resturant guys"
             />
           </div>
         </div>
-        <div className="resturant-text_container">
-          <button className="resturant-btn_text">Groceries</button>
-          <h4 className="rest-subtitle">Groceries Service</h4>
-          <p className="rest-des">
-            ransforming your look has never been easier. Skip the trip to the
+        <div className="grooming-text_container">
+          <button className="grooming-btn_text">Groceries</button>
+          <h4 className="grooming-subtitle">Groceries Service</h4>
+          <p className="grooming-des">
+            Ransforming your look has never been easier. Skip the trip to the
             barbershop and indulge in the luxury of professional grooming right
             in the comfort of your own home.
           </p>

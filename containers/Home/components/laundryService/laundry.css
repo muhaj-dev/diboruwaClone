@@ -11,7 +11,7 @@
   flex-direction: column;
   padding-top: 3rem;
   margin: 0 auto;
-  width: 30rem;
+  width: 90%;
   gap: 20px;
 }
 
@@ -30,9 +30,8 @@
 
 .laundry_mobile-img {
   position: absolute;
-  top: 15.6rem;
-  right: -0.2rem;
-  width: 8rem;
+  top: 10.6rem;
+  right: -0.9rem;
 }
 
 .laundry_img-main {
@@ -40,11 +39,11 @@
 }
 
 .laundry_resturant-text_container {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   padding-bottom: 2rem;
 }
 .laundry_resturant-btn_text {
-  font-size: 14px;
+  font-size: 13px;
   background: #565656;
   color: #fefefe;
   border: none;
@@ -52,7 +51,7 @@
   font-weight: 400;
   word-wrap: break-word;
   display: flex;
-  padding: 12px 30px;
+  padding: 8px 24px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -64,7 +63,7 @@
 .laundry_rest-subtitle {
   color: #2a2a2a;
   font-family: "Poppins", sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -74,10 +73,10 @@
 .laundry_rest-des {
   color: #565656;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.19rem;
   margin-bottom: 1rem;
 }
 
@@ -90,7 +89,10 @@
   text-decoration-line: underline;
   display: none;
 }
-.vlaundry_rest-title-h1 {
+img.service_img {
+  width: 100%;
+}
+.laundry_rest-title-h1 {
   color: #7e7e7e;
   font-size: 2rem;
   font-family: "poppins", sans-serif;
@@ -108,9 +110,28 @@
   margin: 1rem 0 0.8rem;
 }
 
-@media (min-width: 576px) {
+.laundry-service_img {
+  display: flex;
+  justify-content: start;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+@media (min-width: 400px) {
   .laundry_resturant-content {
     width: 90%;
+  }
+  .laundry_desktop-image {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .laundry_mobile-image {
+    display: none;
   }
 }
 
@@ -125,14 +146,17 @@
 @media (min-width: 900px) {
   .laundry_resturant-content {
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
   }
   .laundry_desktop-image {
     display: block;
-    width: 25rem;
-    height: 30rem;
+    width: 27rem;
+    height: 32rem;
   }
+  .text-content {
+    margin-bottom: 5rem;
+    margin-top: -2rem;
+}
   .laundry_rest-title,
   .laundry_sub_food {
     display: none;
@@ -163,13 +187,23 @@
     font-size: 15px;
     display: inline-block;
   }
+  .laundry-service_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+    margin: 2rem 0 0;
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 1200px) {
   .laundry_desktop-image {
-    width: 35rem;
+    width: 33rem;
+    height: 40rem;
   }
 
+  .laundry-service_img {
+  }
   .laundry_resturant-text_container {
     margin-bottom: 12rem;
   }

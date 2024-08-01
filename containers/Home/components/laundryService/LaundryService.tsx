@@ -27,6 +27,7 @@ export default function LaundryService() {
           </div>
         </div>
         <div className="laundry_resturant-text_container">
+          <div className="text-content">
           <button className="laundry_resturant-btn_text">Laundry</button>
           <h4 className="laundry_rest-subtitle">Laundry Service</h4>
           <p className="laundry_rest-des">
@@ -37,9 +38,26 @@ export default function LaundryService() {
           <a href="/" className="Check-Out_Vendors">
             Book Now
           </a>
+          </div>
           <div className="laundry-service_img">
             <img
-              src="/images/Frame 2610235.png"
+              src="/images/Rectangle 248 (1).png"
+              className="service_img"
+              alt="resturant guys"
+            />
+
+            <img
+              src="/images/Rectangle 249.png"
+              className="service_img"
+              alt="resturant guys"
+            />
+            <img
+              src="/images/Rectangle 250.png"
+              className="service_img"
+              alt="resturant guys"
+            />
+            <img
+              src="/images/Rectangle 251.png"
               className="service_img"
               alt="resturant guys"
             />

@@ -1,0 +1,63 @@
+section.partner_header-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin: 7rem auto 7rem;
+}
+
+.partner_header-content {
+  margin-top: 2.9rem;
+}
+
+h1.partner_header-h1 {
+  color: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+p.partner_header-p {
+  color: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+button.partner_header-btn {
+  display: flex;
+  padding: 0.7rem 1rem;
+  width: 7rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: #ffffff;
+}
+
+.partner_header-top_text {
+  color: #2a2a2a;
+  font-family: Lateef;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+  line-height: normal;
+}
+.partner_header-top {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.5rem;
+}
+
+img.partner_header-top_img {
+  width: 20rem;
+}
+
+img.partner_header-img {
+  width: 100%;
+}
