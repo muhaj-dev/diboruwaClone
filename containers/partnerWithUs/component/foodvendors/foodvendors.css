@@ -11,51 +11,103 @@ section.vendor_container {
 }
 
 img.vendor_img-content {
-    width: 93%;
-    margin-left: 1rem;
-    margin-top: 5rem;
+  width: 93%;
+  margin-left: 1rem;
+  margin-top: 5rem;
 }
 
 img.vendor_img-text_content {
-    width: 100%;
+  width: 100%;
 }
 
 .vendor_text-content {
-    background: #ffffff;
-    padding: 3rem;
-    position: relative;
+  background: #ffffff;
+  padding: 3rem;
+  position: relative;
 }
 
 li.vendor_text-li {
-    font-size: 15px;
-    font-weight: 500;
-    font-family: 'Poppins';
-    font-style: normal;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-    margin-left: 0.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  margin-left: 0.5rem;
 }
 
 .vendor_img-transparent {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 25rem;
+  right: 2rem;
+}
+
+img.vendor_img-transparent_content {
+  width: 15rem;
+}
+
+a.vendor_signup {
+  color: #27a124;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  text-decoration-line: underline;
+  display: flex;
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 1128px) {
+  img.vendor_img-content {
+    margin-left: 6rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .vendor_img-transparent {
     display: flex;
     align-items: center;
     margin: 0 auto;
     position: absolute;
-    top: 25rem;
-    right: 2rem;
+    top: 18rem;
+  }
+}
+@media only screen and (max-width: 950px) {
+  i.vendor_text-li {
+    font-size: 11px;
+  }
+
+  img.vendor_img-text_content {
+    width: 114%;
+  }
+
+  a.vendor_signup {
+    font-size: 15px;
+  }
+  img.vendor_img-transparent_content {
+    width: 12rem;
+  }
+
+  .vendor_img-transparent {
+    top: 21rem;
+  }
 }
 
-img.vendor_img-transparent_content {
-    width: 15rem;
-}
-
-a.vendor_signup {
-    color: #27a124;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.4rem;
-    text-decoration-line: underline;
-    display: flex;
-    margin-top: 2rem;
+@media only screen and (max-width: 768px) {
+  .vendor-container {
+    background: #e9e9e929;
+  }
+  .vendor_width {
+    grid-template-columns: 1fr;
+  }
+  img.vendor_img-content {
+    margin-left: 6rem;
+    position: relative;
+    z-index: 1;
+  }
+  img.vendor_img-transparent_content {
+    display: none;
+  }
 }

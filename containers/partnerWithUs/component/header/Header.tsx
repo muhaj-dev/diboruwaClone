@@ -3,7 +3,7 @@ export default function Header() {
   return (
     <>
       <section className="partner_header-container">
-        <div className="partner_header-content">
+        <div className="partner_header-content header_container-frame">
           <div className="partner_header-text">
             <h1 className="partner_header-h1">
               Elevate Your Business Operations with Our Comprehensive Management
