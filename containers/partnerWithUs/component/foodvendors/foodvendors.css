@@ -103,7 +103,7 @@ a.vendor_signup {
     grid-template-columns: 1fr;
   }
   img.vendor_img-content {
-    margin-left: 6rem;
+    margin-left: 0;
     position: relative;
     z-index: 1;
   }
