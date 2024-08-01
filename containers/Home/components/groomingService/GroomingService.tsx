@@ -4,7 +4,7 @@ export default function GroomingService() {
   return (
     <section className="grooming_container">
       <div className="hero_frame grooming-content">
-        <p className="sub_food">Grooming</p>
+        <p className="sub_food">Groceries</p>
         <div className="grooming-image">
           <img
             src="/images/Frame 2610228 (2).png"
@@ -25,15 +25,15 @@ export default function GroomingService() {
           </div>
         </div>
         <div className="grooming-text_container">
-          <button className="grooming-btn_text">Grooming</button>
-          <h4 className="grooming-subtitle">Grooming Service</h4>
+          <button className="grooming-btn_text">Groceries</button>
+          <h4 className="grooming-subtitle">Groceries Service</h4>
           <p className="grooming-des">
             Ransforming your look has never been easier. Skip the trip to the
             barbershop and indulge in the luxury of professional grooming right
             in the comfort of your own home.
           </p>
           <a href="/" className="Check-Out_Vendors">
-            Book Now
+            Order Now
           </a>
         </div>
       </div>

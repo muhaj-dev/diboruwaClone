@@ -44,6 +44,7 @@ import Delivery from "./components/foodDelivery/Delivery";
 import Partner from "./components/Partner/Partner";
 import LaundryService from "./components/laundryService/LaundryService";
 import GroomingService from "./components/groomingService/GroomingService";
+import Cleaning from "./components/laundryService/Cleaning";
 
 type ServiceName =
   | "Laundry chores."
@@ -101,6 +102,7 @@ export default function Home() {
       <Delivery />
       <FoodImage />
       <LaundryService />
+      <Cleaning />
       <GroomingService />
       <Groceries />
       <Partner />
