@@ -96,9 +96,9 @@ a.vendor_signup {
 }
 
 @media only screen and (max-width: 768px) {
-  .vendor-container {
-    background: #e9e9e929;
-  }
+section.vendor_container {
+    background: none;
+}
   .vendor_width {
     grid-template-columns: 1fr;
   }
@@ -109,5 +109,9 @@ a.vendor_signup {
   }
   img.vendor_img-transparent_content {
     display: none;
+  }
+
+  .vendor_text-content {
+    background: none;
   }
 }
