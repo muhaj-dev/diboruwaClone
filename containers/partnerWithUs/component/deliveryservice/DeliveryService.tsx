@@ -3,6 +3,7 @@ const DeliveryService = () => {
       return (
         <section className="deliveryservice_container">
           <div className="deliveryservice_width">
+            <div className="deliveryservice-img-text">
             <div className="deliveryservice_img">
               <img
                 src="/images/Rectangle 318.png"
@@ -12,18 +13,18 @@ const DeliveryService = () => {
             </div>
             <div className="deliveryservice_text-content">
               <ul className="deliveryservice_text-ul">
-                <li className="deliveryservice_text-li">Food vendors</li>
+                <li className="deliveryservice_text-li">Moving & food delivery service</li>
               </ul>
               <div className="deliveryservice_img-text">
                 <img
-                  src="/images/Frame 2611540 (1).png"
+                  src="/images/Frame 2611540 (2).png"
                   className="deliveryservice_img-text_content"
                   alt=""
                 />
               </div>
               <div className="deliveryservice_img-transparent">
                 <img
-                  src="/images/image 249.png"
+                  src="/images/Ellipse 109.png"
                   className="deliveryservice_img-transparent_content"
                   alt=""
                 />
@@ -32,9 +33,10 @@ const DeliveryService = () => {
                 Sign Up
               </a>
             </div>
+            </div>
             <div className="deliveryservice_overlay-img">
               <img
-                src=""
+                src="/images/Frame 2609672.png"
                 className="deliveryservice_overlay-img_content"
                 alt=""
               />

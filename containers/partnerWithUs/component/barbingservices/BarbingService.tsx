@@ -5,35 +5,35 @@ const BarbingService = () => {
       <div className="barbingservice_width">
         <div className="barbingservice_img">
           <img
-            src="/images/Rectangle 318.png"
-            className="deliveryservice_img-content"
+            src="/images/Rectangle 319.png"
+            className="dbarbingservice_img-content"
             alt=""
           />
         </div>
-        <div className="deliveryservice_text-content">
-          <ul className="deliveryservice_text-ul">
-            <li className="deliveryservice_text-li">Food vendors</li>
+        <div className="barbingservice_text-content">
+          <ul className="barbingservice_text-ul">
+            <li className="barbingservice_text-li">Food vendors</li>
           </ul>
-          <div className="deliveryservice_img-text">
+          <div className="barbingservice_img-text">
             <img
-              src="/images/Frame 2611540 (1).png"
-              className="deliveryservice_img-text_content"
+              src="/images/Frame 2611540.png"
+              className="barbingservice_img-text_content"
               alt=""
             />
           </div>
-          <div className="deliveryservice_img-transparent">
+          <div className="barbingservice_img-transparent">
             <img
-              src="/images/image 249.png"
-              className="deliveryservice_img-transparent_content"
+              src="/images/Ellipse 108.png"
+              className="barbingservice_img-transparent_content"
               alt=""
             />
           </div>
-          <a href="/" className="deliveryservice_signup">
+          <a href="/" className="barbingservice_signup">
             Sign Up
           </a>
         </div>
-        <div className="deliveryservice_overlay-img">
-          <img src="" className="deliveryservice_overlay-img_content" alt="" />
+        <div className="barbingservice_overlay-img">
+          <img src="/images/Frame 2609849.png" className="barbingservice_overlay-img_content" alt="" />
         </div>
       </div>
     </section>
