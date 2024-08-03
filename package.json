@@ -51,6 +51,7 @@
         "next-auth": "^4.22.1",
         "nigerian-states-and-lgas": "^1.0.8",
         "nodemailer": "^6.9.4",
+        "nopt": "^7.2.1",
         "paystack": "^2.0.1",
         "paystack-sdk": "^2.5.7",
         "polished": "^4.2.2",
