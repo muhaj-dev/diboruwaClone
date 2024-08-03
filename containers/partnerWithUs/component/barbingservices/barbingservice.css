@@ -1,3 +1,71 @@
+.barbingservice_width {
+  width: min(93%, 1440px);
+  margin: 0 auto;
+  position: relative;
+}
+
+img.barbingservice_img-content {
+    width: 28rem;
+}
+
+
+.barbingservice_img {
+  position: relative;
+}
+
+li.barbingservice_text-li {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  margin-left: 0.5rem;
+}
+
+.barbingservice_text-content {
+  margin: 3rem 0 0;
+  position: relative;
+}
+
+.barbingservice-img-text {
+  position: relative;
+}
+
+a.barbingservice_signup {
+  color: #27a124;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.barbingservice_img-transparent {
+  display: none;
+}
+
+.barbingservice_overlay-img {
+  width: 20rem;
+  position: absolute;
+  top: 8rem;
+  right: -1rem;
+}
+
+@media only screen and (max-width: 400px) {
+  img.barbingservice_img-content {
+    width: 20rem;
+}
+.barbingservice_overlay-img {
+  width: 16rem;
+  position: absolute;
+  top: 10rem;
+  right: 0;
+}
+
+}
+
 /* section.barbingservice_container {
   background: #e9e9e942;
 }
@@ -20,22 +88,6 @@ img.barbingservice_img-text_content {
   width: 80%;
 }
 
-.barbingservice_text-content {
-  background: #ffffff;
-  padding: 3rem;
-  position: relative;
-}
-
-li.barbingservice_text-li {
-  font-size: 15px;
-  font-weight: 500;
-  font-family: "Poppins";
-  font-style: normal;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-  margin-left: 0.5rem;
-}
-
 .barbingservice_img-transparent {
   display: flex;
   align-items: center;
@@ -49,16 +101,6 @@ img.barbingservice_img-transparent_content {
   width: 15rem;
 }
 
-a.barbingservice_signup {
-  color: #27a124;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.4rem;
-  text-decoration-line: underline;
-  display: flex;
-  margin-top: 2rem;
-}
 @media only screen and (max-width: 1128px) {
   img.barbingservice_img-content {
     margin-left: 4rem;
