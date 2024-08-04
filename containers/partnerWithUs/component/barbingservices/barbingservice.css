@@ -5,9 +5,10 @@
 }
 
 img.barbingservice_img-content {
-    width: 28rem;
+  width: 28rem;
+  margin: 0 auto;
+  display: flex;
 }
-
 
 .barbingservice_img {
   position: relative;
@@ -47,25 +48,100 @@ a.barbingservice_signup {
 }
 
 .barbingservice_overlay-img {
-  width: 20rem;
   position: absolute;
   top: 8rem;
   right: -1rem;
 }
 
+img.barbingservice_overlay-img_content {
+  width: 20rem;
+}
+
 @media only screen and (max-width: 400px) {
   img.barbingservice_img-content {
     width: 20rem;
-}
-.barbingservice_overlay-img {
-  width: 16rem;
-  position: absolute;
-  top: 10rem;
-  right: 0;
+  }
+
+  .barbingservice_overlay-img {
+    position: absolute;
+    top: 10rem;
+    right: 0;
+  }
+
+  img.barbingservice_overlay-img_content {
+    width: 15rem;
+  }
 }
 
+@media only screen and (min-width: 728px) {
+  img.barbingservice_img-content {
+    width: 40rem;
+  }
+
+  .barbingservice_overlay-img {
+    top: 14rem;
+    right: 0rem;
+  }
+
+  img.barbingservice_overlay-img_content {
+    width: 25rem;
+  }
 }
 
+@media only screen and (min-width: 768px) {
+  img.barbingservice_img-content {
+    width: 100%;
+  }
+
+  .barbingservice-img-text {
+    position: relative;
+    display: flex;
+    margin: 6rem auto 0;
+  }
+
+  .barbingservice_overlay-img {
+    top: 5rem;
+    right: -1rem;
+  }
+
+  img.barbingservice_overlay-img_content {
+    width: 20rem;
+  }
+
+  .barbingservice_text-content {
+    margin: 0 2rem 0;
+    position: relative;
+  }
+
+  li.barbingservice_text-li {
+    font-size: 14px;
+  }
+
+  a.barbingservice_signup {
+    font-size: 15px;
+  }
+
+  .barbingservice_img-transparent {
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    top: 0rem;
+    left: 8.2rem;
+  }
+
+  img.barbingservice_img-transparent_content {
+    width: 15rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .barbingservice_img-transparent {
+    left: 13rem;
+  }
+  .barbingservice_overlay-img {
+    top: 7rem;
+  }
+}
 /* section.barbingservice_container {
   background: #e9e9e942;
 }
