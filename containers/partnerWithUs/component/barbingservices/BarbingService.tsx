@@ -10,6 +10,14 @@ const BarbingService = () => {
               className="barbingservice_img-content"
               alt=""
             />
+
+            <div className="barbingservice_overlay-img">
+              <img
+                src="/images/Frame 2609849.png"
+                className="barbingservice_overlay-img_content"
+                alt=""
+              />
+            </div>
           </div>
           <div className="barbingservice_text-content">
             <ul className="barbingservice_text-ul">
@@ -33,13 +41,6 @@ const BarbingService = () => {
               Sign Up
             </a>
           </div>
-        </div>
-        <div className="barbingservice_overlay-img">
-          <img
-            src="/images/Frame 2609849.png"
-            className="barbingservice_overlay-img_content"
-            alt=""
-          />
         </div>
       </div>
     </section>
