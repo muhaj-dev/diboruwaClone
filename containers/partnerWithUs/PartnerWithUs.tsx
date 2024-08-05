@@ -4,6 +4,7 @@ import "../Home/components/home.css";
 import BarbingService from "./component/barbingservices/BarbingService";
 import DeliveryService from "./component/deliveryservice/DeliveryService";
 import Header from "./component/header/Header";
+import LaundryService from "./component/laundryservice/LaundryService";
 import WhyUs from "./component/whyUs/WhyUs";
 
 export default function PartnerWithUs() {
@@ -15,6 +16,7 @@ export default function PartnerWithUs() {
       <WhyUs />
       <DeliveryService />
       <BarbingService />
+      <LaundryService />
     </div>
   );
 }
