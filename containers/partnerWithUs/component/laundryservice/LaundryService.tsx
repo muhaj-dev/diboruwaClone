@@ -29,10 +29,10 @@ const LaundryService = () => {
                 className="laundry_img-text_content"
                 alt=""
               />
-            </div>
             <a href="/" className="laundry_signup">
               Sign Up
             </a>
+            </div>
           </div>
         </div>
       </div>

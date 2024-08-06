@@ -1,6 +1,8 @@
-
 import FoodVendors from "../foodvendors/FoodVendors";
-import "./whyus.css"
+import BarbingService from "../barbingservices/BarbingService";
+import DeliveryService from "../deliveryservice/DeliveryService";
+import LaundryService from "../laundryservice/LaundryService";
+import "./whyus.css";
 
 export default function WhyUs() {
   return (
@@ -48,6 +50,9 @@ export default function WhyUs() {
       </div>
       <div>
         <FoodVendors />
+        <DeliveryService />
+        <BarbingService />
+        <LaundryService />
       </div>
     </section>
   );

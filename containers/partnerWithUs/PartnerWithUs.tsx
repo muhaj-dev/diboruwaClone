@@ -1,10 +1,7 @@
 "use client";
 
 import "../Home/components/home.css";
-import BarbingService from "./component/barbingservices/BarbingService";
-import DeliveryService from "./component/deliveryservice/DeliveryService";
 import Header from "./component/header/Header";
-import LaundryService from "./component/laundryservice/LaundryService";
 import Newsletter from "./component/newsletter/Newsletter";
 import WhyUs from "./component/whyUs/WhyUs";
 
@@ -15,9 +12,6 @@ export default function PartnerWithUs() {
         <Header />
       </div>
       <WhyUs />
-      <DeliveryService />
-      <BarbingService />
-      <LaundryService />
       <Newsletter />
     </div>
   );
