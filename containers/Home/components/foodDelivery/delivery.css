@@ -25,9 +25,9 @@
 }
 
 .delivery_mobile-img {
-    position: absolute;
-    top: 11.6rem;
-    right: -0.9rem;
+  position: absolute;
+  top: 11.6rem;
+  right: -0.9rem;
 }
 
 .delivery_img-main {
@@ -109,7 +109,7 @@
   }
   .delivery_desktop-image {
     display: block;
-     width: 100%;
+    width: 100%;
     margin: 0 auto;
   }
   .delivery_mobile-image {
@@ -130,6 +130,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    width: min(100%, 1440px);
   }
   .delivery_desktop-image {
     display: block;
