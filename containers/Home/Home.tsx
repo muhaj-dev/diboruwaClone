@@ -45,6 +45,7 @@ import Partner from "./components/Partner/Partner";
 import LaundryService from "./components/laundryService/LaundryService";
 import GroomingService from "./components/groomingService/GroomingService";
 import Cleaning from "./components/laundryService/Cleaning";
+import Newsletter from "../partnerWithUs/component/newsletter/Newsletter";
 
 type ServiceName =
   | "Laundry chores."
@@ -112,6 +113,7 @@ const Home: React.FC = () => {
       <GroomingService />
       <Groceries />
       <Partner />
+      <Newsletter />
     </div>
   );
 };

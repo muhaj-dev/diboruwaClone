@@ -1,15 +1,21 @@
 "use client";
 import "./home.css";
 import React, { useState } from "react";
-import Data, { DataItem } from "./Data"
+import Data, { DataItem } from "./Data";
 
-const MobileView = () => {
+const MobileView: React.FC = () => {
+  const [selectedTag, setSelectedTag] = useState<string>("Food");
+
+  const selectedData: DataItem | undefined = Data.find(
+    (item) => item.tag === selectedTag
+  );
+
   return (
     <div className="mobile-display">
       <div
         className="mob"
         style={{
-          backgroundImage: 'url("/images/food.png")',
+          backgroundImage: `url(${selectedData?.bigImg})`,
           backgroundSize: "140% 100%",
           backgroundRepeat: "no-repeat",
         }}
@@ -17,15 +23,22 @@ const MobileView = () => {
         <div className="mob_overlay">
           <div className="mob-cont">
             <div className="tags-container">
-              <div className="tag-text-active ">Food</div>
-              <div className="tag-text">Moving</div>
-              <div className="tag-text">Laundry</div>
-              <div className="tag-text">Cleaning</div>
-              <div className="tag-text">Groceries</div>
+              {Data.map((item) => (
+                <div
+                  key={item._id}
+                  className={`tag-text ${
+                    item.tag === selectedTag ? "tag-text-active" : ""
+                  }`}
+                  onClick={() => setSelectedTag(item.tag!)}
+                >
+                  {item.tag}
+                </div>
+              ))}
             </div>
             <div className="text-container">
               <div className="highlight">
-                Your Ultimate Solution for Modern Lifestyle Needs
+                {selectedData?.foodText ||
+                  "Your Ultimate Solution for Modern Lifestyle Needs"}
               </div>
               <div className="description">
                 One platform, endless convenience. Simplify your life with our
@@ -44,13 +57,9 @@ const MobileView = () => {
               height: "100px",
               paddingTop: "10px",
               paddingBottom: "10px",
-              // paddingLeft: 17.32,
-              // paddingRight: 19.52,
               borderRadius: 50,
               margin: "8px auto",
               overflow: "hidden",
-
-              // backgroundColor: ,
               background:
                 "linear-gradient(0deg, #E6E6E6 0%, #E6E6E6 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%)",
             }}
@@ -64,10 +73,10 @@ const MobileView = () => {
                 display: "flex",
               }}
             >
-              <img style={{ width: 40, height: 30 }} src="/images/bike.png" />
               <img
-                style={{ width: 27.48, height: 27.48 }}
-                src="/images/location.png"
+                style={{ width: "100%", height: 30 }}
+                src={selectedData?.bike}
+                alt="Bike"
               />
             </div>
 
@@ -75,13 +84,13 @@ const MobileView = () => {
               style={{
                 justifyContent: "space-between",
                 alignItems: "center",
-
                 display: "flex",
               }}
             >
               <img
                 style={{ width: "100%", height: "30%" }}
-                src="/images/map.png"
+                src={selectedData?.map}
+                alt="Map"
               />
             </div>
           </div>
@@ -102,9 +111,8 @@ const ProductServices: React.FC<ProductServicesProps> = ({
   setSelectedTag,
   data,
 }) => {
-
   // Find the item based on the selected tag
-  
+
   const selectedItem = Data.find(
     (item: { tag: string }) => item.tag === selectedTag
   );

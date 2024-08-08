@@ -181,6 +181,7 @@ export const sublinks = [
     links: [
       { name: "About Us", path: "/aboutus" },
       { name: "Subscriptions", path: "/subscriptions" },
+      { name: "Partner With Us", path: "/partner-with-us" },
     ],
   },
   {

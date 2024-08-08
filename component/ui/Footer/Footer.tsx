@@ -11,7 +11,7 @@ import { FiFacebook } from "react-icons/fi";
 import Link from "next/link";
 
 const FooterContainer = styled.footer`
-  background-color: #ffffff;
+  background-color: #ebebeb;
   color: #000000;
   padding: 5% 8%;
 
@@ -48,7 +48,8 @@ const Title = styled.h3`
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
-  color: var(--primary);
+  color: #2b2b2b;
+  font-family: "Poppins";
 `;
 
 const SublinkList = styled.ul`
@@ -59,7 +60,7 @@ const SublinkList = styled.ul`
 
 const Sublink = styled.li`
   margin-bottom: 8px;
-  color: var(--content);
+  color: #2b2b2b;
 `;
 const SubRoutes = styled.div`
   display: flex;
@@ -69,7 +70,7 @@ const SubRoutes = styled.div`
 `;
 
 const SublinkAnchor = styled.a`
-  color: #898989;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s ease;
   &:hover {
@@ -95,9 +96,26 @@ const Footer = () => {
             >
               <Logo src="/logo.png" fill={true} alt="Logo" />
             </div>
-            <p style={{ color: "#ccc", marginBottom: "16px" }}>
+            <p style={{ color: "#2b2b2b", marginBottom: "16px" }}>
               Making life easier, one service at a time.
             </p>
+
+            {/* <SubRoutes> */}
+            {sublinks.map((column, index) => (
+              <Column key={index}>
+                <Title>{column.title}</Title>
+                <SublinkList>
+                  {column.links.map((link, index) => (
+                    <Sublink key={index}>
+                      <SublinkAnchor href={link.path}>
+                        {link.name}
+                      </SublinkAnchor>
+                    </Sublink>
+                  ))}
+                </SublinkList>
+              </Column>
+            ))}
+            {/* </SubRoutes> */}
             <div style={{ display: "flex", gap: "20px", marginTop: " 20px" }}>
               <Link
                 href="https://web.facebook.com/people/Dibo-Ruwa/100091340989617/"
@@ -125,21 +143,6 @@ const Footer = () => {
               </Link>
             </div>
           </Column>
-
-          {/* <SubRoutes> */}
-          {sublinks.map((column, index) => (
-            <Column key={index}>
-              <Title>{column.title}</Title>
-              <SublinkList>
-                {column.links.map((link, index) => (
-                  <Sublink key={index}>
-                    <SublinkAnchor href={link.path}>{link.name}</SublinkAnchor>
-                  </Sublink>
-                ))}
-              </SublinkList>
-            </Column>
-          ))}
-          {/* </SubRoutes> */}
         </FooterGrid>
 
         {/* Copyright */}

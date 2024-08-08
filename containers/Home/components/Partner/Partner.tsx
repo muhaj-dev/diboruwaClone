@@ -38,7 +38,8 @@ export default function Partner() {
   return (
     <div>
       <div className=" meal">
-        <div className="hero_frame">
+        <div className="hero_frame meal-des">
+          <div className="meal-title_sub">
             <p
               style={{
                 fontSize: "1.3rem",
@@ -57,6 +58,8 @@ export default function Partner() {
             One platform, endless convenience. Simplify your life with our
             intuitive solution for all your needs.
           </p>
+
+          </div>
           <div className="rest_card">
             {rest.map((item, index) => (
               <div key={index} className="card">

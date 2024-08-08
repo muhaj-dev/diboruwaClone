@@ -131,7 +131,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    width: min(100%, 1440px);
+    width: min(90%, 1440px);
   }
   .grooming_desktop-image {
     display: block;

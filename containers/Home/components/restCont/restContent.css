@@ -148,7 +148,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: min(100%, 1440px);
+    width: min(90%, 1440px);
   }
   .desktop-image {
     display: block;
