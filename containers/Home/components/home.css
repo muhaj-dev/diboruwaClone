@@ -9,8 +9,8 @@
 }
 
 .home-container {
-    margin: 6rem 0 0;
-    background-color: #fff;
+  margin: 6rem 0 0;
+  background-color: #fff;
 }
 
 .hero_cont {
@@ -25,8 +25,8 @@
 }
 
 .hero_map {
-    background-color: #fff;
-    height: 100%;
+  background-color: #fff;
+  height: 100%;
 }
 
 .prod {
@@ -91,9 +91,9 @@
   font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  width: 510px;
-  line-height: 50px;
-  padding: 4 16px 4px 0;
+  width: 528px;
+  line-height: 55px;
+  padding: 4px 9px 4px 0;
   border-radius: 10px;
   background-color: #fcfcfc;
 }
@@ -112,12 +112,13 @@
 }
 
 .description {
-  color: #2a2a2a;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  width: 380px;
-  margin-top: 10px;
+    color: #2a2a2a;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    width: 370px;
+    line-height: 1.5;
+    margin-top: 10px;
 }
 
 .get-started-btn {
@@ -155,7 +156,7 @@
 }
 
 .pro-name {
-    margin: 14px 0;
+  margin: 14px 0;
 }
 
 .star {

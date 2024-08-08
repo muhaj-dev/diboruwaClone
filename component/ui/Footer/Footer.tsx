@@ -13,7 +13,7 @@ import Link from "next/link";
 const FooterContainer = styled.footer`
   background-color: #ebebeb;
   color: #000000;
-  padding: 5% 8%;
+  padding: 4% 5%;
 
   .logo {
     position: relative;
@@ -32,9 +32,14 @@ const FooterGrid = styled.div`
 
 const Column = styled.div`
   margin-bottom: 24px;
-
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
   @media screen and (max-width: 768px) {
-    width: 100%;
+          width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
   }
 `;
 
@@ -88,23 +93,32 @@ const Footer = () => {
             <div
               style={{
                 display: "flex",
-
+                alignItems: "flex-start",
                 flexDirection: "column",
                 marginBottom: "16px",
               }}
-              className="logo"
             >
-              <Logo src="/logo.png" fill={true} alt="Logo" />
+              <div
+                style={{
+                  display: "flex",
+
+                  flexDirection: "column",
+                  marginBottom: "16px",
+                }}
+                className="logo"
+              >
+                <Logo src="/logo.png" fill={true} alt="Logo" />
+              </div>
+              <p style={{ color: "#2b2b2b", marginBottom: "16px" }}>
+                Making life easier, one service at a time.
+              </p>
             </div>
-            <p style={{ color: "#2b2b2b", marginBottom: "16px" }}>
-              Making life easier, one service at a time.
-            </p>
 
             {/* <SubRoutes> */}
             {sublinks.map((column, index) => (
               <Column key={index}>
-                <Title>{column.title}</Title>
                 <SublinkList>
+                  <Title>{column.title}</Title>
                   {column.links.map((link, index) => (
                     <Sublink key={index}>
                       <SublinkAnchor href={link.path}>
@@ -116,7 +130,22 @@ const Footer = () => {
               </Column>
             ))}
             {/* </SubRoutes> */}
-            <div style={{ display: "flex", gap: "20px", marginTop: " 20px" }}>
+          </Column>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "20px",
+            }}
+          >
+            <Title>Follow Us</Title>
+            <div
+              style={{
+                display: "flex",
+                gap: "20px",
+                marginTop: " -12px",
+              }}
+            >
               <Link
                 href="https://web.facebook.com/people/Dibo-Ruwa/100091340989617/"
                 style={{ color: "var(--content)", fontSize: "24px" }}
@@ -142,7 +171,7 @@ const Footer = () => {
                 <FaLinkedin />
               </Link>
             </div>
-          </Column>
+          </div>
         </FooterGrid>
 
         {/* Copyright */}
