@@ -181,6 +181,7 @@ export const sublinks = [
     links: [
       { name: "About Us", path: "/aboutus" },
       { name: "Subscriptions", path: "/subscriptions" },
+      { name: "Partner With Us", path: "/partner-with-us" },
     ],
   },
   {
@@ -188,7 +189,17 @@ export const sublinks = [
     links: [
       { name: "Food", path: "/food" },
       { name: "Laundry", path: "/laundry" },
-      { name: "Cleaning", path: "/cleaning" },
+      { name: "Moving", path: "/moving" },
+      { name: "Grooming", path: "/grooming" },
+    ],
+  },
+  {
+    title: "Blog topic",
+    links: [
+      { name: "Food", path: "/food" },
+      { name: "Laundry", path: "/laundry" },
+      { name: "Moving", path: "/moving" },
+      { name: "Grooming", path: "/grooming" },
     ],
   },
   {

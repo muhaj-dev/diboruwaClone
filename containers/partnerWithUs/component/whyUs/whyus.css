@@ -1,6 +1,6 @@
 .why_us-container {
-  background: #e9e9e929;
-  padding-bottom: 6rem;
+  background: #e9e9e921;
+  padding-bottom: 2rem;
 }
 
 .why_us-cards {
@@ -41,20 +41,21 @@ p.why_us-card_p {
   line-height: 1.3;
 }
 @media only screen and (max-width: 1128px) {
-section.partner_header-container {
+  section.partner_header-container {
     margin: 0 auto 0;
-}
+  }
 
-.why_us-container {
+  .why_us-container {
     background: transparent;
-}
+    padding-bottom: 0rem;
+  }
 
-.why_us-cards {
+  .why_us-cards {
     width: 93%;
-}
+  }
 }
 @media only screen and (max-width: 768px) {
-.why_us-cards {
+  .why_us-cards {
     flex-direction: column;
-}
+  }
 }

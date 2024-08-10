@@ -11,9 +11,9 @@ import { FiFacebook } from "react-icons/fi";
 import Link from "next/link";
 
 const FooterContainer = styled.footer`
-  background-color: #ffffff;
+  background-color: #ebebeb;
   color: #000000;
-  padding: 5% 8%;
+  padding: 4% 5%;
 
   .logo {
     position: relative;
@@ -32,9 +32,14 @@ const FooterGrid = styled.div`
 
 const Column = styled.div`
   margin-bottom: 24px;
-
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
   @media screen and (max-width: 768px) {
-    width: 100%;
+          width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+    }
   }
 `;
 
@@ -48,7 +53,8 @@ const Title = styled.h3`
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
-  color: var(--primary);
+  color: #2b2b2b;
+  font-family: "Poppins";
 `;
 
 const SublinkList = styled.ul`
@@ -59,7 +65,7 @@ const SublinkList = styled.ul`
 
 const Sublink = styled.li`
   margin-bottom: 8px;
-  color: var(--content);
+  color: #2b2b2b;
 `;
 const SubRoutes = styled.div`
   display: flex;
@@ -69,7 +75,7 @@ const SubRoutes = styled.div`
 `;
 
 const SublinkAnchor = styled.a`
-  color: #898989;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s ease;
   &:hover {
@@ -87,18 +93,59 @@ const Footer = () => {
             <div
               style={{
                 display: "flex",
-
+                alignItems: "flex-start",
                 flexDirection: "column",
                 marginBottom: "16px",
               }}
-              className="logo"
             >
-              <Logo src="/logo.png" fill={true} alt="Logo" />
+              <div
+                style={{
+                  display: "flex",
+
+                  flexDirection: "column",
+                  marginBottom: "16px",
+                }}
+                className="logo"
+              >
+                <Logo src="/logo.png" fill={true} alt="Logo" />
+              </div>
+              <p style={{ color: "#2b2b2b", marginBottom: "16px" }}>
+                Making life easier, one service at a time.
+              </p>
             </div>
-            <p style={{ color: "#ccc", marginBottom: "16px" }}>
-              Making life easier, one service at a time.
-            </p>
-            <div style={{ display: "flex", gap: "20px", marginTop: " 20px" }}>
+
+            {/* <SubRoutes> */}
+            {sublinks.map((column, index) => (
+              <Column key={index}>
+                <SublinkList>
+                  <Title>{column.title}</Title>
+                  {column.links.map((link, index) => (
+                    <Sublink key={index}>
+                      <SublinkAnchor href={link.path}>
+                        {link.name}
+                      </SublinkAnchor>
+                    </Sublink>
+                  ))}
+                </SublinkList>
+              </Column>
+            ))}
+            {/* </SubRoutes> */}
+          </Column>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "20px",
+            }}
+          >
+            <Title>Follow Us</Title>
+            <div
+              style={{
+                display: "flex",
+                gap: "20px",
+                marginTop: " -12px",
+              }}
+            >
               <Link
                 href="https://web.facebook.com/people/Dibo-Ruwa/100091340989617/"
                 style={{ color: "var(--content)", fontSize: "24px" }}
@@ -124,22 +171,7 @@ const Footer = () => {
                 <FaLinkedin />
               </Link>
             </div>
-          </Column>
-
-          {/* <SubRoutes> */}
-          {sublinks.map((column, index) => (
-            <Column key={index}>
-              <Title>{column.title}</Title>
-              <SublinkList>
-                {column.links.map((link, index) => (
-                  <Sublink key={index}>
-                    <SublinkAnchor href={link.path}>{link.name}</SublinkAnchor>
-                  </Sublink>
-                ))}
-              </SublinkList>
-            </Column>
-          ))}
-          {/* </SubRoutes> */}
+          </div>
         </FooterGrid>
 
         {/* Copyright */}

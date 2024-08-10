@@ -1,6 +1,5 @@
 .grooming_container {
   background: #f8f8f8;
-
 }
 
 .grooming-content {
@@ -132,6 +131,7 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    width: min(90%, 1440px);
   }
   .grooming_desktop-image {
     display: block;
@@ -175,6 +175,6 @@
   }
 
   .grooming-text_container {
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
   }
 }

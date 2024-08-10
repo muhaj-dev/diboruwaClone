@@ -1,7 +1,6 @@
 .resturant_container {
   background: #f8f8f8;
-    width: min(100%, 1440px);
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .resturant-content {
@@ -149,6 +148,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: min(90%, 1440px);
   }
   .desktop-image {
     display: block;

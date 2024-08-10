@@ -1,50 +1,58 @@
 import React from "react";
 import "./restAdvert.css";
 import Link from "next/link";
+import { TopResturant } from "../Data";
 
+interface RestAdvertProps {
+  selectedTag: string;
+}
 
-const rest = [
-  {
-    link: '/',
-    img: '/images/resturant.png'
-  },
-  {
-    link: '/',
-    img: '/images/resturant.png'
-  },
-  {
-    link: '/',
-    img: '/images/resturant.png'
-  },
-  {
-    link: '/',
-    img: '/images/resturant.png'
-  },
-]
+interface Item {
+  title?: string;
+  tag?: string;
+  link?: string;
+  image?: string;
+  _id?: string;
+}
 
-export default function RestAdvert() {
+const RestAdvert: React.FC<RestAdvertProps> = ({ selectedTag }) => {
   return (
-    <div className=" rest-ad">
-      <div className="hero_frame">
-        <p className="title">Top Restaurants Near You</p>
-        <div className="rest-ad-card">
-        {rest.map((item, index) =>(
-          <div key={index} className="card">
-            <img
-              className=""
-              src={item.img}
-              alt="Chef preparing food"
-            />
-            <Link href={item.link}>
-              <p>visit</p>
-              <p>visit</p>
-            </Link>
+    <div className="rest-ad">
+      {TopResturant.map((category, index) => {
+        const categoryName = Object.keys(category)[0];
+        const items = category[categoryName] as Item[];
+
+        const selectedItem = items.filter((item) => item.tag === selectedTag);
+
+        if (selectedItem.length === 0) return null;
+
+        return (
+          <div key={index} className="hero_frame">
+            <p className="title">{items[0].title}</p>
+            <div className="rest-ad-card">
+              {selectedItem.map((item, itemIndex) => (
+                <div key={item._id} className="card">
+                  <img
+                    className="top-restaurants"
+                    src={item.image}
+                    alt={item.tag}
+                  />
+                  <Link href={item.link || "#"} className="vist">
+                    <p>visit</p>
+                    <img
+                      className="arrow-right"
+                      src="/images/arrow-right.svg"
+                      alt="Arrow right"
+                    />
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
-
-        ))}
-
-        </div>
-      </div>
+        );
+      })}
     </div>
   );
-}
+};
+
+export default RestAdvert;
