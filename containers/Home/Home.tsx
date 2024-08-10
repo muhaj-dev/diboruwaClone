@@ -46,6 +46,7 @@ import LaundryService from "./components/laundryService/LaundryService";
 import GroomingService from "./components/groomingService/GroomingService";
 import Cleaning from "./components/laundryService/Cleaning";
 import Newsletter from "../partnerWithUs/component/newsletter/Newsletter";
+import Data from "./components/Data";
 
 type ServiceName =
   | "Laundry chores."
@@ -92,8 +93,23 @@ const Home: React.FC = () => {
     return () => clearInterval(interval);
   }, [serviceIndex, serviceOptions]);
 
-  const [selectedTag, setSelectedTag] = useState<string>("Food");
+  // Extract the tags from the Data array
+  const tags = useMemo(() => Data.map((item) => item.tag), []);
 
+  const [selectedTag, setSelectedTag] = useState<string>(tags[0] || "Food");
+
+  // Change the selectedTag every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSelectedTag((prevTag) => {
+        const currentIndex = tags.indexOf(prevTag);
+        const nextIndex = (currentIndex + 1) % tags.length;
+        return tags[nextIndex];
+      });
+    }, 4000); // 4000 milliseconds = 4 seconds
+
+    return () => clearInterval(interval);
+  }, [tags]);
   return (
     <div className="home-container">
       <div className="hero_frame">
