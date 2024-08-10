@@ -57,7 +57,7 @@ const Data = [
   },
   {
     _id: 5,
-    tag: "Grooming",
+    tag: "Groceries",
     bigImg: "/images/Subtract (1).png",
     bike: "/images/Frame 2610175.png",
     foodImg: "/images/Frame 2610173 (1).png",
@@ -194,30 +194,30 @@ export const TopResturant: Category[] = [
     ],
   },
   {
-    TopGroomingNearYou: [
+    TopGroceriesNearYou: [
       {
-        title: "Grooming Near You",
+        title: "Groceries Near You",
       },
       {
-        tag: "Grooming",
+        tag: "Groceries",
         link: "/",
         image: "/images/Rectangle 248 (9).png",
         _id: 22,
       },
       {
-        tag: "Grooming",
+        tag: "Groceries",
         link: "/",
         image: "/images/Rectangle 248 (9).png",
         _id: 23,
       },
       {
-        tag: "Grooming",
+        tag: "Groceries",
         link: "/",
         image: "/images/Rectangle 248 (9).png",
         _id: 24,
       },
       {
-        tag: "Grooming",
+        tag: "Groceries",
         link: "/",
         image: "/images/Rectangle 248 (9).png",
         _id: 25,
