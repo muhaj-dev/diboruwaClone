@@ -21,7 +21,7 @@ const BarbingService = () => {
           </div>
           <div className="barbingservice_text-content">
             <ul className="barbingservice_text-ul">
-              <li className="barbingservice_text-li">Grooming</li>
+              <li className="barbingservice_text-li">Groceries</li>
             </ul>
             <div className="barbingservice_img-text">
               <img
