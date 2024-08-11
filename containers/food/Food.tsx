@@ -31,6 +31,8 @@ import RestaurantList from "@/component/restaurants/Restaurants";
 import FoodList from "../foodList/FoodList";
 import { FaBowlFood } from "react-icons/fa6";
 import Discount from "./component/discount/Discount";
+import CustomBooking from "./component/custombooking/CustomBooking";
+import MostSold from "./component/mostsold/MostSold";
 
 const isBetween10amAnd6pm = () => {
   const now = new Date();
@@ -47,6 +49,8 @@ const Food = () => {
   return (
     <div className="food-container">
       <Discount />
+      <CustomBooking />
+      <MostSold />
     </div>
   );
 };
