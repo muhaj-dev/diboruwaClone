@@ -1,0 +1,8 @@
+.mostsold_container {
+  padding-bottom: 3rem;
+}
+
+.mostsold-frame {
+  width: min(93%, 1440px);
+  margin: 0 auto;
+}
