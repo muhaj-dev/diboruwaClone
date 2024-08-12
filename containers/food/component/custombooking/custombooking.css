@@ -13,6 +13,11 @@
   background: #fff;
 }
 
+.custombooking_search-min{
+  display: flex;
+  gap: 2rem;
+}
+
 .min-buttons {
   display: flex;
   align-items: center;
@@ -48,7 +53,7 @@ button.min-button {
 }
 
 input.custombooking-search_input {
-  width: 484px;
+  width: 400px;
   height: 42px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -66,9 +71,7 @@ img.custombooking-search_img {
 
 button.custombooking-btn {
   display: flex;
-  width: 216px;
-  height: 42px;
-  padding: 5.791px 34.744px;
+  padding: 12.791px 30.744px;
   font-family: Poppins;
   flex-direction: column;
   justify-content: center;

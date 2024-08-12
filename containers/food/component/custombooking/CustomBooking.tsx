@@ -3,6 +3,7 @@ const CustomBooking = () => {
   return (
     <div className="custombooking_container">
       <div className="custombooking_frame">
+        <div className="custombooking_search-min">
         <div className="min-buttons">
           <button className="min-button">All</button>
           <button className="min-button">30 Mins</button>
@@ -22,6 +23,8 @@ const CustomBooking = () => {
             alt="search-normal"
             className="custombooking-search_img"
           />
+        </div>
+
         </div>
         <button type="submit" className="custombooking-btn">
           Custom Booking
