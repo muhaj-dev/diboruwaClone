@@ -33,6 +33,8 @@ import { FaBowlFood } from "react-icons/fa6";
 import Discount from "./component/discount/Discount";
 import CustomBooking from "./component/custombooking/CustomBooking";
 import MostSold from "./component/mostsold/MostSold";
+import MinsMeals from "./component/30MinsMeals/MinsMeals";
+import FreeDelivery from "./component/freedelivery/FreeDelivery";
 
 const isBetween10amAnd6pm = () => {
   const now = new Date();
@@ -51,13 +53,13 @@ const Food = () => {
       <Discount />
       <CustomBooking />
       <MostSold />
+      <MinsMeals />
+      <FreeDelivery />
     </div>
   );
 };
 
 export default Food;
-
-
 
 // <Container>
 //   <HeroContainer bg="primary-20">
@@ -159,22 +161,3 @@ export default Food;
 //     onClose={closeModal}
 //   />
 // </Container>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

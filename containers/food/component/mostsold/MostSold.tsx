@@ -62,13 +62,17 @@ const MostSold: React.FC = () => {
             );
           })}
         </div>
- <div className="sale-imgs-container">
-        {DiscountSale.map((item, index) => (
-          <div className="sale-imgs" key={index}>
-            <img src={item.img} alt={item.alt} className="mostsold-sale_img" />
-          </div>
-        ))}
-      </div>
+        <div className="sale-imgs-container">
+          {DiscountSale.map((item, index) => (
+            <div className="sale-imgs" key={index}>
+              <img
+                src={item.img}
+                alt={item.alt}
+                className="mostsold-sale_img"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
