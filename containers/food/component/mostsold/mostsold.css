@@ -67,99 +67,118 @@ svg.mostsold-card_img-icon {
 }
 
 .mostsold-card_content {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .mostsold-card_context {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .mostsold-card_context-top {
-    display: flex;
-    gap: 0.2rem;
-    align-items: center;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
 }
 
 small.mostsold-card_title {
-    color: var(--Black-100, #2A2A2A);
-    font-family: Poppins;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: var(--Black-100, #2a2a2a);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 span.mostsold-card_timer-text {
-    color: #565656;
-    font-family: Poppins;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: #565656;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 span.mostsold-card_dot {
-    background: #4BB149;
-    width: 7px;
-    height: 7px;
-    border-radius: 100%;
+  background: #4bb149;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+}
+
+svg.mostsold-card_star {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  color: #ffc93f;
 }
 
 svg.mostsold-card_timer-icon {
-    display: flex;
-    width: 20px;
-    height: 20px;
-    justify-content: center;
-    align-items: center;
-    color: #565656;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  color: #565656;
 }
 
 .mostsold-card_timer {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 small.mostsold-card_remender {
-    color: #EF5A5A;
-    font-family: Poppins;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-bottom: 0.5rem;
+  color: #ef5a5a;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.5rem;
 }
 
 .mostsold-card_prize {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-    background: #F8F8F8;
-    padding: 0.5rem;
-    border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  background: #f8f8f8;
+  padding: 0.5rem;
+  border-radius: 50px;
 }
 
 p.mostsold-card_prize-text {
-    color: var(--Soft-black, #565656);
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  color: var(--Soft-black, #565656);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 a.mostsold-card_prize-link {
-    display: flex;
-    width: 148px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    border-radius: 100px;
-    background: var(--Green1, #27A124);
-        color: #FEFEFE;
+  display: flex;
+  width: 148px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: var(--Green1, #27a124);
+  color: #fefefe;
 }
+
+.sale-imgs-container {
+    display: flex;
+    margin: 3rem auto;
+}
+
+img.mostsold-sale_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
