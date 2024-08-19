@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Dropdown from "./ui/Dropdown";
 import { FaMapMarkerAlt } from 'react-icons/fa';
 
-
 const ModalWrapper = styled.div`
   position: fixed;
   top: 0;
@@ -121,9 +120,6 @@ const LocationModal: React.FC = () => {
           "Oko olowo",
         ],
       },
-      // nasarawa: {
-      //   locations: ["opt a", "opt b", "opt c", "opt d"],
-      // },
     };
   }, []);
 
@@ -134,18 +130,7 @@ const LocationModal: React.FC = () => {
       setAvailableRegions(statesAndRegions[selectedOption]?.locations);
     }
 
-    //     console.log(selectedOption);
-
     setSelectedRegion("");
-  };
-
-  const handleModalClose = () => {
-    if (selectedState && selectedRegion) {
-      localStorage.setItem(`${companyName}_hasVisited`, "true");
-      localStorage.setItem(`${companyName}_selectedState`, selectedState);
-      localStorage.setItem(`${companyName}_selectedRegion`, selectedRegion);
-    }
-    setShowModal(false);
   };
 
   const handleRegionSelect = (selectedOption: string) => {
@@ -153,76 +138,80 @@ const LocationModal: React.FC = () => {
     setSelectedRegion(selectedOption.toLowerCase());
   };
 
-  // useEffect(() => {
-  //   const hasVisited = localStorage.getItem(`${companyName}_hasVisited`);
+  const handleModalClose = async () => {
+    if (selectedState && selectedRegion) {
+      try {
+        // Send selected state and region to backend API
+        const response = await fetch("/api/locations", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            state: selectedState,
+            region: selectedRegion,
+            companyName,
+          }),
+        });
 
-  //   if (selectedState) {
-  //     setAvailableRegions(statesAndRegions[selectedState]?.locations);
-  //   }
-  //   if (!hasVisited) {
-  //     setShowModal(true);
-  //   }
+        if (!response.ok) {
+          throw new Error("Failed to save location data");
+        }
 
-  //   const resetLocalStorage = () => {
-  //     localStorage.removeItem(`${companyName}_hasVisited`);
-  //     localStorage.removeItem(`${companyName}_selectedState`);
-  //     localStorage.removeItem(`${companyName}_selectedRegion`);
-  //   };
-  
-  //   // Set interval to reset localStorage every 24 hours
-  //   const intervalId = setInterval(resetLocalStorage, 24 * 60 * 60 * 1000);
-  
-  //   // Clean up interval on component unmount
-  //   return () => clearInterval(intervalId);
-  // }, [companyName, setAvailableRegions, selectedState, statesAndRegions]);
+        console.log("Location data saved successfully");
+
+        // Optionally, save to localStorage if you still need to
+        localStorage.setItem(`${companyName}_hasVisited`, "true");
+        localStorage.setItem(`${companyName}_selectedState`, selectedState);
+        localStorage.setItem(`${companyName}_selectedRegion`, selectedRegion);
+      } catch (error) {
+        console.error("Error saving location data:", error);
+      }
+    }
+    setShowModal(false);
+  };
 
   useEffect(() => {
     const hasVisited = localStorage.getItem(`${companyName}_hasVisited`);
-  
+
     if (selectedState) {
       setAvailableRegions(statesAndRegions[selectedState]?.locations);
     }
     if (!hasVisited) {
       setShowModal(true);
     }
-  
-    // Function to reset localStorage
+
     const resetLocalStorage = () => {
-      console.log('Resetting local storage'); // Optional: for debugging
+      console.log('Resetting local storage');
       localStorage.removeItem(`${companyName}_hasVisited`);
       localStorage.removeItem(`${companyName}_selectedState`);
       localStorage.removeItem(`${companyName}_selectedRegion`);
     };
-  
-    // Calculate the milliseconds until the next 24 hour mark
+
     const currentTime = new Date();
     const resetTime = new Date(
       currentTime.getFullYear(),
       currentTime.getMonth(),
-      currentTime.getDate() + 1, // next day
-      0, 0, 0, // at 00:00:00
+      currentTime.getDate() + 1,
+      0, 0, 0,
     );
     const msUntilReset = resetTime.getTime() - currentTime.getTime();
-  
-    // Set a timeout to clear localStorage after the calculated time until reset
+
     const timeoutId = setTimeout(resetLocalStorage, msUntilReset);
-  
-    // Set interval to reset localStorage every 24 hours after the initial timeout
+
     const intervalId = setInterval(resetLocalStorage, 24 * 60 * 60 * 1000);
-  
-    // Clean up timeout and interval on component unmount
+
     return () => {
       clearTimeout(timeoutId);
       clearInterval(intervalId);
     };
   }, [companyName, selectedState, statesAndRegions]);
-  
-  
+
   return (
     <>
       {showModal && (
         <ModalWrapper>
-           <ModalContent>
+          <ModalContent>
             <Header>
               <FaMapMarkerAlt size={70} style={{ marginBottom: '20px' }} color="green" />
               {" "}
@@ -250,7 +239,7 @@ const LocationModal: React.FC = () => {
             </FormControl>
 
             <SubmitButton onClick={handleModalClose}>Submit</SubmitButton>
-            </ModalContent>
+          </ModalContent>
         </ModalWrapper>
       )}
     </>

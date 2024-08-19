@@ -1,13 +1,13 @@
-.mostsold_container {
+.minsmeal_container {
   padding-bottom: 3rem;
 }
 
-.mostsold-frame {
+.minsmeal-frame {
   width: min(93%, 1440px);
   margin: 0 auto;
 }
 
-p.mostsold_title {
+p.minsmeal_title {
   color: var(--Ash-100, #8f8f8f);
   font-family: Poppins;
   font-size: 19.548px;
@@ -17,7 +17,7 @@ p.mostsold_title {
   margin-bottom: 3rem;
 }
 
-.mostsold-cards {
+.minsmeal-cards {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -27,7 +27,7 @@ p.mostsold_title {
   gap: 30px;
 }
 
-.mostsold-card {
+.minsmeal-card {
   width: 100%;
   scroll-snap-align: center;
   box-sizing: border-box;
@@ -36,18 +36,18 @@ p.mostsold_title {
   border-radius: 16px;
 }
 
-img.mostsold-card_img {
+img.minsmeal-card_img {
   width: 100%;
 }
 
-.mostsold-card_food-img {
+.minsmeal-card_food-img {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mostsold-card_img-iconcontainer {
+.minsmeal-card_img-iconcontainer {
   display: inline-flex;
   padding: 7px;
   position: absolute;
@@ -61,29 +61,29 @@ img.mostsold-card_img {
   backdrop-filter: blur(4.199999809265137px);
 }
 
-svg.mostsold-card_img-icon {
+svg.minsmeal-card_img-icon {
   font-size: 1.3rem;
   color: #4bb149;
 }
 
-.mostsold-card_content {
+.minsmeal-card_content {
   padding: 1rem;
 }
 
-.mostsold-card_context {
+.minsmeal-card_context {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.5rem;
 }
 
-.mostsold-card_context-top {
+.minsmeal-card_context-top {
   display: flex;
   gap: 0.2rem;
   align-items: center;
 }
 
-small.mostsold-card_title {
+small.minsmeal-card_title {
   color: var(--Black-100, #2a2a2a);
   font-family: Poppins;
   font-size: 16px;
@@ -92,7 +92,7 @@ small.mostsold-card_title {
   line-height: normal;
 }
 
-span.mostsold-card_timer-text {
+span.minsmeal-card_timer-text {
   color: #565656;
   font-family: Poppins;
   font-size: 12px;
@@ -101,21 +101,21 @@ span.mostsold-card_timer-text {
   line-height: normal;
 }
 
-span.mostsold-card_dot {
+span.minsmeal-card_dot {
   background: #4bb149;
   width: 7px;
   height: 7px;
   border-radius: 100%;
 }
 
-svg.mostsold-card_star {
+svg.minsmeal-card_star {
   width: 15px;
   height: 15px;
   flex-shrink: 0;
   color: #ffc93f;
 }
 
-svg.mostsold-card_timer-icon {
+svg.minsmeal-card_timer-icon {
   display: flex;
   width: 20px;
   height: 20px;
@@ -124,12 +124,12 @@ svg.mostsold-card_timer-icon {
   color: #565656;
 }
 
-.mostsold-card_timer {
+.minsmeal-card_timer {
   display: flex;
   align-items: center;
 }
 
-small.mostsold-card_remender {
+small.minsmeal-card_remender {
   color: #ef5a5a;
   font-family: Poppins;
   font-size: 10px;
@@ -139,7 +139,7 @@ small.mostsold-card_remender {
   margin-bottom: 0.5rem;
 }
 
-.mostsold-card_prize {
+.minsmeal-card_prize {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -149,7 +149,7 @@ small.mostsold-card_remender {
   border-radius: 50px;
 }
 
-p.mostsold-card_prize-text {
+p.minsmeal-card_prize-text {
   color: var(--Soft-black, #565656);
   font-family: Poppins;
   font-size: 20px;
@@ -158,7 +158,7 @@ p.mostsold-card_prize-text {
   line-height: normal;
 }
 
-a.mostsold-card_prize-link {
+a.minsmeal-card_prize-link {
   display: flex;
   width: 148px;
   padding: 10px;
