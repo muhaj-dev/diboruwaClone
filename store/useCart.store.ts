@@ -166,6 +166,9 @@ const useCartStore = create<CartState>()((set) => ({
       });
     }
   },
+
+ 
+
   removeFromCart: async (id) => {
     try {
       toast.loading("Removing item from cart!!!", {

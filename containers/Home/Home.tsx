@@ -111,200 +111,206 @@ const Home: React.FC = () => {
     return () => clearInterval(interval);
   }, [tags]);
   return (
-    <div className="home-container">
-      <div className="hero_frame">
-        <ProductServices
-          selectedTag={selectedTag}
-          setSelectedTag={setSelectedTag}
-          data={[]}
+    <>
+      {/* <div className="home-container">
+        <div className="hero_frame">
+          <ProductServices
+            selectedTag={selectedTag}
+            setSelectedTag={setSelectedTag}
+            data={[]}
+          />
+        </div>
+        <RestAdvert selectedTag={selectedTag} />
+        <Resturant />
+        <Meal />
+        <Delivery />
+        <FoodImage />
+        <LaundryService />
+        <Cleaning />
+        <GroomingService />
+        <Groceries />
+        <Partner />
+        <Newsletter />
+      </div> */}
+
+
+
+      
+<Container>
+
+<HeroContainer bg="#F5F5F5">
+
+  <motion.div className="hero__text">
+    <div className="title" >
+      {/* Live easy. Free yourself from
+        <span style={{ color: currentServiceTextColor, marginRight: "3px"  }}>
+          {" "} {currentService}
+        </span>  */}
+        Home service subscriptions for techies, entrepreneurs, professionals and students.
+    </div>
+
+    <h2 className="sub_title">We take away the drama of house chores with services designed just for you.</h2>
+
+    {/* <HeroList>
+      <HeroListItem>
+        <span className="dot" />
+        <div className="text">
+          <strong>Fresh clothes, always ready:</strong>
+          <small>Fresh clothes, ready when you are.</small>
+        </div>
+      </HeroListItem>
+      <HeroListItem>
+        <span className="dot" />
+
+        <div className="text">
+          <strong>Sparkling clean homes:</strong>
+          <small>
+            Step into a fresh, clean space every day, without lifting a
+            finger.
+          </small>
+        </div>
+      </HeroListItem>
+      <HeroListItem>
+        <span className="dot" />
+        <div className="text">
+          <strong>Tasty meals delivered:</strong>
+          <small>
+            Fresh, delicious meals delivered to you - no effort required.
+          </small>
+        </div>
+      </HeroListItem>
+    </HeroList> */}
+
+    <div className="btn_grp">
+      <Button
+        size="large"
+        color="primary"
+        onClick={() => router.push(session ? "/dashboard" : "/signin")}
+      >
+        Get Started
+      </Button>
+      <div className="contact">
+        <button className="withIcon">
+          <FiPhoneCall />
+        </button>
+        <div className="content">
+          <span>Call us</span>
+          <span className="cell">+2348059303261</span>
+        </div>
+      </div>
+    </div>
+  </motion.div>
+
+  <HeroImageContainer>
+    <div className="image home">
+      <HeroImage src="/homepage_hero.png" fill={true} alt=".." />
+    </div>
+  </HeroImageContainer>
+</HeroContainer>
+
+<ServicesSection>
+  <header>
+    <h3 className="title">Our Services</h3>
+    {/* <p className="subtitle">
+      Reliable convenience, always at your service.
+    </p> */}
+  </header>
+  <ServiceList>
+    {services.map((service) => (
+      <div key={service.title}>
+        <ServiceCard
+          title={service.title}
+          content={service.content}
+          bg={service.bg}
+          imageSrc={service.image}
+          cta={service.cta}
+          ctaTextColor={service.color}
         />
       </div>
-      <RestAdvert selectedTag={selectedTag} />
-      <Resturant />
-      <Meal />
-      <Delivery />
-      <FoodImage />
-      <LaundryService />
-      <Cleaning />
-      <GroomingService />
-      <Groceries />
-      <Partner />
-      <Newsletter />
+    ))}
+    <div className="pattern">
+      <Image
+        src={assets.pattern1}
+        width={300}
+        height={300}
+        alt="line_patterns"
+      />
     </div>
+  </ServiceList>
+</ServicesSection>
+
+<WhyChooseUsSection>
+  <WhyChooseUsImageContainer>
+    <WhyChooseUsImage>
+      <div className="ball blueBall"></div>
+      <div className="ball yellowBall"></div>
+      <div className="ball purpleBall"></div>
+
+      <div className="image">
+        <Image src="/phone user.png" fill={true} alt="..." />
+      </div>
+    </WhyChooseUsImage>
+  </WhyChooseUsImageContainer>
+
+  <WhyChooseUsText>
+    <WhyChooseUsColored>Why choose DiboRuwa?</WhyChooseUsColored>
+    <WhyChooseUsTitle>
+      Because we are a team of techies, entrepreneurs, professionals and students like you who understand the drama of house chores.
+    </WhyChooseUsTitle>
+    <WhyChooseUsContent>
+      <li>
+        <span className="dot"></span>
+        <p>No ready-made home service solution, so we decided to build one ourselves.</p>
+     </li>
+
+      <li>
+        <span className="dot"></span>
+        <p>We work with certified professionals to deliver top-quality home services.</p>
+     </li>
+      {/* <li>
+        <span className="dot"></span>
+        <p>Are you convinced yet?</p>
+     </li> */}
+    </WhyChooseUsContent>
+    <Button
+      size="large"
+      color="primary"
+      onClick={() => router.push(session ? "/dashboard" : "/signin")}
+    >
+      Get Started
+    </Button>
+  </WhyChooseUsText>
+</WhyChooseUsSection>
+
+{/* feedbacksection */}
+
+<FeedBackSection>
+  <h3 className="title">
+    What our Customers <br /> Say about us
+  </h3>
+
+  <div className="content">
+    <div className="image">
+      <Image src="/lady thinking.png" fill={true} alt="...." />
+    </div>
+
+    <div className="carousel">
+      <FeedbackCarousel />
+    </div>
+  </div>
+</FeedBackSection>
+
+<FaqSection>
+  <div className="container">
+    <NewsletterForm />
+
+    <AccordionList />
+  </div>
+</FaqSection>
+
+</Container>
+      
+    </>
   );
 };
 export default Home;
-
-// <Container>
-
-//   <HeroContainer bg="#F5F5F5">
-
-//     <motion.div className="hero__text">
-//       <div className="title" >
-//         {/* Live easy. Free yourself from
-//           <span style={{ color: currentServiceTextColor, marginRight: "3px"  }}>
-//             {" "} {currentService}
-//           </span>  */}
-//           Home service subscriptions for techies, entrepreneurs, professionals and students.
-//       </div>
-
-//       <h2 className="sub_title">We take away the drama of house chores with services designed just for you.</h2>
-
-//       {/* <HeroList>
-//         <HeroListItem>
-//           <span className="dot" />
-//           <div className="text">
-//             <strong>Fresh clothes, always ready:</strong>
-//             <small>Fresh clothes, ready when you are.</small>
-//           </div>
-//         </HeroListItem>
-//         <HeroListItem>
-//           <span className="dot" />
-
-//           <div className="text">
-//             <strong>Sparkling clean homes:</strong>
-//             <small>
-//               Step into a fresh, clean space every day, without lifting a
-//               finger.
-//             </small>
-//           </div>
-//         </HeroListItem>
-//         <HeroListItem>
-//           <span className="dot" />
-//           <div className="text">
-//             <strong>Tasty meals delivered:</strong>
-//             <small>
-//               Fresh, delicious meals delivered to you - no effort required.
-//             </small>
-//           </div>
-//         </HeroListItem>
-//       </HeroList> */}
-
-//       <div className="btn_grp">
-//         <Button
-//           size="large"
-//           color="primary"
-//           onClick={() => router.push(session ? "/dashboard" : "/signin")}
-//         >
-//           Get Started
-//         </Button>
-//         <div className="contact">
-//           <button className="withIcon">
-//             <FiPhoneCall />
-//           </button>
-//           <div className="content">
-//             <span>Call us</span>
-//             <span className="cell">+2348059303261</span>
-//           </div>
-//         </div>
-//       </div>
-//     </motion.div>
-
-//     <HeroImageContainer>
-//       <div className="image home">
-//         <HeroImage src="/homepage_hero.png" fill={true} alt=".." />
-//       </div>
-//     </HeroImageContainer>
-//   </HeroContainer>
-
-//   <ServicesSection>
-//     <header>
-//       <h3 className="title">Our Services</h3>
-//       {/* <p className="subtitle">
-//         Reliable convenience, always at your service.
-//       </p> */}
-//     </header>
-//     <ServiceList>
-//       {services.map((service) => (
-//         <div key={service.title}>
-//           <ServiceCard
-//             title={service.title}
-//             content={service.content}
-//             bg={service.bg}
-//             imageSrc={service.image}
-//             cta={service.cta}
-//             ctaTextColor={service.color}
-//           />
-//         </div>
-//       ))}
-//       <div className="pattern">
-//         <Image
-//           src={assets.pattern1}
-//           width={300}
-//           height={300}
-//           alt="line_patterns"
-//         />
-//       </div>
-//     </ServiceList>
-//   </ServicesSection>
-
-//   <WhyChooseUsSection>
-//     <WhyChooseUsImageContainer>
-//       <WhyChooseUsImage>
-//         <div className="ball blueBall"></div>
-//         <div className="ball yellowBall"></div>
-//         <div className="ball purpleBall"></div>
-
-//         <div className="image">
-//           <Image src="/phone user.png" fill={true} alt="..." />
-//         </div>
-//       </WhyChooseUsImage>
-//     </WhyChooseUsImageContainer>
-
-//     <WhyChooseUsText>
-//       <WhyChooseUsColored>Why choose DiboRuwa?</WhyChooseUsColored>
-//       <WhyChooseUsTitle>
-//         Because we are a team of techies, entrepreneurs, professionals and students like you who understand the drama of house chores.
-//       </WhyChooseUsTitle>
-//       <WhyChooseUsContent>
-//         <li>
-//           <span className="dot"></span>
-//           <p>No ready-made home service solution, so we decided to build one ourselves.</p>
-//        </li>
-
-//         <li>
-//           <span className="dot"></span>
-//           <p>We work with certified professionals to deliver top-quality home services.</p>
-//        </li>
-//         {/* <li>
-//           <span className="dot"></span>
-//           <p>Are you convinced yet?</p>
-//        </li> */}
-//       </WhyChooseUsContent>
-//       <Button
-//         size="large"
-//         color="primary"
-//         onClick={() => router.push(session ? "/dashboard" : "/signin")}
-//       >
-//         Get Started
-//       </Button>
-//     </WhyChooseUsText>
-//   </WhyChooseUsSection>
-
-//   {/* feedbacksection */}
-
-//   <FeedBackSection>
-//     <h3 className="title">
-//       What our Customers <br /> Say about us
-//     </h3>
-
-//     <div className="content">
-//       <div className="image">
-//         <Image src="/lady thinking.png" fill={true} alt="...." />
-//       </div>
-
-//       <div className="carousel">
-//         <FeedbackCarousel />
-//       </div>
-//     </div>
-//   </FeedBackSection>
-
-//   <FaqSection>
-//     <div className="container">
-//       <NewsletterForm />
-
-//       <AccordionList />
-//     </div>
-//   </FaqSection>
-
-// </Container>
