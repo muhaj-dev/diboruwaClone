@@ -1,21 +1,27 @@
 import React from "react";
 import "./mostsold.css";
 import { DiscountSale, FoodVendor } from "@/containers/Home/components/Data";
+import Link from "next/link";
 
-const MostSold: React.FC = () => {
+
+interface MostSoldProps {
+  id: string;
+}
+
+const MostSold: React.FC<MostSoldProps> = ({ id }) => {
   return (
     <section className="mostsold_container">
       <div className="mostsold-frame">
         <p className="mostsold_title">{FoodVendor[0].title}</p>
         <div className="mostsold-cards">
-          {FoodVendor[0].items.map((item, index) => {
+          {FoodVendor[0].items.map((item) => {
             // Destructure the Icon components from the item
             const FavoriteIcon = item.favoriteIcon;
             const StarIcon = item.starIcon;
             const TimeIcon = item.timeIcon;
             const PrizeIcon = item.prizeIcon;
             return (
-              <div key={index} className="mostsold-card">
+              <Link  href={`./food/${item.id}`} key={item.id} className="mostsold-card">
                 <div className="mostsold-card_food-img">
                   <img
                     src={item.img}
@@ -58,7 +64,7 @@ const MostSold: React.FC = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

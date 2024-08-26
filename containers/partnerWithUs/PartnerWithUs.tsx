@@ -1,7 +1,6 @@
 "use client";
 
 import "../Home/components/home.css";
-import AutoHome from "./component/autonext/MultiStepForm";
 import Header from "./component/header/Header";
 import Newsletter from "./component/newsletter/Newsletter";
 import WhyUs from "./component/whyUs/WhyUs";
@@ -13,7 +12,6 @@ export default function PartnerWithUs() {
         <Header />
       </div>
       <WhyUs />
-      <AutoHome />
       <Newsletter />
     </div>
   );

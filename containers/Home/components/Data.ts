@@ -236,6 +236,7 @@ export const FoodVendor = [
     title: "Most Sold",
     items: [
       {
+        id: "123",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -249,6 +250,7 @@ export const FoodVendor = [
         prizeIcon: FaBagShopping,
       },
       {
+        id: "456",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -262,6 +264,7 @@ export const FoodVendor = [
         prizeIcon: FaBagShopping,
       },
       {
+        id: "789",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -275,6 +278,7 @@ export const FoodVendor = [
         prizeIcon: FaBagShopping,
       },
       {
+        id:"987",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,

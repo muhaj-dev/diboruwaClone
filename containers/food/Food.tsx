@@ -42,7 +42,14 @@ const isBetween10amAnd6pm = () => {
   return hours >= 10 && hours < 18;
 };
 
-const Food = () => {
+interface FoodProps {
+  params: {
+    id: string;
+  };
+}
+
+const Food: React.FC<FoodProps> = ({ params }) => {
+  const { id } = params;
   const { modal, closeModal } = useCartStore();
 
   const { data: session } = useSession();
@@ -52,7 +59,7 @@ const Food = () => {
     <div className="food-container">
       <Discount />
       <CustomBooking />
-      <MostSold />
+      <MostSold id={id} />
       <MinsMeals />
       <FreeDelivery />
     </div>
