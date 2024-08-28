@@ -1,7 +1,7 @@
 import React from "react";
 import "./restAdvert.css";
 import Link from "next/link";
-import { TopResturant } from "../Data";
+import { TopResturant } from "@/constants/index";
 
 interface RestAdvertProps {
   selectedTag: string;

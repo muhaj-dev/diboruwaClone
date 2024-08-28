@@ -1,9 +1,7 @@
 import React from "react";
 import "./mostsold.css";
-import { DiscountSale, FoodVendor } from "@/containers/Home/components/Data";
+import { DiscountSale, FoodVendor } from "@/constants/index";
 import Link from "next/link";
-
-
 interface MostSoldProps {
   id: string;
 }
@@ -85,3 +83,5 @@ const MostSold: React.FC<MostSoldProps> = ({ id }) => {
 };
 
 export default MostSold;
+
+

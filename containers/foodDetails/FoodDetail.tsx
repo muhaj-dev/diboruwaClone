@@ -11,7 +11,7 @@ import BackButton from "@/component/ui/BackButton/BackButton";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
-import "./food-details.css"
+import styles from  "./food-details.module.css"
 import { DisplayFood } from "./containers/detailed-food-container/display-food/DisplayFood";
 import { CheckoutStore } from "./containers/checkout-store/CheckoutStore";
 import { SimilarMeal } from "./containers/similar-meal/SimilarMeal";
@@ -24,15 +24,17 @@ export type IFoodDetailProps = {
 
 const FoodDetail: React.FC<IFoodDetailProps> = ({ id }) => {
   return (
-    <section className="food_details-container">
+    <section className={styles.food_details_container}>
+    <div className={styles.food_details_frame}>
       <div className="btn">
         <BackButton />
       </div>
-      <div>
+      <div className={styles.df_cs}>
       <DisplayFood />
       <CheckoutStore />
       </div>
       <SimilarMeal />
+    </div>
     </section>
   );
 };

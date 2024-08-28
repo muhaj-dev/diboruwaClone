@@ -1,6 +1,6 @@
 import React from "react";
 import "./minsmeal.css";
-import { DiscountSale, MinsMealsData } from "@/containers/Home/components/Data";
+import { DiscountSale, MinsMealsData } from "@/constants/index";
 
 const MinsMeals: React.FC = () => {
   return (

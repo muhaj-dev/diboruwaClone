@@ -1,7 +1,7 @@
 "use client";
 import "./home.css";
 import React, { useState } from "react";
-import Data, { DataItem } from "./Data";
+import { Data, DataItem } from "@/constants/index";
 
 const MobileView: React.FC = () => {
   const [selectedTag, setSelectedTag] = useState<string>("Food");
