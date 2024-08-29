@@ -1,7 +1,10 @@
 import React from 'react'
 
+import styles from "../checkout-store.module.css";
 export const CheckoutBtn = () => {
   return (
-    <div>CheckoutBtn</div>
+    <button className={styles.checkout_btn}>
+ Check Out
+    </button>
   )
 }

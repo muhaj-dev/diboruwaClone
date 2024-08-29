@@ -11,4 +11,5 @@
   display: grid;
   grid-template-columns: 70% 30%;
   gap: 41px;
+  position: relative;
 }

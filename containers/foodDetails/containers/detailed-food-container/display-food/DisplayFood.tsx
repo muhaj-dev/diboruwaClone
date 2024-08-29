@@ -2,7 +2,7 @@ import React from "react";
 import { AboutFood } from "../about-food/AboutFood";
 import { CTADelivery } from "../cta-delivery/CTADelivery";
 import styles from "./display-food.module.css";
-import { FaAngleLeft } from "react-icons/fa";
+import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import { FaAngleRight } from "react-icons/fa";
 
 export const DisplayFood = () => {
@@ -18,7 +18,7 @@ export const DisplayFood = () => {
         </div>
         <div className={styles.scroll_imgs}>
           <div className={styles.selected_img}>
-            <FaAngleLeft className={styles.prev_btn}/>
+            <TfiAngleLeft className={styles.prev_btn} />
             <img
               src="/images/151e2d46640e246f42f769231cc76bab.png"
               alt="on selected"
@@ -44,7 +44,7 @@ export const DisplayFood = () => {
               alt="on selected"
               className={styles.onselected_img}
             />
-            <FaAngleRight className={styles.prev_btn}/>
+            <TfiAngleRight className={styles.prev_btn} />
           </div>
         </div>
         <AboutFood />

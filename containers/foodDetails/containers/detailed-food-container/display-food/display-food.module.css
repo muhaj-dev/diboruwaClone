@@ -1,12 +1,10 @@
 .container {
+      width: 90%;
 }
 
 .display_img {
 }
 
-.scroll_imgs {
-  display: flex;
-}
 .ondisplay_img {
   width: 100%;
   height: 349px;
@@ -22,7 +20,7 @@
   margin-top: 1rem;
 }
 .onselected_img {
-  width: 140px;
+  width: 16%;
   height: 63px;
   flex-shrink: 0;
 }
