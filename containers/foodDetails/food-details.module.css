@@ -1,0 +1,15 @@
+.food_details_container {
+  background: var(--Background-color, #f8f8f8);
+}
+.food_details_frame {
+  margin: auto;
+  margin-top: 6rem;
+  width: min(93%, 1440px);
+}
+
+.df_cs {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 41px;
+  position: relative;
+}

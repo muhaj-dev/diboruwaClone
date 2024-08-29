@@ -46,7 +46,7 @@ import LaundryService from "./components/laundryService/LaundryService";
 import GroomingService from "./components/groomingService/GroomingService";
 import Cleaning from "./components/laundryService/Cleaning";
 import Newsletter from "../partnerWithUs/component/newsletter/Newsletter";
-import Data from "./components/Data";
+import { Data } from "@/constants/index";
 
 type ServiceName =
   | "Laundry chores."
@@ -94,7 +94,7 @@ const Home: React.FC = () => {
   }, [serviceIndex, serviceOptions]);
 
   // Extract the tags from the Data array
-  const tags = useMemo(() => Data.map((item) => item.tag), []);
+  const tags = useMemo(() => Data.map((item: { tag: any; }) => item.tag), []);
 
   const [selectedTag, setSelectedTag] = useState<string>(tags[0] || "Food");
 

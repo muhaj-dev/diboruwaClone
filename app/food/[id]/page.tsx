@@ -8,7 +8,7 @@ export type IpageProps = {
   };
 };
 
-const page: React.FC<IpageProps> = ({ params: { id, } }) => {
+const page: React.FC<IpageProps> = ({ params: { id } }) => {
   return (
     <div>
       <FoodDetail id={id} />

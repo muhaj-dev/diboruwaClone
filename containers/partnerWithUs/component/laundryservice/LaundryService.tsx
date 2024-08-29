@@ -1,4 +1,5 @@
 import "./laundryservice.css";
+import LaundryStep from "./LaundryStep";
 const LaundryService = () => {
   return (
     <section className="laundry_container">
@@ -19,21 +20,7 @@ const LaundryService = () => {
               />
             </div>
           </div>
-          <div className="laundry_text-content">
-            <ul className="laundry_text-ul">
-              <li className="laundry_text-li">Laundry</li>
-            </ul>
-            <div className="laundry_img-text">
-              <img
-                src="/images/Frame 2611540 (3).png"
-                className="laundry_img-text_content"
-                alt=""
-              />
-            <a href="/" className="laundry_signup">
-              Sign Up
-            </a>
-            </div>
-          </div>
+          <LaundryStep />
         </div>
       </div>
     </section>

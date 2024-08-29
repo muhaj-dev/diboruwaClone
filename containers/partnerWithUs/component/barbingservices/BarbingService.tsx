@@ -1,4 +1,5 @@
 import "./barbingservice.css";
+import BarbingStep from "./BarbingStep";
 const BarbingService = () => {
   return (
     <section className="barbingservice_container">
@@ -19,28 +20,7 @@ const BarbingService = () => {
               />
             </div>
           </div>
-          <div className="barbingservice_text-content">
-            <ul className="barbingservice_text-ul">
-              <li className="barbingservice_text-li">Groceries</li>
-            </ul>
-            <div className="barbingservice_img-text">
-              <img
-                src="/images/Frame 2611540.png"
-                className="barbingservice_img-text_content"
-                alt=""
-              />
-            </div>
-            <div className="barbingservice_img-transparent">
-              <img
-                src="/images/Ellipse 108.png"
-                className="barbingservice_img-transparent_content"
-                alt=""
-              />
-            </div>
-            <a href="/" className="barbingservice_signup">
-              Sign Up
-            </a>
-          </div>
+          <BarbingStep />
         </div>
       </div>
     </section>

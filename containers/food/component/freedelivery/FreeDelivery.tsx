@@ -1,6 +1,6 @@
 import React from "react";
 import "./freedelivery.css";
-import { FreeDeliveryData } from "@/containers/Home/components/Data";
+import { FreeDeliveryData } from "@/constants/index";
 
 const FreeDelivery: React.FC = () => {
   return (
