@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import axios from "axios";
 import Dropdown from "./ui/Dropdown";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Cookies from "js-cookie";
@@ -80,17 +81,18 @@ const LocationModal: React.FC = () => {
   const [statesAndRegions, setStatesAndRegions] = useState<StateAndRegions>({});
   const [companyName] = useState<string>("diboruwa");
 
+  const url = process.env.BASE_URL;
+
   useEffect(() => {
     const fetchStatesAndRegions = async () => {
-      console.log('response')
       try {
-        const response = await fetch(`${process.env.ADMIN_URL}/api/locations`);
-        if (!response.ok) {
-          throw new Error("Failed to fetch state and region data");
-        }
-        console.log(response)
-        const data: StateAndRegions = await response.json();
-        setStatesAndRegions(data);
+        const response = await axios.get(
+          'http://localhost:3000/api/locations'
+          // `${url}/api/locations`
+
+        );
+        console.log(response.data)
+        // setStatesAndRegions(response.data);
       } catch (error) {
         console.error("Error fetching state and region data:", error);
       }
