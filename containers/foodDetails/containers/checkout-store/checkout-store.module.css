@@ -1,20 +1,29 @@
 .stores_container {
-  width: 33%;
-  height: 1707px;
+  width: 100%;
+  /* max-width: 302px; */
+  height: fit-content;
   padding: 1rem;
   z-index: 1;
   flex-shrink: 0;
   border-radius: 10px;
   background: var(--White, #fefefe);
-  /* Shadow */
   box-shadow: 0px 184px 51px 0px rgba(158, 158, 158, 0),
     0px 118px 47px 0px rgba(158, 158, 158, 0.01),
     0px 66px 40px 0px rgba(158, 158, 158, 0.05),
     0px 29px 29px 0px rgba(158, 158, 158, 0.05),
     0px 7px 16px 0px rgba(158, 158, 158, 0.05);
-  position: absolute;
+  /* position: absolute; */
   right: 10px;
   top: 0;
+  
+}
+@media screen and (max-width: 900px) {
+  .stores_container {
+    width: 100%;
+    /* max-width: 302px; */
+    display: none;
+    
+  }
 }
 
 .request_container {
@@ -189,6 +198,7 @@
   justify-content: center;
   align-items: center;
   gap: 9.043px;
+  cursor: pointer;
 }
 
 .location_edit_icon {

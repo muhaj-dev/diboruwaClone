@@ -1,6 +1,7 @@
 import React from "react";
 import "./minsmeal.css";
 import { DiscountSale, MinsMealsData } from "@/constants/index";
+import Link from "next/link";
 
 const MinsMeals: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const MinsMeals: React.FC = () => {
             const TimeIcon = item.timeIcon;
             const PrizeIcon = item.prizeIcon;
             return (
-              <div key={index} className="minsmeal-card">
+              <Link key={item.id} href={item.id} className="minsmeal-card">
                 <div className="minsmeal-card_food-img">
                   <img
                     src={item.img}
@@ -58,7 +59,7 @@ const MinsMeals: React.FC = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

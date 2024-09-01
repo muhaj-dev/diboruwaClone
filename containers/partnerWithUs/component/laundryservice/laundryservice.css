@@ -5,10 +5,10 @@
 }
 
 img.laundry_img-content {
-  width: 20rem;
-  margin: 0 0 0 5rem;
+  width: 24rem;
+  margin: 0px 0 0 3rem;
   display: flex;
-  height: 19rem;
+  height: 24rem;
 }
 
 .laundry_img {
@@ -55,12 +55,12 @@ a.laundry_signup {
 
 .laundry_overlay-img {
   position: absolute;
-  top: 6.3rem;
+  top: 10rem;
   right: 7rem;
 }
 
 img.laundry_overlay-img_content {
-  width: 20rem;
+  width: 23rem;
 }
 
 .LaundryStep_get_started_content {
@@ -110,8 +110,8 @@ span.foodvendor_line {
   gap: 1rem;
 }
 .LaundryStep_get_started_container {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 small.LaundryStep_get_started_icon_div {
   color: #9b9b9b;
@@ -128,24 +128,24 @@ p.LaundryStep_get_started_icon_div {
 }
 
 .LaundryStep-content {
-  background: #ffffff;
-  padding: 3rem;
+  background: transparent;
+  padding: 0;
   position: relative;
+  margin-top: 4rem;
 }
 
 ul.LaundryStep-ul {
   list-style: none;
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 span.LaundryStep_cicle {
-    width: 0.67rem;
-    height: 0.67rem;
-    background: #000000;
-    border-radius: 50%;
-    margin-bottom: 2rem;
-    margin-left: 0.5rem;
+  width: 0.67rem;
+  height: 0.67rem;
+  background: #000000;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 400px) {
@@ -211,13 +211,13 @@ span.LaundryStep_cicle {
   }
 
   .laundry_overlay-img {
-    top: 4rem;
+    top: 18rem;
     right: -1rem;
     z-index: 1;
   }
 
   img.laundry_overlay-img_content {
-    width: 20rem;
+    width: 30rem;
   }
 
   .laundry_text-content {
@@ -276,12 +276,27 @@ span.LaundryStep_cicle {
     background: none;
   }
 
+  .laundry_img {
+    width: 100%;
+  }
+
   .laundry_img-transparent {
     left: 14.6rem;
   }
 
   .laundry_overlay-img {
     top: 11rem;
+  }
+
+  .LaundryStep_get_started_content {
+    display: flex;
+    gap: 0.2rem;
+    width: max-content;
+  }
+
+  img.laundry_img-content {
+    width: 100%;
+    height: 33rem;
   }
 }
 

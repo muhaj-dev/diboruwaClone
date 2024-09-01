@@ -13,7 +13,7 @@
   background: #fff;
 }
 
-.custombooking_search-min{
+.custombooking_search-min {
   display: flex;
   gap: 2rem;
 }
@@ -44,6 +44,12 @@ button.min-button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
+}
+
+.min-button.active {
+  background-color: #4bb149;
+  color: #ffffff;
 }
 
 .custombooking-search_box {
@@ -86,4 +92,5 @@ button.custombooking-btn {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
 }

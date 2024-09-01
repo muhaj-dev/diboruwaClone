@@ -20,6 +20,7 @@ p.minsmeal_title {
 .minsmeal-cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -28,17 +29,21 @@ p.minsmeal_title {
 }
 
 .minsmeal-card {
+  flex: 1 1 290px;
   width: 100%;
   scroll-snap-align: center;
   box-sizing: border-box;
   background-color: #fff;
   overflow-x: hidden;
   border-radius: 16px;
+  text-decoration: none;
 }
 
 img.minsmeal-card_img {
   width: 100%;
 }
+
+
 
 .minsmeal-card_food-img {
   position: relative;

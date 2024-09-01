@@ -5,7 +5,9 @@ const DeliveryStepContent = () => {
     <div className="DeliveryStepContent-content">
       <ul className="DeliveryStepContent-ul">
         <span className="DeliveryStepContent_cicle"></span>
-        <li className="DeliveryStepContent-li">Food vendors</li>
+        <li className="DeliveryStepContent-li">
+          Moving & food delivery service
+        </li>
       </ul>
       <div className="DeliveryStepContent_get_started_container">
         <div className="DeliveryStepContent_get_started_content">
@@ -23,7 +25,7 @@ const DeliveryStepContent = () => {
               Sign Up
             </small>
             <p className="DeliveryStepContent_get_started_icon_div">
-              Create your account and provider basic information.
+              Register your moving service and provide necessary details.
             </p>
           </div>
         </div>
@@ -39,10 +41,10 @@ const DeliveryStepContent = () => {
           <div className="DeliveryStepContent_get_started_text_div">
             <small className="DeliveryStepContent_get_started_icon_div">
               {" "}
-              Menu Setup
+              Service Setup
             </small>
             <p className="DeliveryStepContent_get_started_icon_div">
-              Customize you menu with dishes and prices.
+              Define your service areas, rates, and availability.
             </p>
           </div>
         </div>
@@ -58,10 +60,10 @@ const DeliveryStepContent = () => {
           <div className="DeliveryStepContent_get_started_text_div">
             <small className="DeliveryStepContent_get_started_icon_div">
               {" "}
-              Set Location
+              Profile Verification
             </small>
             <p className="DeliveryStepContent_get_started_icon_div">
-              Specify your business location and hours.
+              Complete verification to build trust with customers.
             </p>
           </div>
         </div>
@@ -74,10 +76,10 @@ const DeliveryStepContent = () => {
           <div className="DeliveryStepContent_get_started_text_div">
             <small className="DeliveryStepContent_get_started_icon_div">
               {" "}
-              Launch Store
+              Launch Your Service
             </small>
             <p className="DeliveryStepContent_get_started_icon_div">
-              Start accepting orders and reaching hungry customers.
+              Start receiving moving requests and serving customers.
             </p>
           </div>
         </div>
@@ -85,10 +87,10 @@ const DeliveryStepContent = () => {
       <a href="/" className="vendor_signup">
         Sign Up
       </a>
-      <div className="deliveryservice_overlay-img">
+      <div className="deliveryservice_img-transparent">
         <img
           src="/images/Ellipse 109.png"
-          className="deliveryservice_overlay-img_content"
+          className="deliveryservice_img-transparent_content"
           alt=""
         />
       </div>

@@ -1,27 +1,26 @@
-import { assets } from "@/public/assets"
-import josh from "@/public/Joshua.jpeg"
-import j from "@/public/Yakubu.jpg"
+import { assets } from "@/public/assets";
+import josh from "@/public/Joshua.jpeg";
+import j from "@/public/Yakubu.jpg";
 
 // Base URL
-const baseURL: string = "https://diboruwa.com"
+const baseURL: string = "https://diboruwa.com";
 
 // Route configuration
 export interface Route {
-  name: string
-  path: string
-  icon?: string
+  name: string;
+  path: string;
+  icon?: string;
   subroutes?: {
-    name: string
-    path: string
-    icon: string
-  }[]
+    name: string;
+    path: string;
+    icon: string;
+  }[];
 }
 
 export const routes: Route[] = [
   {
     name: "Home",
     path: "/",
-    
   },
   {
     name: "Services",
@@ -46,7 +45,7 @@ export const routes: Route[] = [
       { name: "Moving", path: "/moving", icon: assets.scooter },
     ],
   },
-]
+];
 
 export const HWW = [
   {
@@ -74,7 +73,7 @@ export const HWW = [
     // content:
     //   "With Just 5 Minutes of Heating, Your Meal Is Good to Go, or Refrigerate It for a Later Tasty Treat",
   },
-]
+];
 
 export const services = [
   {
@@ -83,8 +82,7 @@ export const services = [
     image: assets.food,
     color: "color3",
     bg: "color3-20",
-    content:
-      "Fresh, ready-to-eat food prepared to your taste",
+    content: "Fresh, ready-to-eat food prepared to your taste",
     cta: {
       label: "Order Now",
       path: "/food",
@@ -97,8 +95,7 @@ export const services = [
     image: assets.soap,
     color: "color2",
     bg: "color2-20",
-    content:
-      "Clean and careful laundry delivered on time",
+    content: "Clean and careful laundry delivered on time",
     cta: {
       label: "Schedule Pickup",
       path: "/laundry",
@@ -110,8 +107,7 @@ export const services = [
     image: assets.broom,
     color: "primary",
     bg: "primary-20",
-    content:
-      "Clean, organised and spotless space",
+    content: "Clean, organised and spotless space",
     cta: {
       label: "Book Now",
       path: "/cleaning",
@@ -123,8 +119,7 @@ export const services = [
     image: assets.scooter,
     color: "primary",
     bg: "color4-20",
-    content:
-      "Move or Deliver Items Without Hassles",
+    content: "Move or Deliver Items Without Hassles",
     cta: {
       label: "Schedule a Move",
       path: "/moving",
@@ -144,18 +139,20 @@ export const services = [
   //     path: "/trainning",
   //   },
   // },
-]
+];
 
 export const accordionData = [
   {
     id: 1,
-    title: "Is it possible to try the service with a single purchase instead of committing to a monthly subscription?",
+    title:
+      "Is it possible to try the service with a single purchase instead of committing to a monthly subscription?",
     content:
       "Absolutely! You can try our service with a one-time purchase; it's not limited to monthly subscriptions.",
   },
   {
     id: 2,
-    title: "Can I schedule laundry and cleaning services to match my irregular working hours?",
+    title:
+      "Can I schedule laundry and cleaning services to match my irregular working hours?",
     content:
       "Certainly! Our scheduling is flexible, letting you choose service times that match your dynamic schedule.",
   },
@@ -172,7 +169,7 @@ export const accordionData = [
     content:
       "In the rare event that your order is ever late or unfulfilled, we offer compensation like discounts, partial or full refunds, based on the situation. Your satisfaction is our priority.",
   },
-]
+];
 
 // Array of sublinks
 export const sublinks = [
@@ -211,7 +208,7 @@ export const sublinks = [
       { name: "Terms & Conditions", path: "/terms" },
     ],
   },
-]
+];
 
 export const Wyg = [
   {
@@ -230,7 +227,7 @@ export const Wyg = [
     icon: "/message-notif.png",
     description: "Unlimited, responsive customer service",
   },
-]
+];
 export const WygMoving = [
   {
     icon: "/people.png",
@@ -249,7 +246,6 @@ export const WygMoving = [
     description: "24/7 customer support for any inquiries",
   },
 ];
-
 
 export const subscriptionPlans = [
   {
@@ -286,7 +282,7 @@ export const subscriptionPlans = [
   //     path: "/subscribe/deep",
   //   },
   // },
-]
+];
 
 export const DashboradServices = [
   {
@@ -314,14 +310,14 @@ export const DashboradServices = [
   //   image: assets.food,
   //   url: "/dashboard/requests",
   // },
-]
+];
 
 export const AboutUsContent = {
   introduction: {
     heading: "",
     content: "",
   },
-}
+};
 
 export const PrivacyContent = [
   {
@@ -399,7 +395,7 @@ export const PrivacyContent = [
     header: "Contact Us",
     text: "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at info@diboruwa.com.",
   },
-]
+];
 export const TermsContent = [
   {
     header: "Use of the Website",
@@ -486,17 +482,17 @@ export const TermsContent = [
     header: "Contact Us",
     text: "If you have any questions or concerns about these Terms and Conditions or our website, please contact us at info@diboruwa.com.",
   },
-]
+];
 
 export interface Plan {
-  title: string
-  features: string[]
-  total: string | number
-  planCode?: string
+  title: string;
+  features: string[];
+  total: string | number;
+  planCode?: string;
 }
 
 export interface PlanDetails {
-  [subscription: string]: Plan[]
+  [subscription: string]: Plan[];
 }
 
 export const planDetails: PlanDetails = {
@@ -641,7 +637,7 @@ export const planDetails: PlanDetails = {
       planCode: "PLN_qww4p0570axlg3p",
     },
   ],
-}
+};
 
 export const teamMembers = [
   // {
@@ -698,45 +694,45 @@ export const teamMembers = [
       "https://res.cloudinary.com/zeeson-info-tech-and-innovations/image/upload/v1700948246/dbr33_rbtgb5.png",
   },
   // Add more team members as needed
-]
+];
 
 export interface Product {
-  id: number | string
-  title: string
-  prep_time: string
-  opening_time: string
-  categories: string[]
-  price: number
-  slug: string
-  imageURL: string
-  openingDays?: string[]
-  vendor: string
-  discount?: number
-  extras?: Extra[] // Nested extras property within Product
+  id: number | string;
+  title: string;
+  prep_time: string;
+  opening_time: string;
+  categories: string[];
+  price: number;
+  slug: string;
+  imageURL: string;
+  openingDays?: string[];
+  vendor: string;
+  discount?: number;
+  extras?: Extra[]; // Nested extras property within Product
   // locations: string[]
 }
 
 export interface Extra {
-  id: number | string
-  title: string
-  prep_time: string
-  opening_time: string
-  categories: string[]
-  slug: string
-  price: number
-  imageURL: string
-  vendor: string
-  discount?: number
+  id: number | string;
+  title: string;
+  prep_time: string;
+  opening_time: string;
+  categories: string[];
+  slug: string;
+  price: number;
+  imageURL: string;
+  vendor: string;
+  discount?: number;
 }
 
 export interface Restaurant {
-  id: string
-  name: string
-  location: string
-  chef: string
-  openingTime: string
-  menu: Product[]
-  bannerURL: string
+  id: string;
+  name: string;
+  location: string;
+  chef: string;
+  openingTime: string;
+  menu: Product[];
+  bannerURL: string;
 }
 
 export const restaurants: Restaurant[] = [
@@ -902,7 +898,7 @@ export const restaurants: Restaurant[] = [
       // Similar structure for two more products in Restaurant C
     ],
   },
-]
+];
 
 export const products: Product[] = [
   {
@@ -1968,7 +1964,6 @@ export const products: Product[] = [
         slug: "sp8",
         vendor: "Sharon's Cook House",
       },
-    
     ],
   },
   {
@@ -2186,7 +2181,6 @@ export const products: Product[] = [
         slug: "sp15",
         vendor: "EatWithEesha",
       },
-    
     ],
   },
   {
@@ -3741,7 +3735,6 @@ export const products: Product[] = [
         slug: "sp33",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -3866,7 +3859,6 @@ export const products: Product[] = [
         slug: "sp33",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -5515,7 +5507,6 @@ export const products: Product[] = [
         slug: "sp55",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -5640,7 +5631,6 @@ export const products: Product[] = [
         slug: "sp56",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -5765,7 +5755,6 @@ export const products: Product[] = [
         slug: "sp57",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -5890,7 +5879,6 @@ export const products: Product[] = [
         slug: "sp58",
         vendor: "Sharon's Cook House",
       },
-  
     ],
   },
   {
@@ -6015,7 +6003,6 @@ export const products: Product[] = [
         slug: "sp59",
         vendor: "Sharon's Cook House",
       },
-      
     ],
   },
   {
@@ -6140,7 +6127,6 @@ export const products: Product[] = [
         slug: "sp60",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -6265,7 +6251,6 @@ export const products: Product[] = [
         slug: "sp61",
         vendor: "Sharon's Cook House",
       },
-      
     ],
   },
   {
@@ -6390,7 +6375,6 @@ export const products: Product[] = [
         slug: "sp62",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -6515,7 +6499,6 @@ export const products: Product[] = [
         slug: "sp63",
         vendor: "Sharon's Cook House",
       },
-      
     ],
   },
   {
@@ -6640,7 +6623,6 @@ export const products: Product[] = [
         slug: "sp64",
         vendor: "Sharon's Cook House",
       },
-      
     ],
   },
   {
@@ -6765,7 +6747,6 @@ export const products: Product[] = [
         slug: "sp65",
         vendor: "Sharon's Cook House",
       },
-    
     ],
   },
   {
@@ -6890,7 +6871,6 @@ export const products: Product[] = [
         slug: "sp66",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -7015,7 +6995,6 @@ export const products: Product[] = [
         slug: "sp67",
         vendor: "Sharon's Cook House",
       },
-      
     ],
   },
   {
@@ -7140,7 +7119,6 @@ export const products: Product[] = [
         slug: "sp68",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -7265,7 +7243,6 @@ export const products: Product[] = [
         slug: "sp69",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -7390,7 +7367,6 @@ export const products: Product[] = [
         slug: "sp70",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -7515,7 +7491,6 @@ export const products: Product[] = [
         slug: "sp71",
         vendor: "Sharon's Cook House",
       },
-      
     ],
   },
   {
@@ -7640,7 +7615,6 @@ export const products: Product[] = [
         slug: "sp72",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -7765,7 +7739,6 @@ export const products: Product[] = [
         slug: "sp73",
         vendor: "Sharon's Cook House",
       },
-     
     ],
   },
   {
@@ -7990,7 +7963,7 @@ export const products: Product[] = [
     vendor: "Sharon's Cook House",
     openingDays: ["wed", "thu", "fri"],
   },
-  
+
   {
     id: "91",
     title: "Full Pot of Jollof Rice - 5L",
@@ -8069,7 +8042,7 @@ export const products: Product[] = [
     vendor: "Chef Jo",
     openingDays: ["tue", "thu", "fri"],
   },
-  
+
   {
     id: "97",
     title: "2L Pot of Okra Soup with 4 Wrapps of Swallow",
@@ -8096,7 +8069,7 @@ export const products: Product[] = [
     vendor: "Chef Jo",
     openingDays: ["tue", "thu", "fri"],
   },
-  
+
   {
     id: "99",
     title: "5L of Rice with 10 Pieces of Chicken ",
@@ -8387,7 +8360,6 @@ export const products: Product[] = [
         slug: "sp112",
         vendor: "Sharon's Cook House",
       },
-    
     ],
   },
   {
@@ -8480,8 +8452,7 @@ export const products: Product[] = [
         slug: "sp118",
         vendor: "EatWithEesha",
       },
-    ]
-
+    ],
   },
   {
     id: "119",
@@ -8508,7 +8479,6 @@ export const products: Product[] = [
         slug: "sp119",
         vendor: "EatWithEesha",
       },
-    
     ],
   },
   {
@@ -8536,7 +8506,6 @@ export const products: Product[] = [
         slug: "sp120",
         vendor: "EatWithEesha",
       },
-    
     ],
   },
   {
@@ -8629,7 +8598,6 @@ export const products: Product[] = [
         slug: "sp126",
         vendor: "EatWithEesha",
       },
-    
     ],
   },
   {
@@ -8657,7 +8625,6 @@ export const products: Product[] = [
         slug: "sp127",
         vendor: "EatWithEesha",
       },
-    
     ],
   },
   {
@@ -8725,7 +8692,7 @@ export const products: Product[] = [
   //     },
   //   ],
   // },
-]
+];
 export interface DataItem {
   _id?: number;
   tag?: string;
@@ -8795,7 +8762,6 @@ export const Data = [
     map: "/images/Frame 2610169 (1).png",
   },
 ];
-
 
 export const TopResturant: Category[] = [
   {
@@ -9020,6 +8986,62 @@ export const FoodVendor = [
         prizeText: "$40",
         prizeIcon: FaBagShopping,
       },
+      {
+        id: "917",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "957",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "937",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "977",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
     ],
   },
 ];
@@ -9029,6 +9051,7 @@ export const MinsMealsData = [
     title: "30 minutes meal",
     items: [
       {
+        id: "1111",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -9042,6 +9065,7 @@ export const MinsMealsData = [
         prizeIcon: FaBagShopping,
       },
       {
+        id: "2222",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -9055,6 +9079,7 @@ export const MinsMealsData = [
         prizeIcon: FaBagShopping,
       },
       {
+        id: "3333",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -9068,6 +9093,63 @@ export const MinsMealsData = [
         prizeIcon: FaBagShopping,
       },
       {
+        id: "4444",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "5555",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "6677",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "9099",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "2033",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -9089,6 +9171,7 @@ export const FreeDeliveryData = [
     title: "Free Delivery",
     items: [
       {
+        id: "2311",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -9102,6 +9185,7 @@ export const FreeDeliveryData = [
         prizeIcon: FaBagShopping,
       },
       {
+        id: "2211",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -9115,6 +9199,7 @@ export const FreeDeliveryData = [
         prizeIcon: FaBagShopping,
       },
       {
+        id:"3241",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -9128,6 +9213,7 @@ export const FreeDeliveryData = [
         prizeIcon: FaBagShopping,
       },
       {
+        id:"5476",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,

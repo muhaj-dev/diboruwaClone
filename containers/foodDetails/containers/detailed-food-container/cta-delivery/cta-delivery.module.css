@@ -1,8 +1,9 @@
 .cta_delivery_container {
-  width: 47rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   border-radius: 8px;
   background: #3e3e3e;
   margin: 2rem 0 12.375rem;
