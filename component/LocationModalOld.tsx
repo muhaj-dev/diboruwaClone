@@ -6,6 +6,7 @@ import Dropdown from "./ui/Dropdown";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Cookies from "js-cookie";
 
+// Styled components
 const ModalWrapper = styled.div`
   position: fixed;
   top: 0;
@@ -67,10 +68,10 @@ const SubmitButton = styled.div`
   cursor: pointer;
 `;
 
-interface StateAndRegions {
-  [key: string]: {
-    locations: string[];
-  };
+interface CityData {
+  _id: string;
+  name: string;
+  regions: { _id: string; name: string }[];
 }
 
 const LocationModal: React.FC = () => {
@@ -78,33 +79,38 @@ const LocationModal: React.FC = () => {
   const [selectedState, setSelectedState] = useState<string | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<string>("");
   const [availableRegions, setAvailableRegions] = useState<string[]>([]);
-  const [statesAndRegions, setStatesAndRegions] = useState<StateAndRegions>({});
+  const [statesAndRegions, setStatesAndRegions] = useState<{ [key: string]: string[] }>({});
   const [companyName] = useState<string>("diboruwa");
 
-  const url = process.env.BASE_URL;
+  const url = process.env.NEXT_PUBLIC_ADMIN_URL;
 
   useEffect(() => {
     const fetchStatesAndRegions = async () => {
       try {
-        const response = await axios.get(
-          'http://localhost:3000/api/locations'
-          // `${url}/api/locations`
+        const response = await axios.get(`${url}/api/locations`);
+        const cityData: CityData[] = response.data.cities;
 
-        );
-        console.log(response.data)
-        // setStatesAndRegions(response.data);
+        const formattedData: { [key: string]: string[] } = {};
+
+        cityData.forEach(city => {
+          formattedData[city.name] = city.regions.map(region => region.name);
+        });
+
+        setStatesAndRegions(formattedData);
       } catch (error) {
         console.error("Error fetching state and region data:", error);
       }
     };
 
     fetchStatesAndRegions();
-  }, []);
+  }, [url]);
 
   const handleStateSelect = (selectedOption: string | null) => {
     setSelectedState(selectedOption);
-    if (selectedOption !== null) {
-      setAvailableRegions(statesAndRegions[selectedOption]?.locations || []);
+    if (selectedOption) {
+      setAvailableRegions(statesAndRegions[selectedOption] || []);
+    } else {
+      setAvailableRegions([]);
     }
     setSelectedRegion("");
   };
@@ -115,7 +121,6 @@ const LocationModal: React.FC = () => {
 
   const handleModalClose = () => {
     if (selectedState && selectedRegion) {
-      // Save to cookies
       Cookies.set(`${companyName}_hasVisited`, "true", { expires: 1 });
       Cookies.set(`${companyName}_selectedState`, selectedState, { expires: 1 });
       Cookies.set(`${companyName}_selectedRegion`, selectedRegion, { expires: 1 });
@@ -139,9 +144,7 @@ const LocationModal: React.FC = () => {
             <Header>
               <FaMapMarkerAlt size={70} style={{ marginBottom: "20px" }} color="green" />
               <h2>Set your Delivery location</h2>
-              <p>
-                Hello! DiboRuwa currently provides services in key cities across Nigeria.
-              </p>
+              <p>Hello! DiboRuwa currently provides services in key cities across Nigeria.</p>
               <small className="small">
                 Delivery options and fees may vary based on your location.
               </small>
