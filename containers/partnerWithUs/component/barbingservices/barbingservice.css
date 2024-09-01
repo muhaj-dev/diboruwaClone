@@ -5,14 +5,14 @@
 }
 
 img.barbingservice_img-content {
-  width: 25rem;
+  width: 100%;
   margin: 0 auto;
   display: flex;
 }
 
 .barbingservice_img {
   position: relative;
-  width: 87rem;
+  margin: 0 auto;
 }
 
 li.barbingservice_text-li {
@@ -55,7 +55,7 @@ a.barbingservice_signup {
 
 .barbingservice_overlay-img {
   position: absolute;
-  top: 7.7rem;
+  top: 9.7rem;
   right: -0.6rem;
 }
 
@@ -64,8 +64,8 @@ img.barbingservice_overlay-img_content {
 }
 
 .BarbingStep_get_started_container {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .BarbingStep_get_started_content {
@@ -130,25 +130,24 @@ p.BarbingStep_get_started_icon_div {
 }
 
 .BarbingStep-content {
-  padding: 3rem;
   position: relative;
-  width: 74rem;
-    height: 34rem;
+  width: 100%;
+  margin: 4rem 0;
 }
 
 ul.BarbingStep-ul {
   list-style: none;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 span.BarbingStep_cicle {
-    width: 0.67rem;
-    height: 0.67rem;
-    background: #000000;
-    border-radius: 50%;
-    margin-bottom: 2rem;
-    margin-left: 0.5rem;
+  width: 0.67rem;
+  height: 0.67rem;
+  background: #000000;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 400px) {
@@ -191,8 +190,11 @@ span.BarbingStep_cicle {
     position: relative;
     display: flex;
     margin: 6rem auto 0;
+    gap: 2rem;
   }
-
+  .BarbingStep-content {
+    margin: 0;
+  }
   .barbingservice_overlay-img {
     top: 4rem;
     right: -1rem;
@@ -200,6 +202,11 @@ span.BarbingStep_cicle {
 
   img.barbingservice_overlay-img_content {
     width: 20rem;
+  }
+
+  img.barbingservice_img-content {
+    width: 33rem;
+    height: 71vh;
   }
 
   .barbingservice_text-content {
@@ -235,9 +242,10 @@ span.BarbingStep_cicle {
   .barbingservice_img-transparent {
     left: 14.7rem;
   }
-  img.barbingservice_img-transparent_content {
-    width: 18rem;
-  }
+  
+      img.barbingservice_img-transparent_content {
+        width: 22rem;
+    }
   .barbingservice_overlay-img {
     top: 7rem;
   }
@@ -252,13 +260,30 @@ span.BarbingStep_cicle {
   .barbingservice_overlay-img {
     top: 11rem;
   }
+  img.barbingservice_img-content {
+    width: 37rem;
+    height: 75vh;
+  }
+
+  .BarbingStep-content {
+    margin: auto;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .barbingservice_img-transparent {
     left: 17.78rem;
   }
+
+  img.barbingservice_overlay-img_content {
+    width: 25rem;
+  }
+
   .barbingservice_overlay-img {
     top: 14rem;
+  }
+  img.barbingservice_img-content {
+    width: 40rem;
+    height: 80vh;
   }
 }
 

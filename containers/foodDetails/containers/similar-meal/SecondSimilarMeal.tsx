@@ -23,7 +23,7 @@ export const SecondSimilarMeal: React.FC<SecondSimilarMealProps> = ({ id }) => {
               <div key={item.id} className={styles.mostsold_card}>
                 <div className={styles.mostsold_card_food_img}>
                   <Link
-                    href={`./food/${item.id}`}
+                    href={`/food/${item.id}`}
                     key={item.id}
                     className={styles.mostsold_card_link_div}
                   >

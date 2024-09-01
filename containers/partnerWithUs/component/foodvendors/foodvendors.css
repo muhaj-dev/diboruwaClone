@@ -62,8 +62,8 @@ span.foodvendor_line {
   gap: 1rem;
 }
 .Foodvendor_get_started_container {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 small.Foodvendor_get_started_icon_div {
   color: #9b9b9b;
@@ -92,14 +92,13 @@ ul.vendor_text-ul {
 }
 
 span.vendor_text_cicle {
-    width: 0.67rem;
-    height: 0.67rem;
-    background: #000000;
-    border-radius: 50%;
-    margin-bottom: 2rem;
-    margin-left: 0.5rem;
+  width: 0.67rem;
+  height: 0.67rem;
+  background: #000000;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  margin-left: 0.5rem;
 }
-
 
 li.vendor_text-li {
   font-size: 15px;
@@ -154,9 +153,11 @@ a.vendor_signup {
 
 @media only screen and (max-width: 950px) {
   li.vendor_text-li {
-    font-size: 11px;
+    font-size: 16px;
   }
-
+  .Foodvendor_get_started_container {
+    width: 100%;
+  }
   a.vendor_signup {
     font-size: 15px;
   }
@@ -194,12 +195,10 @@ a.vendor_signup {
   }
 }
 
-.sticky {
-  position: sticky;
-  top: 60px; /* Adjust based on your navbar height */
-  z-index: 10;
-}
-
-.moving_line {
-  transition: height 0.3s ease-in-out;
+@media only screen and (max-width: 568px) {
+  .vendor_text-content {
+    padding: 0;
+    width: 93%;
+    margin: 2rem auto 0;
+  }
 }

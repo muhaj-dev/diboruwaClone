@@ -5,7 +5,7 @@ const BarbingStep = () => {
     <div className="BarbingStep-content">
       <ul className="BarbingStep-ul">
         <span className="BarbingStep_cicle"></span>
-        <li className="BarbingStep-li">Food vendors</li>
+        <li className="BarbingStep-li">Grooming</li>
       </ul>
       <div className="BarbingStep_get_started_container">
         <div className="BarbingStep_get_started_content">
@@ -20,7 +20,7 @@ const BarbingStep = () => {
           <div className="BarbingStep_get_started_text_div">
             <small className="BarbingStep_get_started_icon_div"> Sign Up</small>
             <p className="BarbingStep_get_started_icon_div">
-              Create your account and provider basic information.
+              Register your barbing service and provide necessary details.
             </p>
           </div>
         </div>
@@ -36,10 +36,11 @@ const BarbingStep = () => {
           <div className="BarbingStep_get_started_text_div">
             <small className="BarbingStep_get_started_icon_div">
               {" "}
-              Menu Setup
+              Profile Setup
             </small>
             <p className="Foodvendor_get_started_icon_div">
-              Customize you menu with dishes and prices.
+              Create your barber profile, including services offered and
+              pricing.
             </p>
           </div>
         </div>
@@ -55,10 +56,10 @@ const BarbingStep = () => {
           <div className="BarbingStep_get_started_text_div">
             <small className="BarbingStep_get_started_icon_div">
               {" "}
-              Set Location
+              Location and Hours
             </small>
             <p className="BarbingStep_get_started_icon_div">
-              Specify your business location and hours.
+              Specify your barbershop location and operating hours.
             </p>
           </div>
         </div>
@@ -71,10 +72,11 @@ const BarbingStep = () => {
           <div className="BarbingStep_get_started_text_div">
             <small className="BarbingStep_get_started_icon_div">
               {" "}
-              Launch Store
+              Launch Your Service
             </small>
             <p className="BarbingStep_get_started_icon_div">
-              Start accepting orders and reaching hungry customers.
+              Start accepting appointments and serving clients at your
+              barbershop.
             </p>
           </div>
         </div>

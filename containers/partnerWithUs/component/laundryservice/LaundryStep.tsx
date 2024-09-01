@@ -5,7 +5,7 @@ const LaundryStep = () => {
     <div className="LaundryStep-content">
       <ul className="LaundryStep-ul">
         <span className="LaundryStep_cicle"></span>
-        <li className="LaundryStep-li">Food vendors</li>
+        <li className="LaundryStep-li">Laundry</li>
       </ul>
       <div className="laundry_img-text">
         <div className="LaundryStep_get_started_container">
@@ -24,7 +24,7 @@ const LaundryStep = () => {
                 Sign Up
               </small>
               <p className="LaundryStep_get_started_icon_div">
-                Create your account and provider basic information.
+                Register your laundry service and provide necessary details.
               </p>
             </div>
           </div>
@@ -40,10 +40,10 @@ const LaundryStep = () => {
             <div className="LaundryStep_get_started_text_div">
               <small className="LaundryStep_get_started_icon_div">
                 {" "}
-                Menu Setup
+                Service Setup
               </small>
               <p className="LaundryStep_get_started_icon_div">
-                Customize you menu with dishes and prices.
+                Define your laundry services, pricing, and turnaround time.
               </p>
             </div>
           </div>
@@ -59,10 +59,10 @@ const LaundryStep = () => {
             <div className="LaundryStep_get_started_text_div">
               <small className="Foodvendor_get_started_icon_div">
                 {" "}
-                Set Location
+                Location and Pickup/Delivery
               </small>
               <p className="LaundryStep_get_started_icon_div">
-                Specify your business location and hours.
+                Specify your service areas and setup pickup/delivery options.
               </p>
             </div>
           </div>
@@ -75,10 +75,10 @@ const LaundryStep = () => {
             <div className="LaundryStep_get_started_text_div">
               <small className="LaundryStep_get_started_icon_div">
                 {" "}
-                Launch Store
+                Launch Your Service
               </small>
               <p className="LaundryStep_get_started_icon_div">
-                Start accepting orders and reaching hungry customers.
+                Start receiving laundry orders and serving customers.
               </p>
             </div>
           </div>

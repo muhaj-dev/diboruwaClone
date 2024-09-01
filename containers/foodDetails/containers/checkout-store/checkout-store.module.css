@@ -189,6 +189,7 @@
   justify-content: center;
   align-items: center;
   gap: 9.043px;
+  cursor: pointer;
 }
 
 .location_edit_icon {
