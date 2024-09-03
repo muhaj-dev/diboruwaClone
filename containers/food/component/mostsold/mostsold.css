@@ -186,3 +186,42 @@ img.mostsold-sale_img {
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 1024px) {
+  .mostsold-cards {
+    flex-wrap: wrap;
+  }
+
+  .mostsold-card {
+    flex: 1 1 11rem;
+  }
+
+  small.mostsold-card_title,
+  small.mostsold-card_rating {
+    font-size: 13px;
+  }
+
+  span.mostsold-card_dot {
+    width: 5px;
+    height: 5px;
+  }
+
+  svg.mostsold-card_star {
+    width: 12px;
+    height: 12px;
+  }
+
+  svg.mostsold-card_timer-icon {
+    width: 14px;
+    height: 14px;
+}
+
+a.mostsold-card_prize-link {
+    width: 100px;
+}
+}
+/* @media (max-width: 768px) {
+  .mostsold-card {
+    flex: 1 1 100%;
+  }
+} */

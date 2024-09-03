@@ -1,12 +1,12 @@
 import Profile from "@/containers/profile/Profile";
-
+import "../../containers/profile/profile.css"
 export const metadata = {
   title: "Profile",
 };
 
 const page = () => {
   return (
-    <div>
+    <div className="profile_page">
       <Profile />
     </div>
   );

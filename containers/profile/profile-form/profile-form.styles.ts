@@ -75,7 +75,7 @@ export const EditBtn2 = styled.button`
 `;
 
 export const Editcont = styled.button`
-outline: none;
+  outline: none;
   border: none;
   display: flex;
   justify-content: start;
