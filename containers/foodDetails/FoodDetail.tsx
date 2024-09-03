@@ -1,13 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { BackBtn } from "../profile/profile.styles";
 import { Product, products, restaurants } from "@/constants";
 import Image from "next/image";
 import ProductCard from "@/component/ProductCard/ProductCard";
 import useCartStore from "@/store/useCart.store";
 import Modal from "@/component/modals/Modal";
-import BackButton from "@/component/ui/BackButton/BackButton";
+import { BackButton } from "@/component/ui/BackButton/BackButton";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";

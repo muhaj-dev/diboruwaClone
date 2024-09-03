@@ -2,6 +2,7 @@
 
 import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import { useRouter } from "next/navigation";
+import { LiaAngleLeftSolid } from "react-icons/lia";
 import styled from "styled-components";
 
 const Container = styled.button`
@@ -35,7 +36,7 @@ const Container = styled.button`
   }
 `;
 
-const BackButton = () => {
+export const BackButton = () => {
   const router = useRouter();
   return (
     <Container onClick={() => router.back()}>
@@ -44,4 +45,14 @@ const BackButton = () => {
   );
 };
 
-export default BackButton;
+export const BackButton2 = () => {
+  const router = useRouter();
+  return (
+    <Container onClick={() => router.back()}>
+      <LiaAngleLeftSolid className="icon" />{" "}
+      <span className="span_back">Back</span>
+    </Container>
+  );
+};
+
+ 

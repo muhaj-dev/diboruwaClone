@@ -41,6 +41,11 @@ const ProfileSidebarPics = styled.div`
   border-radius: 100%;
 `;
 
+const ProfileIcon = styled(IoPersonOutline)`
+  font-size: 24px;
+  color: #27a124;
+`;
+
 const ProfileSidebarName = styled.div`
   display: flex;
   flex-direction: column;
@@ -145,7 +150,7 @@ export const ProfileSidebar: React.FC = () => {
   const [activeItem, setActiveItem] = useState<string>("Profile Settings");
 
   const profileInfo = {
-    icon: <IoPersonOutline />,
+    icon: <ProfileIcon  />,
     name: "Kelivin Chikezie",
     email: "chikeziekelivin@gmial.com",
   };

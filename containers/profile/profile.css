@@ -3,6 +3,7 @@
   width: min(93%, 1443px);
   margin: 6rem auto 0;
   padding-top: 2rem;
+  gap: 2rem;
 }
 
 .profile_page {
