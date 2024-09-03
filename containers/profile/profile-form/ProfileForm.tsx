@@ -1,334 +1,244 @@
 "use client";
 import { BackButton2 } from "@/component/ui/BackButton/BackButton";
 import { BiEditAlt } from "react-icons/bi";
-import "./profile-form.css"
+import styled from "styled-components";
+
+// Styled Components
+const ProfileSettingContainer = styled.div`
+  width: 68%;
+  height: 100%;
+  padding: 2rem;
+  padding-bottom: 3.6rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+`;
+
+const ProfileSettingTitle = styled.h3`
+  color: var(--Black-100, #2a2a2a);
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+`;
+
+const ProfileSettingsBox = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 6px 7px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 4px;
+  background: var(--primary-color-1-white-40, #f9f9f9);
+`;
+
+const ProfileSettingsBoxTitle = styled.p`
+  display: flex;
+  padding: 0.5rem 3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: var(--Soft-black, #565656);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+
+  &:hover {
+    background: #fff;
+  }
+`;
+
+const BackButtonWrapper = styled.div`
+  margin-top: 1rem;
+`;
+
+const FormContainer = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4rem 0;
+  border-radius: 4px;
+  border: 0.5px solid rgba(118, 117, 117, 0.21);
+  background: var(--white, #fefefe);
+`;
+
+const FormFirstInput = styled.div`
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+`;
+
+const FormName = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+`;
+
+const FormLabel = styled.label`
+  color: var(--Soft-black, #565656);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+`;
+
+const FormNameIcon = styled.div`
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+`;
+
+const FormNameInput = styled.input`
+  width: 14rem;
+  height: 2.5rem;
+  padding-left: 0.7rem;
+  border: none;
+  background: #f6f6f6;
+
+  &::placeholder {
+    color: var(--Soft-black, #565656);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+`;
+
+const FormTextareaBox = styled.div`
+  width: 59%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+`;
+
+const FormTextareaLabel = styled.label`
+  color: var(--Soft-black, #565656);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+`;
+
+const FormTextareaArea = styled.textarea`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: rgba(246, 246, 246, 0.66);
+  resize: none;
+
+  &::placeholder {
+    color: var(--Soft-black, #565656);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+`;
+
+const FormSubmit = styled.button`
+  width: 59%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: none;
+  background: rgba(118, 117, 117, 0.22);
+  color: #fcfcfc;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+`;
+
 export const ProfileForm = () => {
   return (
-    <div className="profile_setting_container">
-      <h3 className="profile_setting_title">Profile Settings</h3>
-      <div className="profile_settings_box">
-        <p className="profile_settings_box_title">Basic Information</p>
-        <p className="profile_settings_box_title">Security Setting</p>
-        <p className="profile_settings_box_title">Delivery Set-up</p>
-      </div>
+    <ProfileSettingContainer>
+      <ProfileSettingTitle>Profile Settings</ProfileSettingTitle>
+      <ProfileSettingsBox>
+        <ProfileSettingsBoxTitle>Basic Information</ProfileSettingsBoxTitle>
+        <ProfileSettingsBoxTitle>Security Setting</ProfileSettingsBoxTitle>
+        <ProfileSettingsBoxTitle>Delivery Set-up</ProfileSettingsBoxTitle>
+      </ProfileSettingsBox>
 
-      <div className="backbtn">
+      <BackButtonWrapper>
         <BackButton2 />
-      </div>
-      <form action="" className="form_container">
-        <div className="form_first_input">
-          <div className="form_name">
-            <label htmlFor="" className="form_label">
-              Name
-            </label>
-            <div className="form_name_icon">
-              <input
-                className="form_name_input"
+      </BackButtonWrapper>
+
+      <FormContainer>
+        <FormFirstInput>
+          <FormName>
+            <FormLabel htmlFor="fullname">Name</FormLabel>
+            <FormNameIcon>
+              <FormNameInput
                 type="text"
                 name="fullname"
                 id="fullname"
-                placeholder="Kelvin chikezie"
+                placeholder="Kelvin Chikezie"
               />
               <BiEditAlt className="form_name_input_icon" />
-            </div>
-          </div>
+            </FormNameIcon>
+          </FormName>
 
-          <div className="form_name">
-            <label htmlFor="" className="form_label">
-              Mobile
-            </label>
-            <div className="form_name_icon">
-              <input
-                className="form_name_input"
+          <FormName>
+            <FormLabel htmlFor="mobile">Mobile</FormLabel>
+            <FormNameIcon>
+              <FormNameInput
                 type="text"
                 name="mobile"
                 id="mobile"
                 placeholder="09034145971"
               />
               <BiEditAlt className="form_name_input_icon" />
-            </div>
-          </div>
-        </div>
-        <div className="form_first_input">
-          <div className="form_name">
-            <label className="form_label" htmlFor="state">
-              State
-            </label>
-            <input
-              list="states"
-              id="state"
-              name="state"
-              className="form_name_input"
-            />
-            <datalist id="states" className="form_name_input_datalist">
-              <option value="Ilorin" className="form_name_input_option" />
-              <option value="Kano" className="form_name_input_option" />
-            </datalist>
-          </div>
-          <div className="form_name">
-            <label htmlFor="city" className="form_label">
-              City
-            </label>
-            <input
-              list="cities"
-              id="city"
-              name="city"
-              className="form_name_input"
-            />
-            <datalist id="cities" className="form_name_input_datalist">
-              {/* Cities in Ilorin */}
-              <option value="Ilorin" className="form_name_input_option" />
-              <option value="Offa" className="form_name_input_option" />
-              <option value="Omu-Aran" className="form_name_input_option" />
+            </FormNameIcon>
+          </FormName>
+        </FormFirstInput>
 
-              {/* <!-- Cities in Kano --> */}
-              <option value="Kano" className="form_name_input_option" />
-              <option value="Wudil" className="form_name_input_option" />
-              <option value="Gaya" className="form_name_input_option" />
+        <FormFirstInput>
+          <FormName>
+            <FormLabel htmlFor="state">State</FormLabel>
+            <FormNameInput as="input" list="states" id="state" name="state" />
+            <datalist id="states">
+              <option value="Ilorin" />
+              <option value="Kano" />
             </datalist>
-          </div>
-        </div>
-        <div className="form_textarea_box">
-          <label htmlFor="address" className="form_textarea_label">
-            Address
-          </label>
-          <textarea
+          </FormName>
+
+          <FormName>
+            <FormLabel htmlFor="city">City</FormLabel>
+            <FormNameInput as="input" list="cities" id="city" name="city" />
+            <datalist id="cities">
+              <option value="Ilorin" />
+              <option value="Offa" />
+              <option value="Omu-Aran" />
+              <option value="Kano" />
+              <option value="Wudil" />
+              <option value="Gaya" />
+            </datalist>
+          </FormName>
+        </FormFirstInput>
+
+        <FormTextareaBox>
+          <FormTextareaLabel htmlFor="address">Address</FormTextareaLabel>
+          <FormTextareaArea
             id="address"
             name="address"
-            className="form_textarea_area"
             rows={4}
             cols={40}
             placeholder="24 Louk Street off 120 tonimas"
-          ></textarea>
-        </div>
-        <button type="submit" className="form_submit">
-          Save
-        </button>
-      </form>
-    </div>
+          />
+        </FormTextareaBox>
+
+        <FormSubmit type="submit">Save</FormSubmit>
+      </FormContainer>
+    </ProfileSettingContainer>
   );
 };
-
-// <Container>
-
-//   <Form onSubmit={handleSubmit}>
-//     <Editcont>
-//       <h2>Edit Profile</h2>
-//       <EditBtn2
-//         type="button"
-//         onClick={(e) => {
-//           e.preventDefault();
-//           setIsEditable((prev) => !prev);
-//         }}
-//       >
-//         <Pencil1Icon />
-//       </EditBtn2>
-//     </Editcont>
-//     <FormControl>
-//       <Input
-//         label="First Name"
-//         name="firstName"
-//         type="text"
-//         id="id"
-//         readOnly={!isEditable}
-//         value={values.firstName}
-//         onChange={(e) => handleChange("firstName", e.target.value)}
-//         error={errors.firstName}
-//       />
-//       <Input
-//         label="Last Name"
-//         name="lastName"
-//         type="text"
-//         id="id"
-//         readOnly={!isEditable}
-//         value={values.lastName}
-//         onChange={(e) => handleChange("lastName", e.target.value)}
-//         error={errors.lastName}
-//       />
-//     </FormControl>
-//     <FormControl>
-//       <Input
-//         label="Email"
-//         name="email"
-//         type="email"
-//         id="id"
-//         readOnly={!isEditable}
-//         value={values.email}
-//         onChange={(e) => handleChange("email", e.target.value)}
-//         error={errors.email}
-//       />
-//       <Input
-//         label="Phone"
-//         name="phone"
-//         type="text"
-//         id="id"
-//         readOnly={!isEditable}
-//         value={values.phone}
-//         onChange={(e) => handleChange("phone", e.target.value)}
-//         error={errors.phone}
-//       />
-//     </FormControl>
-//     <FormControl>
-//       <Input
-//         label="Address"
-//         name="address"
-//         type="text"
-//         readOnly={!isEditable}
-//         id="id"
-//         value={values.address}
-//         onChange={(e) => handleChange("address", e.target.value)}
-//         error={errors.address}
-//       />
-//     </FormControl>
-//     <FormControl>
-//       <CustomSelect
-//         label="State"
-//         disabled={!isEditable}
-//         options={getStates()}
-//         value={values.state}
-//         name="state"
-//         onChange={(e) => handleChange("state", e.target.value)}
-//         error={errors.state}
-//       />
-//       <CustomSelect
-//         label="Region"
-//         disabled={!isEditable}
-//         options={getLgas(values.state)}
-//         value={values.lga}
-//         name="lga"
-//         onChange={(e) => handleChange("lga", e.target.value)}
-//         error={errors.lga}
-//       />
-//     </FormControl>
-
-//     {isEditable && (
-//       <SaveButton type="submit" disabled={loading}>
-//         {loading ? <Loader /> : "Save"}
-//       </SaveButton>
-//     )}
-//   </Form>
-
-//   {showModal && (
-//     <NotificationModal
-//       message={modalMessage}
-//       errorType={modalErrorType}
-//       onClose={closeModal}
-//     />
-//   )}
-// </Container>
-
-// // Define types for State and Region
-// type Location = {
-//   name: string;
-//   fee: number;
-// };
-
-// type Region = {
-//   locations: Location[];
-// };
-
-// type StatesAndRegions = {
-//   [key: string]: Region;
-// };
-
-// const statesAndRegions: StatesAndRegions = {
-//   Kano: {
-//     locations: [
-//       { name: "Danbare", fee: 300 },
-//       { name: "Rimin gata", fee: 300 },
-//       { name: "Rijia zaki", fee: 400 },
-//       { name: "Jambulo", fee: 500 },
-//       { name: "Buk old site", fee: 500 },
-//       { name: "Buk new site", fee: 300 },
-//       { name: "Kabuga", fee: 500 },
-//       { name: "Sabon Gari", fee: 1300 },
-//       { name: "Hotoro", fee: 1500 },
-//       { name: "Naibawa", fee: 1200 },
-//       { name: "Gwale", fee: 1200 },
-//       { name: "Tarauni", fee: 1500 },
-//       { name: "Kano Municipal", fee: 1200 },
-//       { name: "Dala", fee: 800 },
-//       { name: "Zoo Road", fee: 1000 },
-//     ],
-//   },
-//   Ilorin: {
-//     locations: [
-//       { name: "Taiwo road", fee: 500 },
-//       { name: "Tanke", fee: 400 },
-//       { name: "Oja oba", fee: 600 },
-//       { name: "Challenge", fee: 500 },
-//       { name: "Sawmill", fee: 450 },
-//       { name: "Unilorin", fee: 300 },
-//       { name: "Kwarapoly", fee: 300 },
-//       { name: "Unity road", fee: 500 },
-//       { name: "Post office", fee: 400 },
-//       { name: "Adeta", fee: 500 },
-//       { name: "Agbooba", fee: 450 },
-//       { name: "Adewole", fee: 500 },
-//       { name: "Gaa-Akanbi", fee: 550 },
-//       { name: "Fate", fee: 600 },
-//       { name: "Basin", fee: 500 },
-//       { name: "Kulende", fee: 450 },
-//       { name: "Pakata", fee: 400 },
-//       { name: "Oloje", fee: 500 },
-//       { name: "Oko olowo", fee: 550 },
-//     ],
-//   },
-//   // Additional states can be added here similarly
-// };
-
-// const [isEditable, setIsEditable] = useState(false);
-//   const [loading, setLoading] = useState(false);
-//   const {
-//     session,
-//     status,
-//     userUpdate,
-//     showModal,
-//     modalMessage,
-//     modalErrorType,
-//     closeModal,
-//   } = useAuth();
-//   let initialValues = {
-//     firstName: session ? session?.user.firstName : "",
-//     lastName: session ? session?.user.lastName : "",
-//     email: session ? session?.user.email : "",
-//     phone: session ? session?.user.phone : "",
-//     address: session ? session?.user.address : "",
-//     lga: session ? session?.user.lga : "",
-//     state: session ? session.user?.state : "",
-//   };
-
-//   const onSubmit = async (values: any) => {
-//     setLoading(true);
-//     try {
-//       const response = await updateProfile(session?.user._id as string, values);
-//       if (response.success) {
-//         userUpdate(values);
-//         setIsEditable(false);
-//         setLoading(false);
-//       } else {
-//         toast.error("Failed to update profile: ");
-//       }
-//     } catch (error) {
-//       toast.error("An error occurred while updating the profile");
-//     }
-//   };
-
-//   const { values, errors, handleChange, handleSubmit } = useForm(
-//     initialValues,
-//     () => {
-//       onSubmit(values);
-//     },
-//     profileValidations
-//   );
-
-//   // Helper function to get the list of states
-//   const getStates = (): string[] => Object.keys(statesAndRegions);
-
-//   // Helper function to get the list of LGAs for a specific state
-//   const getLgas = (state: string): string[] => {
-//     if (statesAndRegions[state]) {
-//       return statesAndRegions[state].locations.map((location) => location.name);
-//     }
-//     return [];
-//   };
