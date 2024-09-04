@@ -105,12 +105,13 @@
   gap: 6px;
 }
 
-span{
+.meal-dot{
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #4BB149;
   margin: auto;
+  margin-top: 0.6rem;
 }
 
 .price {

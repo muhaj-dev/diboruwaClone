@@ -17,7 +17,6 @@ interface MenuItem {
 
 const ProfileSidebarContainer = styled.div`
   width: 30%;
-  height: 100vh;
   flex-shrink: 0;
   border-radius: 20px;
   background: #fff;

@@ -93,7 +93,7 @@ export default function Meal() {
                     <div>
                       <div>
                         <p>Fried Rice</p>
-                        <span />
+                        <span className="meal-dot"/>
                         <p>4.5</p>
                       </div>
                       <p
