@@ -9,23 +9,23 @@ import { RiArrowRightSLine } from "react-icons/ri";
 const food = [
   {
     link: "/",
-    img: "/images/dish.png",
+    img: "/images/imagescomponent 113 (2)imagescomponent 113 (2).png",
   },
   {
     link: "/",
-    img: "/images/dish.png",
+    img: "/images/imagescomponent 113 (2)imagescomponent 113 (2).png",
   },
   {
     link: "/",
-    img: "/images/dish.png",
+    img: "/images/imagescomponent 113 (2)imagescomponent 113 (2).png",
   },
   {
     link: "/",
-    img: "/images/dish.png",
+    img: "/images/imagescomponent 113 (2)imagescomponent 113 (2).png",
   },
   {
     link: "/",
-    img: "/images/dish.png",
+    img: "/images/imagescomponent 113 (2)imagescomponent 113 (2).png",
   },
 ];
 export default function Meal() {

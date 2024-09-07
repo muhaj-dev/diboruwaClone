@@ -2,7 +2,7 @@
 
 import ProductCard from "@/component/ProductCard/ProductCard";
 import Modal from "@/component/modals/Modal";
-import BackButton from "@/component/ui/BackButton/BackButton";
+// import BackButton from "@/component/ui/BackButton/BackButton";
 import Dropdown from "@/component/ui/Dropdown";
 import Button from "@/component/ui/button/Button";
 import { Restaurant, products, restaurants } from "@/constants";
