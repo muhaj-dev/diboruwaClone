@@ -111,13 +111,15 @@ const Navbar = () => {
           ) : (
             <></>
           )}
-
+          <>
           <Link
             href="/cart"
             style={{ textDecoration: "none", color: "var(--primary)" }}
-          >
+            >
             <FiShoppingCart />
           </Link>
+            the checkout mobile button should be the icon bside me to be displayed
+          </>
         </div>
       )} 
       <AnimatePresence>
