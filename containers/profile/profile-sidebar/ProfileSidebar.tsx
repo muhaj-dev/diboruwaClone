@@ -8,6 +8,8 @@ import { HiOutlineCube } from "react-icons/hi2";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { LiaAwardSolid } from "react-icons/lia";
 import { HiOutlineEnvelope } from "react-icons/hi2";
+import { HiMenuAlt4 } from "react-icons/hi";
+import { MdRestaurantMenu } from "react-icons/md";
 
 interface MenuItem {
   icon: JSX.Element;
@@ -15,12 +17,49 @@ interface MenuItem {
   href: string;
 }
 
-const ProfileSidebarContainer = styled.div`
+interface ProfileSidebarContainerProps {
+  isVisible: boolean;
+}
+
+const ProfileSidebarContainer = styled.div<ProfileSidebarContainerProps>`
   width: 30%;
   flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
+  transition: transform 0.3s ease-in-out;
+  transform: ${({ isVisible }) =>
+    isVisible ? "translateX(0)" : "translateX(-100%)"};
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    z-index: 1;
+    display: ${({ isVisible }) => (isVisible ? "block" : "none")};
+  }
 `;
+
+const MenuIcon = styled(HiMenuAlt4)`
+  display: flex;
+  width: 28px;
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+`;
+const CancelIcon = styled(MdRestaurantMenu)`
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+`;
+
+const ProfileContainer = styled.div``;
 
 const ProfileSidebarProfile = styled.div`
   display: inline-flex;
@@ -146,10 +185,11 @@ const ProfileSidebarRightIcon = styled(LiaAngleRightSolid)<{ active: boolean }>`
 `;
 
 export const ProfileSidebar: React.FC = () => {
+  const [isSidebarVisible, setSidebarVisible] = useState(false);
   const [activeItem, setActiveItem] = useState<string>("Profile Settings");
 
   const profileInfo = {
-    icon: <ProfileIcon  />,
+    icon: <ProfileIcon />,
     name: "Kelivin Chikezie",
     email: "chikeziekelivin@gmial.com",
   };
@@ -191,37 +231,41 @@ export const ProfileSidebar: React.FC = () => {
   };
 
   return (
-    <ProfileSidebarContainer>
-      <ProfileSidebarProfile>
-        <ProfileSidebarPics>{profileInfo.icon}</ProfileSidebarPics>
-        <ProfileSidebarName>
-          <ProfileName>{profileInfo.name}</ProfileName>
-          <ProfileEmail>{profileInfo.email}</ProfileEmail>
-        </ProfileSidebarName>
-      </ProfileSidebarProfile>
-      <SidebarLine />
-      <ProfileSidebarSidemenu>
-        <ProfileSidebarList>
-          {menuItems.map((item, index) => (
-            <ProfileSidebarItem
-              key={index}
-              active={activeItem === item.label}
-              onClick={() => handleItemClick(item.label)}
-            >
-              <ProfileSidebarLink
-                href={item.href}
+    <ProfileContainer>
+      <MenuIcon onClick={() => setSidebarVisible(!isSidebarVisible)} />
+      <ProfileSidebarContainer isVisible={isSidebarVisible}>
+        <CancelIcon onClick={() => setSidebarVisible(!isSidebarVisible)} />
+        <ProfileSidebarProfile>
+          <ProfileSidebarPics>{profileInfo.icon}</ProfileSidebarPics>
+          <ProfileSidebarName>
+            <ProfileName>{profileInfo.name}</ProfileName>
+            <ProfileEmail>{profileInfo.email}</ProfileEmail>
+          </ProfileSidebarName>
+        </ProfileSidebarProfile>
+        <SidebarLine />
+        <ProfileSidebarSidemenu>
+          <ProfileSidebarList>
+            {menuItems.map((item, index) => (
+              <ProfileSidebarItem
+                key={index}
                 active={activeItem === item.label}
+                onClick={() => handleItemClick(item.label)}
               >
-                <ProfileSidebarLeftIcon>{item.icon}</ProfileSidebarLeftIcon>
-                <ProfileSidebarLinkName active={activeItem === item.label}>
-                  {item.label}
-                </ProfileSidebarLinkName>
-              </ProfileSidebarLink>
-              <ProfileSidebarRightIcon active={activeItem === item.label} />
-            </ProfileSidebarItem>
-          ))}
-        </ProfileSidebarList>
-      </ProfileSidebarSidemenu>
-    </ProfileSidebarContainer>
+                <ProfileSidebarLink
+                  href={item.href}
+                  active={activeItem === item.label}
+                >
+                  <ProfileSidebarLeftIcon>{item.icon}</ProfileSidebarLeftIcon>
+                  <ProfileSidebarLinkName active={activeItem === item.label}>
+                    {item.label}
+                  </ProfileSidebarLinkName>
+                </ProfileSidebarLink>
+                <ProfileSidebarRightIcon active={activeItem === item.label} />
+              </ProfileSidebarItem>
+            ))}
+          </ProfileSidebarList>
+        </ProfileSidebarSidemenu>
+      </ProfileSidebarContainer>
+    </ProfileContainer>
   );
 };

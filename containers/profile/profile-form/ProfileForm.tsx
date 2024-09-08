@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { BackButton2 } from "@/component/ui/BackButton/BackButton";
+import { BackButton, BackButton2 } from "@/component/ui/BackButton/BackButton";
 import { BiEditAlt } from "react-icons/bi";
 import styled, { css } from "styled-components";
 
@@ -15,6 +15,12 @@ const ProfileSettingContainer = styled.div`
   flex-shrink: 0;
   border-radius: 10px;
   background: #fff;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+  }
 `;
 
 const ProfileSettingTitle = styled.h3`
@@ -27,8 +33,11 @@ const ProfileSettingTitle = styled.h3`
   @media (max-width: 1024px) {
     font-size: 20px;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 850px) {
     font-size: 19px;
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -38,6 +47,21 @@ interface ProfileSettingsBoxTitleProps {
 
 const activeStyle = css`
   background: #fff;
+`;
+
+const ProfileSettingsBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--Soft-black, #565656);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 const ProfileSettingsBoxTitle = styled.p<ProfileSettingsBoxTitleProps>`
@@ -66,19 +90,71 @@ const ProfileSettingsBoxTitle = styled.p<ProfileSettingsBoxTitleProps>`
   }
 `;
 
-const ProfileSettingsBox = styled.div`
+
+const DropdownMenu = styled.div`
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+`;
+
+const DropdownMenuItem = styled.div<{ isActive: boolean }>`
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: ${(props) => (props.isActive ? "#f0f0f0" : "#fff")};
+  &:hover {
+    background-color: #f0f0f0;
+  }
+`;
+
+const MobileBackBtnSettings = styled.div`
+  display: flex;
+  align-items: center;
+  position: relative;
+`;
+
+const MobileDropdownButton = styled.div`
   display: flex;
   width: 100%;
-  padding: 6px 7px;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
-  background: var(--primary-color-1-white-40, #f9f9f9);
+  background-color: #f6f6f6;
+  cursor: pointer;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+`;
+
+const MobileProfileSettingsBox = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const BackButtonWrapper = styled.div`
   margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+const MobileBackButtonWrapper = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `;
 
 const FormContainer = styled.form`
@@ -107,7 +183,7 @@ const FormFirstInput = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
-  } 
+  }
 `;
 
 const FormName = styled.div`
@@ -128,7 +204,7 @@ const FormNameIcon = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%; 
+  width: 100%;
 `;
 
 const FormNameInput = styled.input`
@@ -255,100 +331,166 @@ const FormSubmit = styled.button`
   }
 `;
 
+const SecuritySettingContainer = styled.div`
+  padding: 2rem;
+  background-color: #fff;
+`;
+
+const DeliverySetupContainer = styled.div`
+  padding: 2rem;
+  background-color: #fff;
+`;
+
 export const ProfileForm = () => {
-  const [activeTab, setActiveTab] = useState<number | null>(null);
+  const [activeTab, setActiveTab] = useState<number>(0); // Default to "Basic Information"
+  const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
 
   const handleTabClick = (index: number) => {
     setActiveTab(index);
+    setIsDropdownOpen(false); // Close dropdown when an item is selected
   };
+
+  const tabTitles = [
+    "Basic Information",
+    "Security Setting",
+    "Delivery Set-up",
+  ];
 
   return (
     <ProfileSettingContainer>
       <ProfileSettingTitle>Profile Settings</ProfileSettingTitle>
+      {/* Desktop View Tabs */}
       <ProfileSettingsBox>
-        {["Basic Information", "Security Setting", "Delivery Set-up"].map(
-          (title, index) => (
-            <ProfileSettingsBoxTitle
-              key={index}
-              isActive={activeTab === index}
-              onClick={() => handleTabClick(index)}
-            >
-              {title}
-            </ProfileSettingsBoxTitle>
-          )
-        )}
+        {tabTitles.map((title, index) => (
+          <ProfileSettingsBoxTitle
+            key={index}
+            isActive={activeTab === index}
+            onClick={() => handleTabClick(index)}
+          >
+            {title}
+          </ProfileSettingsBoxTitle>
+        ))}
       </ProfileSettingsBox>
+
+      {/* Mobile View Dropdown */}
+      <MobileBackBtnSettings>
+        <MobileBackButtonWrapper>
+          <BackButton />
+        </MobileBackButtonWrapper>
+        <MobileProfileSettingsBox>
+          <MobileDropdownButton
+            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+          >
+            {tabTitles[activeTab]}
+          </MobileDropdownButton>
+          {isDropdownOpen && (
+            <DropdownMenu>
+              {tabTitles.map((title, index) => (
+                <DropdownMenuItem
+                  key={index}
+                  isActive={activeTab === index}
+                  onClick={() => handleTabClick(index)}
+                >
+                  {title}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenu>
+          )}
+        </MobileProfileSettingsBox>
+      </MobileBackBtnSettings>
 
       <BackButtonWrapper>
         <BackButton2 />
       </BackButtonWrapper>
 
-      <FormContainer>
-        <FormFirstInput>
-          <FormName>
-            <FormLabel htmlFor="fullname">Name</FormLabel>
-            <FormNameIcon>
-              <FormNameInput
-                type="text"
-                name="fullname"
-                id="fullname"
-                placeholder="Kelvin Chikezie"
-              />
-              <EditIcon />
-            </FormNameIcon>
-          </FormName>
+      {/* Conditionally Render Content Based on Active Tab */}
+      {activeTab === 0 && (
+        <FormContainer>
+          {/* Basic Information Form */}
+          <FormFirstInput>
+            <FormName>
+              <FormLabel htmlFor="fullname">Name</FormLabel>
+              <FormNameIcon>
+                <FormNameInput
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Kelvin Chikezie"
+                />
+                <EditIcon />
+              </FormNameIcon>
+            </FormName>
 
-          <FormName>
-            <FormLabel htmlFor="mobile">Mobile</FormLabel>
-            <FormNameIcon>
-              <FormNameInput
-                type="text"
-                name="mobile"
-                id="mobile"
-                placeholder="09034145971"
-              />
-              <EditIcon />
-            </FormNameIcon>
-          </FormName>
-        </FormFirstInput>
+            <FormName>
+              <FormLabel htmlFor="mobile">Mobile</FormLabel>
+              <FormNameIcon>
+                <FormNameInput
+                  type="text"
+                  name="mobile"
+                  id="mobile"
+                  placeholder="09034145971"
+                />
+                <EditIcon />
+              </FormNameIcon>
+            </FormName>
+          </FormFirstInput>
 
-        <FormFirstInput>
-          <FormName>
-            <FormLabel htmlFor="state">State</FormLabel>
-            <FormNameInput as="input" list="states" id="state" name="state" />
-            <datalist id="states">
-              <option value="Ilorin" />
-              <option value="Kano" />
-            </datalist>
-          </FormName>
+          <FormFirstInput>
+            <FormName>
+              <FormLabel htmlFor="state">State</FormLabel>
+              <FormNameInput as="input" list="states" id="state" name="state" />
+              <datalist id="states">
+                <option value="Ilorin" />
+                <option value="Kano" />
+              </datalist>
+            </FormName>
 
-          <FormName>
-            <FormLabel htmlFor="city">City</FormLabel>
-            <FormNameInput as="input" list="cities" id="city" name="city" />
-            <datalist id="cities">
-              <option value="Ilorin" />
-              <option value="Offa" />
-              <option value="Omu-Aran" />
-              <option value="Kano" />
-              <option value="Wudil" />
-              <option value="Gaya" />
-            </datalist>
-          </FormName>
-        </FormFirstInput>
+            <FormName>
+              <FormLabel htmlFor="city">City</FormLabel>
+              <FormNameInput as="input" list="cities" id="city" name="city" />
+              <datalist id="cities">
+                <option value="Ilorin" />
+                <option value="Offa" />
+                <option value="Omu-Aran" />
+                <option value="Kano" />
+                <option value="Wudil" />
+                <option value="Gaya" />
+              </datalist>
+            </FormName>
+          </FormFirstInput>
 
-        <FormTextareaBox>
-          <FormTextareaLabel htmlFor="address">Address</FormTextareaLabel>
-          <FormTextareaArea
-            id="address"
-            name="address"
-            rows={4}
-            cols={40}
-            placeholder="24 Louk Street off 120 tonimas"
-          />
-        </FormTextareaBox>
+          <FormTextareaBox>
+            <FormTextareaLabel htmlFor="address">Address</FormTextareaLabel>
+            <FormTextareaArea
+              id="address"
+              name="address"
+              rows={4}
+              cols={40}
+              placeholder="24 Louk Street off 120 tonimas"
+            />
+          </FormTextareaBox>
 
-        <FormSubmit type="submit">Save</FormSubmit>
-      </FormContainer>
+          <FormSubmit type="submit">Save</FormSubmit>
+        </FormContainer>
+      )}
+
+      {activeTab === 1 && (
+        <SecuritySettingContainer>
+          {/* Security Setting Content */}
+          <h2>Security Setting</h2>
+          <p>Here you can update your password and security questions.</p>
+          {/* Add your security settings form or content here */}
+        </SecuritySettingContainer>
+      )}
+
+      {activeTab === 2 && (
+        <DeliverySetupContainer>
+          {/* Delivery Set-up Content */}
+          <h2>Delivery Set-up</h2>
+          <p>Manage your delivery preferences and addresses here.</p>
+          {/* Add your delivery set-up form or content here */}
+        </DeliverySetupContainer>
+      )}
     </ProfileSettingContainer>
   );
 };
