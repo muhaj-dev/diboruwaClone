@@ -8962,6 +8962,23 @@ export interface FoodTopResturantType {
   arrowIcon?: IconType;
 }
 
+export interface OtherFoodResturantType {
+  _id?: number;
+  tag?: string;
+  title?: string;
+  image?: string;
+  smallTitle?: string;
+  starIcon?: IconType;
+  rating?: string;
+  reviewsText?: string;
+  reviewsNum?: string;
+  locationIcon?: IconType;
+  locationText?: string;
+  timeNum?: string;
+  vistLink?: string;
+  arrowIcon?: IconType;
+}
+
 
 import { GrLocation } from "react-icons/gr";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -9020,6 +9037,74 @@ export const FoodTopResturant: FoodTopResturantType[] = [
       
       {
         _id: 127664,
+        tag: "Food Vendors",
+        image: "/images/Rectangle 248 (9).png",
+        smallTitle: "WE HAVE MOVED",
+        starIcon: FaStar,
+        rating: "4.5",
+        reviewsText: "Reviews",
+        reviewsNum: "100",
+        locationIcon: GrLocation,
+        locationText: "Ikeja, Lagos",
+        timeNum: "9am - 10pm",
+        vistLink: "/",
+        arrowIcon: FaArrowRightLong,
+      },
+      
+];
+
+export const OtherFoodResturant: OtherFoodResturantType[] = [
+   
+      {
+        _id: 387653,
+        tag: "Food Vendors",
+        image: "/images/Rectangle 248 (9).png",
+        smallTitle: "WE HAVE MOVED",
+        starIcon: FaStar,
+        rating: "4.5",
+        reviewsText: "Reviews",
+        reviewsNum: "100",
+        locationIcon: GrLocation,
+        locationText: "Ikeja, Lagos",
+        timeNum: "9am - 10pm",
+        vistLink: "/",
+        arrowIcon: FaArrowRightLong,
+      },
+      
+      {
+        _id: 231196,
+        tag: "Food Vendors",
+        image: "/images/Rectangle 248 (9).png",
+        smallTitle: "WE HAVE MOVED",
+        starIcon: FaStar,
+        rating: "4.5",
+        reviewsText: "Reviews",
+        reviewsNum: "100",
+        locationIcon: GrLocation,
+        locationText: "Ikeja, Lagos",
+        timeNum: "9am - 10pm",
+        vistLink: "/",
+        arrowIcon: FaArrowRightLong,
+      },
+      
+      {
+        _id: 225332,
+        tag: "Food Vendors",
+        image: "/images/Rectangle 248 (9).png",
+        smallTitle: "WE HAVE MOVED",
+        starIcon: FaStar,
+        rating: "4.5",
+        reviewsText: "Reviews",
+        reviewsNum: "100",
+        locationIcon: GrLocation,
+        locationText: "Ikeja, Lagos",
+        timeNum: "9am - 10pm",
+        vistLink: "/",
+        arrowIcon: FaArrowRightLong,
+      },
+      
+      {
+        _id: 497664,
         tag: "Food Vendors",
         image: "/images/Rectangle 248 (9).png",
         smallTitle: "WE HAVE MOVED",
