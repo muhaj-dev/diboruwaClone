@@ -194,7 +194,7 @@ const Custom = styled.div`
 
 `;
 
-const subscriptions = ["Food", "Cleaning", "Laundry"];
+const subscriptions = ["Laundry", "Cleaning",  "Food", ];
 
 const Subscriptions = () => {
   const {

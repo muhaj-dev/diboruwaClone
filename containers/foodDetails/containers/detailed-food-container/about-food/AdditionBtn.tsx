@@ -5,7 +5,7 @@ import styles from "./about-food.module.css"
 export const AdditionBtn = () => {
   return (
     <div className={styles.addmore_container}>
-      <div className={styles.addmore_things}>
+      {/* <div className={styles.addmore_things}>
         <p className={styles.addmore_text}>Add Protein</p>
         <div className={styles.addmore_icon_div}>
         <MdAdd className={styles.addmore_icon}/>
@@ -16,7 +16,7 @@ export const AdditionBtn = () => {
         <div className={styles.addmore_icon_div}>
         <MdAdd className={styles.addmore_icon}/>
       </div>
-      </div>
+      </div> */}
       <div className={styles.addmore_things}>
         <p className={styles.addmore_text}>Extras</p>
         <div className={styles.addmore_icon_div}>

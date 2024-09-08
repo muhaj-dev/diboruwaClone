@@ -1,8 +1,27 @@
 import React from "react";
-import styles from "./similar-meal.module.css";
-import "../../../food/component/mostsold/mostsold.css";
 import Link from "next/link";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
+
 import { FoodDiscountSale, FirstSimilarMealData } from "@/constants/index";
+import {
+  MostSoldContainer,
+  MostSoldFrame,
+  MostSoldTitle,
+  MostSoldCards,
+  MostSoldCard,
+  MostSoldCardLinkDiv,
+  MostSoldCardImg,
+  MostSoldCardContent,
+  MostSoldCardContext,
+  MostSoldCardTitle,
+  MostSoldCardDot,
+  MostSoldCardPrize,
+  MostSoldCardPrizeText,
+  MostSoldCardReminder,
+  MostSoldCardPrizeLink,
+  SaleImgsContainer,
+  MostSoldSaleImg
+} from "./similar-meal.module.styles";
 
 interface FirstSimilarMealProps {
   id: string;
@@ -10,10 +29,10 @@ interface FirstSimilarMealProps {
 
 export const FirstSimilarMeal: React.FC<FirstSimilarMealProps> = ({ id }) => {
   return (
-    <section className={styles.mostsold_container}>
-      <div className={styles.mostsold_frame}>
-        <p className="mostsold_title">{FirstSimilarMealData[0].title}</p>
-        <div className={styles.mostsold_cards}>
+    <MostSoldContainer>
+      <MostSoldFrame>
+        <MostSoldTitle>{FirstSimilarMealData[0].title}</MostSoldTitle>
+        <MostSoldCards>
           {FirstSimilarMealData[0].items.map((item) => {
             // Destructure the Icon components from the item
             const FavoriteIcon = item.favoriteIcon;
@@ -21,76 +40,63 @@ export const FirstSimilarMeal: React.FC<FirstSimilarMealProps> = ({ id }) => {
             const TimeIcon = item.timeIcon;
             const PrizeIcon = item.prizeIcon;
             return (
-              <div
-                key={item.id}
-                className={styles.mostsold_card}
-              >
-                <div className={styles.mostsold_card_food_img}>
-              <Link
-                href={`/food/${item.id}`}
-                key={item.id}
-                className={styles.mostsold_card_link_div}
-                >
-                  <img
-                    src={item.img}
-                    alt={item.smallTitle}
-                    className={styles.mostsold_card_img}
+              <MostSoldCard key={item.id}>
+                <div style={{position: 'relative'}}>
+                  <MostSoldCardLinkDiv href={`/food/${item.id}`} key={item.id}>
+                    <MostSoldCardImg
+                      src={item.img}
+                      alt={item.smallTitle}
                     />
-                    </Link>
-                  <div className={styles.mostsold_card_img_iconcontainer}>
-                    <FavoriteIcon className={styles.mostsold_card_img_icon} />
+                  </MostSoldCardLinkDiv>
+                  <div>
+                    <FavoriteIcon 
+                      style={{
+                        color: '#27A124',
+                        background: 'white',
+                        padding: '6px',
+                        borderRadius: '100%',
+                        position: 'absolute',
+                        top: 4,
+                        left: 3,
+                      }}
+
+                      size={40}
+                    />
                   </div>
                 </div>
-                <div className={styles.mostsold_card_content}>
-                  <div className={styles.mostsold_card_context}>
-                    <div className={styles.mostsold_card_context_top}>
-                      <small className={styles.mostsold_card_title}>
-                        {item.smallTitle}
-                      </small>
-                      <span className={styles.mostsold_card_dot}></span>
-                      <StarIcon className={styles.mostsold_card_star} />
-                      <small className={styles.mostsold_card_rating}>
-                        {item.rating}
-                      </small>
+                <MostSoldCardContent>
+                  <MostSoldCardContext>
+                    <div>
+                      <MostSoldCardTitle>{item.smallTitle}</MostSoldCardTitle>
+                      <MostSoldCardDot />
+                      <StarIcon />
+                      <small>{item.rating}</small>
                     </div>
-                    <div className={styles.mostsold_card_timer}>
-                      <TimeIcon className={styles.mostsold_card_timer_icon} />
-                      <span className={styles.mostsold_card_timer_text}>
-                        {item.timeText}
-                      </span>
+                    <div>
+                      <TimeIcon />
+                      <span>{item.timeText}</span>
                     </div>
-                  </div>
-                  <div className={styles.mostsold_card_prize}>
-                    <p className={styles.mostsol_card_prize_text}>
-                      {item.prizeText}
-                    </p>
-                    <small className={styles.mostsold_card_remender}>
-                      {item.remenderText}
-                    </small>
-                    <a
-                      href={item.prizeLink}
-                      className={styles.mostsold_card_prize_link}
-                    >
-                      <PrizeIcon className={styles.mostsold_card_prize_icon} />
-                    </a>
-                  </div>
-                </div>
-              </div>
+                  </MostSoldCardContext>
+                  <MostSoldCardPrize>
+                    <MostSoldCardPrizeText>{item.prizeText}</MostSoldCardPrizeText>
+                    <MostSoldCardReminder>{item.remenderText}</MostSoldCardReminder>
+                    <MostSoldCardPrizeLink href={item.prizeLink}>
+                      <PrizeIcon />
+                    </MostSoldCardPrizeLink>
+                  </MostSoldCardPrize>
+                </MostSoldCardContent>
+              </MostSoldCard>
             );
           })}
-        </div>
-        <div className="sale-imgs-container">
+        </MostSoldCards>
+        <SaleImgsContainer>
           {FoodDiscountSale.map((item, index) => (
-            <div className="sale-imgs" key={index}>
-              <img
-                src={item.img}
-                alt={item.alt}
-                className="mostsold-sale_img"
-              />
+            <div key={index}>
+              <MostSoldSaleImg src={item.img} alt={item.alt} />
             </div>
           ))}
-        </div>
-      </div>
-    </section>
+        </SaleImgsContainer>
+      </MostSoldFrame>
+    </MostSoldContainer>
   );
 };

@@ -8,8 +8,21 @@
 }
 
 .df_cs {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 70% 30%;
-  gap: 41px;
+  gap: 41px; */
+  background-color: red;
+  display: flex;
+  gap: 3%;
+  justify-content: space-between;
   position: relative;
+}
+
+.df_cs_food{
+  flex-basis: 100%;
+}
+
+.df_cs_check{
+  /* flex-basis: 30%; */
+  
 }
