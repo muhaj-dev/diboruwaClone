@@ -50,6 +50,15 @@
   text-decoration: none;
 }
 
+.restaurants_link{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: rgb(75, 177, 73);
+}
+
 @media (max-width: 650px) {
   .rest-ad {
     background-color: #2a2a2a;

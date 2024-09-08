@@ -14,7 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 94%;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   margin: 30px auto;
@@ -216,5 +217,34 @@ span.time {
     background-color: #f6f6f6;
     border-radius: 20px;
     text-decoration: none;
+  }
+}
+
+
+.card {
+  flex: 1 1 100%; /* Default to full width for mobile and tablets */
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex: 1 1 calc(33.333% - 1rem); /* Display 3 cards in tablet view */
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex: 1 1 calc(25% - 1rem); /* Display 4 cards in desktop view */
+  }
+}
+
+/* Hide the last card on screen widths <= 1024px */
+@media (max-width: 1024px) {
+  .cards {
+    position: relative;
+    width: 94%;
+  }
+
+  .card:nth-last-child(1) {
+    display: none;
   }
 }

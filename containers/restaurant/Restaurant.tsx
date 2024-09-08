@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useMemo } from "react";
 import "./components/product-service-foodvendor/product-service-food-vendor.css";
+import "./restaurant.css";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import Newsletter from "../partnerWithUs/component/newsletter/Newsletter";
@@ -65,10 +66,12 @@ export const Restaurant: React.FC = () => {
       </div>
       <TopRestaurants />
       <SearchFilter />
+      <div className="OtherRestaurants_container">
       <OtherRestaurant1 />
       <OtherRestaurant2 />
       <OtherRestaurant3 />
       <OtherRestaurant4 />
+    </div>
       <Newsletter />
     </div>
   );

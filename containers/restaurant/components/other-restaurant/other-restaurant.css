@@ -1,6 +1,5 @@
 .other_restaurant_container {
   width: 100%;
-  padding: 40px 0 0;
   color: #565656;
 }
 
@@ -8,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 94%;
   flex-wrap: wrap;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -234,7 +233,7 @@ span.other_restaurant_time {
     position: relative;
     width: 94%;
   }
-  
+
   .other_restaurant_card:nth-last-child(1) {
     display: none;
   }

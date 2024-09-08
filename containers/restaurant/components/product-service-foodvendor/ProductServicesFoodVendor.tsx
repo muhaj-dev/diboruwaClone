@@ -127,13 +127,15 @@ export const ProductServicesFoodVendor: React.FC = () => {
                 ))}
               </div>
               <div className="text-container">
-                <p className="highlight">
+                <p className="restaurant_highlight">
                   Order from your favorite restaurant and get your
                 </p>
-                <p className="highlight2">meal delivered in minutes.</p>
+                <p className="restaurant_highlight2">
+                  meal delivered in minutes.
+                </p>
                 <button className="get-started-btn">
                   Get Started
-                  <FaArrowRightLong className="get-started-btn-icon"/>
+                  <FaArrowRightLong className="get-started-btn-icon" />
                 </button>
               </div>
             </div>

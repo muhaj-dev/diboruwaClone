@@ -2,6 +2,7 @@ import React from "react";
 import "./restAdvert.css";
 import Link from "next/link";
 import { TopResturant } from "@/constants/index";
+import { FaAngleRight } from "react-icons/fa6";
 
 interface RestAdvertProps {
   selectedTag: string;
@@ -48,6 +49,10 @@ const RestAdvert: React.FC<RestAdvertProps> = ({ selectedTag }) => {
                 </div>
               ))}
             </div>
+            <Link href="/restaurant" className="restaurants_link">
+              <p className="restaurants_link_text">See more</p>
+              <FaAngleRight className="restaurants_link_icon"/>
+            </Link>
           </div>
         );
       })}
