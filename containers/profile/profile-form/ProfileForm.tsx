@@ -65,7 +65,6 @@ const ProfileSettingsBox = styled.div`
   font-size: 16px;
   gap: 0.6rem;
 
-
   @media (max-width: 768px) {
     padding: 1rem;
     display: none;
@@ -232,7 +231,6 @@ const FormFirstInput = styled.div`
   align-items: center;
   position: relative;
   gap: 1rem;
-  width: 85%;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -267,7 +265,7 @@ const FormNameIcon = styled.div`
 `;
 
 const FormNameInput = styled.input`
-  width: 17rem;
+  width: 20vw;
   height: 2.5rem;
   padding-left: 0.7rem;
   border: 1px solid transparent;
@@ -285,9 +283,6 @@ const FormNameInput = styled.input`
     outline: none;
   }
 
-  @media (min-width: 1284px) {
-    width: 18.5rem;
-  }
   @media (max-width: 1170px) {
     width: 15.4rem;
   }
@@ -349,7 +344,7 @@ const FormTextareaLabel = styled.label`
 
 const FormTextareaArea = styled.textarea`
   display: flex;
-  width: 38rem;
+  width: 41vw;
   height: 8rem;
   padding: 0.5rem;
   border: 1px solid transparent;
@@ -388,7 +383,7 @@ const FormTextareaArea = styled.textarea`
 `;
 
 const FormSubmit = styled.button`
-  width: 38rem;
+  width: 41vw;
   display: flex;
   padding: 10px;
   justify-content: center;
