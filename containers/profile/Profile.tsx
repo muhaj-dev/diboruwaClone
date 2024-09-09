@@ -16,6 +16,11 @@ const PsPfContainer = styled.div`
     gap: 0;
     width: 100%;
   }
+
+  @media (max-width: 1024px) {
+    gap: 1rem;
+    width: 93%;
+  }
 `;
 
 

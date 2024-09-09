@@ -22,20 +22,21 @@ interface ProfileSidebarContainerProps {
 }
 
 const ProfileSidebarContainer = styled.div<ProfileSidebarContainerProps>`
-  width: 30%;
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
 
   @media (max-width: 768px) {
-    width: 95%;
+    width: 97%;
     height: 95%;
     position: absolute;
     top: 2rem;
     z-index: 2;
     transition: transform 0.3s ease-in-out;
     transform: ${({ isVisible }) =>
-      isVisible ? "translateX(3%)" : "translateX(-100%)"};
+      isVisible ? "translateX(2%)" : "translateX(-200%)"};
   }
 `;
 

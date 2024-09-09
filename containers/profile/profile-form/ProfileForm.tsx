@@ -22,6 +22,17 @@ const ProfileSettingContainer = styled.div`
     padding: 0;
     background: transparent;
   }
+
+  @media (min-width: 769px) and (max-width: 868px) {
+    width: 60%;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+  }
 `;
 
 const ProfileSettingTitle = styled.h3`
@@ -52,7 +63,6 @@ const activeStyle = css`
 
 const ProfileSettingsBox = styled.div`
   display: flex;
-  flex-direction: column;
   padding: 2rem;
   border-radius: 10px;
   background: #fff;
@@ -64,6 +74,17 @@ const ProfileSettingsBox = styled.div`
     padding: 1rem;
     display: none;
   }
+     @media (min-width: 769px) and (max-width: 868px) {
+    display: flex;
+    padding: 0.4rem;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: var(--Soft-black, #565656);
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    gap: 0.6rem;
+}
+     }
 `;
 
 const ProfileSettingsBoxTitle = styled.p<ProfileSettingsBoxTitleProps>`
@@ -101,7 +122,7 @@ const DropdownMenu = styled.div`
   border-radius: 0.6rem;
   padding: 1rem 0.7rem;
   z-index: 1;
-  `;
+`;
 
 const DropdownMenuItem = styled.div<{ isActive: boolean }>`
   padding: 0.5rem 1rem;
@@ -179,6 +200,7 @@ const FormContainer = styled.form`
   @media (max-width: 1024px) {
     border: none;
     padding: 0;
+    background: transparent;
   }
 
   @media (max-width: 768px) {
@@ -193,7 +215,7 @@ const FormFrame = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  padding: 4rem 0;
+  padding: 2rem 0;
   border-radius: 4px;
   border: 0.5px solid rgba(118, 117, 117, 0.21);
   background: var(--white, #fefefe);
@@ -201,7 +223,7 @@ const FormFrame = styled.div`
   @media (max-width: 1024px) {
     border: none;
     width: 100%;
-    padding: 1.5rem;
+    padding: 0;
     background: transparent;
   }
 `;
@@ -213,6 +235,10 @@ const FormFirstInput = styled.div`
   gap: 1rem;
 
   @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
+  @media (min-width: 769px) and (max-width: 868px) {
     flex-direction: column;
     width: 100%;
   }
@@ -269,6 +295,10 @@ const FormNameInput = styled.input`
   @media (max-width: 768px) {
     width: 100%;
     border: 0.407px solid #8f8f8f;
+  }
+
+  @media (min-width: 769px) and (max-width: 868px) {
+    width: 100%;
   }
 `;
 
