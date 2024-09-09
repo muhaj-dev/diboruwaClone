@@ -7,7 +7,7 @@ import styled, { css } from "styled-components";
 
 // Styled Components
 const ProfileSettingContainer = styled.div`
-  width: 68%;
+  width: 63%;
   padding: 2rem;
   padding-bottom: 3.6rem;
   margin-inline: auto;
@@ -16,12 +16,6 @@ const ProfileSettingContainer = styled.div`
   flex-shrink: 0;
   border-radius: 10px;
   background: #fff;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 0;
-    background: transparent;
-  }
 
   @media (min-width: 769px) and (max-width: 868px) {
     width: 60%;
@@ -63,18 +57,20 @@ const activeStyle = css`
 
 const ProfileSettingsBox = styled.div`
   display: flex;
-  padding: 2rem;
+  padding: 0.4rem;
   border-radius: 10px;
-  background: #fff;
+  background: #f9f9f9;
   color: var(--Soft-black, #565656);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  gap: 0.6rem;
+
 
   @media (max-width: 768px) {
     padding: 1rem;
     display: none;
   }
-     @media (min-width: 769px) and (max-width: 868px) {
+  @media (min-width: 769px) and (max-width: 968px) {
     display: flex;
     padding: 0.4rem;
     border-radius: 5px;
@@ -83,8 +79,7 @@ const ProfileSettingsBox = styled.div`
     font-family: "Poppins", sans-serif;
     font-size: 13px;
     gap: 0.6rem;
-}
-     }
+  }
 `;
 
 const ProfileSettingsBoxTitle = styled.p<ProfileSettingsBoxTitleProps>`
@@ -103,6 +98,10 @@ const ProfileSettingsBoxTitle = styled.p<ProfileSettingsBoxTitleProps>`
 
   &:hover {
     background: #fff;
+  }
+
+  @media (max-width: 1258px) {
+    font-size: 13px;
   }
   @media (max-width: 1024px) {
     padding: 0.5rem 1.8%;
@@ -205,7 +204,7 @@ const FormContainer = styled.form`
 
   @media (max-width: 768px) {
     border: none;
-    padding: 0;
+    padding: 1.5rem;
     background: rgba(252, 252, 252, 0.38);
     width: 100%;
   }
@@ -217,7 +216,7 @@ const FormFrame = styled.div`
   gap: 1.5rem;
   padding: 2rem 0;
   border-radius: 4px;
-  border: 0.5px solid rgba(118, 117, 117, 0.21);
+  width: 100%;
   background: var(--white, #fefefe);
 
   @media (max-width: 1024px) {
@@ -233,11 +232,13 @@ const FormFirstInput = styled.div`
   align-items: center;
   position: relative;
   gap: 1rem;
+  width: 85%;
 
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
   }
+
   @media (min-width: 769px) and (max-width: 868px) {
     flex-direction: column;
     width: 100%;
@@ -266,7 +267,7 @@ const FormNameIcon = styled.div`
 `;
 
 const FormNameInput = styled.input`
-  width: 14rem;
+  width: 17rem;
   height: 2.5rem;
   padding-left: 0.7rem;
   border: 1px solid transparent;
@@ -284,6 +285,12 @@ const FormNameInput = styled.input`
     outline: none;
   }
 
+  @media (min-width: 1284px) {
+    width: 18.5rem;
+  }
+  @media (max-width: 1170px) {
+    width: 15.4rem;
+  }
   @media (max-width: 1024px) {
     width: 15.4rem;
   }
@@ -322,6 +329,12 @@ const FormTextareaBox = styled.div`
   @media (max-width: 1024px) {
     margin-inline: 0;
   }
+
+  @media (min-width: 769px) and (max-width: 868px) {
+    width: 100%;
+    margin-inline: auto;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
   }
@@ -336,7 +349,7 @@ const FormTextareaLabel = styled.label`
 
 const FormTextareaArea = styled.textarea`
   display: flex;
-  width: 29rem;
+  width: 38rem;
   height: 8rem;
   padding: 0.5rem;
   border: 1px solid transparent;
@@ -359,9 +372,15 @@ const FormTextareaArea = styled.textarea`
   @media (max-width: 1024px) {
     width: 32rem;
   }
+
   @media (max-width: 870px) {
     width: 30rem;
   }
+
+  @media (min-width: 769px) and (max-width: 868px) {
+    width: 100%;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     border: 0.407px solid #8f8f8f;
@@ -369,7 +388,7 @@ const FormTextareaArea = styled.textarea`
 `;
 
 const FormSubmit = styled.button`
-  width: 29rem;
+  width: 38rem;
   display: flex;
   padding: 10px;
   justify-content: center;
@@ -390,6 +409,10 @@ const FormSubmit = styled.button`
   @media (max-width: 870px) {
     width: 30rem;
   }
+  @media (min-width: 769px) and (max-width: 868px) {
+    width: 100%;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
   }

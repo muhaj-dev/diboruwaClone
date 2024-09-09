@@ -12,14 +12,14 @@ const PsPfContainer = styled.div`
   gap: 2rem;
   position: relative;
 
-  @media (max-width: 768px) {
-    gap: 0;
-    width: 100%;
-  }
-
   @media (max-width: 1024px) {
     gap: 1rem;
     width: 93%;
+  }
+
+  @media (max-width: 768px) {
+    gap: 0;
+    width: 100%;
   }
 `;
 

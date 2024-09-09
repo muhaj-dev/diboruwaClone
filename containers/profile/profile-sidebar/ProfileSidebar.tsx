@@ -22,11 +22,15 @@ interface ProfileSidebarContainerProps {
 }
 
 const ProfileSidebarContainer = styled.div<ProfileSidebarContainerProps>`
-  width: 100%;
+  width: 30vw;
   height: 100%;
   flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
+
+  @media (max-width: 868px) {
+    width: 100%;
+  }
 
   @media (max-width: 768px) {
     width: 97%;
