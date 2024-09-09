@@ -26,37 +26,42 @@ const ProfileSidebarContainer = styled.div<ProfileSidebarContainerProps>`
   flex-shrink: 0;
   border-radius: 20px;
   background: #fff;
-  transition: transform 0.3s ease-in-out;
-  transform: ${({ isVisible }) =>
-    isVisible ? "translateX(0)" : "translateX(-100%)"};
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 95%;
     height: 95%;
     position: absolute;
     top: 2rem;
-    left: 0;
-    z-index: 1;
-    display: ${({ isVisible }) => (isVisible ? "block" : "none")};
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+    transform: ${({ isVisible }) =>
+      isVisible ? "translateX(3%)" : "translateX(-100%)"};
   }
 `;
 
 const MenuIcon = styled(HiMenuAlt4)`
-  display: flex;
-  width: 28px;
-  height: 28px;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  cursor: pointer;
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    left: 1.5rem;
+    cursor: pointer;
+  }
 `;
 const CancelIcon = styled(MdRestaurantMenu)`
-  width: 28px;
-  height: 28px;
-  cursor: pointer;
-  position: absolute;
-  right: 1rem;
+  display: none;
+  @media (max-width: 768px) {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+  }
 `;
 
 const ProfileContainer = styled.div``;

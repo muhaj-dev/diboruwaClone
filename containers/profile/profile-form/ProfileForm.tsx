@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { BackButton, BackButton2 } from "@/component/ui/BackButton/BackButton";
 import { BiEditAlt } from "react-icons/bi";
+import { FaAngleDown } from "react-icons/fa6";
 import styled, { css } from "styled-components";
 
 // Styled Components
@@ -61,6 +62,7 @@ const ProfileSettingsBox = styled.div`
 
   @media (max-width: 768px) {
     padding: 1rem;
+    display: none;
   }
 `;
 
@@ -90,19 +92,22 @@ const ProfileSettingsBoxTitle = styled.p<ProfileSettingsBoxTitleProps>`
   }
 `;
 
-
 const DropdownMenu = styled.div`
   position: absolute;
   top: 100%;
-  width: 100%;
+  width: 12rem;
   background: #fff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  padding: 1rem 0.7rem;
   z-index: 1;
-`;
+  `;
 
 const DropdownMenuItem = styled.div<{ isActive: boolean }>`
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-radius: 0.4rem;
+  margin-bottom: 0.5rem;
   background-color: ${(props) => (props.isActive ? "#f0f0f0" : "#fff")};
   &:hover {
     background-color: #f0f0f0;
@@ -121,6 +126,7 @@ const MobileDropdownButton = styled.div`
   padding: 0.5rem 1rem;
   justify-content: center;
   align-items: center;
+  gap: 0.3rem;
   border-radius: 4px;
   background-color: #f6f6f6;
   cursor: pointer;
@@ -134,11 +140,13 @@ const MobileProfileSettingsBox = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    transform: translate(14rem);
+    z-index: 1;
     justify-content: center;
-    width: 100%;
+    background: transparent;
   }
 `;
 
@@ -154,6 +162,7 @@ const MobileBackButtonWrapper = styled.div`
 
   @media (max-width: 768px) {
     display: block;
+    padding-left: 1.5rem;
   }
 `;
 
@@ -170,6 +179,29 @@ const FormContainer = styled.form`
   @media (max-width: 1024px) {
     border: none;
     padding: 0;
+  }
+
+  @media (max-width: 768px) {
+    border: none;
+    padding: 0;
+    background: rgba(252, 252, 252, 0.38);
+    width: 100%;
+  }
+`;
+const FormFrame = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 4rem 0;
+  border-radius: 4px;
+  border: 0.5px solid rgba(118, 117, 117, 0.21);
+  background: var(--white, #fefefe);
+
+  @media (max-width: 1024px) {
+    border: none;
+    width: 100%;
+    padding: 1.5rem;
     background: transparent;
   }
 `;
@@ -236,6 +268,7 @@ const FormNameInput = styled.input`
 
   @media (max-width: 768px) {
     width: 100%;
+    border: 0.407px solid #8f8f8f;
   }
 `;
 
@@ -301,6 +334,7 @@ const FormTextareaArea = styled.textarea`
   }
   @media (max-width: 768px) {
     width: 100%;
+    border: 0.407px solid #8f8f8f;
   }
 `;
 
@@ -382,6 +416,7 @@ export const ProfileForm = () => {
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           >
             {tabTitles[activeTab]}
+            <FaAngleDown />
           </MobileDropdownButton>
           {isDropdownOpen && (
             <DropdownMenu>
@@ -406,71 +441,78 @@ export const ProfileForm = () => {
       {/* Conditionally Render Content Based on Active Tab */}
       {activeTab === 0 && (
         <FormContainer>
+          <FormFrame>
+            <FormFirstInput>
+              <FormName>
+                <FormLabel htmlFor="fullname">Name</FormLabel>
+                <FormNameIcon>
+                  <FormNameInput
+                    type="text"
+                    name="fullname"
+                    id="fullname"
+                    placeholder="Kelvin Chikezie"
+                  />
+                  <EditIcon />
+                </FormNameIcon>
+              </FormName>
+
+              <FormName>
+                <FormLabel htmlFor="mobile">Mobile</FormLabel>
+                <FormNameIcon>
+                  <FormNameInput
+                    type="text"
+                    name="mobile"
+                    id="mobile"
+                    placeholder="09034145971"
+                  />
+                  <EditIcon />
+                </FormNameIcon>
+              </FormName>
+            </FormFirstInput>
+
+            <FormFirstInput>
+              <FormName>
+                <FormLabel htmlFor="state">State</FormLabel>
+                <FormNameInput
+                  as="input"
+                  list="states"
+                  id="state"
+                  name="state"
+                />
+                <datalist id="states">
+                  <option value="Ilorin" />
+                  <option value="Kano" />
+                </datalist>
+              </FormName>
+
+              <FormName>
+                <FormLabel htmlFor="city">City</FormLabel>
+                <FormNameInput as="input" list="cities" id="city" name="city" />
+                <datalist id="cities">
+                  <option value="Ilorin" />
+                  <option value="Offa" />
+                  <option value="Omu-Aran" />
+                  <option value="Kano" />
+                  <option value="Wudil" />
+                  <option value="Gaya" />
+                </datalist>
+              </FormName>
+            </FormFirstInput>
+
+            <FormTextareaBox>
+              <FormTextareaLabel htmlFor="address">Address</FormTextareaLabel>
+              <FormTextareaArea
+                id="address"
+                name="address"
+                rows={4}
+                cols={40}
+                placeholder="24 Louk Street off 120 tonimas"
+              />
+            </FormTextareaBox>
+
+            <FormSubmit type="submit">Save</FormSubmit>
+          </FormFrame>
           {/* Basic Information Form */}
-          <FormFirstInput>
-            <FormName>
-              <FormLabel htmlFor="fullname">Name</FormLabel>
-              <FormNameIcon>
-                <FormNameInput
-                  type="text"
-                  name="fullname"
-                  id="fullname"
-                  placeholder="Kelvin Chikezie"
-                />
-                <EditIcon />
-              </FormNameIcon>
-            </FormName>
-
-            <FormName>
-              <FormLabel htmlFor="mobile">Mobile</FormLabel>
-              <FormNameIcon>
-                <FormNameInput
-                  type="text"
-                  name="mobile"
-                  id="mobile"
-                  placeholder="09034145971"
-                />
-                <EditIcon />
-              </FormNameIcon>
-            </FormName>
-          </FormFirstInput>
-
-          <FormFirstInput>
-            <FormName>
-              <FormLabel htmlFor="state">State</FormLabel>
-              <FormNameInput as="input" list="states" id="state" name="state" />
-              <datalist id="states">
-                <option value="Ilorin" />
-                <option value="Kano" />
-              </datalist>
-            </FormName>
-
-            <FormName>
-              <FormLabel htmlFor="city">City</FormLabel>
-              <FormNameInput as="input" list="cities" id="city" name="city" />
-              <datalist id="cities">
-                <option value="Ilorin" />
-                <option value="Offa" />
-                <option value="Omu-Aran" />
-                <option value="Kano" />
-                <option value="Wudil" />
-                <option value="Gaya" />
-              </datalist>
-            </FormName>
-          </FormFirstInput>
-
-          <FormTextareaBox>
-            <FormTextareaLabel htmlFor="address">Address</FormTextareaLabel>
-            <FormTextareaArea
-              id="address"
-              name="address"
-              rows={4}
-              cols={40}
-              placeholder="24 Louk Street off 120 tonimas"
-            />
-          </FormTextareaBox>
-
-          <FormSubmit type="submit">Save</FormSubmit>
         </FormContainer>
       )}
 
