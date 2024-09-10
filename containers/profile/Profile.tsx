@@ -11,6 +11,7 @@ const PsPfContainer = styled.div`
   padding-top: 2rem;
   gap: 2rem;
   position: relative;
+  padding-bottom: 3rem;
 
   @media (max-width: 1024px) {
     gap: 1rem;

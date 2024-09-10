@@ -4,6 +4,8 @@ import { BackButton, BackButton2 } from "@/component/ui/BackButton/BackButton";
 import { BiEditAlt } from "react-icons/bi";
 import { FaAngleDown } from "react-icons/fa6";
 import styled, { css } from "styled-components";
+import { SecuritySetting } from "../security-setting/SecuritySetting";
+import { DeliverySetup } from "../delivery-setup/DeliverySetup";
 
 // Styled Components
 const ProfileSettingContainer = styled.div`
@@ -414,13 +416,11 @@ const FormSubmit = styled.button`
 `;
 
 const SecuritySettingContainer = styled.div`
-  padding: 2rem;
-  background-color: #fff;
+    background-color: rgba(252, 252, 252, 0.38);
 `;
 
 const DeliverySetupContainer = styled.div`
-  padding: 2rem;
-  background-color: #fff;
+  background-color: rgba(252, 252, 252, 0.38);
 `;
 
 export const ProfileForm = () => {
@@ -566,19 +566,13 @@ export const ProfileForm = () => {
 
       {activeTab === 1 && (
         <SecuritySettingContainer>
-          {/* Security Setting Content */}
-          <h2>Security Setting</h2>
-          <p>Here you can update your password and security questions.</p>
-          {/* Add your security settings form or content here */}
+        <SecuritySetting />
         </SecuritySettingContainer>
       )}
 
       {activeTab === 2 && (
         <DeliverySetupContainer>
-          {/* Delivery Set-up Content */}
-          <h2>Delivery Set-up</h2>
-          <p>Manage your delivery preferences and addresses here.</p>
-          {/* Add your delivery set-up form or content here */}
+          <DeliverySetup />
         </DeliverySetupContainer>
       )}
     </ProfileSettingContainer>
