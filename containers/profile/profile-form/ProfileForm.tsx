@@ -60,12 +60,13 @@ const activeStyle = css`
 const ProfileSettingsBox = styled.div`
   display: flex;
   padding: 0.4rem;
-  border-radius: 10px;
+  border-radius: 6px;
   background: #f9f9f9;
+  justify-content: space-between;
   color: var(--Soft-black, #565656);
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  gap: 0.6rem;
+  gap: 1rem;
 
   @media (max-width: 768px) {
     padding: 1rem;
