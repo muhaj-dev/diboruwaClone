@@ -1,6 +1,6 @@
 "use client";
 import Profile from "@/containers/profile/Profile";
-import "../../containers/profile/profile.css";
+import "../../../containers/profile/profile.css";
 import styled from "styled-components";
 
 export const metadata = {

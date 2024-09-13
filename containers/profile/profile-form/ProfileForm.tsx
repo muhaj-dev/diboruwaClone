@@ -9,7 +9,7 @@ import { DeliverySetup } from "../delivery-setup/DeliverySetup";
 
 // Styled Components
 const ProfileSettingContainer = styled.div`
-  width: 63%;
+  width: 100%;
   padding: 2rem;
   padding-bottom: 3.6rem;
   margin-inline: auto;
@@ -20,7 +20,7 @@ const ProfileSettingContainer = styled.div`
   background: #fff;
 
   @media (min-width: 769px) and (max-width: 868px) {
-    width: 60%;
+    width: 100%;
     padding: 1.5rem;
   }
 

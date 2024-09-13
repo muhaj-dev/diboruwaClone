@@ -8934,7 +8934,6 @@ export interface ProductServiceVendorType {
   title?: string;
 }
 
-
 export const ProductServiceVendorData: ProductServiceVendorType[] = [
   {
     _id: 1,
@@ -8946,7 +8945,6 @@ export const ProductServiceVendorData: ProductServiceVendorType[] = [
     map: "/images/map.png",
   },
 ];
-
 
 export interface FoodTopResturantType {
   _id?: number;
@@ -8982,156 +8980,150 @@ export interface OtherFoodResturantType {
   arrowIcon?: IconType;
 }
 
-
 import { GrLocation } from "react-icons/gr";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export const FoodTopResturant: FoodTopResturantType[] = [
-      {
-        title: "Top Restaurant Near You",
-      },
-      {
-        _id: 381753,
-        tag: "Food Vendors",
-        image: "/images/Rectangle 248 (9).png",
-        smallTitle: "WE HAVE MOVED",
-        starIcon: FaStar,
-        rating: "4.5",
-        reviewsText: "Reviews",
-        reviewsNum: "100",
-        locationIcon: GrLocation,
-        locationText: "Ikeja, Lagos",
-        timeNum: "9am - 10pm",
-        vistLink: "/",
-        arrowIcon: FaArrowRightLong,
-      },
-      
-      {
-        _id: 231134,
-        tag: "Food Vendors",
-        image: "/images/Rectangle 248 (9).png",
-        smallTitle: "WE HAVE MOVED",
-        starIcon: FaStar,
-        rating: "4.5",
-        reviewsText: "Reviews",
-        reviewsNum: "100",
-        locationIcon: GrLocation,
-        locationText: "Ikeja, Lagos",
-        timeNum: "9am - 10pm",
-        vistLink: "/",
-        arrowIcon: FaArrowRightLong,
-      },
-      
-      {
-        _id: 945332,
-        tag: "Food Vendors",
-        image: "/images/Rectangle 248 (9).png",
-        smallTitle: "WE HAVE MOVED",
-        starIcon: FaStar,
-        rating: "4.5",
-        reviewsText: "Reviews",
-        reviewsNum: "100",
-        locationIcon: GrLocation,
-        locationText: "Ikeja, Lagos",
-        timeNum: "9am - 10pm",
-        vistLink: "/",
-        arrowIcon: FaArrowRightLong,
-      },
-      
-      {
-        _id: 127664,
-        tag: "Food Vendors",
-        image: "/images/Rectangle 248 (9).png",
-        smallTitle: "WE HAVE MOVED",
-        starIcon: FaStar,
-        rating: "4.5",
-        reviewsText: "Reviews",
-        reviewsNum: "100",
-        locationIcon: GrLocation,
-        locationText: "Ikeja, Lagos",
-        timeNum: "9am - 10pm",
-        vistLink: "/",
-        arrowIcon: FaArrowRightLong,
-      },
-      
+  {
+    title: "Top Restaurant Near You",
+  },
+  {
+    _id: 381753,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 231134,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 945332,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 127664,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
 ];
 
 export const OtherFoodResturant: OtherFoodResturantType[] = [
-   
-      {
-        _id: 387653,
-        tag: "Food Vendors",
-        image: "/images/Rectangle 248 (9).png",
-        smallTitle: "WE HAVE MOVED",
-        starIcon: FaStar,
-        rating: "4.5",
-        reviewsText: "Reviews",
-        reviewsNum: "100",
-        locationIcon: GrLocation,
-        locationText: "Ikeja, Lagos",
-        timeNum: "9am - 10pm",
-        vistLink: "/",
-        arrowIcon: FaArrowRightLong,
-      },
-      
-      {
-        _id: 231196,
-        tag: "Food Vendors",
-        image: "/images/Rectangle 248 (9).png",
-        smallTitle: "WE HAVE MOVED",
-        starIcon: FaStar,
-        rating: "4.5",
-        reviewsText: "Reviews",
-        reviewsNum: "100",
-        locationIcon: GrLocation,
-        locationText: "Ikeja, Lagos",
-        timeNum: "9am - 10pm",
-        vistLink: "/",
-        arrowIcon: FaArrowRightLong,
-      },
-      
-      {
-        _id: 225332,
-        tag: "Food Vendors",
-        image: "/images/Rectangle 248 (9).png",
-        smallTitle: "WE HAVE MOVED",
-        starIcon: FaStar,
-        rating: "4.5",
-        reviewsText: "Reviews",
-        reviewsNum: "100",
-        locationIcon: GrLocation,
-        locationText: "Ikeja, Lagos",
-        timeNum: "9am - 10pm",
-        vistLink: "/",
-        arrowIcon: FaArrowRightLong,
-      },
-      
-      {
-        _id: 497664,
-        tag: "Food Vendors",
-        image: "/images/Rectangle 248 (9).png",
-        smallTitle: "WE HAVE MOVED",
-        starIcon: FaStar,
-        rating: "4.5",
-        reviewsText: "Reviews",
-        reviewsNum: "100",
-        locationIcon: GrLocation,
-        locationText: "Ikeja, Lagos",
-        timeNum: "9am - 10pm",
-        vistLink: "/",
-        arrowIcon: FaArrowRightLong,
-      },
-      
+  {
+    _id: 387653,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 231196,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 225332,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 497664,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
 ];
-
-
-
 
 import { IoMdStopwatch } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
 import { FaBagShopping } from "react-icons/fa6";
 import { IconType } from "react-icons/lib";
+import { LuPhone } from "react-icons/lu";
 
 export const FoodVendor = [
   {
@@ -9406,7 +9398,7 @@ export const FreeDeliveryData = [
         prizeIcon: FaBagShopping,
       },
       {
-        id:"3241",
+        id: "3241",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -9420,7 +9412,7 @@ export const FreeDeliveryData = [
         prizeIcon: FaBagShopping,
       },
       {
-        id:"5476",
+        id: "5476",
         img: "/images/Rectangle 248 (10).png",
         prizeLink: "/cart",
         favoriteIcon: MdFavoriteBorder,
@@ -9590,5 +9582,494 @@ export const FoodDiscountSale = [
   {
     img: "/images/Component 110.png",
     alt: "hot jollof Rice",
+  },
+];
+
+export interface OrderedFoodDataType {
+  _id: number;
+  foodImg?: string;
+  foodTitle?: string;
+  foodAmount?: string;
+  ratingIcon?: IconType;
+  ratingNum?: string;
+  timmIcon?: IconType;
+  timeText?: string;
+  deliveryText?: string;
+  amountInUsd?: string;
+  restaurantImg?: string;
+  restaurantTitle?: string;
+  restaurantRatingIcon?: IconType;
+  restaurantRatingNum?: string;
+  restPhoneIcon?: IconType;
+  restaurantPhoneNum?: string;
+}
+
+export const FoodOrdered1: OrderedFoodDataType[] = [
+  {
+    _id: 1222344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+  {
+    _id: 1344,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1344,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+];
+
+export const FoodOrdered2: OrderedFoodDataType[] = [
+  {
+    _id: 1221044,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+  {
+    _id: 1321,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1321,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+];
+export const FoodOrdered3: OrderedFoodDataType[] = [
+  {
+    _id: 1245344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+
+  {
+    _id: 1432,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1432,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+];
+
+export const FoodOrdered4: OrderedFoodDataType[] = [
+  {
+    _id: 1222394,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+
+  {
+    _id: 1309,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1309,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+];
+
+export const FoodOrdered5: OrderedFoodDataType[] = [
+  {
+    _id: 1275344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+
+  {
+    _id: 1021,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1021,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+];
+export const FoodOrdered6: OrderedFoodDataType[] = [
+  {
+    _id: 1962344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+
+  {
+    _id: 1021,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1332,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+];
+export const FoodOrdered7: OrderedFoodDataType[] = [
+  {
+    _id: 1902344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+  {
+    _id: 9045,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 9045,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+];
+
+export interface OrderedServicesDataType {
+  _id: number;
+  foodImg?: string;
+  foodTitle?: string;
+  foodAmount?: string;
+  ratingIcon?: IconType;
+  ratingNum?: string;
+  timmIcon?: IconType;
+  timeText?: string;
+  deliveryText?: string;
+  amountInUsd?: string;
+  restaurantImg?: string;
+  restaurantTitle?: string;
+  restaurantRatingIcon?: IconType;
+  restaurantRatingNum?: string;
+  restPhoneIcon?: IconType;
+  restaurantPhoneNum?: string;
+  ownerImg?: string;
+  ownerName?: string;
+  ownerPhoneIcon?: IconType;
+  ownersPhoneNum?: string;
+}
+
+export const OrderedServicesData1: OrderedServicesDataType[] = [
+  {
+    _id: 1222344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+  {
+    _id: 9015,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1344,
+    ownerImg: "/images/Rectangle 264 (1).png",
+    ownerName: "James Peter",
+    ownerPhoneIcon: LuPhone,
+    ownersPhoneNum: "0903 414 5971",
+  },
+];
+export const OrderedServicesData2: OrderedServicesDataType[] = [
+  {
+    _id: 1221044,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+  {
+    _id: 3245,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1321,
+    ownerImg: "/images/Rectangle 264 (1).png",
+    ownerName: "James Peter",
+    ownerPhoneIcon: LuPhone,
+    ownersPhoneNum: "0903 414 5971",
+  },
+];
+export const OrderedServicesData3: OrderedServicesDataType[] = [
+  {
+    _id: 1245344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+  {
+    _id: 9215,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1432,
+    ownerImg: "/images/Rectangle 264 (1).png",
+    ownerName: "James Peter",
+    ownerPhoneIcon: LuPhone,
+    ownersPhoneNum: "0903 414 5971",
+  },
+];
+export const OrderedServicesData4: OrderedServicesDataType[] = [
+  {
+    _id: 1222394,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+
+  {
+    _id: 9033,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1309,
+    ownerImg: "/images/Rectangle 264 (1).png",
+    ownerName: "James Peter",
+    ownerPhoneIcon: LuPhone,
+    ownersPhoneNum: "0903 414 5971",
+  },
+];
+export const OrderedServicesData5: OrderedServicesDataType[] = [
+  {
+    _id: 1275344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+
+  {
+    _id: 1765,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+  {
+    _id: 1021,
+    ownerImg: "/images/Rectangle 264 (1).png",
+    ownerName: "James Peter",
+    ownerPhoneIcon: LuPhone,
+    ownersPhoneNum: "0903 414 5971",
+  },
+];
+export const OrderedServicesData6: OrderedServicesDataType[] = [
+  {
+    _id: 1962344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+  {
+    _id: 9332,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+
+  {
+    _id: 1332,
+    ownerImg: "/images/Rectangle 264 (1).png",
+    ownerName: "James Peter",
+    ownerPhoneIcon: LuPhone,
+    ownersPhoneNum: "0903 414 5971",
+  },
+];
+export const OrderedServicesData7: OrderedServicesDataType[] = [
+  {
+    _id: 1902344,
+    foodImg: "/images/Frame 2610552.png",
+    foodTitle: "Jollof Rice",
+    foodAmount: "+3",
+    ratingIcon: FaStar,
+    ratingNum: "4.5",
+    timmIcon: IoMdStopwatch,
+    timeText: "30mins",
+    deliveryText: "offer Delivery",
+    amountInUsd: "$40,000",
+  },
+  {
+    _id: 9010,
+    restaurantImg: "/images/Rectangle 249 (3).png",
+    restaurantTitle: "Madam Restaurant PLC",
+    restaurantRatingIcon: FaStar,
+    restaurantRatingNum: "4.5",
+    restPhoneIcon: LuPhone,
+    restaurantPhoneNum: "0903 414 5971",
+  },
+
+  {
+    _id: 9045,
+    ownerImg: "/images/Rectangle 264 (1).png",
+    ownerName: "James Peter",
+    ownerPhoneIcon: LuPhone,
+    ownersPhoneNum: "0903 414 5971",
   },
 ];

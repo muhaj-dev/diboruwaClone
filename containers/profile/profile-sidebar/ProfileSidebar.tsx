@@ -71,7 +71,7 @@ const CancelIcon = styled(MdRestaurantMenu)`
 
 const ProfileContainer = styled.div``;
 
-const ProfileSidebarProfile = styled.div`
+const ProfileSidebarProfileLink = styled(Link)`
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -202,37 +202,38 @@ export const ProfileSidebar: React.FC = () => {
     icon: <ProfileIcon />,
     name: "Kelivin Chikezie",
     email: "chikeziekelivin@gmial.com",
+    href: "/profile"
   };
 
   const menuItems: MenuItem[] = [
     {
       icon: <BsPersonCircle />,
       label: "Profile Settings",
-      href: "#",
+      href: "/profile/profile-settings",
     },
 
     {
       icon: <HiOutlineCube />,
       label: "Orders",
-      href: "#",
+      href: "/profile/or-ders",
     },
 
     {
       icon: <IoIosHeartEmpty />,
       label: "Favorite",
-      href: "#",
+      href: "/profile/favorite",
     },
 
     {
       icon: <LiaAwardSolid />,
       label: "Subscriptions",
-      href: "#",
+      href: "/profile/subscriptions",
     },
 
     {
       icon: <HiOutlineEnvelope />,
       label: "Messages",
-      href: "#",
+      href: "/profile/messages",
     },
   ];
 
@@ -245,13 +246,15 @@ export const ProfileSidebar: React.FC = () => {
       <MenuIcon onClick={() => setSidebarVisible(!isSidebarVisible)} />
       <ProfileSidebarContainer isVisible={isSidebarVisible}>
         <CancelIcon onClick={() => setSidebarVisible(!isSidebarVisible)} />
-        <ProfileSidebarProfile>
+        <ProfileSidebarProfileLink
+        href={profileInfo.href}
+        >
           <ProfileSidebarPics>{profileInfo.icon}</ProfileSidebarPics>
           <ProfileSidebarName>
             <ProfileName>{profileInfo.name}</ProfileName>
             <ProfileEmail>{profileInfo.email}</ProfileEmail>
           </ProfileSidebarName>
-        </ProfileSidebarProfile>
+        </ProfileSidebarProfileLink>
         <SidebarLine />
         <ProfileSidebarSidemenu>
           <ProfileSidebarList>

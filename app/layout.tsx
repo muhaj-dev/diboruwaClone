@@ -7,17 +7,18 @@ import Navbar from "@/component/ui/Navbar/Navbar";
 import { Metadata } from "next";
 import Providers from "@/utils/Providers";
 import { assets } from "@/public/assets";
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import LocationModal from "@/component/locationModal";
-
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
     default: "Dibo Ruwa",
     template: "%s | Dibo Ruwa",
   },
-  description: "DiboRuwa - One-Stop App for Home Services | Northern Nigeria | Food | Laundry | Cleaning",
+  description:
+    "DiboRuwa - One-Stop App for Home Services | Northern Nigeria | Food | Laundry | Cleaning",
   openGraph: {
     type: "website",
     locale: "en_NG",
@@ -25,7 +26,6 @@ export const metadata: Metadata = {
     // site_name: "D",
   },
 };
-
 
 export default function RootLayout({
   children,
@@ -42,7 +42,7 @@ export default function RootLayout({
           <Navbar />
           {authModal}
 
-          <main>{children}</main>
+          <main className="main_container">{children}</main>
           {/* <Analytics /> */}
           {/* <SpeedInsights /> */}
           <Footer />

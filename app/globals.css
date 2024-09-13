@@ -29,3 +29,7 @@
 p {
   text-align: justify;
 }
+
+main.main_container{
+  background: var(--Background-color, #f8f8f8);
+}

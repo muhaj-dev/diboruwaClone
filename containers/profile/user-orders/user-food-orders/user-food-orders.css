@@ -1,0 +1,217 @@
+.user_foodOrders_container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  background: #fefefe;
+  border-radius: 8px;
+}
+
+.foodAnd_service_tab {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 0.7rem;
+  background: #ebebeb;
+  border-radius: 3px;
+}
+
+p.foodAnd_service_tabText {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 4rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+}
+
+p.foodAnd_service_tabText:hover {
+  background: #fefefe;
+}
+
+.user_cards_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.user_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+}
+
+.card_image {
+  width: 9rem;
+}
+
+img.card_img {
+  width: 100%;
+}
+
+.card_foodAndRating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card_food_quatity {
+  display: flex;
+  align-items: center;
+}
+
+p.card_food_name,
+p.card_food_quatityNum,
+p.card_rating_num,
+p.card_time,
+small.card_offer_text,
+p.card_offer_amount {
+  color: #242424;
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+
+p.card_food_quatityNum {
+  color: #27a124;
+}
+
+.card_rating {
+  display: flex;
+  align-items: center;
+}
+
+svg.card_rating_staricon {
+  color: #ffd335;
+  width: 14px;
+  height: 14px;
+}
+
+.card_time_content {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+svg.card_time_icon {
+  width: 14px;
+  height: 14px;
+}
+
+.card_offer_money {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+small.card_offer_text {
+  color: #27a124;
+  font-size: 10px;
+}
+
+.card_offer_dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #ececec;
+  border-radius: 100%;
+}
+
+.card_restcontent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.card_food_quatity {
+    display: flex;
+    align-items: center;
+}
+
+p.restaurant_name {
+    color: #242424;
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+.rating_and_phone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.The_rating {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+svg.ratingStar_icon {
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+
+span.rating_num {
+    color: #242424;
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+span.rest_dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    background: #ebebeb;
+}
+
+.telephone_div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.tel_text{
+    color: #242424;
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+.user_card_overflow{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-x: scroll;
+  width: 100%;
+}
