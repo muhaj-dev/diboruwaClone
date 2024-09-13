@@ -1,0 +1,22 @@
+.owner_card_image {
+    width: 9rem;
+}
+
+img.owner_card_img {
+    width: 100%;
+}
+
+.card_ownercontent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+p.owner_name, span.tel_text{
+color: #242424;
+font-size: 12px;
+font-weight: 400;
+font-style: normal;
+line-height: normal;
+}

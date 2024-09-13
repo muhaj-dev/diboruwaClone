@@ -11,11 +11,6 @@ interface UserOrdersCardProps {
 
 export const UserFoodOrders: React.FC = () => {
   return (
-    <div className="user_foodOrders_container">
-      <div className="foodAnd_service_tab">
-        <p className="foodAnd_service_tabText">Food</p>
-        <p className="foodAnd_service_tabText">Services</p>
-      </div>
       <div className="user_card_overflow">
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
@@ -119,7 +114,7 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
@@ -223,7 +218,7 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
@@ -327,7 +322,7 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
@@ -431,7 +426,7 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
@@ -535,7 +530,7 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
@@ -639,9 +634,8 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       </div>
-    </div>
   );
 };
