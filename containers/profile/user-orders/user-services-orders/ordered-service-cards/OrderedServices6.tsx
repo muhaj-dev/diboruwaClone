@@ -3,20 +3,20 @@ import React from "react";
 
 import { UserOrdersCard } from "../../UserOrdersCard";
 import { ViewMoreBtn } from "../../ViewMoreBtn";
-import { FoodOrdered1, OrderedFoodDataType } from "@/constants/index";
+import { OrderedServicesData6, OrderedServicesDataType } from "@/constants/index";
 
 export const OrderedServices6 = () => {
   return (
     <div className="user_cards_container">
-      {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
-        if (orderedFood.foodTitle) {
+      {OrderedServicesData6.map((orderedService: OrderedServicesDataType) => {
+        if (orderedService.foodTitle) {
           // Food card
           return (
-            <div className="user_cards" key={orderedFood._id}>
+            <div className="user_cards" key={orderedService._id}>
               <UserOrdersCard className="user_card">
                 <div className="card_image">
                   <img
-                    src={orderedFood.foodImg}
+                    src={orderedService.foodImg}
                     alt="card image"
                     className="card_img"
                   />
@@ -24,78 +24,116 @@ export const OrderedServices6 = () => {
                 <div className="card_content">
                   <div className="card_foodAndRating">
                     <div className="card_food_quatity">
-                      <p className="card_food_name">{orderedFood.foodTitle}</p>
+                      <p className="card_food_name">
+                        {orderedService.foodTitle}
+                      </p>
                       <p className="card_food_quatityNum">
-                        {orderedFood.foodAmount}
+                        {orderedService.foodAmount}
                       </p>
                     </div>
                     <div className="card_rating">
                       <p className="card_rating_num">
-                        {orderedFood.ratingIcon
-                          ? React.createElement(orderedFood.ratingIcon, {})
+                        {orderedService.ratingIcon
+                          ? React.createElement(orderedService.ratingIcon, {
+                              className: "rating_icon",
+                            })
                           : null}
                       </p>
-                      <p className="card_rating_num">{orderedFood.ratingNum}</p>
+                      <p className="card_rating_num">
+                        {orderedService.ratingNum}
+                      </p>
                     </div>
                   </div>
                   <div className="card_time_content">
                     <p className="card_time">
-                      {orderedFood.timmIcon
-                        ? React.createElement(orderedFood.timmIcon, {})
+                      {orderedService.timmIcon
+                        ? React.createElement(orderedService.timmIcon, {
+                            className: "rating_icon",
+                          })
                         : null}
                     </p>
-                    <p className="card_time">{orderedFood.timeText}</p>
+                    <p className="card_time">{orderedService.timeText}</p>
                   </div>
                   <div className="card_offer_money">
                     <small className="card_offer_text">
-                      {orderedFood.deliveryText}
+                      {orderedService.deliveryText}
                     </small>
                     <span className="card_offer_dot"></span>
                     <p className="card_offer_amount">
-                      {orderedFood.amountInUsd}
+                      {orderedService.amountInUsd}
                     </p>
                   </div>
                 </div>
               </UserOrdersCard>
             </div>
           );
-        } else {
+        } else if (orderedService.restaurantTitle) {
           // Restaurant card
           return (
-            <div className="user_cards" key={orderedFood._id}>
+            <div className="user_cards" key={orderedService._id}>
               <UserOrdersCard className="user_card">
                 <div className="card_image">
                   <img
-                    src={orderedFood.restaurantImg}
+                    src={orderedService.restaurantImg}
                     alt="card image"
                     className="card_img"
                   />
                 </div>
                 <div className="card_restcontent">
                   <p className="restaurant_name">
-                    {orderedFood.restaurantTitle}
+                    {orderedService.restaurantTitle}
                   </p>
                   <div className="rating_and_phone">
                     <div className="The_rating">
-                      {orderedFood.restaurantRatingIcon
+                      {orderedService.restaurantRatingIcon
                         ? React.createElement(
-                            orderedFood.restaurantRatingIcon,
-                            { className: "ratingStar_icon" }
+                            orderedService.restaurantRatingIcon,
+                            { className: "rating_icon" }
                           )
                         : null}
                       <span className="rating_num">
-                        {orderedFood.restaurantRatingNum}
+                        {orderedService.restaurantRatingNum}
                       </span>
                     </div>
                     <span className="rest_dot"></span>
                     <div className="telephone_div">
-                      {orderedFood.restPhoneIcon
-                        ? React.createElement(orderedFood.restPhoneIcon, {
-                            className: "card_phone_icon",
+                      {orderedService.restPhoneIcon
+                        ? React.createElement(orderedService.restPhoneIcon, {
+                            className: "rating_icon",
                           })
                         : null}
                       <span className="tel_text">
-                        {orderedFood.restaurantPhoneNum}
+                        {orderedService.restaurantPhoneNum}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </UserOrdersCard>
+            </div>
+          );
+        } else {
+          // Owner card
+          return (
+            <div className="user_cards" key={orderedService._id}>
+              <UserOrdersCard className="user_card">
+                <div className="owner_card_image">
+                  <img
+                    src={orderedService.ownerImg}
+                    alt="card image"
+                    className="owner_card_img"
+                  />
+                </div>
+                <div className="card_ownercontent">
+                  <p className="owner_name">{orderedService.ownerName}</p>
+                  <div className="owner_phone">
+                    <div className="telephone_div">
+                      {orderedService.ownerPhoneIcon
+                        ? React.createElement(orderedService.ownerPhoneIcon, {
+                            className: "rating_icon",
+                          })
+                        : null}
+                      <span className="tel_text">
+                        {orderedService.ownersPhoneNum}
                       </span>
                     </div>
                   </div>
