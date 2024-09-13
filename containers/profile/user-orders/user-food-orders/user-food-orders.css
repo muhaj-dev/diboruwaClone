@@ -66,11 +66,13 @@ p.foodAnd_service_tabText.active {
   width: 9rem;
 }
 
+
+
 img.card_img {
   width: 100%;
 }
 
-.card_foodAndRating {
+.card_foodAndRating {  
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -219,3 +221,10 @@ span.rest_dot {
   overflow-x: scroll;
   width: 100%;
 }
+
+
+@media screen and (max-width: 1390px)
+{
+
+}
+

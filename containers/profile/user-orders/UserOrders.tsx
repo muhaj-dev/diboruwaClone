@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { UserFoodOrders } from "./user-food-orders/UserFoodOrders";
 import { UserServicesOrders } from "./user-services-orders/UserServicesOrders";
+import './user-food-orders/user-food-orders.css'
+import './user-services-orders/user-services-orders.css'
 
 type TabType = "food" | "services";
 
