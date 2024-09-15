@@ -13,7 +13,7 @@ export const OrderedServices4 = () => {
           // Food card
           return (
             <div
-              className={`user_cards food_card`}
+              className={`user_cards Service_food_card`}
               key={orderedService._id}
             >
               <UserOrdersCard className="user_card">
@@ -61,7 +61,7 @@ export const OrderedServices4 = () => {
                     <small className="card_offer_text">
                       {orderedService.deliveryText}
                     </small>
-                    <span className="card_offer_dot"></span>
+                    <div className="card_offer_dot"></div>
                     <p className="card_offer_amount">
                       {orderedService.amountInUsd}
                     </p>
@@ -74,7 +74,7 @@ export const OrderedServices4 = () => {
           // Restaurant card
           return (
             <div
-              className={`user_cards restaurant_card`}
+              className={`user_cards Service_restaurant_card`}
               key={orderedService._id}
             >
               <UserOrdersCard className="user_card">
@@ -97,20 +97,20 @@ export const OrderedServices4 = () => {
                             { className: "rating_icon" }
                           )
                         : null}
-                      <span className="rating_num">
+                      <div className="rating_num">
                         {orderedService.restaurantRatingNum}
-                      </span>
+                      </div>
                     </div>
-                    <span className="rest_dot"></span>
+                    <div className="rest_dot"></div>
                     <div className="telephone_div">
                       {orderedService.restPhoneIcon
                         ? React.createElement(orderedService.restPhoneIcon, {
                             className: "rating_icon",
                           })
                         : null}
-                      <span className="tel_text">
+                      <div className="tel_text">
                         {orderedService.restaurantPhoneNum}
-                      </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export const OrderedServices4 = () => {
           // Owner card
           return (
             <div
-              className={`user_cards owner_card`}
+              className={`user_cards Service_owner_card`}
               key={orderedService._id}
             >
               <UserOrdersCard className="user_card">
@@ -141,9 +141,9 @@ export const OrderedServices4 = () => {
                             className: "rating_icon",
                           })
                         : null}
-                      <span className="tel_text">
+                      <div className="tel_text">
                         {orderedService.ownersPhoneNum}
-                      </span>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -59,7 +59,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -95,20 +95,20 @@ export const UserFoodOrders: React.FC = () => {
                               { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -166,7 +166,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -202,20 +202,20 @@ export const UserFoodOrders: React.FC = () => {
                               { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -276,7 +276,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -312,20 +312,20 @@ export const UserFoodOrders: React.FC = () => {
                               { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -386,7 +386,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -422,20 +422,20 @@ export const UserFoodOrders: React.FC = () => {
                               { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -496,7 +496,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -532,20 +532,20 @@ export const UserFoodOrders: React.FC = () => {
                               { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -606,7 +606,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -642,20 +642,20 @@ export const UserFoodOrders: React.FC = () => {
                               { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -46,22 +46,26 @@ img.owner_card_img {
 }
 
 p.owner_name,
-span.tel_text {
-  color: #242424;
-  font-size: 12px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: normal;
+.tel_text {
+  color: #242424 !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  line-height: normal !important;
 }
 
 @media screen and (max-width: 1024px) {
-  .user_cards_container .restaurant_card {
+  .user_cards_container .Service_restaurant_card {
     display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  .user_cards_container .restaurant_card,
-  .user_cards_container .owner_card {
+  .user_cards_container .Service_restaurant_card,
+  .user_cards_container .Service_owner_card {
+    display: none;
+  }
+
+   .user_cards_container .Service_owner_card {
     display: none;
   }
 }
