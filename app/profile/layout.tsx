@@ -25,7 +25,12 @@ const PsPfContainer = styled.div`
 `;
 
 const ProfileChildren = styled.div`
-width: 100%;
+width: 75%;
+
+@media screen and (max-width: 768px){
+  width: 100%;
+
+}
 `;
 
 const ProfileLayout = ({ children }: { children: React.ReactNode }) => {

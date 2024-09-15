@@ -16,7 +16,10 @@ export const OrderedServices3 = () => {
         if (orderedService.foodTitle) {
           // Food card
           return (
-            <div className="user_cards" key={orderedService._id}>
+            <div
+              className={`user_card food_card`}
+              key={orderedService._id}
+            >
               <UserOrdersCard className="user_card">
                 <div className="card_image">
                   <img
@@ -39,8 +42,8 @@ export const OrderedServices3 = () => {
                       <p className="card_rating_num">
                         {orderedService.ratingIcon
                           ? React.createElement(orderedService.ratingIcon, {
-                            className: "rating_icon",
-                          })
+                              className: "rating_icon",
+                            })
                           : null}
                       </p>
                       <p className="card_rating_num">
@@ -52,8 +55,8 @@ export const OrderedServices3 = () => {
                     <p className="card_time">
                       {orderedService.timmIcon
                         ? React.createElement(orderedService.timmIcon, {
-                          className: "rating_icon",
-                        })
+                            className: "rating_icon",
+                          })
                         : null}
                     </p>
                     <p className="card_time">{orderedService.timeText}</p>
@@ -74,7 +77,7 @@ export const OrderedServices3 = () => {
         } else if (orderedService.restaurantTitle) {
           // Restaurant card
           return (
-            <div className="user_cards" key={orderedService._id}>
+            <div className={`user_cards restaurant_card`} key={orderedService._id}>
               <UserOrdersCard className="user_card">
                 <div className="card_image">
                   <img
@@ -118,7 +121,7 @@ export const OrderedServices3 = () => {
         } else {
           // Owner card
           return (
-            <div className="user_cards" key={orderedService._id}>
+            <div className={`user_cards owner_card`} key={orderedService._id}>
               <UserOrdersCard className="user_card">
                 <div className="owner_card_image">
                   <img

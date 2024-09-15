@@ -11,7 +11,10 @@ export const OrderedServices2 = () => {
         if (orderedService.foodTitle) {
           // Food card
           return (
-            <div className="user_cards" key={orderedService._id}>
+            <div
+              className={`user_cards food_card`}
+              key={orderedService._id}
+            >
               <UserOrdersCard className="user_card">
                 <div className="card_image">
                   <img
@@ -69,7 +72,7 @@ export const OrderedServices2 = () => {
         } else if (orderedService.restaurantTitle) {
           // Restaurant card
           return (
-            <div className="user_cards" key={orderedService._id}>
+            <div className={`user_cards restaurant_card`} key={orderedService._id}>
               <UserOrdersCard className="user_card">
                 <div className="card_image">
                   <img
@@ -113,7 +116,7 @@ export const OrderedServices2 = () => {
         } else {
           // Owner card
           return (
-            <div className="user_cards" key={orderedService._id}>
+            <div className={`user_cards owner_card`}key={orderedService._id}>
               <UserOrdersCard className="user_card">
                 <div className="owner_card_image">
                   <img
