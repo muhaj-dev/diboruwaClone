@@ -9125,6 +9125,7 @@ import { FaBagShopping } from "react-icons/fa6";
 import { IconType } from "react-icons/lib";
 import { LuPhone } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
+import { FaAngleRight } from "react-icons/fa";
 
 export const FoodVendor = [
   {
@@ -10086,7 +10087,6 @@ export interface FavouriteFoodDataType {
   literAmount: string;
   favCartIcon: IconType;
 }
- 
 
 export const FavouriteFoodData: FavouriteFoodDataType[] = [
   {
@@ -10160,5 +10160,64 @@ export const FavouriteFoodData: FavouriteFoodDataType[] = [
     favMoney: "$50",
     literAmount: "20 Liters remaining",
     favCartIcon: FaBagShopping,
+  },
+];
+
+export interface MessageDataType {
+  messageImg: string;
+  messageTitle: string;
+  messageDes: string;
+  viewOrderLink: string;
+  viewOrderIcon: IconType;
+}
+
+export const MessageData: MessageDataType[] = [
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
   },
 ];
