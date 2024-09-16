@@ -9124,6 +9124,7 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { FaBagShopping } from "react-icons/fa6";
 import { IconType } from "react-icons/lib";
 import { LuPhone } from "react-icons/lu";
+import { CiHeart } from "react-icons/ci";
 
 export const FoodVendor = [
   {
@@ -10071,5 +10072,93 @@ export const OrderedServicesData7: OrderedServicesDataType[] = [
     ownerName: "James Peter",
     ownerPhoneIcon: LuPhone,
     ownersPhoneNum: "0903 414 5971",
+  },
+];
+export interface FavouriteFoodDataType {
+  image: string;
+  favIcon: IconType;
+  favFoodName: string;
+  favStar: IconType;
+  favRateNum: string;
+  favTimeIcon: IconType;
+  favTime: string;
+  favMoney: string;
+  literAmount: string;
+  favCartIcon: IconType;
+}
+ 
+
+export const FavouriteFoodData: FavouriteFoodDataType[] = [
+  {
+    image: "/images/Rectangle 248 (11).png",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Rectangle 249 (2).png",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Yamarita.jpg",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Chicken and chips.jpg",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Rectangle 249 (2).png",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Rectangle 248 (11).png",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
   },
 ];
