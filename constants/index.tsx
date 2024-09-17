@@ -9126,6 +9126,7 @@ import { IconType } from "react-icons/lib";
 import { LuPhone } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa";
+import { IoCheckmarkSharp } from "react-icons/io5";
 
 export const FoodVendor = [
   {
@@ -10221,3 +10222,156 @@ export const MessageData: MessageDataType[] = [
     viewOrderIcon: FaAngleRight,
   },
 ];
+
+export const subscriptionPlansData = [
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View", 
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View", 
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View", 
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View", 
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View", 
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View", 
+  },
+]

@@ -1,5 +1,8 @@
 import { Messages } from '@/containers/messages/Messages'
-import React from 'react'
+
+export const metadata = {
+  title: "Messages",
+};
 
 const page = () => {
   return (

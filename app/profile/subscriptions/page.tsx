@@ -1,8 +1,13 @@
-import React from 'react'
+import { Subscription } from "@/containers/subscription-container/Subscriptions";
+
+
+export const metadata = {
+  title: "Subscriptions",
+};
 
 const page = () => {
   return (
-    <div>page</div>
+    <div><Subscription /></div>
   )
 }
 
