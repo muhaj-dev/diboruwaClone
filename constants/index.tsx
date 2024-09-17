@@ -10235,7 +10235,6 @@ export interface subscriptionPlansDataType {
   ViewSubDetailsLink: string;
 }
 
-
 export const subscriptionPlansData: subscriptionPlansDataType[] = [
   {
     subImg: "/images/Rectangle 194.png",
@@ -10388,3 +10387,332 @@ export const subscriptionPlansData: subscriptionPlansDataType[] = [
     ViewSubDetailsLink: "View",
   },
 ];
+export interface GroomingSubscriptionPlansDataType {
+  subImg: string;
+  subType: string;
+  subAmount: string;
+  subItem: {
+    tickIcon: IconType;
+    subItemText: string;
+  }[];
+  subFeeText: string;
+  ViewSubDetailsLink: string;
+}
+
+export const GroomingSubscriptionPlansData: GroomingSubscriptionPlansDataType[] = [
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+];
+export interface LaundrySubscriptionPlansDataType {
+  subImg: string;
+  subType: string;
+  subAmount: string;
+  subItem: {
+    tickIcon: IconType;
+    subItemText: string;
+  }[];
+  subFeeText: string;
+  ViewSubDetailsLink: string;
+}
+
+export const LaundrySubscriptionPlansData: LaundrySubscriptionPlansDataType[] =
+  [
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+  ];
