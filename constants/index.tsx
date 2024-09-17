@@ -10223,7 +10223,20 @@ export const MessageData: MessageDataType[] = [
   },
 ];
 
-export const subscriptionPlansData = [
+export interface subscriptionPlansDataType {
+  subImg: string;
+  subType: string;
+  subAmount: string;
+  subItem: {
+    tickIcon: IconType;
+    subItemText: string;
+  }[];
+  subFeeText: string;
+  ViewSubDetailsLink: string;
+}
+
+
+export const subscriptionPlansData: subscriptionPlansDataType[] = [
   {
     subImg: "/images/Rectangle 194.png",
     subType: "Weekly Plan",
@@ -10247,7 +10260,7 @@ export const subscriptionPlansData = [
       },
     ],
     subFeeText: "Service Fee:",
-    ViewSubDetailsLink: "View", 
+    ViewSubDetailsLink: "View",
   },
   {
     subImg: "/images/Rectangle 194.png",
@@ -10272,7 +10285,7 @@ export const subscriptionPlansData = [
       },
     ],
     subFeeText: "Service Fee:",
-    ViewSubDetailsLink: "View", 
+    ViewSubDetailsLink: "View",
   },
   {
     subImg: "/images/Rectangle 194.png",
@@ -10297,7 +10310,7 @@ export const subscriptionPlansData = [
       },
     ],
     subFeeText: "Service Fee:",
-    ViewSubDetailsLink: "View", 
+    ViewSubDetailsLink: "View",
   },
   {
     subImg: "/images/Rectangle 194.png",
@@ -10322,7 +10335,7 @@ export const subscriptionPlansData = [
       },
     ],
     subFeeText: "Service Fee:",
-    ViewSubDetailsLink: "View", 
+    ViewSubDetailsLink: "View",
   },
   {
     subImg: "/images/Rectangle 194.png",
@@ -10347,7 +10360,7 @@ export const subscriptionPlansData = [
       },
     ],
     subFeeText: "Service Fee:",
-    ViewSubDetailsLink: "View", 
+    ViewSubDetailsLink: "View",
   },
   {
     subImg: "/images/Rectangle 194.png",
@@ -10372,6 +10385,6 @@ export const subscriptionPlansData = [
       },
     ],
     subFeeText: "Service Fee:",
-    ViewSubDetailsLink: "View", 
+    ViewSubDetailsLink: "View",
   },
-]
+];
