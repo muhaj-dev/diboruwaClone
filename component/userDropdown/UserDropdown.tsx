@@ -8,8 +8,9 @@ const UserDropdown = () => {
     required: false,
   });
   const initials = session
-    ? `${session?.user?.firstName[0]}${session?.user?.lastName[0]}`
-    : "o";
+    ? `${session?.user?.firstName} ${session?.user?.lastName[0]}`
+    : "Guest";
+    console.log(initials)
   return (
     <Container>
       <ServiceMenu

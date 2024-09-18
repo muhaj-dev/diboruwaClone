@@ -21,9 +21,11 @@ import {
   MobileMenuBackdrop,
   NavbarContainer,
   Toggle,
+  SMCDI,
 } from "./navbar.styles";
 import UserDropdown from "@/component/userDropdown/UserDropdown";
-import { FiShoppingCart } from "react-icons/fi";
+import { FaBagShopping } from "react-icons/fa6";
+import { ImLocation } from "react-icons/im";
 import { useCart } from "@/hooks/useCart";
 import { useSession } from "next-auth/react";
 import useCartStore from "@/store/useCart.store";
@@ -77,7 +79,6 @@ const Navbar = () => {
       }
     >
       <div className="logo">
-        
         <Link href="/" passHref>
           <LogoImage src="/logo.png" fill={true} alt="logo" />
         </Link>
@@ -88,12 +89,12 @@ const Navbar = () => {
       <MenuList className="menu">
         {routes.map((link, index) => {
           return (
-            
             <li key={index}>
               {link?.subroutes ? (
-                <>
+                <SMCDI>
                   <ServiceMenu trigger={link.name} routes={link?.subroutes} />
-                </>
+                  <CaretDownIcon className="icon" aria-hidden />
+                </SMCDI>
               ) : (
                 <Link className="link" href={link.path}>
                   {link.name}
@@ -102,26 +103,7 @@ const Navbar = () => {
             </li>
           );
         })}
-       
       </MenuList>
-      {session && (
-        <div className="cart">
-          {totalQuantities >= 1 ? (
-            <div className="badge">{totalQuantities}</div>
-          ) : (
-            <></>
-          )}
-          <>
-          <Link
-            href="/cart"
-            style={{ textDecoration: "none", color: "var(--primary)" }}
-            >
-            <FiShoppingCart />
-          </Link>
-            the checkout mobile button should be the icon bside me to be displayed
-          </>
-        </div>
-      )} 
       <AnimatePresence>
         {toggle && (
           <>
@@ -183,32 +165,60 @@ const Navbar = () => {
       </AnimatePresence>
       <MenuList>
         {!session && (
-          <li 
-            
-          >
+          <li>
             <Link
-            style={{
-              color: '#27A124',
-            }}
-            className="link" href="/signup">
+              style={{
+                color: "#27A124",
+              }}
+              className="link"
+              href="/signup"
+            >
               Register
             </Link>
           </li>
         )}
-      {!session && (
+        {!session && (
           <li>
             <Link
-             style={{
-              color: '#27A124',
-            }}
-            className="link" href="/signin">
+              style={{
+                color: "#27A124",
+              }}
+              className="link"
+              href="/signin"
+            >
               Login
             </Link>
-            
           </li>
         )}
-      <Cta href={`https://admin.diboruwa.com/sign-in`} target="_blank">Partner with us</Cta>
-      {session && <UserDropdown />}
+        {!session && (
+          <Cta href={`https://admin.diboruwa.com/sign-in`} target="_blank">
+            Partner with us
+          </Cta>
+        )}
+        {session && (
+          <div className="SA_location">
+            <ImLocation className="SA_location_icon" />
+            <p className="SA_location_text">Tanke, Ilorin</p>
+          </div>
+        )}
+        {session && <UserDropdown />}
+        {session && (
+          <div className="cart">
+            {totalQuantities >= 1 ? (
+              <div className="badge">{totalQuantities}</div>
+            ) : (
+              <></>
+            )}
+            <>
+              <Link
+                href="/cart"
+                style={{ textDecoration: "none", color: "var(--primary)" }}
+              >
+                <FaBagShopping className="cart_icon" />
+              </Link>
+            </>
+          </div>
+        )}
       </MenuList>
     </NavbarContainer>
   );

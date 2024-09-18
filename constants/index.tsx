@@ -45,6 +45,15 @@ export const routes: Route[] = [
       { name: "Moving", path: "/moving", icon: assets.scooter },
     ],
   },
+
+  {
+    name: "About Us",
+    path: "/about-us",
+  },
+  {
+    name: "Contact Us",
+    path: "/contact-us",
+  },
 ];
 
 export const HWW = [

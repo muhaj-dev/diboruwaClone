@@ -84,6 +84,4 @@ export const assets = {
   meatpie,
   sandwich,
   burger
-
-
 };
