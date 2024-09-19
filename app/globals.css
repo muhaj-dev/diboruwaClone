@@ -32,4 +32,5 @@ p {
 
 main.main_container{
   background: var(--Background-color, #f8f8f8);
+  margin: 6rem auto 0;
 }
