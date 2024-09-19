@@ -46,12 +46,12 @@ button.mobile_min-button{
   cursor: pointer;
 }
 
-.min-button.mobile_active {
+.mobile_min-button.active {
   background-color: #4bb149;
   color: #ffffff;
 }
 
-/* .custombooking-search_box {
+.custombooking-search_box {
   display: flex;
   align-items: center;
   position: relative;
@@ -72,7 +72,7 @@ input.custombooking-search_input {
 img.custombooking-search_img {
   position: absolute;
   right: 1rem;
-} */
+}
 
 button.mobile_custombooking-btn {
   display: flex;

@@ -1,0 +1,10 @@
+.indi_restCont {
+  display: flex;
+  gap: 1rem;
+  width: min(93%, 1444px);
+  margin: 0 auto;
+}
+
+.ACR_Cont {
+    width: min-content;
+}

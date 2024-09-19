@@ -1,9 +1,13 @@
-import React from 'react'
-import styles from './about-restaurant.module.css'
-import { FaStar } from 'react-icons/fa';
-import { LiaAngleRightSolid } from 'react-icons/lia';
+import React from "react";
+import styles from "./about-restaurant.module.css";
+import { FaStar } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
+import { LiaAngleRightSolid } from "react-icons/lia";
 import { SlLocationPin } from "react-icons/sl";
-export const AboutRestaurant = () => {
+import { CiCalendar, CiClock2 } from "react-icons/ci";
+import { IoIosArrowRoundForward } from "react-icons/io";
+
+const MobileAboutRestaurant = () => {
   return (
     <div className={styles.MobilerestaurantContainer}>
       <div className={styles.MobileCPImage}>
@@ -53,4 +57,83 @@ export const AboutRestaurant = () => {
       </div>
     </div>
   );
-}
+};
+
+export const AboutRestaurant = () => {
+  return (
+    <>
+      <div className={styles.AboutrestaurantContainer}>
+        <div className={styles.restaurantFrame}>
+          <div className={styles.CPImage}>
+            <div className={styles.coverImage}>
+              <img
+                src="/images/Frame 2610163 (2).png"
+                alt=""
+                className={styles.coverImg}
+              />
+            </div>
+            <div className={styles.restProfileImage}>
+              <img
+                src="/images/Ellipse 92.png"
+                alt=""
+                className={styles.restProfileImg}
+              />
+            </div>
+          </div>
+          <div className={styles.aboutRestaurantContainer}>
+            <div className={styles.NRSContent}>
+              <div className={styles.NRRestaurant}>
+                <p className={styles.restaurantProfileName}>Flora Restaurant</p>
+                <div className={styles.restaurantRating}>
+                  <FaStar className={styles.restaurantRatingIcon} />
+                  <p className={styles.restaurantRatingNum}>4.5</p>
+                </div>
+              </div>
+
+              <div className={styles.restaurantOpeningTimePhoneNum}>
+                <div className={styles.restaurantOpeningDay}>
+                  <CiCalendar className={styles.restaurantOpeningDayIcon} />
+                  <p className={styles.restaurantOpeningDayText}>
+                    Mon - Friday
+                  </p>
+                </div>
+
+                <div className={styles.restaurantDot}></div>
+                <div className={styles.restaurantOpeningTime}>
+                  <CiClock2 className={styles.restaurantOpeningTimeIcon} />
+                  <p className={styles.restaurantOpeningTimeText}>8am - 5pm</p>
+                </div>
+
+                <div className={styles.restaurantDot}></div>
+                <div className={styles.restaurantPhoneNum}>
+                  <FiPhone className={styles.restaurantPhoneNumIcon} />
+                  <p className={styles.restaurantPhoneNumText}>0903 414 5971</p>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.restaurantLocation}>
+              <SlLocationPin className={styles.restaurantLocationIcon} />
+              <p className={styles.restaurantLocationText}>Ikeja, Lagos</p>
+            </div>
+            <div className={styles.restaurantDescription_DT}>
+              <p className={styles.restaurantDescription}>
+                our hassie-free Laundry service ensures that your clothes are
+                cleaned, folded, and delivered with care, so you can spend less
+                time on chores and more time doing what you love
+              </p>
+              <p className={styles.restaurantDeliveryTime}>
+                30 - 40mins delivery time
+              </p>
+            </div>
+            <button className={styles.restaurantReview}>
+              See Reviews
+            <IoIosArrowRoundForward className={styles.restaurantReviewIcon}/>
+            </button>
+          </div>
+        </div>
+        <MobileAboutRestaurant />
+      </div>
+    </>
+  );
+};
