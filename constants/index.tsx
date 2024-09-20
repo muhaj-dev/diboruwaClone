@@ -10242,7 +10242,7 @@ export interface subscriptionPlansDataType {
   }[];
   subFeeText: string;
   ViewSubDetailsLink: string;
-}
+};
 
 export const subscriptionPlansData: subscriptionPlansDataType[] = [
   {

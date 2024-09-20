@@ -17,7 +17,7 @@ const MobileCustomBooking: React.FC  = () => {
               {["All", "30 Mins", "45 Mins", "1 Hr"].map((label) => (
                 <button
                   key={label}
-                  className={`mobile_min-button ${activeButton === label ? "mobile_active" : ""}`}
+                  className={`mobile_min-button ${activeButton === label ? "active" : ""}`}
                   onClick={() => handleButtonClick(label)}
                 >
                   {label}

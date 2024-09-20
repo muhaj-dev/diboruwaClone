@@ -118,9 +118,9 @@ export const AboutRestaurant = () => {
             </div>
             <div className={styles.restaurantDescription_DT}>
               <p className={styles.restaurantDescription}>
-                our hassie-free Laundry service ensures that your clothes are
+                Our hassie-free Laundry service ensures that your clothes are
                 cleaned, folded, and delivered with care, so you can spend less
-                time on chores and more time doing what you love
+                time on chores and more time doing what you love.
               </p>
               <p className={styles.restaurantDeliveryTime}>
                 30 - 40mins delivery time
