@@ -10725,3 +10725,125 @@ export const LaundrySubscriptionPlansData: LaundrySubscriptionPlansDataType[] =
       ViewSubDetailsLink: "View",
     },
   ];
+
+
+ export interface MobileRestaurantFoodType {
+  id: string;
+  img: string;
+  prizeLink: string;
+  favoriteIcon: IconType;
+  smallTitle: string;
+  starIcon: IconType;
+  rating: string;
+  timeIcon: IconType;
+  timeText: string;
+  remenderText: string;
+  prizeText: string;
+  prizeIcon: IconType;
+}
+
+export const MobileRestaurantFood: MobileRestaurantFoodType[] = [
+      {
+        id: "123",
+        img: "/images/Rectangle 248 (12).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "456",
+        img: "/images/Rectangle 248 (12).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "789",
+        img: "/images/Rectangle 248 (12).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+]
+
+
+export const RestaurantFood: MobileRestaurantFoodType[] = [
+      {
+        id: "123",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "20 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "456",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "20 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "789",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "20 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+]
+
+export const RestDiscountSale = [
+  {
+    img: "/images/component 112.png",
+    alt: "hot jollof Rice",
+  },
+  {
+    img: "/images/component 112.png",
+    alt: "hot jollof Rice",
+  },
+  {
+    img: "/images/component 112.png",
+    alt: "hot jollof Rice",
+  },
+];

@@ -11,6 +11,8 @@
   gap: 2rem;
   padding: 1rem;
   background: #fff;
+  
+  width: min(93%, 1444px);
 }
 
 .rest_custombooking_search-min {
@@ -102,7 +104,15 @@ button.rest_custombooking-btn {
 display: none;
 }
 
-@media screen and (max-width: 635px) {
+@media screen and (max-width: 1178px) {
+  .rest_custombooking_frame {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
 .rest_custombooking_frame{
   display: none;
 }

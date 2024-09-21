@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./about-restaurant.module.css";
 import { FaStar } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
@@ -6,8 +6,35 @@ import { LiaAngleRightSolid } from "react-icons/lia";
 import { SlLocationPin } from "react-icons/sl";
 import { CiCalendar, CiClock2 } from "react-icons/ci";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { SlideInSub } from "./SlideInSub/SlideInSub";
 
 const MobileAboutRestaurant = () => {
+const [isSubOpen, setIsSubOpen] = useState<boolean>(false);
+  const subRef = useRef<HTMLDivElement>(null); // To track clicks outside
+
+  // Toggle subscription visibility when button is clicked
+  const handleSubClick = () => {
+    setIsSubOpen((prev) => !prev);
+  };
+
+  // Detect clicks outside of the subscription panel
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (subRef.current && !subRef.current.contains(event.target as Node)) {
+        setIsSubOpen(false);
+      }
+    };
+
+    // Add event listener for clicks
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up the event listener on unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [subRef]);
+
+
   return (
     <div className={styles.MobilerestaurantContainer}>
       <div className={styles.MobileCPImage}>
@@ -37,10 +64,18 @@ const MobileAboutRestaurant = () => {
               <p className={styles.MobilerestaurantRatingNum}>4.5</p>
             </div>
           </div>
-          <button className={styles.MobilerestaurantSubNav}>
+          <button
+            className={styles.MobilerestaurantSubNav}
+            onClick={handleSubClick}
+          >
             <p className={styles.MobilerestaurantSubText}>Subscription</p>
             <LiaAngleRightSolid className={styles.MobilerestaurantSubIcon} />
           </button>
+          {isSubOpen && (
+            <div ref={subRef}>
+              <SlideInSub />
+            </div>
+          )}
         </div>
         <div className={styles.MobilerestaurantOpeningTimePhoneNum}>
           <p className={styles.MobilerestaurantOpeningDay}>Mon - Friday</p>
@@ -128,7 +163,7 @@ export const AboutRestaurant = () => {
             </div>
             <button className={styles.restaurantReview}>
               See Reviews
-            <IoIosArrowRoundForward className={styles.restaurantReviewIcon}/>
+              <IoIosArrowRoundForward className={styles.restaurantReviewIcon} />
             </button>
           </div>
         </div>

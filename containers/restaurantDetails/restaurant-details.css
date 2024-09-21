@@ -1,10 +1,14 @@
 .indi_restCont {
   display: flex;
   gap: 1rem;
-  width: min(93%, 1444px);
-  margin: 0 auto;
 }
 
 .ACR_Cont {
     width: min-content;
+}
+
+@media screen and (max-width: 1024px){
+  .ACR_Cont {
+    width: 60%;
+}
 }
