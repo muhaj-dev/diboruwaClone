@@ -416,3 +416,32 @@ margin-top: 0.7rem;
 
 }
 
+@media screen and (max-width: 668px) {
+ .MobilecoverImage {
+    width: 37rem;
+  }
+
+  .MobilerestProfileImage {
+    top: 11rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+ .MobilecoverImage {
+    width: 34rem;
+  }
+
+  .MobilerestProfileImage {
+    top: 10rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+ .MobilecoverImage {
+    width: 33rem;
+  }
+
+  .MobilerestProfileImage {
+    top: 9rem;
+  }
+}
