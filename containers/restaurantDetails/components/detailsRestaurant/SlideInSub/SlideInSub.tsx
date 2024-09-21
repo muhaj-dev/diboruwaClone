@@ -18,6 +18,11 @@ export interface SlideInSubDataType {
   ViewSubDetailsLink: string;
 };
 
+interface SlideInSubProps {
+  onClose: () => void
+}
+
+
 const SlideInSubData: SlideInSubDataType[] = [
   {
     subImg: "/images/Rectangle 194.png",
@@ -121,7 +126,7 @@ const SlideInSubData: SlideInSubDataType[] = [
   },
 ];
 
-export const SlideInSub = () => {
+export const SlideInSub: React.FC<SlideInSubProps> = ({onClose}) => {
   const [showAll, setShowAll] = useState(false);
   const visibleData = showAll ? SlideInSubData : SlideInSubData.slice(0, 2);
 
@@ -151,7 +156,9 @@ export const SlideInSub = () => {
               </div>
               <div className="SlideInSub_Cust_sub_TA">
                 <p className="SlideInSub_Cust_sub_type_text">{plan.subType}</p>
-                <p className="SlideInSub_Cust_sub_amount_text">{plan.subAmount}</p>
+                <p className="SlideInSub_Cust_sub_amount_text">
+                  {plan.subAmount}
+                </p>
               </div>
             </div>
             <hr className="SlideInSub_Cust_sub_line_divider" />
@@ -161,24 +168,35 @@ export const SlideInSub = () => {
                   {React.createElement(item.tickIcon, {
                     className: "SlideInSub_Cust_sub_list_item_icon",
                   })}
-                  <p className="SlideInSub_Cust_sub_list_item_text">{item.subItemText}</p>
+                  <p className="SlideInSub_Cust_sub_list_item_text">
+                    {item.subItemText}
+                  </p>
                 </div>
               ))}
             </div>
             <hr className="SlideInSub_Cust_sub_line_divider" />
             <div className="SlideInSub_Cust_sub_SA">
               <p className="SlideInSub_Cust_sub_SA_text">{plan.subFeeText}</p>
-              <p className="SlideInSub_Cust_sub_amount_text SA_amount">{plan.subAmount}</p>
+              <p className="SlideInSub_Cust_sub_amount_text SA_amount">
+                {plan.subAmount}
+              </p>
             </div>
             <hr className="SlideInSub_Cust_sub_line_divider" />
-            <button className="SlideInSub_Cust_sub_btn">{plan.ViewSubDetailsLink}</button>
+            <button className="SlideInSub_Cust_sub_btn">
+              {plan.ViewSubDetailsLink}
+            </button>
           </div>
         ))}
       </div>
-      <button className="SlideInSub_SeeMore_Sub" onClick={handleSeeMoreClick}>
-        <p className="SlideInSub_SeeMore_SubText">{showAll ? "See Less" : "See More"}</p>
-        <LiaAngleRightSolid className="SlideInSub_SeeMore_SubIcon" />
-      </button>
+      <div className="SlideInSub_SeeMore_close">
+        <button className="SlideInSub_Close_SubText" onClick={onClose}>Close</button>
+        <button className="SlideInSub_SeeMore_Sub" onClick={handleSeeMoreClick}>
+          <p className="SlideInSub_SeeMore_SubText">
+            {showAll ? "See Less" : "See More"}
+          </p>
+          <LiaAngleRightSolid className="SlideInSub_SeeMore_SubIcon" />
+        </button>
+      </div>
     </div>
   );
 };

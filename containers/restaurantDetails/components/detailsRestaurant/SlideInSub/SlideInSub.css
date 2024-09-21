@@ -1,13 +1,8 @@
-.LeftRestaurantContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-}
 
 .SlideInSub_container {
   display: flex;
   flex-direction: column;
+  position: absolute;
   gap: 1.5rem;
   width: 100%;
   background: #fefefe;
@@ -27,19 +22,20 @@
 }
 
 .SlideInSub_restaurantSub,
-.SlideInSub_SeeMore_Sub {
+.SlideInSub_SeeMore_Sub, .SlideInSub_SeeMore_close {
   display: flex;
   align-items: center;
   gap: 0.3rem;
   color: #27a124;
 }
 
-.SlideInSub_SeeMore_Sub {
+.SlideInSub_SeeMore_Sub, .SlideInSub_SeeMore_close {
   justify-content: flex-end;
+  align-items: center;
 }
 
 .SlideInSub_restaurantSubText,
-.SlideInSub_SeeMore_SubText {
+.SlideInSub_SeeMore_SubText, .SlideInSub_Close_SubText {
   color: #27a124;
   font-family: Poppins;
   font-size: 0.875rem;

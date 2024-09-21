@@ -120,6 +120,8 @@ display: none;
 
   .mobile_custombooking_container {
   padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile_custombooking_frame {

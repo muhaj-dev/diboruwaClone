@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./about-restaurant.module.css";
 import { FaStar } from "react-icons/fa";
@@ -10,29 +11,16 @@ import { SlideInSub } from "./SlideInSub/SlideInSub";
 
 const MobileAboutRestaurant = () => {
 const [isSubOpen, setIsSubOpen] = useState<boolean>(false);
-  const subRef = useRef<HTMLDivElement>(null); // To track clicks outside
+  
 
   // Toggle subscription visibility when button is clicked
   const handleSubClick = () => {
     setIsSubOpen((prev) => !prev);
   };
 
-  // Detect clicks outside of the subscription panel
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (subRef.current && !subRef.current.contains(event.target as Node)) {
-        setIsSubOpen(false);
-      }
-    };
-
-    // Add event listener for clicks
-    document.addEventListener("mousedown", handleClickOutside);
-
-    // Clean up the event listener on unmount
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [subRef]);
+    const handleCloseSub = () => {
+    setIsSubOpen(false);
+  };
 
 
   return (
@@ -71,11 +59,11 @@ const [isSubOpen, setIsSubOpen] = useState<boolean>(false);
             <p className={styles.MobilerestaurantSubText}>Subscription</p>
             <LiaAngleRightSolid className={styles.MobilerestaurantSubIcon} />
           </button>
-          {isSubOpen && (
-            <div ref={subRef}>
-              <SlideInSub />
-            </div>
-          )}
+ {isSubOpen && (
+  <div className={`${styles.slideInSub} ${isSubOpen ? styles.activeSub : styles.hiddenSub}`}>
+    <SlideInSub onClose={handleCloseSub} />
+  </div>
+)}
         </div>
         <div className={styles.MobilerestaurantOpeningTimePhoneNum}>
           <p className={styles.MobilerestaurantOpeningDay}>Mon - Friday</p>

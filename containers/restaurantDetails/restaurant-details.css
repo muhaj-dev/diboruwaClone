@@ -12,3 +12,16 @@
     width: 60%;
 }
 }
+
+@media screen and (max-width: 768px){
+  .ACR_Cont {
+    width: 70%;
+    margin: 0 auto;
+}
+}
+@media screen and (max-width: 568px){
+  .ACR_Cont {
+    width: 70%;
+    margin: 0;
+}
+}

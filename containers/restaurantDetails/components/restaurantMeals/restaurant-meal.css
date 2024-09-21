@@ -48,7 +48,7 @@
   align-items: center;
   gap: 1rem;
   width: 100%;
-  overflow-x: sc;
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
   margin: 0 auto;
 }
