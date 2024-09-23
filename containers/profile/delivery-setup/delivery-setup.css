@@ -121,7 +121,7 @@ textarea.delivery_address_textarea::placeholder {
 
 @media screen and (min-width: 1024px) {
   .delivery_setup_container {
-    border: 0.5px solid rgba(118, 117, 17, 0.21);
+    /* border: 0.5px solid rgba(118, 117, 17, 0.21); */
     background: var(--white, #fefefe);
     background: rgba(252, 252, 252, 0.38);
     padding: 9px 0 10rem;
@@ -136,7 +136,7 @@ textarea.delivery_address_textarea::placeholder {
   .delivery_address_container {
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1.5rem;
     width: 100%;
   }
@@ -144,15 +144,15 @@ textarea.delivery_address_textarea::placeholder {
     box-shadow: none;
     border: 0.5px solid rgba(118, 117, 17, 0.21);
     background: transparent;
-    border-bottom: none;
+    /* border-bottom: none; */
   }
 
   .delivery_address_content.content_1 {
-    border-left: none;
+    /* border-left: none; */
     border-radius: 0.2rem;
   }
   .delivery_address_content.content_2 {
-    border-right: none;
+    /* border-right: none; */
     border-radius: 0.2rem;
   }
 

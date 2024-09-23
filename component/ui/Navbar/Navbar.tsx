@@ -118,7 +118,7 @@ const Navbar = () => {
             >
             <FiShoppingCart />
           </Link>
-            the checkout mobile button should be the icon bside me to be displayed
+            {/* the checkout mobile button should be the icon bside me to be displayed */}
           </>
         </div>
       )} 

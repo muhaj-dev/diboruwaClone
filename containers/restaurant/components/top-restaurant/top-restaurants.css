@@ -221,8 +221,16 @@ span.time {
 }
 
 
+
 .card {
   flex: 1 1 100%; /* Default to full width for mobile and tablets */
+}
+
+@media (min-width: 452px) {
+
+.card {
+  flex: 1 1 calc(50% - 1rem); /* Default to full width for mobile and tablets */
+}
 }
 
 @media (min-width: 768px) {

@@ -194,8 +194,8 @@ const FormContainer = styled.form`
   align-items: center;
   gap: 1.5rem;
   padding: 4rem 0;
-  border-radius: 4px;
-  border: 0.5px solid rgba(118, 117, 117, 0.21);
+  // border-radius: 4px;
+  // border: 0.5px solid rgba(118, 117, 117, 0.21);
   background: var(--white, #fefefe);
 
   @media (max-width: 1024px) {
