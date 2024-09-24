@@ -5,7 +5,7 @@ import { FoodTopResturant } from "@/constants/index";
 
 export const TopRestaurants: React.FC = () => {
   return (
-    <div className="rest-ad">
+    <div className="Toprest-ad">
       <p className="title">{FoodTopResturant[0].title}</p>
       <div className="cards">
         {FoodTopResturant.slice(1, 5).map((item, index) => (

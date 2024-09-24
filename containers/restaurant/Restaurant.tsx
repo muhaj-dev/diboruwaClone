@@ -13,6 +13,7 @@ import { OtherRestaurant1 } from "./components/other-restaurant/OtherRestaurant1
 import { OtherRestaurant2 } from "./components/other-restaurant/OtherRestaurant2";
 import { OtherRestaurant3 } from "./components/other-restaurant/OtherRestaurant3";
 import { OtherRestaurant4 } from "./components/other-restaurant/OtherRestaurant4";
+import { MobileOtherRestaurant } from "./components/other-restaurant/MobileOtherRestaurnt";
 
 type ServiceName =
   | "Laundry chores."
@@ -66,6 +67,7 @@ export const Restaurant: React.FC = () => {
       </div>
       <TopRestaurants />
       <SearchFilter />
+      <MobileOtherRestaurant />
       <div className="OtherRestaurants_container">
       <OtherRestaurant1 />
       <OtherRestaurant2 />

@@ -61,7 +61,7 @@ p.other_restaurant_small-title,
 small.other_restaurant_rating_num,
 small.other_restaurant_reviews,
 span.other_restaurant_location-text,
-span.other_restaurant_time {
+span.other_restaurant_time, span.other_restaurant_OpeningTime {
   font-family: "Poppins";
   font-size: 14px;
   font-style: normal;
@@ -92,7 +92,7 @@ svg.other_restaurant_rating_star_icon {
   gap: 0.7rem;
 }
 
-.location {
+.other_restaurant_location {
   display: flex;
   gap: 0.1rem;
   align-items: center;
@@ -117,6 +117,8 @@ span.other_restaurant_time {
   color: var(--Soft-black, #565656);
   font-size: 12px;
 }
+
+
 
 .other_restaurant_visit-link {
   display: flex;
@@ -183,6 +185,19 @@ span.other_restaurant_time {
     border-radius: 20px;
     text-decoration: none;
   }
+
+  span.other_restaurant_OpeningTime{
+  font-size: 13.241px;
+}
+
+span.other_restaurant_OpeningTime.open {
+  color: #27a124;
+}
+
+span.other_restaurant_OpeningTime.closed {
+  color: #ef5a5a;
+}
+
 }
 
 @media (max-width: 450px) {

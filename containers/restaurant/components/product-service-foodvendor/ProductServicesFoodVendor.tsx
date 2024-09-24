@@ -14,35 +14,45 @@ const MobileView: React.FC = () => {
   >(ProductServiceVendorData[0]);
 
   return (
-    <div className="mobile-display">
+    <div className="Restaurantmobile-display">
       <div
-        className="mob"
+        className="Restaurantmob"
         style={{
           backgroundImage: `url(${selectedVendor?.bigImg})`,
           backgroundSize: "140% 100%",
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="mob_overlay">
-          <div className="mob-cont">
-            <div className="text-container">
-              <div className="description">
+        <div className="Restaurantmob_overlay">
+          <div className="Restaurantmob-cont">
+            <div className="Restauranttext-container">
+              <div className="Restaurantdescription">
                 Order from your favorite restaurant and get your meal delivered
                 to you in minutes.
               </div>
             </div>
           </div>
         </div>
-      <div className="Mobilesearch_filter_box">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Search here"
-          className="Mobilesearch_filter_input"
-        />
-        <RiSearch2Line className="Mobilesearch_filter_icon" />
+        <div className="RestaurantMobilesearch_filter_box">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search here"
+            className="RestaurantMobilesearch_filter_input"
+          />
+          <RiSearch2Line className="RestaurantMobilesearch_filter_icon" />
+        </div>
       </div>
+      <div className="Mobile_TopRestaurant_container">
+        <div className="MobileTopRestaurant_Frame_Container">
+          <p className="MobileTopRestaurant_Text">Top Restaurants Near you.</p>
+          <div className="Mobile_TopRestaurant_Images">
+            <img src="/images/Rectangle 291.png" alt="Top Restaurant Images"  className="Mobile_TopRestaurant_Image"/>
+            <img src="/images/Rectangle 293 (2).png" alt="Top Restaurant Images"  className="Mobile_TopRestaurant_Image"/>
+            <img src="/images/Rectangle 294.png" alt="Top Restaurant Images"  className="Mobile_TopRestaurant_Image"/>
+          </div>
+        </div>
       </div>
     </div>
   );

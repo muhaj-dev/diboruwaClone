@@ -128,3 +128,10 @@ svg.overlay_rating_star {
   align-items: center;
   color: #ffc93f;
 }
+
+
+@media screen and (max-width: 650px) {
+  .search_filter_frame{
+    display: none;
+  }
+}

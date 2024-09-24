@@ -8985,6 +8985,7 @@ export interface OtherFoodResturantType {
   locationIcon?: IconType;
   locationText?: string;
   timeNum?: string;
+  openTime?: string;
   vistLink?: string;
   arrowIcon?: IconType;
 }
@@ -9122,6 +9123,75 @@ export const OtherFoodResturant: OtherFoodResturantType[] = [
     locationIcon: GrLocation,
     locationText: "Ikeja, Lagos",
     timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+];
+export const MobileOtherFoodResturant: OtherFoodResturantType[] = [
+  {
+    _id: 387653,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (16).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: 'Closed',
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 231196,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (13).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "Open",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 225332,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (14).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "closed",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 497664,
+    tag: "Food Vendors",
+    image: "/images/Rectangle 248 (15).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "Open",
     vistLink: "/",
     arrowIcon: FaArrowRightLong,
   },
