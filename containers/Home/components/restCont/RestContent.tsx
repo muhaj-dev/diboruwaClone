@@ -40,7 +40,7 @@ export default function Resturant() {
             restaurants. Each item lists preparation time, so you'll know when
             to expect your meal. Discover new favorites today!
           </p>
-          <a href="/" className="Check-Out_Vendors">
+          <a href="/restaurant" className="Check-Out_Vendors">
             Check Out Vendors
           </a>
         </div>

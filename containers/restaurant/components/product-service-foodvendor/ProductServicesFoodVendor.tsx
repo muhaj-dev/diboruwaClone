@@ -6,6 +6,7 @@ import {
   ProductServiceVendorData,
   ProductServiceVendorType,
 } from "@/constants/index";
+import { RiSearch2Line } from "react-icons/ri";
 
 const MobileView: React.FC = () => {
   const [selectedVendor, setSelectedVendor] = useState<
@@ -24,79 +25,24 @@ const MobileView: React.FC = () => {
       >
         <div className="mob_overlay">
           <div className="mob-cont">
-            <div className="tags-container">
-              {ProductServiceVendorData.map((item) => (
-                <div
-                  key={item._id}
-                  className={`tag-text ${
-                    item === selectedVendor ? "tag-text-active" : ""
-                  }`}
-                  onClick={() => setSelectedVendor(item)}
-                >
-                  {item.tag}
-                </div>
-              ))}
-            </div>
             <div className="text-container">
-              <div className="highlight">
-                {selectedVendor?.foodText ||
-                  "Your Ultimate Solution for Modern Lifestyle Needs"}
-              </div>
               <div className="description">
-                One platform, endless convenience. Simplify your life with our
-                intuitive solution for all your needs.
+                Order from your favorite restaurant and get your meal delivered
+                to you in minutes.
               </div>
-              <button className="get-started-btn">Get Started</button>
             </div>
           </div>
         </div>
+      <div className="Mobilesearch_filter_box">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Search here"
+          className="Mobilesearch_filter_input"
+        />
+        <RiSearch2Line className="Mobilesearch_filter_icon" />
       </div>
-      <div className="mob_loc">
-        <div className="mob-loc-map">
-          <div
-            style={{
-              width: "90%",
-              height: "100px",
-              paddingTop: "10px",
-              paddingBottom: "10px",
-              borderRadius: 50,
-              margin: "8px auto",
-              overflow: "hidden",
-              background:
-                "linear-gradient(0deg, #E6E6E6 0%, #E6E6E6 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%)",
-            }}
-          >
-            <div
-              style={{
-                justifyContent: "space-between",
-                alignItems: "center",
-                paddingLeft: 17,
-                paddingRight: 17,
-                display: "flex",
-              }}
-            >
-              <img
-                style={{ width: "100%", height: 30 }}
-                src={selectedVendor?.bike}
-                alt="Bike"
-              />
-            </div>
-
-            <div
-              style={{
-                justifyContent: "space-between",
-                alignItems: "center",
-                display: "flex",
-              }}
-            >
-              <img
-                style={{ width: "100%", height: "30%" }}
-                src={selectedVendor?.map}
-                alt="Map"
-              />
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -140,7 +86,7 @@ export const ProductServicesFoodVendor: React.FC = () => {
               </div>
             </div>
             {selectedVendor && (
-              <div className="image">
+              <div className="restaurant_Image">
                 <img src={selectedVendor.bigImg} alt={selectedVendor.tag} />
                 <div className="overlay">
                   <div className="footer-text">{selectedVendor.foodText}</div>

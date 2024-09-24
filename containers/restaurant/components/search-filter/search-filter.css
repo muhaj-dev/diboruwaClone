@@ -55,7 +55,7 @@ svg.search_filter_btn_icon {
   position: relative;
 }
 
-input#search {
+.search_filter_input {
   width: 484px;
   height: 42px;
   border-radius: 4px;

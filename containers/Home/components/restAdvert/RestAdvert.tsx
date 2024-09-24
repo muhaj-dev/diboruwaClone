@@ -49,13 +49,13 @@ const RestAdvert: React.FC<RestAdvertProps> = ({ selectedTag }) => {
                 </div>
               ))}
             </div>
-            <Link href="/restaurant" className="restaurants_link">
-              <p className="restaurants_link_text">See more</p>
-              <FaAngleRight className="restaurants_link_icon"/>
-            </Link>
           </div>
         );
       })}
+      <Link href="/restaurant" className="restaurants_link">
+        <p className="restaurants_link_text">See more</p>
+        <FaAngleRight className="restaurants_link_icon" />
+      </Link>
     </div>
   );
 };
