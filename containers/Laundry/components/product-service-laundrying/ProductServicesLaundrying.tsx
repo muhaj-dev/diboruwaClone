@@ -126,16 +126,16 @@ export const ProductServicesLaundrying: React.FC = () => {
         </div>
 
         {selectedVendor && (
-          <div className="hero_map">
+          <div className="LaundryHero_map">
             <img
-              className="map"
+              className="LaundryMap"
               src={selectedVendor.map}
               alt={selectedVendor.tag}
             />
-            <div className="pro-logo">
-              <div className="pro-name">
+            <div className="LaundryHero_Name">
+              <div className="LaundryPro-name">
                 <img
-                  className="pro-img"
+                  className="LaundryPro-img"
                   src={selectedVendor.foodImg}
                   alt={selectedVendor.tag}
                 />
