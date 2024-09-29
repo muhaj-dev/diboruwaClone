@@ -145,11 +145,11 @@ export const ProductServicesLaundrying: React.FC = () => {
                     </p>
                     <div className="LaundryRating">
                     <div className="RatingStars">
-                      <p>s<p/>
-                      <p>s<p/>
-                      <p>s<p/>
-                      <p>s<p/>
-                      <p>sl<p/>
+                      <p>s</p>
+                      <p>s</p>
+                      <p>s</p>
+                      <p>s</p>
+                      <p>sl</p>
                     </div>
                     <p className="RatingNum">4.5</p>
                     </div>
