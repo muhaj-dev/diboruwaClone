@@ -163,19 +163,18 @@
 }
 .LaundryHero_map{
   border-radius: 8px;
-  background: #f6f6f6;
+  background: #f3f3f3;
   padding: 1.3rem;
   display:flex;
-  gap: 0.2rem;
-  width: 100%;
+  gap: 0.7rem;
+  flex-direction: column;
 }
 
 .LaundryMap {
-  width: 94%;
+  width: 100%;
   height: 170px;
   display: flex;
   align-items: center;
-  margin: auto;
 }
 .LaundryHero_Name{
   display:flex;
@@ -184,11 +183,91 @@
   flex-direction: column;
 }
 
-.LaundryPro-name {
-  margin: 0 0 14px;
+.LaundryPro-name{
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  background: #fefefe;
+  padding: 1rem 1rem 1.5rem 1rem;
+  border-radius: 8px;
 }
 
+.NameAndStarRating{
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: 100%;
+}
 
+.LaundryRating{
+    display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+.RatingStars{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.RatingStar{
+  width: 15px;
+  height: 15px;
+  color: #ffe206;
+}
+.RatingStarReg{
+  width: 15px;
+  height: 15px;
+}
+
+p.LaundryName, p.RatingNum, p.LaundryTimeD, p.LaundryLocationText{
+  color: #565656;
+  font-size: 12.889px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+}
+
+.LaundryLocationAndTime{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #fefefe;
+  width: 100%;
+}
+
+.LaundryLocation{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.LaundryLocationIcon{
+width: 15px;
+height: 15px;
+color: #565656;
+}
+
+.LaundryVisitLink{
+  background: #fefefe;
+  padding: 0.2rem;
+}
+
+.visit-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  color: #565656;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  border: transparent;
+  text-decoration: none;
+}
+
+.visit-link:hover {
+  border: 1px solid #27a124;
+}
 .star {
   display: flex;
   gap: 2px;
@@ -255,7 +334,7 @@
     display: none;
   }
 
-  .hero_map {
+  .LaundryHero_map {
     display: none;
   }
 

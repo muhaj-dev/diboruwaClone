@@ -5,13 +5,16 @@ import React, { useState } from "react";
 import {
   ProductServiceLaundryData,
   ProductServiceLaundryType,
-} from "@/constants/index";
+} from "@/constants";
 import { RiSearch2Line } from "react-icons/ri";
+import { FaRegStar, FaStar  } from "react-icons/fa";
+import { CiLocationOn } from "react-icons/ci";
+import Link from "next/link";
 
 const MobileView: React.FC = () => {
-  const [selectedVendor, setSelectedVendor] = useState<
-    ProductServiceLaundryType | undefined
-  >(ProductServiceLaundryData[0]);
+ const [selectedVendor, setSelectedVendor] = useState<
+   ProductServiceLaundryType | undefined
+ >(ProductServiceLaundryData[0]);
 
   return (
     <div className="Restaurantmobile-display">
@@ -21,6 +24,7 @@ const MobileView: React.FC = () => {
           backgroundImage: `url(${selectedVendor?.bigImg})`,
           backgroundSize: "140% 100%",
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
         }}
       >
         <div className="Restaurantmob_overlay">
@@ -46,7 +50,7 @@ const MobileView: React.FC = () => {
       </div>
       <div className="Mobile_TopRestaurant_container">
         <div className="MobileTopRestaurant_Frame_Container">
-          <p className="MobileTopRestaurant_Text">Top Restaurants Near you.</p>
+          <p className="MobileTopRestaurant_Text">Top Laundry Near you.</p>
           <div className="Mobile_TopRestaurant_Images">
             <img
               src="/images/Rectangle 291.png"
@@ -140,27 +144,35 @@ export const ProductServicesLaundrying: React.FC = () => {
                   alt={selectedVendor.tag}
                 />
                 <div className="NameAndStarRating">
-                  <p className="LaundryName">
-                    Christopher Laundry Room
-                    </p>
-                    <div className="LaundryRating">
+                  <p className="LaundryName">Christopher Laundry Room</p>
+                  <div className="LaundryRating">
                     <div className="RatingStars">
-                      <p>s</p>
-                      <p>s</p>
-                      <p>s</p>
-                      <p>s</p>
-                      <p>sl</p>
+                      <FaStar className="RatingStar" />
+                      <FaStar className="RatingStar" />
+                      <FaStar className="RatingStar" />
+                      <FaStar className="RatingStar" />
+                      <FaRegStar className="RatingStarReg" />
                     </div>
                     <p className="RatingNum">4.5</p>
-                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="b-l">
-                <img
-                  className="bike"
-                  src={selectedVendor.bike}
-                  alt={selectedVendor.tag}
-                />
+              <div className="LaundryLocationAndTime">
+                <p className="LaundryTimeD">17 - Mon</p>
+                <p className="LaundryTimeD">2pm - Wed</p>
+                <div className="LaundryLocation">
+                  <CiLocationOn className="LaundryLocationIcon" />
+                  <p className="LaundryLocationText">Lagos</p>
+                </div>
+              </div>
+              <div className="LaundryVisitLink">
+                <Link
+                  href={`/restaurant/${selectedVendor._id}`}
+                  className="visit-link"
+                >
+                  <p className="visit-link_text">visit</p>
+                  <FaArrowRightLong className="visit_link_icon" />
+                </Link>
               </div>
             </div>
           </div>
