@@ -3,15 +3,15 @@ import "./product-service-laundrying.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import React, { useState } from "react";
 import {
-  ProductServiceVendorData,
-  ProductServiceVendorType,
+  ProductServiceLaundryData,
+  ProductServiceLaundryType,
 } from "@/constants/index";
 import { RiSearch2Line } from "react-icons/ri";
 
 const MobileView: React.FC = () => {
   const [selectedVendor, setSelectedVendor] = useState<
-    ProductServiceVendorType | undefined
-  >(ProductServiceVendorData[0]);
+    ProductServiceLaundryType | undefined
+  >(ProductServiceLaundryData[0]);
 
   return (
     <div className="Restaurantmobile-display">
@@ -48,9 +48,21 @@ const MobileView: React.FC = () => {
         <div className="MobileTopRestaurant_Frame_Container">
           <p className="MobileTopRestaurant_Text">Top Restaurants Near you.</p>
           <div className="Mobile_TopRestaurant_Images">
-            <img src="/images/Rectangle 291.png" alt="Top Restaurant Images"  className="Mobile_TopRestaurant_Image"/>
-            <img src="/images/Rectangle 293 (2).png" alt="Top Restaurant Images"  className="Mobile_TopRestaurant_Image"/>
-            <img src="/images/Rectangle 294.png" alt="Top Restaurant Images"  className="Mobile_TopRestaurant_Image"/>
+            <img
+              src="/images/Rectangle 291.png"
+              alt="Top Restaurant Images"
+              className="Mobile_TopRestaurant_Image"
+            />
+            <img
+              src="/images/Rectangle 293 (2).png"
+              alt="Top Restaurant Images"
+              className="Mobile_TopRestaurant_Image"
+            />
+            <img
+              src="/images/Rectangle 294.png"
+              alt="Top Restaurant Images"
+              className="Mobile_TopRestaurant_Image"
+            />
           </div>
         </div>
       </div>
@@ -60,8 +72,8 @@ const MobileView: React.FC = () => {
 
 export const ProductServicesLaundrying: React.FC = () => {
   const [selectedVendor, setSelectedVendor] = useState<
-    ProductServiceVendorType | undefined
-  >(ProductServiceVendorData[0]);
+    ProductServiceLaundryType | undefined
+  >(ProductServiceLaundryData[0]);
 
   return (
     <>
@@ -70,31 +82,34 @@ export const ProductServicesLaundrying: React.FC = () => {
           <div className="prod">
             <div className="prod-cont">
               <div className="tags-container">
-                {ProductServiceVendorData.map((item) => (
-                  <button
-                    key={item._id}
-                    className={`tag-text ${
-                      item === selectedVendor ? "tag-text-active" : ""
-                    }`}
-                    onClick={() => setSelectedVendor(item)}
-                  >
-                    {item.tag}
-                  </button>
-                ))}
+                {ProductServiceLaundryData.map(
+                  (item: ProductServiceLaundryType) => (
+                    <button
+                      type="button"
+                      key={item._id}
+                      className={`tag-text ${
+                        item === selectedVendor ? "tag-text-active" : ""
+                      }`}
+                      onClick={() => setSelectedVendor(item)}
+                    >
+                      {item.tag}
+                    </button>
+                  )
+                )}
               </div>
               <div className="text-container">
                 <p className="restaurant_highlight">
-                  Experience the Ultimate in 
+                  Experience the Ultimate in
                 </p>
                 <p className="restaurant_highlight2">
                   cleanliness and convenience
                 </p>
-                 <div className="laundry_description">
-                  Let us handle the dirty work while you enjoy life's
-                  fine moment
+                <div className="laundry_description">
+                  Let us handle the dirty work while you enjoy life's fine
+                  moment
                 </div>
-                <button className="get-started-btn">
-                  Get Started
+                <button type="button" className="get-started-btn">
+                  Book Now
                   <FaArrowRightLong className="get-started-btn-icon" />
                 </button>
               </div>
@@ -124,6 +139,21 @@ export const ProductServicesLaundrying: React.FC = () => {
                   src={selectedVendor.foodImg}
                   alt={selectedVendor.tag}
                 />
+                <div className="NameAndStarRating">
+                  <p className="LaundryName">
+                    Christopher Laundry Room
+                    </p>
+                    <div className="LaundryRating">
+                    <div className="RatingStars">
+                      <p>s<p/>
+                      <p>s<p/>
+                      <p>s<p/>
+                      <p>s<p/>
+                      <p>sl<p/>
+                    </div>
+                    <p className="RatingNum">4.5</p>
+                    </div>
+                </div>
               </div>
               <div className="b-l">
                 <img
@@ -139,4 +169,4 @@ export const ProductServicesLaundrying: React.FC = () => {
       </div>
     </>
   );
-}
+};

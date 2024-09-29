@@ -9213,11 +9213,12 @@ export const ProductServiceLaundryData: ProductServiceLaundryType[] = [
   {
     _id: 1,
     tag: "Laundry",
-    bigImg: "/images/food.png",
+    bigImg: "/images/Subtract (2).png",
     bike: "/images/Frame 2610175.png",
-    foodImg: "/images/Frame 2610173 (1).png",
-    foodText: " We are here to serve you better",
-    map: "/images/map.png",
+    foodImg: "/images/image 157.png",
+    foodText:
+      "Get your clothes washed and delivered to your door step within an hour.",
+    map: "/images/Frame 2610169.png",
   },
 ];
 
@@ -9325,7 +9326,7 @@ export const TopLaundry: TopLaundryType[] = [
   },
 ];
 
-export const OtherLaundry: OtherLaundryType[] = [
+export const OtherLaundryRoom: OtherLaundryType[] = [
   {
     _id: 387653,
     tag: "Laundry",

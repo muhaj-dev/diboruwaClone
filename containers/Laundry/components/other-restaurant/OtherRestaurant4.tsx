@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./other-restaurant.css";
 import Link from "next/link";
-import { OtherFoodResturant } from "@/constants/index";
+import { OtherLaundryRoom, OtherLaundryType } from "@/constants/index";
 
 export const OtherRestaurant4: React.FC = () => {
 
   return (
     <div className="other_restaurant_container">
       <div className="other_restaurant_cards">
-        {OtherFoodResturant.map((item) => (
+        {OtherLaundryRoom.map((item: OtherLaundryType) => (
           <div key={item._id} className="other_restaurant_card">
             <img
               className="other_restaurant_img"
