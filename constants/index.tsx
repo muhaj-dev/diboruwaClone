@@ -9196,7 +9196,7 @@ export const MobileOtherFoodResturant: OtherFoodResturantType[] = [
 ];
 
 // ====== Laundry data ====== //
-export interface ProductServiceVendorType {
+export interface ProductServiceLaundryType {
   _id?: number;
   tag?: string;
   link?: string;
@@ -9209,10 +9209,10 @@ export interface ProductServiceVendorType {
   title?: string;
 }
 
-export const ProductServiceVendorData: ProductServiceVendorType[] = [
+export const ProductServiceLaundryData: ProductServiceLaundryType[] = [
   {
     _id: 1,
-    tag: "Food Vendors",
+    tag: "Laundry",
     bigImg: "/images/food.png",
     bike: "/images/Frame 2610175.png",
     foodImg: "/images/Frame 2610173 (1).png",
@@ -9221,7 +9221,7 @@ export const ProductServiceVendorData: ProductServiceVendorType[] = [
   },
 ];
 
-export interface FoodTopResturantType {
+export interface TopLaundryType {
   _id?: number;
   tag?: string;
   title?: string;
@@ -9238,7 +9238,7 @@ export interface FoodTopResturantType {
   arrowIcon?: IconType;
 }
 
-export interface OtherFoodResturantType {
+export interface OtherLaundryType {
   _id?: number;
   tag?: string;
   title?: string;
@@ -9256,16 +9256,13 @@ export interface OtherFoodResturantType {
   arrowIcon?: IconType;
 }
 
-import { GrLocation } from "react-icons/gr";
-import { FaArrowRightLong } from "react-icons/fa6";
-
-export const FoodTopResturant: FoodTopResturantType[] = [
+export const TopLaundry: TopLaundryType[] = [
   {
-    title: "Top Restaurant Near You",
+    title: "Top Laundry Near You",
   },
   {
     _id: 381753,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (16).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9281,7 +9278,7 @@ export const FoodTopResturant: FoodTopResturantType[] = [
 
   {
     _id: 231134,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (13).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9297,7 +9294,7 @@ export const FoodTopResturant: FoodTopResturantType[] = [
 
   {
     _id: 945332,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (14).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9313,7 +9310,7 @@ export const FoodTopResturant: FoodTopResturantType[] = [
 
   {
     _id: 127664,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (15).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9328,10 +9325,10 @@ export const FoodTopResturant: FoodTopResturantType[] = [
   },
 ];
 
-export const OtherFoodResturant: OtherFoodResturantType[] = [
+export const OtherLaundry: OtherLaundryType[] = [
   {
     _id: 387653,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (9).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9347,7 +9344,7 @@ export const OtherFoodResturant: OtherFoodResturantType[] = [
 
   {
     _id: 231196,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (9).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9363,7 +9360,7 @@ export const OtherFoodResturant: OtherFoodResturantType[] = [
 
   {
     _id: 225332,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (9).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9379,7 +9376,7 @@ export const OtherFoodResturant: OtherFoodResturantType[] = [
 
   {
     _id: 497664,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (9).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9393,10 +9390,10 @@ export const OtherFoodResturant: OtherFoodResturantType[] = [
     arrowIcon: FaArrowRightLong,
   },
 ];
-export const MobileOtherFoodResturant: OtherFoodResturantType[] = [
+export const MobileOtherLaundry: OtherLaundryType[] = [
   {
     _id: 387653,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (16).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9413,7 +9410,7 @@ export const MobileOtherFoodResturant: OtherFoodResturantType[] = [
 
   {
     _id: 231196,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (13).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9430,7 +9427,7 @@ export const MobileOtherFoodResturant: OtherFoodResturantType[] = [
 
   {
     _id: 225332,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (14).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
@@ -9447,7 +9444,7 @@ export const MobileOtherFoodResturant: OtherFoodResturantType[] = [
 
   {
     _id: 497664,
-    tag: "Food Vendors",
+    tag: "Laundry",
     image: "/images/Rectangle 248 (15).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,
