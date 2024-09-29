@@ -1,7 +1,6 @@
 import { assets } from "@/public/assets";
 import josh from "@/public/Joshua.jpeg";
-import j from "@/public/Yakubu.jpg";
-
+import  j from "@/publicYakubu.jpg"
 // Base URL
 const baseURL: string = "https://diboruwa.com";
 
@@ -187,7 +186,7 @@ export const sublinks = [
     links: [
       { name: "About Us", path: "/aboutus" },
       { name: "Subscriptions", path: "/subscriptions" },
-      { name: "Partner With Us", path: "/partner-with-us" },
+      { name: "Partner With Us", path: "/partner" },
     ],
   },
   {
