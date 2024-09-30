@@ -32,7 +32,7 @@ export default function Delivery() {
             to make it happen seamlessly. Count on us for reliable
             transportation solutions tailored to your needs.
           </p>
-          <a href="/" className="Check-Out_Vendors">
+          <a href="/moving" className="Check-Out_Vendors">
             Book Service
           </a>
         </div>

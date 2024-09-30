@@ -54,7 +54,7 @@ export default function FoodImage() {
             ))}
           </div>
 
-          <div
+          <Link href="/moving"
             style={{
               display: "flex",
               gap: 6,
@@ -72,7 +72,7 @@ export default function FoodImage() {
                 marginTop: 2,
               }}
             />
-          </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./other-restaurant.css";
 import Link from "next/link";
-import { OtherFoodResturant } from "@/constants/index";
+import { OtherFoodResturant } from "@/constants";
 
 export const OtherRestaurant1: React.FC = () => {
   return (
@@ -39,12 +39,12 @@ export const OtherRestaurant1: React.FC = () => {
                       React.createElement(item.locationIcon, {
                         className: "other_restaurant_top_rated_loction_icon",
                       })}
-                    <span className="other_restaurant_location-text">
+                    <div className="other_restaurant_location-text">
                       {item.locationText}
-                    </span>
+                    </div>
                   </div>
-                  <span className="other_restaurant_time_dot"></span>
-                  <span className="other_restaurant_time">{item.timeNum}</span>
+                  <div className="other_restaurant_time_dot"></div>
+                  <div className="other_restaurant_time">{item.timeNum}</div>
                 </div>
               </div>
 

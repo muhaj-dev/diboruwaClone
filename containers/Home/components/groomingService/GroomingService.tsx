@@ -1,4 +1,5 @@
 import "./groomingService.css";
+import Link from "next/link";
 
 export default function GroomingService() {
   return (
@@ -32,9 +33,9 @@ export default function GroomingService() {
             barbershop and indulge in the luxury of professional grooming right
             in the comfort of your own home.
           </p>
-          <a href="/" className="Check-Out_Vendors">
+          <Link href="/groceries" className="Check-Out_Vendors">
             Order Now
-          </a>
+          </Link>
         </div>
       </div>
     </section>

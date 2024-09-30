@@ -5,45 +5,45 @@ import { TopLaundry, TopLaundryType } from "@/constants/index";
 
 export const TopLaundries: React.FC = () => {
   return (
-    <div className="Toprest-ad">
-      <p className="title">{TopLaundry[0].title}</p>
-      <div className="cards">
+    <div className="Laundry_Toprest-ad">
+      <p className="Laundry_title">{TopLaundry[0].title}</p>
+      <div className="Laundry_cards">
         {TopLaundry.slice(1, 5).map((item: TopLaundryType, index) => (
-          <div key={item._id} className="card">
-            <img className="top-restaurants" src={item.image} alt={item.tag} />
-            <div className="card-details">
-              <div className="text-details">
-                <div className="title_rating_container">
-                  <p className="small-title">{item.smallTitle}</p>
-                  <div className="rating-container">
+          <div key={item._id} className="Laundry_card">
+            <img className="Laundry_top" src={item.image} alt={item.tag} />
+            <div className="Laundry_card-details">
+              <div className="Laundry_text-details">
+                <div className="Laundry_title_rating_container">
+                  <p className="Laundry_small-title">{item.smallTitle}</p>
+                  <div className="Laundry_rating-container">
                     {item.starIcon &&
                       React.createElement(item.starIcon, {
-                        className: "rating_star_icon",
+                        className: "Laundry_rating_star_icon",
                       })}
-                    <small className="rating_num">{item.rating}</small>
-                    <small className="reviews">
+                    <small className="Laundry_rating_num">{item.rating}</small>
+                    <small className="Laundry_reviews">
                       {item.reviewsText} {item.reviewsNum}
                     </small>
                   </div>
                 </div>
-                <div className="location_time_container">
-                  <div className="location">
+                <div className="Laundry_location_time_container">
+                  <div className="Laundry_location">
                     {item.locationIcon &&
                       React.createElement(item.locationIcon, {
-                        className: "top_rated_loction_icon",
+                        className: "Laundry_top_rated_loction_icon",
                       })}
-                    <span className="location-text">{item.locationText}</span>
+                    <div className="Laundry_location-text">{item.locationText}</div>
                   </div>
-                  <span className="time_dot"></span>
-                  <span className="time">{item.timeNum}</span>
+                  <div className="Laundry_time_dot"></div>
+                  <div className="Laundry_time">{item.timeNum}</div>
                 </div>
               </div>
 
-              <Link href={`/restaurant/${item._id}`} className="visit-link">
-                <p className="visit-link_text">visit</p>
+              <Link href={`/restaurant/${item._id}`} className="Laundry_visit-link">
+                <p className="Laundry_visit-link_text">visit</p>
                 {item.arrowIcon &&
                   React.createElement(item.arrowIcon, {
-                    className: "visit_link_icon",
+                    className: "Laundry_visit_link_icon",
                   })}
               </Link>
             </div>
