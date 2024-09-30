@@ -36,7 +36,7 @@ const MostSold: React.FC<MostSoldProps> = ({ id }) => {
             const TimeIcon = item.timeIcon;
             const PrizeIcon = item.prizeIcon;
             return (
-              <Link href={`./food/${item.id}`} key={item.id} className="mostsold-card">
+              <Link href={`/groceries/${item.id}`} key={item.id} className="mostsold-card">
                 <div className="mostsold-card_food-img">
                   <img
                     src={item.img}

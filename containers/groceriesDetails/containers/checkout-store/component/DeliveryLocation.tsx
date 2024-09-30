@@ -43,7 +43,7 @@ const LocationEditIcon = styled(CiEdit)`
   color: #27a124;
 `;
 
-const LocationEditIconText = styled.div`
+const LocationEditIconText = styled.span`
   color: var(--Green1, #27a124);
   font-family: Poppins;
   font-size: 15.825px;

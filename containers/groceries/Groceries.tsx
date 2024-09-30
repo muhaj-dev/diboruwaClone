@@ -16,7 +16,7 @@ import {
   CTAButtonWrapper,
   CTAIcon,
 } from "./Food.styles";
-import "./component/food.css";
+import "./component/groceries.css";
 import Button from "@/component/ui/button/Button";
 import MoreServices from "@/component/shared/MoreServices";
 import { assets } from "@/public/assets";
@@ -48,7 +48,7 @@ interface FoodProps {
   };
 }
 
-const Food: React.FC<FoodProps> = ({ params }) => {
+const Groceries: React.FC<FoodProps> = ({ params }) => {
   const { id } = params;
   const { modal, closeModal } = useCartStore();
 
@@ -166,6 +166,6 @@ const Food: React.FC<FoodProps> = ({ params }) => {
   );
 };
 
-export default Food;
+export default Groceries;
 
 

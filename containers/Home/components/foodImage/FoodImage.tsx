@@ -1,7 +1,7 @@
 import React from "react";
 import "./foodImage.css";
 import { RiArrowRightSLine } from "react-icons/ri";
-
+import Link from 'next/link'
 const food = [
   {
     link: "/",

@@ -20,8 +20,9 @@ p.freedelivery_title {
 .freedelivery-cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
   margin: 0 auto;
   gap: 30px;
@@ -32,6 +33,7 @@ p.freedelivery_title {
   scroll-snap-align: center;
   box-sizing: border-box;
   background-color: #fff;
+  flex: 1 1 15rem;
   overflow-x: hidden;
   border-radius: 16px;
 }
@@ -92,7 +94,7 @@ small.freedelivery-card_title {
   line-height: normal;
 }
 
-span.freedelivery-card_timer-text {
+.freedelivery-card_timer-text {
   color: #565656;
   font-family: Poppins;
   font-size: 12px;
@@ -101,7 +103,7 @@ span.freedelivery-card_timer-text {
   line-height: normal;
 }
 
-span.freedelivery-card_dot {
+.freedelivery-card_dot {
   background: #4bb149;
   width: 7px;
   height: 7px;

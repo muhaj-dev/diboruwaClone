@@ -1,5 +1,5 @@
 import "./delivery.css";
-
+import Link from "next/link"
 export default function Delivery() {
   return (
     <section className="delivery_container">
@@ -32,9 +32,9 @@ export default function Delivery() {
             to make it happen seamlessly. Count on us for reliable
             transportation solutions tailored to your needs.
           </p>
-          <a href="/moving" className="Check-Out_Vendors">
+          <Link href="/moving" className="Check-Out_Vendors">
             Book Service
-          </a>
+          </Link>
         </div>
       </div>
     </section>

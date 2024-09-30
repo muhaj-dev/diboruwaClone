@@ -1,6 +1,7 @@
 import React from "react";
 import "./freedelivery.css";
 import { FreeDeliveryData } from "@/constants/index";
+import Link from "next/link";
 
 const FreeDelivery: React.FC = () => {
   return (
@@ -15,7 +16,11 @@ const FreeDelivery: React.FC = () => {
             const TimeIcon = item.timeIcon;
             const PrizeIcon = item.prizeIcon;
             return (
-              <div key={index} className="freedelivery-card">
+              <Link
+                href={`/groceries/${item.id}`}
+                key={item.id}
+                className="freedelivery-card"
+              >
                 <div className="freedelivery-card_food-img">
                   <img
                     src={item.img}
@@ -60,7 +65,7 @@ const FreeDelivery: React.FC = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

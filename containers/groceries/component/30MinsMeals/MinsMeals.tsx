@@ -16,7 +16,7 @@ const MinsMeals: React.FC = () => {
             const TimeIcon = item.timeIcon;
             const PrizeIcon = item.prizeIcon;
             return (
-              <Link key={item.id} href={`/food/${item.id}`} className="minsmeal-card">
+              <Link key={item.id} href={`/groceries/${item.id}`} className="minsmeal-card">
                 <div className="minsmeal-card_food-img">
                   <img
                     src={item.img}
