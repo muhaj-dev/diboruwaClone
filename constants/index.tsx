@@ -45,6 +45,15 @@ export const routes: Route[] = [
       { name: "Moving", path: "/moving", icon: assets.scooter },
     ],
   },
+
+  {
+    name: "About Us",
+    path: "/about-us",
+  },
+  {
+    name: "Contact Us",
+    path: "/contact-us",
+  },
 ];
 
 export const HWW = [
@@ -9124,6 +9133,9 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { FaBagShopping } from "react-icons/fa6";
 import { IconType } from "react-icons/lib";
 import { LuPhone } from "react-icons/lu";
+import { CiHeart } from "react-icons/ci";
+import { FaAngleRight } from "react-icons/fa";
+import { IoCheckmarkSharp } from "react-icons/io5";
 
 export const FoodVendor = [
   {
@@ -10071,5 +10083,767 @@ export const OrderedServicesData7: OrderedServicesDataType[] = [
     ownerName: "James Peter",
     ownerPhoneIcon: LuPhone,
     ownersPhoneNum: "0903 414 5971",
+  },
+];
+export interface FavouriteFoodDataType {
+  image: string;
+  favIcon: IconType;
+  favFoodName: string;
+  favStar: IconType;
+  favRateNum: string;
+  favTimeIcon: IconType;
+  favTime: string;
+  favMoney: string;
+  literAmount: string;
+  favCartIcon: IconType;
+}
+
+export const FavouriteFoodData: FavouriteFoodDataType[] = [
+  {
+    image: "/images/Rectangle 248 (11).png",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Rectangle 249 (2).png",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Yamarita.jpg",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Chicken and chips.jpg",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Rectangle 249 (2).png",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+  {
+    image: "/images/Rectangle 248 (11).png",
+    favIcon: CiHeart,
+    favFoodName: "Fried Rice",
+    favStar: FaStar,
+    favRateNum: "4.5",
+    favTimeIcon: IoMdStopwatch,
+    favTime: "30mins",
+    favMoney: "$50",
+    literAmount: "20 Liters remaining",
+    favCartIcon: FaBagShopping,
+  },
+];
+
+export interface MessageDataType {
+  messageImg: string;
+  messageTitle: string;
+  messageDes: string;
+  viewOrderLink: string;
+  viewOrderIcon: IconType;
+}
+
+export const MessageData: MessageDataType[] = [
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+  {
+    messageImg: "/images/Frame 2610552.png",
+    messageTitle: "Dear Kelvin",
+    messageDes:
+      "Your order has arrived! Sit back and relax as we prepare to deliver your items right to your doorstep. Get ready to enjoy your new purchases!",
+    viewOrderLink: "View Order",
+    viewOrderIcon: FaAngleRight,
+  },
+];
+
+export interface subscriptionPlansDataType {
+  subImg: string;
+  subType: string;
+  subAmount: string;
+  subItem: {
+    tickIcon: IconType;
+    subItemText: string;
+  }[];
+  subFeeText: string;
+  ViewSubDetailsLink: string;
+};
+
+export const subscriptionPlansData: subscriptionPlansDataType[] = [
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 194.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+];
+export interface GroomingSubscriptionPlansDataType {
+  subImg: string;
+  subType: string;
+  subAmount: string;
+  subItem: {
+    tickIcon: IconType;
+    subItemText: string;
+  }[];
+  subFeeText: string;
+  ViewSubDetailsLink: string;
+}
+
+export const GroomingSubscriptionPlansData: GroomingSubscriptionPlansDataType[] = [
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+  {
+    subImg: "/images/Rectangle 264.png",
+    subType: "Weekly Plan",
+    subAmount: "$40,000",
+    subItem: [
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "2 meal per week",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Weekly delivery",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Standard plate",
+      },
+      {
+        tickIcon: IoCheckmarkSharp,
+        subItemText: "Delivery",
+      },
+    ],
+    subFeeText: "Service Fee:",
+    ViewSubDetailsLink: "View",
+  },
+];
+export interface LaundrySubscriptionPlansDataType {
+  subImg: string;
+  subType: string;
+  subAmount: string;
+  subItem: {
+    tickIcon: IconType;
+    subItemText: string;
+  }[];
+  subFeeText: string;
+  ViewSubDetailsLink: string;
+}
+
+export const LaundrySubscriptionPlansData: LaundrySubscriptionPlansDataType[] =
+  [
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+    {
+      subImg: "/images/to clean.png",
+      subType: "Weekly Plan",
+      subAmount: "$40,000",
+      subItem: [
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "2 meal per week",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Weekly delivery",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Standard plate",
+        },
+        {
+          tickIcon: IoCheckmarkSharp,
+          subItemText: "Delivery",
+        },
+      ],
+      subFeeText: "Service Fee:",
+      ViewSubDetailsLink: "View",
+    },
+  ];
+
+
+ export interface MobileRestaurantFoodType {
+  id: string;
+  img: string;
+  prizeLink: string;
+  favoriteIcon: IconType;
+  smallTitle: string;
+  starIcon: IconType;
+  rating: string;
+  timeIcon: IconType;
+  timeText: string;
+  remenderText: string;
+  prizeText: string;
+  prizeIcon: IconType;
+}
+
+export const MobileRestaurantFood: MobileRestaurantFoodType[] = [
+      {
+        id: "123",
+        img: "/images/Rectangle 248 (12).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "456",
+        img: "/images/Rectangle 248 (12).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "789",
+        img: "/images/Rectangle 248 (12).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+]
+
+
+export const RestaurantFood: MobileRestaurantFoodType[] = [
+      {
+        id: "123",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "20 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "456",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "20 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "789",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "20 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+]
+
+export const RestDiscountSale = [
+  {
+    img: "/images/component 112.png",
+    alt: "hot jollof Rice",
+  },
+  {
+    img: "/images/component 112.png",
+    alt: "hot jollof Rice",
+  },
+  {
+    img: "/images/component 112.png",
+    alt: "hot jollof Rice",
   },
 ];

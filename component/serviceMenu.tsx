@@ -40,7 +40,6 @@ const ServiceMenu: FC<Routes> = ({ trigger, routes, toggle }) => {
             }}
           >
             {trigger}
-            <CaretDownIcon className="icon" aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content
             className="data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight"
@@ -94,17 +93,17 @@ const ServiceMenu: FC<Routes> = ({ trigger, routes, toggle }) => {
                     }}
                   >
                     {link?.icon && (
-                      <span className="icon">
+                      <div className="icon">
                         <Image
                           src={link?.icon}
                           width={17}
                           height={17}
                           alt="..."
                         />
-                      </span>
+                      </div>
                     )}
 
-                    <span>{link.name}</span>
+                    <div>{link.name}</div>
                   </Link>
                 </li>
               ))}

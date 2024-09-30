@@ -37,7 +37,7 @@ export default function Meal() {
             <p
               style={{
                 fontSize: "1.3rem",
-                color: 'black',
+                color: "black",
               }}
             >
               Meals
@@ -93,7 +93,7 @@ export default function Meal() {
                     <div>
                       <div>
                         <p>Fried Rice</p>
-                        <span className="meal-dot"/>
+                        <div className="meal-dot"></div>
                         <p>4.5</p>
                       </div>
                       <p

@@ -1,5 +1,6 @@
 import { FC } from "react";
-import { Container, Img, Initials } from "./avatar.styles";
+import { AvatarDropdown, Container, Img, Initials } from "./avatar.styles";
+import { CaretDownIcon } from "@radix-ui/react-icons";
 
 interface AvatarProps {
   src?: string;
@@ -17,7 +18,10 @@ const Avatar: FC<AvatarProps> = ({ src, initials }) => {
           alt={initials ? initials : "avatar"}
         />
       ) : (
-        <Initials>{initials}</Initials>
+        <Initials>
+          {initials}
+          <AvatarDropdown  aria-hidden />
+        </Initials>
       )}
     </Container>
   );

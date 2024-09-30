@@ -232,8 +232,8 @@ export const ProfileSidebar: React.FC = () => {
 
     {
       icon: <HiOutlineEnvelope />,
-      label: "Messages",
-      href: "/profile/messages",
+      label: "Notifications",
+      href: "/profile/notifications",
     },
   ];
 

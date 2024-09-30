@@ -11,18 +11,13 @@ interface UserOrdersCardProps {
 
 export const UserFoodOrders: React.FC = () => {
   return (
-    <div className="user_foodOrders_container">
-      <div className="foodAnd_service_tab">
-        <p className="foodAnd_service_tabText">Food</p>
-        <p className="foodAnd_service_tabText">Services</p>
-      </div>
       <div className="user_card_overflow">
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
           if (orderedFood.foodTitle) {
             // Food card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div className={`user_cards food_card`} key={orderedFood._id}>
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -64,7 +59,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -76,7 +71,10 @@ export const UserFoodOrders: React.FC = () => {
           } else {
             // Restaurant card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards restaurant_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -94,23 +92,23 @@ export const UserFoodOrders: React.FC = () => {
                         {orderedFood.restaurantRatingIcon
                           ? React.createElement(
                               orderedFood.restaurantRatingIcon,
-                              {className: 'ratingStar_icon'}
+                              { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -119,14 +117,14 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
           if (orderedFood.foodTitle) {
             // Food card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div  className={`user_cards food_card`} key={orderedFood._id}>
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -168,7 +166,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -180,7 +178,10 @@ export const UserFoodOrders: React.FC = () => {
           } else {
             // Restaurant card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards restaurant_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -198,23 +199,23 @@ export const UserFoodOrders: React.FC = () => {
                         {orderedFood.restaurantRatingIcon
                           ? React.createElement(
                               orderedFood.restaurantRatingIcon,
-                              {className: 'ratingStar_icon'}
+                              { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -223,14 +224,17 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
           if (orderedFood.foodTitle) {
             // Food card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards food_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -272,7 +276,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -284,7 +288,10 @@ export const UserFoodOrders: React.FC = () => {
           } else {
             // Restaurant card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards restaurant_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -302,23 +309,23 @@ export const UserFoodOrders: React.FC = () => {
                         {orderedFood.restaurantRatingIcon
                           ? React.createElement(
                               orderedFood.restaurantRatingIcon,
-                              {className: 'ratingStar_icon'}
+                              { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -327,14 +334,17 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
           if (orderedFood.foodTitle) {
             // Food card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards food_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -376,7 +386,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -388,7 +398,10 @@ export const UserFoodOrders: React.FC = () => {
           } else {
             // Restaurant card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards restaurant_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -406,23 +419,23 @@ export const UserFoodOrders: React.FC = () => {
                         {orderedFood.restaurantRatingIcon
                           ? React.createElement(
                               orderedFood.restaurantRatingIcon,
-                              {className: 'ratingStar_icon'}
+                              { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -431,14 +444,17 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
           if (orderedFood.foodTitle) {
             // Food card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards food_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -480,7 +496,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -492,7 +508,10 @@ export const UserFoodOrders: React.FC = () => {
           } else {
             // Restaurant card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards restaurant_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -510,23 +529,23 @@ export const UserFoodOrders: React.FC = () => {
                         {orderedFood.restaurantRatingIcon
                           ? React.createElement(
                               orderedFood.restaurantRatingIcon,
-                              {className: 'ratingStar_icon'}
+                              { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -535,14 +554,17 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       <div className="user_cards_container">
         {FoodOrdered1.map((orderedFood: OrderedFoodDataType) => {
           if (orderedFood.foodTitle) {
             // Food card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards food_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -584,7 +606,7 @@ export const UserFoodOrders: React.FC = () => {
                       <small className="card_offer_text">
                         {orderedFood.deliveryText}
                       </small>
-                      <span className="card_offer_dot"></span>
+                      <div className="card_offer_dot"></div>
                       <p className="card_offer_amount">
                         {orderedFood.amountInUsd}
                       </p>
@@ -596,7 +618,10 @@ export const UserFoodOrders: React.FC = () => {
           } else {
             // Restaurant card
             return (
-              <div className="user_cards" key={orderedFood._id}>
+              <div
+                className={`user_cards restaurant_card`}
+                key={orderedFood._id}
+              >
                 <UserOrdersCard className="user_card">
                   <div className="card_image">
                     <img
@@ -614,23 +639,23 @@ export const UserFoodOrders: React.FC = () => {
                         {orderedFood.restaurantRatingIcon
                           ? React.createElement(
                               orderedFood.restaurantRatingIcon,
-                              {className: 'ratingStar_icon'}
+                              { className: "ratingStar_icon" }
                             )
                           : null}
-                        <span className="rating_num">
+                        <div className="rating_num">
                           {orderedFood.restaurantRatingNum}
-                        </span>
+                        </div>
                       </div>
-                      <span className="rest_dot"></span>
+                      <div className="rest_dot"></div>
                       <div className="telephone_div">
                         {orderedFood.restPhoneIcon
                           ? React.createElement(orderedFood.restPhoneIcon, {
                               className: "card_phone_icon",
                             })
                           : null}
-                        <span className="tel_text">
+                        <div className="tel_text">
                           {orderedFood.restaurantPhoneNum}
-                        </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -639,9 +664,8 @@ export const UserFoodOrders: React.FC = () => {
             );
           }
         })}
-        {/* <ViewMoreBtn /> */}
+        <ViewMoreBtn />
       </div>
       </div>
-    </div>
   );
 };

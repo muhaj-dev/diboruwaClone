@@ -18,35 +18,33 @@ export const NavbarContainer = styled.div`
   z-index: 50;
   transition: all 200ms;
 
-
   .logo {
     position: relative;
     width: 100px;
     height: 40px;
 
-   
-a {
-  &::after {
-      content: "beta";
-      position: absolute;
-      top:-10px;
-      left: 70%;
-      padding: 3px 8px;
-      color: #fff;
-      border-radius: 20px;
-      font-size: 12px;
-      background: var(--primary);
+    a {
+      &::after {
+        content: "beta";
+        position: absolute;
+        top: -10px;
+        left: 70%;
+        padding: 3px 8px;
+        color: #fff;
+        border-radius: 20px;
+        font-size: 14px;
+        background: var(--primary);
+      }
     }
-}
   }
-  
-
 
   .cart {
-  
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    gap: 10px;
+    background: rgba(39, 161, 36, 0.1);
+    border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,9 +52,10 @@ a {
     position: relative;
 
     .badge {
-      width: 10px;
-      height: 10px;
-      background: var(--color2);
+      width: 20px;
+      height: 20px;
+      background: #27a124;
+      color: #fff;
       position: absolute;
       border-radius: 50%;
       top: 0;
@@ -64,7 +63,35 @@ a {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 7px;
+      font-size: 13px;
+    }
+
+    .cart_icon {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .SA_location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .SA_location_icon {
+      width: 28px;
+      height: 28px;
+      color: #27a124;
+    }
+
+    .SA_location_text {
+      color: #000000;
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      line-height: normal;
     }
   }
 `;
@@ -74,7 +101,6 @@ export const LogoImage = styled(Image)`
   height: 100%;
 
   object-fit: contain;
-
 `;
 
 export const Toggle = styled.div`
@@ -95,21 +121,21 @@ export const MenuList = styled(motion.ul)`
   display: flex;
   gap: 30px;
   align-items: center;
-  
-
 
   list-style: none;
-  
-  
+
   .menu {
     display: flex;
     align-items: center;
-    }
-    
-    .link {
-      color: #2A2A2A;
+  }
+
+  .link {
+    color: #2a2a2a;
     text-decoration: none;
-    font-size: 16px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
     letter-spacing: 1px;
 
     &.dropdown {
@@ -138,6 +164,12 @@ export const MenuList = styled(motion.ul)`
   @media screen and (max-width: 768px) {
     display: none;
   }
+`;
+
+export const SMCDI = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 `;
 
 export const MobileMenuBackdrop = styled(motion.div)`
@@ -188,7 +220,6 @@ export const MobileMenu = styled(motion.ul)`
 `;
 
 export const Cta = styled.a`
-  
   text-decoration: none;
   color: white;
   background: var(--primary);
@@ -198,4 +229,4 @@ export const Cta = styled.a`
   @media screen and (max-width: 900px) {
     display: none;
   }
-`
+`;

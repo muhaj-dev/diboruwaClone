@@ -38,7 +38,6 @@ export default function RootLayout({
     <html>
       <body>
         <Providers>
-          {/* <Navbar2 / */}
           <Navbar />
           {authModal}
 
