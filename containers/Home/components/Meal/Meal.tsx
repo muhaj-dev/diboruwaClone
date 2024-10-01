@@ -144,7 +144,7 @@ export default function Meal() {
             ))}
           </div>
 
-          <div
+          <Link href="/food"
             style={{
               display: "flex",
               gap: 6,
@@ -162,7 +162,7 @@ export default function Meal() {
                 marginTop: 2,
               }}
             />
-          </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -33,7 +33,7 @@ const MinsMeals: React.FC = () => {
                       <small className="minsmeal-card_title">
                         {item.smallTitle}
                       </small>
-                      <span className="minsmeal-card_dot"></span>
+                      <div className="minsmeal-card_dot"></div>
                       <StarIcon className="minsmeal-card_star" />
                       <small className="minsmeal-card_rating">
                         {item.rating}
@@ -41,9 +41,9 @@ const MinsMeals: React.FC = () => {
                     </div>
                     <div className="minsmeal-card_timer">
                       <TimeIcon className="minsmeal-card_timer-icon" />
-                      <span className="minsmeal-card_timer-text">
+                      <div className="minsmeal-card_timer-text">
                         {item.timeText}
-                      </span>
+                      </div>
                     </div>
                   </div>
                   <small className="minsmeal-card_remender">

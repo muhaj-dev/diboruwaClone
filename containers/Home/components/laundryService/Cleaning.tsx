@@ -33,7 +33,7 @@ export default function Cleaning() {
               cleaned, folded, and delivered with care, so you can spend less
               time on chores and more time doing what you love.
             </p>
-            <a href="/" className="Check-Out_Vendors">
+            <a href="/cleaning" className="Check-Out_Vendors">
               Book Now
             </a>
             <div className="laundry-service_img">

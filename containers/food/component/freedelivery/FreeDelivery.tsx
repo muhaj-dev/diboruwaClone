@@ -32,7 +32,7 @@ const FreeDelivery: React.FC = () => {
                       <small className="freedelivery-card_title">
                         {item.smallTitle}
                       </small>
-                      <span className="freedelivery-card_dot"></span>
+                      <div className="freedelivery-card_dot"></div>
                       <StarIcon className="freedelivery-card_star" />
                       <small className="freedelivery-card_rating">
                         {item.rating}
@@ -40,9 +40,9 @@ const FreeDelivery: React.FC = () => {
                     </div>
                     <div className="freedelivery-card_timer">
                       <TimeIcon className="freedelivery-card_timer-icon" />
-                      <span className="freedelivery-card_timer-text">
+                      <div className="freedelivery-card_timer-text">
                         {item.timeText}
-                      </span>
+                      </div>
                     </div>
                   </div>
                   <small className="freedelivery-card_remender">

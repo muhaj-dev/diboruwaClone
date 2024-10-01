@@ -70,7 +70,7 @@ const Food: React.FC<FoodProps> = ({ params }) => {
       </h3>
       <HeroList>
         <HeroListItem>
-          <span className="dot" />
+          <div className="dot"></div>
           <div className="text">
             {/* <strong>Book Online</strong> */}
             <small>
@@ -79,7 +79,7 @@ const Food: React.FC<FoodProps> = ({ params }) => {
           </div>
         </HeroListItem>
         <HeroListItem>
-          <span className="dot" />
+          <div className="dot"></div>
           <div className="text">
             {/* <strong>Expert Clean </strong> */}
             <small>
@@ -88,7 +88,7 @@ const Food: React.FC<FoodProps> = ({ params }) => {
           </div>
         </HeroListItem>
         <HeroListItem>
-          <span className="dot" />
+          <div className="dot"></div>
           <div className="text">
             {/* <strong>Enjoy Your Space</strong> */}
             <small>

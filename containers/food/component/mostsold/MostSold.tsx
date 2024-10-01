@@ -53,7 +53,7 @@ const MostSold: React.FC<MostSoldProps> = ({ id }) => {
                       <small className="mostsold-card_title">
                         {item.smallTitle}
                       </small>
-                      <span className="mostsold-card_dot"></span>
+                      <div className="mostsold-card_dot"></div>
                       <StarIcon className="mostsold-card_star" />
                       <small className="mostsold-card_rating">
                         {item.rating}
@@ -61,9 +61,9 @@ const MostSold: React.FC<MostSoldProps> = ({ id }) => {
                     </div>
                     <div className="mostsold-card_timer">
                       <TimeIcon className="mostsold-card_timer-icon" />
-                      <span className="mostsold-card_timer-text">
+                      <div className="mostsold-card_timer-text">
                         {item.timeText}
-                      </span>
+                      </div>
                     </div>
                   </div>
                   <small className="mostsold-card_remender">

@@ -1,31 +1,27 @@
 "use client";
-import React, { useState, useEffect, useMemo } from "react";
+import React from "react";
 import "./components/product-service-laundrying/product-service-laundrying.css";
 import "./laundry.css";
 import { ProductServicesLaundrying } from "./components/product-service-laundrying/ProductServicesLaundrying";
 import { TopLaundries } from "./components/top-laundries/TopLaundries";
 import Newsletter from "../partnerWithUs/component/newsletter/Newsletter";
 import { SearchFilter } from "./components/search-filter/SearchFilter";
-import { OtherRestaurant1 } from "./components/other-restaurant/OtherRestaurant1";
-import { OtherRestaurant2 } from "./components/other-restaurant/OtherRestaurant2";
-import { OtherRestaurant3 } from "./components/other-restaurant/OtherRestaurant3";
-import { OtherRestaurant4 } from "./components/other-restaurant/OtherRestaurant4";
-import { MobileOtherRestaurant } from "./components/other-restaurant/MobileOtherRestaurant";
+import { OtherLaundry1 } from "./components/other-laundrys/OtherLaundry1";
+import { OtherLaundry2 } from "./components/other-laundrys/OtherLaundry2";
+import { MobileOtherLaundryRoom } from "./components/other-laundrys/MobileOtherLaundryRoom";
 
 export const Laundry: React.FC = () => {
   return (
-    <div className="home-container">
-      <div className="hero_frame">
-        <ProductServicesLaundrying/>
+    <div className="Laundry_home-container">
+      <div className="Laundry_hero_frame">
+        <ProductServicesLaundrying />
       </div>
       <TopLaundries />
       <SearchFilter />
-      <MobileOtherRestaurant />
-      <div className="OtherRestaurants_container">
-        <OtherRestaurant1 />
-        <OtherRestaurant2 />
-        <OtherRestaurant3 />
-        <OtherRestaurant4 />
+      <MobileOtherLaundryRoom />
+      <div className="OtherLaundries_container">
+        <OtherLaundry1 />
+        <OtherLaundry2 />
       </div>
       <Newsletter />
     </div>
@@ -112,14 +108,14 @@ export const Laundry: React.FC = () => {
 
 //           <HeroList>
 //             <HeroListItem>
-//               <span className="dot" />
+//               <div  className="dot" />
 //               <div className="text">
 //                 {/* <strong> Schedule a Pickup</strong> */}
 //                 <small> Choose a time, and we&apos;ll be there.</small>
 //               </div>
 //             </HeroListItem>
 //             <HeroListItem>
-//               <span className="dot" />
+//               <div  className="dot" /></div>
 //               <div className="text">
 //                 {/* <strong>Expert Cleaning </strong> */}
 //                 <small>
@@ -130,7 +126,7 @@ export const Laundry: React.FC = () => {
 //               </div>
 //             </HeroListItem>
 //             <HeroListItem>
-//               <span className="dot" />
+//               <div className="dot" ></div>
 //               <div className="text">
 //                 {/* <strong>Swift Delivery</strong> */}
 //                 <small>
@@ -179,7 +175,7 @@ export const Laundry: React.FC = () => {
 //           </div>
 //           <div className="save_money">
 //             <h3 className="title">
-//               {/* Wash & <br /> Fold <span>Pricing</span> */}
+//               {/* Wash & <br /> Fold <div>Pricing</div> */}
 //               Quick Money Saving Hack 💰
 //             </h3>
 //             <p>Subscribe for a laundry plan and save up to 15% each month on laundry +
@@ -217,9 +213,9 @@ export const Laundry: React.FC = () => {
 //               No inquiries needed.
 //             </div>
 //             {/* <div className="benefit">
-//               <span className="icon">
+//               <divclassName="icon">
 //                 <CheckCircledIcon />
-//               </span>
+//               </div>
 //                Need a quick laundry solution without the commitment to a plan? We&apos;ve got you covered.
 //             </div> */}
 //           </div>

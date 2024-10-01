@@ -42,14 +42,14 @@ export const MobileOtherRestaurant: React.FC = () => {
                       React.createElement(item.locationIcon, {
                         className: "Mobileother_restaurant_top_rated_loction_icon",
                       })}
-                    <span className="Mobileother_restaurant_location-text">
+                    <div className="Mobileother_restaurant_location-text">
                       {item.locationText}
-                    </span>
+                    </div>
                   </div>
-                  <span className="Mobileother_restaurant_time_dot"></span>
-                  <span className="Mobileother_restaurant_time">{item.timeNum}</span>
-                  <span className="Mobileother_restaurant_time_dot"></span>
-                            <span
+                  <div className="Mobileother_restaurant_time_dot"></div>
+                  <div className="Mobileother_restaurant_time">{item.timeNum}</div>
+                  <div className="Mobileother_restaurant_time_dot"></div>
+                            <div
                                 className={`Mobileother_restaurant_OpeningTime 
                                 ${item.openTime?.toLowerCase() === "open"
                                         ? "open"
@@ -57,7 +57,7 @@ export const MobileOtherRestaurant: React.FC = () => {
                                     }`}
                             >
                     {item.openTime}
-                  </span>
+                  </div>
                 </div>
               </div>
 

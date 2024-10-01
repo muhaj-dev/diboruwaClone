@@ -134,7 +134,7 @@ export default function Groceries() {
             ))}
           </div>
 
-          <div
+          <Link href="/groceries"
             style={{
               display: "flex",
               gap: 6,
@@ -152,7 +152,7 @@ export default function Groceries() {
                 marginTop: 2,
               }}
             />
-          </div>
+          </Link >
         </div>
       </div>
     </div>

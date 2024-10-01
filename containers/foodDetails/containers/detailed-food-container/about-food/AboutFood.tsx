@@ -11,13 +11,13 @@ export const AboutFood = () => {
           <div className={styles.frsr_time}>
             <div className={styles.food_rating}>
               <p className={styles.ptext}>Fried Rice</p>
-              <span className={styles.dot}></span>
+              <div className={styles.dot}></div>
               <IoIosStar className={styles.rating_star} />
-              <span className={styles.rating_num}>4.5</span>
+              <div className={styles.rating_num}>4.5</div>
             </div>
             <div className={styles.food_timer}>
               <MdOutlineTimer className={styles.food_time_icon} />
-              <span className={styles.time_num}>30mins</span>
+              <div className={styles.time_num}>30mins</div>
             </div>
           </div>
           <p className={styles.food_des}>
@@ -26,8 +26,8 @@ export const AboutFood = () => {
             to expect your meal.
           </p>
           <div className={styles.ofd_lr}>
-            <span className={styles.ofd}>Offers Free Delivery</span>
-            <span className={styles.lr}>10 Liters remaining</span>
+            <div className={styles.ofd}>Offers Free Delivery</div>
+            <div className={styles.lr}>10 Liters remaining</div>
           </div>
           <AdditionBtn />
         </div>

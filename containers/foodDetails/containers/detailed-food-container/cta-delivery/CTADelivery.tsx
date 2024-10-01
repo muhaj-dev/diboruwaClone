@@ -43,7 +43,7 @@ const CTADeliveryIcon = styled.div`
   flex-shrink: 0;
 `;
 
-const CTADeliveryNum = styled.span`
+const CTADeliveryNum = styled.div`
   color: var(--White, #fefefe);
   font-family: Poppins;
   font-size: 20px;
