@@ -1,14 +1,14 @@
 import React from "react";
-import "./top-restaurants.css";
+import "./top-laundries.css";
 import Link from "next/link";
-import { FoodTopResturant } from "@/constants/index";
+import { TopLaundry, TopLaundryType } from "@/constants/index";
 
-export const TopRestaurants: React.FC = () => {
+export const TopLaundries: React.FC = () => {
   return (
     <div className="Toprest-ad">
-      <p className="title">{FoodTopResturant[0].title}</p>
+      <p className="title">{TopLaundry[0].title}</p>
       <div className="cards">
-        {FoodTopResturant.slice(1, 5).map((item, index) => (
+        {TopLaundry.slice(1, 5).map((item: TopLaundryType, index) => (
           <div key={item._id} className="card">
             <img className="top-restaurants" src={item.image} alt={item.tag} />
             <div className="card-details">

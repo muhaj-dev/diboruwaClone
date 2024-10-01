@@ -369,16 +369,6 @@ span.Mobileother_restaurant_OpeningTime.closed {
 }
 
 
-.other_restaurant_card {
-  flex: 1 1 100%; 
-}
-
-@media (min-width: 452px) {
-
-.other_restaurant_card {
-  flex: 1 1 calc(50% - 1rem); /* Default to full width for mobile and tablets */
-}
-}
 @media (min-width: 768px) {
   .other_restaurant_card {
     flex: 1 1 calc(33.333% - 1rem);

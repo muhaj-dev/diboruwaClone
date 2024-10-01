@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.allowChords": false,
+  "cSpell.words": ["subroutes"]
+}
