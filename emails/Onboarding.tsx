@@ -7,7 +7,7 @@ const colors = {
 };
 
 const wrapperStyle: React.CSSProperties = {
-  fontFamily: "Arial, sans-serif",
+  fontFamily: "Poppins, sans-serif",
 
   padding: "20px",
 };

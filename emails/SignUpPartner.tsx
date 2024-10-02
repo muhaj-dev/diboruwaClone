@@ -19,7 +19,7 @@ export const AdminEmailComponent: React.FC<{
   yourName,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "16px",
     lineHeight: "1.6",
     display: "grid",
@@ -95,7 +95,7 @@ export const PartnerWelcomeEmailComponent: React.FC<{
   partnerEmail: string;
 }> = ({ partnerFirstName, partnerEmail }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "16px",
     lineHeight: "1.6",
   };
@@ -195,7 +195,7 @@ export const PartnerVerificationEmailComponent: React.FC<{
   supportPhoneNumber: string;
 }> = ({ partnerFirstName, signInLink, supportEmail, supportPhoneNumber }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "16px",
     lineHeight: "1.6",
   };
@@ -288,7 +288,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
   orderLink,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "16px",
     lineHeight: "1.6",
   };
@@ -407,7 +407,7 @@ export const AdminOrderNotificationComponent: React.FC<{
   adminDashboardLink,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "16px",
     lineHeight: "1.6",
   };
@@ -531,7 +531,7 @@ export const AdminOrderCancelNotificationComponent: React.FC<{
   adminDashboardLink,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "16px",
     lineHeight: "1.6",
   };
@@ -658,7 +658,7 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
   partnerDashboardLink,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "14px",
     lineHeight: "1.6",
   };
@@ -777,7 +777,7 @@ export const DispatchStatusNotificationComponent: React.FC<{
   contactNumber,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "14px",
     lineHeight: "1.6",
   };
@@ -868,7 +868,7 @@ export const DeliveredStatusNotificationComponent: React.FC<{
   contactNumber,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "14px",
     lineHeight: "1.6",
   };
@@ -971,7 +971,7 @@ export const PaymentNotificationPartner: React.FC<{
 }> = ({ partnerName, monthYear, paymentDate, contactInfo }) => {
   const styles = {
     container: {
-      fontFamily: "Arial, sans-serif",
+      fontFamily: "Poppins, sans-serif",
       backgroundColor: "#f0f0f0",
       padding: "20px",
       borderRadius: "8px",
@@ -1029,7 +1029,7 @@ export const PaymentNotificationAdmin: React.FC<{
 }> = ({ partnerFullName, monthYear, paymentDate, contactInfo }) => {
   const styles = {
     container: {
-      fontFamily: "Arial, sans-serif",
+      fontFamily: "Poppins, sans-serif",
       backgroundColor: "#f0f0f0",
       padding: "20px",
       borderRadius: "8px",
@@ -1095,7 +1095,7 @@ export const NewQuoteRequestNotificationAdmin: React.FC<{
 }) => {
   const styles = {
     container: {
-      fontFamily: "Arial, sans-serif",
+      fontFamily: "Poppins, sans-serif",
       backgroundColor: "#f0f0f0",
       padding: "20px",
       borderRadius: "8px",
@@ -1171,7 +1171,7 @@ export const QuoteRequestConfirmationUser: React.FC<{
 }) => {
   const styles = {
     container: {
-      fontFamily: "Arial, sans-serif",
+      fontFamily: "Poppins, sans-serif",
       backgroundColor: "#f0f0f0",
       padding: "20px",
       borderRadius: "8px",

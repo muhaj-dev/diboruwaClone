@@ -21,7 +21,7 @@ const SubscriptionConfirmation: React.FC<SubscriptionConfirmationProps> = ({
   endDate,
 }) => {
   const containerStyle: React.CSSProperties = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     backgroundColor: "#4feca0",
     padding: "20px",
     borderRadius: "5px",

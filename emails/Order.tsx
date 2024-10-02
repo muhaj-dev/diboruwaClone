@@ -6,7 +6,7 @@ const EmailTemplate = ({ orderDetails } : any) => {
   return (
     <div
       style={{
-        fontFamily: "Arial, sans-serif",
+        fontFamily: "Poppins, sans-serif",
         maxWidth: "600px",
         margin: "0 auto",
         padding: "20px",

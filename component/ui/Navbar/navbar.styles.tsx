@@ -86,9 +86,9 @@ export const NavbarContainer = styled.div`
       color: #27a124;
     }
 
-    .SA_location_text {
+    p.SA_location_text {
       color: #000000;
-      font-family: Poppins;
+      font-family: 'Poppins', sans-serif;
       font-size: 12px;
       font-style: normal;
       line-height: normal;
@@ -129,10 +129,10 @@ export const MenuList = styled(motion.ul)`
     align-items: center;
   }
 
-  .link {
+  a.link {
     color: #2a2a2a;
     text-decoration: none;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-style: normal;
     line-height: normal;
@@ -202,7 +202,7 @@ export const MobileMenu = styled(motion.ul)`
   padding: 30px;
   list-style-type: none;
   backdrop-filter: blur(8px);
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   gap: 20px;
 
@@ -211,7 +211,7 @@ export const MobileMenu = styled(motion.ul)`
     align-items: center;
   }
 
-  .link {
+  a.link {
     text-decoration: none;
     color: #5b5959;
     font-size: 16px;

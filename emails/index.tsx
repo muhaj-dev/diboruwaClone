@@ -1,4 +1,4 @@
-"use clent";
+"use client";
 
 import React, { ReactNode } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -242,7 +242,7 @@ export const AdminEmailComponent: React.FC<{
   yourName,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "16px",
     lineHeight: "1.6",
     display: "grid",
@@ -463,7 +463,7 @@ export const PartnerOrderNotificationComponent: React.FC<{
   orderLink,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "16px",
     lineHeight: "1.6",
   };
@@ -905,7 +905,7 @@ export const PartnerOrderAssignmentNotificationComponent: React.FC<{
   partnerDashboardLink,
 }) => {
   const emailStyles = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontSize: "14px",
     lineHeight: "1.6",
   };
@@ -1708,7 +1708,7 @@ const DaysToSubscriptionExpiryEmail: React.FC<{
   daysToExpiry: number;
 }> = ({ customerName, serviceName, daysToExpiry }) => {
   const emailStyle: React.CSSProperties = {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     backgroundColor: "#f0f0f0", // Background color
     padding: "20px",
   };

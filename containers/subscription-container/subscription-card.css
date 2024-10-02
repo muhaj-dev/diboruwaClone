@@ -19,6 +19,17 @@
   border-radius: 3px;
 }
 
+p.sub_FLG_tabText,
+p.sub_type_text,
+p.sub_amount_text,
+p.sub_SA_text,
+p.SA_amount,
+p.sub_list_item_text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
 p.sub_FLG_tabText {
   background: transparent;
   display: flex;
@@ -28,9 +39,6 @@ p.sub_FLG_tabText {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Poppins";
-  font-style: normal;
-  line-height: normal;
   font-weight: 400;
 }
 
@@ -88,19 +96,9 @@ img.sub_img.groomimg_sub_img {
   gap: 0.3rem;
 }
 
-p.sub_type_text {
-  font-size: 13px;
-  font-family: "Poppins";
-  font-style: normal;
-  line-height: normal;
-  font-weight: 500;
-}
-
+p.sub_type_text,
 p.sub_amount_text {
   font-size: 13px;
-  font-family: "Poppins";
-  font-style: normal;
-  line-height: normal;
   font-weight: 500;
 }
 
@@ -121,9 +119,6 @@ p.sub_amount_text {
 
 p.sub_list_item_text {
   font-size: 13px;
-  font-family: "Poppins";
-  font-style: normal;
-  line-height: normal;
   font-weight: 400;
 }
 
@@ -135,19 +130,9 @@ p.sub_list_item_text {
   padding: 0.8rem;
 }
 
-p.sub_SA_text {
-  font-size: 14px;
-  font-family: "Poppins";
-  font-style: normal;
-  line-height: normal;
-  font-weight: 400;
-}
-
+p.sub_SA_text,
 p.SA_amount {
   font-size: 14px;
-  font-family: "Poppins";
-  font-style: normal;
-  line-height: normal;
   font-weight: 400;
 }
 

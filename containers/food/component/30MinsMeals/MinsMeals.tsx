@@ -1,6 +1,6 @@
 import React from "react";
 import "./minsmeal.css";
-import { DiscountSale, MinsMealsData } from "@/constants/index";
+import { DiscountSale, MinsMealsData } from "@/constants";
 import Link from "next/link";
 
 const MinsMeals: React.FC = () => {
@@ -10,13 +10,16 @@ const MinsMeals: React.FC = () => {
         <p className="minsmeal_title">{MinsMealsData[0].title}</p>
         <div className="minsmeal-cards">
           {MinsMealsData[0].items.map((item, index) => {
-            // Destructure the Icon components from the item
             const FavoriteIcon = item.favoriteIcon;
             const StarIcon = item.starIcon;
             const TimeIcon = item.timeIcon;
             const PrizeIcon = item.prizeIcon;
             return (
-              <Link key={item.id} href={`/food/${item.id}`} className="minsmeal-card">
+              <Link
+                key={item.id}
+                href={`/food/${item.id}`}
+                className="minsmeal-card"
+              >
                 <div className="minsmeal-card_food-img">
                   <img
                     src={item.img}
@@ -51,12 +54,12 @@ const MinsMeals: React.FC = () => {
                   </small>
                   <div className="minsmeal-card_prize">
                     <p className="minsmeal-card_prize-text">{item.prizeText}</p>
-                    <a
+                    <Link
                       href={item.prizeLink}
                       className="minsmeal-card_prize-link"
                     >
                       <PrizeIcon className="minsmeal-card_prize-icon" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Link>
