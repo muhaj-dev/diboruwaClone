@@ -130,7 +130,7 @@ export const ProductServicesLaundrying: React.FC = () => {
         </div>
 
         {selectedVendor && (
-          <div className="LaundryHero_map">
+          <div className="Laundry_Hero_map">
             <img
               className="LaundryMap"
               src={selectedVendor.map}
