@@ -1,16 +1,16 @@
 import React from "react";
 import "./top-moving.css";
 import Link from "next/link";
-import { TopLaundry, TopLaundryType } from "@/constants";
+import { TopDeliveryAndMoving, TopDeliveryAndMovingType } from "@/constants";
 
 export const TopLaundries: React.FC = () => {
   return (
     <div className="Moving_Toprest-ad">
-      <p className="Moving_title">{TopLaundry[0].title}</p>
+      <p className="Moving_title">{TopDeliveryAndMoving[0].title}</p>
       <div className="Moving_cards">
-        {TopLaundry.slice(1, 5).map((item: TopLaundryType, index) => (
+        {TopDeliveryAndMoving.slice(1, 5).map((item: TopDeliveryAndMovingType, index) => (
           <div key={item._id} className="Moving_card">
-            <img className="Moving_top" src={item.image} alt={item.tag} />
+            <img className="Moving_top" src={item.image} alt={item.tag1} />
             <div className="Moving_card-details">
               <div className="Moving_text-details">
                 <div className="Moving_title_rating_container">

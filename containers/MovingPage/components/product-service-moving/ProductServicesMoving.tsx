@@ -1,56 +1,49 @@
 "use client";
-import "./product-service-laundrying.css";
+import "./product-service-moving.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import React, { useState } from "react";
-import {
-  ProductServiceLaundryData,
-  ProductServiceLaundryType,
-} from "@/constants";
+import { ProductServiceDeliveryAndMovingData, ProductServiceDeliveryAndMovingType } from "@/constants";
 import { RiSearch2Line } from "react-icons/ri";
-import { FaRegStar, FaStar  } from "react-icons/fa";
-import { CiLocationOn } from "react-icons/ci";
-import Link from "next/link";
 
+// ====== MobileView Component ====== //
 const MobileView: React.FC = () => {
- const [selectedVendor, setSelectedVendor] = useState<
-   ProductServiceLaundryType | undefined
- >(ProductServiceLaundryData[0]);
+  const [selectedVendor, setSelectedVendor] = useState<ProductServiceDeliveryAndMovingType | undefined>(
+    ProductServiceDeliveryAndMovingData[0]
+  );
 
   return (
-    <div className="Movingmobile-display">
+    <div className="Moving_mobile-display">
       <div
-        className="Movingmob"
+        className="Moving_mob"
         style={{
           backgroundImage: `url(${selectedVendor?.bigImg})`,
           backgroundSize: "140% 100%",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
         }}
       >
-        <div className="Movingmob_overlay">
-          <div className="Movingmob-cont">
-            <div className="Movingtext-container">
-              <div className="Movingdescription">
-                Order from your favorite restaurant and get your meal delivered
-                to you in minutes.
+        <div className="Moving_mob_overlay">
+          <div className="Moving_mob-cont">
+            <div className="Moving_text-container">
+              <div className="Moving_description">
+                Get Your Order Delivered On time, With No Stress.
               </div>
             </div>
           </div>
         </div>
-        <div className="MovingMobilesearch_filter_box">
+        <div className="Moving_Mobilesearch_filter_box">
           <input
             type="search"
             name="search"
             id="search"
             placeholder="Search here"
-            className="MovingMobilesearch_filter_input"
+            className="Moving_Mobilesearch_filter_input"
           />
-          <RiSearch2Line className="MovingMobilesearch_filter_icon" />
+          <RiSearch2Line className="Moving_Mobilesearch_filter_icon" />
         </div>
       </div>
       <div className="Mobile_TopMoving_container">
         <div className="MobileTopMoving_Frame_Container">
-          <p className="MobileTopMoving_Text">Top Laundry Near you.</p>
+          <p className="MobileTopMoving_Text">Top Courier Near you.</p>
           <div className="Mobile_TopMoving_Images">
             <img
               src="/images/Rectangle 291.png"
@@ -74,10 +67,11 @@ const MobileView: React.FC = () => {
   );
 };
 
+// ====== ProductServicesFoodVendor Component ====== //
 export const ProductServicesMoving: React.FC = () => {
-  const [selectedVendor, setSelectedVendor] = useState<
-    ProductServiceLaundryType | undefined
-  >(ProductServiceLaundryData[0]);
+  const [selectedVendor, setSelectedVendor] = useState<ProductServiceDeliveryAndMovingType | undefined>(
+    ProductServiceDeliveryAndMovingData[0]
+  );
 
   return (
     <>
@@ -86,93 +80,72 @@ export const ProductServicesMoving: React.FC = () => {
           <div className="Moving_prod">
             <div className="Moving_prod-cont">
               <div className="Moving_tags-container">
-                {ProductServiceLaundryData.map(
-                  (item: ProductServiceLaundryType) => (
-                    <button
-                      type="button"
-                      key={item._id}
-                      className={`Moving_tag-text ${
-                        item === selectedVendor ? "Moving_tag-text-active" : ""
-                      }`}
-                      onClick={() => setSelectedVendor(item)}
-                    >
-                      {item.tag}
-                    </button>
-                  )
-                )}
+                {ProductServiceDeliveryAndMovingData.map((item) => (
+                  <>
+                  <button
+                    key={item._id}
+                    className={`Moving_tag-text ${
+                      item === selectedVendor ? "tag-text-active" : ""
+                    }`}
+                    onClick={() => setSelectedVendor(item)}
+                  >
+                    {item.tag1}
+                  </button>
+
+                  <button
+                    className={`Moving_tag-text ${
+                      item === selectedVendor ? "tag-text-active" : ""
+                    }`}
+                    onClick={() => setSelectedVendor(item)}
+                  >
+                   {item.tag2}
+                  </button>
+                  </>
+                ))}
               </div>
               <div className="Moving_text-container">
                 <p className="Moving_highlight">
-                  Experience the Ultimate in
+              Get Your Order Delivered
                 </p>
-                <p className="Moving_highlight2">
-                  cleanliness and convenience
-                </p>
-                <div className="Moving_description">
-                  Let us handle the dirty work while you enjoy life's fine
-                  moment
+                <p className="Moving_highlight2">On time, With No Stress</p>
+                      <div className="Moving_description">
+                 Experience the Convenience of Food Delivery & Moving Services Combined.
                 </div>
-                <button type="button" className="Moving_get-started-btn">
-                  Book Now
+                <button className="Moving_get-started-btn">
+                  Book Courier
                   <FaArrowRightLong className="Moving_get-started-btn-icon" />
                 </button>
               </div>
             </div>
             {selectedVendor && (
               <div className="Moving_Image">
-                <img src={selectedVendor.bigImg} alt={selectedVendor.tag} />
-                <div className="Moving_overlay">
-                  <div className="Moving_footer-text">{selectedVendor.foodText}</div>
-                </div>
+                <img src={selectedVendor.bigImg} alt={selectedVendor.tag1} />
               </div>
             )}
           </div>
         </div>
 
         {selectedVendor && (
-          <div className="MovingHero_map">
+          <div className="Moving_hero_map">
             <img
-              className="MovingMap"
+              className="Moving_map"
               src={selectedVendor.map}
-              alt={selectedVendor.tag}
+              alt={selectedVendor.tag1}
             />
-            <div className="MovingHero_Name">
-              <div className="MovingPro-name">
+            <div className="Moving_pro-logo">
+              <div className="Moving_pro-name">
                 <img
-                  className="MovingPro-img"
+                  className="Moving_pro-img"
                   src={selectedVendor.foodImg}
-                  alt={selectedVendor.tag}
+                  alt={selectedVendor.tag1}
                 />
-                <div className="NameAndStarRating">
-                  <p className="MovingName">Christopher Laundry Room</p>
-                  <div className="MovingRating">
-                    <div className="Moving_RatingStars">
-                      <FaStar className="Moving_RatingStar" />
-                      <FaStar className="Moving_RatingStar" />
-                      <FaStar className="Moving_RatingStar" />
-                      <FaStar className="RatingStar" />
-                      <FaRegStar className="Moving_RatingStarReg" />
-                    </div>
-                    <p className="Moving_RatingNum">4.5</p>
-                  </div>
-                </div>
               </div>
-              <div className="MovingLocationAndTime">
-                <p className="MovingTimeD">17 - Mon</p>
-                <p className="MovingTimeD">2pm - Wed</p>
-                <div className="MovingLocation">
-                  <CiLocationOn className="MovingLocationIcon" />
-                  <p className="MovingLocationText">Lagos</p>
-                </div>
-              </div>
-              <div className="MovingVisitLink">
-                <Link
-                  href={`/laundry/${selectedVendor._id}`}
-                  className="Moving_visit-link"
-                >
-                  <p className="Moving_visit-link_text">visit</p>
-                  <FaArrowRightLong className="Moving_visit_link_icon" />
-                </Link>
+              <div className="Moving_b-l">
+                <img
+                  className="Moving_bike"
+                  src={selectedVendor.bike}
+                  alt={selectedVendor.tag1}
+                />
               </div>
             </div>
           </div>

@@ -3,8 +3,6 @@
   margin: 0 auto;
 }
 
-
-
 .Moving_hero_cont {
   display: flex;
   padding: 30px 0;
@@ -52,7 +50,7 @@
   background: none;
 }
 
-.Moving_tag-text-active {
+.tag-text-active {
   background: #565656;
   color: #fefefe;
   border: none;
@@ -83,38 +81,36 @@
 
 .Moving_highlight {
   color: #2a2a2a;
-  font-size: 34px;
+  font-size: 37px;
   font-family: Poppins;
-  font-weight: 600;
-  width: 472px;
-  line-height: 51px;
-  padding: 4px 9px 4px 0;
+  font-weight: 500;
+  width: 443px;
+  line-height: 53px;
   border-radius: 10px;
   background-color: #f6f6f6;
 }
 
 .Moving_highlight2 {
   color: #2a2a2a;
-  font-size: 36px;
+  font-size: 37px;
   font-family: Poppins;
-  font-weight: 600;
+  font-weight: 500;
   width: -moz-fit-content;
-  width: 311px;
-  padding: 0 16px 4px 0;
-  line-height: 42px;
+  width: 401px;
+  line-height: 47.7px;
   border-radius: 10px;
   border-top-right-radius: 0;
   background-color: #f6f6f6;
 }
 
 .Moving_description {
-    color: #2a2a2a;
-    font-size: 17px;
-    font-family: Poppins;
-    font-weight: 500;
-    width: 370px;
-    line-height: 1.5;
-    margin-top: 10px;
+  color: #2a2a2a;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  width: 370px;
+  line-height: 1.5;
+  margin-top: 10px;
 }
 
 .Moving_get-started-btn {
@@ -153,115 +149,26 @@
   font-weight: 400;
   word-wrap: break-word;
 }
-.MovingHero_map{
-  border-radius: 8px;
-  background: #f3f3f3;
-  padding: 1.3rem;
-  display:flex;
-  gap: 0.7rem;
-  flex-direction: column;
-}
 
-.MovingMap {
-  width: 100%;
+.Moving_map {
+  width: 94%;
   height: 170px;
   display: flex;
   align-items: center;
-}
-.MovingHero_Name{
-  display:flex;
-  gap: 0.2rem;
-  width: 100%;
-  flex-direction: column;
+  margin: auto;
 }
 
-.MovingPro-name{
-  display: flex;
-  gap: 0.5rem;
-  width: 100%;
-  background: #fefefe;
-  padding: 1rem 1rem 1.5rem 1rem;
-  border-radius: 8px;
+.Moving_pro-name {
+  margin: 0 0 14px;
 }
 
-.Moving_NameAndStarRating{
-  display: flex;
-  gap: 0.5rem;
-  flex-direction: column;
-  width: 100%;
+.Moving_pro-logo {
+  background-color: #fff;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
 }
 
-.MovingRating{
-    display: flex;
-  gap: 0.5rem;
-  width: 100%;
-}
-.Moving_RatingStars{
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
-.Moving_RatingStar{
-  width: 15px;
-  height: 15px;
-  color: #ffe206;
-}
-.Moving_RatingStarReg{
-  width: 15px;
-  height: 15px;
-}
-
-p.MovingName, p.RatingNum, p.MovingTimeD, p.MovingLocationText{
-  color: #565656;
-  font-size: 12.889px;
-  font-family: Poppins;
-  font-weight: 500;
-  font-style: normal;
-  line-height: normal;
-}
-
-.MovingLocationAndTime{
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem;
-  background: #fefefe;
-  width: 100%;
-}
-
-.MovingLocation{
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-.MovingLocationIcon{
-width: 15px;
-height: 15px;
-color: #565656;
-}
-
-.MovingVisitLink{
-  background: #fefefe;
-  padding: 0.2rem;
-}
-
-.Moving_visit-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 12px;
-  color: #565656;
-  background-color: #f6f6f6;
-  border-radius: 10px;
-  border: transparent;
-  text-decoration: none;
-}
-
-.Moving_visit-link:hover {
-  border: 1px solid #27a124;
-}
-.star {
+.Moving_star {
   display: flex;
   gap: 2px;
   justify-content: flex-start;
@@ -269,14 +176,14 @@ color: #565656;
   font-size: 12px;
   margin-top: 4px;
 }
-.s {
+.Moving_s {
   width: 12px;
 }
 
-.bike {
+.Moving_bike {
   width: 100%;
 }
-.Movingmobile-display {
+.Moving_mobile-display {
   display: none;
 }
 
@@ -284,12 +191,12 @@ color: #565656;
   .home-container {
     background-color: #fcfcfc;
   }
-  .hero_cont {
+  .Moving_hero_cont {
     flex-direction: column;
     gap: 14px;
   }
 
-  .LaundryHero_map {
+  .Moving_hero_map {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -297,58 +204,53 @@ color: #565656;
     margin: 2rem 0.7rem;
   }
 
-  .map {
+  .Moving_map {
     width: 60%;
     height: 200px;
   }
-  .pro-logo {
+  .Moving_pro-logo {
     display: flex;
     flex-direction: column;
   }
 
-  .restaurant_highlight2,
-  .restaurant_highlight {
+  .Moving_highlight2,
+  .Moving_highlight {
     background-color: #fcfcfc;
   }
 }
 
 @media (max-width: 650px) {
-  .hero_frame {
-    width: min(100%, 1440px);
-    margin: 0 auto;
-  }
-
-  .hero_cont {
+  .Moving_hero_cont {
     margin-top: -72px;
     padding: 0px;
   }
 
-  .hero_prod {
+  .Moving_hero_prod {
     display: none;
   }
 
-  .MovingHero_map {
+  .Moving_hero_map {
     display: none;
   }
 
-  .Movingmobile-display {
+  .Moving_mobile-display {
     display: block;
   }
 
-  .Movingmob {
+  .Moving_mob {
     position: relative;
     overflow-x: hidden;
     height: 70dvh;
     display: block;
   }
 
-  .Movingmob-image {
+  .Moving_mob-image {
     object-fit: fill;
     width: 100dvw;
     height: 100%;
   }
 
-  .Movingmob_overlay {
+  .Moving_mob_overlay {
     width: 93%;
     margin: 0 auto;
     padding: 16px;
@@ -364,11 +266,11 @@ color: #565656;
     border-radius: 10px;
   }
 
-  .Movingmob_cont {
+  .Moving_mob_cont {
     position: relative;
   }
 
-  .MovingMobilesearch_filter_box {
+  .Moving_Mobilesearch_filter_box {
     position: absolute;
     bottom: 0.7rem;
     width: 100%;
@@ -377,7 +279,7 @@ color: #565656;
     align-items: center;
   }
 
-  .MovingMobilesearch_filter_input {
+  .Moving_Mobilesearch_filter_input {
     width: 93%;
     margin: 0 auto;
     position: relative;
@@ -389,7 +291,7 @@ color: #565656;
     padding-left: 0.9rem;
   }
 
-  .MovingMobilesearch_filter_icon {
+  .Moving_Mobilesearch_filter_icon {
     width: 20px;
     height: 20px;
     display: flex;
@@ -399,7 +301,7 @@ color: #565656;
     color: #292d32;
   }
 
-  .Movingdescription {
+  .Moving_description {
     color: #fcfcfc;
     font-size: 15px;
     font-weight: 300;

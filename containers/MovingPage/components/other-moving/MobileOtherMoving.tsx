@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
-import "./other-laundry.css";
+import "./other-moving.css";
 import Link from "next/link";
 import {
-  MobileOtherLaundry,
-  OtherLaundryType,
+  MobileOtherDeliveryAndMoving,
+  OtherDeliveryAndMovingType,
 } from "@/constants";
 
-export const MobileOtherLaundryRoom: React.FC = () => {
+export const MobileOtherMoving: React.FC = () => {
   return (
     <div className="Mobileother_Moving_container">
       <div className="Mobileother_Moving_cards">
-        {MobileOtherLaundry.map((item: OtherLaundryType) => (
+        {MobileOtherDeliveryAndMoving.map((item: OtherDeliveryAndMovingType) => (
           <div key={item._id} className="Mobileother_Moving_card">
             <img
               className="Mobileother_Moving_img"
               src={item.image}
-              alt={item.tag}
+              alt={item.tag1}
             />
             <div className="Mobileother_Moving_card-details">
               <div className="Mobileother_Moving_text-details">
@@ -40,7 +40,7 @@ export const MobileOtherLaundryRoom: React.FC = () => {
                   <div className="Mobileother_Moving_location">
                     {item.locationIcon &&
                       React.createElement(item.locationIcon, {
-                        className: "Mobileother_Moving_top_rated_loction_icon",
+                        className: "Mobileother_Moving_top_rated_location_icon",
                       })}
                     <div className="Mobileother_Moving_location-text">
                       {item.locationText}

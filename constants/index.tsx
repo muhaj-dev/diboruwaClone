@@ -8731,7 +8731,7 @@ export const Data = [
   {
     _id: 2,
     tag: "Moving",
-    bigImg: "/images/Subtract.png",
+    bigImg: "/images/Subtract (3).png",
     bike: "/images/Frame 2610192.png",
     foodImg: "/images/Frame 2610173.png",
     foodText:
@@ -8751,7 +8751,7 @@ export const Data = [
   {
     _id: 4,
     tag: "Cleaning",
-    bigImg: "/images/food.png",
+    bigImg: "/images/Subtract (2).png",
     bike: "/images/Frame 2610175.png",
     foodImg: "/images/Frame 2610173 (1).png",
     foodText:
@@ -9446,6 +9446,290 @@ export const MobileOtherLaundry: OtherLaundryType[] = [
   {
     _id: 497664,
     tag: "Laundry",
+    image: "/images/Rectangle 248 (15).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "Open",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+];
+
+
+// ====== FoodDelivery and Moving Data ====== //
+export interface ProductServiceDeliveryAndMovingType {
+  _id?: number;
+  tag1?: string;
+  tag2?: string;
+  link?: string;
+  image?: string;
+  bigImg?: string;
+  foodText?: string;
+  map?: string;
+  foodImg?: string;
+  bike?: string;
+  title?: string;
+}
+
+export const ProductServiceDeliveryAndMovingData: ProductServiceDeliveryAndMovingType[] =
+  [
+    {
+      _id: 1,
+      tag1: "Food Delivery",
+      tag2: "Moving",
+      bigImg: "/images/Subtract (3).png",
+      bike: "/images/Frame 2610192.png",
+      foodImg: "/images/Frame 2610173.png",
+      foodText:
+        "Get your clothes washed and delivered to your door step within an hour.",
+        map: "/images/map.png",
+    },
+  ];
+
+export interface TopDeliveryAndMovingType {
+  _id?: number;
+  tag1?: string;
+  tag2?: string;
+  title?: string;
+  image?: string;
+  smallTitle?: string;
+  starIcon?: IconType;
+  rating?: string;
+  reviewsText?: string;
+  reviewsNum?: string;
+  locationIcon?: IconType;
+  locationText?: string;
+  timeNum?: string;
+  vistLink?: string;
+  arrowIcon?: IconType;
+}
+
+export interface OtherDeliveryAndMovingType {
+  _id?: number;
+  tag1?: string;
+  tag2?: string;
+  title?: string;
+  image?: string;
+  smallTitle?: string;
+  starIcon?: IconType;
+  rating?: string;
+  reviewsText?: string;
+  reviewsNum?: string;
+  locationIcon?: IconType;
+  locationText?: string;
+  timeNum?: string;
+  openTime?: string;
+  vistLink?: string;
+  arrowIcon?: IconType;
+}
+
+export const TopDeliveryAndMoving: TopDeliveryAndMovingType[] = [
+  {
+    title: "Top Moving Near You",
+  },
+  {
+    _id: 381753,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (16).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 231134,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (13).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 945332,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (14).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 127664,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (15).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+];
+
+export const OtherDeliveryAndMoving: OtherDeliveryAndMovingType[] = [
+  {
+    _id: 387653,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 231196,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 225332,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 497664,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+];
+export const MobileOtherDeliveryAndMoving: OtherDeliveryAndMovingType[] = [
+  {
+    _id: 387653,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (16).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "Closed",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 231196,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (13).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "Open",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 225332,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (14).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "closed",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 497664,
+        tag1: "Food Delivery",
+    tag2: "Moving",
     image: "/images/Rectangle 248 (15).png",
     smallTitle: "WE HAVE MOVED",
     starIcon: FaStar,

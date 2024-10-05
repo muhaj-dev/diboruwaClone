@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "./components/product-service-moving/product-service-laundrying.css";
 import "./moving.css";
 import { ProductServicesMoving } from "./components/product-service-moving/ProductServicesMoving";
 import { TopLaundries } from "./components/top-moving/TopMoving";
@@ -8,7 +7,7 @@ import Newsletter from "../partnerWithUs/component/newsletter/Newsletter";
 import { SearchFilter } from "./components/search-filter/SearchFilter";
 import { OtherMoving1 } from "./components/other-moving/OtherMoving1";
 import { OtherMoving2 } from "./components/other-moving/OtherMoving2";
-import { MobileOtherLaundryRoom } from "./components/other-moving/MobileOtherMoing";
+import { MobileOtherMoving } from "./components/other-moving/MobileOtherMoving";
 
 export const Moving: React.FC = () => {
   return (
@@ -18,7 +17,7 @@ export const Moving: React.FC = () => {
       </div>
       <TopLaundries />
       <SearchFilter />
-      <MobileOtherLaundryRoom />
+      <MobileOtherMoving />
       <div className="OtherMoving_container">
         <OtherMoving1 />
         <OtherMoving2 />
