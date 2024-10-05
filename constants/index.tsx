@@ -9213,7 +9213,7 @@ export const ProductServiceLaundryData: ProductServiceLaundryType[] = [
   {
     _id: 1,
     tag: "Laundry",
-    bigImg: "/images/Subtract (2).png",
+    bigImg: "/images/laundry.png",
     bike: "/images/Frame 2610175.png",
     foodImg: "/images/image 157.png",
     foodText:
@@ -9483,7 +9483,7 @@ export const ProductServiceDeliveryAndMovingData: ProductServiceDeliveryAndMovin
       _id: 1,
       tag1: "Food Delivery",
       tag2: "Moving",
-      bigImg: "/images/Subtract (3).png",
+      bigImg: "/images/moving.png",
       bike: "/images/Frame 2610192.png",
       foodImg: "/images/Frame 2610173.png",
       foodText:

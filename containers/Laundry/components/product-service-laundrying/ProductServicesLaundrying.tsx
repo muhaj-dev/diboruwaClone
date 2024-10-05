@@ -24,7 +24,6 @@ const MobileView: React.FC = () => {
           backgroundImage: `url(${selectedVendor?.bigImg})`,
           backgroundSize: "140% 100%",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
         }}
       >
         <div className="Laundrymob_overlay">
