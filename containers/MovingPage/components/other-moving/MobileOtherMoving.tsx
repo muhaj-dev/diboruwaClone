@@ -63,7 +63,7 @@ export const MobileOtherMoving: React.FC = () => {
               </div>
 
               <Link
-                href={`/restaurant/${item._id}`}
+                href={`/moving/${item._id}`}
                 className="Mobileother_Moving_visit-link"
               >
                 <p className="Mobileother_Moving_visit-link_text">visit</p>

@@ -39,7 +39,7 @@ export const TopLaundries: React.FC = () => {
                 </div>
               </div>
 
-              <Link href={`/restaurant/${item._id}`} className="Moving_visit-link">
+              <Link href={`/moving/${item._id}`} className="Moving_visit-link">
                 <p className="Moving_visit-link_text">visit</p>
                 {item.arrowIcon &&
                   React.createElement(item.arrowIcon, {
