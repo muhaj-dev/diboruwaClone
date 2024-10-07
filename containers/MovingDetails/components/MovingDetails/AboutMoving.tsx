@@ -1,6 +1,6 @@
-'use client'
+"use client";
 import React, { useState, useEffect, useRef } from "react";
-import styles from "./about-restaurant.module.css";
+import styles from "./about-moving.module.css";
 import { FaStar } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { LiaAngleRightSolid } from "react-icons/lia";
@@ -10,19 +10,17 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { SlideInSub } from "./SlideInSub/SlideInSub";
 import { BackButton } from "@/component/ui/BackButton/BackButton";
 
-const MobileAboutRestaurant = () => {
-const [isSubOpen, setIsSubOpen] = useState<boolean>(false);
-  
+const MobileAboutMoving = () => {
+  const [isSubOpen, setIsSubOpen] = useState<boolean>(false);
 
   // Toggle subscription visibility when button is clicked
   const handleSubClick = () => {
     setIsSubOpen((prev) => !prev);
   };
 
-    const handleCloseSub = () => {
+  const handleCloseSub = () => {
     setIsSubOpen(false);
   };
-
 
   return (
     <div className={styles.MobilerestaurantContainer}>
@@ -60,11 +58,15 @@ const [isSubOpen, setIsSubOpen] = useState<boolean>(false);
             <p className={styles.MobilerestaurantSubText}>Subscription</p>
             <LiaAngleRightSolid className={styles.MobilerestaurantSubIcon} />
           </button>
- {isSubOpen && (
-  <div className={`${styles.slideInSub} ${isSubOpen ? styles.activeSub : styles.hiddenSub}`}>
-    <SlideInSub onClose={handleCloseSub} />
-  </div>
-)}
+          {isSubOpen && (
+            <div
+              className={`${styles.slideInSub} ${
+                isSubOpen ? styles.activeSub : styles.hiddenSub
+              }`}
+            >
+              <SlideInSub onClose={handleCloseSub} />
+            </div>
+          )}
         </div>
         <div className={styles.MobilerestaurantOpeningTimePhoneNum}>
           <p className={styles.MobilerestaurantOpeningDay}>Mon - Friday</p>
@@ -83,7 +85,7 @@ const [isSubOpen, setIsSubOpen] = useState<boolean>(false);
   );
 };
 
-export const AboutRestaurant = () => {
+export const AboutMoving = () => {
   return (
     <>
       <div className={styles.AboutrestaurantContainer}>
@@ -157,7 +159,7 @@ export const AboutRestaurant = () => {
             </button>
           </div>
         </div>
-        <MobileAboutRestaurant />
+        <MobileAboutMoving />
       </div>
     </>
   );

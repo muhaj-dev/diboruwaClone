@@ -1,11 +1,11 @@
 import React from 'react'
-import "./LeftRestaurantContainer.css"
-import { RestSub } from './components/RestSub'
+import "./LeftMovingContainer.css"
+// import { RestSub } from './components/RestSub'
 import { OrdersFromRestaurant } from './components/OrdersFromRestaurant'
-export const LeftRestaurantContainer = () => {
+export const LeftMovingContainer = () => {
   return (
     <div className='LeftRestaurantContainer'>
-      <RestSub />
+      {/* <RestSub /> */}
       <OrdersFromRestaurant />
     </div>
   )

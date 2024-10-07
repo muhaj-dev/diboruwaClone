@@ -149,7 +149,7 @@ export const ProductServicesLaundrying: React.FC = () => {
                       <FaStar className="Laundry_RatingStar" />
                       <FaStar className="Laundry_RatingStar" />
                       <FaStar className="Laundry_RatingStar" />
-                      <FaStar className="RatingStar" />
+                      <FaStar className="Laundry_RatingStar" />
                       <FaRegStar className="Laundry_RatingStarReg" />
                     </div>
                     <p className="Laundry_RatingNum">4.5</p>

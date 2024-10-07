@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import Lottie from "lottie-react";
-import MenuAnimation from "./MenuAnimation.json";
+import MovingAnimation from "./MovingAnimation.json";
 
 export const OrdersFromRestaurant = () => {
   return (
@@ -10,7 +10,7 @@ export const OrdersFromRestaurant = () => {
         Order's from Flora Restaurant
       </p>
       <div className="lottie_Orders">
-        <Lottie animationData={MenuAnimation} loop={true} className="lottie_Orders_animation"/>
+        <Lottie animationData={MovingAnimation} loop={true} className="lottie_Orders_animation"/>
         <p className="lottie_Text">You haven't ordered yet</p>
       </div>
     </div>
