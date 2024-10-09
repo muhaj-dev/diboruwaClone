@@ -36,10 +36,14 @@ const Container = styled.button`
   }
 `;
 
-export const BackButton = () => {
+interface BackButtonProps {
+  className?: string;
+}
+
+export const BackButton: React.FC<BackButtonProps> = ({className}) => {
   const router = useRouter();
   return (
-    <Container onClick={() => router.back()}>
+    <Container onClick={() => router.back()} className={className}>
       <ArrowLeftIcon className="icon" /> <span className="span_back">Back</span>
     </Container>
   );

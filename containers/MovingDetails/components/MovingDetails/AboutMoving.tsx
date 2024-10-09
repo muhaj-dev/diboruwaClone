@@ -27,7 +27,7 @@ const MobileAboutMoving = () => {
       <div className={styles.MobileCPImage}>
         <div className={styles.MobilecoverImage}>
           <img
-            src="/images/Frame 2611041.png"
+            src="/images/image 200.png"
             alt=""
             className={styles.MobilecoverImg}
           />
@@ -90,11 +90,11 @@ export const AboutMoving = () => {
     <>
       <div className={styles.AboutrestaurantContainer}>
         <div className={styles.restaurantFrame}>
-          <BackButton />
+         
           <div className={styles.CPImage}>
             <div className={styles.coverImage}>
               <img
-                src="/images/Frame 2610163 (2).png"
+                src="/images/image 200.png"
                 alt=""
                 className={styles.coverImg}
               />
