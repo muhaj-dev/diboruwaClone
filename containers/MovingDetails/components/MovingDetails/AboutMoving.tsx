@@ -149,14 +149,7 @@ export const AboutMoving = () => {
                 cleaned, folded, and delivered with care, so you can spend less
                 time on chores and more time doing what you love.
               </p>
-              <p className={styles.restaurantDeliveryTime}>
-                30 - 40mins delivery time
-              </p>
             </div>
-            <button className={styles.restaurantReview}>
-              See Reviews
-              <IoIosArrowRoundForward className={styles.restaurantReviewIcon} />
-            </button>
           </div>
         </div>
         <MobileAboutMoving />
