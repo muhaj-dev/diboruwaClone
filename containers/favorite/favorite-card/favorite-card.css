@@ -11,7 +11,7 @@
 p.favourite_title {
   color: #2a2a2a;
   font-size: 18px;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
@@ -87,7 +87,7 @@ svg.fav_icon {
 p.favourite_food_title {
   color: #2a2a2a;
   font-size: 14px;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
@@ -112,7 +112,7 @@ svg.favourite_food_rating_star {
 p.favourite_food_rating_num {
   color: #2a2a2a;
   font-size: 14px;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
@@ -127,7 +127,7 @@ p.favourite_food_rating_num {
 p.favourite_food_time_text {
   color: #2a2a2a;
   font-size: 14px;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
@@ -136,7 +136,7 @@ p.favourite_food_time_text {
 p.favourite_food_time_text {
   color: #2a2a2a;
   font-size: 14px;
-  font-family: "Poppins";
+  font-family:'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
@@ -161,7 +161,7 @@ p.favourite_food_time_text {
 small.favourite_food_CLC_small_text {
   color: #27a124;
   font-size: 12px;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: normal;

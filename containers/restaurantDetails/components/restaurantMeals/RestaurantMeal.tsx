@@ -81,7 +81,7 @@ export const RestaurantMeal = () => {
         <div className="restaurant_Meal_filter_line">
           <div className="restaurant_Meal_filter">
             <p className="RestaurantMeal_title_filter">Meal</p>
-            <p className="RestaurantMeal_title_filter">Protien</p>
+            <p className="RestaurantMeal_title_filter">Protein</p>
             <p className="RestaurantMeal_title_filter">Drink</p>
             <p className="RestaurantMeal_title_filter">Extras</p>
           </div>
@@ -90,7 +90,11 @@ export const RestaurantMeal = () => {
 
         <div className="RestaurantMeal_cards">
           {RestaurantFood.map((item: MobileRestaurantFoodType) => (
-            <div key={item.id} className="RestaurantMeal_card">
+            <Link
+              href={`/food/${item.id}`}
+              key={item.id}
+              className="RestaurantMeal_card"
+            >
               <div className="RestaurantMeal_FavANDImage">
                 <img src={item.img} alt="" className="RestaurantMeal_Image" />
                 <div className="RestaurantMeal_Fav">
@@ -124,7 +128,7 @@ export const RestaurantMeal = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -142,7 +146,11 @@ export const RestaurantMeal = () => {
 
         <div className="RestaurantMeal_cards">
           {RestaurantFood.map((item: MobileRestaurantFoodType) => (
-            <div key={item.id} className="RestaurantMeal_card">
+            <Link
+              href={`/food/${item.id}`}
+              key={item.id}
+              className="RestaurantMeal_card"
+            >
               <div className="RestaurantMeal_FavANDImage">
                 <img src={item.img} alt="" className="RestaurantMeal_Image" />
                 <div className="RestaurantMeal_Fav">
@@ -176,13 +184,17 @@ export const RestaurantMeal = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
         <div className="RestaurantMeal_cards">
           {RestaurantFood.map((item: MobileRestaurantFoodType) => (
-            <div key={item.id} className="RestaurantMeal_card">
+            <Link
+              href={`/food/${item.id}`}
+              key={item.id}
+              className="RestaurantMeal_card"
+            >
               <div className="RestaurantMeal_FavANDImage">
                 <img src={item.img} alt="" className="RestaurantMeal_Image" />
                 <div className="RestaurantMeal_Fav">
@@ -216,11 +228,10 @@ export const RestaurantMeal = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
-        
         <div className="Restsale-imgs-container">
           {RestDiscountSale.map((item, index) => (
             <div className="Restsale-imgs" key={index}>

@@ -23,6 +23,6 @@ export const GlobalStyles = createGlobalStyle`
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 `;

@@ -9,6 +9,7 @@
   list-style: none;
   text-decoration: none;
   background-color: var(--light2);
+  font-family: 'Poppins', sans-serif !important;
 }
 
 :root {

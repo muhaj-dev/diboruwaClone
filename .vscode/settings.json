@@ -1,5 +1,22 @@
 {
   "terminal.integrated.sendKeybindingsToShell": true,
   "terminal.integrated.allowChords": false,
-  "cSpell.words": ["subroutes"]
+  "cSpell.words": [
+    "Aboutrestaurant",
+    "Cust",
+    "Ilorin",
+    "imgs",
+    "Ipage",
+    "minsmeal",
+    "Mobileabout",
+    "Mobileother",
+    "Mobilerest",
+    "Mobilerestaurant",
+    "Mobilesearch",
+    "mostsold",
+    "remender",
+    "Restaurantmob",
+    "subroutes",
+    "Tanke"
+  ]
 }

@@ -7,7 +7,7 @@ const colors = {
 };
 
 const wrapperStyle: React.CSSProperties = {
-  fontFamily: "Arial, sans-serif",
+  fontFamily: "Poppins, sans-serif",
   padding: "20px",
   maxWidth: "600px", // Set a maximum width for the content
   margin: "0 auto", // Center the content horizontally

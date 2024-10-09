@@ -24,7 +24,6 @@ const MobileView: React.FC = () => {
           backgroundImage: `url(${selectedVendor?.bigImg})`,
           backgroundSize: "140% 100%",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
         }}
       >
         <div className="Laundrymob_overlay">
@@ -130,7 +129,7 @@ export const ProductServicesLaundrying: React.FC = () => {
         </div>
 
         {selectedVendor && (
-          <div className="LaundryHero_map">
+          <div className="Laundry_Hero_map">
             <img
               className="LaundryMap"
               src={selectedVendor.map}
@@ -150,7 +149,7 @@ export const ProductServicesLaundrying: React.FC = () => {
                       <FaStar className="Laundry_RatingStar" />
                       <FaStar className="Laundry_RatingStar" />
                       <FaStar className="Laundry_RatingStar" />
-                      <FaStar className="RatingStar" />
+                      <FaStar className="Laundry_RatingStar" />
                       <FaRegStar className="Laundry_RatingStarReg" />
                     </div>
                     <p className="Laundry_RatingNum">4.5</p>

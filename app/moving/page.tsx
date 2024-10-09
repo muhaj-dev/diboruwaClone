@@ -1,4 +1,4 @@
-import MovingContainer from "@/containers/moving/Moving";
+import { Moving } from "@/containers/MovingPage/Moving";
 
 export const metadata = {
   title: "Moving",
@@ -7,7 +7,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <MovingContainer />
+      <Moving />
     </div>
   );
 };

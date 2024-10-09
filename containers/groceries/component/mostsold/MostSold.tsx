@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./mostsold.css";
-import { DiscountSale, FoodVendor } from "@/constants/index";
+import { DiscountSale, GroceriesVendor } from "@/constants/index";
 import Link from "next/link";
 
 interface MostSoldProps {
@@ -8,14 +8,14 @@ interface MostSoldProps {
 }
 
 const MostSold: React.FC<MostSoldProps> = ({ id }) => {
-  const [visibleItems, setVisibleItems] = useState(FoodVendor[0].items);
+  const [visibleItems, setVisibleItems] = useState(GroceriesVendor[0].items);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024) { // Large screen
-        setVisibleItems(FoodVendor[0].items.slice(0, 4)); // Show first 4 items
+        setVisibleItems(GroceriesVendor[0].items.slice(0, 4)); // Show first 4 items
       } else {
-        setVisibleItems(FoodVendor[0].items); // Show all items
+        setVisibleItems(GroceriesVendor[0].items); // Show all items
       }
     };
 
@@ -28,7 +28,7 @@ const MostSold: React.FC<MostSoldProps> = ({ id }) => {
   return (
     <section className="mostsold_container">
       <div className="mostsold-frame">
-        <p className="mostsold_title">{FoodVendor[0].title}</p>
+        <p className="mostsold_title">{GroceriesVendor[0].title}</p>
         <div className="mostsold-cards">
           {visibleItems.map((item) => {
             const FavoriteIcon = item.favoriteIcon;
@@ -71,9 +71,9 @@ const MostSold: React.FC<MostSoldProps> = ({ id }) => {
                   </small>
                   <div className="mostsold-card_prize">
                     <p className="mostsold-card_prize-text">{item.prizeText}</p>
-                    <a href={item.prizeLink} className="mostsold-card_prize-link">
+                    <Link href={item.prizeLink} className="mostsold-card_prize-link">
                       <PrizeIcon className="mostsold-card_prize-icon" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Link>

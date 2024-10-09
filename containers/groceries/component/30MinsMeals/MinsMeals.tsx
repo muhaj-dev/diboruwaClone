@@ -1,15 +1,15 @@
 import React from "react";
 import "./minsmeal.css";
-import { DiscountSale, MinsMealsData } from "@/constants/index";
+import { DiscountSale, MinsGroceriesData } from "@/constants/index";
 import Link from "next/link";
 
 const MinsMeals: React.FC = () => {
   return (
     <section className="minsmeal_container">
       <div className="minsmeal-frame">
-        <p className="minsmeal_title">{MinsMealsData[0].title}</p>
+        <p className="minsmeal_title">{MinsGroceriesData[0].title}</p>
         <div className="minsmeal-cards">
-          {MinsMealsData[0].items.map((item, index) => {
+          {MinsGroceriesData[0].items.map((item, index) => {
             // Destructure the Icon components from the item
             const FavoriteIcon = item.favoriteIcon;
             const StarIcon = item.starIcon;
@@ -51,12 +51,12 @@ const MinsMeals: React.FC = () => {
                   </small>
                   <div className="minsmeal-card_prize">
                     <p className="minsmeal-card_prize-text">{item.prizeText}</p>
-                    <a
+                    <Link
                       href={item.prizeLink}
                       className="minsmeal-card_prize-link"
                     >
                       <PrizeIcon className="minsmeal-card_prize-icon" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </Link>

@@ -7,6 +7,11 @@ export type IpageProps = {
   };
 };
 
+
+export const metadata = {
+  title: "Grocery Details",
+};
+
 const page: React.FC<IpageProps> = ({ params: { id } }) => {
   return (
     <div>

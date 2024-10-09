@@ -54,7 +54,7 @@ const Title = styled.h3`
   font-weight: 600;
   margin-bottom: 16px;
   color: #2b2b2b;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
 `;
 
 const SublinkList = styled.ul`

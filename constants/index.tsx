@@ -8731,7 +8731,7 @@ export const Data = [
   {
     _id: 2,
     tag: "Moving",
-    bigImg: "/images/Subtract.png",
+    bigImg: "/images/Subtract (3).png",
     bike: "/images/Frame 2610192.png",
     foodImg: "/images/Frame 2610173.png",
     foodText:
@@ -8751,7 +8751,7 @@ export const Data = [
   {
     _id: 4,
     tag: "Cleaning",
-    bigImg: "/images/food.png",
+    bigImg: "/images/Subtract (2).png",
     bike: "/images/Frame 2610175.png",
     foodImg: "/images/Frame 2610173 (1).png",
     foodText:
@@ -9213,7 +9213,7 @@ export const ProductServiceLaundryData: ProductServiceLaundryType[] = [
   {
     _id: 1,
     tag: "Laundry",
-    bigImg: "/images/Subtract (2).png",
+    bigImg: "/images/laundry.png",
     bike: "/images/Frame 2610175.png",
     foodImg: "/images/image 157.png",
     foodText:
@@ -9461,6 +9461,290 @@ export const MobileOtherLaundry: OtherLaundryType[] = [
   },
 ];
 
+
+// ====== FoodDelivery and Moving Data ====== //
+export interface ProductServiceDeliveryAndMovingType {
+  _id?: number;
+  tag1?: string;
+  tag2?: string;
+  link?: string;
+  image?: string;
+  bigImg?: string;
+  foodText?: string;
+  map?: string;
+  foodImg?: string;
+  bike?: string;
+  title?: string;
+}
+
+export const ProductServiceDeliveryAndMovingData: ProductServiceDeliveryAndMovingType[] =
+  [
+    {
+      _id: 1,
+      tag1: "Food Delivery",
+      tag2: "Moving",
+      bigImg: "/images/moving.png",
+      bike: "/images/Frame 2610192.png",
+      foodImg: "/images/Frame 2610173.png",
+      foodText:
+        "Get your clothes washed and delivered to your door step within an hour.",
+        map: "/images/map.png",
+    },
+  ];
+
+export interface TopDeliveryAndMovingType {
+  _id?: number;
+  tag1?: string;
+  tag2?: string;
+  title?: string;
+  image?: string;
+  smallTitle?: string;
+  starIcon?: IconType;
+  rating?: string;
+  reviewsText?: string;
+  reviewsNum?: string;
+  locationIcon?: IconType;
+  locationText?: string;
+  timeNum?: string;
+  vistLink?: string;
+  arrowIcon?: IconType;
+}
+
+export interface OtherDeliveryAndMovingType {
+  _id?: number;
+  tag1?: string;
+  tag2?: string;
+  title?: string;
+  image?: string;
+  smallTitle?: string;
+  starIcon?: IconType;
+  rating?: string;
+  reviewsText?: string;
+  reviewsNum?: string;
+  locationIcon?: IconType;
+  locationText?: string;
+  timeNum?: string;
+  openTime?: string;
+  vistLink?: string;
+  arrowIcon?: IconType;
+}
+
+export const TopDeliveryAndMoving: TopDeliveryAndMovingType[] = [
+  {
+    title: "Top Moving Near You",
+  },
+  {
+    _id: 381753,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (16).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 231134,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (13).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 945332,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (14).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 127664,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (15).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+];
+
+export const OtherDeliveryAndMoving: OtherDeliveryAndMovingType[] = [
+  {
+    _id: 387653,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 231196,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 225332,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 497664,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (9).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+];
+export const MobileOtherDeliveryAndMoving: OtherDeliveryAndMovingType[] = [
+  {
+    _id: 387653,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (16).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "Closed",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 231196,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (13).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "Open",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 225332,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (14).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "closed",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+
+  {
+    _id: 497664,
+        tag1: "Food Delivery",
+    tag2: "Moving",
+    image: "/images/Rectangle 248 (15).png",
+    smallTitle: "WE HAVE MOVED",
+    starIcon: FaStar,
+    rating: "4.5",
+    reviewsText: "Reviews",
+    reviewsNum: "100",
+    locationIcon: GrLocation,
+    locationText: "Ikeja, Lagos",
+    timeNum: "9am - 10pm",
+    openTime: "Open",
+    vistLink: "/",
+    arrowIcon: FaArrowRightLong,
+  },
+];
+
 import { IoMdStopwatch } from "react-icons/io";
 import { FaStar } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
@@ -9470,6 +9754,310 @@ import { LuPhone } from "react-icons/lu";
 import { CiHeart } from "react-icons/ci";
 import { FaAngleRight } from "react-icons/fa";
 import { IoCheckmarkSharp } from "react-icons/io5";
+
+export const GroceriesVendor = [
+  {
+    title: "Most Sold",
+    items: [
+      {
+        id: "123",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "456",
+        img: "/images/Rectangle 248 (10).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "789",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "987",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "917",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "957",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "937",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "977",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+    ],
+  },
+];
+
+export const MinsGroceriesData = [
+  {
+    title: "30 minutes meal",
+    items: [
+      {
+        id: "1111",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "2222",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "3333",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "4444",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "5555",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "6677",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "9099",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "2033",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+    ],
+  },
+];
+
+export const FreeDeliveryGroceriesData = [
+  {
+    title: "Free Delivery",
+    items: [
+      {
+        id: "2311",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "2211",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "3241",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+      {
+        id: "5476",
+        img: "/images/Rectangle 248 (11).png",
+        prizeLink: "/cart",
+        favoriteIcon: MdFavoriteBorder,
+        smallTitle: "Fried Rice",
+        starIcon: FaStar,
+        rating: "4.5",
+        timeIcon: IoMdStopwatch,
+        timeText: "30mins",
+        remenderText: "10 liters remaining",
+        prizeText: "$40",
+        prizeIcon: FaBagShopping,
+      },
+    ],
+  },
+];
 
 export const FoodVendor = [
   {

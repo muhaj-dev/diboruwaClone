@@ -2,6 +2,11 @@ import React from "react";
 import { GetServerSideProps } from "next";
 import Groceries from "@/containers/groceries/Groceries";
 
+
+
+export const metadata = {
+  title: "Groceries",
+};
 // Define the type for the props that will be passed to the Page component
 interface PageProps {
   id: string;
