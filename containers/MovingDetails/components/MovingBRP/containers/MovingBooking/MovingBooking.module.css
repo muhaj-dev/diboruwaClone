@@ -7,6 +7,8 @@
 }
 
 .AddPropertyContainer {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .AddPropertyCards {
@@ -26,6 +28,7 @@
 }
 
 .AddPropertyCardText {
+  font-size: 16px;
 }
 
 .AddPropertyEditNameAndCounter {
@@ -33,6 +36,26 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.AddPropertyAddMore {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  color: #27a124;
+  margin: 1.5rem 0;
+}
+
+.AddPropertyAddMoreIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.AddPropertyAddMoreText {
+  font-size: 15px;
+  font-weight: 500;
+}
+
 /*====== Checkbox =====*/
 .MovingItemChoices {
   width: 100%;
@@ -84,7 +107,7 @@
   border: none;
   background: none;
   cursor: pointer;
-  color: #cccccc;
+  color: #a2a2a2;
 }
 
 /* ===== Property Counter ====== */
@@ -206,4 +229,88 @@
   color: #ff4d4d;
   margin-top: 10px;
   font-size: 14px;
+}
+
+/* ====== Moving Address ====== */
+.MovingBookingAddressContainer {
+  width: 100%;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.MovingBookingAddressContainerText {
+  color: #cccccc;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.MovingBookingAddressCards {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.MovingBookingAddressCard {
+  width: 100%;
+}
+
+.MovingBookingAddress_LocationDiv {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.MovingBookingAddressLocationText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+
+.MovingBookingAddressLocation {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.MovingBookingAddressLocationIcon {
+  color: #27a124;
+  width: 20px;
+  height: 20px;
+}
+
+.MovingBookingAddressTextarea {
+  width: 100%;
+  background: #f7f7f7;
+  resize: none;
+  padding: 1rem 0 0 1rem; 
+  outline: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+
+/* ===== Description ===== */
+
+.ItemsDescriptionContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.ItemsDescriptionText{
+    color: #cccccc;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ItemsDescriptionTextarea{
+   width: 100%;
+  background: #ffffff;
+  resize: none;
+  padding: 1rem 0 0 1rem; 
+  outline: none;
+  border-radius: 8px;
 }

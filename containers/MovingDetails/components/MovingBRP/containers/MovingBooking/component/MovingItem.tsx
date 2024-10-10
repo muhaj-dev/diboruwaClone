@@ -3,6 +3,8 @@ import React from "react";
 import styles from "../MovingBooking.module.css";
 import { CheckboxGroup } from "./CheckboxGroup";
 import { AddProperty } from "./AddProperty";
+import { MovingBookingAddress } from "./MovingBookingAddress";
+import { ItemsDescription } from "./ItemsDescription";
 export const MovingItem = () => {
   return (
     <div className={styles.MovingBookingContainer}>
@@ -14,7 +16,13 @@ export const MovingItem = () => {
         </div>
         <div className={styles.MovingPropertyContainer}>
           <AddProperty />
-      </div>
+        </div>
+        <div className={styles.Moving_AddressContainer}>
+          <MovingBookingAddress />
+        </div>
+        <div className={styles.Moving_ItemsDescription}>
+          <ItemsDescription />
+        </div>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import styles from "../MovingBooking.module.css";
 import { EditName } from "./EditName";
 import { PropertyCounter } from "./PropertyCounter";
 import { AddPropertyImage } from "./AddPropertyImage";
+import { AiOutlinePlus } from "react-icons/ai";
 
 export const AddProperty = () => {
   return (
@@ -17,6 +18,7 @@ export const AddProperty = () => {
           </div>
           <AddPropertyImage />
         </div>
+
         <div className={styles.AddPropertyCard}>
           <p className={styles.AddPropertyCardText}>You can edit your name</p>
 
@@ -26,6 +28,10 @@ export const AddProperty = () => {
           </div>
           <AddPropertyImage />
         </div>
+      </div>
+      <div className={styles.AddPropertyAddMore}>
+        <AiOutlinePlus className={styles.AddPropertyAddMoreIcon}/>
+        <p className={styles.AddPropertyAddMoreText}>Add More</p>
       </div>
     </div>
   );
