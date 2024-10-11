@@ -268,7 +268,7 @@
 .MovingBookingAddressLocationText {
   font-size: 14px;
   font-weight: 500;
- color: #2c2c2c;
+  color: #2c2c2c;
 }
 
 .MovingBookingAddressLocation {
@@ -287,59 +287,58 @@
   width: 100%;
   background: #f7f7f7;
   resize: none;
-  padding: 1rem 0 0 1rem; 
+  padding: 1rem 0 0 1rem;
   outline: none;
   border-radius: 5px;
   margin-top: 1rem;
 }
 
-
 /* ===== Description ===== */
 
-.ItemsDescriptionContainer{
+.ItemsDescriptionContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 1rem;
 }
 
-.ItemsDescriptionText{
-    color: #cccccc;
+.ItemsDescriptionText {
+  color: #cccccc;
   font-size: 15px;
   font-weight: 500;
 }
 
-.ItemsDescriptionTextarea{
-   width: 100%;
+.ItemsDescriptionTextarea {
+  width: 100%;
   background: #ffffff;
   resize: none;
-  padding: 1rem 0 0 1rem; 
+  padding: 1rem 0 0 1rem;
   outline: none;
   border-radius: 8px;
 }
 
 /* ====== Schedule Date and  Time ====== */
-.MovingScheduleContainer{
+.MovingScheduleContainer {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.MovingScheduleText{
-    color: #cccccc;
+.MovingScheduleText {
+  color: #cccccc;
   font-size: 15px;
   font-weight: 500;
 }
 
-.MovingScheduleCards{
+.MovingScheduleCards {
   display: flex;
-  width:100%;
+  width: 100%;
   align-items: center;
   gap: 2rem;
 }
 /* ====== Schedule Date ====== */
-.MovingScheduleDateCard{
+.MovingScheduleDateCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -347,37 +346,39 @@
   background: #ffffff;
   border-radius: 8px;
   padding: 1rem;
+  cursor: pointer;
 }
 
-.MovingScheduleDateFrame{
+.MovingScheduleDateFrame {
   display: flex;
   align-items: center;
   gap: 0.7rem;
 }
 
-.MovingScheduleDateIcon{
+.MovingScheduleDateIcon {
   width: 25px;
   height: 25px;
 }
 
-.MovingScheduleDate{
+.MovingScheduleDate {
   display: flex;
   flex-direction: column;
 }
 
-.MovingScheduleDateText, .MovingScheduleDateNum{
- font-size: 13px;
- font-weight: 500;
- color: #2c2c2c;
+.MovingScheduleDateText,
+.MovingScheduleDateNum {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2c2c2c;
 }
 
-.MovingScheduleDateText{
+.MovingScheduleDateText {
   font-size: 12px;
   color: #cccccc;
 }
 
 /* ====== Schedule Time ====== */
-.MovingScheduleTimeCard{
+.MovingScheduleTimeCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -385,39 +386,39 @@
   background: #ffffff;
   border-radius: 8px;
   padding: 1rem;
+  cursor: pointer;
 }
 
-.MovingScheduleTimeFrame{
+.MovingScheduleTimeFrame {
   display: flex;
   align-items: center;
   gap: 0.7rem;
 }
 
-.MovingScheduleTimeIcon{
+.MovingScheduleTimeIcon {
   width: 25px;
   height: 25px;
 }
 
-.MovingScheduleTime{
+.MovingScheduleTime {
   display: flex;
   flex-direction: column;
 }
 
-.MovingScheduleTimeText, .MovingScheduleTimeNum{
- font-size: 13px;
- font-weight: 500;
- color: #2c2c2c;
+.MovingScheduleTimeText,
+.MovingScheduleTimeNum {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2c2c2c;
 }
 
-.MovingScheduleTimeText{
+.MovingScheduleTimeText {
   font-size: 12px;
   color: #cccccc;
 }
 
-
-
 /* ===== Button ===== */
-.MovingDoneButton{
+.MovingDoneButton {
   display: flex;
   width: 100%;
   align-items: center;
