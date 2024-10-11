@@ -45,6 +45,8 @@
   color: #27a124;
   margin: 1.5rem 0 0;
   cursor: pointer;
+  margin-left: auto;
+  width: 6rem;
 }
 
 .AddPropertyAddMoreIcon {
