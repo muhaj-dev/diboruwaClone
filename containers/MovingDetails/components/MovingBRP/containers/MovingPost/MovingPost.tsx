@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from './MovingPost.module.css'
+import { VendorPost } from './components/VendorPost'
 export const MovingPost = () => {
   return (
     <>
-    <VendorPost />
+      <VendorPost />
     </>
   )
 }
