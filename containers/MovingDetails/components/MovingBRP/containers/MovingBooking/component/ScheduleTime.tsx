@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import styles from "../MovingBooking.module.css";
 import { CiClock2 } from "react-icons/ci";
 import { FaAngleDown } from "react-icons/fa6";

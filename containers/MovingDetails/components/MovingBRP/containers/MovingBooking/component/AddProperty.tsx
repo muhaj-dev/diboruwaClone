@@ -29,10 +29,10 @@ export const AddProperty = () => {
           <AddPropertyImage />
         </div>
       </div>
-      <div className={styles.AddPropertyAddMore}>
+      <button type='button' className={styles.AddPropertyAddMore}>
         <AiOutlinePlus className={styles.AddPropertyAddMoreIcon}/>
         <p className={styles.AddPropertyAddMoreText}>Add More</p>
-      </div>
+      </button>
     </div>
   );
 };
