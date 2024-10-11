@@ -5,6 +5,8 @@ import { CheckboxGroup } from "./CheckboxGroup";
 import { AddProperty } from "./AddProperty";
 import { MovingBookingAddress } from "./MovingBookingAddress";
 import { ItemsDescription } from "./ItemsDescription";
+import { MovingSchedule } from "./MovingSchedule";
+import { Button } from "@/component/shared/Button";
 export const MovingItem = () => {
   return (
     <div className={styles.MovingBookingContainer}>
@@ -23,6 +25,8 @@ export const MovingItem = () => {
         <div className={styles.Moving_ItemsDescription}>
           <ItemsDescription />
         </div>
+        <MovingSchedule />
+        <Button text="Done" onClick={() => {}} className={styles.MovingDoneButton}/>
       </div>
     </div>
   );
