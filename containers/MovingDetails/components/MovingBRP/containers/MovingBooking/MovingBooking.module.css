@@ -44,6 +44,7 @@
   gap: 0.5rem;
   color: #27a124;
   margin: 1.5rem 0 0;
+  cursor: pointer;
 }
 
 .AddPropertyAddMoreIcon {
