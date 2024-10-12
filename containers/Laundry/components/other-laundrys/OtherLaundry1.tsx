@@ -49,7 +49,7 @@ export const OtherLaundry1: React.FC = () => {
               </div>
 
               <Link
-                href={`/restaurant/${item._id}`}
+                href={`/laundry/${item._id}`}
                 className="other_Laundry_visit-link"
               >
                 <p className="other_Laundry_visit-link_text">visit</p>
