@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { LiaAngleRightSolid } from "react-icons/lia";
@@ -132,10 +133,10 @@ export const RestSub = () => {
     <div className="RestSub_container">
       <div className="customSub">
         <p className="customSub_Title">Subscription Plan</p>
-        <button className="restaurantSub">
+        <Link href='/custom-laundry-subscriptions' className="restaurantSub">
           <p className="restaurantSubText">Custom Subscription</p>
           <LiaAngleRightSolid className="restaurantSubIcon" />
-        </button>
+        </Link>
       </div>
       <div className="Cust_sub_cards">
         {visibleData.map((plan: RestSubPlansDataType, index) => (
