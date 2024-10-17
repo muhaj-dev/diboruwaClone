@@ -1,6 +1,8 @@
 .RequestSubscription_Container {
   border-radius: 9.043px;
   background: #fcfcfc;
+  height: 70rem;
+  width: 70%;
 }
 
 .RequestSubscription_Text {
@@ -48,7 +50,7 @@
   padding: 11.25px 19.086px 10.75px 18.914px;
 }
 
-.RequestSubscription_SetDay:hover{
+.RequestSubscription_SetDay:hover {
   color: #27a124;
 }
 
@@ -70,27 +72,25 @@
   padding: 11.25px 19.086px 10.75px 18.914px;
 }
 
-.RequestSubscription_SetDuration:hover{
+.RequestSubscription_SetDuration:hover {
   color: #27a124;
 }
 
 /*====== Laundry Item Choices =====*/
-.RequestSubscription_LaundryContainer{
+.RequestSubscription_LaundryContainer {
   padding: 1rem 0;
   width: 100%;
 }
 
 .RequestSubscription_LaundryContent {
   border-radius: 10px;
-background: var(--White, #FEFEFE);
-width: 100%;
-padding: 0.8rem 2rem 1rem 0.5rem;
-display: flex;
+  background: var(--White, #fefefe);
+  width: 100%;
+  padding: 0.8rem 2rem 1rem 0.5rem;
+  display: flex;
   flex-direction: column;
   gap: 0.89rem;
-
 }
-
 
 .LaundryItemsGroupCard {
   display: flex;
@@ -131,7 +131,7 @@ display: flex;
 }
 
 /*====== Add Property =====*/
-.RequestSubscription_RequestSubAddExtraItem{
+.RequestSubscription_RequestSubAddExtraItem {
   padding: 1rem 2.5rem;
 }
 .AddPropertyContainer {
@@ -150,7 +150,7 @@ display: flex;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: #ffffff;
+  background: #fefefe;
   padding: 0.7rem;
   border-radius: 8px;
 }
@@ -334,7 +334,7 @@ display: flex;
 }
 
 /* ===== Description ===== */
-.RequestSubscription_RequestSubDescriptions{
+.RequestSubscription_RequestSubDescriptions {
   padding: 1rem 2.5rem;
 }
 
@@ -353,7 +353,7 @@ display: flex;
 
 .ItemsDescriptionTextarea {
   width: 100%;
-  background: #ffffff;
+  background: rgba(246, 246, 246, 0.66);
   resize: none;
   padding: 1rem 0 0 1rem;
   outline: none;
@@ -374,9 +374,14 @@ display: flex;
   background: rgba(183, 224, 182, 0.2);
 }
 
-.RequestSub_Weaning{
+.RequestSub_Weaning {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.7rem
+  gap: 0.1rem;
+  margin-top: 1rem;
+}
+
+.RequestSub_WeaningIcon{
+  color: var(--green2, #4bb149);
 }

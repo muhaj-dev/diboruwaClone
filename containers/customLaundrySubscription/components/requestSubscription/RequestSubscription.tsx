@@ -11,9 +11,7 @@ import { BsExclamationCircle } from "react-icons/bs";
 export const RequestSubscription = () => {
   return (
     <div className={styles.RequestSubscription_Container}>
-      <p className={styles.RequestSubscription_Text}>
-        My Subscription Request
-      </p>
+      <p className={styles.RequestSubscription_Text}>My Subscription Request</p>
       <hr className={styles.RequestSubscription_Line} />
       <div className={styles.RequestSubscription_DayDurationAndLaundry}>
         <div className={styles.RequestSubscription_DayDuration}>
@@ -37,8 +35,12 @@ export const RequestSubscription = () => {
       />
 
       <div className={styles.RequestSub_Weaning}>
-        <BsExclamationCircle />
-        Please note that the service will begin at the start of the week onceyour request is approved.
+        <BsExclamationCircle className={styles.RequestSub_WeaningIcon} />
+       <p className={styles.RequestSub_WeaningText}>
+         Please note that the service will begin at the start of the week
+        once your request is approved.
+        
+        </p>
       </div>
     </div>
   );
