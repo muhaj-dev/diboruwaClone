@@ -1,12 +1,22 @@
 import React, { useState } from "react";
 import "./custombooking.css";
+import { CustomBookingModal } from "./CustomBookingModal";
 
 const CustomBooking: React.FC = () => {
   const [activeButton, setActiveButton] = useState<string>("All");
+   const [isModalOpen, setIsModalOpen] = useState<boolean>(true);
 
   const handleButtonClick = (label: string) => {
     setActiveButton(label);
   };
+
+    const openModal = () => {
+      setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
 
   return (
     <div className="custombooking_container">
@@ -16,7 +26,9 @@ const CustomBooking: React.FC = () => {
             {["All", "30 Mins", "45 Mins", "1 Hr", "2 Hr"].map((label) => (
               <button
                 key={label}
-                className={`min-button ${activeButton === label ? "active" : ""}`}
+                className={`min-button ${
+                  activeButton === label ? "active" : ""
+                }`}
                 onClick={() => handleButtonClick(label)}
               >
                 {label}
@@ -37,9 +49,10 @@ const CustomBooking: React.FC = () => {
             />
           </div>
         </div>
-        <button type="submit" className="custombooking-btn">
+        <button type="button" className="custombooking-btn" onClick={openModal}>
           Custom Booking
         </button>
+        <CustomBookingModal isOpen={isModalOpen} onClose={closeModal} />
       </div>
     </div>
   );

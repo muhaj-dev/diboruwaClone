@@ -1,26 +1,24 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./RequestConfirmation.module.css";
-import Checkbox from "@/component/Checkbox/Checkbox";
-import { CiEdit } from "react-icons/ci";
-export const RequestConfirmation = () => {
+import { Checkbox } from "@/component/Checkbox/Checkbox";
+import { DeliveryAddress } from "@/component/deliveryAddress/DeliveryAddress";
+
+
+export const RequestConfirmation: React.FC = () => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
-  const [address, setAddress] = useState<string>("123 Main St, City, Country");
-  const [isEditing, setIsEditing] = useState<boolean>(false);
+  const [address, setAddress] = useState<string>(
+    "456 Elm St, Another City, Country"
+  );
+
+  const handleAddressUpdate = (newAddress: string) => {
+    setAddress(newAddress);
+  };
 
   const handleCheckboxChange = (checked: boolean) => {
     setIsChecked(checked);
   };
 
- const handleAddressChange = (
-   event: React.ChangeEvent<HTMLTextAreaElement>
- ): void => {
-   setAddress(event.target.value);
- };
-
- const toggleEdit = (): void => {
-   setIsEditing((prev) => !prev);
- };
   return (
     <div className={styles.RequestConfirmationContainer}>
       <div className={styles.RequestConfirmationContainerText}>
@@ -56,37 +54,11 @@ export const RequestConfirmation = () => {
         </div>
         <hr />
       </div>
-<div className={styles.RequestConfirmation_DeliveryAddressContainer}>
-      <div className={styles.RequestConfirmation_DeliveryAddressTxTEdit}>
-        <p className={styles.RequestConfirmation_DeliveryAddressTxT}>
-          Delivery Location
-        </p>
-        <div className={styles.RequestConfirmation_DeliveryAddressEdit} onClick={toggleEdit}>
-          <CiEdit className={styles.RequestConfirmation_DeliveryAddressEditIcon} />
-          <p className={styles.RequestConfirmation_DeliveryAddressEditText}>
-            {isEditing ? "Save" : "Edit"}
-          </p>
-        </div>
-      </div>
-      <div className={styles.RequestConfirmation_DeliveryAddress}>
-        <label htmlFor="address">Address</label>
-        {isEditing ? (
-          <textarea
-            id="address"
-            name="Address"
-            className={styles.RequestConfirmation_DeliveryAddressTxTArea}
-            value={address}
-            onChange={handleAddressChange}
-            cols={30}
-            rows={6}
-          ></textarea>
-        ) : (
-          <p className={styles.RequestConfirmation_DeliveryAddressTxTDisplay}>
-            {address}
-          </p>
-        )}
-      </div>
-    </div>
+      <DeliveryAddress
+        address={address}
+        onAddressChange={handleAddressUpdate}
+        label="Delivery Location"
+      />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "../LaundryBooking.module.css";
 import { EditName } from "./EditName";
-import { PropertyCounter } from "./PropertyCounter";
 import { AddPropertyImage } from "./AddPropertyImage";
 import { AiOutlinePlus } from "react-icons/ai";
+import { PropertyCounter } from "@/component/CustomCounter/PropertyCounter";
 
 export const AddProperty = () => {
   return (

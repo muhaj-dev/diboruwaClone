@@ -8,7 +8,7 @@ export const RequestSubDescriptions = () => {
         Description
       </label>
       <textarea
-        name="Address"
+        name="Description"
         className={styles.ItemsDescriptionTextarea}
         placeholder="Write..."
         cols={30}

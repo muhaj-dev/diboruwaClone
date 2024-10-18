@@ -385,17 +385,16 @@
   padding: 1rem 2.5rem;
 }
 
-.RequestSub_WeaningIcon{
+.RequestSub_WeaningIcon {
   color: var(--green2, #4bb149);
 }
 
-.RequestSub_WeaningText{
+.RequestSub_WeaningText {
   font-size: 12px;
 }
 
-
 @media screen and (min-width: 1100px) {
-  .RequestSub_WeaningText{
+  .RequestSub_WeaningText {
     font-size: 13px;
   }
 }
