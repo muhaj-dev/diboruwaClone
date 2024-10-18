@@ -4,7 +4,7 @@ import { CustomBookingModal } from "./CustomBookingModal";
 
 const CustomBooking: React.FC = () => {
   const [activeButton, setActiveButton] = useState<string>("All");
-   const [isModalOpen, setIsModalOpen] = useState<boolean>(true);
+   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const handleButtonClick = (label: string) => {
     setActiveButton(label);
