@@ -1,16 +1,16 @@
-import { RestaurantDetails } from '@/containers/restaurantDetails/RestaurantDetails'
-import React from 'react'
+import { RestaurantDetails } from "@/containers/restaurantDetails/RestaurantDetails";
+import React from "react";
 
 export const metadata = {
-  title: "Restaurant",
+  title: "Restaurant Details",
 };
 
 const page = () => {
   return (
     <>
-    <RestaurantDetails />
-      </>
-  )
-}
+      <RestaurantDetails />
+    </>
+  );
+};
 
-export default page
+export default page;

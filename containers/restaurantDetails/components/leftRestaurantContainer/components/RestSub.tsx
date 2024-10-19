@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { LiaAngleRightSolid } from "react-icons/lia";
 import { IconType } from "react-icons/lib";
+import { ViewSubscription } from "./ViewSubscription";
 
 export interface RestSubPlansDataType {
   subImg: string;
@@ -15,7 +16,7 @@ export interface RestSubPlansDataType {
   }[];
   subFeeText: string;
   ViewSubDetailsLink: string;
-};
+}
 
 const RestSubPlansData: RestSubPlansDataType[] = [
   {
@@ -122,10 +123,23 @@ const RestSubPlansData: RestSubPlansDataType[] = [
 
 export const RestSub = () => {
   const [showAll, setShowAll] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [selectedSubscription, setSelectedSubscription] =
+    useState<RestSubPlansDataType | null>(null);
   const visibleData = showAll ? RestSubPlansData : RestSubPlansData.slice(0, 2);
 
   const handleSeeMoreClick = () => {
     setShowAll(!showAll);
+  };
+
+  const handleViewDetailsClick = (subscription: RestSubPlansDataType) => {
+    setSelectedSubscription(subscription);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedSubscription(null);
   };
 
   return (
@@ -170,7 +184,12 @@ export const RestSub = () => {
               <p className="Cust_sub_amount_text SA_amount">{plan.subAmount}</p>
             </div>
             <hr className="Cust_sub_line_divider" />
-            <button className="Cust_sub_btn">{plan.ViewSubDetailsLink}</button>
+            <button
+              className="Cust_sub_btn"
+              onClick={() => handleViewDetailsClick(plan)}
+            >
+              {plan.ViewSubDetailsLink}
+            </button>
           </div>
         ))}
       </div>
@@ -178,6 +197,12 @@ export const RestSub = () => {
         <p className="SeeMore_SubText">{showAll ? "See Less" : "See More"}</p>
         <LiaAngleRightSolid className="SeeMore_SubIcon" />
       </button>
+
+      <ViewSubscription
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        subscriptionData={selectedSubscription}
+      />
     </div>
   );
 };
