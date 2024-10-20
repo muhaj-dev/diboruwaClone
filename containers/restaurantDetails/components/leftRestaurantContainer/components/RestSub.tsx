@@ -5,6 +5,7 @@ import { IoCheckmarkSharp } from "react-icons/io5";
 import { LiaAngleRightSolid } from "react-icons/lia";
 import { IconType } from "react-icons/lib";
 import { ViewSubscription } from "./ViewSubscription";
+import Link from "next/link";
 
 export interface RestSubPlansDataType {
   subImg: string;
@@ -146,10 +147,10 @@ export const RestSub = () => {
     <div className="RestSub_container">
       <div className="customSub">
         <p className="customSub_Title">Subscription Plan</p>
-        <button className="restaurantSub">
+        <Link href="/custom-restaurant-subscriptions" className="restaurantSub">
           <p className="restaurantSubText">Custom Subscription</p>
           <LiaAngleRightSolid className="restaurantSubIcon" />
-        </button>
+        </Link>
       </div>
       <div className="Cust_sub_cards">
         {visibleData.map((plan: RestSubPlansDataType, index) => (

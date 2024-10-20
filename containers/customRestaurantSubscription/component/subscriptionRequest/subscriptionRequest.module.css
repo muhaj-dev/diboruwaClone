@@ -1,0 +1,41 @@
+.SubscriptionRequestContent {
+  display: flex;
+  width: 100%;
+  gap: 1.4rem;
+  flex-direction: column;
+}
+
+.SubscriptionRequest_ScheduleMeetingDate {
+  display: flex;
+  width: 100%;
+  padding: 22.608px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background: #fefefe;
+  gap: 32px;
+}
+
+.DeliveryType {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.DeliveryType_Title {
+  color: var(--Ash-100, #8f8f8f);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.DeliveryType_ChooseType {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}

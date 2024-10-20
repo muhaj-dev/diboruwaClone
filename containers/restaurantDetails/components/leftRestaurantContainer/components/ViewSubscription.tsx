@@ -68,7 +68,10 @@ export const ViewSubscription: React.FC<SubscriptionModalProps> = ({
           <BackButton2 onClick={handleBack} />
           {!isCourierStep && (
             // Only show the custom subscription link if not in the courier step
-            <Link href="#" className="modal_customSub_link">
+            <Link
+              href="/custom-restaurant-subscriptions"
+              className="modal_customSub_link"
+            >
               <p className="customSub_linkText">Custom subscription</p>
               <LiaAngleRightSolid className="customSub_linkIcon" />
             </Link>
