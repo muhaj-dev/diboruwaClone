@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import styles from "../subscriptionRequest.module.css"
 import { Checkbox } from "@/component/Checkbox/Checkbox";
 
-export const ScheduleMeetingDate = () => {
+export const PickADate = () => {
  const [isWeeklyChecked, setIsWeeklyChecked] = useState<boolean>(false);
  const [isBiWeeklyChecked, setIsBiWeeklyChecked] = useState<boolean>(false);
  const [isMonthlyChecked, setIsMonthlyChecked] = useState<boolean>(false);
