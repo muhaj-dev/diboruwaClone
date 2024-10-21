@@ -4,7 +4,6 @@ import styles from "./RequestConfirmation.module.css";
 import { Checkbox } from "@/component/Checkbox/Checkbox";
 import { DeliveryAddress } from "@/component/deliveryAddress/DeliveryAddress";
 
-
 export const RequestConfirmation: React.FC = () => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [address, setAddress] = useState<string>(

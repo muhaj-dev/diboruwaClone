@@ -1,7 +1,7 @@
 import { BackButton } from "@/component/ui/BackButton/BackButton";
 import styles from "./CustomRestaurantSub.module.css";
 import React from "react";
-import { RequestConfirmation } from "./component/requestConfirmation/RequestConfirmation";
+import { SubscriptionRequestConfirmation } from "./component/SubscriptionRequestConfirmation/SubscriptionRequestConfirmation";
 import { SubscriptionRequest } from "./component/subscriptionRequest/SubscriptionRequest";
 
 export const CustomRestaurantSub = () => {
@@ -13,7 +13,7 @@ export const CustomRestaurantSub = () => {
       </p>
       <div className={styles.CustomRestaurantSub_content}>
         <SubscriptionRequest />
-        <RequestConfirmation />
+        <SubscriptionRequestConfirmation />
       </div>
     </div>
   );

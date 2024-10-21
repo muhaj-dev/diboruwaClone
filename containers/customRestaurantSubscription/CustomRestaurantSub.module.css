@@ -3,12 +3,24 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .CustomRestaurantSub_container {
+    width: 95%;
+  }
+}
+
 .CustomRestaurantSub_content {
   display: flex;
   gap: 1.5rem;
-  height: 75rem;
+  height: 100%;
   width: 100%;
   padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .CustomRestaurantSub_content {
+    flex-direction: column;
+  }
 }
 
 .CustomRestaurantSub_contentTitle {
@@ -20,4 +32,3 @@
   font-weight: 400;
   line-height: normal;
 }
-

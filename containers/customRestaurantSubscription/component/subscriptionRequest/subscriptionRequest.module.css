@@ -1,3 +1,7 @@
+.SubscriptionRequestContainer{
+  width: 100%;
+}
+
 .SubscriptionRequestContent {
   display: flex;
   width: 100%;

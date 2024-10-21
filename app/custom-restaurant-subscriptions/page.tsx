@@ -7,9 +7,9 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
+    <>
       <CustomRestaurantSub />
-    </div>
+    </>
   );
 };
 
