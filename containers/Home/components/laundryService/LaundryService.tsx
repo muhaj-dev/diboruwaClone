@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./laundry.css";
 
 export default function LaundryService() {
@@ -11,18 +12,18 @@ export default function LaundryService() {
           <img
             src="/images/image 159 (1).png"
             className="laundry_desktop-image"
-            alt="resturant guys"
+            alt="Laundry guys"
           />
           <div className="laundry_mobile-image">
             <img
               src="/images/image 161.png"
               className="laundry_img-main"
-              alt="resturant guys"
+              alt="Laundry guys"
             />
             <img
               src="/images/image 158.png"
               className="laundry_mobile-img"
-              alt="resturant guys"
+              alt="Laundry guys"
             />
           </div>
         </div>
@@ -35,9 +36,9 @@ export default function LaundryService() {
             cleaned, folded, and delivered with care, so you can spend less time
             on chores and more time doing what you love.
           </p>
-          <a href="/laundry" className="Check-Out_Vendors">
+          <Link href="/laundry" className="Check-Out_Vendors">
             Book Now
-          </a>
+          </Link>
           </div>
           <div className="laundry-service_img">
             <img

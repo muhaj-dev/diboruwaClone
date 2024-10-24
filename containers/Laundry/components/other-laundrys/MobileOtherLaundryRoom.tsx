@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./other-laundry.css";
 import Link from "next/link";
-import {
-  MobileOtherLaundry,
-  OtherLaundryType,
-} from "@/constants";
+import { MobileOtherLaundry, OtherLaundryType } from "@/constants";
 
 export const MobileOtherLaundryRoom: React.FC = () => {
   return (
@@ -40,17 +37,14 @@ export const MobileOtherLaundryRoom: React.FC = () => {
                   <div className="Mobileother_Laundry_location">
                     {item.locationIcon &&
                       React.createElement(item.locationIcon, {
-                        className:
-                          "Mobileother_Laundry_top_rated_loction_icon",
+                        className: "Mobileother_Laundry_top_rated_loction_icon",
                       })}
                     <div className="Mobileother_Laundry_location-text">
                       {item.locationText}
                     </div>
                   </div>
                   <div className="Mobileother_Laundry_time_dot"></div>
-                  <div className="Mobileother_Laundry_time">
-                    {item.timeNum}
-                  </div>
+                  <div className="Mobileother_Laundry_time">{item.timeNum}</div>
                   <div className="Mobileother_Laundry_time_dot"></div>
                   <div
                     className={`Mobileother_Laundry_OpeningTime 
@@ -66,7 +60,7 @@ export const MobileOtherLaundryRoom: React.FC = () => {
               </div>
 
               <Link
-                href={`/restaurant/${item._id}`}
+                href={`/laundry/${item._id}`}
                 className="Mobileother_Laundry_visit-link"
               >
                 <p className="Mobileother_Laundry_visit-link_text">visit</p>

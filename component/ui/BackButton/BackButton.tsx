@@ -38,21 +38,38 @@ const Container = styled.button`
 
 interface BackButtonProps {
   className?: string;
+  onClick?: () => void;
 }
 
-export const BackButton: React.FC<BackButtonProps> = ({className}) => {
+export const BackButton: React.FC<BackButtonProps> = ({className, onClick}) => {
   const router = useRouter();
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick()
+    } else (
+      router.back()
+    )
+  }
   return (
-    <Container onClick={() => router.back()} className={className}>
+    <Container onClick={handleClick} className={className}>
       <ArrowLeftIcon className="icon" /> <span className="span_back">Back</span>
     </Container>
   );
 };
 
-export const BackButton2 = () => {
+export const BackButton2: React.FC<BackButtonProps> = ({ className, onClick }) => {
   const router = useRouter();
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick()
+    } else (
+      router.back()
+    )
+  }
   return (
-    <Container onClick={() => router.back()}>
+    <Container onClick={handleClick} className={className}>
       <LiaAngleLeftSolid className="icon" />{" "}
       <span className="span_back">Back</span>
     </Container>
