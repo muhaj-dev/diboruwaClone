@@ -1,7 +1,8 @@
 import React from 'react'
 import { MdAdd } from "react-icons/md";
-import styles from "./about-food.module.css"
+import styles from "../../../../../containers/foodDetails/containers/detailed-food-container/about-food/about-food.module.css"
 
+// about-food.module.css
 export const AdditionBtn = () => {
   return (
     <div className={styles.addmore_container}>
