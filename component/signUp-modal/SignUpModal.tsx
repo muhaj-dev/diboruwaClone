@@ -12,7 +12,7 @@ import { FaFacebook } from "react-icons/fa";
 import styles from "./signUpModal.module.css";
 
 type AuthModalProps = {
-  type: "signup" | "signin";
+  type: "signup";
   AuthCloseModal: () => void;
   switchModal: (type: "signup" | "signin") => void;
   isModal?: boolean;
@@ -85,23 +85,34 @@ export const SignUpModal: React.FC<AuthModalProps> = ({
         <div className={styles.AuthButtons}>
           <AuthButton
             className={styles.Auth_Button}
+            AuthIcon={styles.Auth_Icon}
+            buttonTextClass={styles.buttonText}
             icon={FcGoogle}
             text="Sign Up with Google"
           />
           <AuthButton
             className={styles.Auth_Button}
+            buttonTextClass={styles.buttonText}
+            AuthIcon={styles.Auth_Icon}
+            FacebookColorClass={styles.Facebook_Color}
             icon={FaFacebook}
             text="Sign Up with Facebook"
           />
         </div>
+
+        <div className={styles.choice_container}>
+          <div className={styles.choice_line}></div>
+          <p className={styles.choice_Text}>Or sign up with</p>
+          <div className={styles.choice_line}></div>
+        </div>
+
         <div>
           <Modal open={isModal} onClose={() => router.back()}>
             <AuthForm
-              title="Sign Up"
               fields={signUpFields}
               onSubmit={handleSignUp}
               onInputChange={handleInputChange}
-              submitButtonText="Sign Up"
+              submitButtonText="Continue"
               loading={loading}
               isFormValid={isFormValid()}
             />
@@ -114,6 +125,15 @@ export const SignUpModal: React.FC<AuthModalProps> = ({
             />
           )}
         </div>
+        <small className={styles.AuthFormSmall}>
+          Already have an account?
+          <span
+            className={styles.AuthFormSmall_Sign_InSwitch}
+            onClick={() => switchModal && switchModal("signin")}
+          >
+            Login
+          </span>
+        </small>
       </form>
     </div>
   );

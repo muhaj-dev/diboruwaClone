@@ -8,14 +8,14 @@ import Link from "next/link";
 import Loader from "./Loader";
 
 export interface AuthFormProps {
-  title: string;
+  title?: string;
   fields: AuthField[];
   onSubmit: (formData: { [key: string]: string }) => void;
   onInputChange?: (name: string, value: string) => void;
   submitButtonText?: string;
   loading: boolean;
   isFormValid?: boolean;
-  switchModal?: (type: "signup" | "signin") => void; // added prop for switching modals
+  switchModal?: (type: "signup" | "signin") => void;
 }
 
 export interface AuthField {
@@ -27,6 +27,7 @@ export interface AuthField {
 
 const AuthFormContainer = styled.div`
   /* Add your styling for the container here */
+  width: 100%;
 `;
 
 const AuthFormTitle = styled.h2`
@@ -38,29 +39,37 @@ const AuthFormWrapper = styled.form`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 100%;
 `;
 
 const AuthFormFieldWrapper = styled.div``;
 
-const AuthFormAlternateRoute = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-`;
+// const AuthFormAlternateRoute = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   margin-top: 15px;
+// `;
 
-const AuthFormSmall = styled.small`
-  color: #555555;
-  cursor: pointer;
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-`;
+// const AuthFormSmall = styled.small`
+//   color: #555555;
+//   cursor: pointer;
+//   a {
+//     color: inherit;
+//     text-decoration: none;
+//   }
 
-// Function to check password strength and provide feedback
+//   span {
+//     color: #0070f3; /* Customize this color */
+//     cursor: pointer;
+//     &:hover {
+//       text-decoration: underline;
+//     }
+//   }
+// `;
+
+// Password strength feedback function
 function getPasswordStrengthError(password: string) {
-  if (password.length === 0) return ""; // No errors for empty input
-
+  if (password.length === 0) return "";
   const minLength = 8;
   const hasUppercase = /[A-Z]/.test(password);
   const hasLowercase = /[a-z]/.test(password);
@@ -98,7 +107,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
   submitButtonText = "Submit",
   loading = false,
   isFormValid,
-  switchModal, // Destructure switchModal to handle modal switching
+  switchModal,
 }) => {
   const initialState = fields.reduce<{ [key: string]: string }>(
     (acc, field) => ({ ...acc, [field.name]: "" }),
@@ -133,7 +142,6 @@ const AuthForm: React.FC<AuthFormProps> = ({
 
   return (
     <AuthFormContainer>
-      <AuthFormTitle>{title}</AuthFormTitle>
       <AuthFormWrapper onSubmit={handleSubmit}>
         {fields.map((field) => (
           <AuthFormFieldWrapper key={field.name}>
@@ -159,7 +167,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
             />
           </AuthFormFieldWrapper>
         ))}
-        
+
         <Button
           size="medium"
           color="primary"
@@ -167,24 +175,30 @@ const AuthForm: React.FC<AuthFormProps> = ({
         >
           {loading ? <Loader /> : submitButtonText}
         </Button>
-        <AuthFormAlternateRoute>
+
+
+        {/* <AuthFormAlternateRoute>
           {title === "Sign In" ? (
             <>
-              <AuthFormSmall
-                onClick={() => switchModal && switchModal("signup")}
-              >
-                Don&#39;t have an account? <div>Sign Up</div>
+              <AuthFormSmall>
+                Don&#39;t have an account?
+                <span onClick={() => switchModal && switchModal("signup")}>
+                  Sign up
+                </span>
               </AuthFormSmall>
               <AuthFormSmall>
                 <Link href="/forgot-password">Forgot Password?</Link>
               </AuthFormSmall>
             </>
           ) : (
-            <AuthFormSmall onClick={() => switchModal && switchModal("signin")}>
-              Already have an account? <div>Sign In</div>
+            <AuthFormSmall>
+              Already have an account?
+              <span onClick={() => switchModal && switchModal("signin")}>
+                Sign in
+              </span>
             </AuthFormSmall>
           )}
-        </AuthFormAlternateRoute>
+        </AuthFormAlternateRoute> */}
       </AuthFormWrapper>
     </AuthFormContainer>
   );

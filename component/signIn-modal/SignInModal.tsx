@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import { AuthButton } from "../shared/Button";
 
-import styles from "./signInModal.module.css"
+import styles from "./signInModal.module.css";
 
 import useAuth from "@/hooks/useAuth";
 import AuthForm, { AuthField } from "../AuthForm";
@@ -14,9 +14,10 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { useSession } from "next-auth/react";
 import NotificationModal from "../NotificationModal";
+import Link from "next/link";
 
 type AuthModalProps = {
-  type: "signup" | "signin";
+  type: "signin";
   AuthCloseModal: () => void;
   switchModal: (type: "signup" | "signin") => void;
   isModal?: boolean;
@@ -72,23 +73,31 @@ export const SignInModal: React.FC<AuthModalProps> = ({
         <div className={styles.AuthButtons}>
           <AuthButton
             className={styles.Auth_Button}
+            AuthIcon={styles.Auth_Icon}
+            buttonTextClass={styles.buttonText}
             icon={FcGoogle}
             text="Continue with Google"
           />
           <AuthButton
             className={styles.Auth_Button}
+            buttonTextClass={styles.buttonText}
+            AuthIcon={styles.Auth_Icon}
+            FacebookColorClass={styles.Facebook_Color}
             icon={FaFacebook}
             text="Continue with Facebook"
           />
         </div>
-
+        <div className={styles.choice_container}>
+          <div className={styles.choice_line}></div>
+          <p className={styles.choice_Text}>Or login with</p>
+          <div className={styles.choice_line}></div>
+        </div>
         <div className="">
           <Modal open={isModal} onClose={() => router.back()}>
             <AuthForm
-              title="Sign In"
               fields={signInFields}
               onSubmit={handleSignIn}
-              submitButtonText="Sign In"
+              submitButtonText="Continue"
               loading={loading}
             />
           </Modal>
@@ -99,6 +108,20 @@ export const SignInModal: React.FC<AuthModalProps> = ({
               onClose={closeModal}
             />
           )}
+        </div>
+        <div className={styles.Auth_Question}>
+          <small className={styles.AuthFormSmall}>
+            Don&#39;t have an account?
+            <span
+              className={styles.AuthFormSmall_Sign_InSwitch}
+              onClick={() => switchModal && switchModal("signup")}
+            >
+              Sign up
+            </span>
+          </small>
+          <small className={styles.AuthFormSmall}>
+            <Link href="/forgot-password">Forgot Password?</Link>
+          </small>
         </div>
       </form>
     </div>

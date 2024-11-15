@@ -10,6 +10,9 @@ interface AuthButtonProps {
   text: string;
   icon: IconType;
   className?: string;
+  AuthIcon?: string;
+  FacebookColorClass?: string;
+  buttonTextClass?: string;
   onClick?: () => void;
 }
 
@@ -28,12 +31,15 @@ export const AuthButton: React.FC<AuthButtonProps> = ({
   text,
   icon: Icon,
   className = "",
+  AuthIcon = "",
+  FacebookColorClass = "",
+  buttonTextClass="",
   onClick,
 }) => {
   return (
     <button type="button" className={`button ${className}`} onClick={onClick}>
-      <Icon />
-      {text}
+      <Icon className={`icon ${AuthIcon} ${FacebookColorClass}`} />
+      <span className={`btnText ${buttonTextClass}`}>{text}</span>
     </button>
   );
 };

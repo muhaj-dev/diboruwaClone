@@ -27,6 +27,7 @@ const Label = styled.label`
   display: block;
   color: #4b5563;
   margin-bottom: 5px;
+  font-size: 13px;
 `;
 
 const InputWrapper = styled.div<{ className?: string }>`
@@ -37,7 +38,8 @@ const InputWrapper = styled.div<{ className?: string }>`
 `;
 
 const StyledInput = styled.input`
-  border: 1px solid var(--primary-20);
+  background: #d2d2d24d;
+  border: none;
   outline: none;
   border-radius: 0.45rem;
   padding: 0.6rem;
@@ -47,6 +49,10 @@ const StyledInput = styled.input`
   &:focus {
     border: 1px solid var(--primary);
   }
+
+  &::placeholder {
+    font-size: 13px;
+  }
 `;
 
 const PasswordToggleButton = styled.button`
@@ -55,10 +61,11 @@ const PasswordToggleButton = styled.button`
   top: 35%;
   right: 0.5rem;
   color: #718096;
-  
+
   background: none;
   border: none;
-  outline: none;cursor: pointer;
+  outline: none;
+  cursor: pointer;
 `;
 
 const ErrorMessage = styled.small`

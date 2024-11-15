@@ -83,7 +83,7 @@ export default function Groceries() {
                     <div>
                       <div>
                         <p>Fried Rice</p>
-                        <span />
+                        <div className="groceries_circle"></div>
                         <p>4.5</p>
                       </div>
                       <p

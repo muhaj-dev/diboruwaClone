@@ -25,12 +25,13 @@ const Backdrop = styled(motion.div as any)`
 
 const ModalContent = styled(motion.div as any)`
   background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
+  padding: 1.5rem 2.5rem;
+  border-radius: 30px;
   max-width: 500px;
-  width: 90%;
-  height: 100%;
-  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px 0px rgba(40, 40, 40, 0.1);
 `;
 
 export const AuthModal: React.FC<AuthModalProps> = ({
@@ -63,7 +64,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           ) : (
             <>
               <SignInModal
-                type="signup"
+                type="signin"
                 AuthCloseModal={closeModal}
                 switchModal={switchModal}
               />
