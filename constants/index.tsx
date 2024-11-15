@@ -8731,7 +8731,7 @@ export const Data = [
   {
     _id: 2,
     tag: "Moving",
-    bigImg: "/images/Subtract (3).png",
+    bigImg: "/images/moving.png",
     bike: "/images/Frame 2610192.png",
     foodImg: "/images/Frame 2610173.png",
     foodText:
@@ -8741,7 +8741,7 @@ export const Data = [
   {
     _id: 3,
     tag: "Laundry",
-    bigImg: "/images/Subtract (2).png",
+    bigImg: "/images/laundry.png",
     bike: "/images/Frame 2610175.png",
     foodImg: "/images/Frame 2610173 (1).png",
     foodText:
@@ -8751,7 +8751,7 @@ export const Data = [
   {
     _id: 4,
     tag: "Cleaning",
-    bigImg: "/images/Subtract (2).png",
+    bigImg: "/images/laundry.png",
     bike: "/images/Frame 2610175.png",
     foodImg: "/images/Frame 2610173 (1).png",
     foodText:
@@ -8761,7 +8761,7 @@ export const Data = [
   {
     _id: 5,
     tag: "Groceries",
-    bigImg: "/images/Subtract (1).png",
+    bigImg: "/images/food.png",
     bike: "/images/Frame 2610175.png",
     foodImg: "/images/Frame 2610173 (1).png",
     foodText:

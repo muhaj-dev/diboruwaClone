@@ -4,9 +4,6 @@ const nextConfig = {
     domains: ["res.cloudinary.com", "example.com"],
     
   },
-  experimental: {
-    instrumentationHook: true,
-  },
   compiler: {
     styledComponents: true,
   },

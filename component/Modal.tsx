@@ -9,8 +9,8 @@ const Overlay = styled(motion.div)<{ open: boolean }>`
   top: 0;
   left: 0;
   z-index: 50;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: ${({ open }) =>
     open ? "rgba(0, 0, 0, 0.5)" : "transparent"};
   display: flex;
@@ -28,7 +28,7 @@ const ModalContainer = styled(motion.div)`
   position: relative;
 
   @media (min-width: 768px) {
-    width: 30%;
+    width: 100%;
   }
 `;
 

@@ -5,7 +5,6 @@ import useForm from "@/hooks/useForm";
 import Button from "./ui/button/Button";
 import Input from "./ui/input/Input";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Loader from "./Loader";
 
 export interface AuthFormProps {
@@ -16,12 +15,14 @@ export interface AuthFormProps {
   submitButtonText?: string;
   loading: boolean;
   isFormValid?: boolean;
+  switchModal?: (type: "signup" | "signin") => void; // added prop for switching modals
 }
 
 export interface AuthField {
   name: string;
   label: string;
   type: string;
+  placeholder: string;
 }
 
 const AuthFormContainer = styled.div`
@@ -41,30 +42,31 @@ const AuthFormWrapper = styled.form`
 
 const AuthFormFieldWrapper = styled.div``;
 
-const AuthFormAlternateRoute = styled.div``;
+const AuthFormAlternateRoute = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+`;
 
 const AuthFormSmall = styled.small`
+  color: #555555;
+  cursor: pointer;
   a {
-    color: #555555;
+    color: inherit;
     text-decoration: none;
   }
 `;
 
 // Function to check password strength and provide feedback
 function getPasswordStrengthError(password: string) {
-  // Check if the input is empty
-  if (password.length === 0) {
-    return ""; // No errors for empty input
-  }
+  if (password.length === 0) return ""; // No errors for empty input
 
-  // Define your custom criteria here
   const minLength = 8;
   const hasUppercase = /[A-Z]/.test(password);
   const hasLowercase = /[a-z]/.test(password);
   const hasDigits = /\d/.test(password);
   const hasSpecialChars = /[!@#$%^&*]/.test(password);
 
-  // Calculate the strength score based on the criteria
   let score = 0;
   if (password.length >= minLength) score++;
   if (hasUppercase) score++;
@@ -72,7 +74,6 @@ function getPasswordStrengthError(password: string) {
   if (hasDigits) score++;
   if (hasSpecialChars) score++;
 
-  // Use a switch case to provide feedback based on the score
   switch (score) {
     case 0:
       return "Very Weak";
@@ -85,7 +86,7 @@ function getPasswordStrengthError(password: string) {
     case 4:
       return "Excellent";
     default:
-      return "Invalid"; // Handle unexpected cases
+      return "Invalid";
   }
 }
 
@@ -97,16 +98,12 @@ const AuthForm: React.FC<AuthFormProps> = ({
   submitButtonText = "Submit",
   loading = false,
   isFormValid,
+  switchModal, // Destructure switchModal to handle modal switching
 }) => {
   const initialState = fields.reduce<{ [key: string]: string }>(
-    (acc, field) => ({
-      ...acc,
-      [field.name]: "",
-    }),
+    (acc, field) => ({ ...acc, [field.name]: "" }),
     {}
   );
-
-  const path = usePathname();
 
   const [passwordMatchError, setPasswordMatchError] = useState<string>("");
   const [isFormFilled, setIsFormFilled] = useState<boolean>(false);
@@ -119,18 +116,18 @@ const AuthForm: React.FC<AuthFormProps> = ({
     }
   );
 
- // Function to check if password and confirm password match
- useEffect(() => {
-  if (path === "/signup" && formData.password !== formData.confirmPassword) {
-    setPasswordMatchError("Passwords do not match");
-  } else if (path === "/signup") {
-    setPasswordMatchError("");
-  }
-}, [formData.password, formData.confirmPassword, path]);
-
-  // Function to check if all fields are filled
   useEffect(() => {
-    const isFilled = Object.values(formData).every((value) => value.trim() !== "");
+    if (formData.password !== formData.confirmPassword) {
+      setPasswordMatchError("Passwords do not match");
+    } else {
+      setPasswordMatchError("");
+    }
+  }, [formData.password, formData.confirmPassword]);
+
+  useEffect(() => {
+    const isFilled = Object.values(formData).every(
+      (value) => value.trim() !== ""
+    );
     setIsFormFilled(isFilled);
   }, [formData]);
 
@@ -145,8 +142,8 @@ const AuthForm: React.FC<AuthFormProps> = ({
               name={field.name}
               type={field.type}
               id={field.name}
+              placeHolder={field.placeholder}
               value={formData[field.name]}
-              // onChange={(e) => handleChange(e, field.name)}
               onChange={(e) => {
                 handleChange(e, field.name);
                 if (onInputChange) {
@@ -154,7 +151,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
                 }
               }}
               error={
-                path === "/signup" && field.name === "password"
+                field.name === "password"
                   ? getPasswordStrengthError(formData[field.name])
                   : errors[field.name]
               }
@@ -162,41 +159,32 @@ const AuthForm: React.FC<AuthFormProps> = ({
             />
           </AuthFormFieldWrapper>
         ))}
-          {passwordMatchError && <p style={{ color: "red" }}>{passwordMatchError}</p>}
-
-        <AuthFormAlternateRoute className="alternate__route mb-2 float-right">
-          {path === "/signin" ? (
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <AuthFormSmall className="text-[10px]">
-                Don&#39;t have an account?{" "}
-                <Link href={"/signup"} className=" text-gray-800">
-                  Sign Up
-                </Link>
-              </AuthFormSmall>
-              <AuthFormSmall className="text-[10px]">
-                <Link href={"/forgot-password"} className=" text-gray-800">
-                  Forgot Password?
-                </Link>
-              </AuthFormSmall>
-              <br />
-            </div>
-          ) : (
-            <AuthFormSmall className="text-[12px]">
-              Already have an account?{" "}
-              <Link href={"/signin"} className="text-primary">
-                Sign In
-              </Link>
-            </AuthFormSmall>
-          )}
-        </AuthFormAlternateRoute>
-        <Button 
-          size="medium" 
-          color="primary" 
-          disabled={loading || !isFormFilled || !!passwordMatchError}
         
+        <Button
+          size="medium"
+          color="primary"
+          disabled={loading || !isFormFilled || !!passwordMatchError}
         >
           {loading ? <Loader /> : submitButtonText}
         </Button>
+        <AuthFormAlternateRoute>
+          {title === "Sign In" ? (
+            <>
+              <AuthFormSmall
+                onClick={() => switchModal && switchModal("signup")}
+              >
+                Don&#39;t have an account? <div>Sign Up</div>
+              </AuthFormSmall>
+              <AuthFormSmall>
+                <Link href="/forgot-password">Forgot Password?</Link>
+              </AuthFormSmall>
+            </>
+          ) : (
+            <AuthFormSmall onClick={() => switchModal && switchModal("signin")}>
+              Already have an account? <div>Sign In</div>
+            </AuthFormSmall>
+          )}
+        </AuthFormAlternateRoute>
       </AuthFormWrapper>
     </AuthFormContainer>
   );

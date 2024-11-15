@@ -117,7 +117,7 @@ export const Toggle = styled.div`
   }
 `;
 
-export const MenuList = styled(motion.ul)`
+export const MenuList = styled(motion.ul as any)`
   display: flex;
   gap: 30px;
   align-items: center;
@@ -172,7 +172,7 @@ export const SMCDI = styled.div`
   gap: 0.3rem;
 `;
 
-export const MobileMenuBackdrop = styled(motion.div)`
+export const MobileMenuBackdrop = styled(motion.div as any)`
   display: flex;
   flex-direction: column;
   position: absolute;

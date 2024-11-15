@@ -11,7 +11,7 @@ import { HiBars3 } from "react-icons/hi2";
 import { VscClose } from "react-icons/vsc";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { CaretDownIcon } from "@radix-ui/react-icons";
-
+import { AuthModal } from "@/component/AuthModal"
 import ServiceMenu from "@/component/serviceMenu";
 import {
   Cta,
@@ -37,9 +37,10 @@ const Navbar = () => {
 
   //get partName to render route types
   const pathname = usePathname();
-
   const [toggle, setToggle] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [authModal, setAuthModal] = useState<"signup" | "signin" | null>(null);
+  const switchModal = (type: "signup" | "signin") => setAuthModal(type);
 
   const { cartItems, getCart, getSubscriptions, subscriptions } =
     useCartStore();
@@ -64,6 +65,9 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const openAuthModal = (type: "signup" | "signin") => setAuthModal(type); // Type added to function parameter
+  const closeAuthModal = () => setAuthModal(null);
 
   return (
     <NavbarContainer
@@ -166,28 +170,28 @@ const Navbar = () => {
       <MenuList>
         {!session && (
           <li>
-            <Link
+            <button
+              onClick={() => openAuthModal("signup")}
               style={{
                 color: "#27A124",
               }}
               className="link"
-              href="/signup"
             >
               Register
-            </Link>
+            </button>
           </li>
         )}
         {!session && (
           <li>
-            <Link
+            <button
+              onClick={() => openAuthModal("signin")}
               style={{
                 color: "#27A124",
               }}
               className="link"
-              href="/signin"
             >
               Login
-            </Link>
+            </button>
           </li>
         )}
         {!session && (
@@ -220,6 +224,14 @@ const Navbar = () => {
           </div>
         )}
       </MenuList>
+      {/* Render AuthModal based on state */}
+      {authModal && (
+        <AuthModal
+          type={authModal}
+          closeModal={closeAuthModal}
+          switchModal={switchModal}
+        />
+      )}
     </NavbarContainer>
   );
 };

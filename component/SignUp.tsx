@@ -65,7 +65,9 @@ const SignUp: React.FC<SignUpPageProps> = ({ isModal = false }) => {
   //   await signup(formData);
   //   // router.back();
   // };
-  const handleSignUp = async (formData: { [key: string]: string }) => {
+ 
+
+ const handleSignUp = async (formData: { [key: string]: string }) => {
     console.log("Sign Up", formData);
     await signup(formData);
     // router.back();
@@ -80,8 +82,6 @@ const SignUp: React.FC<SignUpPageProps> = ({ isModal = false }) => {
     const passwordsMatch = formData.password === formData.confirmPassword;
     return !hasEmptyFields && passwordsMatch;
   };
-
-
 
   return (
     <div className="">
