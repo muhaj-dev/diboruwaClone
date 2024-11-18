@@ -40,7 +40,7 @@ const SingleOrderPage = ({ id }: { id: any }) => {
   useEffect(() => {
     getOrderById(id);
   }, []);
-  console.log(order);
+  console.log(order)
   // console.log(order?.deliveryFee)
 
   if (isSubmitting) return <Loader />;
@@ -71,7 +71,8 @@ const SingleOrderPage = ({ id }: { id: any }) => {
               <OrderData>
                 <strong>Payment ID:</strong> {order?.paymentId}
               </OrderData>
-
+         
+              
               {order?.orderItems &&
                 order?.orderItems.map((item: any) => (
                   <div key={item?._id} className="item">
@@ -87,9 +88,8 @@ const SingleOrderPage = ({ id }: { id: any }) => {
               <OrderData>
                 <strong>Total:</strong> ₦{order?.total + order?.deliveryFee}
               </OrderData>
-              <OrderData>
-                <strong>Date:</strong>{" "}
-                {moment(order?.createdAt).format("MMMM DD, YYYY")}
+               <OrderData>
+                <strong>Date:</strong> {moment(order?.createdAt).format("MMMM DD, YYYY")}
               </OrderData>
             </>
           )}
@@ -106,8 +106,7 @@ const SingleOrderPage = ({ id }: { id: any }) => {
                 <strong>Plan:</strong> {order?.orderItems?.plan}
               </OrderData>
               <OrderData>
-                <strong>Date:</strong>{" "}
-                {moment(order?.createdAt).format("MMMM DD, YYYY")}
+                <strong>Date:</strong> {moment(order?.createdAt).format("MMMM DD, YYYY")}
               </OrderData>
             </>
           )}

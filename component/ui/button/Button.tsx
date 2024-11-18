@@ -59,7 +59,7 @@ const Button: React.FC<ButtonProps> = ({
     <ButtonContainer
       color={color}
       size={size}
-      onClick={onClick}
+      onClick={disabled ? undefined : onClick}
       whileTap={{ scale: 0.95 }}
       disabled={disabled}
     >

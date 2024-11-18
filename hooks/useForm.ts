@@ -35,7 +35,8 @@ const useForm = (
   };
 
   const validateForm = (): boolean => {
-    const requiredFields = Object.entries(initialState).map(([key]) => key);
+    const requiredFields = Object.entries(initialState)
+    .map(([key]) => key);
 
     console.log(requiredFields);
 
@@ -54,10 +55,10 @@ const useForm = (
   };
 
   const isValid = (): boolean => {
-    return Object.values(formData).every(
-      (value) => typeof value === "string" && value.trim() !== ""
-    );
+    return Object.values(formData).every((value) => typeof value === 'string' && value.trim() !== "");
   };
+  
+  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -76,7 +77,7 @@ const useForm = (
       setErrors(formErrors);
     }
   };
-
+  
   const resetForm = () => {
     setFormData(initialState);
     setErrors({});

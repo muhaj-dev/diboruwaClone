@@ -47,7 +47,10 @@ const SingleSubscriptionPage = ({ id }: { id: any }) => {
 
   return (
     <SubscriptionContainer>
+      <>
         <BackButton />
+      
+      </>
       <SubscriptionTitle>Subscription Details</SubscriptionTitle>
 
       {subscription && (

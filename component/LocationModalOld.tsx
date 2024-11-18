@@ -83,7 +83,7 @@ const LocationModal: React.FC = () => {
   const [companyName] = useState<string>("diboruwa");
 
   const url = process.env.NEXT_PUBLIC_ADMIN_URL;
-
+console.log(url)
   useEffect(() => {
     const fetchStatesAndRegions = async () => {
       try {

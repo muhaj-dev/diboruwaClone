@@ -65,7 +65,6 @@ export const SignUpModal: React.FC<AuthModalProps> = ({
   }, [session, router, isModal]);
 
   const handleSignUp = async (formData: { [key: string]: string }) => {
-    console.log("Attempting to sign up with data:", formData);
     await signup(formData);
   };
 
@@ -82,60 +81,59 @@ export const SignUpModal: React.FC<AuthModalProps> = ({
   return (
     <div className={styles.SignUp_container}>
       <h2 className={styles.SignUp_Title}>Sign Up</h2>
-      <form>
-        <div className={styles.AuthButtons}>
-          <AuthButton
-            className={styles.Auth_Button}
-            AuthIcon={styles.Auth_Icon}
-            buttonTextClass={styles.buttonText}
-            icon={FcGoogle}
-            text="Sign Up with Google"
-          />
-          <AuthButton
-            className={styles.Auth_Button}
-            buttonTextClass={styles.buttonText}
-            AuthIcon={styles.Auth_Icon}
-            FacebookColorClass={styles.Facebook_Color}
-            icon={FaFacebook}
-            text="Sign Up with Facebook"
-          />
-        </div>
+      <div className={styles.AuthButtons}>
+        <AuthButton
+          className={styles.Auth_Button}
+          AuthIcon={styles.Auth_Icon}
+          buttonTextClass={styles.buttonText}
+          icon={FcGoogle}
+          text="Sign Up with Google"
+        />
+        <AuthButton
+          className={styles.Auth_Button}
+          buttonTextClass={styles.buttonText}
+          AuthIcon={styles.Auth_Icon}
+          FacebookColorClass={styles.Facebook_Color}
+          icon={FaFacebook}
+          text="Sign Up with Facebook"
+        />
+      </div>
 
-        <div className={styles.choice_container}>
-          <div className={styles.choice_line}></div>
-          <p className={styles.choice_Text}>Or sign up with</p>
-          <div className={styles.choice_line}></div>
-        </div>
+      <div className={styles.choice_container}>
+        <div className={styles.choice_line}></div>
+        <p className={styles.choice_Text}>Or sign up with</p>
+        <div className={styles.choice_line}></div>
+      </div>
 
-        <div>
-          <Modal open={isModal} onClose={() => router.back()}>
-            <AuthForm
-              fields={signUpFields}
-              onSubmit={handleSignUp}
-              onInputChange={handleInputChange}
-              submitButtonText="Continue"
-              loading={loading}
-              isFormValid={isFormValid()}
-            />
-          </Modal>
-          {showModal && (
-            <NotificationModal
-              message={modalMessage}
-              errorType={modalErrorType}
-              onClose={closeModal}
-            />
-          )}
-        </div>
-        <small className={styles.AuthFormSmall}>
-          Already have an account?
-          <span
-            className={styles.AuthFormSmall_Sign_InSwitch}
-            onClick={() => switchModal && switchModal("signin")}
-          >
-            Login
-          </span>
-        </small>
-      </form>
+      <div>
+        <Modal open={isModal} onClose={() => router.back()}>
+          <AuthForm
+            fields={signUpFields}
+            onSubmit={handleSignUp}
+            onInputChange={handleInputChange}
+            submitButtonText="Continue"
+            loading={loading}
+            isFormValid={isFormValid()}
+            auth={"singup"}
+          />
+        </Modal>
+        {showModal && (
+          <NotificationModal
+            message={modalMessage}
+            errorType={modalErrorType}
+            onClose={closeModal}
+          />
+        )}
+      </div>
+      <small className={styles.AuthFormSmall}>
+        Already have an account?
+        <span
+          className={styles.AuthFormSmall_Sign_InSwitch}
+          onClick={() => switchModal && switchModal("signin")}
+        >
+          Login
+        </span>
+      </small>
     </div>
   );
 };
