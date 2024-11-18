@@ -65,6 +65,7 @@ export const SignUpModal: React.FC<AuthModalProps> = ({
   }, [session, router, isModal]);
 
   const handleSignUp = async (formData: { [key: string]: string }) => {
+    console.log("Attempting to sign up with data:", formData);
     await signup(formData);
   };
 

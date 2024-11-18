@@ -26,7 +26,6 @@ export interface AuthField {
 }
 
 const AuthFormContainer = styled.div`
-  /* Add your styling for the container here */
   width: 100%;
 `;
 
@@ -44,30 +43,28 @@ const AuthFormWrapper = styled.form`
 
 const AuthFormFieldWrapper = styled.div``;
 
-// const AuthFormAlternateRoute = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   margin-top: 15px;
-// `;
+const AuthFormAlternateRoute = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+`;
 
-// const AuthFormSmall = styled.small`
-//   color: #555555;
-//   cursor: pointer;
-//   a {
-//     color: inherit;
-//     text-decoration: none;
-//   }
+const AuthFormSmall = styled.small`
+  color: #555555;
+  cursor: pointer;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  span {
+    color: #0070f3;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
 
-//   span {
-//     color: #0070f3; /* Customize this color */
-//     cursor: pointer;
-//     &:hover {
-//       text-decoration: underline;
-//     }
-//   }
-// `;
-
-// Password strength feedback function
 function getPasswordStrengthError(password: string) {
   if (password.length === 0) return "";
   const minLength = 8;
@@ -120,6 +117,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
   const { formData, handleChange, handleSubmit, resetForm, errors } = useForm(
     initialState,
     () => {
+      console.log("clicked");
       onSubmit(formData);
       resetForm();
     }
@@ -142,6 +140,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
 
   return (
     <AuthFormContainer>
+      <AuthFormTitle>{title}</AuthFormTitle>
       <AuthFormWrapper onSubmit={handleSubmit}>
         {fields.map((field) => (
           <AuthFormFieldWrapper key={field.name}>
@@ -163,7 +162,7 @@ const AuthForm: React.FC<AuthFormProps> = ({
                   ? getPasswordStrengthError(formData[field.name])
                   : errors[field.name]
               }
-              showPasswordToggle={true}
+              showPasswordToggle={field.type === "password"}
             />
           </AuthFormFieldWrapper>
         ))}
@@ -176,12 +175,13 @@ const AuthForm: React.FC<AuthFormProps> = ({
           {loading ? <Loader /> : submitButtonText}
         </Button>
 
+        <button type="submit">submit</button>
 
-        {/* <AuthFormAlternateRoute>
+        <AuthFormAlternateRoute>
           {title === "Sign In" ? (
             <>
               <AuthFormSmall>
-                Don&#39;t have an account?
+                Don&#39;t have an account?{" "}
                 <span onClick={() => switchModal && switchModal("signup")}>
                   Sign up
                 </span>
@@ -192,13 +192,13 @@ const AuthForm: React.FC<AuthFormProps> = ({
             </>
           ) : (
             <AuthFormSmall>
-              Already have an account?
+              Already have an account?{" "}
               <span onClick={() => switchModal && switchModal("signin")}>
                 Sign in
               </span>
             </AuthFormSmall>
           )}
-        </AuthFormAlternateRoute> */}
+        </AuthFormAlternateRoute>
       </AuthFormWrapper>
     </AuthFormContainer>
   );

@@ -1,40 +1,18 @@
+"use client";
 import React from "react";
-import { GetServerSideProps } from "next";
 import Groceries from "@/containers/groceries/Groceries";
+import { useRouter } from "next/router";
 
+const Page: React.FC = () => {
+  const router = useRouter();
+  const { id } = router.query; // Access the dynamic route parameter
 
+  // Render only if the id is available to avoid hydration errors
+  if (!id) return null;
 
-export const metadata = {
-  title: "Groceries",
-};
-// Define the type for the props that will be passed to the Page component
-interface PageProps {
-  id: string;
-}
-
-// Define the type for the context parameter of getServerSideProps
-interface ServerSideContext {
-  params: {
-    id: string;
-  };
-}
-
-export const getServerSideProps: GetServerSideProps<PageProps> = async (
-  context
-) => {
-  const { id } = context.params as { id: string }; // Ensure correct type assertion
-
-  return {
-    props: {
-      id, // Pass the id directly to the component
-    },
-  };
-};
-
-const Page: React.FC<PageProps> = ({ id }) => {
   return (
     <div>
-      <Groceries params={{ id }} />
+      <Groceries params={{ id: id as string }} />
     </div>
   );
 };
