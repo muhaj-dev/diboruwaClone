@@ -3,6 +3,7 @@ import Modal from "../Modal";
 import useAuth from "@/hooks/useAuth";
 import { useRouter } from "next/navigation";
 import AuthForm, { AuthField } from "../AuthForm";
+
 import React, { useEffect, useState } from "react";
 import NotificationModal from "../NotificationModal";
 import { AuthButton } from "../shared/Button";
@@ -114,7 +115,7 @@ export const SignUpModal: React.FC<AuthModalProps> = ({
             submitButtonText="Continue"
             loading={loading}
             isFormValid={isFormValid()}
-            auth={"singup"}
+            // auth={"signup"}
           />
         </Modal>
         {showModal && (

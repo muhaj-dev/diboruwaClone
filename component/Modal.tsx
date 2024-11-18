@@ -30,7 +30,7 @@ const ModalContainer = styled(motion.div)`
   @media (min-width: 768px) {
     width: 100%;
     max-width: 1444px;
-    padding: 30px 0 7px;
+    padding: 0 0 7px;
   }
 `;
 
